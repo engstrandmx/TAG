@@ -26,6 +26,8 @@ public:
 	FORCEINLINE float GetMaxHealth() { return MaxHealth; }
 	FORCEINLINE float GetHealth() { return Health; }
 
+	void ResetPlayer();
+
 private:
 	UPROPERTY(EditAnywhere, Category = Components)
 	UStaticMeshComponent* GoldMesh;
@@ -39,6 +41,6 @@ private:
 
 	void PickupGold();
 	void DropGold();
-	void ResetPlayer();
+	
 
 };

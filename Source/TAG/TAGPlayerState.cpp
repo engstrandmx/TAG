@@ -21,3 +21,16 @@ void ATAGPlayerState::InitStats(ATrollCharacter* Character)
 {
 
 }
+
+void ATAGPlayerState::BeginPlay()
+{
+	Super::BeginPlay();
+
+	LinkedController = GetPlayerControllerFromNetId(GetWorld(), UniqueId.GetUniqueNetId);
+	LinkedCharacter = LinkedController->GetCharacter();
+}
+
+void ATAGPlayerState::ResetPlayer()
+{
+	
+}

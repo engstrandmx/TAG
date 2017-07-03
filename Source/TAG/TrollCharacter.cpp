@@ -7,8 +7,6 @@ ATrollCharacter::ATrollCharacter() {
 	//Create default shape
 	InteractShape = CreateDefaultSubobject<USphereComponent>(FName("Interact Shape"));
 	InteractShape->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
-
-	//InteractShape->OnComponentBeginOverlap.AddDynamic(this, &ATrollCharacter::BeginOverlap);
 }
 
 /*
@@ -17,6 +15,7 @@ ATrollCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* 
 
 }
 */
+
 void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);

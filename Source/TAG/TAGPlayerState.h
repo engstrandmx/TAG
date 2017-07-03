@@ -17,11 +17,16 @@ class TAG_API ATAGPlayerState : public APlayerState
 	GENERATED_BODY()
 
 public :
+	ACharacter* LinkedCharacter;
+	AController* LinkedController;
+
 	float MaxHealth;
 	float Health;
 	
 	void ReceiveDamage(float Damage);
 	void InitStats(AGnomeCharacter* Character);
 	void InitStats(ATrollCharacter* Character);
+	void BeginPlay();
+	void ResetPlayer();
 
 };

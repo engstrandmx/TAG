@@ -38,10 +38,6 @@ void AGnomeCharacter::ReceiveAnyDamage(float Damage, const class UDamageType* Da
 		ATAGPlayerState* State = Cast<ATAGPlayerState>(PlayerState);
 		
 		State->ReceiveDamage(Damage);
-
-		if (Health < 0) {
-			ResetPlayer();
-		}
 	}
 
 }
@@ -63,5 +59,8 @@ void AGnomeCharacter::DropGold()
 
 void AGnomeCharacter::ResetPlayer()
 {
+	ATAGPlayerState* State = Cast<ATAGPlayerState>(PlayerState);
+	State->ResetPlayer();
+	Reset();
 }
 
