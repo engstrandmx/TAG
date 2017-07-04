@@ -25,19 +25,22 @@ void AGnomeCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 
 void AGnomeCharacter::BeginPlay() {
 	Super::BeginPlay();
-	ATAGPlayerState* State = Cast<ATAGPlayerState>(PlayerState);
-
-	State->InitStats(this);
 
 	GoldMesh->SetVisibility(false);
 }
 
-void AGnomeCharacter::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser)
+void AGnomeCharacter::ReceiveRadialDamage(float DamageReceived, const class UDamageType* DamageType, FVector Origin, const struct FHitResult& HitInfo, class AController* InstigatedBy, AActor* DamageCauser)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Damage received"));
+
 	if (DamageCauser->IsA(ATrollCharacter::StaticClass())) {
-		ATAGPlayerState* State = Cast<ATAGPlayerState>(PlayerState);
-		
-		State->ReceiveDamage(Damage);
+		Health -= DamageReceived;
+
+		UE_LOG(LogTemp, Warning, TEXT("Damage from troll received"));
+
+		if (Health < 0) {
+			ResetPlayer();
+		}
 	}
 
 }
@@ -59,8 +62,6 @@ void AGnomeCharacter::DropGold()
 
 void AGnomeCharacter::ResetPlayer()
 {
-	ATAGPlayerState* State = Cast<ATAGPlayerState>(PlayerState);
-	State->ResetPlayer();
-	Reset();
+	GetWorld()->GetAuthGameMode()->RestartPlayer(Controller);
 }
 

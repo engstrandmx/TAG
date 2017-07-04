@@ -26,8 +26,10 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 void ATrollCharacter::Interact()
 {
+
+
 	TSubclassOf <class UDamageType> DamageTypeClass;
 	const TArray<AActor*> IgnoreActors;
 
-	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, InteractShape->GetComponentLocation(), 100.f, DamageTypeClass, IgnoreActors);
+	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, InteractShape->GetComponentLocation(), 1000.f, DamageTypeClass, IgnoreActors);
 }

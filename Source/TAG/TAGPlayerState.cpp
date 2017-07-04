@@ -26,11 +26,12 @@ void ATAGPlayerState::BeginPlay()
 {
 	Super::BeginPlay();
 
-	LinkedController = GetPlayerControllerFromNetId(GetWorld(), UniqueId.GetUniqueNetId);
-	LinkedCharacter = LinkedController->GetCharacter();
+	
+
 }
 
 void ATAGPlayerState::ResetPlayer()
 {
-	
+	//Destroys pawn and tells server to spawn a new pawn
+
 }

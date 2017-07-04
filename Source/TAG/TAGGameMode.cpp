@@ -26,6 +26,12 @@ ATAGGameMode::ATAGGameMode()
 
 void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 {
+	if (NewPlayer->GetPawn()) {
+		APawn* OldPawn = NewPlayer->GetPawn();
+		NewPlayer->UnPossess();
+		OldPawn->Destroy();
+	}
+
 	//Get player start position and set default pawn to troll
 	AActor* StartPos = FindPlayerStart(NewPlayer, TrollSpawnTag);
 	DefaultPawnClass = TrollCharacter;
