@@ -5,3 +5,15 @@
 
 
 
+ATAGGameState::ATAGGameState() {
+	GoldGathered = 0;
+}
+
+void ATAGGameState::ScoreGold()
+{
+	GoldGathered += 1;
+}
+
+int32 ATAGGameState::GetScore() {
+	return GoldGathered; 
+}

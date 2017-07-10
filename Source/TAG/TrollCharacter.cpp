@@ -19,17 +19,18 @@ ATrollCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* 
 void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);
+	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
+
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
 }
 
 void ATrollCharacter::Interact()
 {
-
+	UE_LOG(LogTemp, Warning, TEXT("Troll Interacting"));
 
 	TSubclassOf <class UDamageType> DamageTypeClass;
 	const TArray<AActor*> IgnoreActors;
 
-	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, InteractShape->GetComponentLocation(), 1000.f, DamageTypeClass, IgnoreActors);
+	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 }

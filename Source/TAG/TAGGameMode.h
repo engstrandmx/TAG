@@ -29,6 +29,7 @@ public:
 	void RestartPlayer(AController* NewPlayer);
 
 private:
+
 	bool SpawnFlip = true;
 
 };

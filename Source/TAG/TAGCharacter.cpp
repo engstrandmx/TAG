@@ -83,6 +83,39 @@ void ATAGCharacter::Interact()
 
 }
 
+void ATAGCharacter::ServerTakeDamage_Implementation(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+}
+
+bool ATAGCharacter::ServerTakeDamage_Validate(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	//Assume that everything is ok without any further checks and return true
+	return true;
+}
+
+void ATAGCharacter::OnRep_Health()
+{
+	//Do a thing
+};
+
+
+void ATAGCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	//Tell the engine to call the OnRep_Health and OnRep_BombCount each time a variable changes
+	DOREPLIFETIME(ATAGCharacter, Health);
+}
+
+float ATAGCharacter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+
+	return Health;
+}
+
+
 void ATAGCharacter::OnResetVR()
 {
 	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();

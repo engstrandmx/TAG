@@ -13,8 +13,18 @@ UCLASS()
 class TAG_API ATAGGameState : public AGameStateBase
 {
 	GENERATED_BODY()
-	
-	
-	
+
+
+
+public:
+	ATAGGameState();
+
+	void ScoreGold();
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "GameState")
+	int32 GetScore();
+
+private:
+	int32 GoldGathered;
 	
 };

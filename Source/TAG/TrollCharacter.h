@@ -33,4 +33,7 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float Damage = 10.f;
+
+	UPROPERTY(EditAnywhere, Category = Stats)
+	float DamageRadius = 100.f;
 };
