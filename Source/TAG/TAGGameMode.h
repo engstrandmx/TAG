@@ -6,11 +6,13 @@
 #include "Engine.h"
 #include "GameFramework/GameModeBase.h"
 #include "GameFramework/GameMode.h"
+#include "TAGGameState.h"
+#include "TAGPlayerController.h"
 #include "TAGGameMode.generated.h"
 
 UCLASS(minimalapi)
 class ATAGGameMode : public AGameModeBase
-{	
+{
 	GENERATED_BODY()
 
 public:
@@ -20,7 +22,7 @@ public:
 		TSubclassOf<APawn> TrollCharacter;
 	UPROPERTY(EditAnywhere, Category = Characters)
 		TSubclassOf<APawn> GnomeCharacter;
-	
+
 	UPROPERTY(EditAnywhere, Category = Characters)
 		FString TrollSpawnTag = "SpawnTroll";
 	UPROPERTY(EditAnywhere, Category = Characters)
@@ -30,7 +32,17 @@ public:
 
 private:
 
+	void SwitchSides();
+
+	ATAGGameState* TagGameState;
+	TArray<ATAGPlayerController*> PlayerControllers;
+
 	bool SpawnFlip = true;
+
+protected:
+	void PostLogin(APlayerController* NewPlayer) override;
+
+	void BeginPlay() override;
 
 };
 

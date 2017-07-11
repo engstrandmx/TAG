@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine.h"
 #include "GameFramework/GameStateBase.h"
 #include "TAGGameState.generated.h"
 
@@ -14,8 +14,6 @@ class TAG_API ATAGGameState : public AGameStateBase
 {
 	GENERATED_BODY()
 
-
-
 public:
 	ATAGGameState();
 
@@ -23,8 +21,16 @@ public:
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "GameState")
 	int32 GetScore();
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "GameState")
+	float GetTimeElapsed();
+
 
 private:
 	int32 GoldGathered;
-	
+	float TimeElapsed;
+
+protected:
+
+	void BeginPlay() override;
+	void Tick(float DeltaSeconds) override;
 };

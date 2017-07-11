@@ -46,8 +46,10 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 
 	//Null check, in case actor data is not sent when damage is dealt
 	if (DamageCauser) {
-		FVector ForceVector = (GetActorLocation() + FVector(0, 0, 20)) - DamageCauser->GetActorLocation();
-		LaunchCharacter(ForceVector * 60.f, true, false);
+		FVector ForceVector = (GetActorLocation() + FVector(0, 0, 40)) - DamageCauser->GetActorLocation();
+		ForceVector.Normalize();
+
+		LaunchCharacter(ForceVector * 1200.f, true, false);
 	}
 		Health -= Damage;
 

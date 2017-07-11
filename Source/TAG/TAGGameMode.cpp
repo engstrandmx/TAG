@@ -5,8 +5,12 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "UObject/ConstructorHelpers.h"
 
+using namespace EPlayerState;
+
 ATAGGameMode::ATAGGameMode()
 {
+	
+
 	// HARDCODED REFERENCES
 
 	/*
@@ -24,27 +28,84 @@ ATAGGameMode::ATAGGameMode()
 	*/
 }
 
+void ATAGGameMode::BeginPlay() {
+	Super::BeginPlay();
+
+	TagGameState = GetGameState<ATAGGameState>();
+
+	SwitchSides();
+}
+
+void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
+	UE_LOG(LogTemp, Warning, TEXT("Post Login Performed"));
+
+	PlayerControllers.Add(Cast<ATAGPlayerController>(NewPlayer));
+
+	PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
+
+	if (PlayerControllers.Num() != 1) {
+		if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Troll) {
+			PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
+
+			UE_LOG(LogTemp, Warning, TEXT("Troll made"));
+		}
+	}
+
+	Super::PostLogin(NewPlayer);
+	
+}
+
 void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Restart Performed"));
+
+
 	if (NewPlayer->GetPawn()) {
 		APawn* OldPawn = NewPlayer->GetPawn();
 		NewPlayer->UnPossess();
 		OldPawn->Destroy();
 	}
 
-	//Get player start position and set default pawn to troll
-	AActor* StartPos = FindPlayerStart(NewPlayer, TrollSpawnTag);
-	DefaultPawnClass = TrollCharacter;
+	FString SpawnTag;
 
-	//If player count is an odd number, then said player is to be spawned as a gnome
-	if (GameState->PlayerArray.Num() % 2 == 0) {
-		StartPos = FindPlayerStart(NewPlayer, GnomeSpawnTag);
+	//Cast to child class and determine type
+	switch (Cast<ATAGPlayerController>(NewPlayer)->GetPlayerType()) {
+	case Gnome:
+		SpawnTag = GnomeSpawnTag;
 		DefaultPawnClass = GnomeCharacter;
+		UE_LOG(LogTemp, Warning, TEXT("Gnome spawned"));
+
+		break;
+	case Troll:
+		SpawnTag = TrollSpawnTag;
+		DefaultPawnClass = TrollCharacter;
+		UE_LOG(LogTemp, Warning, TEXT("Troll spawned"));
+		break;
+	case Spectator:
+		//TODO: Make spectator implementation
+		UE_LOG(LogTemp, Warning, TEXT("Spectator should be spawned"));
+		break;
 	}
+	
+	AActor* StartPos = FindPlayerStart(NewPlayer, SpawnTag);
 
 	//Spawn pawn and possess
 	APawn* SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
 	NewPlayer->Possess(SpawnedPawn);
 }
 
+void ATAGGameMode::SwitchSides()
+{
+	for (ATAGPlayerController* player : PlayerControllers)
+	{
+		if (player->GetPlayerType() == Gnome) {
+			player->SetPlayerType(Troll);
+		}
+		else {
+			player->SetPlayerType(Gnome);
+		}
+
+		RestartPlayer(player);
+	}
+}
 
