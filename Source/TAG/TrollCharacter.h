@@ -36,4 +36,7 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float DamageRadius = 100.f;
+
+	UPROPERTY(EditAnywhere, Category = Components)
+	UParticleSystem* DamageParticles;
 };

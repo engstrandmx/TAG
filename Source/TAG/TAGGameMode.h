@@ -19,25 +19,35 @@ public:
 	ATAGGameMode();
 
 	UPROPERTY(EditAnywhere, Category = Characters)
-		TSubclassOf<APawn> TrollCharacter;
+	TSubclassOf<APawn> TrollCharacter;
 	UPROPERTY(EditAnywhere, Category = Characters)
-		TSubclassOf<APawn> GnomeCharacter;
+	TSubclassOf<APawn> GnomeCharacter;
 
 	UPROPERTY(EditAnywhere, Category = Characters)
-		FString TrollSpawnTag = "SpawnTroll";
+	FString TrollSpawnTag = "SpawnTroll";
 	UPROPERTY(EditAnywhere, Category = Characters)
-		FString GnomeSpawnTag = "SpawnGnome";
+	FString GnomeSpawnTag = "SpawnGnome";
 
 	void RestartPlayer(AController* NewPlayer);
+	FORCEINLINE float GetRoundTime() { return RoundTime; }
 
 private:
 
 	void SwitchSides();
+	UFUNCTION()
+	void EndRound();
+	UFUNCTION()
+	void RestartRound();
+	void StartRoundTimer();
+
+	UPROPERTY(EditAnywhere, Category = GameRules)
+	float RoundTime;
+	
+	FTimerHandle RoundTimerHandle;
 
 	ATAGGameState* TagGameState;
 	TArray<ATAGPlayerController*> PlayerControllers;
 
-	bool SpawnFlip = true;
 
 protected:
 	void PostLogin(APlayerController* NewPlayer) override;

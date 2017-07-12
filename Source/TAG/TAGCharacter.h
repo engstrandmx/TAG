@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine.h"
 #include "Net/UnrealNetwork.h"
 #include "GameFramework/Character.h"
 #include "TAGCharacter.generated.h"
@@ -94,5 +94,11 @@ protected:
 
 	UFUNCTION()
 	void OnRep_Health();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void ServerResetPlayer(AController* InController);
+	void ServerResetPlayer_Implementation(AController* InController);
+	bool ServerResetPlayer_Validate(AController* InController);
+
 };
 

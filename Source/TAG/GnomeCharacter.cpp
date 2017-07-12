@@ -65,8 +65,24 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 void AGnomeCharacter::ResetPlayer()
 {
 	DropGold(false);
-	GetWorld()->GetAuthGameMode()->RestartPlayer(Controller);
+
+	ServerResetPlayer(Controller);
 }
+/*
+void AGnomeCharacter::ServerResetPlayer(AController* InController) {
+	GetWorld()->GetAuthGameMode()->RestartPlayer(InController);
+}
+
+
+bool AGnomeCharacter::ServerResetPlayer_Validate(AController* InController) {
+	//TODO: Check if call is legit
+	return true;
+}
+
+void AGnomeCharacter::ServerResetPlayer_Implementation(AController* InController)
+{
+}
+*/
 
 void AGnomeCharacter::PickupGold()
 {

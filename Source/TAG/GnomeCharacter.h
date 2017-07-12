@@ -4,6 +4,7 @@
 
 #include "Engine.h"
 #include "TAGCharacter.h"
+#include "Net/UnrealNetwork.h"
 #include "GnomeCharacter.generated.h"
 
 /**
@@ -26,8 +27,10 @@ public:
 	FORCEINLINE float GetHealth() { return Health; }
 
 	void ResetPlayer();
-
+	
 private:
+
+
 
 	UPROPERTY(EditAnywhere, Category = Components)
 	UStaticMeshComponent* GoldMesh;

@@ -9,7 +9,7 @@ using namespace EPlayerState;
 
 ATAGGameMode::ATAGGameMode()
 {
-	
+	RoundTime = 300;
 
 	// HARDCODED REFERENCES
 
@@ -31,9 +31,10 @@ ATAGGameMode::ATAGGameMode()
 void ATAGGameMode::BeginPlay() {
 	Super::BeginPlay();
 
+	GetGameState<ATAGGameState>()->SetRoundTime(RoundTime);
 	TagGameState = GetGameState<ATAGGameState>();
 
-	SwitchSides();
+	StartRoundTimer();
 }
 
 void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
@@ -107,5 +108,31 @@ void ATAGGameMode::SwitchSides()
 
 		RestartPlayer(player);
 	}
+}
+
+void ATAGGameMode::EndRound()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Gnomes gathered %f gold!"), TagGameState->GetScore());
+
+	RestartRound();
+
+	//FTimerHandle GraceTimeHandle;
+	//GetWorld()->GetTimerManager().SetTimer(GraceTimeHandle, this, &ATAGGameMode::RestartRound, 0.f, false, 5.f);
+
+	//UGameplayStatics::SetGamePaused(GetWorld(), true);
+}
+
+void ATAGGameMode::RestartRound() {
+	//UGameplayStatics::SetGamePaused(GetWorld(), false);
+
+	TagGameState->ResetTime();
+	StartRoundTimer();
+	SwitchSides();
+}
+
+void ATAGGameMode::StartRoundTimer()
+{
+	//Calls the EndRound function once time is up
+	GetWorld()->GetTimerManager().SetTimer(RoundTimerHandle, this, &ATAGGameMode::EndRound, RoundTime, false);
 }
 

@@ -80,7 +80,7 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 
 void ATAGCharacter::Interact()
 {
-
+	//Virtual implementation
 }
 
 void ATAGCharacter::ServerTakeDamage_Implementation(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -99,12 +99,11 @@ void ATAGCharacter::OnRep_Health()
 	//Do a thing
 };
 
-
 void ATAGCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-	//Tell the engine to call the OnRep_Health and OnRep_BombCount each time a variable changes
+	//Tell the engine to call the OnRep_Health each time a variable changes
 	DOREPLIFETIME(ATAGCharacter, Health);
 }
 
@@ -171,3 +170,14 @@ void ATAGCharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+
+void ATAGCharacter::ServerResetPlayer_Implementation(AController* InController) {
+	GetWorld()->GetAuthGameMode()->RestartPlayer(InController);
+}
+
+
+bool ATAGCharacter::ServerResetPlayer_Validate(AController* InController) {
+	//TODO: Check if call is legit
+	return true;
+}
+

@@ -6,7 +6,7 @@ ATrollCharacter::ATrollCharacter() {
 
 	//Create default shape
 	InteractShape = CreateDefaultSubobject<USphereComponent>(FName("Interact Shape"));
-	InteractShape->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+	InteractShape->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform);
 }
 
 /*
@@ -32,5 +32,7 @@ void ATrollCharacter::Interact()
 	TSubclassOf <class UDamageType> DamageTypeClass;
 	const TArray<AActor*> IgnoreActors;
 
-	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
+
+	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 }
