@@ -14,8 +14,6 @@ AGnomeCharacter::AGnomeCharacter() {
 	GoldMesh->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
 	bReplicates = true;
-
-
 	CarryMovementSpeed = 150;
 }
 
@@ -42,17 +40,14 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 {
 	Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
 
-	//UE_LOG(LogTemp, Warning, TEXT("Damage received"));
-
-	//if (DamageCauser->IsA(ATrollCharacter::StaticClass())) {
-		//UE_LOG(LogTemp, Warning, TEXT("Damage from troll received"));
+	//UE_LOG(LogTemp, Warning, TEXT("Damage from troll received"));
 
 	if (Role < ROLE_Authority) {
 		ServerTakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
 	}
 	else {
 		if (DamageCauser) {
-			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 40)) - DamageCauser->GetActorLocation();
+			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 100)) - DamageCauser->GetActorLocation();
 			ForceVector.Normalize();
 
 			LaunchCharacter(ForceVector * 1200.f, true, false);
@@ -60,8 +55,7 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 		Health -= Damage;
 
 		if (Health <= 0) {
-			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DeathEmitter, GetTransform());
-
+			SimulateDeathFX();
 			ResetPlayer();
 		}
 	}
@@ -81,6 +75,13 @@ void AGnomeCharacter::ResetPlayer()
 	DropGold(false);
 
 	ServerResetPlayer(Controller);
+}
+
+void AGnomeCharacter::SimulateDeathFX_Implementation()
+{
+	if (DeathEmitter) {
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DeathEmitter, GetTransform());
+	}
 }
 
 void AGnomeCharacter::PickupGold()

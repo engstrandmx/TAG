@@ -32,6 +32,9 @@ public:
 	
 private:
 
+	UFUNCTION(Reliable, NetMulticast)
+	void SimulateDeathFX();
+	void SimulateDeathFX_Implementation();
 
 
 	UPROPERTY(EditAnywhere, Category = Components)
