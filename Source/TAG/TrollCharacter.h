@@ -31,6 +31,11 @@ protected:
 	virtual bool ServerInteract_Validate();
 
 private:
+
+	UFUNCTION(Reliable, NetMulticast)
+	void SimulateInteractFX();
+	void SimulateInteractFX_Implementation();
+
 	UPROPERTY(EditAnywhere, Category = Components)
 	USphereComponent* InteractShape;
 

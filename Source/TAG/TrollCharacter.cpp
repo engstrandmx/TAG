@@ -37,7 +37,7 @@ void ATrollCharacter::Interact()
 		TSubclassOf <class UDamageType> DamageTypeClass;
 		const TArray<AActor*> IgnoreActors;
 
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
+		SimulateInteractFX();
 
 		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 	}
@@ -51,4 +51,9 @@ void ATrollCharacter::ServerInteract_Implementation()
 bool ATrollCharacter::ServerInteract_Validate()
 {
 	return true;
+}
+
+void ATrollCharacter::SimulateInteractFX_Implementation()
+{
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
 }
