@@ -7,6 +7,9 @@ ATrollCharacter::ATrollCharacter() {
 	//Create default shape
 	InteractShape = CreateDefaultSubobject<USphereComponent>(FName("Interact Shape"));
 	InteractShape->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform);
+
+	bReplicates = true;
+
 }
 
 /*
@@ -27,12 +30,25 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 void ATrollCharacter::Interact()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Troll Interacting"));
+	if (Role < ROLE_Authority) {
+		ServerInteract();
+	}
+	else {
+		TSubclassOf <class UDamageType> DamageTypeClass;
+		const TArray<AActor*> IgnoreActors;
 
-	TSubclassOf <class UDamageType> DamageTypeClass;
-	const TArray<AActor*> IgnoreActors;
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
 
-	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
+		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+	}
+}
 
-	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+void ATrollCharacter::ServerInteract_Implementation()
+{
+	Interact();
+}
+
+bool ATrollCharacter::ServerInteract_Validate()
+{
+	return true;
 }

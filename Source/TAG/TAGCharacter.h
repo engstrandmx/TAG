@@ -67,6 +67,11 @@ protected:
 	// End of APawn interface
 	virtual void Interact();
 
+	UFUNCTION(Server, Reliable, WithValidation)
+	virtual void ServerInteract();
+	virtual void ServerInteract_Implementation();
+	virtual bool ServerInteract_Validate();
+
 public:
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 	
@@ -84,13 +89,13 @@ protected:
 	float Health = 100.f;
 
 	UFUNCTION(Server, Reliable, WithValidation)
-	void ServerTakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+	virtual void ServerTakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
 
 	/** Contains the actual implementation of the ServerTakeDamage function */
-	void ServerTakeDamage_Implementation(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+	virtual void ServerTakeDamage_Implementation(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
 
 	/** Validates the client. If the result is false the client will be disconnected */
-	bool ServerTakeDamage_Validate(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+	virtual bool ServerTakeDamage_Validate(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
 
 	UFUNCTION()
 	void OnRep_Health();

@@ -25,6 +25,11 @@ protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	void Interact();
 
+	UFUNCTION(Server, Reliable, WithValidation)
+	virtual void ServerInteract();
+	virtual void ServerInteract_Implementation();
+	virtual bool ServerInteract_Validate();
+
 private:
 	UPROPERTY(EditAnywhere, Category = Components)
 	USphereComponent* InteractShape;

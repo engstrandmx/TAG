@@ -13,6 +13,9 @@ AGnomeCharacter::AGnomeCharacter() {
 	GoldMesh = CreateDefaultSubobject<UStaticMeshComponent>(FName("Gold Object"));
 	GoldMesh->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 
+	bReplicates = true;
+
+
 	CarryMovementSpeed = 150;
 }
 
@@ -44,22 +47,33 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 	//if (DamageCauser->IsA(ATrollCharacter::StaticClass())) {
 		//UE_LOG(LogTemp, Warning, TEXT("Damage from troll received"));
 
-	//Null check, in case actor data is not sent when damage is dealt
-	if (DamageCauser) {
-		FVector ForceVector = (GetActorLocation() + FVector(0, 0, 40)) - DamageCauser->GetActorLocation();
-		ForceVector.Normalize();
-
-		LaunchCharacter(ForceVector * 1200.f, true, false);
+	if (Role < ROLE_Authority) {
+		ServerTakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
 	}
+	else {
+		if (DamageCauser) {
+			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 40)) - DamageCauser->GetActorLocation();
+			ForceVector.Normalize();
+
+			LaunchCharacter(ForceVector * 1200.f, true, false);
+		}
 		Health -= Damage;
 
-	if (Health <= 0) {
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DeathEmitter, GetTransform());
+		if (Health <= 0) {
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DeathEmitter, GetTransform());
 
-		ResetPlayer();
+			ResetPlayer();
+		}
 	}
 
+	//Null check, in case actor data is not sent when damage is dealt
 	return Health;
+}
+
+void AGnomeCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
 }
 
 void AGnomeCharacter::ResetPlayer()
@@ -68,21 +82,6 @@ void AGnomeCharacter::ResetPlayer()
 
 	ServerResetPlayer(Controller);
 }
-/*
-void AGnomeCharacter::ServerResetPlayer(AController* InController) {
-	GetWorld()->GetAuthGameMode()->RestartPlayer(InController);
-}
-
-
-bool AGnomeCharacter::ServerResetPlayer_Validate(AController* InController) {
-	//TODO: Check if call is legit
-	return true;
-}
-
-void AGnomeCharacter::ServerResetPlayer_Implementation(AController* InController)
-{
-}
-*/
 
 void AGnomeCharacter::PickupGold()
 {
