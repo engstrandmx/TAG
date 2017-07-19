@@ -23,9 +23,30 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 {
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
+	PlayerInputComponent->BindAction("Interact", IE_Released, this, &ATrollCharacter::StopInteract);
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void ATrollCharacter::StopInteract() {
+
+	if (Role < ROLE_Authority) {
+		ServerStopInteract();
+	}
+	else {
+		bIsPunching = false;
+	}
+}
+
+void ATrollCharacter::ServerStopInteract_Implementation()
+{
+	StopInteract();
+}
+
+bool ATrollCharacter::ServerStopInteract_Validate()
+{
+	return true;
 }
 
 void ATrollCharacter::Interact()
@@ -34,13 +55,27 @@ void ATrollCharacter::Interact()
 		ServerInteract();
 	}
 	else {
-		TSubclassOf <class UDamageType> DamageTypeClass;
-		const TArray<AActor*> IgnoreActors;
+		bPunchTimerStarted = true;
+		bIsPunching = true;
 
-		SimulateInteractFX();
+		if (bPunchTimerStarted) {
+			FTimerHandle TimerHandle;
+			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this , &ATrollCharacter::DelayedInteract, 0.5f, false, 0);
+		}
 
-		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 	}
+}
+
+void ATrollCharacter::DelayedInteract()
+{
+	SimulateInteractFX();
+
+	TSubclassOf <class UDamageType> DamageTypeClass;
+	const TArray<AActor*> IgnoreActors;
+
+	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+
+	bPunchTimerStarted = false;
 }
 
 void ATrollCharacter::ServerInteract_Implementation()
@@ -51,6 +86,18 @@ void ATrollCharacter::ServerInteract_Implementation()
 bool ATrollCharacter::ServerInteract_Validate()
 {
 	return true;
+}
+
+void ATrollCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ATrollCharacter, bIsPunching);
+}
+
+void ATrollCharacter::OnRep_IsPunching()
+{
+
 }
 
 void ATrollCharacter::SimulateInteractFX_Implementation()
