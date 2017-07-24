@@ -84,6 +84,8 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 protected:
+	UPROPERTY(Transient, Replicated)
+	bool bCanMove;
 
 	UPROPERTY(VisibleAnywhere, Transient, ReplicatedUsing = OnRep_Health, Category = Stats)
 	float Health = 100.f;
@@ -104,6 +106,14 @@ protected:
 	void ServerResetPlayer(AController* InController);
 	void ServerResetPlayer_Implementation(AController* InController);
 	bool ServerResetPlayer_Validate(AController* InController);
+
+	UFUNCTION()
+	void DelayedRestart();
+	
+	UFUNCTION(Reliable, NetMulticast)
+	void SetMeshVisible(bool isTrue);
+	FORCEINLINE void SetMeshVisible_Implementation(bool isTrue) { GetMesh()->SetVisibility(isTrue); }
+
 
 };
 

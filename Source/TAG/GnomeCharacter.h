@@ -32,9 +32,12 @@ public:
 	
 private:
 
-	UFUNCTION(Reliable, NetMulticast)
-	void SimulateDeathFX();
-	void SimulateDeathFX_Implementation();
+	UPROPERTY(EditAnywhere, Category = Stats)
+	float LaunchForce = 1200.f;
+
+	UFUNCTION(Reliable, NetMulticast )
+	void SimulateDeathFX(FVector ForceVector);
+	void SimulateDeathFX_Implementation(FVector ForceVector);
 
 
 	UPROPERTY(EditAnywhere, Category = Components)

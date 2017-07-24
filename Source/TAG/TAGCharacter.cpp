@@ -43,7 +43,7 @@ ATAGCharacter::ATAGCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
-
+	bCanMove = true;
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -135,7 +135,9 @@ void ATAGCharacter::OnResetVR()
 
 void ATAGCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
 {
+	if (bCanMove) {
 		Jump();
+	}
 }
 
 void ATAGCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
@@ -157,7 +159,7 @@ void ATAGCharacter::LookUpAtRate(float Rate)
 
 void ATAGCharacter::MoveForward(float Value)
 {
-	if ((Controller != NULL) && (Value != 0.0f))
+	if ((Controller != NULL) && (Value != 0.0f) && bCanMove)
 	{
 		// find out which way is forward
 		const FRotator Rotation = Controller->GetControlRotation();
@@ -171,7 +173,7 @@ void ATAGCharacter::MoveForward(float Value)
 
 void ATAGCharacter::MoveRight(float Value)
 {
-	if ( (Controller != NULL) && (Value != 0.0f) )
+	if ( (Controller != NULL) && (Value != 0.0f) && bCanMove)
 	{
 		// find out which way is right
 		const FRotator Rotation = Controller->GetControlRotation();
@@ -184,13 +186,23 @@ void ATAGCharacter::MoveRight(float Value)
 	}
 }
 
-void ATAGCharacter::ServerResetPlayer_Implementation(AController* InController) {
-	GetWorld()->GetAuthGameMode()->RestartPlayer(InController);
+void ATAGCharacter::ServerResetPlayer_Implementation(AController* InController) {	
+
+	//SetMeshVisible(false);
+	bCanMove = false;
+
+	FTimerHandle TimerHandle;
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ATAGCharacter::DelayedRestart, 1.3f, false, 2.f);
+
 }
 
 
 bool ATAGCharacter::ServerResetPlayer_Validate(AController* InController) {
 	//TODO: Check if call is legit
 	return true;
+}
+
+void ATAGCharacter::DelayedRestart() {
+	GetWorld()->GetAuthGameMode()->RestartPlayer(Controller);
 }
 

@@ -33,6 +33,8 @@ public:
 
 private:
 
+	AActor* FindPlayerStart_Implementation(AController* Player, const FString& IncomingName) override;
+
 	void SwitchSides();
 	UFUNCTION()
 	void EndRound();

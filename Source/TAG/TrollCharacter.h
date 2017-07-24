@@ -21,7 +21,7 @@ class TAG_API ATrollCharacter : public ATAGCharacter
 	//void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult);
 public:
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Animations")
-		FORCEINLINE bool GetIsPunching() { return bIsPunching || bPunchTimerStarted; }
+		FORCEINLINE bool GetIsPunching() { return bIsPunching; }
 
 	UPROPERTY(EditAnywhere, Transient, ReplicatedUsing = OnRep_IsPunching)
 	bool bIsPunching;
@@ -45,9 +45,19 @@ protected:
 	virtual void ServerInteract_Implementation();
 	virtual bool ServerInteract_Validate();
 
+	UFUNCTION(Server, Reliable, WithValidation)
+	void ServerDealDamage();
+	void ServerDealDamage_Implementation();
+	bool ServerDealDamage_Validate();
+
+	UFUNCTION(BlueprintCallable)
+	void DealDamage();
+
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 private:
+
+	FTimerHandle InteractHandle;
 
 	bool bPunchTimerStarted;
 

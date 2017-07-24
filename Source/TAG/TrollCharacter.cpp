@@ -36,7 +36,9 @@ void ATrollCharacter::StopInteract() {
 	}
 	else {
 		bIsPunching = false;
+		//GetWorld()->GetTimerManager().ClearTimer(InteractHandle);
 	}
+
 }
 
 void ATrollCharacter::ServerStopInteract_Implementation()
@@ -59,8 +61,8 @@ void ATrollCharacter::Interact()
 		bIsPunching = true;
 
 		if (bPunchTimerStarted) {
-			FTimerHandle TimerHandle;
-			GetWorld()->GetTimerManager().SetTimer(TimerHandle, this , &ATrollCharacter::DelayedInteract, 0.5f, false, 0);
+			//GetWorld()->GetTimerManager().SetTimer(InteractHandle, this , &ATrollCharacter::DelayedInteract, 0.5f, true, 0.5f);
+
 		}
 
 	}
@@ -76,6 +78,29 @@ void ATrollCharacter::DelayedInteract()
 	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 
 	bPunchTimerStarted = false;
+}
+
+void ATrollCharacter::ServerDealDamage_Implementation(){
+	DealDamage();
+}
+
+bool ATrollCharacter::ServerDealDamage_Validate() {
+	return true;
+}
+
+void ATrollCharacter::DealDamage() {
+	if (Role < ROLE_Authority) {
+		ServerDealDamage();
+	}
+	else {
+		SimulateInteractFX();
+
+		TSubclassOf <class UDamageType> DamageTypeClass;
+		const TArray<AActor*> IgnoreActors;
+
+		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+	}
+
 }
 
 void ATrollCharacter::ServerInteract_Implementation()

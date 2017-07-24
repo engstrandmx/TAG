@@ -50,13 +50,17 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 100)) - DamageCauser->GetActorLocation();
 			ForceVector.Normalize();
 
-			LaunchCharacter(ForceVector * 1200.f, true, false);
+			LaunchCharacter(ForceVector * LaunchForce, true, false);
 		}
 		Health -= Damage;
 
 		if (Health <= 0) {
-			SimulateDeathFX();
+			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 100)) - DamageCauser->GetActorLocation();
+			ForceVector.Normalize();
+
+			SimulateDeathFX(ForceVector);
 			ResetPlayer();
+
 		}
 	}
 
@@ -67,7 +71,6 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 void AGnomeCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
 }
 
 void AGnomeCharacter::ResetPlayer()
@@ -77,11 +80,14 @@ void AGnomeCharacter::ResetPlayer()
 	ServerResetPlayer(Controller);
 }
 
-void AGnomeCharacter::SimulateDeathFX_Implementation()
+void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)
 {
 	if (DeathEmitter) {
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DeathEmitter, GetTransform());
 	}
+
+	GetMesh()->SetSimulatePhysics(true);
+	GetMesh()->AddImpulse(ForceVector * LaunchForce);
 }
 
 void AGnomeCharacter::PickupGold()
