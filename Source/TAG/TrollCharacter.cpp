@@ -6,7 +6,10 @@ ATrollCharacter::ATrollCharacter() {
 
 	//Create default shape
 	InteractShape = CreateDefaultSubobject<USphereComponent>(FName("Interact Shape"));
-	InteractShape->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+	InteractShape->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform);
+
+	bReplicates = true;
+
 }
 
 /*
@@ -20,17 +23,109 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 {
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
+	PlayerInputComponent->BindAction("Interact", IE_Released, this, &ATrollCharacter::StopInteract);
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
 
+void ATrollCharacter::StopInteract() {
+
+	if (Role < ROLE_Authority) {
+		ServerStopInteract();
+	}
+	else {
+		bIsPunching = false;
+		//GetWorld()->GetTimerManager().ClearTimer(InteractHandle);
+	}
+
+}
+
+void ATrollCharacter::ServerStopInteract_Implementation()
+{
+	StopInteract();
+}
+
+bool ATrollCharacter::ServerStopInteract_Validate()
+{
+	return true;
+}
+
 void ATrollCharacter::Interact()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Troll Interacting"));
+	if (Role < ROLE_Authority) {
+		ServerInteract();
+	}
+	else {
+		bPunchTimerStarted = true;
+		bIsPunching = true;
+
+		if (bPunchTimerStarted) {
+			//GetWorld()->GetTimerManager().SetTimer(InteractHandle, this , &ATrollCharacter::DelayedInteract, 0.5f, true, 0.5f);
+
+		}
+
+	}
+}
+
+void ATrollCharacter::DelayedInteract()
+{
+	SimulateInteractFX();
 
 	TSubclassOf <class UDamageType> DamageTypeClass;
 	const TArray<AActor*> IgnoreActors;
 
-	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+
+	bPunchTimerStarted = false;
+}
+
+void ATrollCharacter::ServerDealDamage_Implementation(){
+	DealDamage();
+}
+
+bool ATrollCharacter::ServerDealDamage_Validate() {
+	return true;
+}
+
+void ATrollCharacter::DealDamage() {
+	if (Role < ROLE_Authority) {
+		ServerDealDamage();
+	}
+	else {
+		SimulateInteractFX();
+
+		TSubclassOf <class UDamageType> DamageTypeClass;
+		const TArray<AActor*> IgnoreActors;
+
+		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+	}
+
+}
+
+void ATrollCharacter::ServerInteract_Implementation()
+{
+	Interact();
+}
+
+bool ATrollCharacter::ServerInteract_Validate()
+{
+	return true;
+}
+
+void ATrollCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ATrollCharacter, bIsPunching);
+}
+
+void ATrollCharacter::OnRep_IsPunching()
+{
+
+}
+
+void ATrollCharacter::SimulateInteractFX_Implementation()
+{
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
 }

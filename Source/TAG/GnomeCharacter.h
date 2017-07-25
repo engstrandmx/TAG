@@ -4,6 +4,7 @@
 
 #include "Engine.h"
 #include "TAGCharacter.h"
+#include "Net/UnrealNetwork.h"
 #include "GnomeCharacter.generated.h"
 
 /**
@@ -22,12 +23,22 @@ public:
 
 	virtual void BeginPlay() override;
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
 	FORCEINLINE float GetMaxHealth() { return MaxHealth; }
 	FORCEINLINE float GetHealth() { return Health; }
 
 	void ResetPlayer();
-
+	
 private:
+
+	UPROPERTY(EditAnywhere, Category = Stats)
+	float LaunchForce = 1200.f;
+
+	UFUNCTION(Reliable, NetMulticast )
+	void SimulateDeathFX(FVector ForceVector);
+	void SimulateDeathFX_Implementation(FVector ForceVector);
+
 
 	UPROPERTY(EditAnywhere, Category = Components)
 	UStaticMeshComponent* GoldMesh;

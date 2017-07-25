@@ -3,6 +3,7 @@
 #pragma once
 
 #include "Engine.h"
+#include "Net/UnrealNetwork.h"
 #include "GameFramework/GameStateBase.h"
 #include "TAGGameState.generated.h"
 
@@ -24,13 +25,28 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "GameState")
 	float GetTimeElapsed();
 
+	void ResetTime();
+	void ResetScore();
+
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
+	FORCEINLINE void SetRoundTime(float Time) { RoundTime = Time; }
 
 private:
-	int32 GoldGathered;
+	UPROPERTY(Transient, Replicated)
 	float TimeElapsed;
+	UPROPERTY(Transient, Replicated)
+	float RoundTime;
+
+	UPROPERTY(Transient, Replicated)
+	int32 GoldGathered;
+
+	UFUNCTION(Server, Reliable, WithValidation)
+	void ServerResetTime();
+	void ServerResetTime_Implementation();
+	bool ServerResetTime_Validate();
 
 protected:
-
-	void BeginPlay() override;
 	void Tick(float DeltaSeconds) override;
+	void BeginPlay() override;
 };
