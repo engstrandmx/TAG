@@ -60,7 +60,6 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 
 			SimulateDeathFX(ForceVector);
 			ResetPlayer();
-
 		}
 	}
 
@@ -88,7 +87,14 @@ void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)
 
 	GetMesh()->SetSimulatePhysics(true);
 	GetMesh()->AddImpulse(ForceVector * LaunchForce);
-}
+
+	GetCameraBoom()->DetachFromParent(true);
+
+	GetCameraBoom()->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepWorldTransform);
+	//GetCameraBoom()->ProbeSize = 1.f;
+	GetCameraBoom()->bDoCollisionTest = false;
+
+}	
 
 void AGnomeCharacter::PickupGold()
 {
