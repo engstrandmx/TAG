@@ -1,4 +1,5 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// F+
++ill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -30,7 +31,18 @@ public:
 
 	void ResetPlayer();
 	
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	FORCEINLINE bool GetInGoldArea() { return bIsInGoldArea; }
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	FORCEINLINE float GetGoldTimeLeft() { return GetWorld()->GetTimerManager().GetTimerRemaining(GoldTimerHandle); }
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	FORCEINLINE float GetGoldTimeMax() { return PickupTime; }
 private:
+
+	FTimerHandle GoldTimerHandle;
+	bool bIsInGoldArea;
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float LaunchForce = 1200.f;
@@ -49,6 +61,9 @@ private:
 	UPROPERTY(EditAnyWhere, Category = Stats)
 	float CarryMovementSpeed;
 	float BaseMovementSpeed;
+
+	UPROPERTY(EditAnyWhere, Category = Stats)
+	float PickupTime = 1.f;
 
 	void PickupGold();
 	void DropGold(bool Score);

@@ -19,12 +19,24 @@ AGnomeCharacter::AGnomeCharacter() {
 
 void AGnomeCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult) {
 
-
 	if (OtherActor->IsA(AGoldPile::StaticClass())) {
-		PickupGold();
+		if (!GetWorld()->GetTimerManager().IsTimerActive(GoldTimerHandle)) {
+			GetWorld()->GetTimerManager().SetTimer(GoldTimerHandle, this, &AGnomeCharacter::PickupGold, 0.f, true, PickupTime);
+		}
+
+		bIsInGoldArea = true;
+
+//		PickupGold();
 	}
 	else if (OtherActor->IsA(ADropOffZone::StaticClass())) {
 		DropGold(true);
+		GetWorld()->GetTimerManager().ClearTimer(GoldTimerHandle);
+		bIsInGoldArea = false;
+	}
+	else
+	{
+		GetWorld()->GetTimerManager().ClearTimer(GoldTimerHandle);
+		bIsInGoldArea = false;
 	}
 };
 
