@@ -20,6 +20,9 @@ public:
 
 	UFUNCTION()
 	void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult);
+	UFUNCTION()
+	void EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
 
 	virtual void BeginPlay() override;
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
@@ -30,7 +33,18 @@ public:
 
 	void ResetPlayer();
 	
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	FORCEINLINE bool GetInGoldArea() { return bIsInGoldArea; }
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	FORCEINLINE float GetGoldTimeLeft() { return GetWorld()->GetTimerManager().GetTimerRemaining(GoldTimerHandle); }
+
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	FORCEINLINE float GetGoldTimeMax() { return PickupTime; }
 private:
+
+	FTimerHandle GoldTimerHandle;
+	bool bIsInGoldArea;
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float LaunchForce = 1200.f;
@@ -49,6 +63,9 @@ private:
 	UPROPERTY(EditAnyWhere, Category = Stats)
 	float CarryMovementSpeed;
 	float BaseMovementSpeed;
+
+	UPROPERTY(EditAnyWhere, Category = Stats)
+	float PickupTime = 1.f;
 
 	void PickupGold();
 	void DropGold(bool Score);

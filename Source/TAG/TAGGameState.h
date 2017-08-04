@@ -33,6 +33,8 @@ public:
 	FORCEINLINE void SetRoundTime(float Time) { RoundTime = Time; }
 
 private:
+	bool bSideA = true;
+
 	UPROPERTY(Transient, Replicated)
 	float TimeElapsed;
 	UPROPERTY(Transient, Replicated)
@@ -40,6 +42,8 @@ private:
 
 	UPROPERTY(Transient, Replicated)
 	int32 GoldGathered;
+	UPROPERTY(Transient, Replicated)
+	int32 GoldGatheredB;
 
 	UFUNCTION(Server, Reliable, WithValidation)
 	void ServerResetTime();
