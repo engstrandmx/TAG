@@ -116,7 +116,7 @@ void ATAGGameMode::SwitchSides()
 
 void ATAGGameMode::EndRound()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Gnomes gathered %f gold!"), TagGameState->GetScore());
+	//UE_LOG(LogTemp, Warning, TEXT("Gnomes gathered %f gold!"), TagGameState->GetScore());
 
 	RestartRound();
 
@@ -129,6 +129,7 @@ void ATAGGameMode::EndRound()
 void ATAGGameMode::RestartRound() {
 	//UGameplayStatics::SetGamePaused(GetWorld(), false);
 
+	TagGameState->bCurrentSideA = !TagGameState->bCurrentSideA;
 	TagGameState->ResetTime();
 	StartRoundTimer();
 	SwitchSides();

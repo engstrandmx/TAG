@@ -18,15 +18,17 @@ class TAG_API ATAGGameState : public AGameStateBase
 public:
 	ATAGGameState();
 
+	UPROPERTY(Transient, Replicated)
+	bool bCurrentSideA = true;
 	void ScoreGold();
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "GameState")
-	int32 GetScore();
+	int32 GetScore(bool SideA);
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "GameState")
 	float GetTimeElapsed();
 
 	void ResetTime();
-	void ResetScore();
+	void ResetScore(bool SideA);
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
@@ -41,7 +43,7 @@ private:
 	float RoundTime;
 
 	UPROPERTY(Transient, Replicated)
-	int32 GoldGathered;
+	int32 GoldGatheredA;
 	UPROPERTY(Transient, Replicated)
 	int32 GoldGatheredB;
 
@@ -49,6 +51,7 @@ private:
 	void ServerResetTime();
 	void ServerResetTime_Implementation();
 	bool ServerResetTime_Validate();
+
 
 protected:
 	void Tick(float DeltaSeconds) override;

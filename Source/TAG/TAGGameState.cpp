@@ -6,18 +6,31 @@
 ATAGGameState::ATAGGameState() {
 	PrimaryActorTick.bCanEverTick = true;
 
-	GoldGathered = 0;
+	GoldGatheredA = 0;
+	GoldGatheredB = 0;
 	TimeElapsed = 0;
 	RoundTime = 0;
 }
 
 void ATAGGameState::ScoreGold()
 {
-	GoldGathered += 1;
+	if (bCurrentSideA) {
+		GoldGatheredA += 1;
+	}
+
+	else {
+		GoldGatheredB += 1;
+	}
+
 }
 
-int32 ATAGGameState::GetScore() {
-	return GoldGathered; 
+int32 ATAGGameState::GetScore(bool SideA) {
+	if (SideA) {
+		return GoldGatheredA;
+	}
+	else {
+		return GoldGatheredB;
+	}
 }
 
 float ATAGGameState::GetTimeElapsed() {
@@ -46,14 +59,20 @@ void ATAGGameState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLif
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME(ATAGGameState, TimeElapsed);
-	DOREPLIFETIME(ATAGGameState, GoldGathered);
+	DOREPLIFETIME(ATAGGameState, GoldGatheredA);
+	DOREPLIFETIME(ATAGGameState, GoldGatheredB);
 	DOREPLIFETIME(ATAGGameState, RoundTime);
-
+	DOREPLIFETIME(ATAGGameState, bCurrentSideA);
 }
 
-void ATAGGameState::ResetScore()
+void ATAGGameState::ResetScore(bool SideA)
 {
-	GoldGathered = 0;
+	if (SideA) {
+		GoldGatheredA = 0;
+	}
+	else {
+		GoldGatheredB = 0;
+	}
 }
 
 void ATAGGameState::Tick(float DeltaSeconds)
