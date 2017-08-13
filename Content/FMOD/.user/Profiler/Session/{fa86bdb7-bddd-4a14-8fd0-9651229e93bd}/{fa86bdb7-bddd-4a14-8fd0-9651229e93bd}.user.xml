@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="ProfilerSession" id="{fa86bdb7-bddd-4a14-8fd0-9651229e93bd}"/>
+    <object class="MasterTrack" id="{ed652d8b-1ad7-4dbd-82d9-3244fe2705cb}"/>
+    <object class="EventAutomatableProperties" id="{cea49aba-1e72-4d5b-b51a-944402909af7}"/>
+    <object class="MarkerTrack" id="{76254aa0-de6f-4cb3-be7b-c8e72e608e70}"/>
+    <object class="Timeline" id="{f3fb8d71-cadf-4c4d-93ef-ec5a82ebba13}">
+        <property name="cursorPosition">
+            <value>22.574503311258276</value>
+        </property>
+        <property name="uiLastRulerScaleRatio">
+            <value>0.024834437086092714</value>
+        </property>
+    </object>
+    <object class="ProfilerTrack" id="{63c37452-6bf0-41e6-9ce8-e38c83ffd727}">
+        <property name="uiAutomationTracksVisible">
+            <value>true</value>
+        </property>
+    </object>
+    <object class="ProfilerTrack" id="{578aa261-f47d-4c6e-9bfd-70f22bc25d7d}"/>
+    <object class="ProfilerTrack" id="{ad58ecc7-a458-4a4a-8db9-0f6df570fabb}"/>
+    <object class="ProfilerTrack" id="{318d28d9-9917-4404-a3c9-a605fbde2509}"/>
+    <object class="ProfilerTrack" id="{f6db7bd3-78eb-4e5b-b135-4d1a96762b6d}"/>
+    <object class="EventMixerMaster" id="{4db96e9b-f817-4f13-ab25-fad941c31d7b}"/>
+    <object class="ProfilerRecordingMarker" id="{78ab27e7-4ccd-4908-8f15-f7c2b6382373}"/>
+    <object class="ProfilerGraph" id="{5b992bc2-9c0c-42d6-acca-7e3f56a7ef87}"/>
+    <object class="ProfilerGraph" id="{0c87e8aa-b896-4ec2-9bf2-87d84e121f08}"/>
+    <object class="ProfilerGraph" id="{b7265e37-be55-4222-9257-e6086f47a45a}"/>
+    <object class="ProfilerGraph" id="{32a35cc5-f392-49ac-b72b-079fb8906bf0}"/>
+    <object class="ProfilerGraph" id="{d4f27486-7249-47b4-a532-f12fa91f8823}"/>
+    <object class="ProfilerGraph" id="{a4894024-0ba3-4af3-a1c7-9e5168c435f8}"/>
+    <object class="MixerBusEffectChain" id="{2707e842-b201-421f-b261-17fb66db4483}"/>
+    <object class="MixerBusPanner" id="{d13a080a-5221-42b7-ae92-48010c7cb4db}"/>
+    <object class="MixerBusFader" id="{a9e61d1c-69e7-4f55-9ec6-3f78e08a6711}"/>
+</objects>

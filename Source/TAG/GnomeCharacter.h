@@ -41,6 +41,18 @@ public:
 
 	UFUNCTION(BlueprintCallable, BlueprintPure)
 	FORCEINLINE float GetGoldTimeMax() { return PickupTime; }
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnGoldPickup();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnDeath();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnHit();
+	//DECLARE_EVENT(AGnomeCharacter, FChangedEvent)
+	//FChangedEvent& OnGoldPickup();
+
 private:
 
 	FTimerHandle GoldTimerHandle;
@@ -69,6 +81,8 @@ private:
 
 	void PickupGold();
 	void DropGold(bool Score);
+
+	FVector InitialLocation;
 
 protected:
 	UPROPERTY(EditAnyWhere, Category = Stats)

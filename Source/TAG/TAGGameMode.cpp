@@ -42,7 +42,13 @@ void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
 
 	PlayerControllers.Add(Cast<ATAGPlayerController>(NewPlayer));
 
-	PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
+	if (bSpawnTypeFlipped) {
+		PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
+
+	}
+	else {
+		PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
+	}
 
 	if (PlayerControllers.Num() != 1) {
 		if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Troll) {
@@ -116,7 +122,7 @@ void ATAGGameMode::SwitchSides()
 
 void ATAGGameMode::EndRound()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Gnomes gathered %f gold!"), TagGameState->GetScore());
+	//UE_LOG(LogTemp, Warning, TEXT("Gnomes gathered %f gold!"), TagGameState->GetScore());
 
 	RestartRound();
 
@@ -129,6 +135,7 @@ void ATAGGameMode::EndRound()
 void ATAGGameMode::RestartRound() {
 	//UGameplayStatics::SetGamePaused(GetWorld(), false);
 
+	TagGameState->bCurrentSideA = !TagGameState->bCurrentSideA;
 	TagGameState->ResetTime();
 	StartRoundTimer();
 	SwitchSides();
