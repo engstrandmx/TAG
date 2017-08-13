@@ -9,7 +9,7 @@ ATrollCharacter::ATrollCharacter() {
 	InteractShape->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform);
 
 	bReplicates = true;
-
+	AttackCount = 0;
 }
 
 /*
@@ -94,12 +94,18 @@ void ATrollCharacter::DealDamage() {
 		ServerDealDamage();
 	}
 	else {
+		AttackCount++;
+
 		SimulateInteractFX();
 
 		TSubclassOf <class UDamageType> DamageTypeClass;
 		const TArray<AActor*> IgnoreActors;
 
 		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+
+		if (AttackCount >= 2) {
+			StopInteract();
+		}
 	}
 
 }

@@ -61,6 +61,8 @@ protected:
 
 private:
 
+	int AttackCount;
+
 	FTimerHandle InteractHandle;
 
 	bool bPunchTimerStarted;
