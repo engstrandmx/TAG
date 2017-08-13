@@ -42,7 +42,13 @@ void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
 
 	PlayerControllers.Add(Cast<ATAGPlayerController>(NewPlayer));
 
-	PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
+	if (bSpawnTypeFlipped) {
+		PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
+
+	}
+	else {
+		PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
+	}
 
 	if (PlayerControllers.Num() != 1) {
 		if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Troll) {

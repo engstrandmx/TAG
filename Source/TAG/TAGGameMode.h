@@ -50,6 +50,8 @@ private:
 	ATAGGameState* TagGameState;
 	TArray<ATAGPlayerController*> PlayerControllers;
 
+	UPROPERTY(EditAnywhere, Category = "Debug")
+	bool bSpawnTypeFlipped = false;
 
 protected:
 	void PostLogin(APlayerController* NewPlayer) override;
