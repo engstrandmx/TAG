@@ -58,12 +58,13 @@ void ATrollCharacter::Interact()
 	}
 	else {
 		bPunchTimerStarted = true;
+
+		if (!bIsPunching) {
+			OnAttack();
+		}
+
 		bIsPunching = true;
 
-		if (bPunchTimerStarted) {
-			//GetWorld()->GetTimerManager().SetTimer(InteractHandle, this , &ATrollCharacter::DelayedInteract, 0.5f, true, 0.5f);
-
-		}
 
 	}
 }
