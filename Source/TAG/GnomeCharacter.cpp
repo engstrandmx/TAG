@@ -6,6 +6,7 @@
 #include "DropOffZone.h"
 #include "TAGGameState.h"
 #include "TAGPlayerState.h"
+#include "TAGPlayerController.h"
 
 AGnomeCharacter::AGnomeCharacter() {
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &AGnomeCharacter::BeginOverlap);
@@ -60,6 +61,8 @@ void AGnomeCharacter::BeginPlay() {
 	BaseMovementSpeed = GetCharacterMovement()->MaxWalkSpeed;
 
 	GoldMesh->SetVisibility(false);
+
+	InitialLocation = GetActorLocation();
 }
 
 float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -76,6 +79,7 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 100)) - DamageCauser->GetActorLocation();
 			ForceVector.Normalize();
 
+			OnHit();
 			LaunchCharacter(ForceVector * LaunchForce, true, false);
 		}
 		Health -= Damage;
@@ -89,7 +93,6 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 		}
 	}
 
-	//Null check, in case actor data is not sent when damage is dealt
 	return Health;
 }
 
@@ -100,10 +103,18 @@ void AGnomeCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
 
 void AGnomeCharacter::ResetPlayer()
 {
+	OnDeath();
+
 	DropGold(false);
 
-	ServerResetPlayer(Controller);
-}
+	if (Controller->IsA(ATAGPlayerController::StaticClass())) {
+		ServerResetPlayer(Controller);
+	}
+	else {
+		Health = MaxHealth;
+		SetActorLocation(InitialLocation);	
+	}	
+} 
 
 void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)
 {
@@ -126,6 +137,8 @@ void AGnomeCharacter::PickupGold()
 {
 	if (!HasGold) {
 		GoldMesh->SetVisibility(true);
+
+		OnGoldPickup();
 
 		HasGold = true;
 		GetCharacterMovement()->MaxWalkSpeed = CarryMovementSpeed;

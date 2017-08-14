@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="Workspace" id="{f5ea953f-728c-4320-aa0d-3a0a2ca77050}">
+        <property name="builtBanksOutputDirectory">
+            <value>../../../Users/Kevin/Documents/Unreal Projects/TAG-master/Content</value>
+        </property>
+        <relationship name="masterEventFolder">
+            <destination>{4b98c584-1b37-4c4a-818f-3db2c7c96147}</destination>
+        </relationship>
+        <relationship name="masterTagFolder">
+            <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
+        </relationship>
+        <relationship name="masterBankFolder">
+            <destination>{eafbcdde-e6db-4a2f-9ff2-273aec4038cb}</destination>
+        </relationship>
+        <relationship name="masterAssetFolder">
+            <destination>{4cf0234a-aea2-4257-9619-110ab2dd4ecd}</destination>
+        </relationship>
+        <relationship name="mixer">
+            <destination>{aefe54f5-752f-4de7-b8b6-c4b1f2c84e2d}</destination>
+        </relationship>
+        <relationship name="platforms">
+            <destination>{4280df02-7529-4c19-bd15-e2fb1d475c68}</destination>
+        </relationship>
+    </object>
+    <object class="Platform" id="{4280df02-7529-4c19-bd15-e2fb1d475c68}">
+        <property name="hardwareType">
+            <value>0</value>
+        </property>
+        <property name="name">
+            <value>Desktop</value>
+        </property>
+        <property name="subDirectory">
+            <value>Desktop</value>
+        </property>
+        <property name="speakerFormat">
+            <value>3</value>
+        </property>
+    </object>
+</objects>
