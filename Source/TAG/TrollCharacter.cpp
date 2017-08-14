@@ -9,7 +9,7 @@ ATrollCharacter::ATrollCharacter() {
 	InteractShape->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform);
 
 	bReplicates = true;
-
+	AttackCount = 0;
 }
 
 /*
@@ -58,12 +58,13 @@ void ATrollCharacter::Interact()
 	}
 	else {
 		bPunchTimerStarted = true;
+
+		if (!bIsPunching) {
+			OnAttack();
+		}
+
 		bIsPunching = true;
 
-		if (bPunchTimerStarted) {
-			//GetWorld()->GetTimerManager().SetTimer(InteractHandle, this , &ATrollCharacter::DelayedInteract, 0.5f, true, 0.5f);
-
-		}
 
 	}
 }
@@ -93,12 +94,18 @@ void ATrollCharacter::DealDamage() {
 		ServerDealDamage();
 	}
 	else {
+		AttackCount++;
+
 		SimulateInteractFX();
 
 		TSubclassOf <class UDamageType> DamageTypeClass;
 		const TArray<AActor*> IgnoreActors;
 
 		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+
+		if (AttackCount >= 2) {
+			StopInteract();
+		}
 	}
 
 }

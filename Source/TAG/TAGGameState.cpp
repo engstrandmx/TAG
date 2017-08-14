@@ -44,6 +44,10 @@ void ATAGGameState::ResetTime()
 	TimeElapsed = 0;
 }
 
+void ATAGGameState::SetTime(float Time) {
+	RoundTime = Time;
+}
+
 void ATAGGameState::ServerResetTime_Implementation()
 {
 	TimeElapsed = 0;
