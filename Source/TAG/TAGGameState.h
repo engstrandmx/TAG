@@ -28,6 +28,7 @@ public:
 	float GetTimeElapsed();
 
 	void ResetTime();
+	void SetTime(float Time);
 	void ResetScore(bool SideA);
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;

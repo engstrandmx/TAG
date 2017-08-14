@@ -55,7 +55,13 @@ protected:
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnAttack();
+
+
 private:
+
+	int AttackCount;
 
 	FTimerHandle InteractHandle;
 

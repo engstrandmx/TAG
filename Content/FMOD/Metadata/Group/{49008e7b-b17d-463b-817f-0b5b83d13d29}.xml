@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="MixerGroup" id="{49008e7b-b17d-463b-817f-0b5b83d13d29}">
+        <property name="name">
+            <value>Troll</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{93dcc799-9892-41c3-81e7-10737c5c4be0}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{5fd6e3a5-72ea-4e3c-9eda-1eb9f85c8353}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{a6c8bf4d-cbc5-4c4a-83ae-0c76eadab233}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{93dcc799-9892-41c3-81e7-10737c5c4be0}">
+        <relationship name="effects">
+            <destination>{532d305b-4e9b-4273-b5db-ff1cbb04cc17}</destination>
+            <destination>{7bb3c0b7-468e-4dda-8c7c-3905ef855506}</destination>
+            <destination>{fdca0e3a-1cbb-455d-883a-935218fdd731}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{5fd6e3a5-72ea-4e3c-9eda-1eb9f85c8353}"/>
+    <object class="ThreeEQEffect" id="{532d305b-4e9b-4273-b5db-ff1cbb04cc17}"/>
+    <object class="MixerSend" id="{7bb3c0b7-468e-4dda-8c7c-3905ef855506}">
+        <property name="inputFormat">
+            <value>2</value>
+        </property>
+        <relationship name="mixerReturn">
+            <destination>{e4f75f00-2ef2-46c5-a5c1-06d6dc3c553c}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusFader" id="{fdca0e3a-1cbb-455d-883a-935218fdd731}"/>
+</objects>
