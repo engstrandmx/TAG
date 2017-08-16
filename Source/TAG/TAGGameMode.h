@@ -78,12 +78,15 @@ private:
 	UPROPERTY(EditAnywhere, Category = GameRules)
 	float RoundSwitchTime;
 
+
 	int TimesSwitchedSides;
 
 	FTimerHandle RoundTimerHandle;
 	FTimerHandle PreGameTimerHandle;
 
 	ATAGGameState* TagGameState;
+
+	UPROPERTY(EditAnywhere, Category = Collections)
 	TArray<ATAGPlayerController*> PlayerControllers;
 
 	UPROPERTY(EditAnywhere, Category = "Debug")
