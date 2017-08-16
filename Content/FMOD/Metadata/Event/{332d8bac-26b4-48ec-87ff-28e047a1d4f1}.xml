@@ -15,7 +15,7 @@
 Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. Varje fotsteg ska spelas klart men ett nytt fotstegsljud kan spelas över det andra.</value>
         </property>
         <property name="outputFormat">
-            <value>1</value>
+            <value>2</value>
         </property>
         <relationship name="folder">
             <destination>{5ce1e8b6-50d8-4d20-ad0d-f7f90391ca03}</destination>
@@ -321,6 +321,9 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <property name="length">
             <value>2</value>
         </property>
+        <relationship name="destination">
+            <destination>{65017958-6244-40a4-a88e-805366ede3d2}</destination>
+        </relationship>
         <relationship name="triggerConditions">
             <destination>{640a3833-8cc6-47b3-a2f2-827d265e0f62}</destination>
         </relationship>
@@ -329,9 +332,6 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
         <relationship name="markerTrack">
             <destination>{d2e6ac2a-d76f-413f-abe8-72950882dfae}</destination>
-        </relationship>
-        <relationship name="destination">
-            <destination>{65017958-6244-40a4-a88e-805366ede3d2}</destination>
         </relationship>
     </object>
     <object class="NamedMarker" id="{01f816d0-dfe0-460b-baba-13ad8afebb07}">
@@ -352,14 +352,14 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <property name="position">
             <value>6</value>
         </property>
+        <relationship name="destination">
+            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
+        </relationship>
         <relationship name="timeline">
             <destination>{05227a52-23a8-4f6f-bedf-9aee57fee97d}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{d2e6ac2a-d76f-413f-abe8-72950882dfae}</destination>
-        </relationship>
-        <relationship name="destination">
-            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
         </relationship>
     </object>
     <object class="NamedMarker" id="{65017958-6244-40a4-a88e-805366ede3d2}">
@@ -425,6 +425,9 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <property name="length">
             <value>2</value>
         </property>
+        <relationship name="destination">
+            <destination>{386ea805-1873-4a88-a183-e0768383aaa2}</destination>
+        </relationship>
         <relationship name="triggerConditions">
             <destination>{24e0a9e0-bfc5-48b3-bcd8-fe778b2db3d6}</destination>
         </relationship>
@@ -434,9 +437,6 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <relationship name="markerTrack">
             <destination>{e9009b9a-b956-425e-a60b-7438caf9b1ba}</destination>
         </relationship>
-        <relationship name="destination">
-            <destination>{386ea805-1873-4a88-a183-e0768383aaa2}</destination>
-        </relationship>
     </object>
     <object class="TransitionRegion" id="{285ad683-dd3d-4e78-a0db-8b15f69126ec}">
         <property name="position">
@@ -445,6 +445,9 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <property name="length">
             <value>2</value>
         </property>
+        <relationship name="destination">
+            <destination>{17b6c461-0c4e-427b-ae89-67e3158928a2}</destination>
+        </relationship>
         <relationship name="triggerConditions">
             <destination>{36d6ee84-9517-4090-aa99-c101bba92174}</destination>
         </relationship>
@@ -454,9 +457,6 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <relationship name="markerTrack">
             <destination>{2a7a19ca-cad5-4c07-89c1-f5a030721c35}</destination>
         </relationship>
-        <relationship name="destination">
-            <destination>{17b6c461-0c4e-427b-ae89-67e3158928a2}</destination>
-        </relationship>
     </object>
     <object class="TransitionRegion" id="{c84bd435-9f7b-4e9c-a786-9f3d3efed4bb}">
         <property name="position">
@@ -465,6 +465,9 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <property name="length">
             <value>2</value>
         </property>
+        <relationship name="destination">
+            <destination>{9e4bee29-0307-484c-8fd5-5d4fae1eaba1}</destination>
+        </relationship>
         <relationship name="triggerConditions">
             <destination>{c4e880ab-f92c-4d20-8d13-de051f88179f}</destination>
         </relationship>
@@ -474,69 +477,67 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <relationship name="markerTrack">
             <destination>{eeaf6126-68f2-4105-8f7b-f1982e8d707a}</destination>
         </relationship>
-        <relationship name="destination">
-            <destination>{9e4bee29-0307-484c-8fd5-5d4fae1eaba1}</destination>
-        </relationship>
     </object>
     <object class="TransitionMarker" id="{34814cb5-5b7b-4de3-be82-9566b6ad99d3}">
         <property name="position">
             <value>3.4000000000000004</value>
         </property>
+        <relationship name="destination">
+            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
+        </relationship>
         <relationship name="timeline">
             <destination>{05227a52-23a8-4f6f-bedf-9aee57fee97d}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{d2e6ac2a-d76f-413f-abe8-72950882dfae}</destination>
-        </relationship>
-        <relationship name="destination">
-            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
         </relationship>
     </object>
     <object class="TransitionMarker" id="{5c4f8d91-5fde-4c20-b5e2-224cfb65bbb5}">
         <property name="position">
             <value>7.8000000000000007</value>
         </property>
+        <relationship name="destination">
+            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
+        </relationship>
         <relationship name="timeline">
             <destination>{05227a52-23a8-4f6f-bedf-9aee57fee97d}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{d2e6ac2a-d76f-413f-abe8-72950882dfae}</destination>
-        </relationship>
-        <relationship name="destination">
-            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
         </relationship>
     </object>
     <object class="TransitionMarker" id="{c5e4a693-1fea-41f4-9681-97c1184f7a4a}">
         <property name="position">
             <value>11.4</value>
         </property>
+        <relationship name="destination">
+            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
+        </relationship>
         <relationship name="timeline">
             <destination>{05227a52-23a8-4f6f-bedf-9aee57fee97d}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{d2e6ac2a-d76f-413f-abe8-72950882dfae}</destination>
         </relationship>
-        <relationship name="destination">
-            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
-        </relationship>
     </object>
     <object class="TransitionMarker" id="{b87cc6bc-2139-4835-8378-8938fdd7720f}">
         <property name="position">
             <value>2.2000000000000002</value>
         </property>
+        <relationship name="destination">
+            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
+        </relationship>
         <relationship name="timeline">
             <destination>{05227a52-23a8-4f6f-bedf-9aee57fee97d}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{2a7a19ca-cad5-4c07-89c1-f5a030721c35}</destination>
         </relationship>
-        <relationship name="destination">
-            <destination>{01f816d0-dfe0-460b-baba-13ad8afebb07}</destination>
-        </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{1294b9c8-b1dc-49a2-b614-1d6ffc6a7c2f}">
         <relationship name="effects">
             <destination>{1279410a-a301-4bba-9d86-7eeb64fc4375}</destination>
+            <destination>{cf6aa4be-062b-43c9-928f-f0113ead7d08}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{5e3ed7ba-d0b8-4e30-933d-98f10fbcde20}"/>
@@ -853,6 +854,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
     </object>
     <object class="MixerBusFader" id="{1279410a-a301-4bba-9d86-7eeb64fc4375}"/>
+    <object class="SpatialiserEffect" id="{cf6aa4be-062b-43c9-928f-f0113ead7d08}"/>
     <object class="MixerBusFader" id="{73d2ff39-a07d-4b65-b7ae-678c0a6f482a}"/>
     <object class="MixerBusFader" id="{276d372f-f1b9-454a-ac7e-2808a262127a}"/>
     <object class="ThreeEQEffect" id="{82c82927-e44f-4c40-bb80-a82d5cf77918}">

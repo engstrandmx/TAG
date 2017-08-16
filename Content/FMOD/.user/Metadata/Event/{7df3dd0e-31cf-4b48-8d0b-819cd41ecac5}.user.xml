@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.09.00">
     <object class="Event" id="{7df3dd0e-31cf-4b48-8d0b-819cd41ecac5}">
-        <relationship name="selectables">
-            <destination>{408965ca-405a-493f-b1d6-04a7fb357790}</destination>
-        </relationship>
         <relationship name="items">
             <destination>{d966fd9c-a3a4-4d7b-a1bb-f9684f19bb63}</destination>
             <destination>{efd2afc2-a5b9-4165-b370-8bf2912e5176}</destination>
             <destination>{32220098-d37f-4a1c-85cf-71b3d2adb5d0}</destination>
+        </relationship>
+        <relationship name="selectables">
+            <destination>{408965ca-405a-493f-b1d6-04a7fb357790}</destination>
         </relationship>
         <relationship name="uiLastParameterSelection">
             <destination>{7754ec78-2a6c-4af5-912b-f745a3f5b93b}</destination>

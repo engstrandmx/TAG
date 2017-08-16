@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.09.00">
     <object class="Event" id="{9de1c79b-df7d-468a-9c0f-5c2603eb74e1}">
         <relationship name="selectables">
-            <destination>{4898109e-f2d4-40eb-83e3-837b69c12667}</destination>
+            <destination>{049321ff-5e61-4478-a6dd-94fea162c9da}</destination>
         </relationship>
         <relationship name="uiLastParameterSelection">
             <destination>{d804aee8-4b69-4100-ad82-a28630d20303}</destination>
@@ -33,7 +33,7 @@
     </object>
     <object class="GameParameter" id="{c9085e3d-724e-4129-ac81-793af9576025}">
         <property name="cursorPosition">
-            <value>2.3399999141693115</value>
+            <value>1.1599999666213989</value>
         </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.0032813781788351109</value>
@@ -124,6 +124,7 @@
     <object class="ParameterCondition" id="{e83884d5-0b08-4338-be53-3fd5053fcc7a}"/>
     <object class="ParameterCondition" id="{35ca26f2-454c-4668-aa3f-a123628d7100}"/>
     <object class="MixerBusFader" id="{907345b8-566a-4dae-876a-d6dd37319a27}"/>
+    <object class="SpatialiserEffect" id="{102fa830-c359-4ba4-a73c-abe03e22a6a8}"/>
     <object class="MixerBusFader" id="{311e3545-7d6d-4296-bbd7-22b40b7a6d60}"/>
     <object class="MixerBusFader" id="{6ddd5bec-f7e1-431e-bcb9-6167b3598445}"/>
     <object class="ThreeEQEffect" id="{a328209f-1223-467d-b8c2-fb953f064b03}"/>

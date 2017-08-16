@@ -5,7 +5,7 @@
             <value>Gnom_take_coins</value>
         </property>
         <property name="outputFormat">
-            <value>1</value>
+            <value>2</value>
         </property>
         <relationship name="folder">
             <destination>{6784800f-e9b3-4b21-bf49-4d98a69e5cf6}</destination>
@@ -157,6 +157,7 @@
     <object class="MixerBusEffectChain" id="{ec331aac-9603-4ee9-8333-343ac94708e5}">
         <relationship name="effects">
             <destination>{d5c7cc17-6e6c-4917-86f5-2593ed695948}</destination>
+            <destination>{2c7f591f-e721-4635-9d80-a2d193e5be27}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{305cc49b-6282-4cf2-9856-c76de426b850}"/>
@@ -245,6 +246,7 @@
     </object>
     <object class="MixerBusPanner" id="{004d8ec0-73e8-40dd-a563-75cc274326d1}"/>
     <object class="MixerBusFader" id="{d5c7cc17-6e6c-4917-86f5-2593ed695948}"/>
+    <object class="SpatialiserEffect" id="{2c7f591f-e721-4635-9d80-a2d193e5be27}"/>
     <object class="MixerBusFader" id="{b271222c-660d-4ce4-840e-a8fa0875deae}"/>
     <object class="ThreeEQEffect" id="{e542e3a8-af54-46b9-901d-659c1701589a}">
         <property name="lowGain">
