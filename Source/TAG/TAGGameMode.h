@@ -22,6 +22,9 @@ public:
 	TSubclassOf<APawn> TrollCharacter;
 	UPROPERTY(EditAnywhere, Category = Characters)
 	TSubclassOf<APawn> GnomeCharacter;
+	UPROPERTY(EditAnywhere, Category = Characters)
+	TSubclassOf<APawn> SpectatorCharacter;
+
 
 	UPROPERTY(EditAnywhere, Category = Characters)
 	FString TrollSpawnTag = "SpawnTroll";
@@ -91,6 +94,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Debug")
 	bool bSpawnTypeFlipped = false;
+	UPROPERTY(EditAnywhere, Category = "Debug")
+	bool bSpawnSpectator = false;
 
 
 protected:

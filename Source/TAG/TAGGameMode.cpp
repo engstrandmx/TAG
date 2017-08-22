@@ -33,17 +33,29 @@ void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
 	if (bSpawnTypeFlipped) {
 		PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
 
+		if (PlayerControllers.Num() != 1) {
+			if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Gnome) {
+				PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
+
+				UE_LOG(LogTemp, Warning, TEXT("Gnome made"));
+			}
+		}
 	}
+
 	else {
 		PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
+	
+		if (PlayerControllers.Num() != 1) {
+			if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Troll) {
+				PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
+
+				UE_LOG(LogTemp, Warning, TEXT("Troll made"));
+			}
+		}
 	}
 
-	if (PlayerControllers.Num() != 1) {
-		if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Troll) {
-			PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
-
-			UE_LOG(LogTemp, Warning, TEXT("Troll made"));
-		}
+	if (bSpawnSpectator) {
+		PlayerControllers.Last()->SetPlayerType(PlayerType::Spectator);
 	}
 
 	Super::PostLogin(NewPlayer);
@@ -78,6 +90,8 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 		break;
 	case Spectator:
 		//TODO: Make spectator implementation
+		SpawnTag = TrollSpawnTag;
+		DefaultPawnClass = SpectatorCharacter;
 		UE_LOG(LogTemp, Warning, TEXT("Spectator should be spawned"));
 		break;
 	}
