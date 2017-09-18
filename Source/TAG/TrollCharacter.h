@@ -10,6 +10,19 @@
 /**
  * 
  */
+
+UENUM(BlueprintType)
+namespace EPlayerState
+{
+	enum State
+	{
+		Mounted			UMETA(DisplayName = "Mounted"),
+		Gnome			UMETA(DisplayName = "Gnome"),
+	};
+}
+
+using namespace EPlayerState;
+
 UCLASS()
 class TAG_API ATrollCharacter : public ATAGCharacter
 {
@@ -21,7 +34,12 @@ class TAG_API ATrollCharacter : public ATAGCharacter
 	//void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult);
 public:
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Animations")
-		FORCEINLINE bool GetIsPunching() { return bIsPunching; }
+	FORCEINLINE bool GetIsPunching() { return bIsPunching; }
+
+	UPROPERTY(EditAnywhere, Category = "Characters")
+	UPawn GnomePawn;
+
+	State CurrentState;
 
 	UPROPERTY(EditAnywhere, Transient, ReplicatedUsing = OnRep_IsPunching)
 	bool bIsPunching;
@@ -73,6 +91,8 @@ private:
 	UFUNCTION(Reliable, NetMulticast)
 	void SimulateInteractFX();
 	void SimulateInteractFX_Implementation();
+
+	void ChangeState(State toState);
 
 	UPROPERTY(EditAnywhere, Category = Components)
 	USphereComponent* InteractShape;

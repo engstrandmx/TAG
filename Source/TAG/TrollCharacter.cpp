@@ -62,10 +62,7 @@ void ATrollCharacter::Interact()
 		if (!bIsPunching) {
 			OnAttack();
 		}
-
 		bIsPunching = true;
-
-
 	}
 }
 
@@ -135,4 +132,9 @@ void ATrollCharacter::OnRep_IsPunching()
 void ATrollCharacter::SimulateInteractFX_Implementation()
 {
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
+}
+
+void ATrollCharacter::ChangeState(State toState) 
+{
+	CurrentState = toState;
 }

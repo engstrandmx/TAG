@@ -5,7 +5,7 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "UObject/ConstructorHelpers.h"
 
-using namespace EPlayerState;
+using namespace EPlayerType;
 
 ATAGGameMode::ATAGGameMode()
 {
@@ -22,7 +22,7 @@ void ATAGGameMode::BeginPlay() {
 
 	TagGameState = GetGameState<ATAGGameState>();
 
-	StartPreGame(PreGameTime);
+	//StartPreGame(PreGameTime);
 }
 
 void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {

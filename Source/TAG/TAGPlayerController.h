@@ -7,7 +7,7 @@
 #include "TAGPlayerController.generated.h"
 
 UENUM(BlueprintType)
-namespace EPlayerState
+namespace EPlayerType
 {
 	enum PlayerType
 	{
@@ -16,6 +16,8 @@ namespace EPlayerState
 		Spectator		UMETA(DisplayName = "Spectator"),
 	};
 }
+
+
 /**
  * 
  */
@@ -25,11 +27,11 @@ class TAG_API ATAGPlayerController : public APlayerController
 	GENERATED_BODY()
 
 public:
-	FORCEINLINE void SetPlayerType(TEnumAsByte<EPlayerState::PlayerType> TypeToSet) { PlayerControllerType = TypeToSet; }
-	FORCEINLINE TEnumAsByte<EPlayerState::PlayerType> GetPlayerType() { return PlayerControllerType; }
+	FORCEINLINE void SetPlayerType(TEnumAsByte<EPlayerType::PlayerType> TypeToSet) { PlayerControllerType = TypeToSet; }
+	FORCEINLINE TEnumAsByte<EPlayerType::PlayerType> GetPlayerType() { return PlayerControllerType; }
 
 private:
 
-	TEnumAsByte<EPlayerState::PlayerType> PlayerControllerType;
+	TEnumAsByte<EPlayerType::PlayerType> PlayerControllerType;
 	
 };
