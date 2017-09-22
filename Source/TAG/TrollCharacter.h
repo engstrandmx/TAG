@@ -37,7 +37,7 @@ public:
 	FORCEINLINE bool GetIsPunching() { return bIsPunching; }
 
 	UPROPERTY(EditAnywhere, Category = "Characters")
-	UPawn GnomePawn;
+	TSubclassOf<APawn> GnomePawn;
 
 	State CurrentState;
 
