@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "TrollCharacter.h"
+#include "GnomeCharacter.h"
 
 ATrollCharacter::ATrollCharacter() {
 
@@ -10,6 +11,19 @@ ATrollCharacter::ATrollCharacter() {
 
 	bReplicates = true;
 	AttackCount = 0;
+}
+
+void ATrollCharacter::MountGnome(AActor* MountingActor, AController* Controller)
+{
+	if (Controller) {
+		Controller->Possess(this);
+	}
+
+	if (MountingActor){
+		MountingActor->Destroy();
+
+	}
+	ChangeState(Mounted);
 }
 
 /*
@@ -25,6 +39,9 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
 	PlayerInputComponent->BindAction("Interact", IE_Released, this, &ATrollCharacter::StopInteract);
 
+	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &ATrollCharacter::ToggleState);
+
+	
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
@@ -137,4 +154,37 @@ void ATrollCharacter::SimulateInteractFX_Implementation()
 void ATrollCharacter::ChangeState(State toState) 
 {
 	CurrentState = toState;
+
+	FActorSpawnParameters SpawnParameters;
+	SpawnParameters.Instigator = this;
+	SpawnParameters.Owner = GetController();
+
+	switch (toState)
+	{
+	case EPlayerState::Mounted:
+		break;
+	case EPlayerState::Gnome:
+		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + GetActorForwardVector() * 500.f, GetActorRotation(), SpawnParameters);
+
+		Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
+		Controller->Possess(Cast<APawn>(SpawnedPawn));
+		break;
+	default:
+		break;
+	}
+}
+
+void ATrollCharacter::ToggleState() {
+	switch (CurrentState)
+	{
+	case EPlayerState::Mounted:
+		ChangeState(Gnome);
+
+		break;
+	case EPlayerState::Gnome:
+		ChangeState(Mounted);
+		break;
+	default:
+		break;
+	}
 }

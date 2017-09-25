@@ -39,6 +39,8 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Characters")
 	TSubclassOf<APawn> GnomePawn;
 
+	void MountGnome(AActor* MountingActor, AController* Controller);
+
 	State CurrentState;
 
 	UPROPERTY(EditAnywhere, Transient, ReplicatedUsing = OnRep_IsPunching)
@@ -79,6 +81,8 @@ protected:
 
 private:
 
+	AActor* SpawnedPawn;
+
 	int AttackCount;
 
 	FTimerHandle InteractHandle;
@@ -93,7 +97,7 @@ private:
 	void SimulateInteractFX_Implementation();
 
 	void ChangeState(State toState);
-
+	void ToggleState();
 	UPROPERTY(EditAnywhere, Category = Components)
 	USphereComponent* InteractShape;
 

@@ -53,7 +53,15 @@ public:
 	//DECLARE_EVENT(AGnomeCharacter, FChangedEvent)
 	//FChangedEvent& OnGoldPickup();
 
+	FORCEINLINE void SetTrollParent(AActor* Actor) { TrollParentActor = Actor; }
+	void MountTroll();
+
+
 private:
+
+	AActor* TrollParentActor;
+
+
 
 	FTimerHandle GoldTimerHandle;
 	bool bIsInGoldArea;
@@ -72,6 +80,10 @@ private:
 	UParticleSystem* DeathEmitter;
 
 	bool HasGold = false;
+
+	UPROPERTY(EditAnywhere, Category = Stats)
+	float MountDistance;
+
 	UPROPERTY(EditAnyWhere, Category = Stats)
 	float CarryMovementSpeed;
 	float BaseMovementSpeed;
@@ -85,6 +97,9 @@ private:
 	FVector InitialLocation;
 
 protected:
+
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
 	UPROPERTY(EditAnyWhere, Category = Stats)
 	float MaxHealth = 100.f;
 

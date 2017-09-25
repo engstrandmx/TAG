@@ -116,6 +116,26 @@ void AGnomeCharacter::ResetPlayer()
 	}	
 } 
 
+void AGnomeCharacter::MountTroll()
+{
+	if (TrollParentActor) {
+		float distance = FVector::Dist(TrollParentActor->GetActorLocation(), GetActorLocation());
+
+		if (distance < MountDistance) {
+			Cast<ATrollCharacter>(TrollParentActor)->MountGnome(this, Controller);
+		}
+	}
+}
+
+void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+{
+	check(PlayerInputComponent);
+	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &AGnomeCharacter::MountTroll);
+
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+}
+
 void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)
 {
 	if (DeathEmitter) {
@@ -125,7 +145,7 @@ void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)
 	GetMesh()->SetSimulatePhysics(true);
 	GetMesh()->AddImpulse(ForceVector * LaunchForce);
 
-	GetCameraBoom()->DetachFromParent(true);
+	GetCameraBoom()->DetachFromComponent(FDetachmentTransformRules::KeepWorldTransform);
 
 	GetCameraBoom()->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepWorldTransform);
 	//GetCameraBoom()->ProbeSize = 1.f;
