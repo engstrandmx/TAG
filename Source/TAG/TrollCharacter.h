@@ -7,10 +7,6 @@
 #include "TAGCharacter.h"
 #include "TrollCharacter.generated.h"
 
-/**
- * 
- */
-
 UENUM(BlueprintType)
 namespace EPlayerState
 {
@@ -37,54 +33,61 @@ public:
 	FORCEINLINE bool GetIsPunching() { return bIsPunching; }
 
 	UPROPERTY(EditAnywhere, Category = "Characters")
-	TSubclassOf<APawn> GnomePawn;
+	TSubclassOf<APawn> GnomePawn; //Pawn to spawn when mounting
 
-	void MountGnome(AActor* MountingActor, AController* Controller);
+	void MountGnome(AActor* MountingActor, AController* Controller); //Called by gnome when mounting
 
-	State CurrentState;
+	State CurrentState; //If actor is mounted/dismounted
 
 	UPROPERTY(EditAnywhere, Transient, ReplicatedUsing = OnRep_IsPunching)
-	bool bIsPunching;
+	bool bIsPunching; //When attack button is held down
 
 protected:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	void StopInteract();
-	void Interact();
+	void StopInteract(); //Stops attack, input function
+	void Interact(); //Starts attack, input function
 
 	UFUNCTION()
 	void DelayedInteract();
 
+	//TODO: remove
 	UFUNCTION(Server, Reliable, WithValidation)
 	virtual void ServerStopInteract();
 	virtual void ServerStopInteract_Implementation();
 	virtual bool ServerStopInteract_Validate();
 
+	//TODO: remove
 	UFUNCTION(Server, Reliable, WithValidation)
 	virtual void ServerInteract();
 	virtual void ServerInteract_Implementation();
 	virtual bool ServerInteract_Validate();
 
+
+	//TODO: remove
 	UFUNCTION(Server, Reliable, WithValidation)
 	void ServerDealDamage();
 	void ServerDealDamage_Implementation();
 	bool ServerDealDamage_Validate();
 
 	UFUNCTION(BlueprintCallable)
-	void DealDamage();
+	void DealDamage(); //Function called the instant damage is to be dealt
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
-	void OnAttack();
+	void OnAttack(); //Called when damage is dealt occurs, BP EVENT
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnMount(); //Called gnome returns to troll, BP EVENT
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnDismount(); //Called when gnome dismounts from troll, BP EVENT
 
 private:
 
-	AActor* SpawnedPawn;
-
-	int AttackCount;
-
+	AActor* SpawnedPawn; //The reference to the gnome spawned when dismounting
+	int AttackCount; //How many attacks have occurred in montage
 	FTimerHandle InteractHandle;
 
 	bool bPunchTimerStarted;
@@ -104,10 +107,13 @@ private:
 	bool EnemyIsOverlapping = false;
 
 	UPROPERTY(EditAnywhere, Category = Stats)
-	float Damage = 10.f;
+	float DismountDistance = 200.f; //How far away the dismounted gnome will appear
 
 	UPROPERTY(EditAnywhere, Category = Stats)
-	float DamageRadius = 100.f;
+	float Damage = 10.f; //Damage dealt during attack
+
+	UPROPERTY(EditAnywhere, Category = Stats)
+	float DamageRadius = 100.f; //Radius of normal attack, used in conjuction with ApplyRadialDamage
 
 	UPROPERTY(EditAnywhere, Category = Components)
 	UParticleSystem* DamageParticles;

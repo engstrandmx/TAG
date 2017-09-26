@@ -21,17 +21,9 @@ void ATrollCharacter::MountGnome(AActor* MountingActor, AController* Controller)
 
 	if (MountingActor){
 		MountingActor->Destroy();
-
 	}
 	ChangeState(Mounted);
 }
-
-/*
-ATrollCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
-{
-
-}
-*/
 
 void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
@@ -41,9 +33,7 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &ATrollCharacter::ToggleState);
 
-	
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
 }
 
 void ATrollCharacter::StopInteract() {
@@ -55,7 +45,6 @@ void ATrollCharacter::StopInteract() {
 		bIsPunching = false;
 		//GetWorld()->GetTimerManager().ClearTimer(InteractHandle);
 	}
-
 }
 
 void ATrollCharacter::ServerStopInteract_Implementation()
@@ -87,10 +76,10 @@ void ATrollCharacter::DelayedInteract()
 {
 	SimulateInteractFX();
 
-	TSubclassOf <class UDamageType> DamageTypeClass;
-	const TArray<AActor*> IgnoreActors;
-
-	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+// 	TSubclassOf <class UDamageType> DamageTypeClass;
+// 	const TArray<AActor*> IgnoreActors;
+// 
+// 	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 
 	bPunchTimerStarted = false;
 }
@@ -112,16 +101,15 @@ void ATrollCharacter::DealDamage() {
 
 		SimulateInteractFX();
 
-		TSubclassOf <class UDamageType> DamageTypeClass;
-		const TArray<AActor*> IgnoreActors;
+// 		TSubclassOf <class UDamageType> DamageTypeClass;
+// 		const TArray<AActor*> IgnoreActors;
 
-		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+		//UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 
 		if (AttackCount >= 2) {
 			StopInteract();
 		}
 	}
-
 }
 
 void ATrollCharacter::ServerInteract_Implementation()
@@ -162,9 +150,12 @@ void ATrollCharacter::ChangeState(State toState)
 	switch (toState)
 	{
 	case EPlayerState::Mounted:
+		OnMount();
+
 		break;
 	case EPlayerState::Gnome:
-		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + GetActorForwardVector() * 500.f, GetActorRotation(), SpawnParameters);
+		OnDismount();
+		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + GetActorForwardVector() * DismountDistance, GetActorRotation(), SpawnParameters);
 
 		Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
 		Controller->Possess(Cast<APawn>(SpawnedPawn));
@@ -179,10 +170,10 @@ void ATrollCharacter::ToggleState() {
 	{
 	case EPlayerState::Mounted:
 		ChangeState(Gnome);
-
 		break;
 	case EPlayerState::Gnome:
 		ChangeState(Mounted);
+
 		break;
 	default:
 		break;
