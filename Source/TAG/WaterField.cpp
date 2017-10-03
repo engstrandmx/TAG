@@ -23,22 +23,41 @@ void AWaterField::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	for (AActor* actor : FloatingActors)
+
+	uint8 Len = FloatingActors.Num();
+	for (uint8 i = 0; i < Len; i++)
 	{
-		if (actor) {
+		if (FloatingActors[i] != NULL) {
+			UE_LOG(LogTemp, Warning, TEXT("OffsetX = %f"), 1.f);
+
+			AActor* actor = FloatingActors[i];
+
 			FVector location = actor->GetActorLocation();
 
-			float realtimeSeconds = UGameplayStatics::GetRealTimeSeconds(GetWorld());
+			if (actor->GetRootComponent()) {
+				location = GetRootComponent()->GetComponentLocation();
+			}
+
+			//float realtimeSeconds = UGameplayStatics::GetRealTimeSeconds(GetWorld());
+
+			FVector offset = FVector(WaveSimMult, -WaveSimMult, WaveSimMult) * FloatSimulationMagnitude;
 			
-			FVector offset = FVector(FMath::Cos(realtimeSeconds), FMath::Cos(realtimeSeconds), FMath::Sin(realtimeSeconds));
-			FVector lastOffset = FVector(FMath::Cos(realtimeSeconds-DeltaTime), FMath::Cos(realtimeSeconds-DeltaTime), FMath::Sin(realtimeSeconds-DeltaTime));
-			
-			//UE_LOG(LogTemp, Warning, TEXT("Offset = %f"), FMath::Sin(realtimeSeconds));
+			actor->SetActorLocation(location + CurrentVector * DeltaTime);
+			actor->SetActorLocation(actor->GetActorLocation() + offset - FloatingLocations[i]);
 
-			actor->SetActorLocation(location + (CurrentVector + (offset - lastOffset) * FloatSimulationMagnitude) * DeltaTime);
-
-
+			FloatingLocations[i] = offset;
 		}
+
+	}
+
+	if (!bPositiveWave) {
+		DeltaTime = -DeltaTime;
+	}
+
+	WaveSimMult += DeltaTime;
+
+	if (WaveSimMult > WaveMagnitude || WaveSimMult < -WaveMagnitude) {
+		bPositiveWave = !bPositiveWave;
 	}
 }
 
@@ -46,6 +65,7 @@ void AWaterField::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor*
 {
 	if (OtherActor->ActorHasTag("Floating")) {
 		FloatingActors.Add(OtherActor);
+		FloatingLocations.Add(FVector(0, 0, 0));
 
 		Cast<UStaticMeshComponent>(OtherComp)->SetSimulatePhysics(false);
 	}
