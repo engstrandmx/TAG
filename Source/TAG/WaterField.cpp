@@ -23,51 +23,64 @@ void AWaterField::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-
 	uint8 Len = FloatingActors.Num();
 	for (uint8 i = 0; i < Len; i++)
 	{
 		if (FloatingActors[i] != NULL) {
-			UE_LOG(LogTemp, Warning, TEXT("OffsetX = %f"), 1.f);
+			
 
 			AActor* actor = FloatingActors[i];
 
 			FVector location = actor->GetActorLocation();
 
 			if (actor->GetRootComponent()) {
-				location = GetRootComponent()->GetComponentLocation();
+				//location = GetRootComponent()->GetComponentLocation();
 			}
 
 			//float realtimeSeconds = UGameplayStatics::GetRealTimeSeconds(GetWorld());
-
-			FVector offset = FVector(WaveSimMult, -WaveSimMult, WaveSimMult) * FloatSimulationMagnitude;
+			FVector multi = FloatSimulationMagnitude;
+			FVector offset = FVector(WaveSimScalar * multi.X, -WaveSimScalar * multi.Y, WaveSimScalar * multi.Z);
 			
 			actor->SetActorLocation(location + CurrentVector * DeltaTime);
 			actor->SetActorLocation(actor->GetActorLocation() + offset - FloatingLocations[i]);
+
+			UE_LOG(LogTemp, Warning, TEXT("Z offset = %f"), (offset).Z);
+
 
 			FloatingLocations[i] = offset;
 		}
 
 	}
 
+	//UE_LOG(LogTemp, Warning, TEXT("WaveSim = %f"), WaveSimScalar);
+
+	float toLerp = WaveMagnitude;
+
 	if (!bPositiveWave) {
-		DeltaTime = -DeltaTime;
+		toLerp = -toLerp;
 	}
 
-	WaveSimMult += DeltaTime;
+	WaveSimAlpha += DeltaTime * WaveSimMult;
 
-	if (WaveSimMult > WaveMagnitude || WaveSimMult < -WaveMagnitude) {
+	WaveSimScalar = FMath::InterpCircularInOut(WaveSimScalar, toLerp, WaveSimAlpha);
+
+	if (WaveSimAlpha > 1) {
+		WaveSimAlpha = 0;
 		bPositiveWave = !bPositiveWave;
 	}
 }
 
 void AWaterField::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
 {
+	//On actor enter check for floating tag, add to array and disable physics
 	if (OtherActor->ActorHasTag("Floating")) {
 		FloatingActors.Add(OtherActor);
 		FloatingLocations.Add(FVector(0, 0, 0));
 
 		Cast<UStaticMeshComponent>(OtherComp)->SetSimulatePhysics(false);
+
+		//Event called here
+		OnActorEnter(OtherActor);
 	}
 }
 
