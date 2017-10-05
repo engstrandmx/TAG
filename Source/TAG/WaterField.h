@@ -37,6 +37,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	UBoxComponent* WaterFieldBox;
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnActorEnter(AActor* EnteringActor);
+
 	UPROPERTY(EditAnywhere, Category = "Configuration")
 	FVector CurrentVector;
 	UPROPERTY(EditAnywhere, Category = "Configuration")
@@ -46,7 +49,10 @@ private:
 
 	//Used to simulate a wave pattern on objects
 	bool bPositiveWave = true;
-	float WaveSimMult = 0;
+	UPROPERTY(EditAnywhere)
+	float WaveSimMult = 1;
+	float WaveSimScalar = 0;
+	float WaveSimAlpha = 0;
 	UPROPERTY(EditAnywhere)
 	float WaveMagnitude = 1;
 };
