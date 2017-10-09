@@ -72,12 +72,14 @@ void AWaterField::Tick(float DeltaTime)
 
 void AWaterField::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
 {
+	UE_LOG(LogTemp, Warning, TEXT("Actor has overlapped"));
+
 	//On actor enter check for floating tag, add to array and disable physics
 	if (OtherActor->ActorHasTag("Floating")) {
 		FloatingActors.Add(OtherActor);
 		FloatingLocations.Add(FVector(0, 0, 0));
 
-		Cast<UStaticMeshComponent>(OtherComp)->SetSimulatePhysics(false);
+		//Physics disabling and the like handled in blueprint
 
 		//Event called here
 		OnActorEnter(OtherActor);
