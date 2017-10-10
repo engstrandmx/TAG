@@ -9,10 +9,6 @@ using namespace EPlayerType;
 
 ATAGGameMode::ATAGGameMode()
 {
-	RoundTime = 300;
-	PreGameTime = 15;
-	RoundSwitchTime = 10;
-	TimesSwitchedSides = 0;
 	// HARDCODED REFERENCES
 
 }
@@ -107,53 +103,6 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 	NewPlayer->Possess(SpawnedPawn);
 }
 
-void ATAGGameMode::SwitchSides()
-{
-	OnSwitchSides();
-	TimesSwitchedSides++;
-
-	for (ATAGPlayerController* player : PlayerControllers)
-	{
-		if (player->GetPlayerType() == Gnome) {
-			player->SetPlayerType(Troll);
-		}
-		else {
-			player->SetPlayerType(Gnome);
-		}
-
-		RestartPlayer(player);
-	}
-}
-
-void ATAGGameMode::EndRound()
-{
-	OnRoundEnd();
-
-	//UE_LOG(LogTemp, Warning, TEXT("Gnomes gathered %f gold!"), TagGameState->GetScore());
-
-	if (TimesSwitchedSides < 1) {
-		RestartRound();
-	}
-	else {
-		EndGame();
-	}
-
-	//FTimerHandle GraceTimeHandle;
-	//GetWorld()->GetTimerManager().SetTimer(GraceTimeHandle, this, &ATAGGameMode::RestartRound, 0.f, false, 5.f);
-
-	//UGameplayStatics::SetGamePaused(GetWorld(), true);
-}
-
-void ATAGGameMode::RestartRound() {
-	//UGameplayStatics::SetGamePaused(GetWorld(), false);
-
-	TagGameState->bCurrentSideA = !TagGameState->bCurrentSideA;
-	TagGameState->ResetTime();
-	
-	StartPreGame(RoundSwitchTime);
-	SwitchSides();
-}
-
 AActor* ATAGGameMode::FindPlayerStart_Implementation(AController* Player, const FString& IncomingName)
 {
 	UWorld* World = GetWorld();
@@ -212,40 +161,4 @@ AActor* ATAGGameMode::FindPlayerStart_Implementation(AController* Player, const 
 	return BestStart;
 }
 
-
-void ATAGGameMode::StartRoundTimer()
-{
-	OnRoundStart();
-
-	//Calls the EndRound function once time is up
-	GetWorld()->GetTimerManager().SetTimer(RoundTimerHandle, this, &ATAGGameMode::EndRound, RoundTime, false);
-}
-void ATAGGameMode::StartPreGame(float Time) {
-	OnPreGameStart();
-
-	GetGameState<ATAGGameState>()->SetRoundTime(PreGameTime);
-	TagGameState->ResetTime();
-
-	GetWorld()->GetTimerManager().SetTimer(PreGameTimerHandle, this, &ATAGGameMode::EndPreGame, PreGameTime, false);
-}
-
-void ATAGGameMode::EndPreGame() {
-	OnPreGameEnd();
-
-	GetGameState<ATAGGameState>()->SetRoundTime(RoundTime);
-	TagGameState->ResetTime();
-
-	StartRoundTimer();
-}
-
-void ATAGGameMode::EndGame() {
-	OnGameEnd();
-
-	for (ATAGPlayerController* player : PlayerControllers)
-	{
-		player->SetPlayerType(Spectator);
-
-		RestartPlayer(player);
-	}
-}
 
