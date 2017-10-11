@@ -44,7 +44,6 @@ void AGnomeCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 	}
 }
 
-
 void AGnomeCharacter::EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) {
 	if (OtherActor->IsA(AGoldPile::StaticClass())) {
 
@@ -53,7 +52,6 @@ void AGnomeCharacter::EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* Ot
 		bIsInGoldArea = false;
 	}
 }
-
 
 void AGnomeCharacter::BeginPlay() {
 	Super::BeginPlay();

@@ -56,12 +56,9 @@ public:
 	FORCEINLINE void SetTrollParent(AActor* Actor) { TrollParentActor = Actor; }
 	void MountTroll();
 
-
 private:
 
 	AActor* TrollParentActor;
-
-
 
 	FTimerHandle GoldTimerHandle;
 	bool bIsInGoldArea;
@@ -72,7 +69,6 @@ private:
 	UFUNCTION(Reliable, NetMulticast )
 	void SimulateDeathFX(FVector ForceVector);
 	void SimulateDeathFX_Implementation(FVector ForceVector);
-
 
 	UPROPERTY(EditAnywhere, Category = Components)
 	UStaticMeshComponent* GoldMesh;

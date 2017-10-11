@@ -25,14 +25,12 @@ public:
 	UPROPERTY(EditAnywhere, Category = Characters)
 	TSubclassOf<APawn> SpectatorCharacter;
 
-
 	UPROPERTY(EditAnywhere, Category = Characters)
 	FString TrollSpawnTag = "SpawnTroll";
 	UPROPERTY(EditAnywhere, Category = Characters)
 	FString GnomeSpawnTag = "SpawnGnome";
 
 	void RestartPlayer(AController* NewPlayer);
-	FORCEINLINE float GetRoundTime() { return RoundTime; }
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 		void OnPreGameStart();
@@ -55,37 +53,9 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 		void OnSwitchSides();
 
-
 private:
 
 	AActor* FindPlayerStart_Implementation(AController* Player, const FString& IncomingName) override;
-
-	void SwitchSides();
-	UFUNCTION()
-	void EndRound();
-	UFUNCTION()
-	void RestartRound();
-	void StartRoundTimer();
-
-	void StartPreGame(float Time);
-	UFUNCTION()
-	void EndPreGame();
-
-	void EndGame();
-
-
-	UPROPERTY(EditAnywhere, Category = GameRules)
-	float RoundTime;
-	UPROPERTY(EditAnywhere, Category = GameRules)
-	float PreGameTime;
-	UPROPERTY(EditAnywhere, Category = GameRules)
-	float RoundSwitchTime;
-
-
-	int TimesSwitchedSides;
-
-	FTimerHandle RoundTimerHandle;
-	FTimerHandle PreGameTimerHandle;
 
 	ATAGGameState* TagGameState;
 
@@ -97,12 +67,10 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Debug")
 	bool bSpawnSpectator = false;
 
-
 protected:
 	void PostLogin(APlayerController* NewPlayer) override;
 
 	void BeginPlay() override;
-
 };
 
 

@@ -42,6 +42,8 @@ public:
 	UPROPERTY(EditAnywhere, Transient, ReplicatedUsing = OnRep_IsPunching)
 	bool bIsPunching; //When attack button is held down
 
+	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+
 protected:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -62,7 +64,6 @@ protected:
 	virtual void ServerInteract();
 	virtual void ServerInteract_Implementation();
 	virtual bool ServerInteract_Validate();
-
 
 	//TODO: remove
 	UFUNCTION(Server, Reliable, WithValidation)
@@ -114,6 +115,12 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float DamageRadius = 100.f; //Radius of normal attack, used in conjuction with ApplyRadialDamage
+
+	UPROPERTY(EditAnywhere, Category = Stats)
+	float CurrentHealth = 100;
+
+	UPROPERTY(EditAnywhere, Category = Stats)
+	float MaxHealth = 100;
 
 	UPROPERTY(EditAnywhere, Category = Components)
 	UParticleSystem* DamageParticles;

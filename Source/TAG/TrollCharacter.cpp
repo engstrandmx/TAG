@@ -25,6 +25,19 @@ void ATrollCharacter::MountGnome(AActor* MountingActor, AController* Controller)
 	ChangeState(Mounted);
 }
 
+float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	Super::TakeDamage(Damage, DamageEvent, EventInstigator, DamageCauser);
+
+	CurrentHealth -= Damage;
+
+	if (CurrentHealth < 0) {
+		ServerResetPlayer(Controller);
+	}
+
+	return CurrentHealth;
+}
+
 void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);
