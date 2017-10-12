@@ -31,7 +31,8 @@ float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 
 	CurrentHealth -= Damage;
 
-	if (CurrentHealth < 0) {
+	if (CurrentHealth <= 0) {
+		OnDeath();
 		ServerResetPlayer(Controller);
 	}
 
@@ -116,8 +117,8 @@ void ATrollCharacter::DealDamage() {
 
 // 		TSubclassOf <class UDamageType> DamageTypeClass;
 // 		const TArray<AActor*> IgnoreActors;
-
-		//UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
+//
+//		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 
 		if (AttackCount >= 2) {
 			StopInteract();

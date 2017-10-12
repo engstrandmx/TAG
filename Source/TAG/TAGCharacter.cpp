@@ -187,13 +187,11 @@ void ATAGCharacter::MoveRight(float Value)
 }
 
 void ATAGCharacter::ServerResetPlayer_Implementation(AController* InController) {	
-
 	//SetMeshVisible(false);
 	bCanMove = false;
 
 	FTimerHandle TimerHandle;
-	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ATAGCharacter::DelayedRestart, 1.3f, false, 2.f);
-
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ATAGCharacter::DelayedRestart, 0.2f, false, 2.f);
 }
 
 
@@ -203,6 +201,7 @@ bool ATAGCharacter::ServerResetPlayer_Validate(AController* InController) {
 }
 
 void ATAGCharacter::DelayedRestart() {
+	OnRespawn();
 	GetWorld()->GetAuthGameMode()->RestartPlayer(Controller);
 }
 
