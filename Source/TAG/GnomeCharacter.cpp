@@ -12,53 +12,21 @@ AGnomeCharacter::AGnomeCharacter() {
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &AGnomeCharacter::BeginOverlap);
 	GetCapsuleComponent()->OnComponentEndOverlap.AddDynamic(this, &AGnomeCharacter::EndOverlap);
 
-	GoldMesh = CreateDefaultSubobject<UStaticMeshComponent>(FName("Gold Object"));
-	GoldMesh->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
-
 	bReplicates = true;
 	CarryMovementSpeed = 150;
 }
 
 
 void AGnomeCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult) {
-
-	if (OtherActor->IsA(AGoldPile::StaticClass())) {
-		if (!GetWorld()->GetTimerManager().IsTimerActive(GoldTimerHandle) && !HasGold) {
-			UE_LOG(LogTemp, Warning, TEXT("Timer started"));
-
-			GetWorld()->GetTimerManager().SetTimer(GoldTimerHandle, this, &AGnomeCharacter::PickupGold, PickupTime);
-		}
-
-		bIsInGoldArea = true;
-
-//		PickupGold();
-	}
-	else if (OtherActor->IsA(ADropOffZone::StaticClass())) {
-		DropGold(true);
-		GetWorld()->GetTimerManager().ClearTimer(GoldTimerHandle);
-		bIsInGoldArea = false;
-	}
-	else
-	{
-		bIsInGoldArea = false;
-	}
 }
 
 void AGnomeCharacter::EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) {
-	if (OtherActor->IsA(AGoldPile::StaticClass())) {
-
-		GetWorld()->GetTimerManager().ClearTimer(GoldTimerHandle);
-
-		bIsInGoldArea = false;
-	}
 }
 
 void AGnomeCharacter::BeginPlay() {
 	Super::BeginPlay();
 
 	BaseMovementSpeed = GetCharacterMovement()->MaxWalkSpeed;
-
-	GoldMesh->SetVisibility(false);
 
 	InitialLocation = GetActorLocation();
 }
@@ -102,8 +70,6 @@ void AGnomeCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
 void AGnomeCharacter::ResetPlayer()
 {
 	OnDeath();
-
-	DropGold(false);
 
 	if (Controller->IsA(ATAGPlayerController::StaticClass())) {
 		ServerResetPlayer(Controller);
@@ -151,30 +117,6 @@ void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)
 
 }	
 
-void AGnomeCharacter::PickupGold()
-{
-	if (!HasGold) {
-		GoldMesh->SetVisibility(true);
 
-		OnGoldPickup();
-
-		HasGold = true;
-		GetCharacterMovement()->MaxWalkSpeed = CarryMovementSpeed;
-	}
-}
-
-void AGnomeCharacter::DropGold(bool Score)
-{
-	if (HasGold) {
-		if (Score) {
-			GetWorld()->GetGameState<ATAGGameState>()->ScoreGold();
-		}
-
-		GetCharacterMovement()->MaxWalkSpeed = BaseMovementSpeed;
-		GoldMesh->SetVisibility(false);
-		HasGold = false;
-	}
-
-}
 
 

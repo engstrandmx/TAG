@@ -33,18 +33,6 @@ public:
 
 	void ResetPlayer();
 	
-	UFUNCTION(BlueprintCallable, BlueprintPure)
-	FORCEINLINE bool GetInGoldArea() { return bIsInGoldArea; }
-
-	UFUNCTION(BlueprintCallable, BlueprintPure)
-	FORCEINLINE float GetGoldTimeLeft() { return GetWorld()->GetTimerManager().GetTimerRemaining(GoldTimerHandle); }
-
-	UFUNCTION(BlueprintCallable, BlueprintPure)
-	FORCEINLINE float GetGoldTimeMax() { return PickupTime; }
-
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
-	void OnGoldPickup();
-
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnDeath();
 
@@ -60,9 +48,6 @@ private:
 
 	AActor* TrollParentActor;
 
-	FTimerHandle GoldTimerHandle;
-	bool bIsInGoldArea;
-
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float LaunchForce = 1200.f;
 
@@ -75,8 +60,6 @@ private:
 	UPROPERTY(EditAnywhere, Category = Components)
 	UParticleSystem* DeathEmitter;
 
-	bool HasGold = false;
-
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float MountDistance;
 
@@ -86,9 +69,6 @@ private:
 
 	UPROPERTY(EditAnyWhere, Category = Stats)
 	float PickupTime = 1.f;
-
-	void PickupGold();
-	void DropGold(bool Score);
 
 	FVector InitialLocation;
 

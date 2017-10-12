@@ -85,6 +85,9 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnDismount(); //Called when gnome dismounts from troll, BP EVENT
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnDeath();  //Called when troll dies
+
 private:
 
 	AActor* SpawnedPawn; //The reference to the gnome spawned when dismounting
