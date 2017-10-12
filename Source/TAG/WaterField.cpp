@@ -76,9 +76,12 @@ void AWaterField::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor*
 
 	//On actor enter check for floating tag, add to array and disable physics
 	if (OtherActor->ActorHasTag("Floating")) {
-		FloatingActors.Add(OtherActor);
-		FloatingLocations.Add(FVector(0, 0, 0));
-
+		if (!FloatingActors.Find(OtherActor)) 
+		{
+			FloatingActors.Add(OtherActor);
+			FloatingLocations.Add(FVector(0, 0, 0));
+		}
+		
 		//Physics disabling and the like handled in blueprint
 
 		//Event called here
