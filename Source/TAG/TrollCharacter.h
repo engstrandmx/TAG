@@ -88,14 +88,9 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnDeath();  //Called when troll dies
 
-	UPROPERTY(BlueprintReadOnly)
-	AActor* SpawnedPawn; //The reference to the gnome spawned when dismounting
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Stats)
-	FVector DismountOffset; //How offset away the dismounted gnome will appear
-
 private:
 
+	AActor* SpawnedPawn; //The reference to the gnome spawned when dismounting
 	int AttackCount; //How many attacks have occurred in montage
 	FTimerHandle InteractHandle;
 
@@ -115,6 +110,8 @@ private:
 
 	bool EnemyIsOverlapping = false;
 
+	UPROPERTY(EditAnywhere, Category = Stats)
+	float DismountDistance = 200.f; //How far away the dismounted gnome will appear
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float Damage = 10.f; //Damage dealt during attack
