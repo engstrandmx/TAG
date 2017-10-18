@@ -161,6 +161,9 @@ void ATrollCharacter::ChangeState(State toState)
 	SpawnParameters.Instigator = this;
 	SpawnParameters.Owner = GetController();
 
+	FQuat rotation = GetActorRotation().Quaternion();
+	FVector offset = rotation * DismountOffset;
+
 	switch (toState)
 	{
 	case EPlayerState::Mounted:
@@ -168,11 +171,12 @@ void ATrollCharacter::ChangeState(State toState)
 
 		break;
 	case EPlayerState::Gnome:
-		OnDismount();
-		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + GetActorForwardVector() * DismountDistance, GetActorRotation(), SpawnParameters);
+		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + offset, GetActorRotation(), SpawnParameters);
 
 		Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
 		Controller->Possess(Cast<APawn>(SpawnedPawn));
+
+		OnDismount();
 		break;
 	default:
 		break;
