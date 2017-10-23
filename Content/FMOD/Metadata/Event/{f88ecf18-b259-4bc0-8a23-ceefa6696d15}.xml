@@ -5,7 +5,7 @@
             <value>Gnom_cooldown_ klar</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{9e3b03f3-c2a5-4355-adb5-4b36ed8b79ff}</destination>
@@ -159,7 +159,6 @@
             <destination>{993505b4-0ddd-4d24-9a07-4848a2e12b75}</destination>
             <destination>{56a8753e-31b1-4191-90dd-1155f08dd342}</destination>
             <destination>{ed0615f5-0531-4450-898d-a01d20e27d71}</destination>
-            <destination>{9c21e414-408e-4632-a774-ddf44fffb82b}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{4dfa053d-e763-4588-bee2-636d85e1a99d}"/>
@@ -202,7 +201,6 @@
         </property>
     </object>
     <object class="ChorusEffect" id="{ed0615f5-0531-4450-898d-a01d20e27d71}"/>
-    <object class="SpatialiserEffect" id="{9c21e414-408e-4632-a774-ddf44fffb82b}"/>
     <object class="AutomationPoint" id="{7017c704-7004-4161-8a10-01d676591ee8}">
         <property name="position">
             <value>0.15000000000000036</value>

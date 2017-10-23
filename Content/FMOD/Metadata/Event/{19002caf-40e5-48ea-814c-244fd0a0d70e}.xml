@@ -5,7 +5,7 @@
             <value>Gnom_ability_invisible</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{9e3b03f3-c2a5-4355-adb5-4b36ed8b79ff}</destination>
@@ -335,11 +335,11 @@
         <property name="length">
             <value>3.9000000000000004</value>
         </property>
-        <relationship name="destination">
-            <destination>{2a906027-f179-4bb3-bc79-70fb79b580e7}</destination>
-        </relationship>
         <relationship name="triggerConditions">
             <destination>{74b4f4fd-5790-48ab-9fdb-0412790b8034}</destination>
+        </relationship>
+        <relationship name="destination">
+            <destination>{2a906027-f179-4bb3-bc79-70fb79b580e7}</destination>
         </relationship>
         <relationship name="timeline">
             <destination>{4b79bfe3-0d51-4932-8d5c-df9989f5ca88}</destination>
@@ -369,11 +369,11 @@
         <property name="length">
             <value>4.6000000000000005</value>
         </property>
-        <relationship name="destination">
-            <destination>{2c6333f8-bbba-4aa7-9e52-8054c398a75b}</destination>
-        </relationship>
         <relationship name="triggerConditions">
             <destination>{0490c1ce-9b2b-4e0c-8238-965d342af27c}</destination>
+        </relationship>
+        <relationship name="destination">
+            <destination>{2c6333f8-bbba-4aa7-9e52-8054c398a75b}</destination>
         </relationship>
         <relationship name="timeline">
             <destination>{4b79bfe3-0d51-4932-8d5c-df9989f5ca88}</destination>
@@ -387,7 +387,6 @@
             <destination>{78ec78cf-02b0-4f0e-bf51-78c734feb02e}</destination>
             <destination>{2464cde3-b3d0-4cc0-a588-8e68314fb5ef}</destination>
             <destination>{d0b9af65-977b-4096-87e2-a742179906a0}</destination>
-            <destination>{b8ae58a7-03db-41c4-aba3-bd555d479002}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{432054fd-f5e6-4f0b-b3fb-a4eff40cb944}"/>
@@ -476,7 +475,6 @@
             <value>27.5</value>
         </property>
     </object>
-    <object class="SpatialiserEffect" id="{b8ae58a7-03db-41c4-aba3-bd555d479002}"/>
     <object class="MixerBusFader" id="{efd36ff2-fc1f-4e0a-bdb5-4d97673a2185}"/>
     <object class="MixerBusFader" id="{f62f80e3-dbad-42ec-b01f-d9eb437fd81f}"/>
     <object class="MixerBusFader" id="{d805a1fd-8ceb-430f-bdea-eb2c7fb77699}"/>

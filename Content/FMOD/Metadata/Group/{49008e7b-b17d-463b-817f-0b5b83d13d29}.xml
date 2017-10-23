@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.09.00">
     <object class="MixerGroup" id="{49008e7b-b17d-463b-817f-0b5b83d13d29}">
+        <property name="volume">
+            <value>-6.20000029</value>
+        </property>
         <property name="name">
             <value>Troll</value>
         </property>
@@ -16,13 +19,21 @@
     </object>
     <object class="MixerBusEffectChain" id="{93dcc799-9892-41c3-81e7-10737c5c4be0}">
         <relationship name="effects">
+            <destination>{2b346026-4618-4543-b9e1-831d69b9996d}</destination>
             <destination>{532d305b-4e9b-4273-b5db-ff1cbb04cc17}</destination>
             <destination>{7bb3c0b7-468e-4dda-8c7c-3905ef855506}</destination>
             <destination>{fdca0e3a-1cbb-455d-883a-935218fdd731}</destination>
-            <destination>{d5768a10-cf61-403b-aad4-9ff7fd381df9}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{5fd6e3a5-72ea-4e3c-9eda-1eb9f85c8353}"/>
+    <object class="MixerSend" id="{2b346026-4618-4543-b9e1-831d69b9996d}">
+        <property name="inputFormat">
+            <value>2</value>
+        </property>
+        <relationship name="mixerReturn">
+            <destination>{2323e87c-ee0b-46d6-b6b2-64ce90351b4a}</destination>
+        </relationship>
+    </object>
     <object class="ThreeEQEffect" id="{532d305b-4e9b-4273-b5db-ff1cbb04cc17}"/>
     <object class="MixerSend" id="{7bb3c0b7-468e-4dda-8c7c-3905ef855506}">
         <property name="inputFormat">
@@ -33,15 +44,4 @@
         </relationship>
     </object>
     <object class="MixerBusFader" id="{fdca0e3a-1cbb-455d-883a-935218fdd731}"/>
-    <object class="MixerSend" id="{d5768a10-cf61-403b-aad4-9ff7fd381df9}">
-        <property name="level">
-            <value>-52</value>
-        </property>
-        <property name="inputFormat">
-            <value>2</value>
-        </property>
-        <relationship name="mixerReturn">
-            <destination>{82b798d4-4b31-43b7-aceb-a289db8059d3}</destination>
-        </relationship>
-    </object>
 </objects>

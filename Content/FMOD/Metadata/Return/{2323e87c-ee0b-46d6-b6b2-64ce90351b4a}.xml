@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="MixerReturn" id="{2323e87c-ee0b-46d6-b6b2-64ce90351b4a}">
+        <property name="name">
+            <value>Reverb_cow_mini_game</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{7e1a52cb-8195-4607-a2b8-e7964e299284}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{92ed3310-0f46-4c65-8819-8262b326dd35}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{a6c8bf4d-cbc5-4c4a-83ae-0c76eadab233}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{7e1a52cb-8195-4607-a2b8-e7964e299284}">
+        <relationship name="effects">
+            <destination>{aa4cfaf2-9051-43b2-92ef-c4aa7d00b033}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{92ed3310-0f46-4c65-8819-8262b326dd35}"/>
+    <object class="MixerBusFader" id="{aa4cfaf2-9051-43b2-92ef-c4aa7d00b033}"/>
+</objects>

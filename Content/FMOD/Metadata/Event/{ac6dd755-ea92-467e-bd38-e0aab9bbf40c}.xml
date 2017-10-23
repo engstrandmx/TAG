@@ -13,7 +13,7 @@
 4= Mud</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{5ce1e8b6-50d8-4d20-ad0d-f7f90391ca03}</destination>
@@ -597,14 +597,14 @@
         <relationship name="destination">
             <destination>{b60bd38e-4ebc-4095-9eda-0530c1c32a4a}</destination>
         </relationship>
-        <relationship name="triggerConditions">
-            <destination>{dcd97f79-c3e3-4dcd-9c52-534c28080487}</destination>
-        </relationship>
         <relationship name="timeline">
             <destination>{87705e4f-1afa-47a0-b49f-1718cb1b4f01}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{51f37c24-0739-40ba-a56f-be12e7c4431d}</destination>
+        </relationship>
+        <relationship name="triggerConditions">
+            <destination>{dcd97f79-c3e3-4dcd-9c52-534c28080487}</destination>
         </relationship>
     </object>
     <object class="TransitionRegion" id="{9dff5636-c204-4178-a8fd-a9a2fef459a2}">
@@ -617,14 +617,14 @@
         <relationship name="destination">
             <destination>{81a918f3-5609-4845-85bc-3aac57adeadc}</destination>
         </relationship>
-        <relationship name="triggerConditions">
-            <destination>{fae2c5c4-ca36-4050-9448-72eb78b8aa0f}</destination>
-        </relationship>
         <relationship name="timeline">
             <destination>{87705e4f-1afa-47a0-b49f-1718cb1b4f01}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{800285fc-1663-4de5-80da-ca594ca1e8bf}</destination>
+        </relationship>
+        <relationship name="triggerConditions">
+            <destination>{fae2c5c4-ca36-4050-9448-72eb78b8aa0f}</destination>
         </relationship>
     </object>
     <object class="TransitionRegion" id="{b42980fb-fdad-4e3e-a5b3-915afb3be7d4}">
@@ -637,14 +637,14 @@
         <relationship name="destination">
             <destination>{9da8b233-5546-465c-a5f5-b6465b993b73}</destination>
         </relationship>
-        <relationship name="triggerConditions">
-            <destination>{4a23cfc7-5386-4595-b684-357e0e99c195}</destination>
-        </relationship>
         <relationship name="timeline">
             <destination>{87705e4f-1afa-47a0-b49f-1718cb1b4f01}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{5ef308b3-ee9a-46d6-9dc0-de10372ad2fd}</destination>
+        </relationship>
+        <relationship name="triggerConditions">
+            <destination>{4a23cfc7-5386-4595-b684-357e0e99c195}</destination>
         </relationship>
     </object>
     <object class="TransitionRegion" id="{3c7ab775-ee5c-4da5-811e-fa55ab61c269}">
@@ -657,14 +657,14 @@
         <relationship name="destination">
             <destination>{7954eea2-0e80-4839-ad01-0bed079eb19b}</destination>
         </relationship>
-        <relationship name="triggerConditions">
-            <destination>{fb8442ed-d360-4191-b723-f756f1b7a45a}</destination>
-        </relationship>
         <relationship name="timeline">
             <destination>{87705e4f-1afa-47a0-b49f-1718cb1b4f01}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{1db2659d-2d9a-43d7-a85d-7483933f9e4a}</destination>
+        </relationship>
+        <relationship name="triggerConditions">
+            <destination>{fb8442ed-d360-4191-b723-f756f1b7a45a}</destination>
         </relationship>
     </object>
     <object class="TransitionMarker" id="{557a6173-9583-4102-b6b7-d550d56e7320}">
@@ -726,7 +726,6 @@
     <object class="MixerBusEffectChain" id="{0fc3a17d-09c8-4863-b4dc-dd2c424f9b1b}">
         <relationship name="effects">
             <destination>{34c6cd90-a1ca-4d6a-abde-4fad031f38ab}</destination>
-            <destination>{3aeb60b0-d5cf-4ec0-a191-b192cf05a6d2}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{79224c00-feba-4846-b8be-27ad0b441d2b}"/>
@@ -1269,7 +1268,6 @@
         </relationship>
     </object>
     <object class="MixerBusFader" id="{34c6cd90-a1ca-4d6a-abde-4fad031f38ab}"/>
-    <object class="SpatialiserEffect" id="{3aeb60b0-d5cf-4ec0-a191-b192cf05a6d2}"/>
     <object class="MixerBusFader" id="{f0b3ad7d-3b53-4183-af26-7b2c19ac41c4}"/>
     <object class="ThreeEQEffect" id="{229f51a6-b5e0-43e5-8ce2-73aee6129eff}">
         <property name="lowGain">

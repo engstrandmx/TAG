@@ -201,6 +201,7 @@ Parameter Time:
             <destination>{ccf3b3b2-6adf-412c-8a43-0ee789164b2f}</destination>
             <destination>{6c91461c-f31c-4301-866c-76f126154d6d}</destination>
             <destination>{067420d6-53b2-4f3e-ac8d-1286ead4dd7d}</destination>
+            <destination>{dfec89f2-c557-404a-b13e-f2a653e1bcef}</destination>
         </relationship>
     </object>
     <object class="GameParameter" id="{b69de02d-84dc-4730-9d7b-4c368ae1d93e}">
@@ -286,9 +287,6 @@ Parameter Time:
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{37067952-0ee6-4283-847e-a3dcee8378c3}">
-        <property name="volume">
-            <value>-10.5</value>
-        </property>
         <property name="name">
             <value>Day</value>
         </property>
@@ -444,6 +442,9 @@ Parameter Time:
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{5b86a114-b16e-4e53-a7dc-4328041ad6ee}">
+        <property name="volume">
+            <value>-10.5</value>
+        </property>
         <property name="name">
             <value>Music_day</value>
         </property>
@@ -665,11 +666,11 @@ Parameter Time:
         <relationship name="markerTrack">
             <destination>{b8779d9d-3684-4a39-9f6f-70acba7020ea}</destination>
         </relationship>
-        <relationship name="destination">
-            <destination>{80ff14cd-05c0-4b7e-ab03-1c9e7205e23b}</destination>
-        </relationship>
         <relationship name="triggerConditions">
             <destination>{6b9b6608-8b80-42b6-947e-30ed36267ee4}</destination>
+        </relationship>
+        <relationship name="destination">
+            <destination>{80ff14cd-05c0-4b7e-ab03-1c9e7205e23b}</destination>
         </relationship>
     </object>
     <object class="TempoMarker" id="{6c91461c-f31c-4301-866c-76f126154d6d}">
@@ -692,6 +693,20 @@ Parameter Time:
         </property>
         <property name="tempo">
             <value>110</value>
+        </property>
+        <relationship name="timeline">
+            <destination>{7754ec78-2a6c-4af5-912b-f745a3f5b93b}</destination>
+        </relationship>
+        <relationship name="markerTrack">
+            <destination>{2832c554-d1cb-426a-a76b-74b3f7c3a38a}</destination>
+        </relationship>
+    </object>
+    <object class="LoopRegion" id="{dfec89f2-c557-404a-b13e-f2a653e1bcef}">
+        <property name="position">
+            <value>11</value>
+        </property>
+        <property name="length">
+            <value>40.447270833333334</value>
         </property>
         <relationship name="timeline">
             <destination>{7754ec78-2a6c-4af5-912b-f745a3f5b93b}</destination>
@@ -741,6 +756,7 @@ Parameter Time:
     <object class="MixerBusEffectChain" id="{1929d168-0374-4dfd-81e9-483c663e6cda}">
         <relationship name="effects">
             <destination>{bc2b5547-a932-4eb0-bb0f-a4edaf8e0746}</destination>
+            <destination>{2224c03e-72a2-487d-a42c-aa135e3ca17f}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{939e720e-0ca7-4991-b9e0-87e8cfe74f88}"/>
@@ -989,6 +1005,14 @@ Parameter Time:
         </property>
     </object>
     <object class="MixerBusFader" id="{bc2b5547-a932-4eb0-bb0f-a4edaf8e0746}"/>
+    <object class="ThreeEQEffect" id="{2224c03e-72a2-487d-a42c-aa135e3ca17f}">
+        <property name="lowGain">
+            <value>-24</value>
+        </property>
+        <property name="highGain">
+            <value>-24</value>
+        </property>
+    </object>
     <object class="AutomationPoint" id="{f2d58af3-c244-4de4-9181-53fc82f31a6d}">
         <property name="position">
             <value>11</value>
@@ -1030,7 +1054,13 @@ Parameter Time:
     <object class="MixerBusFader" id="{e7f5c020-f59a-4bd4-b580-e9fb25bd84a9}"/>
     <object class="ThreeEQEffect" id="{47a5905a-d616-4c3a-992f-8f9bd062f088}">
         <property name="lowGain">
-            <value>-11.5</value>
+            <value>-80</value>
+        </property>
+        <property name="midGain">
+            <value>-16</value>
+        </property>
+        <property name="highGain">
+            <value>-22.5</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{135db6a1-832c-48cf-9f86-8e5f96616c81}">
