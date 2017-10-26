@@ -115,7 +115,6 @@ private:
 
 	bool EnemyIsOverlapping = false;
 
-
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float Damage = 10.f; //Damage dealt during attack
 

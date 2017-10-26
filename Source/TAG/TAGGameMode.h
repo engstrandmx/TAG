@@ -8,7 +8,11 @@
 #include "GameFramework/GameMode.h"
 #include "TAGGameState.h"
 #include "TAGPlayerController.h"
+#include "TrollCharacter.h"
+#include "GnomeCharacter.h"
 #include "TAGGameMode.generated.h"
+
+using namespace EPlayerType;
 
 UCLASS(minimalapi)
 class ATAGGameMode : public AGameModeBase
@@ -17,6 +21,11 @@ class ATAGGameMode : public AGameModeBase
 
 public:
 	ATAGGameMode();
+
+	PlayerType CurrentPlayerType;
+
+	AGnomeCharacter* CurrentGnome;
+	ATrollCharacter* CurrentTroll;
 
 	UPROPERTY(EditAnywhere, Category = Characters)
 	TSubclassOf<APawn> TrollCharacter;
@@ -31,6 +40,9 @@ public:
 	FString GnomeSpawnTag = "SpawnGnome";
 
 	void RestartPlayer(AController* NewPlayer);
+
+	FORCEINLINE void SetCurrentGnome(AGnomeCharacter* Gnome) { CurrentGnome = Gnome; }
+	FORCEINLINE void SetCurrentGnome(ATrollCharacter* Troll) { CurrentTroll = Troll; }
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 		void OnPreGameStart();
@@ -58,7 +70,7 @@ private:
 	AActor* FindPlayerStart_Implementation(AController* Player, const FString& IncomingName) override;
 
 	ATAGGameState* TagGameState;
-
+	
 	UPROPERTY(EditAnywhere, Category = Collections)
 	TArray<ATAGPlayerController*> PlayerControllers;
 

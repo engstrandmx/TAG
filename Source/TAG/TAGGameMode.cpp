@@ -5,7 +5,6 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "UObject/ConstructorHelpers.h"
 
-using namespace EPlayerType;
 
 ATAGGameMode::ATAGGameMode()
 {
@@ -26,42 +25,14 @@ void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
 
 	PlayerControllers.Add(Cast<ATAGPlayerController>(NewPlayer));
 
-	if (bSpawnTypeFlipped) {
-		PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
-
-		if (PlayerControllers.Num() != 1) {
-			if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Gnome) {
-				PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
-
-				UE_LOG(LogTemp, Warning, TEXT("Gnome made"));
-			}
-		}
-	}
-
-	else {
-		PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
-	
-		if (PlayerControllers.Num() != 1) {
-			if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Troll) {
-				PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
-
-				UE_LOG(LogTemp, Warning, TEXT("Troll made"));
-			}
-		}
-	}
-
-	if (bSpawnSpectator) {
-		PlayerControllers.Last()->SetPlayerType(PlayerType::Spectator);
-	}
+	PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
 
 	Super::PostLogin(NewPlayer);
-	
 }
 
 void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Restart Performed"));
-
 
 	if (NewPlayer->GetPawn()) {
 		APawn* OldPawn = NewPlayer->GetPawn();
@@ -73,18 +44,18 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 
 	//Cast to child class and determine type
 	switch (Cast<ATAGPlayerController>(NewPlayer)->GetPlayerType()) {
-	case Gnome:
+	case PlayerType::Gnome:
 		SpawnTag = GnomeSpawnTag;
 		DefaultPawnClass = GnomeCharacter;
 		UE_LOG(LogTemp, Warning, TEXT("Gnome spawned"));
 
 		break;
-	case Troll:
+	case PlayerType::Troll:
 		SpawnTag = TrollSpawnTag;
 		DefaultPawnClass = TrollCharacter;
 		UE_LOG(LogTemp, Warning, TEXT("Troll spawned"));
 		break;
-	case Spectator:
+	case PlayerType::Spectator:
 		//TODO: Make spectator implementation
 		SpawnTag = TrollSpawnTag;
 		DefaultPawnClass = SpectatorCharacter;
@@ -100,6 +71,8 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 
 	//Spawn pawn and possess
 	APawn* SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
+	CurrentTroll = Cast<ATrollCharacter>(SpawnedPawn);
+
 	NewPlayer->Possess(SpawnedPawn);
 }
 
