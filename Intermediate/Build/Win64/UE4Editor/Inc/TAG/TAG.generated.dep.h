@@ -23,14 +23,14 @@
 #ifndef TAG_GnomeCharacter_generated_h
 	#include "GnomeCharacter.h"
 #endif
+#ifndef TAG_TAGPlayerController_generated_h
+	#include "TAGPlayerController.h"
+#endif
 #ifndef TAG_TrollCharacter_generated_h
 	#include "TrollCharacter.h"
 #endif
 #ifndef TAG_TAGGameState_generated_h
 	#include "TAGGameState.h"
-#endif
-#ifndef TAG_TAGPlayerController_generated_h
-	#include "TAGPlayerController.h"
 #endif
 #ifndef TAG_TAGGameMode_generated_h
 	#include "TAGGameMode.h"

@@ -5,19 +5,15 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "UObject/ConstructorHelpers.h"
 
-
 ATAGGameMode::ATAGGameMode()
 {
 	// HARDCODED REFERENCES
-
 }
 
 void ATAGGameMode::BeginPlay() {
 	Super::BeginPlay();
 
 	TagGameState = GetGameState<ATAGGameState>();
-
-	//StartPreGame(PreGameTime);
 }
 
 void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
@@ -42,17 +38,33 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 
 	FString SpawnTag;
 
-	//Cast to child class and determine type
-	switch (Cast<ATAGPlayerController>(NewPlayer)->GetPlayerType()) {
-	case PlayerType::Gnome:
-		SpawnTag = GnomeSpawnTag;
-		DefaultPawnClass = GnomeCharacter;
-		UE_LOG(LogTemp, Warning, TEXT("Gnome spawned"));
+	AActor* StartPos = FindPlayerStart(NewPlayer, SpawnTag);
 
+	if (NewPlayer->StartSpot == StartPos) {
+		StartPos = FindPlayerStart(NewPlayer, SpawnTag);
+	}
+
+	APawn* SpawnedPawn = NULL;
+
+	//Cast to child class and determine type
+	switch (CurrentPlayerType) {
+	case PlayerType::Gnome:
+		DefaultPawnClass = GnomeCharacter;
+
+		SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
+
+		if (CurrentTroll) {
+			Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(CurrentTroll);
+		}
+
+		UE_LOG(LogTemp, Warning, TEXT("Gnome spawned"));
 		break;
 	case PlayerType::Troll:
-		SpawnTag = TrollSpawnTag;
 		DefaultPawnClass = TrollCharacter;
+
+		SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
+		CurrentTroll = Cast<ATrollCharacter>(SpawnedPawn);
+
 		UE_LOG(LogTemp, Warning, TEXT("Troll spawned"));
 		break;
 	case PlayerType::Spectator:
@@ -63,15 +75,9 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 		break;
 	}
 	
-	AActor* StartPos = FindPlayerStart(NewPlayer, SpawnTag);
-
-	if (NewPlayer->StartSpot == StartPos) {
-		StartPos = FindPlayerStart(NewPlayer, SpawnTag);
-	}
 
 	//Spawn pawn and possess
-	APawn* SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
-	CurrentTroll = Cast<ATrollCharacter>(SpawnedPawn);
+
 
 	NewPlayer->Possess(SpawnedPawn);
 }

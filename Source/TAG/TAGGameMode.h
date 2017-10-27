@@ -22,7 +22,7 @@ class ATAGGameMode : public AGameModeBase
 public:
 	ATAGGameMode();
 
-	PlayerType CurrentPlayerType;
+	PlayerType CurrentPlayerType = PlayerType::Troll;
 
 	AGnomeCharacter* CurrentGnome;
 	ATrollCharacter* CurrentTroll;
@@ -42,7 +42,9 @@ public:
 	void RestartPlayer(AController* NewPlayer);
 
 	FORCEINLINE void SetCurrentGnome(AGnomeCharacter* Gnome) { CurrentGnome = Gnome; }
-	FORCEINLINE void SetCurrentGnome(ATrollCharacter* Troll) { CurrentTroll = Troll; }
+	FORCEINLINE void SetCurrentTroll(ATrollCharacter* Troll) { CurrentTroll = Troll; }
+	FORCEINLINE void SetCurrentPlayerType(PlayerType Type) { CurrentPlayerType = Type; }
+
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 		void OnPreGameStart();

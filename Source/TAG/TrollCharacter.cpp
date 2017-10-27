@@ -2,6 +2,7 @@
 
 #include "TrollCharacter.h"
 #include "GnomeCharacter.h"
+#include "TAGGameMode.h"
 
 ATrollCharacter::ATrollCharacter() {
 
@@ -22,7 +23,7 @@ void ATrollCharacter::MountGnome(AActor* MountingActor, AController* Controller)
 	if (MountingActor){
 		MountingActor->Destroy();
 	}
-	ChangeState(Mounted);
+	ChangeState(EPlayerType::Troll);
 }
 
 float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -153,7 +154,7 @@ void ATrollCharacter::SimulateInteractFX_Implementation()
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
 }
 
-void ATrollCharacter::ChangeState(State toState) 
+void ATrollCharacter::ChangeState(PlayerType toState) 
 {
 	CurrentState = toState;
 
@@ -166,31 +167,36 @@ void ATrollCharacter::ChangeState(State toState)
 
 	switch (toState)
 	{
-	case EPlayerState::Mounted:
+	case EPlayerType::Troll:
 		OnMount();
 
 		break;
-	case EPlayerState::Gnome:
+	case EPlayerType::Gnome:
 		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + offset, GetActorRotation(), SpawnParameters);
 
 		Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
 		Controller->Possess(Cast<APawn>(SpawnedPawn));
+
+		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));
 
 		OnDismount();
 		break;
 	default:
 		break;
 	}
+
+	Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(toState);
+
 }
 
 void ATrollCharacter::ToggleState() {
 	switch (CurrentState)
 	{
-	case EPlayerState::Mounted:
-		ChangeState(Gnome);
+	case EPlayerType::Troll:
+		ChangeState(EPlayerType::Gnome);
 		break;
-	case EPlayerState::Gnome:
-		ChangeState(Mounted);
+	case EPlayerType::Gnome:
+		ChangeState(EPlayerType::Troll);
 
 		break;
 	default:

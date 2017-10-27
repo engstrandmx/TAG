@@ -23,7 +23,6 @@ public:
 	UFUNCTION()
 	void EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
-
 	virtual void BeginPlay() override;
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
@@ -38,8 +37,6 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnHit();
-	//DECLARE_EVENT(AGnomeCharacter, FChangedEvent)
-	//FChangedEvent& OnGoldPickup();
 
 	FORCEINLINE void SetTrollParent(AActor* Actor) { TrollParentActor = Actor; }
 	void MountTroll();

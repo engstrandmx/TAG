@@ -29,10 +29,10 @@ void EmptyLinkFunctionForGeneratedCode1TAG() {}
 	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API class UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_APawn_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameStateBase();
-	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerState();
 
@@ -61,7 +61,9 @@ void EmptyLinkFunctionForGeneratedCode1TAG() {}
 	TAG_API class UFunction* Z_Construct_UFunction_AGnomeCharacter_SimulateDeathFX();
 	TAG_API class UClass* Z_Construct_UClass_AGnomeCharacter_NoRegister();
 	TAG_API class UClass* Z_Construct_UClass_AGnomeCharacter();
-	TAG_API class UEnum* Z_Construct_UEnum_TAG_EPlayerState();
+	TAG_API class UEnum* Z_Construct_UEnum_TAG_EPlayerType();
+	TAG_API class UClass* Z_Construct_UClass_ATAGPlayerController_NoRegister();
+	TAG_API class UClass* Z_Construct_UClass_ATAGPlayerController();
 	TAG_API class UFunction* Z_Construct_UFunction_ATrollCharacter_DealDamage();
 	TAG_API class UFunction* Z_Construct_UFunction_ATrollCharacter_DelayedInteract();
 	TAG_API class UFunction* Z_Construct_UFunction_ATrollCharacter_GetIsPunching();
@@ -81,9 +83,6 @@ void EmptyLinkFunctionForGeneratedCode1TAG() {}
 	TAG_API class UFunction* Z_Construct_UFunction_ATAGGameState_ServerResetTime();
 	TAG_API class UClass* Z_Construct_UClass_ATAGGameState_NoRegister();
 	TAG_API class UClass* Z_Construct_UClass_ATAGGameState();
-	TAG_API class UEnum* Z_Construct_UEnum_TAG_EPlayerType();
-	TAG_API class UClass* Z_Construct_UClass_ATAGPlayerController_NoRegister();
-	TAG_API class UClass* Z_Construct_UClass_ATAGPlayerController();
 	TAG_API class UFunction* Z_Construct_UFunction_ATAGGameMode_OnGameEnd();
 	TAG_API class UFunction* Z_Construct_UFunction_ATAGGameMode_OnPreGameEnd();
 	TAG_API class UFunction* Z_Construct_UFunction_ATAGGameMode_OnPreGameStart();
@@ -773,43 +772,84 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	IMPLEMENT_CLASS(AGnomeCharacter, 2049441207);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AGnomeCharacter(Z_Construct_UClass_AGnomeCharacter, &AGnomeCharacter::StaticClass, TEXT("/Script/TAG"), TEXT("AGnomeCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AGnomeCharacter);
-static UEnum* EPlayerState_StaticEnum()
+static UEnum* EPlayerType_StaticEnum()
 {
 	extern TAG_API class UPackage* Z_Construct_UPackage__Script_TAG();
 	static UEnum* Singleton = nullptr;
 	if (!Singleton)
 	{
-		extern TAG_API class UEnum* Z_Construct_UEnum_TAG_EPlayerState();
-		Singleton = GetStaticEnum(Z_Construct_UEnum_TAG_EPlayerState, Z_Construct_UPackage__Script_TAG(), TEXT("EPlayerState"));
+		extern TAG_API class UEnum* Z_Construct_UEnum_TAG_EPlayerType();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_TAG_EPlayerType, Z_Construct_UPackage__Script_TAG(), TEXT("EPlayerType"));
 	}
 	return Singleton;
 }
-static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EPlayerState(EPlayerState_StaticEnum, TEXT("/Script/TAG"), TEXT("EPlayerState"), false, nullptr, nullptr);
-	UEnum* Z_Construct_UEnum_TAG_EPlayerState()
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EPlayerType(EPlayerType_StaticEnum, TEXT("/Script/TAG"), TEXT("EPlayerType"), false, nullptr, nullptr);
+	UEnum* Z_Construct_UEnum_TAG_EPlayerType()
 	{
 		UPackage* Outer=Z_Construct_UPackage__Script_TAG();
-		extern uint32 Get_Z_Construct_UEnum_TAG_EPlayerState_CRC();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EPlayerState"), 0, Get_Z_Construct_UEnum_TAG_EPlayerState_CRC(), false);
+		extern uint32 Get_Z_Construct_UEnum_TAG_EPlayerType_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EPlayerType"), 0, Get_Z_Construct_UEnum_TAG_EPlayerType_CRC(), false);
 		if (!ReturnEnum)
 		{
-			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("EPlayerState"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("EPlayerType"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
 			TArray<TPair<FName, int64>> EnumNames;
-			EnumNames.Emplace(TEXT("EPlayerState::Mounted"), 0);
-			EnumNames.Emplace(TEXT("EPlayerState::Gnome"), 1);
-			EnumNames.Emplace(TEXT("EPlayerState::EPlayerState_MAX"), 2);
+			EnumNames.Emplace(TEXT("EPlayerType::Troll"), 0);
+			EnumNames.Emplace(TEXT("EPlayerType::Gnome"), 1);
+			EnumNames.Emplace(TEXT("EPlayerType::Spectator"), 2);
+			EnumNames.Emplace(TEXT("EPlayerType::EPlayerType_MAX"), 3);
 			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::Namespaced);
-			ReturnEnum->CppType = TEXT("EPlayerState::State");
+			ReturnEnum->CppType = TEXT("EPlayerType::PlayerType");
 #if WITH_METADATA
 			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
 			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
 			MetaData->SetValue(ReturnEnum, TEXT("Gnome.DisplayName"), TEXT("Gnome"));
-			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("TrollCharacter.h"));
-			MetaData->SetValue(ReturnEnum, TEXT("Mounted.DisplayName"), TEXT("Mounted"));
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("TAGPlayerController.h"));
+			MetaData->SetValue(ReturnEnum, TEXT("Spectator.DisplayName"), TEXT("Spectator"));
+			MetaData->SetValue(ReturnEnum, TEXT("Troll.DisplayName"), TEXT("Troll"));
 #endif
 		}
 		return ReturnEnum;
 	}
-	uint32 Get_Z_Construct_UEnum_TAG_EPlayerState_CRC() { return 3040488829U; }
+	uint32 Get_Z_Construct_UEnum_TAG_EPlayerType_CRC() { return 399135819U; }
+	void ATAGPlayerController::StaticRegisterNativesATAGPlayerController()
+	{
+	}
+	UClass* Z_Construct_UClass_ATAGPlayerController_NoRegister()
+	{
+		return ATAGPlayerController::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ATAGPlayerController()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_APlayerController();
+			Z_Construct_UPackage__Script_TAG();
+			OuterClass = ATAGPlayerController::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900284;
+
+
+				OuterClass->ClassConfigName = FName(TEXT("Game"));
+				static TCppClassTypeInfo<TCppClassTypeTraits<ATAGPlayerController> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Rendering Utilities|Transformation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TAGPlayerController.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("TAGPlayerController.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(ATAGPlayerController, 1358098433);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ATAGPlayerController(Z_Construct_UClass_ATAGPlayerController, &ATAGPlayerController::StaticClass, TEXT("/Script/TAG"), TEXT("ATAGPlayerController"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(ATAGPlayerController);
 	static FName NAME_ATrollCharacter_OnAttack = FName(TEXT("OnAttack"));
 	void ATrollCharacter::OnAttack()
 	{
@@ -1307,84 +1347,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	IMPLEMENT_CLASS(ATAGGameState, 1683151599);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATAGGameState(Z_Construct_UClass_ATAGGameState, &ATAGGameState::StaticClass, TEXT("/Script/TAG"), TEXT("ATAGGameState"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATAGGameState);
-static UEnum* EPlayerType_StaticEnum()
-{
-	extern TAG_API class UPackage* Z_Construct_UPackage__Script_TAG();
-	static UEnum* Singleton = nullptr;
-	if (!Singleton)
-	{
-		extern TAG_API class UEnum* Z_Construct_UEnum_TAG_EPlayerType();
-		Singleton = GetStaticEnum(Z_Construct_UEnum_TAG_EPlayerType, Z_Construct_UPackage__Script_TAG(), TEXT("EPlayerType"));
-	}
-	return Singleton;
-}
-static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EPlayerType(EPlayerType_StaticEnum, TEXT("/Script/TAG"), TEXT("EPlayerType"), false, nullptr, nullptr);
-	UEnum* Z_Construct_UEnum_TAG_EPlayerType()
-	{
-		UPackage* Outer=Z_Construct_UPackage__Script_TAG();
-		extern uint32 Get_Z_Construct_UEnum_TAG_EPlayerType_CRC();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EPlayerType"), 0, Get_Z_Construct_UEnum_TAG_EPlayerType_CRC(), false);
-		if (!ReturnEnum)
-		{
-			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("EPlayerType"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
-			TArray<TPair<FName, int64>> EnumNames;
-			EnumNames.Emplace(TEXT("EPlayerType::Troll"), 0);
-			EnumNames.Emplace(TEXT("EPlayerType::Gnome"), 1);
-			EnumNames.Emplace(TEXT("EPlayerType::Spectator"), 2);
-			EnumNames.Emplace(TEXT("EPlayerType::EPlayerType_MAX"), 3);
-			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::Namespaced);
-			ReturnEnum->CppType = TEXT("EPlayerType::PlayerType");
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
-			MetaData->SetValue(ReturnEnum, TEXT("Gnome.DisplayName"), TEXT("Gnome"));
-			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("TAGPlayerController.h"));
-			MetaData->SetValue(ReturnEnum, TEXT("Spectator.DisplayName"), TEXT("Spectator"));
-			MetaData->SetValue(ReturnEnum, TEXT("Troll.DisplayName"), TEXT("Troll"));
-#endif
-		}
-		return ReturnEnum;
-	}
-	uint32 Get_Z_Construct_UEnum_TAG_EPlayerType_CRC() { return 399135819U; }
-	void ATAGPlayerController::StaticRegisterNativesATAGPlayerController()
-	{
-	}
-	UClass* Z_Construct_UClass_ATAGPlayerController_NoRegister()
-	{
-		return ATAGPlayerController::StaticClass();
-	}
-	UClass* Z_Construct_UClass_ATAGPlayerController()
-	{
-		static UClass* OuterClass = NULL;
-		if (!OuterClass)
-		{
-			Z_Construct_UClass_APlayerController();
-			Z_Construct_UPackage__Script_TAG();
-			OuterClass = ATAGPlayerController::StaticClass();
-			if (!(OuterClass->ClassFlags & CLASS_Constructed))
-			{
-				UObjectForceRegistration(OuterClass);
-				OuterClass->ClassFlags |= 0x20900284;
-
-
-				OuterClass->ClassConfigName = FName(TEXT("Game"));
-				static TCppClassTypeInfo<TCppClassTypeTraits<ATAGPlayerController> > StaticCppClassTypeInfo;
-				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
-				OuterClass->StaticLink();
-#if WITH_METADATA
-				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Rendering Utilities|Transformation"));
-				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TAGPlayerController.h"));
-				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("TAGPlayerController.h"));
-#endif
-			}
-		}
-		check(OuterClass->GetClass());
-		return OuterClass;
-	}
-	IMPLEMENT_CLASS(ATAGPlayerController, 1358098433);
-	static FCompiledInDefer Z_CompiledInDefer_UClass_ATAGPlayerController(Z_Construct_UClass_ATAGPlayerController, &ATAGPlayerController::StaticClass, TEXT("/Script/TAG"), TEXT("ATAGPlayerController"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(ATAGPlayerController);
 	static FName NAME_ATAGGameMode_OnGameEnd = FName(TEXT("OnGameEnd"));
 	void ATAGGameMode::OnGameEnd()
 	{
@@ -1871,8 +1833,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/TAG")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xEA9A089A;
-			Guid.B = 0x7D23FD79;
+			Guid.A = 0x1EEB5C23;
+			Guid.B = 0x33127FC1;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

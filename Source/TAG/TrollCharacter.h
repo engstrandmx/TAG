@@ -5,19 +5,10 @@
 #include "Engine.h"
 #include "GnomeCharacter.h"
 #include "TAGCharacter.h"
+#include "TAGPlayerController.h"
 #include "TrollCharacter.generated.h"
 
-UENUM(BlueprintType)
-namespace EPlayerState
-{
-	enum State
-	{
-		Mounted			UMETA(DisplayName = "Mounted"),
-		Gnome			UMETA(DisplayName = "Gnome"),
-	};
-}
-
-using namespace EPlayerState;
+using namespace EPlayerType;
 
 UCLASS()
 class TAG_API ATrollCharacter : public ATAGCharacter
@@ -37,7 +28,7 @@ public:
 
 	void MountGnome(AActor* MountingActor, AController* Controller); //Called by gnome when mounting
 
-	State CurrentState; //If actor is mounted/dismounted
+	PlayerType CurrentState; //If actor is mounted/dismounted
 
 	UPROPERTY(EditAnywhere, Transient, ReplicatedUsing = OnRep_IsPunching)
 	bool bIsPunching; //When attack button is held down
@@ -108,7 +99,7 @@ private:
 	void SimulateInteractFX();
 	void SimulateInteractFX_Implementation();
 
-	void ChangeState(State toState);
+	void ChangeState(PlayerType toState);
 	void ToggleState();
 	UPROPERTY(EditAnywhere, Category = Components)
 	USphereComponent* InteractShape;
