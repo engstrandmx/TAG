@@ -1,136 +1,157 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<None Include="..\..\TAG.uproject" />
-		<Filter Include="Source">
-			<UniqueIdentifier>{A2DD3FEE-32E0-4897-9E82-121EDE88F790}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\TAG.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<None Include="..\..\Source\TAGEditor.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<Filter Include="Config">
-			<UniqueIdentifier>{EE8E0242-91EE-4C79-AB9A-7B6B1C380CA5}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Config\DefaultEditor.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEngine.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultGame.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultInput.ini">
-			<Filter>Config</Filter>
-		</None >
-		<Filter Include="Source\TAG">
-			<UniqueIdentifier>{9FB61D7B-C9ED-477A-9239-E4BBCEB200E1}</UniqueIdentifier>
-		</Filter>
-		<ClCompile Include="..\..\Source\TAG\CowCharacter.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\CowCharacter.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\DropOffZone.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\DropOffZone.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\GnomeCharacter.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\GnomeCharacter.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\GoldPile.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\GoldPile.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\MultiplayerGameMode.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\MultiplayerGameMode.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<None Include="..\..\Source\TAG\TAG.Build.cs">
-			<Filter>Source\TAG</Filter>
-		</None >
-		<ClCompile Include="..\..\Source\TAG\TAG.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\TAG.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\TAGCharacter.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\TAGCharacter.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\TAGGameMode.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\TAGGameMode.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\TAGGameState.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\TAGGameState.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\TAGPlayerController.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\TAGPlayerController.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\TAGPlayerState.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\TAGPlayerState.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\TestActor.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\TestActor.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\Textures.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\Textures.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\Trigger.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\Trigger.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\TrollCharacter.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\TrollCharacter.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TAG\WaterField.cpp">
-			<Filter>Source\TAG</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TAG\WaterField.h">
-			<Filter>Source\TAG</Filter>
-		</ClInclude >
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\TAG.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{EF94E643-1AA2-4B25-8505-84D2D3E50B41}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TAG.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TAGEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{71910313-FC67-4FBA-B8C5-A1BEC6D92D19}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TAG">
+      <UniqueIdentifier>{A2FCFB3F-38F4-43F2-AB10-3924D93F8930}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TAG\ChildTrigger.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\ChildTrigger.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\CowCharacter.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\CowCharacter.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\DropOffZone.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\DropOffZone.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\GnomeCharacter.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\GnomeCharacter.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\GoldPile.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\GoldPile.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\MultiplayerGameMode.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\MultiplayerGameMode.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\TAG\TAG.Build.cs">
+      <Filter>Source\TAG</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TAG\TAG.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\TAG.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\TAGCharacter.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\TAGCharacter.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\TAGGameMode.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\TAGGameMode.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\TAGGameState.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\TAGGameState.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\TAGPlayerController.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\TAGPlayerController.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\TAGPlayerState.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\TAGPlayerState.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\TestActor.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\TestActor.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\Textures.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\Textures.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\Trigger.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\Trigger.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\TriggerSceneComponent.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\TriggerSceneComponent.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\TrollCharacter.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\TrollCharacter.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TAG\WaterField.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TAG\WaterField.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\TAG\TriggerActorComponent.h">
+      <Filter>Source\TAG</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\TAG\TriggerActorComponent.cpp">
+      <Filter>Source\TAG</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

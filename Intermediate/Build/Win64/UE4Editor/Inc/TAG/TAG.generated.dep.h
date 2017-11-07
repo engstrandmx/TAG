@@ -41,8 +41,17 @@
 #ifndef TAG_TestActor_generated_h
 	#include "TestActor.h"
 #endif
+#ifndef TAG_TriggerActorComponent_generated_h
+	#include "TriggerActorComponent.h"
+#endif
 #ifndef TAG_Trigger_generated_h
 	#include "Trigger.h"
+#endif
+#ifndef TAG_ChildTrigger_generated_h
+	#include "ChildTrigger.h"
+#endif
+#ifndef TAG_TriggerSceneComponent_generated_h
+	#include "TriggerSceneComponent.h"
 #endif
 #ifndef TAG_WaterField_generated_h
 	#include "WaterField.h"

@@ -15,6 +15,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define TAG_Source_TAG_Trigger_h_12_RPC_WRAPPERS
 #define TAG_Source_TAG_Trigger_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define TAG_Source_TAG_Trigger_h_12_EVENT_PARMS
+#define TAG_Source_TAG_Trigger_h_12_CALLBACK_WRAPPERS
 #define TAG_Source_TAG_Trigger_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATrigger(); \
@@ -60,15 +62,21 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATrigger); \
 
 
 #define TAG_Source_TAG_Trigger_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__bTriggerOnce() { return STRUCT_OFFSET(ATrigger, bTriggerOnce); }
+	FORCEINLINE static uint32 __PPO__bTriggered() { return STRUCT_OFFSET(ATrigger, bTriggered); } \
+	FORCEINLINE static uint32 __PPO__bTriggerOnce() { return STRUCT_OFFSET(ATrigger, bTriggerOnce); } \
+	FORCEINLINE static uint32 __PPO__TimeToTrigger() { return STRUCT_OFFSET(ATrigger, TimeToTrigger); }
 
 
-#define TAG_Source_TAG_Trigger_h_9_PROLOG
+#define TAG_Source_TAG_Trigger_h_9_PROLOG \
+	TAG_Source_TAG_Trigger_h_12_EVENT_PARMS
+
+
 #define TAG_Source_TAG_Trigger_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	TAG_Source_TAG_Trigger_h_12_PRIVATE_PROPERTY_OFFSET \
 	TAG_Source_TAG_Trigger_h_12_RPC_WRAPPERS \
+	TAG_Source_TAG_Trigger_h_12_CALLBACK_WRAPPERS \
 	TAG_Source_TAG_Trigger_h_12_INCLASS \
 	TAG_Source_TAG_Trigger_h_12_STANDARD_CONSTRUCTORS \
 public: \
@@ -80,6 +88,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	TAG_Source_TAG_Trigger_h_12_PRIVATE_PROPERTY_OFFSET \
 	TAG_Source_TAG_Trigger_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	TAG_Source_TAG_Trigger_h_12_CALLBACK_WRAPPERS \
 	TAG_Source_TAG_Trigger_h_12_INCLASS_NO_PURE_DECLS \
 	TAG_Source_TAG_Trigger_h_12_ENHANCED_CONSTRUCTORS \
 private: \

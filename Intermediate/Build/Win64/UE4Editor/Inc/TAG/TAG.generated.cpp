@@ -35,6 +35,7 @@ void EmptyLinkFunctionForGeneratedCode1TAG() {}
 	ENGINE_API class UClass* Z_Construct_UClass_AGameStateBase();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 	ENGINE_API class UClass* Z_Construct_UClass_APlayerState();
+	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 
 	TAG_API class UEnum* Z_Construct_UEnum_TAG_EAiState();
 	TAG_API class UClass* Z_Construct_UClass_ACowCharacter_NoRegister();
@@ -96,8 +97,20 @@ void EmptyLinkFunctionForGeneratedCode1TAG() {}
 	TAG_API class UClass* Z_Construct_UClass_ATAGPlayerState();
 	TAG_API class UClass* Z_Construct_UClass_ATestActor_NoRegister();
 	TAG_API class UClass* Z_Construct_UClass_ATestActor();
+	TAG_API class UFunction* Z_Construct_UDelegateFunction_UTriggerActorComponent_OnTriggerSignature__DelegateSignature();
+	TAG_API class UClass* Z_Construct_UClass_UTriggerActorComponent_NoRegister();
+	TAG_API class UClass* Z_Construct_UClass_UTriggerActorComponent();
+	TAG_API class UFunction* Z_Construct_UFunction_ATrigger_BeginOverlap();
+	TAG_API class UFunction* Z_Construct_UFunction_ATrigger_EndOverlap();
+	TAG_API class UFunction* Z_Construct_UFunction_ATrigger_OnTrigger();
+	TAG_API class UFunction* Z_Construct_UFunction_ATrigger_TriggerEvent();
 	TAG_API class UClass* Z_Construct_UClass_ATrigger_NoRegister();
 	TAG_API class UClass* Z_Construct_UClass_ATrigger();
+	TAG_API class UClass* Z_Construct_UClass_AChildTrigger_NoRegister();
+	TAG_API class UClass* Z_Construct_UClass_AChildTrigger();
+	TAG_API class UFunction* Z_Construct_UFunction_UTriggerSceneComponent_TriggerEvent();
+	TAG_API class UClass* Z_Construct_UClass_UTriggerSceneComponent_NoRegister();
+	TAG_API class UClass* Z_Construct_UClass_UTriggerSceneComponent();
 	TAG_API class UFunction* Z_Construct_UFunction_AWaterField_BeginOverlap();
 	TAG_API class UFunction* Z_Construct_UFunction_AWaterField_OnActorEnter();
 	TAG_API class UClass* Z_Construct_UClass_AWaterField_NoRegister();
@@ -1659,8 +1672,178 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	IMPLEMENT_CLASS(ATestActor, 2116488740);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATestActor(Z_Construct_UClass_ATestActor, &ATestActor::StaticClass, TEXT("/Script/TAG"), TEXT("ATestActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATestActor);
+	UFunction* Z_Construct_UDelegateFunction_UTriggerActorComponent_OnTriggerSignature__DelegateSignature()
+	{
+		UObject* Outer=Z_Construct_UClass_UTriggerActorComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnTriggerSignature__DelegateSignature"), RF_Public|RF_Transient|RF_MarkAsNative) UDelegateFunction(FObjectInitializer(), NULL, 0x00130000, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("TriggerActorComponent.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	void UTriggerActorComponent::StaticRegisterNativesUTriggerActorComponent()
+	{
+	}
+	UClass* Z_Construct_UClass_UTriggerActorComponent_NoRegister()
+	{
+		return UTriggerActorComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UTriggerActorComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_TAG();
+			OuterClass = UTriggerActorComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+				OuterClass->LinkChild(Z_Construct_UDelegateFunction_UTriggerActorComponent_OnTriggerSignature__DelegateSignature());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_OnTrigger = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OnTrigger"), RF_Public|RF_Transient|RF_MarkAsNative) UMulticastDelegateProperty(CPP_PROPERTY_BASE(OnTrigger, UTriggerActorComponent), 0x0010000010080000, Z_Construct_UDelegateFunction_UTriggerActorComponent_OnTriggerSignature__DelegateSignature());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UDelegateFunction_UTriggerActorComponent_OnTriggerSignature__DelegateSignature(), "OnTriggerSignature__DelegateSignature"); // 2667320840
+				static TCppClassTypeInfo<TCppClassTypeTraits<UTriggerActorComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TriggerActorComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("TriggerActorComponent.h"));
+				MetaData->SetValue(NewProp_OnTrigger, TEXT("Category"), TEXT("Events"));
+				MetaData->SetValue(NewProp_OnTrigger, TEXT("ModuleRelativePath"), TEXT("TriggerActorComponent.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UTriggerActorComponent, 1592545711);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UTriggerActorComponent(Z_Construct_UClass_UTriggerActorComponent, &UTriggerActorComponent::StaticClass, TEXT("/Script/TAG"), TEXT("UTriggerActorComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UTriggerActorComponent);
+	static FName NAME_ATrigger_OnTrigger = FName(TEXT("OnTrigger"));
+	void ATrigger::OnTrigger()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_ATrigger_OnTrigger),NULL);
+	}
 	void ATrigger::StaticRegisterNativesATrigger()
 	{
+		UClass* Class = ATrigger::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "BeginOverlap", (Native)&ATrigger::execBeginOverlap },
+			{ "EndOverlap", (Native)&ATrigger::execEndOverlap },
+			{ "TriggerEvent", (Native)&ATrigger::execTriggerEvent },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 3);
+	}
+	UFunction* Z_Construct_UFunction_ATrigger_BeginOverlap()
+	{
+		struct Trigger_eventBeginOverlap_Parms
+		{
+			UPrimitiveComponent* OverlappedComponent;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			int32 OtherBodyIndex;
+			bool bFromSweep;
+			FHitResult SweepResult;
+		};
+		UObject* Outer=Z_Construct_UClass_ATrigger();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("BeginOverlap"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00420401, 65535, sizeof(Trigger_eventBeginOverlap_Parms));
+			UProperty* NewProp_SweepResult = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SweepResult"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SweepResult, Trigger_eventBeginOverlap_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FHitResult());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bFromSweep, Trigger_eventBeginOverlap_Parms, bool);
+			UProperty* NewProp_bFromSweep = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bFromSweep"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bFromSweep, Trigger_eventBeginOverlap_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bFromSweep, Trigger_eventBeginOverlap_Parms), sizeof(bool), true);
+			UProperty* NewProp_OtherBodyIndex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherBodyIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(OtherBodyIndex, Trigger_eventBeginOverlap_Parms), 0x0010000000000080);
+			UProperty* NewProp_OtherComp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherComp"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherComp, Trigger_eventBeginOverlap_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_OtherActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherActor, Trigger_eventBeginOverlap_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			UProperty* NewProp_OverlappedComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverlappedComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OverlappedComponent, Trigger_eventBeginOverlap_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
+			MetaData->SetValue(NewProp_SweepResult, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_OtherComp, TEXT("EditInline"), TEXT("true"));
+			MetaData->SetValue(NewProp_OverlappedComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ATrigger_EndOverlap()
+	{
+		struct Trigger_eventEndOverlap_Parms
+		{
+			UPrimitiveComponent* OverlappedComp;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			int32 OtherBodyIndex;
+		};
+		UObject* Outer=Z_Construct_UClass_ATrigger();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("EndOverlap"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(Trigger_eventEndOverlap_Parms));
+			UProperty* NewProp_OtherBodyIndex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherBodyIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(OtherBodyIndex, Trigger_eventEndOverlap_Parms), 0x0010000000000080);
+			UProperty* NewProp_OtherComp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherComp"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherComp, Trigger_eventEndOverlap_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_OtherActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherActor, Trigger_eventEndOverlap_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			UProperty* NewProp_OverlappedComp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverlappedComp"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OverlappedComp, Trigger_eventEndOverlap_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
+			MetaData->SetValue(NewProp_OtherComp, TEXT("EditInline"), TEXT("true"));
+			MetaData->SetValue(NewProp_OverlappedComp, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ATrigger_OnTrigger()
+	{
+		UObject* Outer=Z_Construct_UClass_ATrigger();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnTrigger"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08020800, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ATrigger_TriggerEvent()
+	{
+		UObject* Outer=Z_Construct_UClass_ATrigger();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TriggerEvent"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
+#endif
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ATrigger_NoRegister()
 	{
@@ -1679,11 +1862,27 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ATrigger_BeginOverlap());
+				OuterClass->LinkChild(Z_Construct_UFunction_ATrigger_EndOverlap());
+				OuterClass->LinkChild(Z_Construct_UFunction_ATrigger_OnTrigger());
+				OuterClass->LinkChild(Z_Construct_UFunction_ATrigger_TriggerEvent());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsStandOnTrigger, ATrigger, bool);
+				UProperty* NewProp_bIsStandOnTrigger = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsStandOnTrigger"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsStandOnTrigger, ATrigger), 0x0040000000000001, CPP_BOOL_PROPERTY_BITMASK(bIsStandOnTrigger, ATrigger), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bTriggerOnce, ATrigger, bool);
 				UProperty* NewProp_bTriggerOnce = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bTriggerOnce"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bTriggerOnce, ATrigger), 0x0040000000000001, CPP_BOOL_PROPERTY_BITMASK(bTriggerOnce, ATrigger), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bTriggered, ATrigger, bool);
+				UProperty* NewProp_bTriggered = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bTriggered"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bTriggered, ATrigger), 0x0010000000000001, CPP_BOOL_PROPERTY_BITMASK(bTriggered, ATrigger), sizeof(bool), true);
+				UProperty* NewProp_TriggerTag = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TriggerTag"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(TriggerTag, ATrigger), 0x0010000000000001);
+				UProperty* NewProp_TriggerObjects = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TriggerObjects"), RF_Public|RF_Transient|RF_MarkAsNative) UArrayProperty(CPP_PROPERTY_BASE(TriggerObjects, ATrigger), 0x0010000000000001);
+				UProperty* NewProp_TriggerObjects_Inner = new(EC_InternalUseOnlyConstructor, NewProp_TriggerObjects, TEXT("TriggerObjects"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000, Z_Construct_UClass_AActor_NoRegister());
+				UProperty* NewProp_TriggerBox = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TriggerBox"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(TriggerBox, ATrigger), 0x0010000000080009, Z_Construct_UClass_UBoxComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATrigger_BeginOverlap(), "BeginOverlap"); // 694814211
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATrigger_EndOverlap(), "EndOverlap"); // 2310004421
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATrigger_OnTrigger(), "OnTrigger"); // 1707573973
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ATrigger_TriggerEvent(), "TriggerEvent"); // 1380708306
 				static TCppClassTypeInfo<TCppClassTypeTraits<ATrigger> > StaticCppClassTypeInfo;
 				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
 				OuterClass->StaticLink();
@@ -1691,17 +1890,133 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Trigger.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
-				MetaData->SetValue(NewProp_bTriggerOnce, TEXT("Category"), TEXT("Trigger"));
+				MetaData->SetValue(NewProp_bIsStandOnTrigger, TEXT("Category"), TEXT("Trigger Type"));
+				MetaData->SetValue(NewProp_bIsStandOnTrigger, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
+				MetaData->SetValue(NewProp_bIsStandOnTrigger, TEXT("ToolTip"), TEXT("Only fires when actor is standing on trigger, not triggered when actor leaves"));
+				MetaData->SetValue(NewProp_bTriggerOnce, TEXT("Category"), TEXT("Trigger Type"));
 				MetaData->SetValue(NewProp_bTriggerOnce, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
+				MetaData->SetValue(NewProp_bTriggerOnce, TEXT("ToolTip"), TEXT("If trigger fires it will not toggle off unless it is a stand on trigger"));
+				MetaData->SetValue(NewProp_bTriggered, TEXT("Category"), TEXT("Trigger Parameters"));
+				MetaData->SetValue(NewProp_bTriggered, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
+				MetaData->SetValue(NewProp_bTriggered, TEXT("ToolTip"), TEXT("Whether the trigger has fired"));
+				MetaData->SetValue(NewProp_TriggerTag, TEXT("Category"), TEXT("Trigger Parameters"));
+				MetaData->SetValue(NewProp_TriggerTag, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
+				MetaData->SetValue(NewProp_TriggerTag, TEXT("ToolTip"), TEXT("Triggers with same tag all need to be activated to work"));
+				MetaData->SetValue(NewProp_TriggerObjects, TEXT("Category"), TEXT("Trigger Parameters"));
+				MetaData->SetValue(NewProp_TriggerObjects, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
+				MetaData->SetValue(NewProp_TriggerObjects, TEXT("ToolTip"), TEXT("Objects to be affected when trigger fires"));
+				MetaData->SetValue(NewProp_TriggerBox, TEXT("Category"), TEXT("Trigger"));
+				MetaData->SetValue(NewProp_TriggerBox, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_TriggerBox, TEXT("ModuleRelativePath"), TEXT("Trigger.h"));
 #endif
 			}
 		}
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATrigger, 3308698984);
+	IMPLEMENT_CLASS(ATrigger, 3499109743);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATrigger(Z_Construct_UClass_ATrigger, &ATrigger::StaticClass, TEXT("/Script/TAG"), TEXT("ATrigger"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATrigger);
+	void AChildTrigger::StaticRegisterNativesAChildTrigger()
+	{
+	}
+	UClass* Z_Construct_UClass_AChildTrigger_NoRegister()
+	{
+		return AChildTrigger::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AChildTrigger()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ATrigger();
+			Z_Construct_UPackage__Script_TAG();
+			OuterClass = AChildTrigger::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				static TCppClassTypeInfo<TCppClassTypeTraits<AChildTrigger> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("ChildTrigger.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("ChildTrigger.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AChildTrigger, 566045004);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AChildTrigger(Z_Construct_UClass_AChildTrigger, &AChildTrigger::StaticClass, TEXT("/Script/TAG"), TEXT("AChildTrigger"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AChildTrigger);
+	static FName NAME_UTriggerSceneComponent_TriggerEvent = FName(TEXT("TriggerEvent"));
+	void UTriggerSceneComponent::TriggerEvent()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UTriggerSceneComponent_TriggerEvent),NULL);
+	}
+	void UTriggerSceneComponent::StaticRegisterNativesUTriggerSceneComponent()
+	{
+	}
+	UFunction* Z_Construct_UFunction_UTriggerSceneComponent_TriggerEvent()
+	{
+		UObject* Outer=Z_Construct_UClass_UTriggerSceneComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TriggerEvent"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Events"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("TriggerSceneComponent.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UTriggerSceneComponent_NoRegister()
+	{
+		return UTriggerSceneComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UTriggerSceneComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_TAG();
+			OuterClass = UTriggerSceneComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UTriggerSceneComponent_TriggerEvent());
+
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UTriggerSceneComponent_TriggerEvent(), "TriggerEvent"); // 1881029141
+				static TCppClassTypeInfo<TCppClassTypeTraits<UTriggerSceneComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("TriggerSceneComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("TriggerSceneComponent.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UTriggerSceneComponent, 1651800295);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UTriggerSceneComponent(Z_Construct_UClass_UTriggerSceneComponent, &UTriggerSceneComponent::StaticClass, TEXT("/Script/TAG"), TEXT("UTriggerSceneComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UTriggerSceneComponent);
 	static FName NAME_AWaterField_OnActorEnter = FName(TEXT("OnActorEnter"));
 	void AWaterField::OnActorEnter(AActor* EnteringActor)
 	{
@@ -1833,12 +2148,13 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/TAG")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x1EEB5C23;
-			Guid.B = 0x33127FC1;
+			Guid.A = 0xD5DD8017;
+			Guid.B = 0xBABADD99;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
 
+			Z_Construct_UDelegateFunction_UTriggerActorComponent_OnTriggerSignature__DelegateSignature();
 		}
 		return ReturnPackage;
 	}

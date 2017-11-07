@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TAG_TrollCharacter_generated_h
 
-#define TAG_Source_TAG_TrollCharacter_h_25_RPC_WRAPPERS \
+#define TAG_Source_TAG_TrollCharacter_h_16_RPC_WRAPPERS \
 	virtual void SimulateInteractFX_Implementation(); \
 	virtual bool ServerDealDamage_Validate(); \
 	virtual void ServerDealDamage_Implementation(); \
@@ -102,7 +102,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define TAG_Source_TAG_TrollCharacter_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+#define TAG_Source_TAG_TrollCharacter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSimulateInteractFX) \
 	{ \
@@ -184,9 +184,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define TAG_Source_TAG_TrollCharacter_h_25_EVENT_PARMS
-#define TAG_Source_TAG_TrollCharacter_h_25_CALLBACK_WRAPPERS
-#define TAG_Source_TAG_TrollCharacter_h_25_INCLASS_NO_PURE_DECLS \
+#define TAG_Source_TAG_TrollCharacter_h_16_EVENT_PARMS
+#define TAG_Source_TAG_TrollCharacter_h_16_CALLBACK_WRAPPERS
+#define TAG_Source_TAG_TrollCharacter_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATrollCharacter(); \
 	friend TAG_API class UClass* Z_Construct_UClass_ATrollCharacter(); \
@@ -196,7 +196,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TAG_Source_TAG_TrollCharacter_h_25_INCLASS \
+#define TAG_Source_TAG_TrollCharacter_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesATrollCharacter(); \
 	friend TAG_API class UClass* Z_Construct_UClass_ATrollCharacter(); \
@@ -206,7 +206,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define TAG_Source_TAG_TrollCharacter_h_25_STANDARD_CONSTRUCTORS \
+#define TAG_Source_TAG_TrollCharacter_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATrollCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATrollCharacter) \
@@ -219,7 +219,7 @@ private: \
 public:
 
 
-#define TAG_Source_TAG_TrollCharacter_h_25_ENHANCED_CONSTRUCTORS \
+#define TAG_Source_TAG_TrollCharacter_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATrollCharacter(ATrollCharacter&&); \
@@ -230,7 +230,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATrollCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATrollCharacter)
 
 
-#define TAG_Source_TAG_TrollCharacter_h_25_PRIVATE_PROPERTY_OFFSET \
+#define TAG_Source_TAG_TrollCharacter_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__SpawnedPawn() { return STRUCT_OFFSET(ATrollCharacter, SpawnedPawn); } \
 	FORCEINLINE static uint32 __PPO__DismountOffset() { return STRUCT_OFFSET(ATrollCharacter, DismountOffset); } \
 	FORCEINLINE static uint32 __PPO__InteractShape() { return STRUCT_OFFSET(ATrollCharacter, InteractShape); } \
@@ -241,30 +241,30 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATrollCharacter); \
 	FORCEINLINE static uint32 __PPO__DamageParticles() { return STRUCT_OFFSET(ATrollCharacter, DamageParticles); }
 
 
-#define TAG_Source_TAG_TrollCharacter_h_22_PROLOG \
-	TAG_Source_TAG_TrollCharacter_h_25_EVENT_PARMS
+#define TAG_Source_TAG_TrollCharacter_h_13_PROLOG \
+	TAG_Source_TAG_TrollCharacter_h_16_EVENT_PARMS
 
 
-#define TAG_Source_TAG_TrollCharacter_h_25_GENERATED_BODY_LEGACY \
+#define TAG_Source_TAG_TrollCharacter_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TAG_Source_TAG_TrollCharacter_h_25_PRIVATE_PROPERTY_OFFSET \
-	TAG_Source_TAG_TrollCharacter_h_25_RPC_WRAPPERS \
-	TAG_Source_TAG_TrollCharacter_h_25_CALLBACK_WRAPPERS \
-	TAG_Source_TAG_TrollCharacter_h_25_INCLASS \
-	TAG_Source_TAG_TrollCharacter_h_25_STANDARD_CONSTRUCTORS \
+	TAG_Source_TAG_TrollCharacter_h_16_PRIVATE_PROPERTY_OFFSET \
+	TAG_Source_TAG_TrollCharacter_h_16_RPC_WRAPPERS \
+	TAG_Source_TAG_TrollCharacter_h_16_CALLBACK_WRAPPERS \
+	TAG_Source_TAG_TrollCharacter_h_16_INCLASS \
+	TAG_Source_TAG_TrollCharacter_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TAG_Source_TAG_TrollCharacter_h_25_GENERATED_BODY \
+#define TAG_Source_TAG_TrollCharacter_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TAG_Source_TAG_TrollCharacter_h_25_PRIVATE_PROPERTY_OFFSET \
-	TAG_Source_TAG_TrollCharacter_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	TAG_Source_TAG_TrollCharacter_h_25_CALLBACK_WRAPPERS \
-	TAG_Source_TAG_TrollCharacter_h_25_INCLASS_NO_PURE_DECLS \
-	TAG_Source_TAG_TrollCharacter_h_25_ENHANCED_CONSTRUCTORS \
+	TAG_Source_TAG_TrollCharacter_h_16_PRIVATE_PROPERTY_OFFSET \
+	TAG_Source_TAG_TrollCharacter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	TAG_Source_TAG_TrollCharacter_h_16_CALLBACK_WRAPPERS \
+	TAG_Source_TAG_TrollCharacter_h_16_INCLASS_NO_PURE_DECLS \
+	TAG_Source_TAG_TrollCharacter_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -273,7 +273,4 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #define CURRENT_FILE_ID TAG_Source_TAG_TrollCharacter_h
 
 
-#define FOREACH_ENUM_EPLAYERSTATE(op) \
-	op(EPlayerState::Mounted) \
-	op(EPlayerState::Gnome) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

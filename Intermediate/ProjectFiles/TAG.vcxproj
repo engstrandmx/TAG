@@ -83,7 +83,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9099D7E3-2021-43AB-93ED-1D24571260F5}</ProjectGuid>
+    <ProjectGuid>{9425B186-CA6D-4775-93B7-BFDC0123A22C}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>TAG</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>
@@ -387,7 +387,6 @@
     <NMakeReBuildCommandLine>"C:\Program Files\Epic Games\UE_4.16\Engine\Build\BatchFiles\Rebuild.bat" TAG Win64 Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>"C:\Program Files\Epic Games\UE_4.16\Engine\Build\BatchFiles\Clean.bat" TAG Win64 Shipping "$(SolutionDir)$(ProjectName).uproject" -waitmutex</NMakeCleanCommandLine>
     <NMakeOutput>..\..\Binaries\Win64\TAG-Win64-Shipping.exe</NMakeOutput>
-    <AdditionalOptions>/Yu</AdditionalOptions>
   </PropertyGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='HTML5_Shipping_Game|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -415,6 +414,8 @@
     <None Include="..\..\Config\DefaultEngine.ini" />
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Config\DefaultInput.ini" />
+    <ClCompile Include="..\..\Source\TAG\ChildTrigger.cpp" />
+    <ClInclude Include="..\..\Source\TAG\ChildTrigger.h" />
     <ClCompile Include="..\..\Source\TAG\CowCharacter.cpp" />
     <ClInclude Include="..\..\Source\TAG\CowCharacter.h" />
     <ClCompile Include="..\..\Source\TAG\DropOffZone.cpp" />
@@ -444,6 +445,10 @@
     <ClInclude Include="..\..\Source\TAG\Textures.h" />
     <ClCompile Include="..\..\Source\TAG\Trigger.cpp" />
     <ClInclude Include="..\..\Source\TAG\Trigger.h" />
+    <ClCompile Include="..\..\Source\TAG\TriggerActorComponent.cpp" />
+    <ClCompile Include="..\..\Source\TAG\TriggerSceneComponent.cpp" />
+    <ClInclude Include="..\..\Source\TAG\TriggerActorComponent.h" />
+    <ClInclude Include="..\..\Source\TAG\TriggerSceneComponent.h" />
     <ClCompile Include="..\..\Source\TAG\TrollCharacter.cpp" />
     <ClInclude Include="..\..\Source\TAG\TrollCharacter.h" />
     <ClCompile Include="..\..\Source\TAG\WaterField.cpp" />
