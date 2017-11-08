@@ -15,13 +15,13 @@ class TAG_API ACheckpointField : public AActor
 	GENERATED_BODY()
 	
 public:	
-
 	ACheckpointField();
 
 	ATAGGameMode* GameMode;
+	//Checkpoints the player will spawn at if current field is active
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Checkpoint")
 	TArray<APlayerStart*> SelectedCheckpoints;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Checkpoint")
 	UBoxComponent* TriggerBox;
 
 	UFUNCTION()
@@ -36,7 +36,4 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	
-	
 };
