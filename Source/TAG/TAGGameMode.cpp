@@ -30,15 +30,38 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Restart Performed"));
 
+	FVector PlayerLastPosition = FVector::ZeroVector;
+
 	if (NewPlayer->GetPawn()) {
 		APawn* OldPawn = NewPlayer->GetPawn();
 		NewPlayer->UnPossess();
+		PlayerLastPosition = OldPawn->GetActorLocation();
+		
 		OldPawn->Destroy();
 	}
 
 	FString SpawnTag;
+	AActor* StartPos = FindPlayerStart(NewPlayer, SpawnTag);;
 
-	AActor* StartPos = FindPlayerStart(NewPlayer, SpawnTag);
+	//If no checkpoints have been assigned player spawns as usual
+	if (CurrentPlayerStarts.Num() == 1) {
+		StartPos = CurrentPlayerStarts[0];
+	}
+
+	//Else nearest current checkpoint is used
+	if (CurrentPlayerStarts.Num() > 1) {
+		int8 size = CurrentPlayerStarts.Num();
+		int8 closestIndex = 0;
+
+		for (int8 i = 0; i < size; i++)
+		{
+			if (FVector::Dist(PlayerLastPosition, CurrentPlayerStarts[closestIndex]->GetActorLocation()) > FVector::Dist(PlayerLastPosition, CurrentPlayerStarts[i]->GetActorLocation())) {
+				closestIndex = i;
+			}
+		}
+
+		StartPos = CurrentPlayerStarts[closestIndex];
+	}
 
 	if (NewPlayer->StartSpot == StartPos) {
 		StartPos = FindPlayerStart(NewPlayer, SpawnTag);
@@ -74,10 +97,6 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 		UE_LOG(LogTemp, Warning, TEXT("Spectator should be spawned"));
 		break;
 	}
-	
-
-	//Spawn pawn and possess
-
 
 	NewPlayer->Possess(SpawnedPawn);
 }
