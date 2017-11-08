@@ -1,3 +1,0 @@
-C:\Workspace\TAG\Source\TAG\TAG.Build.cs
-C:\Workspace\TAG\Source\TAG.Target.cs
-C:\Workspace\TAG\Source\TAGEditor.Target.cs

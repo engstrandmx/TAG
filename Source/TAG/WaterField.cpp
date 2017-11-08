@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "WaterField.h"
+#include "CowCharacter.h"
 
 // Sets default values
 AWaterField::AWaterField()
@@ -35,8 +36,9 @@ void AWaterField::Tick(float DeltaTime)
 			FVector multi = FloatSimulationMagnitude;
 			FVector offset = FVector(WaveSimScalar * multi.X, -WaveSimScalar * multi.Y, WaveSimScalar * multi.Z);
 			
-			actor->SetActorLocation(location + CurrentVector * DeltaTime);
-			actor->SetActorLocation(actor->GetActorLocation() + offset - FloatingLocations[i]);
+
+				actor->SetActorLocation(location + CurrentVector * DeltaTime, true);
+				actor->SetActorLocation(actor->GetActorLocation() + offset - FloatingLocations[i]);
 
 			//UE_LOG(LogTemp, Warning, TEXT("Z offset = %f"), (offset).Z);
 
