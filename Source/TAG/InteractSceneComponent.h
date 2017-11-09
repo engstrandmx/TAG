@@ -10,7 +10,7 @@
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class TAG_API UInteractSceneComponent : public USceneComponent
 {
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FInteractSignature, AActor* TriggeringActor);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FInteractSignature, AActor*, TriggeringActor);
 
 	GENERATED_BODY()
 
