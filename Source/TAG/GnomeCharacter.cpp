@@ -7,15 +7,18 @@
 #include "TAGGameState.h"
 #include "TAGPlayerState.h"
 #include "TAGPlayerController.h"
+#include "InteractSceneComponent.h"
 
 AGnomeCharacter::AGnomeCharacter() {
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &AGnomeCharacter::BeginOverlap);
 	GetCapsuleComponent()->OnComponentEndOverlap.AddDynamic(this, &AGnomeCharacter::EndOverlap);
 
+	InteractShape = CreateDefaultSubobject<USphereComponent>(FName("Interact Shape"));
+	InteractShape->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform);
+
 	bReplicates = true;
 	CarryMovementSpeed = 150;
 }
-
 
 void AGnomeCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult) {
 }
@@ -96,8 +99,27 @@ void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &AGnomeCharacter::MountTroll);
 
+	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AGnomeCharacter::Interact);
+
+
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void AGnomeCharacter::Interact()
+{
+	TArray<AActor*> OutActors;
+
+	InteractShape->GetOverlappingActors(OutActors);
+
+	int8 size = OutActors.Num();
+
+	for (int8 i = 0; i < size; i++)
+	{
+		if (OutActors[i]->GetComponentByClass(UInteractSceneComponent::StaticClass())) {
+			Cast<UInteractSceneComponent>(OutActors[i]->GetComponentByClass(UInteractSceneComponent::StaticClass()))->Interact(this);
+		}
+	}
 }
 
 void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)

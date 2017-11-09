@@ -63,12 +63,12 @@ protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// End of APawn interface
-	virtual void Interact();
+	virtual void Attack();
 
 	UFUNCTION(Server, Reliable, WithValidation)
-	virtual void ServerInteract();
-	virtual void ServerInteract_Implementation();
-	virtual bool ServerInteract_Validate();
+	virtual void ServerAttack();
+	virtual void ServerAttack_Implementation();
+	virtual bool ServerAttack_Validate();
 
 public:
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;

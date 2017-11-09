@@ -79,17 +79,17 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 }
 
 
-void ATAGCharacter::Interact()
+void ATAGCharacter::Attack()
 {
 	//Virtual implementation
 }
 
-void ATAGCharacter::ServerInteract_Implementation()
+void ATAGCharacter::ServerAttack_Implementation()
 {
 	//Virtual
 }
 
-bool ATAGCharacter::ServerInteract_Validate()
+bool ATAGCharacter::ServerAttack_Validate()
 {
 	//Virtual
 
