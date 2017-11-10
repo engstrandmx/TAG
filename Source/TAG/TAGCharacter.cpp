@@ -8,6 +8,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "TAGGameMode.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ATAGCharacter
@@ -190,8 +191,10 @@ void ATAGCharacter::ServerResetPlayer_Implementation(AController* InController) 
 	//SetMeshVisible(false);
 	bCanMove = false;
 
+	Cast<ATAGGameMode>(GetWorld()->GetAuthGameMode())->OnFadeOut();
+
 	FTimerHandle TimerHandle;
-	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ATAGCharacter::DelayedRestart, 0.2f, false, 2.f);
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ATAGCharacter::DelayedRestart, 0.2f, false, 1.f);
 }
 
 

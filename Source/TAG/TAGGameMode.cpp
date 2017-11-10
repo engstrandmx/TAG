@@ -19,6 +19,7 @@ void ATAGGameMode::BeginPlay() {
 void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
 	UE_LOG(LogTemp, Warning, TEXT("Post Login Performed"));
 
+
 	PlayerControllers.Add(Cast<ATAGPlayerController>(NewPlayer));
 
 	PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
@@ -97,6 +98,8 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 		UE_LOG(LogTemp, Warning, TEXT("Spectator should be spawned"));
 		break;
 	}
+
+	OnFadeIn();
 
 	NewPlayer->Possess(SpawnedPawn);
 }

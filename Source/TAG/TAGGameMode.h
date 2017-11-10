@@ -62,10 +62,11 @@ public:
 		void OnRoundEnd();
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
-		void OnGameEnd();
+		void OnFadeIn();
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
-		void OnSwitchSides();
+		void OnFadeOut();
+
 
 
 private:
