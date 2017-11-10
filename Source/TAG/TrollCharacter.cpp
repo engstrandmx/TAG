@@ -2,6 +2,8 @@
 
 #include "TrollCharacter.h"
 #include "GnomeCharacter.h"
+#include "InteractSceneComponent.h"
+#include "TAGGameMode.h"
 
 ATrollCharacter::ATrollCharacter() {
 
@@ -22,7 +24,7 @@ void ATrollCharacter::MountGnome(AActor* MountingActor, AController* Controller)
 	if (MountingActor){
 		MountingActor->Destroy();
 	}
-	ChangeState(Mounted);
+	ChangeState(EPlayerType::Troll);
 }
 
 float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -42,18 +44,20 @@ float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);
+	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &ATrollCharacter::Attack);
+	PlayerInputComponent->BindAction("Attack", IE_Released, this, &ATrollCharacter::StopAttack);
+
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
-	PlayerInputComponent->BindAction("Interact", IE_Released, this, &ATrollCharacter::StopInteract);
 
 	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &ATrollCharacter::ToggleState);
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
 
-void ATrollCharacter::StopInteract() {
+void ATrollCharacter::StopAttack() {
 
 	if (Role < ROLE_Authority) {
-		ServerStopInteract();
+		ServerStopAttack();
 	}
 	else {
 		bIsPunching = false;
@@ -61,20 +65,20 @@ void ATrollCharacter::StopInteract() {
 	}
 }
 
-void ATrollCharacter::ServerStopInteract_Implementation()
+void ATrollCharacter::ServerStopAttack_Implementation()
 {
-	StopInteract();
+	StopAttack();
 }
 
-bool ATrollCharacter::ServerStopInteract_Validate()
+bool ATrollCharacter::ServerStopAttack_Validate()
 {
 	return true;
 }
 
-void ATrollCharacter::Interact()
+void ATrollCharacter::Attack()
 {
 	if (Role < ROLE_Authority) {
-		ServerInteract();
+		ServerAttack();
 	}
 	else {
 		bPunchTimerStarted = true;
@@ -86,9 +90,9 @@ void ATrollCharacter::Interact()
 	}
 }
 
-void ATrollCharacter::DelayedInteract()
+void ATrollCharacter::DelayedAttack()
 {
-	SimulateInteractFX();
+	SimulateAttackFX();
 
 // 	TSubclassOf <class UDamageType> DamageTypeClass;
 // 	const TArray<AActor*> IgnoreActors;
@@ -106,6 +110,22 @@ bool ATrollCharacter::ServerDealDamage_Validate() {
 	return true;
 }
 
+void ATrollCharacter::Interact()
+{
+	TArray<AActor*> OutActors;
+
+	InteractShape->GetOverlappingActors(OutActors);
+
+	int8 size = OutActors.Num();
+
+	for (int8 i = 0; i < size; i++)
+	{
+		if (OutActors[i]->GetComponentByClass(UInteractSceneComponent::StaticClass())) {
+			Cast<UInteractSceneComponent>(OutActors[i]->GetComponentByClass(UInteractSceneComponent::StaticClass()))->Interact(this);
+		}
+	}
+}
+
 void ATrollCharacter::DealDamage() {
 	if (Role < ROLE_Authority) {
 		ServerDealDamage();
@@ -113,7 +133,7 @@ void ATrollCharacter::DealDamage() {
 	else {
 		AttackCount++;
 
-		SimulateInteractFX();
+		SimulateAttackFX();
 
 // 		TSubclassOf <class UDamageType> DamageTypeClass;
 // 		const TArray<AActor*> IgnoreActors;
@@ -121,17 +141,17 @@ void ATrollCharacter::DealDamage() {
 //		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 
 		if (AttackCount >= 2) {
-			StopInteract();
+			StopAttack();
 		}
 	}
 }
 
-void ATrollCharacter::ServerInteract_Implementation()
+void ATrollCharacter::ServerAttack_Implementation()
 {
-	Interact();
+	Attack();
 }
 
-bool ATrollCharacter::ServerInteract_Validate()
+bool ATrollCharacter::ServerAttack_Validate()
 {
 	return true;
 }
@@ -148,12 +168,12 @@ void ATrollCharacter::OnRep_IsPunching()
 
 }
 
-void ATrollCharacter::SimulateInteractFX_Implementation()
+void ATrollCharacter::SimulateAttackFX_Implementation()
 {
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
 }
 
-void ATrollCharacter::ChangeState(State toState) 
+void ATrollCharacter::ChangeState(PlayerType toState) 
 {
 	CurrentState = toState;
 
@@ -166,31 +186,36 @@ void ATrollCharacter::ChangeState(State toState)
 
 	switch (toState)
 	{
-	case EPlayerState::Mounted:
+	case EPlayerType::Troll:
 		OnMount();
 
 		break;
-	case EPlayerState::Gnome:
+	case EPlayerType::Gnome:
 		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + offset, GetActorRotation(), SpawnParameters);
 
 		Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
 		Controller->Possess(Cast<APawn>(SpawnedPawn));
+
+		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));
 
 		OnDismount();
 		break;
 	default:
 		break;
 	}
+
+	Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(toState);
+
 }
 
 void ATrollCharacter::ToggleState() {
 	switch (CurrentState)
 	{
-	case EPlayerState::Mounted:
-		ChangeState(Gnome);
+	case EPlayerType::Troll:
+		ChangeState(EPlayerType::Gnome);
 		break;
-	case EPlayerState::Gnome:
-		ChangeState(Mounted);
+	case EPlayerType::Gnome:
+		ChangeState(EPlayerType::Troll);
 
 		break;
 	default:

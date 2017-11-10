@@ -5,101 +5,102 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "UObject/ConstructorHelpers.h"
 
-using namespace EPlayerType;
-
 ATAGGameMode::ATAGGameMode()
 {
 	// HARDCODED REFERENCES
-
 }
 
 void ATAGGameMode::BeginPlay() {
 	Super::BeginPlay();
 
 	TagGameState = GetGameState<ATAGGameState>();
-
-	//StartPreGame(PreGameTime);
 }
 
 void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
 	UE_LOG(LogTemp, Warning, TEXT("Post Login Performed"));
 
+
 	PlayerControllers.Add(Cast<ATAGPlayerController>(NewPlayer));
 
-	if (bSpawnTypeFlipped) {
-		PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
-
-		if (PlayerControllers.Num() != 1) {
-			if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Gnome) {
-				PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
-
-				UE_LOG(LogTemp, Warning, TEXT("Gnome made"));
-			}
-		}
-	}
-
-	else {
-		PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
-	
-		if (PlayerControllers.Num() != 1) {
-			if (PlayerControllers.Last(1)->GetPlayerType() == PlayerType::Troll) {
-				PlayerControllers.Last()->SetPlayerType(PlayerType::Gnome);
-
-				UE_LOG(LogTemp, Warning, TEXT("Troll made"));
-			}
-		}
-	}
-
-	if (bSpawnSpectator) {
-		PlayerControllers.Last()->SetPlayerType(PlayerType::Spectator);
-	}
+	PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
 
 	Super::PostLogin(NewPlayer);
-	
 }
 
 void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Restart Performed"));
 
+	FVector PlayerLastPosition = FVector::ZeroVector;
 
 	if (NewPlayer->GetPawn()) {
 		APawn* OldPawn = NewPlayer->GetPawn();
 		NewPlayer->UnPossess();
+		PlayerLastPosition = OldPawn->GetActorLocation();
+		
 		OldPawn->Destroy();
 	}
 
 	FString SpawnTag;
+	AActor* StartPos = FindPlayerStart(NewPlayer, SpawnTag);;
+
+	//If no checkpoints have been assigned player spawns as usual
+	if (CurrentPlayerStarts.Num() == 1) {
+		StartPos = CurrentPlayerStarts[0];
+	}
+
+	//Else nearest current checkpoint is used
+	if (CurrentPlayerStarts.Num() > 1) {
+		int8 size = CurrentPlayerStarts.Num();
+		int8 closestIndex = 0;
+
+		for (int8 i = 0; i < size; i++)
+		{
+			if (FVector::Dist(PlayerLastPosition, CurrentPlayerStarts[closestIndex]->GetActorLocation()) > FVector::Dist(PlayerLastPosition, CurrentPlayerStarts[i]->GetActorLocation())) {
+				closestIndex = i;
+			}
+		}
+
+		StartPos = CurrentPlayerStarts[closestIndex];
+	}
+
+	if (NewPlayer->StartSpot == StartPos) {
+		StartPos = FindPlayerStart(NewPlayer, SpawnTag);
+	}
+
+	APawn* SpawnedPawn = NULL;
 
 	//Cast to child class and determine type
-	switch (Cast<ATAGPlayerController>(NewPlayer)->GetPlayerType()) {
-	case Gnome:
-		SpawnTag = GnomeSpawnTag;
+	switch (CurrentPlayerType) {
+	case PlayerType::Gnome:
 		DefaultPawnClass = GnomeCharacter;
-		UE_LOG(LogTemp, Warning, TEXT("Gnome spawned"));
 
+		SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
+
+		if (CurrentTroll) {
+			Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(CurrentTroll);
+		}
+
+		UE_LOG(LogTemp, Warning, TEXT("Gnome spawned"));
 		break;
-	case Troll:
-		SpawnTag = TrollSpawnTag;
+	case PlayerType::Troll:
 		DefaultPawnClass = TrollCharacter;
+
+		SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
+		CurrentTroll = Cast<ATrollCharacter>(SpawnedPawn);
+
 		UE_LOG(LogTemp, Warning, TEXT("Troll spawned"));
 		break;
-	case Spectator:
+	case PlayerType::Spectator:
 		//TODO: Make spectator implementation
 		SpawnTag = TrollSpawnTag;
 		DefaultPawnClass = SpectatorCharacter;
 		UE_LOG(LogTemp, Warning, TEXT("Spectator should be spawned"));
 		break;
 	}
-	
-	AActor* StartPos = FindPlayerStart(NewPlayer, SpawnTag);
 
-	if (NewPlayer->StartSpot == StartPos) {
-		StartPos = FindPlayerStart(NewPlayer, SpawnTag);
-	}
+	OnFadeIn();
 
-	//Spawn pawn and possess
-	APawn* SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
 	NewPlayer->Possess(SpawnedPawn);
 }
 

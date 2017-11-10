@@ -47,29 +47,31 @@ public:
 protected:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	void StopInteract(); //Stops attack, input function
-	void Interact(); //Starts attack, input function
+	void StopAttack(); //Stops attack, input function
+	void Attack(); //Starts attack, input function
 
 	UFUNCTION()
-	void DelayedInteract();
+	void DelayedAttack();
 
 	//TODO: remove
 	UFUNCTION(Server, Reliable, WithValidation)
-	virtual void ServerStopInteract();
-	virtual void ServerStopInteract_Implementation();
-	virtual bool ServerStopInteract_Validate();
+	virtual void ServerStopAttack();
+	virtual void ServerStopAttack_Implementation();
+	virtual bool ServerStopAttack_Validate();
 
 	//TODO: remove
 	UFUNCTION(Server, Reliable, WithValidation)
-	virtual void ServerInteract();
-	virtual void ServerInteract_Implementation();
-	virtual bool ServerInteract_Validate();
+	virtual void ServerAttack();
+	virtual void ServerAttack_Implementation();
+	virtual bool ServerAttack_Validate();
 
 	//TODO: remove
 	UFUNCTION(Server, Reliable, WithValidation)
 	void ServerDealDamage();
 	void ServerDealDamage_Implementation();
 	bool ServerDealDamage_Validate();
+
+	void Interact();
 
 	UFUNCTION(BlueprintCallable)
 	void DealDamage(); //Function called the instant damage is to be dealt
@@ -105,8 +107,8 @@ private:
 	void OnRep_IsPunching();
 
 	UFUNCTION(Reliable, NetMulticast)
-	void SimulateInteractFX();
-	void SimulateInteractFX_Implementation();
+	void SimulateAttackFX();
+	void SimulateAttackFX_Implementation();
 
 	void ChangeState(State toState);
 	void ToggleState();

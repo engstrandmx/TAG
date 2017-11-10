@@ -8,6 +8,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "TAGGameMode.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ATAGCharacter
@@ -79,17 +80,17 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 }
 
 
-void ATAGCharacter::Interact()
+void ATAGCharacter::Attack()
 {
 	//Virtual implementation
 }
 
-void ATAGCharacter::ServerInteract_Implementation()
+void ATAGCharacter::ServerAttack_Implementation()
 {
 	//Virtual
 }
 
-bool ATAGCharacter::ServerInteract_Validate()
+bool ATAGCharacter::ServerAttack_Validate()
 {
 	//Virtual
 
@@ -190,8 +191,10 @@ void ATAGCharacter::ServerResetPlayer_Implementation(AController* InController) 
 	//SetMeshVisible(false);
 	bCanMove = false;
 
+	Cast<ATAGGameMode>(GetWorld()->GetAuthGameMode())->OnFadeOut();
+
 	FTimerHandle TimerHandle;
-	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ATAGCharacter::DelayedRestart, 0.2f, false, 2.f);
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ATAGCharacter::DelayedRestart, 0.2f, false, 1.f);
 }
 
 

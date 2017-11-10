@@ -51,6 +51,8 @@ private:
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float LaunchForce = 1200.f;
 
+	void Interact();
+
 	UFUNCTION(Reliable, NetMulticast )
 	void SimulateDeathFX(FVector ForceVector);
 	void SimulateDeathFX_Implementation(FVector ForceVector);
@@ -59,6 +61,9 @@ private:
 	UStaticMeshComponent* GoldMesh;
 	UPROPERTY(EditAnywhere, Category = Components)
 	UParticleSystem* DeathEmitter;
+
+	UPROPERTY(EditAnywhere, Category = "Interact")
+	USphereComponent* InteractShape;
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float MountDistance;
