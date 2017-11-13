@@ -17,6 +17,7 @@ class TAG_API ATrollCharacter : public ATAGCharacter
 
 	ATrollCharacter();
 
+	virtual void Tick(float DeltaSeconds);
 	//UFUNCTION()
 	//void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult);
 public:
@@ -26,7 +27,8 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Characters")
 	TSubclassOf<APawn> GnomePawn; //Pawn to spawn when mounting
 
-	void MountGnome(AActor* MountingActor, AController* Controller); //Called by gnome when mounting
+	void MountGnome(); //Called by gnome when mounting
+	void ResetCamera();
 
 	PlayerType CurrentState; //If actor is mounted/dismounted
 
@@ -122,4 +124,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = Components)
 	UParticleSystem* DamageParticles;
+
+	float CameraResetAlpha;
+	bool bResetCamera;
+	bool bIsMounting;
 };
