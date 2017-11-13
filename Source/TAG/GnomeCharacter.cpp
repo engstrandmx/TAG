@@ -17,7 +17,29 @@ AGnomeCharacter::AGnomeCharacter() {
 	InteractShape->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform);
 
 	bReplicates = true;
+	PrimaryActorTick.bCanEverTick = true;
 	CarryMovementSpeed = 150;
+
+	CameraResetAlpha = 0;
+}
+
+void AGnomeCharacter::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	if (bResetCamera) {
+		FVector FromVector = GetFollowCamera()->RelativeLocation;
+		FRotator FromRot = GetFollowCamera()->RelativeRotation;
+
+		GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
+		GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
+
+		CameraResetAlpha += DeltaSeconds * 1.25f;
+
+		if (CameraResetAlpha >= 1) {
+			bResetCamera = false;
+		}
+	}
 }
 
 void AGnomeCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult) {
@@ -83,14 +105,39 @@ void AGnomeCharacter::ResetPlayer()
 	}	
 } 
 
+void AGnomeCharacter::ResetCamera()
+{
+	bResetCamera = true;
+	CameraResetAlpha = 0;
+}
+
 void AGnomeCharacter::MountTroll()
 {
 	if (TrollParentActor) {
 		float distance = FVector::Dist(TrollParentActor->GetActorLocation(), GetActorLocation());
 
 		if (distance < MountDistance) {
-			Cast<ATrollCharacter>(TrollParentActor)->MountGnome(this, Controller);
+			UE_LOG(LogTemp, Warning, TEXT("Gnome should mount troll now"));
+
+			ATrollCharacter* TrollActor = Cast<ATrollCharacter>(TrollParentActor);
+
+			TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+			TrollActor->ResetCamera();
+
+			Controller->Possess(Cast<APawn>(TrollParentActor));
+
+			Cast<ATrollCharacter>(TrollParentActor)->MountGnome();
 		}
+
+		else {
+			ATrollCharacter* TrollActor = Cast<ATrollCharacter>(TrollParentActor);
+			
+			TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+			TrollActor->ResetCamera();
+
+			Controller->Possess(Cast<APawn>(TrollParentActor));
+		}
+
 	}
 }
 

@@ -15,16 +15,53 @@ ATrollCharacter::ATrollCharacter() {
 	AttackCount = 0;
 }
 
-void ATrollCharacter::MountGnome(AActor* MountingActor, AController* Controller)
+void ATrollCharacter::Tick(float DeltaSeconds)
 {
-	if (Controller) {
-		Controller->Possess(this);
+	Super::Tick(DeltaSeconds);
+
+	if (bResetCamera) {
+		FVector FromVector = GetFollowCamera()->RelativeLocation;
+		FRotator FromRot = GetFollowCamera()->RelativeRotation;
+
+		GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
+		GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
+
+		CameraResetAlpha += DeltaSeconds * 1.25f;
+
+		if (CameraResetAlpha >= 1) {
+			bResetCamera = false;
+		}
+	}
+}
+
+
+void ATrollCharacter::MountGnome()
+{
+//	if (Controller) {
+// 		AGnomeCharacter* GnomeActor = Cast<AGnomeCharacter>(MountingActor);
+// 
+// 		GetFollowCamera()->SetWorldLocationAndRotation(GnomeActor->GetFollowCamera()->GetComponentLocation(), GnomeActor->GetFollowCamera()->GetComponentRotation());
+// 		ResetCamera();
+// 
+// 		GnomeActor->Controller->Possess(Cast<APawn>());
+//	}
+	bIsMounting = true;
+
+	if (SpawnedPawn){
+		SpawnedPawn->Destroy();
+
+		SpawnedPawn = nullptr;
 	}
 
-	if (MountingActor){
-		MountingActor->Destroy();
-	}
+
+
 	ChangeState(EPlayerType::Troll);
+}
+
+void ATrollCharacter::ResetCamera()
+{
+	bResetCamera = true;
+	CameraResetAlpha = 0;
 }
 
 float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -184,6 +221,18 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 	FQuat rotation = GetActorRotation().Quaternion();
 	FVector offset = rotation * DismountOffset;
 
+	if (SpawnedPawn && !bIsMounting) {
+		UE_LOG(LogTemp, Warning, TEXT("Hello from the other side"));
+
+		AGnomeCharacter* GnomeCharacter = Cast<AGnomeCharacter>(SpawnedPawn);
+
+		Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
+		Controller->Possess(Cast<APawn>(SpawnedPawn));
+
+		return;
+	}
+
 	switch (toState)
 	{
 	case EPlayerType::Troll:
@@ -193,7 +242,9 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 	case EPlayerType::Gnome:
 		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + offset, GetActorRotation(), SpawnParameters);
 
+		Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 		Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
+		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
 		Controller->Possess(Cast<APawn>(SpawnedPawn));
 
 		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));
@@ -205,7 +256,7 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 	}
 
 	Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(toState);
-
+	bIsMounting = false;
 }
 
 void ATrollCharacter::ToggleState() {
