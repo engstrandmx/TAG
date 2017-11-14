@@ -56,6 +56,16 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 
 		for (int8 i = 0; i < size; i++)
 		{
+			//Skip null reference spawns
+			if (CurrentPlayerStarts[i] == nullptr) {
+				continue;
+			}
+
+			//If closest index is null (as in index zero is null) the next non null index is used 
+			if (CurrentPlayerStarts[closestIndex] == nullptr) {
+				closestIndex = i;
+			}
+
 			if (FVector::Dist(PlayerLastPosition, CurrentPlayerStarts[closestIndex]->GetActorLocation()) > FVector::Dist(PlayerLastPosition, CurrentPlayerStarts[i]->GetActorLocation())) {
 				closestIndex = i;
 			}
@@ -76,9 +86,11 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 		DefaultPawnClass = GnomeCharacter;
 
 		SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
+		CurrentGnome = Cast<AGnomeCharacter>(SpawnedPawn);
 
 		if (CurrentTroll) {
-			Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(CurrentTroll);
+			CurrentTroll->SetSpawnedPawn(SpawnedPawn);
+			CurrentGnome->SetTrollParent(CurrentTroll);
 		}
 
 		UE_LOG(LogTemp, Warning, TEXT("Gnome spawned"));
@@ -88,6 +100,13 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 
 		SpawnedPawn = SpawnDefaultPawnFor(NewPlayer, StartPos);
 		CurrentTroll = Cast<ATrollCharacter>(SpawnedPawn);
+
+		if (CurrentGnome != nullptr) {
+			CurrentTroll->SetSpawnedPawn(CurrentGnome);
+			CurrentTroll->OnHideMesh(true);
+			CurrentGnome->SetTrollParent(CurrentTroll);
+			
+		}
 
 		UE_LOG(LogTemp, Warning, TEXT("Troll spawned"));
 		break;

@@ -8,6 +8,7 @@
 #include "TAGPlayerState.h"
 #include "TAGPlayerController.h"
 #include "InteractSceneComponent.h"
+#include "TAGGameMode.h"
 
 AGnomeCharacter::AGnomeCharacter() {
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &AGnomeCharacter::BeginOverlap);
@@ -114,30 +115,23 @@ void AGnomeCharacter::ResetCamera()
 void AGnomeCharacter::MountTroll()
 {
 	if (TrollParentActor) {
+		ATrollCharacter* TrollActor = Cast<ATrollCharacter>(TrollParentActor);
+
+		//Set the next camera to current camera location and start the camera reset function
+		TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+		TrollActor->ResetCamera();
+		Controller->Possess(Cast<APawn>(TrollParentActor));
+
 		float distance = FVector::Dist(TrollParentActor->GetActorLocation(), GetActorLocation());
 
+		//If player is close enough the gnome will mount
 		if (distance < MountDistance) {
-			UE_LOG(LogTemp, Warning, TEXT("Gnome should mount troll now"));
-
-			ATrollCharacter* TrollActor = Cast<ATrollCharacter>(TrollParentActor);
-
-			TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
-			TrollActor->ResetCamera();
-
-			Controller->Possess(Cast<APawn>(TrollParentActor));
-
+			//This function destroys the gnome and tells the troll to perform "mount" actions
 			Cast<ATrollCharacter>(TrollParentActor)->MountGnome();
 		}
 
-		else {
-			ATrollCharacter* TrollActor = Cast<ATrollCharacter>(TrollParentActor);
-			
-			TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
-			TrollActor->ResetCamera();
-
-			Controller->Possess(Cast<APawn>(TrollParentActor));
-		}
-
+		//Sets which actor is "active" to ensure correct respawns on death. In this case triggering the function will always set current player to troll, might change.
+		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(EPlayerType::Troll);
 	}
 }
 
@@ -185,7 +179,3 @@ void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)
 	GetCameraBoom()->bDoCollisionTest = false;
 
 }	
-
-
-
-

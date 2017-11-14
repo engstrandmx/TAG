@@ -37,6 +37,11 @@ public:
 
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
+	FORCEINLINE void SetSpawnedPawn(AActor* ActorToSet) { SpawnedPawn = ActorToSet; }
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnHideMesh(bool Hidden); //Called to hide/unhide gnome mesh, BP EVENT
+
 protected:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -79,6 +84,7 @@ protected:
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnDismount(); //Called when gnome dismounts from troll, BP EVENT
+
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnDeath();  //Called when troll dies

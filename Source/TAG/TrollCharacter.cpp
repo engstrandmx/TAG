@@ -51,6 +51,7 @@ void ATrollCharacter::MountGnome()
 		SpawnedPawn->Destroy();
 
 		SpawnedPawn = nullptr;
+		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(nullptr);
 	}
 
 
@@ -214,15 +215,8 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 {
 	CurrentState = toState;
 
-	FActorSpawnParameters SpawnParameters;
-	SpawnParameters.Instigator = this;
-	SpawnParameters.Owner = GetController();
-
-	FQuat rotation = GetActorRotation().Quaternion();
-	FVector offset = rotation * DismountOffset;
-
 	if (SpawnedPawn && !bIsMounting) {
-		UE_LOG(LogTemp, Warning, TEXT("Hello from the other side"));
+		//UE_LOG(LogTemp, Warning, TEXT("Hello from the other side"));
 
 		AGnomeCharacter* GnomeCharacter = Cast<AGnomeCharacter>(SpawnedPawn);
 
@@ -230,14 +224,26 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
 		Controller->Possess(Cast<APawn>(SpawnedPawn));
 
+		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));
+		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(EPlayerType::Gnome);
+
 		return;
 	}
+
+	//Variables for spawning, need to be declared out side of switch
+	FActorSpawnParameters SpawnParameters;
+	SpawnParameters.Instigator = this;
+	SpawnParameters.Owner = GetController();
+
+	FQuat rotation = GetActorRotation().Quaternion();
+	FVector offset = rotation * DismountOffset;
 
 	switch (toState)
 	{
 	case EPlayerType::Troll:
 		OnMount();
 
+		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentTroll(this);
 		break;
 	case EPlayerType::Gnome:
 		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + offset, GetActorRotation(), SpawnParameters);
