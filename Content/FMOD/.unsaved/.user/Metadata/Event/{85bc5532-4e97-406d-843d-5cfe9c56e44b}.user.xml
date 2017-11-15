@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{85bc5532-4e97-406d-843d-5cfe9c56e44b}">
         <relationship name="uiLastParameterSelection">
             <destination>{a819fcc8-b602-4354-aa97-d90ed780d944}</destination>
@@ -13,9 +13,6 @@
     <object class="GroupTrack" id="{e0679b0f-24cf-49e3-959b-b2b716fa0f4c}"/>
     <object class="GroupTrack" id="{8ba3d12a-767e-4adf-9718-0ba666eb07e7}"/>
     <object class="Timeline" id="{a819fcc8-b602-4354-aa97-d90ed780d944}">
-        <property name="cursorPosition">
-            <value>0</value>
-        </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.0017224056603773583</value>
         </property>
@@ -56,8 +53,8 @@
     <object class="SingleSound" id="{1f1cb34e-7e32-482d-abbf-909e715f6dcb}"/>
     <object class="MixerBusEffectChain" id="{1ede459e-fe28-41e8-9fd2-730c22f6a6e4}"/>
     <object class="MixerBusPanner" id="{cb1ce4fb-8257-4c02-815f-8f2d7d46bfb8}"/>
-    <object class="RandomizerModulator" id="{1d95037b-e80f-4380-a9f8-97f88f909db3}"/>
     <object class="RandomizerModulator" id="{3e8df7d6-7f4f-4ba9-9484-498f82db75f9}"/>
+    <object class="RandomizerModulator" id="{1d95037b-e80f-4380-a9f8-97f88f909db3}"/>
     <object class="SingleSound" id="{56334226-e7f7-4bf4-8d2a-087908a0e8f8}"/>
     <object class="SingleSound" id="{ef79e59b-f0f2-461c-bef8-0815446ba559}"/>
     <object class="SingleSound" id="{ba996727-8d39-4664-8ae7-338bb1695628}"/>
@@ -68,7 +65,7 @@
     <object class="MixerBusEffectChain" id="{472502ba-ac4e-4c4e-b59b-841e5f727b4c}"/>
     <object class="MixerBusPanner" id="{deb7489d-836a-4241-8425-176d1019923c}"/>
     <object class="MixerBusFader" id="{5d22c988-f5ef-43c9-8ada-16b34a938590}"/>
-    <object class="SpatialiserEffect" id="{2f97b40f-484e-4bf0-8006-c3f45dfcbedb}"/>
+    <object class="ProxyEffect" id="{2f97b40f-484e-4bf0-8006-c3f45dfcbedb}"/>
     <object class="MixerBusFader" id="{a599db50-4486-4600-a8e9-e407c9d00265}"/>
     <object class="ThreeEQEffect" id="{5d4a6ffe-575f-4ee3-92ea-3bdb22cca3e7}"/>
     <object class="MixerBusFader" id="{1631a67c-0740-473c-85e4-1f1da6dc06d9}"/>

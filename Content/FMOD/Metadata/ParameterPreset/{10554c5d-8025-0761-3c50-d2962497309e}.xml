@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{10554c5d-8025-0761-3c50-d2962497309e}">
+        <property name="name">
+            <value>Land</value>
+        </property>
+        <relationship name="folder">
+            <destination>{c7122de6-1e23-473b-b2ee-2d216e6a3350}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{50518afd-08af-4466-8bf3-112cd61cf33f}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{50518afd-08af-4466-8bf3-112cd61cf33f}">
+        <property name="seekSpeed">
+            <value>3.6000001430511475</value>
+        </property>
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>

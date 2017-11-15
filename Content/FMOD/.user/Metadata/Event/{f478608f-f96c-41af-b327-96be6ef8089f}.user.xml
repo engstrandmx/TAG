@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{f478608f-f96c-41af-b327-96be6ef8089f}">
         <relationship name="uiLastParameterSelection">
             <destination>{2d9d326e-3d83-423f-9593-91b7f5876b37}</destination>
@@ -12,9 +12,6 @@
     <object class="GroupTrack" id="{08a4f86c-ab48-4fe4-adce-6537493c7465}"/>
     <object class="GroupTrack" id="{332e91b8-c3ce-4940-9147-c44c2aa44660}"/>
     <object class="Timeline" id="{2d9d326e-3d83-423f-9593-91b7f5876b37}">
-        <property name="cursorPosition">
-            <value>0</value>
-        </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.00092330974842767279</value>
         </property>
@@ -56,7 +53,7 @@
     <object class="MixerBusEffectChain" id="{261eace7-0230-4e9e-9f14-2d065a514f82}"/>
     <object class="MixerBusPanner" id="{2c54290a-0c02-492f-8794-770abc1e39f1}"/>
     <object class="MixerBusFader" id="{a2167903-18cb-4a36-85c6-4304cccd6327}"/>
-    <object class="SpatialiserEffect" id="{2b3f65e7-abe8-4758-b2b2-67151baeec7b}"/>
+    <object class="ProxyEffect" id="{2b3f65e7-abe8-4758-b2b2-67151baeec7b}"/>
     <object class="MixerBusFader" id="{9c822087-ff5a-446e-8420-0369cc3b1942}"/>
     <object class="MixerBusFader" id="{f082c1d7-d3a3-4ee6-b775-cc69042511f0}"/>
 </objects>

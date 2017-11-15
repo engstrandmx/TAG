@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{19002caf-40e5-48ea-814c-244fd0a0d70e}">
         <relationship name="selectables">
             <destination>{2ce4e476-2c13-49b6-9f85-de5da6256aa2}</destination>
@@ -24,29 +24,12 @@
     <object class="GroupTrack" id="{3f344856-2334-48ce-88fa-26819c8c455a}"/>
     <object class="GroupTrack" id="{f1ef646d-b7f9-4a3d-8fa3-75259b7c66ad}"/>
     <object class="Timeline" id="{4b79bfe3-0d51-4932-8d5c-df9989f5ca88}">
-        <property name="cursorPosition">
-            <value>0</value>
-        </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.0047652093681015443</value>
         </property>
     </object>
-    <object class="GameParameter" id="{25e57caa-e898-4d57-b7b1-96cc2b5ed996}">
-        <property name="cursorPosition">
-            <value>0</value>
-        </property>
-        <property name="uiLastRulerScaleRatio">
-            <value>0.00082781456953642384</value>
-        </property>
-    </object>
-    <object class="GameParameter" id="{9ccc30ed-50a6-416a-acaa-d90473d075b9}">
-        <property name="cursorPosition">
-            <value>0</value>
-        </property>
-        <property name="uiLastRulerScaleRatio">
-            <value>0.00082781456953642384</value>
-        </property>
-    </object>
+    <object class="ParameterProxy" id="{4d482f31-124e-0170-2c4d-0255f004e5d1}"/>
+    <object class="ParameterProxy" id="{f4616376-aa70-0d4d-3756-4d9da88a49fe}"/>
     <object class="EventMixerMaster" id="{a8ed52ae-e98b-44c0-8bae-41e382703f7c}">
         <relationship name="input">
             <destination>{8dc2a34b-d5bd-45f6-b2f3-aa1d07ec84f4}</destination>
@@ -72,9 +55,9 @@
     <object class="EventMixerGroup" id="{49d6a7ac-e4ea-4df8-96f4-435cfed1057d}"/>
     <object class="SnapshotModule" id="{18a0826b-f870-46e7-ba72-e12bd4bf5dce}"/>
     <object class="EventMixerGroup" id="{3b0ad610-6172-4bb2-b5c1-101f3476d2b7}"/>
+    <object class="NamedMarker" id="{2c6333f8-bbba-4aa7-9e52-8054c398a75b}"/>
     <object class="NamedMarker" id="{2a906027-f179-4bb3-bc79-70fb79b580e7}"/>
     <object class="TransitionRegion" id="{8cc52bfa-9917-492c-9e87-3678478e6925}"/>
-    <object class="NamedMarker" id="{2c6333f8-bbba-4aa7-9e52-8054c398a75b}"/>
     <object class="TransitionRegion" id="{2ce4e476-2c13-49b6-9f85-de5da6256aa2}"/>
     <object class="MixerBusEffectChain" id="{0f2ed30b-5d88-4c17-9f23-48c36c9b43de}"/>
     <object class="MixerBusPanner" id="{432054fd-f5e6-4f0b-b3fb-a4eff40cb944}"/>

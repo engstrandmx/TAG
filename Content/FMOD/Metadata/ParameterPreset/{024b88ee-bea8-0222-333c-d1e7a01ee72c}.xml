@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{024b88ee-bea8-0222-333c-d1e7a01ee72c}">
+        <property name="name">
+            <value>Win/Lose</value>
+        </property>
+        <relationship name="folder">
+            <destination>{088ee8f0-2fa7-49c1-9d4d-7aca9c6e2f24}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{424f4e4e-3622-4125-849f-125d5295248d}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{424f4e4e-3622-4125-849f-125d5295248d}">
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>

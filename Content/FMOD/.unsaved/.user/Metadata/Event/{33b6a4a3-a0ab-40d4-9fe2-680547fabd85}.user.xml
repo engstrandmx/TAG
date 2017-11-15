@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{33b6a4a3-a0ab-40d4-9fe2-680547fabd85}">
         <relationship name="selectables">
             <destination>{455f42f9-e9cb-4da6-a876-d50b7d979fb0}</destination>
@@ -40,6 +40,6 @@
     <object class="MixerBusEffectChain" id="{1a4a66a6-61b8-4a24-afaa-0cd88aed79ce}"/>
     <object class="MixerBusPanner" id="{b321887e-7ece-4965-b632-043dd8b7a8a7}"/>
     <object class="MixerBusFader" id="{c0207720-fc61-4d9b-b8b4-37a4e91a09d2}"/>
-    <object class="SpatialiserEffect" id="{a95fb978-77f0-4bdf-8b89-b1268bb16c8b}"/>
+    <object class="ProxyEffect" id="{a95fb978-77f0-4bdf-8b89-b1268bb16c8b}"/>
     <object class="MixerBusFader" id="{f648e232-620f-4f70-af54-90d42942f4fa}"/>
 </objects>

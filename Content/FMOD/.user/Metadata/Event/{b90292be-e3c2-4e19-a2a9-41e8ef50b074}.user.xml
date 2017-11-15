@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{b90292be-e3c2-4e19-a2a9-41e8ef50b074}">
         <relationship name="selectables">
             <destination>{00280f8b-5d0a-45c5-9a67-dae60a3bbafb}</destination>
@@ -22,21 +22,11 @@
     <object class="GroupTrack" id="{97815330-8b7c-46f0-a1f3-61cfd6348d16}"/>
     <object class="GroupTrack" id="{f44c4812-96a8-44b1-86a8-a8c976b4fa8c}"/>
     <object class="Timeline" id="{546b64dc-6256-4690-8d28-aa3164ebeb62}">
-        <property name="cursorPosition">
-            <value>0</value>
-        </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.0050000000000000001</value>
         </property>
     </object>
-    <object class="GameParameter" id="{c7466fd2-307b-497a-bb88-2265154e08da}">
-        <property name="cursorPosition">
-            <value>0</value>
-        </property>
-        <property name="uiLastRulerScaleRatio">
-            <value>0.0032813781788351109</value>
-        </property>
-    </object>
+    <object class="ParameterProxy" id="{c7466fd2-307b-497a-bb88-2265154e08da}"/>
     <object class="EventMixerMaster" id="{4d6bd6ca-f83b-4edc-b537-9a2aca430303}">
         <relationship name="input">
             <destination>{c1f47054-4fe4-44f5-87ed-808d41c2eb7e}</destination>
@@ -77,8 +67,8 @@
     <object class="MixerBusEffectChain" id="{fe0f2f25-8f67-4fef-9393-7527aef53cb9}"/>
     <object class="MixerBusPanner" id="{af72e6f4-a58d-463b-b829-5f0175ea7263}"/>
     <object class="MixerBusFader" id="{ce5ae0b6-27f1-4306-9e66-17ec6ba53e44}"/>
-    <object class="RandomizerModulator" id="{1d52c749-ced4-4deb-aaee-385b91a99dd8}"/>
     <object class="RandomizerModulator" id="{1e107682-0966-4960-b0c9-e35bdc59a739}"/>
+    <object class="RandomizerModulator" id="{1d52c749-ced4-4deb-aaee-385b91a99dd8}"/>
     <object class="SingleSound" id="{5193f20d-0e14-4f0a-a076-8de5c9fd3bbe}"/>
     <object class="SingleSound" id="{189f92e0-5c5a-4444-8b72-604b07643575}"/>
     <object class="SingleSound" id="{5ffcdaad-26ff-433d-b5a9-db0be422247d}"/>
@@ -87,8 +77,8 @@
     <object class="SingleSound" id="{3026b36e-f502-4aad-b141-5bada1c720c5}"/>
     <object class="MixerBusEffectChain" id="{9b594ea6-c23b-4089-8edb-75a219cf363c}"/>
     <object class="MixerBusPanner" id="{4327f95c-9155-4f2f-b020-4870601b27b0}"/>
-    <object class="RandomizerModulator" id="{5c725034-83a2-420a-ae26-04f3dc5f0433}"/>
     <object class="RandomizerModulator" id="{58becf9c-82dd-4409-a1ba-d40e0cab95c7}"/>
+    <object class="RandomizerModulator" id="{5c725034-83a2-420a-ae26-04f3dc5f0433}"/>
     <object class="SingleSound" id="{09a5fe45-8027-4f6a-92c4-4f1676a3e6b6}"/>
     <object class="SingleSound" id="{782e38b4-e4d4-4696-b368-23045b97693c}"/>
     <object class="SingleSound" id="{163d2074-fa27-4449-a672-53eef7aded11}"/>
@@ -96,8 +86,8 @@
     <object class="SingleSound" id="{c528f8a6-f0ed-4204-8a61-89c47bc399d2}"/>
     <object class="MixerBusEffectChain" id="{99a3f0fd-8fa5-4b82-ae1b-52707dc747ae}"/>
     <object class="MixerBusPanner" id="{60d7ff3a-6f07-4157-9eed-003d80416191}"/>
-    <object class="RandomizerModulator" id="{e1ecc26f-d3c3-4405-bd4f-e9407a66d21c}"/>
     <object class="RandomizerModulator" id="{36b2de14-227b-47a2-9de1-c2db06be0855}"/>
+    <object class="RandomizerModulator" id="{e1ecc26f-d3c3-4405-bd4f-e9407a66d21c}"/>
     <object class="SingleSound" id="{f94e1b35-103e-45f3-b1c0-d1a7def31bb3}"/>
     <object class="SingleSound" id="{b1d93904-6c62-4fc4-8dcc-c3dd92d628e3}"/>
     <object class="SingleSound" id="{8e73de64-975b-430e-be3f-9954c0acc6ce}"/>
@@ -106,8 +96,8 @@
     <object class="SingleSound" id="{01ac5495-8b2a-4a00-b599-a238d2b0a1ab}"/>
     <object class="MixerBusEffectChain" id="{96d7feb1-ce6b-49f6-814a-0545c300532f}"/>
     <object class="MixerBusPanner" id="{aea8eb0c-aeb5-4a78-bed4-03e67e5782cb}"/>
-    <object class="RandomizerModulator" id="{f592c53a-550c-4310-a239-f874a82442e7}"/>
     <object class="RandomizerModulator" id="{9177b716-bb94-4e68-8622-f230665a1674}"/>
+    <object class="RandomizerModulator" id="{f592c53a-550c-4310-a239-f874a82442e7}"/>
     <object class="SingleSound" id="{2c6cf926-28d9-4504-9732-34191e5749db}"/>
     <object class="SingleSound" id="{ba8fb4d5-c675-4fbf-b8ea-d03329d3d06d}"/>
     <object class="SingleSound" id="{eefdb2b0-ee02-4379-aeef-c1be0bb5cf6e}"/>

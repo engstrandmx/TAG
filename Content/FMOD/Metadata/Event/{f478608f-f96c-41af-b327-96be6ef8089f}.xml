@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{f478608f-f96c-41af-b327-96be6ef8089f}">
         <property name="name">
             <value>Gnom_jump_on_cow</value>
@@ -266,7 +266,14 @@
     </object>
     <object class="MixerBusPanner" id="{2c54290a-0c02-492f-8794-770abc1e39f1}"/>
     <object class="MixerBusFader" id="{a2167903-18cb-4a36-85c6-4304cccd6327}"/>
-    <object class="SpatialiserEffect" id="{2b3f65e7-abe8-4758-b2b2-67151baeec7b}"/>
+    <object class="ProxyEffect" id="{2b3f65e7-abe8-4758-b2b2-67151baeec7b}">
+        <property name="inputFormat">
+            <value>0</value>
+        </property>
+        <relationship name="preset">
+            <destination>{7d3a9369-2dcf-02e0-1415-12cb98e56b5d}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{9c822087-ff5a-446e-8420-0369cc3b1942}"/>
     <object class="MixerBusFader" id="{f082c1d7-d3a3-4ee6-b775-cc69042511f0}"/>
 </objects>

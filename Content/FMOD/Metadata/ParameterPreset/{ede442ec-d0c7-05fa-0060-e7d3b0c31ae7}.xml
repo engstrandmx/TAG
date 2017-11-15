@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{ede442ec-d0c7-05fa-0060-e7d3b0c31ae7}">
+        <property name="name">
+            <value>Idle</value>
+        </property>
+        <relationship name="folder">
+            <destination>{a1f3e5e9-621f-461c-bcb3-844450b029f5}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{ade0844c-584d-46fd-b7c3-24694248d946}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{ade0844c-584d-46fd-b7c3-24694248d946}">
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>

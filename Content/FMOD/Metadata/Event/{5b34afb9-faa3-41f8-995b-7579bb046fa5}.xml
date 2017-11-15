@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{5b34afb9-faa3-41f8-995b-7579bb046fa5}">
         <property name="name">
             <value>Gnom_coinbag_run</value>
@@ -84,15 +84,15 @@ Parameter End:
             <destination>{023387d0-2ca4-47e1-9106-82205dd68e6b}</destination>
         </relationship>
         <relationship name="markers">
-            <destination>{d6093c4c-f30a-4a12-bd0d-d6b8ca9ea1b8}</destination>
             <destination>{5122ce17-aac1-4c0e-9dba-1b837d827a54}</destination>
+            <destination>{d6093c4c-f30a-4a12-bd0d-d6b8ca9ea1b8}</destination>
             <destination>{03a8d657-85b2-4e70-9403-ae1515becc15}</destination>
         </relationship>
     </object>
-    <object class="GameParameter" id="{f381006b-10e8-4258-81c5-739b9679839e}">
-        <property name="name">
-            <value>End</value>
-        </property>
+    <object class="ParameterProxy" id="{f381006b-10e8-4258-81c5-739b9679839e}">
+        <relationship name="preset">
+            <destination>{25e57caa-e898-4d57-b7b1-96cc2b5ed996}</destination>
+        </relationship>
     </object>
     <object class="EventMixerMaster" id="{c2f9619f-4be5-4d9f-a13c-e5a965b1b45c}">
         <relationship name="effectChain">
@@ -136,12 +136,12 @@ Parameter End:
             <destination>{c2f9619f-4be5-4d9f-a13c-e5a965b1b45c}</destination>
         </relationship>
     </object>
-    <object class="LoopRegion" id="{d6093c4c-f30a-4a12-bd0d-d6b8ca9ea1b8}">
+    <object class="NamedMarker" id="{5122ce17-aac1-4c0e-9dba-1b837d827a54}">
         <property name="position">
-            <value>0</value>
+            <value>19</value>
         </property>
-        <property name="length">
-            <value>18.5</value>
+        <property name="name">
+            <value>End</value>
         </property>
         <relationship name="timeline">
             <destination>{9dcc25b3-46e7-4dc9-90e5-d8b78f45f72d}</destination>
@@ -150,12 +150,12 @@ Parameter End:
             <destination>{82d3bd19-c91f-49fb-92e4-ce2e1403599c}</destination>
         </relationship>
     </object>
-    <object class="NamedMarker" id="{5122ce17-aac1-4c0e-9dba-1b837d827a54}">
+    <object class="LoopRegion" id="{d6093c4c-f30a-4a12-bd0d-d6b8ca9ea1b8}">
         <property name="position">
-            <value>19</value>
+            <value>0</value>
         </property>
-        <property name="name">
-            <value>End</value>
+        <property name="length">
+            <value>18.5</value>
         </property>
         <relationship name="timeline">
             <destination>{9dcc25b3-46e7-4dc9-90e5-d8b78f45f72d}</destination>
@@ -174,14 +174,14 @@ Parameter End:
         <relationship name="triggerConditions">
             <destination>{18f295aa-3c60-4ff6-b4f6-cf73d2894f48}</destination>
         </relationship>
+        <relationship name="destination">
+            <destination>{5122ce17-aac1-4c0e-9dba-1b837d827a54}</destination>
+        </relationship>
         <relationship name="timeline">
             <destination>{9dcc25b3-46e7-4dc9-90e5-d8b78f45f72d}</destination>
         </relationship>
         <relationship name="markerTrack">
             <destination>{c0dd8176-e6c7-47c1-ba21-de22edb2679d}</destination>
-        </relationship>
-        <relationship name="destination">
-            <destination>{5122ce17-aac1-4c0e-9dba-1b837d827a54}</destination>
         </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{9339dfca-8ec4-42bb-b009-5c21c4e7ad8f}">
@@ -220,10 +220,17 @@ Parameter End:
             <value>1</value>
         </property>
         <relationship name="parameter">
-            <destination>{f381006b-10e8-4258-81c5-739b9679839e}</destination>
+            <destination>{25e57caa-e898-4d57-b7b1-96cc2b5ed996}</destination>
         </relationship>
     </object>
     <object class="MixerBusFader" id="{f0c7f49c-da21-4f8a-a08b-a0c9834b48a2}"/>
-    <object class="SpatialiserEffect" id="{d425b379-f55e-4a74-bf95-8737fe672622}"/>
+    <object class="ProxyEffect" id="{d425b379-f55e-4a74-bf95-8737fe672622}">
+        <property name="inputFormat">
+            <value>0</value>
+        </property>
+        <relationship name="preset">
+            <destination>{7d3a9369-2dcf-02e0-1415-12cb98e56b5d}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{109c3afc-23db-4ba5-85ba-446633c25ef4}"/>
 </objects>

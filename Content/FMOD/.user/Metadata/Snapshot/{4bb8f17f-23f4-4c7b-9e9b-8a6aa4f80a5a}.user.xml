@@ -1,76 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Snapshot" id="{4bb8f17f-23f4-4c7b-9e9b-8a6aa4f80a5a}">
         <relationship name="uiLastParameterSelection">
             <destination>{b78ffd9a-d7be-4e2e-bbe8-9a9d1e320948}</destination>
         </relationship>
     </object>
-    <object class="EventAutomatableProperties" id="{582a9338-1631-4716-8bc8-7c322767e96d}">
-        <property name="uiModulationDrawerVisible">
-            <value>true</value>
-        </property>
-    </object>
+    <object class="EventAutomatableProperties" id="{582a9338-1631-4716-8bc8-7c322767e96d}"/>
     <object class="MarkerTrack" id="{0977aa99-f7a8-4807-bd73-5c99e218e57f}"/>
     <object class="Timeline" id="{b78ffd9a-d7be-4e2e-bbe8-9a9d1e320948}">
-        <property name="cursorPosition">
-            <value>10.139458572600493</value>
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
         </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.02461033634126333</value>
         </property>
     </object>
-    <object class="SnapshotMasterTrack" id="{9688cb99-8141-48b8-9f8d-91b466288722}"/>
-    <object class="SnapshotProperty" id="{2d706999-f51d-41c3-a5b1-2f5b94a4748e}"/>
-    <object class="SnapshotProperty" id="{e64aa35e-5e86-48d6-ad99-da2a951f0dd5}"/>
-    <object class="SnapshotProperty" id="{ec8c8974-e631-40db-bf24-ff2183b298ea}"/>
-    <object class="SnapshotProperty" id="{337f5d10-027a-4a88-b453-e8f69fbadba7}"/>
-    <object class="SnapshotProperty" id="{63d33825-3b7e-4374-869a-b5eeac32fa55}"/>
-    <object class="SnapshotProperty" id="{7ea7b2ae-ca58-4a52-a9d5-b7b3f1bcfeb7}"/>
-    <object class="SnapshotProperty" id="{1dde3d44-d775-4b37-ae59-129f7b85ee02}"/>
-    <object class="SnapshotProperty" id="{f0e86f6b-878b-445e-a708-0f94c2fc984c}"/>
-    <object class="SnapshotProperty" id="{02201c1d-90e8-49e4-856d-63e20eac1c26}"/>
-    <object class="SnapshotProperty" id="{28c65380-fe30-4002-a6d2-45e0d76847c9}"/>
-    <object class="SnapshotProperty" id="{29e32a89-a929-419f-8a48-d3e812c3345d}"/>
-    <object class="SnapshotProperty" id="{9f4c2348-9e55-4ed0-bfe0-bc7abcaba0a8}"/>
-    <object class="SnapshotProperty" id="{f7ce91ed-219c-4b1a-9cf1-5c2156e0cbc9}"/>
-    <object class="SnapshotProperty" id="{fd7563a1-663c-4128-b8c3-35dd9247c498}"/>
-    <object class="SnapshotProperty" id="{cb7285ec-50fb-49d5-b28c-86ae58a06130}"/>
-    <object class="SnapshotProperty" id="{764e43d1-72d1-44a2-94e5-34ae9a7a45dd}"/>
-    <object class="SnapshotProperty" id="{d9da375e-1120-48a9-8244-ad4f43caa854}"/>
-    <object class="SnapshotProperty" id="{ccba4d3a-b9c8-40fd-a6b0-59ca96cf4866}"/>
-    <object class="SnapshotProperty" id="{cd9b6236-c971-4e6f-89ae-edc6fee44d9d}"/>
-    <object class="SnapshotProperty" id="{0e0ad73e-b775-48e2-b554-b0aaf130e240}"/>
+    <object class="SnapshotMasterTrack" id="{9688cb99-8141-48b8-9f8d-91b466288722}">
+        <property name="uiAutomationTracksVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{764e43d1-72d1-44a2-94e5-34ae9a7a45dd}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{ccba4d3a-b9c8-40fd-a6b0-59ca96cf4866}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{e64aa35e-5e86-48d6-ad99-da2a951f0dd5}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{1dde3d44-d775-4b37-ae59-129f7b85ee02}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{9f4c2348-9e55-4ed0-bfe0-bc7abcaba0a8}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{63d33825-3b7e-4374-869a-b5eeac32fa55}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{fd7563a1-663c-4128-b8c3-35dd9247c498}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{29e32a89-a929-419f-8a48-d3e812c3345d}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{0e0ad73e-b775-48e2-b554-b0aaf130e240}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{d9da375e-1120-48a9-8244-ad4f43caa854}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{f7ce91ed-219c-4b1a-9cf1-5c2156e0cbc9}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{cb7285ec-50fb-49d5-b28c-86ae58a06130}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{f0e86f6b-878b-445e-a708-0f94c2fc984c}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{ec8c8974-e631-40db-bf24-ff2183b298ea}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{7ea7b2ae-ca58-4a52-a9d5-b7b3f1bcfeb7}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{02201c1d-90e8-49e4-856d-63e20eac1c26}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{2d706999-f51d-41c3-a5b1-2f5b94a4748e}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{cd9b6236-c971-4e6f-89ae-edc6fee44d9d}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{28c65380-fe30-4002-a6d2-45e0d76847c9}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="SnapshotProperty" id="{337f5d10-027a-4a88-b453-e8f69fbadba7}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
     <object class="SnapshotTrack" id="{9d9e0759-f6ce-4eab-8dd9-a537f5287f7e}">
+        <property name="uiAutomationTracksVisible">
+            <value>false</value>
+        </property>
         <property name="uiTrackHeight">
             <value>100</value>
         </property>
     </object>
     <object class="SnapshotTrack" id="{85161298-2f06-4a36-a24a-2b21fda70421}">
-        <property name="uiAutomationTracksVisible">
-            <value>true</value>
-        </property>
         <property name="uiTrackHeight">
             <value>100</value>
         </property>
     </object>
     <object class="SnapshotTrack" id="{95613bfc-6e1c-4836-8e1c-b52835fdefbf}">
-        <property name="uiAutomationTracksVisible">
-            <value>true</value>
-        </property>
         <property name="uiTrackHeight">
             <value>100</value>
         </property>
     </object>
     <object class="SnapshotTrack" id="{9d80a2a2-f966-40d1-9e1e-d5840eb16902}">
+        <property name="uiAutomationTracksVisible">
+            <value>false</value>
+        </property>
         <property name="uiTrackHeight">
             <value>100</value>
         </property>
     </object>
-    <object class="ADSRModulator" id="{84c6e612-38e5-48ba-b6b1-138aedcc9bc5}"/>
-    <object class="AutomationTrack" id="{b7461dc4-862f-41cf-9b7d-19c1d252c342}"/>
-    <object class="AutomationTrack" id="{a685f65b-3551-4cdb-8202-e3b276f34427}"/>
-    <object class="AutomationTrack" id="{86dd6b6e-605a-474c-8c12-36a9da4928b7}"/>
-    <object class="AutomationTrack" id="{0cf2b1af-2225-4e1b-877f-cf905d181ac2}"/>
-    <object class="AutomationTrack" id="{60f623be-521b-4e06-b613-45c7acdaee56}"/>
-    <object class="AutomationTrack" id="{38a06a84-15c6-4b7e-a83c-ebf7e75cde27}"/>
+    <object class="ADSRModulator" id="{84c6e612-38e5-48ba-b6b1-138aedcc9bc5}">
+        <property name="uiModulationDrawerVisible">
+            <value>false</value>
+        </property>
+    </object>
+    <object class="AutomationTrack" id="{87a8a65f-2632-08d4-22b2-df9b494858c6}"/>
+    <object class="AutomationTrack" id="{966b4dc0-954c-05c0-3bcd-25e8ede9dfa3}"/>
+    <object class="AutomationTrack" id="{b633d0f5-c047-0e57-35dd-f0f34153b333}"/>
+    <object class="AutomationTrack" id="{3c1c0a34-8238-0700-3eb0-09cac6028146}"/>
+    <object class="AutomationTrack" id="{50189825-f206-071d-0fdc-839d37c075d2}"/>
+    <object class="AutomationTrack" id="{084ed11f-b5db-0265-11f3-2dad7c4645a3}"/>
 </objects>

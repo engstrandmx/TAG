@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{d8bef4c8-71d1-0f66-1e3e-6e4ddc15d616}">
+        <property name="name">
+            <value>CowBell</value>
+        </property>
+        <relationship name="folder">
+            <destination>{bd514e56-74ef-090b-1de8-385b6e662c9b}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{98ba3268-f95b-4c61-a99d-adf72e9e15b7}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{98ba3268-f95b-4c61-a99d-adf72e9e15b7}">
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>
