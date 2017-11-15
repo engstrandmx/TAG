@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPresetFolder" id="{2623b8f1-b8a1-4811-815c-dee83e585c22}">
+        <property name="name">
+            <value>Gnom_Jump</value>
+        </property>
+        <relationship name="folder">
+            <destination>{d2d8d5c1-6543-40d5-90e9-1957b212a308}</destination>
+        </relationship>
+    </object>
+</objects>

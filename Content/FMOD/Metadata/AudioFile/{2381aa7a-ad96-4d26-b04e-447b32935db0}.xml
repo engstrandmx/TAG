@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{2381aa7a-ad96-4d26-b04e-447b32935db0}">
         <property name="assetPath">
-            <value>Tag_Cow_music_loop_06.wav</value>
+            <value>Music/Tag_Cow_music_loop_06.wav</value>
         </property>
         <property name="isStreaming">
             <value>true</value>

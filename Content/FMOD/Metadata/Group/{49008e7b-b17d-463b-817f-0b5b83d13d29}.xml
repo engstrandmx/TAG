@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="MixerGroup" id="{49008e7b-b17d-463b-817f-0b5b83d13d29}">
         <property name="volume">
-            <value>-6.20000029</value>
+            <value>-8.19999981</value>
         </property>
         <property name="name">
             <value>Troll</value>
