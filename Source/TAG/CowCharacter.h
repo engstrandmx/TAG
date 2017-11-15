@@ -24,6 +24,12 @@ public:
 	// Sets default values for this character's properties
 	ACowCharacter();
 
+	UPROPERTY(EditAnywhere)
+	float RotationSpeed;
+
+	UPROPERTY(BlueprintReadWrite)
+	bool bInAir;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
