@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{68fe6b51-c9fe-4940-aa6f-2bafa846bbf1}">
         <relationship name="selectables">
             <destination>{dfba9b79-0e2f-41d8-9aaa-b16f5189159d}</destination>
@@ -20,19 +20,13 @@
     <object class="GroupTrack" id="{a7b9783e-3be3-4b04-b729-0aa644b24a47}"/>
     <object class="GroupTrack" id="{14c9ba6e-e408-404c-a27c-95652cc7db9a}"/>
     <object class="Timeline" id="{f387b19b-6a22-4fd6-9ecc-2900786d4aed}">
-        <property name="cursorPosition">
-            <value>0</value>
-        </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.10599388757861633</value>
         </property>
     </object>
-    <object class="DistanceParameter" id="{f8a4e6ef-e690-4b47-a77f-ddf4db2f3af5}">
-        <property name="cursorPosition">
-            <value>0</value>
-        </property>
+    <object class="ParameterProxy" id="{f8a4e6ef-e690-4b47-a77f-ddf4db2f3af5}">
         <property name="uiLastRulerScaleRatio">
-            <value>0.016406890894175553</value>
+            <value>0.031347962382445138</value>
         </property>
     </object>
     <object class="EventMixerMaster" id="{63b3150f-dd59-4401-8c60-0a54af3fbb57}">
@@ -42,7 +36,7 @@
             <destination>{7c6ae977-01f3-47ec-81e0-6e9775c835b0}</destination>
         </relationship>
     </object>
-    <object class="AutomationTrack" id="{70b91c47-618d-4ef9-92ab-95c5e2ce62aa}"/>
+    <object class="AutomationTrack" id="{4057a7dc-c190-07e2-2b64-539f79d4f92e}"/>
     <object class="MixerBusEffectChain" id="{ebe1a802-049c-4c7f-a4df-8acd53738199}"/>
     <object class="MixerBusPanner" id="{b08140f8-a3c0-4728-8708-0889afcd0678}"/>
     <object class="SingleSound" id="{644b9630-8057-4ed4-8e30-6a2025d975d9}">
@@ -71,7 +65,7 @@
     <object class="MixerBusPanner" id="{9cdac16f-1e37-41ce-9ecd-e8224d0e5f6d}"/>
     <object class="ThreeEQEffect" id="{c17e4388-3807-4e39-874a-ab9a60c8bfd3}"/>
     <object class="MixerBusFader" id="{a454174e-d2b9-4382-a541-07399432d3da}"/>
-    <object class="SpatialiserEffect" id="{03ba0d7b-efea-4a71-84a5-2b6b39958b89}"/>
+    <object class="ProxyEffect" id="{03ba0d7b-efea-4a71-84a5-2b6b39958b89}"/>
     <object class="MixerBusFader" id="{3b5be09d-ede1-490a-b916-696ceb97200d}"/>
     <object class="ThreeEQEffect" id="{61465295-aa10-462c-804e-65f86089bb73}"/>
     <object class="MixerBusFader" id="{0ed40fee-f6fc-4a4d-9d08-431f74649808}"/>

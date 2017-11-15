@@ -26,6 +26,7 @@ class TAG_API ATrollCharacter : public ATAGCharacter
 
 	ATrollCharacter();
 
+	virtual void Tick(float DeltaSeconds);
 	//UFUNCTION()
 	//void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult);
 public:
@@ -35,7 +36,8 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Characters")
 	TSubclassOf<APawn> GnomePawn; //Pawn to spawn when mounting
 
-	void MountGnome(AActor* MountingActor, AController* Controller); //Called by gnome when mounting
+	void MountGnome(); //Called by gnome when mounting
+	void ResetCamera();
 
 	State CurrentState; //If actor is mounted/dismounted
 
@@ -43,6 +45,11 @@ public:
 	bool bIsPunching; //When attack button is held down
 
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+
+	FORCEINLINE void SetSpawnedPawn(AActor* ActorToSet) { SpawnedPawn = ActorToSet; }
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnHideMesh(bool Hidden); //Called to hide/unhide gnome mesh, BP EVENT
 
 protected:
 
@@ -86,6 +93,7 @@ protected:
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnDismount(); //Called when gnome dismounts from troll, BP EVENT
+
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnDeath();  //Called when troll dies
@@ -132,4 +140,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = Components)
 	UParticleSystem* DamageParticles;
+
+	float CameraResetAlpha;
+	bool bResetCamera;
+	bool bIsMounting;
 };

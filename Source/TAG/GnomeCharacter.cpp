@@ -8,6 +8,7 @@
 #include "TAGPlayerState.h"
 #include "TAGPlayerController.h"
 #include "InteractSceneComponent.h"
+#include "TAGGameMode.h"
 
 AGnomeCharacter::AGnomeCharacter() {
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &AGnomeCharacter::BeginOverlap);
@@ -17,7 +18,29 @@ AGnomeCharacter::AGnomeCharacter() {
 	InteractShape->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform);
 
 	bReplicates = true;
+	PrimaryActorTick.bCanEverTick = true;
 	CarryMovementSpeed = 150;
+
+	CameraResetAlpha = 0;
+}
+
+void AGnomeCharacter::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	if (bResetCamera) {
+		FVector FromVector = GetFollowCamera()->RelativeLocation;
+		FRotator FromRot = GetFollowCamera()->RelativeRotation;
+
+		GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
+		GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
+
+		CameraResetAlpha += DeltaSeconds * 1.25f;
+
+		if (CameraResetAlpha >= 1) {
+			bResetCamera = false;
+		}
+	}
 }
 
 void AGnomeCharacter::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult) {
@@ -83,14 +106,32 @@ void AGnomeCharacter::ResetPlayer()
 	}	
 } 
 
+void AGnomeCharacter::ResetCamera()
+{
+	bResetCamera = true;
+	CameraResetAlpha = 0;
+}
+
 void AGnomeCharacter::MountTroll()
 {
 	if (TrollParentActor) {
+		ATrollCharacter* TrollActor = Cast<ATrollCharacter>(TrollParentActor);
+
+		//Set the next camera to current camera location and start the camera reset function
+		TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+		TrollActor->ResetCamera();
+		Controller->Possess(Cast<APawn>(TrollParentActor));
+
 		float distance = FVector::Dist(TrollParentActor->GetActorLocation(), GetActorLocation());
 
+		//If player is close enough the gnome will mount
 		if (distance < MountDistance) {
-			Cast<ATrollCharacter>(TrollParentActor)->MountGnome(this, Controller);
+			//This function destroys the gnome and tells the troll to perform "mount" actions
+			Cast<ATrollCharacter>(TrollParentActor)->MountGnome();
 		}
+
+		//Sets which actor is "active" to ensure correct respawns on death. In this case triggering the function will always set current player to troll, might change.
+		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(EPlayerType::Troll);
 	}
 }
 
@@ -138,7 +179,3 @@ void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)
 	GetCameraBoom()->bDoCollisionTest = false;
 
 }	
-
-
-
-

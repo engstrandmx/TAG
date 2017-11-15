@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{6212805f-4c08-4057-aef4-a024f30165df}">
         <property name="name">
             <value>Troll_hit_cow</value>
@@ -122,6 +122,9 @@
         <property name="length">
             <value>0.62760416666666663</value>
         </property>
+        <property name="maxVoices">
+            <value>1</value>
+        </property>
         <relationship name="sounds">
             <destination>{569b3494-224d-49c3-b7a8-6e38e10ff001}</destination>
             <destination>{c5b15577-707d-4dc9-af4e-cccb6d0a9b57}</destination>
@@ -147,6 +150,9 @@
     <object class="MultiSound" id="{2b495e24-3d8e-4d05-a8ef-64db1e91f6aa}">
         <property name="length">
             <value>0.64297916666666666</value>
+        </property>
+        <property name="maxVoices">
+            <value>1</value>
         </property>
         <relationship name="sounds">
             <destination>{4ae74ed2-9b82-45ce-b481-419e7ebd7001}</destination>
@@ -177,6 +183,9 @@
         <property name="length">
             <value>0.64516666666666667</value>
         </property>
+        <property name="maxVoices">
+            <value>1</value>
+        </property>
         <relationship name="sounds">
             <destination>{622cc311-aa8d-4e90-8335-9c61a4ee2c2c}</destination>
             <destination>{8af2c651-d080-4af3-abaf-d1ada359d69f}</destination>
@@ -206,9 +215,12 @@
         <property name="length">
             <value>1.1586458333333334</value>
         </property>
+        <property name="maxVoices">
+            <value>1</value>
+        </property>
         <relationship name="modulators">
-            <destination>{1f53c5c5-0c7e-440a-aabc-6a5314493e45}</destination>
             <destination>{8db9cf27-4314-40fc-a78b-33674c8b046a}</destination>
+            <destination>{1f53c5c5-0c7e-440a-aabc-6a5314493e45}</destination>
         </relationship>
         <relationship name="sounds">
             <destination>{640a45e8-e4f4-4399-9098-9a65aa4fc2b0}</destination>
@@ -337,20 +349,20 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{915d96d5-28f6-47ca-bba3-5befb2f1bab6}"/>
-    <object class="RandomizerModulator" id="{1f53c5c5-0c7e-440a-aabc-6a5314493e45}">
-        <property name="nameOfPropertyBeingModulated">
-            <value>pitch</value>
-        </property>
-        <property name="amount">
-            <value>4</value>
-        </property>
-    </object>
     <object class="RandomizerModulator" id="{8db9cf27-4314-40fc-a78b-33674c8b046a}">
         <property name="nameOfPropertyBeingModulated">
             <value>volume</value>
         </property>
         <property name="amount">
             <value>1.5999999</value>
+        </property>
+    </object>
+    <object class="RandomizerModulator" id="{1f53c5c5-0c7e-440a-aabc-6a5314493e45}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>pitch</value>
+        </property>
+        <property name="amount">
+            <value>4</value>
         </property>
     </object>
     <object class="SingleSound" id="{640a45e8-e4f4-4399-9098-9a65aa4fc2b0}">
@@ -391,7 +403,14 @@
     </object>
     <object class="MixerBusPanner" id="{8cb5ddfe-dd04-4552-b430-0daaf31cdc42}"/>
     <object class="MixerBusFader" id="{53cd185f-029f-42e8-9dda-3bb641afc173}"/>
-    <object class="SpatialiserEffect" id="{7ad89ca5-19ac-42a5-891e-04755aafc005}"/>
+    <object class="ProxyEffect" id="{7ad89ca5-19ac-42a5-891e-04755aafc005}">
+        <property name="inputFormat">
+            <value>0</value>
+        </property>
+        <relationship name="preset">
+            <destination>{7d3a9369-2dcf-02e0-1415-12cb98e56b5d}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{e3587268-b514-4596-9914-c4b4ade6368c}"/>
     <object class="MixerBusFader" id="{605efb2c-16d7-41e5-aafb-6987774cfa3b}"/>
     <object class="MixerBusFader" id="{fd44bf24-612c-4ce1-8d97-a1dd2c1a0b03}"/>
