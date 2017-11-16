@@ -54,8 +54,6 @@ void ATrollCharacter::MountGnome()
 		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(nullptr);
 	}
 
-
-
 	ChangeState(EPlayerType::Troll);
 }
 
@@ -211,7 +209,7 @@ void ATrollCharacter::SimulateAttackFX_Implementation()
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
 }
 
-void ATrollCharacter::ChangeState(PlayerType toState) 
+void ATrollCharacter::ChangeState(PlayerType toState)
 {
 	CurrentState = toState;
 
