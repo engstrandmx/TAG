@@ -10,7 +10,9 @@
 Parameter - End
 
 0 = play and loop main theme
-1= end loop</value>
+1= end loop
+
+Gör trummorna och tonen för &quot;win&quot; Gladare </value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -163,17 +165,14 @@ Parameter - End
     <object class="MixerBusPanner" id="{63ccf876-2a38-46c5-bd4a-ff4f3be445fb}"/>
     <object class="EventSound" id="{a2550fe8-4ea0-46a6-8d89-f40fa8812aed}">
         <property name="start">
-            <value>23.999999999999961</value>
+            <value>24.150000000000002</value>
         </property>
         <property name="length">
             <value>40.258083333333389</value>
         </property>
-        <property name="voiceStealing">
-            <value>3</value>
-        </property>
-        <property name="maxVoices">
-            <value>1</value>
-        </property>
+        <relationship name="modulators">
+            <destination>{32b6d44b-df82-4df1-a1d5-dd516614f72a}</destination>
+        </relationship>
         <relationship name="event">
             <destination>{48911210-7d14-44f9-88a6-392c9a4ade27}</destination>
         </relationship>
@@ -182,9 +181,6 @@ Parameter - End
         <property name="name">
             <value>Cow_music</value>
         </property>
-        <relationship name="modulators">
-            <destination>{a16e8885-8c3e-4553-8247-10901695f035}</destination>
-        </relationship>
         <relationship name="effectChain">
             <destination>{32ba5aed-af5e-4902-a3f0-cf0329988233}</destination>
         </relationship>
@@ -307,7 +303,7 @@ Parameter - End
     </object>
     <object class="TempoMarker" id="{a90793db-719f-4593-aa53-6db8bef2527e}">
         <property name="position">
-            <value>23.999999999999961</value>
+            <value>20</value>
         </property>
         <property name="tempo">
             <value>155</value>
@@ -335,10 +331,10 @@ Parameter - End
     </object>
     <object class="LoopRegion" id="{97da2f74-712b-44d1-a679-e9bc8cd637f4}">
         <property name="position">
-            <value>23.999999999999961</value>
+            <value>24.150000000000002</value>
         </property>
         <property name="length">
-            <value>40.258083333333367</value>
+            <value>40.258083333333389</value>
         </property>
         <relationship name="timeline">
             <destination>{a5e48f74-342d-4b93-bfc3-9eccb97d171b}</destination>
@@ -349,7 +345,7 @@ Parameter - End
     </object>
     <object class="TransitionRegion" id="{2e064e1d-fb49-4004-99fe-376167599f1b}">
         <property name="position">
-            <value>23.999999999999961</value>
+            <value>24.150000000000002</value>
         </property>
         <property name="length">
             <value>40.258083333333389</value>
@@ -397,7 +393,7 @@ Parameter - End
     </object>
     <object class="NamedMarker" id="{be228cb2-b2c2-4728-ab0e-c04b72a37776}">
         <property name="position">
-            <value>23.999999999999961</value>
+            <value>24.150000000000002</value>
         </property>
         <property name="name">
             <value>CowMusic</value>
@@ -425,10 +421,10 @@ Parameter - End
     </object>
     <object class="TransitionRegion" id="{43dd9ca4-9c8b-4ff3-8512-7936764c7e0b}">
         <property name="position">
-            <value>23.999999999999961</value>
+            <value>24.150000000000002</value>
         </property>
         <property name="length">
-            <value>40.258062500000008</value>
+            <value>40.258083333333396</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{5e4e646a-d532-48f9-a5fc-6cd28e92bb56}</destination>
@@ -450,7 +446,7 @@ Parameter - End
     </object>
     <object class="MixerBusPanner" id="{8eb4e0c1-0ac0-4d8f-bed9-0b107570ac84}"/>
     <object class="MixerBusFader" id="{ebe80355-fabb-4a47-bbcf-12feb0716376}"/>
-    <object class="ADSRModulator" id="{a16e8885-8c3e-4553-8247-10901695f035}">
+    <object class="ADSRModulator" id="{32b6d44b-df82-4df1-a1d5-dd516614f72a}">
         <property name="nameOfPropertyBeingModulated">
             <value>volume</value>
         </property>
@@ -459,6 +455,9 @@ Parameter - End
         </property>
         <property name="attackTime">
             <value>0</value>
+        </property>
+        <property name="releaseTime">
+            <value>3800</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{32ba5aed-af5e-4902-a3f0-cf0329988233}">
@@ -499,6 +498,9 @@ Parameter - End
         </property>
         <property name="initialValue">
             <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>740</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{7bb78c44-4676-4c43-9d33-d8b851dd06f0}">
