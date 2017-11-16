@@ -2,8 +2,6 @@
 
 #include "GnomeCharacter.h"
 #include "TrollCharacter.h"
-#include "GoldPile.h"
-#include "DropOffZone.h"
 #include "TAGGameState.h"
 #include "TAGPlayerState.h"
 #include "TAGPlayerController.h"
