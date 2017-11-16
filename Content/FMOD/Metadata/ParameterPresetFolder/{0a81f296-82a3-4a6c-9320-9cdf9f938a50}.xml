@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPresetFolder" id="{0a81f296-82a3-4a6c-9320-9cdf9f938a50}">
+        <property name="name">
+            <value>Cows_idle-chase</value>
+        </property>
+        <relationship name="folder">
+            <destination>{31d92b0f-77e8-41f0-a49e-c124dcb22f66}</destination>
+        </relationship>
+    </object>
+</objects>

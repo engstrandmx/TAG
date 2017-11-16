@@ -18,6 +18,8 @@ class TAG_API AGnomeCharacter : public ATAGCharacter
 public:
 	AGnomeCharacter();
 
+	virtual void Tick(float DeltaSeconds);
+
 	UFUNCTION()
 	void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult);
 	UFUNCTION()
@@ -39,9 +41,12 @@ public:
 	void OnHit();
 
 	FORCEINLINE void SetTrollParent(AActor* Actor) { TrollParentActor = Actor; }
+	void ResetCamera();
 	void MountTroll();
 
 private:
+
+	bool bResetCamera;
 
 	AActor* TrollParentActor;
 
@@ -73,6 +78,8 @@ private:
 	float PickupTime = 1.f;
 
 	FVector InitialLocation;
+
+	float CameraResetAlpha = 0;
 
 protected:
 
