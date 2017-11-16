@@ -8,6 +8,16 @@
 #include "TAGPlayerController.h"
 #include "TrollCharacter.generated.h"
 
+UENUM(BlueprintType)
+namespace EPlayerState
+{
+	enum State
+	{
+		Mounted			UMETA(DisplayName = "Mounted"),
+		Gnome			UMETA(DisplayName = "Gnome"),
+	};
+}
+
 using namespace EPlayerType;
 
 UCLASS()
@@ -115,6 +125,7 @@ private:
 	USphereComponent* InteractShape;
 
 	bool EnemyIsOverlapping = false;
+
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float Damage = 10.f; //Damage dealt during attack
