@@ -5,7 +5,7 @@
             <value>Material</value>
         </property>
         <relationship name="folder">
-            <destination>{2623b8f1-b8a1-4811-815c-dee83e585c22}</destination>
+            <destination>{59f0e11c-10a9-4a9e-b935-4b482fcff640}</destination>
         </relationship>
         <relationship name="parameter">
             <destination>{bc5f29e1-70f0-4432-8b1d-2570cd8e274f}</destination>
@@ -14,9 +14,6 @@
     <object class="GameParameter" id="{bc5f29e1-70f0-4432-8b1d-2570cd8e274f}">
         <property name="maximum">
             <value>5</value>
-        </property>
-        <property name="initialValue">
-            <value>0</value>
         </property>
         <property name="isExposedRecursively">
             <value>false</value>

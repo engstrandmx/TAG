@@ -5,7 +5,7 @@
             <value>Intensity</value>
         </property>
         <relationship name="folder">
-            <destination>{ed86c040-5f5e-4bb5-8826-e2938662f2c1}</destination>
+            <destination>{c7122de6-1e23-473b-b2ee-2d216e6a3350}</destination>
         </relationship>
         <relationship name="parameter">
             <destination>{1c9110b3-e852-4aa8-9be9-56db4bfb7cdd}</destination>

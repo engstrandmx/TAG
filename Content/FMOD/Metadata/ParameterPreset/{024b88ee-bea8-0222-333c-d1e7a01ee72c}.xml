@@ -5,7 +5,7 @@
             <value>Win/Lose</value>
         </property>
         <relationship name="folder">
-            <destination>{ffda544a-0eec-4dae-ace6-20e5980c602c}</destination>
+            <destination>{088ee8f0-2fa7-49c1-9d4d-7aca9c6e2f24}</destination>
         </relationship>
         <relationship name="parameter">
             <destination>{424f4e4e-3622-4125-849f-125d5295248d}</destination>

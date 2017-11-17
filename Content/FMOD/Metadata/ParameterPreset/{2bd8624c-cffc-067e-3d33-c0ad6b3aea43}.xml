@@ -5,7 +5,7 @@
             <value>Distance</value>
         </property>
         <relationship name="folder">
-            <destination>{0a81f296-82a3-4a6c-9320-9cdf9f938a50}</destination>
+            <destination>{a1f3e5e9-621f-461c-bcb3-844450b029f5}</destination>
         </relationship>
         <relationship name="parameter">
             <destination>{6bdca4ec-4776-4579-8a90-031799b129e2}</destination>
