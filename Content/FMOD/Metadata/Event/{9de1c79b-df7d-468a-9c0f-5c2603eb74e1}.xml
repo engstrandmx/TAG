@@ -7,11 +7,11 @@
         <property name="note">
             <value>Parameter material:
 
-1= Grass
-2= Wood
-3=Rock
-4= Mud
-
+0= Grass
+1= Wood
+2=Rock
+3= Mud
+4=Dirt
 Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. Varje fotsteg ska spelas klart men ett nytt fotstegsljud kan spelas över det andra.</value>
         </property>
         <property name="outputFormat">
@@ -33,6 +33,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <destination>{bf7b4f27-9dde-4f36-b37b-fd6f015bf709}</destination>
         </relationship>
         <relationship name="markerTracks">
+            <destination>{25754d55-b39e-497f-befc-241d0ac56c04}</destination>
             <destination>{dc899bc8-14d3-4f2c-a373-929f15e99b32}</destination>
             <destination>{25902e3c-4803-4c4d-91ae-5a3bbe203940}</destination>
             <destination>{7b12e4ba-eadd-4e78-9597-8a48eeb18d68}</destination>
@@ -43,6 +44,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <destination>{b724a1fa-15d4-4328-bb64-b87e836894ad}</destination>
             <destination>{430d2089-eb19-4e59-b9b4-e8284e2a38d0}</destination>
             <destination>{3335de49-654a-416c-b7f8-92a286163d6d}</destination>
+            <destination>{97f3f3f6-bd42-48ea-b5a7-ce62ae913eb7}</destination>
         </relationship>
         <relationship name="timeline">
             <destination>{d804aee8-4b69-4100-ad82-a28630d20303}</destination>
@@ -76,6 +78,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{bf7b4f27-9dde-4f36-b37b-fd6f015bf709}"/>
+    <object class="MarkerTrack" id="{25754d55-b39e-497f-befc-241d0ac56c04}"/>
     <object class="MarkerTrack" id="{dc899bc8-14d3-4f2c-a373-929f15e99b32}"/>
     <object class="MarkerTrack" id="{25902e3c-4803-4c4d-91ae-5a3bbe203940}"/>
     <object class="MarkerTrack" id="{7b12e4ba-eadd-4e78-9597-8a48eeb18d68}"/>
@@ -112,12 +115,21 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <destination>{e01893bd-f7a8-441c-b0f7-5d3a5dbff79a}</destination>
         </relationship>
     </object>
+    <object class="GroupTrack" id="{97f3f3f6-bd42-48ea-b5a7-ce62ae913eb7}">
+        <relationship name="modules">
+            <destination>{eb07930e-ab76-4bba-b7b3-09da1c281c79}</destination>
+        </relationship>
+        <relationship name="mixerGroup">
+            <destination>{925c5d52-cf24-4cd2-b5cf-abdfd3df56dd}</destination>
+        </relationship>
+    </object>
     <object class="Timeline" id="{d804aee8-4b69-4100-ad82-a28630d20303}">
         <relationship name="modules">
             <destination>{3ade447d-c8e1-41e4-bc21-240b18a192f7}</destination>
             <destination>{b71fe0fc-0213-404f-946e-e4923f12df06}</destination>
             <destination>{dc135aaf-e5b3-4a21-8255-627d7584c27c}</destination>
             <destination>{76416068-f268-4d7e-81ff-dbb00bc66f1b}</destination>
+            <destination>{eb07930e-ab76-4bba-b7b3-09da1c281c79}</destination>
         </relationship>
         <relationship name="markers">
             <destination>{eb0aa108-0f2f-44e7-8b80-ecc9b055dc27}</destination>
@@ -133,6 +145,8 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <destination>{f6c021e7-0859-4c0c-ab12-8b29ea0e44bd}</destination>
             <destination>{c39509dc-75ae-4392-a472-de647df47d23}</destination>
             <destination>{d52288a8-a65a-46aa-9e08-083bef7b74b6}</destination>
+            <destination>{538a80d9-244f-403c-b238-2deb9828e892}</destination>
+            <destination>{1c7cb43e-ce08-446d-af13-af710f8890c0}</destination>
         </relationship>
     </object>
     <object class="ParameterProxy" id="{c9085e3d-724e-4129-ac81-793af9576025}">
@@ -302,6 +316,39 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <destination>{5aed6c6a-ff15-49f7-b005-1ca707470417}</destination>
         </relationship>
     </object>
+    <object class="MultiSound" id="{eb07930e-ab76-4bba-b7b3-09da1c281c79}">
+        <property name="start">
+            <value>3.4000000000000004</value>
+        </property>
+        <property name="length">
+            <value>0.5625</value>
+        </property>
+        <relationship name="sounds">
+            <destination>{20d8eb99-1af5-44ab-ad74-ce3a3d411f69}</destination>
+            <destination>{3eead421-baca-4333-8949-f4f20e456326}</destination>
+            <destination>{c2a47089-32b5-4c7d-bd37-9e4b4d079e89}</destination>
+            <destination>{dcb4b90f-d02e-4229-af7f-a0fcb7b1a8d4}</destination>
+            <destination>{91a20252-7235-49f8-a155-c42a51230708}</destination>
+            <destination>{b45be70d-cfeb-4f37-885a-a397c92a7ff6}</destination>
+        </relationship>
+    </object>
+    <object class="EventMixerGroup" id="{925c5d52-cf24-4cd2-b5cf-abdfd3df56dd}">
+        <property name="volume">
+            <value>-3.5</value>
+        </property>
+        <property name="name">
+            <value>Dirt</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{e8df1c7c-1ac5-483f-90c0-e60a0772beeb}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{e4775334-7b6b-4683-a900-ad27310efb28}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{5aed6c6a-ff15-49f7-b005-1ca707470417}</destination>
+        </relationship>
+    </object>
     <object class="NamedMarker" id="{eb0aa108-0f2f-44e7-8b80-ecc9b055dc27}">
         <property name="position">
             <value>2.4300000000000002</value>
@@ -335,7 +382,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <value>0</value>
         </property>
         <property name="length">
-            <value>0.10000000000000001</value>
+            <value>0.15000000000000002</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{e83884d5-0b08-4338-be53-3fd5053fcc7a}</destination>
@@ -408,7 +455,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="NamedMarker" id="{fee274f4-6c9a-4496-8813-eaa36c27ac2c}">
         <property name="position">
-            <value>3.4500000000000002</value>
+            <value>4.3500000000000005</value>
         </property>
         <property name="name">
             <value>End</value>
@@ -439,7 +486,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <value>0</value>
         </property>
         <property name="length">
-            <value>0.10000000000000001</value>
+            <value>0.15000000000000002</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{35ca26f2-454c-4668-aa3f-a123628d7100}</destination>
@@ -459,7 +506,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <value>0</value>
         </property>
         <property name="length">
-            <value>0.10000000000000001</value>
+            <value>0.15000000000000002</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{05a84467-8504-492d-8465-c8343f7f8d13}</destination>
@@ -493,7 +540,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <value>0</value>
         </property>
         <property name="length">
-            <value>0.10000000000000001</value>
+            <value>0.15000000000000002</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{404f49ef-f7e5-42ab-b338-7d938dcf4376}</destination>
@@ -506,6 +553,40 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
         <relationship name="markerTrack">
             <destination>{7b12e4ba-eadd-4e78-9597-8a48eeb18d68}</destination>
+        </relationship>
+    </object>
+    <object class="NamedMarker" id="{538a80d9-244f-403c-b238-2deb9828e892}">
+        <property name="position">
+            <value>3.4000000000000004</value>
+        </property>
+        <property name="name">
+            <value>Dirt</value>
+        </property>
+        <relationship name="timeline">
+            <destination>{d804aee8-4b69-4100-ad82-a28630d20303}</destination>
+        </relationship>
+        <relationship name="markerTrack">
+            <destination>{7b12e4ba-eadd-4e78-9597-8a48eeb18d68}</destination>
+        </relationship>
+    </object>
+    <object class="TransitionRegion" id="{1c7cb43e-ce08-446d-af13-af710f8890c0}">
+        <property name="position">
+            <value>0</value>
+        </property>
+        <property name="length">
+            <value>0.15000000000000002</value>
+        </property>
+        <relationship name="triggerConditions">
+            <destination>{0b310ab7-d0c0-403f-a6d2-995957d7c966}</destination>
+        </relationship>
+        <relationship name="destination">
+            <destination>{538a80d9-244f-403c-b238-2deb9828e892}</destination>
+        </relationship>
+        <relationship name="timeline">
+            <destination>{d804aee8-4b69-4100-ad82-a28630d20303}</destination>
+        </relationship>
+        <relationship name="markerTrack">
+            <destination>{25754d55-b39e-497f-befc-241d0ac56c04}</destination>
         </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{ea228adb-7552-406d-a0be-914e259af054}">
@@ -756,6 +837,42 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{a92331a0-78f2-43b3-9120-6a9da65420de}"/>
+    <object class="SingleSound" id="{20d8eb99-1af5-44ab-ad74-ce3a3d411f69}">
+        <relationship name="audioFile">
+            <destination>{682eb5f9-a1f8-4837-908d-202a07d01ebe}</destination>
+        </relationship>
+    </object>
+    <object class="SingleSound" id="{3eead421-baca-4333-8949-f4f20e456326}">
+        <relationship name="audioFile">
+            <destination>{d4fdee4b-e96a-4f25-9b4e-735e1250bc98}</destination>
+        </relationship>
+    </object>
+    <object class="SingleSound" id="{c2a47089-32b5-4c7d-bd37-9e4b4d079e89}">
+        <relationship name="audioFile">
+            <destination>{809a701e-4669-4620-a7bc-2336a83622a0}</destination>
+        </relationship>
+    </object>
+    <object class="SingleSound" id="{dcb4b90f-d02e-4229-af7f-a0fcb7b1a8d4}">
+        <relationship name="audioFile">
+            <destination>{b3bf387c-806a-47d4-a526-b4f68e7b72f2}</destination>
+        </relationship>
+    </object>
+    <object class="SingleSound" id="{91a20252-7235-49f8-a155-c42a51230708}">
+        <relationship name="audioFile">
+            <destination>{bb49f6ad-cbbe-477b-af1f-8413d6315c5d}</destination>
+        </relationship>
+    </object>
+    <object class="SingleSound" id="{b45be70d-cfeb-4f37-885a-a397c92a7ff6}">
+        <relationship name="audioFile">
+            <destination>{29b1be61-09cb-4112-a126-8f094dbfa36b}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{e8df1c7c-1ac5-483f-90c0-e60a0772beeb}">
+        <relationship name="effects">
+            <destination>{5826e852-ee2b-4779-8c07-8cec60a13042}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{e4775334-7b6b-4683-a900-ad27310efb28}"/>
     <object class="ParameterCondition" id="{e83884d5-0b08-4338-be53-3fd5053fcc7a}">
         <property name="minimum">
             <value>1.9800000190734863</value>
@@ -800,6 +917,17 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <destination>{9bd5ee9f-5a81-4771-865d-215a062f8cdd}</destination>
         </relationship>
     </object>
+    <object class="ParameterCondition" id="{0b310ab7-d0c0-403f-a6d2-995957d7c966}">
+        <property name="minimum">
+            <value>3.9800000190734863</value>
+        </property>
+        <property name="maximum">
+            <value>4</value>
+        </property>
+        <relationship name="parameter">
+            <destination>{9bd5ee9f-5a81-4771-865d-215a062f8cdd}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{907345b8-566a-4dae-876a-d6dd37319a27}"/>
     <object class="MixerBusFader" id="{311e3545-7d6d-4296-bbd7-22b40b7a6d60}"/>
     <object class="ThreeEQEffect" id="{bd932263-ddfb-4351-9e11-b8887426855e}">
@@ -825,4 +953,5 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     <object class="MixerBusFader" id="{733f7ca4-f155-4cfa-bf25-042bfb0c1094}"/>
     <object class="ThreeEQEffect" id="{21c5ea52-651b-4b11-96e2-eddc57ad69f0}"/>
     <object class="MixerBusFader" id="{592fbe2e-b220-45bd-ba38-789ea21a397f}"/>
+    <object class="MixerBusFader" id="{5826e852-ee2b-4779-8c07-8cec60a13042}"/>
 </objects>

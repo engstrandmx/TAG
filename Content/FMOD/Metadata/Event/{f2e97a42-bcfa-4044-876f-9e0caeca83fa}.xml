@@ -18,7 +18,7 @@ Gör trummorna och tonen för &quot;win&quot; Gladare </value>
             <value>1</value>
         </property>
         <relationship name="folder">
-            <destination>{4b98c584-1b37-4c4a-818f-3db2c7c96147}</destination>
+            <destination>{13346b57-bd2d-495d-9118-7f7ee2b29ba4}</destination>
         </relationship>
         <relationship name="mixer">
             <destination>{e19bc4cc-7478-42c9-b007-c4967de7bb50}</destination>
@@ -170,6 +170,9 @@ Gör trummorna och tonen för &quot;win&quot; Gladare </value>
         <property name="length">
             <value>40.258083333333389</value>
         </property>
+        <property name="quantizationInterval">
+            <value>11</value>
+        </property>
         <relationship name="modulators">
             <destination>{32b6d44b-df82-4df1-a1d5-dd516614f72a}</destination>
         </relationship>
@@ -280,11 +283,17 @@ Gör trummorna och tonen för &quot;win&quot; Gladare </value>
         <relationship name="modulators">
             <destination>{66fc42aa-8800-4b8f-a6e0-c740498c2e80}</destination>
         </relationship>
+        <relationship name="fadeOutCurve">
+            <destination>{82b01722-62ac-4acd-a922-933791ac4682}</destination>
+        </relationship>
         <relationship name="event">
             <destination>{290f5115-61f8-453d-9a75-900b444fca79}</destination>
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{2c3dbf5c-0161-40ae-b4cd-dc872b33f9cc}">
+        <property name="volume">
+            <value>2.5</value>
+        </property>
         <property name="name">
             <value>Win</value>
         </property>
@@ -303,7 +312,7 @@ Gör trummorna och tonen för &quot;win&quot; Gladare </value>
     </object>
     <object class="TempoMarker" id="{a90793db-719f-4593-aa53-6db8bef2527e}">
         <property name="position">
-            <value>20</value>
+            <value>24.150000000000002</value>
         </property>
         <property name="tempo">
             <value>155</value>
@@ -457,7 +466,7 @@ Gör trummorna och tonen för &quot;win&quot; Gladare </value>
             <value>0</value>
         </property>
         <property name="releaseTime">
-            <value>3800</value>
+            <value>2000</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{32ba5aed-af5e-4902-a3f0-cf0329988233}">
@@ -486,11 +495,19 @@ Gör trummorna och tonen för &quot;win&quot; Gladare </value>
             <value>-80</value>
         </property>
         <property name="attackTime">
-            <value>200</value>
+            <value>40</value>
         </property>
         <property name="releaseTime">
             <value>0</value>
         </property>
+    </object>
+    <object class="FadeCurve" id="{82b01722-62ac-4acd-a922-933791ac4682}">
+        <relationship name="startPoint">
+            <destination>{8358d9a6-0832-4b57-9870-64c8d4a05179}</destination>
+        </relationship>
+        <relationship name="endPoint">
+            <destination>{c7d41f2b-9a57-4e25-b8e6-a0cdb65a791d}</destination>
+        </relationship>
     </object>
     <object class="ADSRModulator" id="{c9501b99-93eb-481d-918c-34890dd70009}">
         <property name="nameOfPropertyBeingModulated">
@@ -535,5 +552,24 @@ Gör trummorna och tonen för &quot;win&quot; Gladare </value>
     <object class="MixerBusFader" id="{b290e60f-916b-4d86-806f-f16f7b5c3d08}"/>
     <object class="MixerBusFader" id="{57f73918-b57e-4481-8f77-757cb33bd00e}"/>
     <object class="MixerBusFader" id="{b079346c-11d4-43d4-a4b8-75bacc6af24a}"/>
+    <object class="AutomationPoint" id="{8358d9a6-0832-4b57-9870-64c8d4a05179}">
+        <property name="position">
+            <value>83</value>
+        </property>
+        <property name="value">
+            <value>1</value>
+        </property>
+        <property name="curveShape">
+            <value>0.124673642</value>
+        </property>
+    </object>
+    <object class="AutomationPoint" id="{c7d41f2b-9a57-4e25-b8e6-a0cdb65a791d}">
+        <property name="position">
+            <value>89.539812499999996</value>
+        </property>
+        <property name="value">
+            <value>0</value>
+        </property>
+    </object>
     <object class="MixerBusFader" id="{180f8705-a3f7-4d1a-a82c-f48a7dff13f2}"/>
 </objects>

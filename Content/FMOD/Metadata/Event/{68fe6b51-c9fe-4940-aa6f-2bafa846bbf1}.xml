@@ -314,6 +314,7 @@
         </property>
         <relationship name="automationCurves">
             <destination>{50c0eebd-de2d-4308-b274-8ee1cf29b898}</destination>
+            <destination>{0be4f65c-2070-458b-b449-db26a6523e18}</destination>
         </relationship>
     </object>
     <object class="AutomationCurve" id="{50c0eebd-de2d-4308-b274-8ee1cf29b898}">
@@ -323,6 +324,16 @@
         <relationship name="automationPoints">
             <destination>{bf7dd439-a1ae-414e-9086-6965ad8a9a82}</destination>
             <destination>{f18d4bb7-983c-47a3-93ca-7f44f6b84621}</destination>
+        </relationship>
+    </object>
+    <object class="AutomationCurve" id="{0be4f65c-2070-458b-b449-db26a6523e18}">
+        <relationship name="parameter">
+            <destination>{d4590771-93b1-4cfd-a4ee-0a7339ef98cd}</destination>
+        </relationship>
+        <relationship name="automationPoints">
+            <destination>{296f9011-e4f7-420b-b50c-6ec62bf80b21}</destination>
+            <destination>{b4f322d8-21e5-4bc9-a493-4adcce018814}</destination>
+            <destination>{b23eca43-a4fe-412d-9eec-7dcb6c771a8c}</destination>
         </relationship>
     </object>
     <object class="AutomationPoint" id="{bf7dd439-a1ae-414e-9086-6965ad8a9a82}">
@@ -339,6 +350,30 @@
         </property>
         <property name="value">
             <value>0</value>
+        </property>
+    </object>
+    <object class="AutomationPoint" id="{296f9011-e4f7-420b-b50c-6ec62bf80b21}">
+        <property name="position">
+            <value>-10.484003281378193</value>
+        </property>
+        <property name="value">
+            <value>3.81469727e-06</value>
+        </property>
+    </object>
+    <object class="AutomationPoint" id="{b4f322d8-21e5-4bc9-a493-4adcce018814}">
+        <property name="position">
+            <value>-180</value>
+        </property>
+        <property name="value">
+            <value>-42</value>
+        </property>
+    </object>
+    <object class="AutomationPoint" id="{b23eca43-a4fe-412d-9eec-7dcb6c771a8c}">
+        <property name="position">
+            <value>180</value>
+        </property>
+        <property name="value">
+            <value>-52</value>
         </property>
     </object>
 </objects>
