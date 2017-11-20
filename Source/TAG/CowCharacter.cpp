@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "CowCharacter.h"
+#include <DrawDebugHelpers.h>
 
 
 // Sets default values
@@ -29,18 +30,37 @@ void ACowCharacter::Tick(float DeltaTime)
 	if (bInAir) {
 		if (!bVectorRotated) {
 			bVectorRotated = true;
+			LaunchVector.Normalize();
+// 			DrawDebugLine(
+// 				GetWorld(),
+// 				GetActorLocation(),
+// 				GetActorLocation() + LaunchVector * 500,
+// 				FColor(255, 255, 0),
+// 				true, -1, 0,
+// 				12.333
+// 			);
+
 			LaunchVector = FVector::CrossProduct(LaunchVector, FVector(0, 0, 1));
+
+// 			DrawDebugLine(
+// 				GetWorld(),
+// 				GetActorLocation(),
+// 				GetActorLocation() + LaunchVector * 500,
+// 				FColor(255, 0, 0),
+// 				true, -1, 0,
+// 				12.333
+// 			);
 		}
 
 		UE_LOG(LogTemp, Warning, TEXT("Vector %s"), *LaunchVector.ToString());
 
-		SetActorRotation(GetActorRotation() + FQuat(LaunchVector, RotationSpeed).Rotator());
+		SetActorRotation(FMath::Lerp(GetActorRotation().Quaternion(), GetActorRotation().Quaternion() * FQuat(LaunchVector, -RotationSpeed), 0.2f));
 	}
 
 	else {
 		bVectorRotated = false;
 
-		SetActorRotation(FMath::Lerp(GetActorRotation(), FRotator(0, GetActorRotation().Yaw, 0), 0.95f));
+		SetActorRotation(FMath::Lerp(GetActorRotation(), FRotator(0, GetActorRotation().Yaw, 0), 0.2f));
 	}
 
 }
