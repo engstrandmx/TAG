@@ -54,8 +54,6 @@ void ACowCharacter::Tick(float DeltaTime)
 
 		UE_LOG(LogTemp, Warning, TEXT("Vector %s"), *LaunchVector.ToString());
 
-		//SetActorRotation(FMath::Lerp(GetActorRotation().Quaternion(), GetActorRotation().Quaternion() * FQuat(LaunchVector, -RotationSpeed), 0.6f));
-
 		SetActorRotation(FMath::Lerp(GetActorRotation().Quaternion(), GetActorRotation().Quaternion() * FQuat(LaunchVector, -RotationSpeed), 0.2f));
 	}
 
