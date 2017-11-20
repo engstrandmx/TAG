@@ -12,7 +12,7 @@ ACowCharacter::ACowCharacter()
 	bInAir = false;
 	bVectorRotated = false;
 	LaunchVector = FVector::ZeroVector;
-
+	RotationHitForce = 0.5f;
 }
 
 // Called when the game starts or when spawned
@@ -54,7 +54,7 @@ void ACowCharacter::Tick(float DeltaTime)
 
 		UE_LOG(LogTemp, Warning, TEXT("Vector %s"), *LaunchVector.ToString());
 
-		SetActorRotation(FMath::Lerp(GetActorRotation().Quaternion(), GetActorRotation().Quaternion() * FQuat(LaunchVector, -RotationSpeed), 0.2f));
+		SetActorRotation(FMath::Lerp(GetActorRotation().Quaternion(), GetActorRotation().Quaternion() * FQuat(LaunchVector, -RotationSpeed), 0.2f * RotationHitForce));
 	}
 
 	else {
