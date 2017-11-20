@@ -34,17 +34,9 @@ void ATrollCharacter::Tick(float DeltaSeconds)
 	}
 }
 
-
+//Function called from gnome when mounting up
 void ATrollCharacter::MountGnome()
 {
-//	if (Controller) {
-// 		AGnomeCharacter* GnomeActor = Cast<AGnomeCharacter>(MountingActor);
-// 
-// 		GetFollowCamera()->SetWorldLocationAndRotation(GnomeActor->GetFollowCamera()->GetComponentLocation(), GnomeActor->GetFollowCamera()->GetComponentRotation());
-// 		ResetCamera();
-// 
-// 		GnomeActor->Controller->Possess(Cast<APawn>());
-//	}
 	bIsMounting = true;
 
 	if (SpawnedPawn){
@@ -92,58 +84,28 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 void ATrollCharacter::StopAttack() {
 
-	if (Role < ROLE_Authority) {
-		ServerStopAttack();
-	}
-	else {
-		bIsPunching = false;
-		//GetWorld()->GetTimerManager().ClearTimer(InteractHandle);
-	}
-}
-
-void ATrollCharacter::ServerStopAttack_Implementation()
-{
-	StopAttack();
-}
-
-bool ATrollCharacter::ServerStopAttack_Validate()
-{
-	return true;
+	bIsPunching = false;
 }
 
 void ATrollCharacter::Attack()
 {
-	if (Role < ROLE_Authority) {
-		ServerAttack();
-	}
-	else {
-		bPunchTimerStarted = true;
+	bPunchTimerStarted = true;
 
-		if (!bIsPunching) {
-			OnAttack();
-		}
-		bIsPunching = true;
+	if (!bIsPunching) {
+		OnAttack();
 	}
+
+	bIsPunching = true;
 }
 
 void ATrollCharacter::DelayedAttack()
 {
-	SimulateAttackFX();
-
 // 	TSubclassOf <class UDamageType> DamageTypeClass;
 // 	const TArray<AActor*> IgnoreActors;
 // 
 // 	UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 
 	bPunchTimerStarted = false;
-}
-
-void ATrollCharacter::ServerDealDamage_Implementation(){
-	DealDamage();
-}
-
-bool ATrollCharacter::ServerDealDamage_Validate() {
-	return true;
 }
 
 void ATrollCharacter::Interact()
@@ -163,59 +125,29 @@ void ATrollCharacter::Interact()
 }
 
 void ATrollCharacter::DealDamage() {
-	if (Role < ROLE_Authority) {
-		ServerDealDamage();
-	}
-	else {
-		AttackCount++;
-
-		SimulateAttackFX();
-
+	AttackCount++;
 // 		TSubclassOf <class UDamageType> DamageTypeClass;
 // 		const TArray<AActor*> IgnoreActors;
 //
 //		UGameplayStatics::ApplyRadialDamage(GetWorld(), Damage, GetActorForwardVector() * 100.f + GetActorLocation(), DamageRadius, DamageTypeClass, IgnoreActors, this, GetController());
 
-		if (AttackCount >= 2) {
-			StopAttack();
-		}
+	if (AttackCount >= 2) {
+		StopAttack();
 	}
-}
-
-void ATrollCharacter::ServerAttack_Implementation()
-{
-	Attack();
-}
-
-bool ATrollCharacter::ServerAttack_Validate()
-{
-	return true;
 }
 
 void ATrollCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-	DOREPLIFETIME(ATrollCharacter, bIsPunching);
-}
-
-void ATrollCharacter::OnRep_IsPunching()
-{
-
-}
-
-void ATrollCharacter::SimulateAttackFX_Implementation()
-{
-	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DamageParticles, GetActorForwardVector() * 100.f + GetActorLocation(), GetActorRotation(), true);
 }
 
 void ATrollCharacter::ChangeState(PlayerType toState)
 {
 	CurrentState = toState;
 
+	//Check if gnome is already spawned, if it is then a character switch will occur
 	if (SpawnedPawn && !bIsMounting) {
-		//UE_LOG(LogTemp, Warning, TEXT("Hello from the other side"));
-
 		AGnomeCharacter* GnomeCharacter = Cast<AGnomeCharacter>(SpawnedPawn);
 
 		Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
@@ -255,7 +187,7 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 
 		OnDismount();
 		break;
-	default:
+	default: 
 		break;
 	}
 
