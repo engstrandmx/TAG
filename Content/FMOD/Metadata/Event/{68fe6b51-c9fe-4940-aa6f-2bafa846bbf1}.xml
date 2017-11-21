@@ -106,6 +106,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{63b3150f-dd59-4401-8c60-0a54af3fbb57}">
+        <relationship name="modulators">
+            <destination>{bafc36b8-9236-4923-8a0b-d6e003f3a568}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{25fa3cf0-8f65-4c1a-bc72-77bed2f4f039}</destination>
         </relationship>
@@ -143,6 +146,9 @@
         <property name="looping">
             <value>true</value>
         </property>
+        <relationship name="modulators">
+            <destination>{9a4d01f6-ddbb-4482-87a9-b5e4b24337bd}</destination>
+        </relationship>
         <relationship name="audioFile">
             <destination>{8a24f179-0678-4d83-ab43-a20ea690b66c}</destination>
         </relationship>
@@ -171,6 +177,9 @@
         <property name="length">
             <value>112.35352083333333</value>
         </property>
+        <property name="startOffset">
+            <value>19.5</value>
+        </property>
         <property name="voiceStealing">
             <value>3</value>
         </property>
@@ -180,6 +189,9 @@
         <property name="looping">
             <value>true</value>
         </property>
+        <relationship name="modulators">
+            <destination>{765335a0-6042-49c6-a296-0660cd69c8b2}</destination>
+        </relationship>
         <relationship name="audioFile">
             <destination>{d2e8c59c-4214-4ffc-80a5-efd840153c46}</destination>
         </relationship>
@@ -237,6 +249,17 @@
             <destination>{f6fcbfa7-0fb2-49ca-849d-76860c4ec208}</destination>
         </relationship>
     </object>
+    <object class="ADSRModulator" id="{bafc36b8-9236-4923-8a0b-d6e003f3a568}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="releaseTime">
+            <value>0</value>
+        </property>
+    </object>
     <object class="MixerBusEffectChain" id="{25fa3cf0-8f65-4c1a-bc72-77bed2f4f039}">
         <relationship name="effects">
             <destination>{c17e4388-3807-4e39-874a-ab9a60c8bfd3}</destination>
@@ -246,6 +269,14 @@
     </object>
     <object class="MixerBusPanner" id="{3f23122d-d8bf-4c63-bb8c-4899783be21e}"/>
     <object class="MixerBusFader" id="{d0215c19-df7e-43db-ad91-7ccf6d565dce}"/>
+    <object class="RandomizerModulator" id="{9a4d01f6-ddbb-4482-87a9-b5e4b24337bd}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>startOffset</value>
+        </property>
+        <property name="amount">
+            <value>25.5</value>
+        </property>
+    </object>
     <object class="MixerBusEffectChain" id="{e936f3b9-28c6-4736-8d90-1234c5fce2d9}">
         <relationship name="effects">
             <destination>{3b5be09d-ede1-490a-b916-696ceb97200d}</destination>
@@ -253,6 +284,14 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{d8b63060-4cc6-43f4-8d38-417fa99c1aeb}"/>
+    <object class="RandomizerModulator" id="{765335a0-6042-49c6-a296-0660cd69c8b2}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>startOffset</value>
+        </property>
+        <property name="amount">
+            <value>14</value>
+        </property>
+    </object>
     <object class="MixerBusEffectChain" id="{d99b5a40-cf5b-4718-b39e-f374afd892ca}">
         <relationship name="effects">
             <destination>{0ed40fee-f6fc-4a4d-9d08-431f74649808}</destination>
@@ -327,7 +366,7 @@
     </object>
     <object class="AutomationPoint" id="{baf34846-89a8-44be-9065-ba797b394920}">
         <property name="position">
-            <value>0.032813781788351107</value>
+            <value>0.02461033634126333</value>
         </property>
         <property name="value">
             <value>3.81469727e-06</value>
@@ -335,7 +374,7 @@
     </object>
     <object class="AutomationPoint" id="{55f6fe91-d80c-48c6-8269-2d646d6f664e}">
         <property name="position">
-            <value>20</value>
+            <value>15</value>
         </property>
         <property name="value">
             <value>-38</value>

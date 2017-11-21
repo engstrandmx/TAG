@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="EffectPreset" id="{7d3a9369-2dcf-02e0-1415-12cb98e56b5d}">
         <property name="name">
-            <value>FMOD Spatializer</value>
+            <value>FMOD Spatializer Ambiense</value>
         </property>
         <relationship name="folder">
             <destination>{b5ee539f-fa06-0027-1dae-f9b0de2cb3f1}</destination>
@@ -11,5 +11,15 @@
             <destination>{425c5c90-22eb-4023-95c5-133c9479b252}</destination>
         </relationship>
     </object>
-    <object class="SpatialiserEffect" id="{425c5c90-22eb-4023-95c5-133c9479b252}"/>
+    <object class="SpatialiserEffect" id="{425c5c90-22eb-4023-95c5-133c9479b252}">
+        <property name="extentMode">
+            <value>1</value>
+        </property>
+        <property name="soundSize">
+            <value>2</value>
+        </property>
+        <property name="minimumExtent">
+            <value>164</value>
+        </property>
+    </object>
 </objects>

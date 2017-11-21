@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="MixerGroup" id="{bda9fff5-ea7a-42d5-a080-f191b6eee74b}">
         <property name="volume">
-            <value>-10</value>
+            <value>-12.4000006</value>
         </property>
         <property name="name">
             <value>Music</value>
@@ -27,7 +27,10 @@
     <object class="MixerBusFader" id="{03a9a7a2-f2b8-4711-ac6b-54bf342b38f6}"/>
     <object class="CompressorEffect" id="{0d898ae9-0977-4d16-be3a-d1e3247a9908}">
         <property name="threshold">
-            <value>-4</value>
+            <value>-6.5</value>
+        </property>
+        <property name="ratio">
+            <value>1.19999993</value>
         </property>
         <property name="attackTime">
             <value>7.20000029</value>
