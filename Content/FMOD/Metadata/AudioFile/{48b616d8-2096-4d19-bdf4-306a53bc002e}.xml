@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{48b616d8-2096-4d19-bdf4-306a53bc002e}">
         <property name="assetPath">
-            <value>Ambience/Tag_rooster_01.wav</value>
+            <value>Ambience/Övrigt/Tag_rooster_01.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>

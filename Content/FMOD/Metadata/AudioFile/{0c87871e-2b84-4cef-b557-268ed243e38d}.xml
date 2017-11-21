@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{0c87871e-2b84-4cef-b557-268ed243e38d}">
         <property name="assetPath">
-            <value>Ambience/Tag_ambience_night_01.wav</value>
+            <value>Ambience/Övrigt/Tag_ambience_night_01.wav</value>
         </property>
         <property name="isStreaming">
             <value>true</value>
