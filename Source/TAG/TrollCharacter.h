@@ -55,8 +55,14 @@ public:
 protected:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void HoldAttack();
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	void StopHoldAttack();
 	void StopAttack(); //Stops attack, input function
 	void Attack(); //Starts attack, input function
+
+	UPROPERTY(BlueprintReadOnly, Category = "Attack")
+	bool bHoldingAttack;
 
 	UFUNCTION()
 	void DelayedAttack();

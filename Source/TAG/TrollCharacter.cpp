@@ -13,6 +13,7 @@ ATrollCharacter::ATrollCharacter() {
 
 	bReplicates = true;
 	AttackCount = 0;
+	bHoldingAttack = false;
 }
 
 void ATrollCharacter::Tick(float DeltaSeconds)
@@ -75,11 +76,24 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &ATrollCharacter::Attack);
 	PlayerInputComponent->BindAction("Attack", IE_Released, this, &ATrollCharacter::StopAttack);
 
+	PlayerInputComponent->BindAction("HoldAttack", IE_Pressed, this, &ATrollCharacter::HoldAttack);
+	PlayerInputComponent->BindAction("HoldAttack", IE_Released, this, &ATrollCharacter::StopHoldAttack);
+
+
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
 
 	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &ATrollCharacter::ToggleState);
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+}
+
+void ATrollCharacter::HoldAttack() {
+	bHoldingAttack = true;
+}
+
+void ATrollCharacter::StopHoldAttack()
+{
+	bHoldingAttack = false;
 }
 
 void ATrollCharacter::StopAttack() {

@@ -31,9 +31,13 @@ public:
 	FVector LaunchVector;
 
 	UPROPERTY(BlueprintReadWrite)
+	float RotationHitForce;
+
+	UPROPERTY(BlueprintReadWrite)
 	bool bInAir;
 
 	bool bVectorRotated;
+
 
 protected:
 	// Called when the game starts or when spawned
