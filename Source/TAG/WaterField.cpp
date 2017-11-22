@@ -13,13 +13,13 @@ AWaterField::AWaterField()
 
 	WaterFieldBox->OnComponentBeginOverlap.AddDynamic(this, &AWaterField::BeginOverlap);
 }
-// Called when the game starts or when spawned
+
 void AWaterField::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
-// Called every frame
+
 void AWaterField::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -35,10 +35,9 @@ void AWaterField::Tick(float DeltaTime)
 
 			FVector multi = FloatSimulationMagnitude;
 			FVector offset = FVector(WaveSimScalar * multi.X, -WaveSimScalar * multi.Y, WaveSimScalar * multi.Z);
-			
 
-				actor->SetActorLocation(location + CurrentVector * DeltaTime, true);
-				actor->SetActorLocation(actor->GetActorLocation() + offset - FloatingLocations[i]);
+			actor->SetActorLocation(location + CurrentVector * DeltaTime, true);
+			actor->SetActorLocation(actor->GetActorLocation() + offset - FloatingLocations[i]);
 
 			//UE_LOG(LogTemp, Warning, TEXT("Z offset = %f"), (offset).Z);
 

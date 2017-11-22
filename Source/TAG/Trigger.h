@@ -48,15 +48,19 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnTrigger();
 
-private:
+	UPROPERTY(BlueprintReadOnly, Category = "Trigger Info")
+	int ActorsEntered;
+
+protected:
 	//If trigger fires it will not toggle off unless it is a stand on trigger
-	UPROPERTY(EditAnywhere, Category = "Trigger Type")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Type")
 	bool bTriggerOnce = true;
 
 	//Only fires when actor is standing on trigger, not triggered when actor leaves
-	UPROPERTY(EditAnywhere, Category = "Trigger Type")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Type")
 	bool bIsStandOnTrigger;
 
 	float TimeToTrigger;
+
 
 };

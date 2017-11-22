@@ -8,6 +8,16 @@
 #include "TAGPlayerController.h"
 #include "TrollCharacter.generated.h"
 
+UENUM(BlueprintType)
+namespace EPlayerState
+{
+	enum State
+	{
+		Mounted			UMETA(DisplayName = "Mounted"),
+		Gnome			UMETA(DisplayName = "Gnome"),
+	};
+}
+
 using namespace EPlayerType;
 
 UCLASS()
@@ -32,7 +42,7 @@ public:
 
 	PlayerType CurrentState; //If actor is mounted/dismounted
 
-	UPROPERTY(EditAnywhere, Transient, ReplicatedUsing = OnRep_IsPunching)
+	UPROPERTY(EditAnywhere)
 	bool bIsPunching; //When attack button is held down
 
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
@@ -45,31 +55,22 @@ public:
 protected:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void HoldAttack();
+	UFUNCTION(BlueprintCallable, Category = "Attack")
+	void StopHoldAttack();
 	void StopAttack(); //Stops attack, input function
 	void Attack(); //Starts attack, input function
+
+	UPROPERTY(BlueprintReadOnly, Category = "Attack")
+	bool bHoldingAttack;
 
 	UFUNCTION()
 	void DelayedAttack();
 
-	//TODO: remove
-	UFUNCTION(Server, Reliable, WithValidation)
-	virtual void ServerStopAttack();
-	virtual void ServerStopAttack_Implementation();
-	virtual bool ServerStopAttack_Validate();
-
-	//TODO: remove
-	UFUNCTION(Server, Reliable, WithValidation)
-	virtual void ServerAttack();
-	virtual void ServerAttack_Implementation();
-	virtual bool ServerAttack_Validate();
-
-	//TODO: remove
-	UFUNCTION(Server, Reliable, WithValidation)
-	void ServerDealDamage();
-	void ServerDealDamage_Implementation();
-	bool ServerDealDamage_Validate();
-
 	void Interact();
+
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = Components)
+	USphereComponent* InteractShape;
 
 	UFUNCTION(BlueprintCallable)
 	void DealDamage(); //Function called the instant damage is to be dealt
@@ -95,24 +96,16 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Stats)
 	FVector DismountOffset; //How offset away the dismounted gnome will appear
 
+
+
 private:
 
 	int AttackCount; //How many attacks have occurred in montage
-	FTimerHandle InteractHandle;
 
 	bool bPunchTimerStarted;
 
-	UFUNCTION()
-	void OnRep_IsPunching();
-
-	UFUNCTION(Reliable, NetMulticast)
-	void SimulateAttackFX();
-	void SimulateAttackFX_Implementation();
-
 	void ChangeState(PlayerType toState);
 	void ToggleState();
-	UPROPERTY(EditAnywhere, Category = Components)
-	USphereComponent* InteractShape;
 
 	bool EnemyIsOverlapping = false;
 

@@ -16,6 +16,10 @@
 	],
 	"Plugins": [
 		{
+			"Name": "ApexDestruction",
+			"Enabled": true
+		},
+		{
 			"Name": "FMODStudio",
 			"Enabled": true
 		}
