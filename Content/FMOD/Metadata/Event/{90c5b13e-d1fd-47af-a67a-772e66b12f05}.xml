@@ -130,6 +130,9 @@
         <property name="name">
             <value>Wind_low_loop</value>
         </property>
+        <relationship name="modulators">
+            <destination>{be9d8387-2091-4367-a2ef-c24108cd6756}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{20077443-89f1-4875-bcec-c9507227171a}</destination>
         </relationship>
@@ -146,6 +149,9 @@
         </property>
         <property name="triggerProbability">
             <value>76</value>
+        </property>
+        <property name="start">
+            <value>3.5</value>
         </property>
         <property name="length">
             <value>20</value>
@@ -172,9 +178,15 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{3e871283-d7e1-4b20-b445-95d32b702eb8}">
+        <property name="volume">
+            <value>3.5</value>
+        </property>
         <property name="name">
             <value>Wind_howl</value>
         </property>
+        <relationship name="modulators">
+            <destination>{933174bf-3f8f-439f-a182-2befd9e2afa7}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{237fc21e-38aa-4efb-b990-3699464df2b7}</destination>
         </relationship>
@@ -240,6 +252,20 @@
     </object>
     <object class="MixerBusPanner" id="{5ac62ed9-69ef-4b2e-9949-69dfa114145b}"/>
     <object class="MixerBusFader" id="{f9a57f22-831c-4d16-93a4-70f73c2a3671}"/>
+    <object class="ADSRModulator" id="{be9d8387-2091-4367-a2ef-c24108cd6756}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>2000</value>
+        </property>
+        <property name="releaseTime">
+            <value>0</value>
+        </property>
+    </object>
     <object class="MixerBusEffectChain" id="{20077443-89f1-4875-bcec-c9507227171a}">
         <relationship name="effects">
             <destination>{02d5e210-d574-4150-bfbb-f893ed576b0a}</destination>
@@ -247,6 +273,17 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{704dd6b9-466c-4ca6-9a5a-7895188de649}"/>
+    <object class="ADSRModulator" id="{933174bf-3f8f-439f-a182-2befd9e2afa7}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="releaseTime">
+            <value>0</value>
+        </property>
+    </object>
     <object class="MixerBusEffectChain" id="{237fc21e-38aa-4efb-b990-3699464df2b7}">
         <relationship name="effects">
             <destination>{7ba25e73-fa8a-4e38-9b1d-365eb8163588}</destination>
@@ -280,11 +317,7 @@
         </property>
     </object>
     <object class="MixerBusFader" id="{7ba25e73-fa8a-4e38-9b1d-365eb8163588}"/>
-    <object class="ThreeEQEffect" id="{2f525113-230b-4a70-ab05-ed37ebb7e020}">
-        <property name="lowGain">
-            <value>-3</value>
-        </property>
-    </object>
+    <object class="ThreeEQEffect" id="{2f525113-230b-4a70-ab05-ed37ebb7e020}"/>
     <object class="MixerBusFader" id="{021324a4-3620-4d20-bb41-36edbcb8a026}"/>
     <object class="MixerBusFader" id="{9f6c9f0e-f837-424c-bc48-b9c3c3d29c3c}"/>
 </objects>

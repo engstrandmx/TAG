@@ -83,6 +83,9 @@
         </relationship>
     </object>
     <object class="GroupTrack" id="{14c9ba6e-e408-404c-a27c-95652cc7db9a}">
+        <relationship name="automationTracks">
+            <destination>{31d18406-3ca3-430d-897c-340f0c095ca4}</destination>
+        </relationship>
         <relationship name="modules">
             <destination>{6758994b-82f2-4d9f-8543-7a20e69d1cc2}</destination>
         </relationship>
@@ -210,10 +213,30 @@
             <destination>{63b3150f-dd59-4401-8c60-0a54af3fbb57}</destination>
         </relationship>
     </object>
+    <object class="AutomationTrack" id="{31d18406-3ca3-430d-897c-340f0c095ca4}">
+        <relationship name="automator">
+            <destination>{de355271-c9bc-4adf-87f2-12bf6ed0db78}</destination>
+        </relationship>
+    </object>
     <object class="SingleSound" id="{6758994b-82f2-4d9f-8543-7a20e69d1cc2}">
+        <property name="isAsync">
+            <value>true</value>
+        </property>
         <property name="length">
             <value>28.650145833333333</value>
         </property>
+        <property name="startOffset">
+            <value>26.5</value>
+        </property>
+        <property name="looping">
+            <value>true</value>
+        </property>
+        <relationship name="automators">
+            <destination>{de355271-c9bc-4adf-87f2-12bf6ed0db78}</destination>
+        </relationship>
+        <relationship name="modulators">
+            <destination>{a28e2046-d678-4134-b138-dc1b887d1c91}</destination>
+        </relationship>
         <relationship name="audioFile">
             <destination>{7ec2a335-2057-4945-bf4a-8a127b646313}</destination>
         </relationship>
@@ -240,7 +263,7 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>28.650145833333333</value>
+            <value>28</value>
         </property>
         <relationship name="timeline">
             <destination>{f387b19b-6a22-4fd6-9ecc-2900786d4aed}</destination>
@@ -274,7 +297,7 @@
             <value>startOffset</value>
         </property>
         <property name="amount">
-            <value>25.5</value>
+            <value>60.5</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{e936f3b9-28c6-4736-8d90-1234c5fce2d9}">
@@ -289,7 +312,7 @@
             <value>startOffset</value>
         </property>
         <property name="amount">
-            <value>14</value>
+            <value>22.5</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{d99b5a40-cf5b-4718-b39e-f374afd892ca}">
@@ -299,6 +322,19 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{9bbb4c4b-4831-403e-b031-fa620d1ee7a9}"/>
+    <object class="Automator" id="{de355271-c9bc-4adf-87f2-12bf6ed0db78}">
+        <property name="nameOfPropertyBeingAutomated">
+            <value>startOffset</value>
+        </property>
+    </object>
+    <object class="RandomizerModulator" id="{a28e2046-d678-4134-b138-dc1b887d1c91}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>startOffset</value>
+        </property>
+        <property name="amount">
+            <value>35</value>
+        </property>
+    </object>
     <object class="MixerBusEffectChain" id="{514fcf0f-b44e-4323-84d9-87b3a8c3211f}">
         <relationship name="effects">
             <destination>{cf69b66b-5a1f-4674-a7e5-77b9fd327b2b}</destination>
