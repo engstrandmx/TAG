@@ -4,6 +4,7 @@
 #include "TAGCharacter.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "UObject/ConstructorHelpers.h"
+#include "CheckpointField.h"
 
 ATAGGameMode::ATAGGameMode()
 {
@@ -14,6 +15,8 @@ void ATAGGameMode::BeginPlay() {
 	Super::BeginPlay();
 
 	TagGameState = GetGameState<ATAGGameState>();
+
+
 }
 
 void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
@@ -33,16 +36,40 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 
 	FVector PlayerLastPosition = FVector::ZeroVector;
 
-	if (NewPlayer->GetPawn()) {
+	FString SpawnTag;
+	AActor* StartPos = FindPlayerStart(NewPlayer, SpawnTag);;
+
+	if (NewPlayer->GetPawn() != nullptr) {
 		APawn* OldPawn = NewPlayer->GetPawn();
 		NewPlayer->UnPossess();
 		PlayerLastPosition = OldPawn->GetActorLocation();
-		
+		UE_LOG(LogTemp, Warning, TEXT("Old Pawn Destroyed"));
+
 		OldPawn->Destroy();
 	}
 
-	FString SpawnTag;
-	AActor* StartPos = FindPlayerStart(NewPlayer, SpawnTag);;
+	if (!bInit) {
+		bInit = true;
+
+		TArray<AActor*> FoundActors;
+		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACheckpointField::StaticClass(), FoundActors);
+
+		if (FoundActors.Num() != 0) {
+			UE_LOG(LogTemp, Warning, TEXT("Array not empty"));
+
+			int8 size = FoundActors.Num();
+
+			for (int8 i = 0; i < size; i++)
+			{
+				if (Cast<ACheckpointField>(FoundActors[i])->bInitialSpawn) {
+					UE_LOG(LogTemp, Warning, TEXT("Initspawn found"));
+
+					SetCurrentCheckpoints(Cast<ACheckpointField>(FoundActors[i])->SelectedCheckpoints);
+					break;
+				}
+			}
+		}
+	}
 
 	//If no checkpoints have been assigned player spawns as usual
 	if (CurrentPlayerStarts.Num() == 1) {

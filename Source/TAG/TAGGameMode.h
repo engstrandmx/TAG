@@ -39,6 +39,9 @@ public:
 	UPROPERTY(EditAnywhere, Category = Characters)
 	FString GnomeSpawnTag = "SpawnGnome";
 
+	UPROPERTY(EditAnywhere, Category = Spawn)
+	AActor* StartingSpawnPoint;
+
 	void RestartPlayer(AController* NewPlayer);
 
 	FORCEINLINE void SetCurrentGnome(AGnomeCharacter* Gnome) { CurrentGnome = Gnome; }
@@ -67,8 +70,6 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 		void OnFadeOut();
 
-
-
 private:
 
 	TArray<APlayerStart*> CurrentPlayerStarts;
@@ -84,6 +85,8 @@ private:
 	bool bSpawnTypeFlipped = false;
 	UPROPERTY(EditAnywhere, Category = "Debug")
 	bool bSpawnSpectator = false;
+
+	bool bInit = false;
 
 protected:
 	void PostLogin(APlayerController* NewPlayer) override;
