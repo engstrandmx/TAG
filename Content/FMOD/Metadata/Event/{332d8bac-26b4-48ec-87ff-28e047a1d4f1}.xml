@@ -1338,7 +1338,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <value>0</value>
         </property>
         <property name="maximum">
-            <value>1.1874999850988388</value>
+            <value>0.94999998807907104</value>
         </property>
         <relationship name="parameter">
             <destination>{9bd5ee9f-5a81-4771-865d-215a062f8cdd}</destination>
@@ -1346,10 +1346,10 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="ParameterCondition" id="{640a3833-8cc6-47b3-a2f2-827d265e0f62}">
         <property name="minimum">
-            <value>1.2250000238418579</value>
+            <value>0.98000001907348633</value>
         </property>
         <property name="maximum">
-            <value>2.4375000596046448</value>
+            <value>1.9500000476837158</value>
         </property>
         <relationship name="parameter">
             <destination>{9bd5ee9f-5a81-4771-865d-215a062f8cdd}</destination>
@@ -1357,10 +1357,10 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="ParameterCondition" id="{36d6ee84-9517-4090-aa99-c101bba92174}">
         <property name="minimum">
-            <value>2.4750000238418579</value>
+            <value>1.9800000190734863</value>
         </property>
         <property name="maximum">
-            <value>3.6875000596046448</value>
+            <value>2.9500000476837158</value>
         </property>
         <relationship name="parameter">
             <destination>{9bd5ee9f-5a81-4771-865d-215a062f8cdd}</destination>
@@ -1368,10 +1368,10 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="ParameterCondition" id="{c4e880ab-f92c-4d20-8d13-de051f88179f}">
         <property name="minimum">
-            <value>3.7250000238418579</value>
+            <value>2.9800000190734863</value>
         </property>
         <property name="maximum">
-            <value>4.9375000596046448</value>
+            <value>3.9500000476837158</value>
         </property>
         <relationship name="parameter">
             <destination>{9bd5ee9f-5a81-4771-865d-215a062f8cdd}</destination>
@@ -1379,10 +1379,10 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="ParameterCondition" id="{fa3d0123-d570-4ba4-8200-1856ee3cd3e0}">
         <property name="minimum">
-            <value>4.9750000238418579</value>
+            <value>3.9800000190734863</value>
         </property>
         <property name="maximum">
-            <value>5</value>
+            <value>4.9499998092651367</value>
         </property>
         <relationship name="parameter">
             <destination>{9bd5ee9f-5a81-4771-865d-215a062f8cdd}</destination>

@@ -222,6 +222,9 @@
         </relationship>
     </object>
     <object class="MultiSound" id="{35afad24-3f83-4600-94c0-eb81b985f78c}">
+        <property name="isAsync">
+            <value>true</value>
+        </property>
         <property name="start">
             <value>0.54999999999999916</value>
         </property>
@@ -713,6 +716,7 @@
     <object class="MixerBusEffectChain" id="{4e158637-647e-4aab-b9c9-b1d12490dedd}">
         <relationship name="effects">
             <destination>{c4533097-df04-4c39-93bd-0c1161f40a30}</destination>
+            <destination>{ea26e5b1-4b60-40ef-b527-8a8039e242a0}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{335c75bb-cc7d-4e56-9d1e-942cc004a527}"/>
@@ -763,4 +767,12 @@
     <object class="MixerBusFader" id="{a131ebb9-e3c6-4a9a-a711-c091d3b285e9}"/>
     <object class="MixerBusFader" id="{c56e38b9-a2b5-42d1-b01e-20b07644e589}"/>
     <object class="MixerBusFader" id="{c4533097-df04-4c39-93bd-0c1161f40a30}"/>
+    <object class="ThreeEQEffect" id="{ea26e5b1-4b60-40ef-b527-8a8039e242a0}">
+        <property name="lowGain">
+            <value>-4.5</value>
+        </property>
+        <property name="midGain">
+            <value>-2.5</value>
+        </property>
+    </object>
 </objects>

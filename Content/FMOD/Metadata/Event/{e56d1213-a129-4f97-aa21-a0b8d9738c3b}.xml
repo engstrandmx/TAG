@@ -1111,10 +1111,10 @@
     <object class="MixerBusPanner" id="{2cbd6290-ddf9-40bd-ab4c-f3f15d0f745a}"/>
     <object class="ParameterCondition" id="{ab2f7d9a-b7a2-4664-a3a9-0b5b534522ff}">
         <property name="minimum">
-            <value>1.2250000238418579</value>
+            <value>0.98000001907348633</value>
         </property>
         <property name="maximum">
-            <value>2.4375000596046448</value>
+            <value>1.9500000476837158</value>
         </property>
         <relationship name="parameter">
             <destination>{bc5f29e1-70f0-4432-8b1d-2570cd8e274f}</destination>
@@ -1122,10 +1122,10 @@
     </object>
     <object class="ParameterCondition" id="{48be11ee-2c03-4ebf-aa72-bd0771e6a84a}">
         <property name="minimum">
-            <value>2.4750000238418579</value>
+            <value>1.9800000190734863</value>
         </property>
         <property name="maximum">
-            <value>3.6875000596046448</value>
+            <value>2.9500000476837158</value>
         </property>
         <relationship name="parameter">
             <destination>{bc5f29e1-70f0-4432-8b1d-2570cd8e274f}</destination>
@@ -1133,10 +1133,10 @@
     </object>
     <object class="ParameterCondition" id="{7b691e70-ca1d-45cb-8f9b-d52be530d292}">
         <property name="minimum">
-            <value>3.7250000238418579</value>
+            <value>2.9800000190734863</value>
         </property>
         <property name="maximum">
-            <value>4.9375000596046448</value>
+            <value>3.9500000476837158</value>
         </property>
         <relationship name="parameter">
             <destination>{bc5f29e1-70f0-4432-8b1d-2570cd8e274f}</destination>
@@ -1147,7 +1147,7 @@
             <value>0</value>
         </property>
         <property name="maximum">
-            <value>1.1874999850988388</value>
+            <value>0.94999998807907104</value>
         </property>
         <relationship name="parameter">
             <destination>{bc5f29e1-70f0-4432-8b1d-2570cd8e274f}</destination>
