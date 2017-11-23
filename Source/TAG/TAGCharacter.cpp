@@ -39,6 +39,9 @@ ATAGCharacter::ATAGCharacter()
 	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
 
+	InitialHeightZ = CameraBoom->RelativeLocation.Z;
+	ZoomInZ = InitialHeightZ - 140;
+
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
@@ -69,10 +72,10 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("ScrollDown", IE_Pressed, this, &ATAGCharacter::ZoomOut);
 
 	PlayerInputComponent->BindAction("ZoomIn", IE_Pressed, this, &ATAGCharacter::ZoomInHeld);
-	PlayerInputComponent->BindAction("ZoomIn", IE_Pressed, this, &ATAGCharacter::ZoomInReleased);
+	PlayerInputComponent->BindAction("ZoomIn", IE_Released, this, &ATAGCharacter::ZoomInReleased);
 
 	PlayerInputComponent->BindAction("ZoomOut", IE_Pressed, this, &ATAGCharacter::ZoomOutHeld);
-	PlayerInputComponent->BindAction("ZoomOut", IE_Pressed, this, &ATAGCharacter::ZoomOutReleased);
+	PlayerInputComponent->BindAction("ZoomOut", IE_Released, this, &ATAGCharacter::ZoomOutReleased);
 
 
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
@@ -92,9 +95,11 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 }
 
 void ATAGCharacter::ZoomIn() {
-	Zoom(-25);
+	Zoom(-15);
 }
-
+void ATAGCharacter::ZoomOut() {
+	Zoom(15);
+}
 void ATAGCharacter::ZoomInHeld(){
 	bZoomIn = true;
 }
@@ -102,7 +107,6 @@ void ATAGCharacter::ZoomInReleased(){
 	bZoomIn = false;
 
 }
-
 void ATAGCharacter::ZoomOutHeld(){
 	bZoomOut = true;
 
@@ -115,12 +119,8 @@ void ATAGCharacter::Zoom(float Value)
 	float val = CameraBoom->TargetArmLength;
 	val += Value * 2.5f;
 
-	//val = FMath::Clamp(CameraBoom->TargetArmLength, 100.f, 700.f);
+	val = FMath::Clamp(val, 100.f, 700.f);
 	CameraBoom->TargetArmLength = val;
-}
-
-void ATAGCharacter::ZoomOut() {
-	Zoom(25);
 }
 
 void ATAGCharacter::Attack()
@@ -177,10 +177,10 @@ void ATAGCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	if (bZoomIn) {
-		Zoom(-2.5f * DeltaTime);
+		Zoom(-100.f * DeltaTime);
 	}
 	if (bZoomOut) {
-		Zoom(2.5f * DeltaTime);
+		Zoom(100.f * DeltaTime);
 	}
 }
 
