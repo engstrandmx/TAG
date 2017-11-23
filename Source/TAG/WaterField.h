@@ -4,7 +4,9 @@
 
 #include "Engine.h"
 #include "GameFramework/Actor.h"
+#include "Runtime/Engine/Classes/Components/SplineComponent.h"
 #include "WaterField.generated.h"
+
 
 UCLASS()
 class TAG_API AWaterField : public AActor
@@ -36,6 +38,8 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	UBoxComponent* WaterFieldBox;
+	UPROPERTY(EditAnywhere)
+	USplineComponent* SplineComponent;
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnActorEnter(AActor* EnteringActor);
@@ -46,6 +50,8 @@ public:
 	FVector FloatSimulationMagnitude;
 
 private:
+
+	float alpha = 0;
 
 	//Used to simulate a wave pattern on objects
 	bool bPositiveWave = true;

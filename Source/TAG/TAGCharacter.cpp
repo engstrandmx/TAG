@@ -39,10 +39,15 @@ ATAGCharacter::ATAGCharacter()
 	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
 
+	InitialHeightZ = CameraBoom->RelativeLocation.Z;
+	ZoomInZ = InitialHeightZ - 140;
+
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+
+	PrimaryActorTick.bCanEverTick = true;
 
 	bCanMove = true;
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
@@ -63,6 +68,16 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 	PlayerInputComponent->BindAxis("MoveForward", this, &ATAGCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ATAGCharacter::MoveRight);
 
+	PlayerInputComponent->BindAction("ScrollUp", IE_Pressed, this, &ATAGCharacter::ZoomIn);
+	PlayerInputComponent->BindAction("ScrollDown", IE_Pressed, this, &ATAGCharacter::ZoomOut);
+
+	PlayerInputComponent->BindAction("ZoomIn", IE_Pressed, this, &ATAGCharacter::ZoomInHeld);
+	PlayerInputComponent->BindAction("ZoomIn", IE_Released, this, &ATAGCharacter::ZoomInReleased);
+
+	PlayerInputComponent->BindAction("ZoomOut", IE_Pressed, this, &ATAGCharacter::ZoomOutHeld);
+	PlayerInputComponent->BindAction("ZoomOut", IE_Released, this, &ATAGCharacter::ZoomOutReleased);
+
+
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "turn" handles devices that provide an absolute delta, such as a mouse.
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
@@ -79,6 +94,34 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ATAGCharacter::OnResetVR);
 }
 
+void ATAGCharacter::ZoomIn() {
+	Zoom(-15);
+}
+void ATAGCharacter::ZoomOut() {
+	Zoom(15);
+}
+void ATAGCharacter::ZoomInHeld(){
+	bZoomIn = true;
+}
+void ATAGCharacter::ZoomInReleased(){
+	bZoomIn = false;
+
+}
+void ATAGCharacter::ZoomOutHeld(){
+	bZoomOut = true;
+
+}
+void ATAGCharacter::ZoomOutReleased(){
+	bZoomOut = false;
+}
+void ATAGCharacter::Zoom(float Value)
+{
+	float val = CameraBoom->TargetArmLength;
+	val += Value * 2.5f;
+
+	val = FMath::Clamp(val, 100.f, 700.f);
+	CameraBoom->TargetArmLength = val;
+}
 
 void ATAGCharacter::Attack()
 {
@@ -128,6 +171,18 @@ float ATAGCharacter::TakeDamage(float Damage, struct FDamageEvent const& DamageE
 	return Health;
 }
 
+
+void ATAGCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (bZoomIn) {
+		Zoom(-100.f * DeltaTime);
+	}
+	if (bZoomOut) {
+		Zoom(100.f * DeltaTime);
+	}
+}
 
 void ATAGCharacter::OnResetVR()
 {

@@ -32,6 +32,8 @@ public:
 
 protected:
 
+	void Tick(float DeltaTime);
+
 	/** Resets HMD orientation in VR. */
 	void OnResetVR();
 
@@ -62,6 +64,20 @@ protected:
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void ZoomIn();
+	void ZoomOut();
+	void Zoom(float Value);
+
+	void ZoomInHeld();
+	void ZoomInReleased();
+	void ZoomOutHeld();
+	void ZoomOutReleased();
+
+	bool bZoomIn;
+	bool bZoomOut;
+	float InitialHeightZ;
+	float ZoomInZ;
+
 	// End of APawn interface
 	virtual void Attack();
 
