@@ -65,8 +65,8 @@ protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	void ZoomIn();
-	void Zoom(float Value);
 	void ZoomOut();
+	void Zoom(float Value);
 
 	void ZoomInHeld();
 	void ZoomInReleased();
@@ -75,6 +75,8 @@ protected:
 
 	bool bZoomIn;
 	bool bZoomOut;
+	float InitialHeightZ;
+	float ZoomInZ;
 
 	// End of APawn interface
 	virtual void Attack();
