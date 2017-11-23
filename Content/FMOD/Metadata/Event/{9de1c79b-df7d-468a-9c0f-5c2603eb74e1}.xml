@@ -49,7 +49,6 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <destination>{3149b730-f2d3-439b-a42c-e4a6e1438e33}</destination>
             <destination>{b9ab3058-c3cd-4ad2-90ea-6aacf2d421d5}</destination>
             <destination>{2b6f71b6-4c09-4d85-afc0-4a206b37a719}</destination>
-            <destination>{9618b94b-fbbf-4080-84d7-be545ea69d83}</destination>
         </relationship>
         <relationship name="timeline">
             <destination>{d804aee8-4b69-4100-ad82-a28630d20303}</destination>
@@ -159,11 +158,6 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
         <relationship name="mixerGroup">
             <destination>{04678672-aab7-4489-be43-b0e97c6a48e0}</destination>
-        </relationship>
-    </object>
-    <object class="GroupTrack" id="{9618b94b-fbbf-4080-84d7-be545ea69d83}">
-        <relationship name="mixerGroup">
-            <destination>{c5792b66-fd1c-4ba8-a306-6208f9d5835d}</destination>
         </relationship>
     </object>
     <object class="Timeline" id="{d804aee8-4b69-4100-ad82-a28630d20303}">
@@ -590,20 +584,6 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
         <relationship name="panner">
             <destination>{fc76f010-adf8-4ffc-829b-5799786bf836}</destination>
-        </relationship>
-        <relationship name="output">
-            <destination>{5aed6c6a-ff15-49f7-b005-1ca707470417}</destination>
-        </relationship>
-    </object>
-    <object class="EventMixerGroup" id="{c5792b66-fd1c-4ba8-a306-6208f9d5835d}">
-        <property name="name">
-            <value>Dirt</value>
-        </property>
-        <relationship name="effectChain">
-            <destination>{caf9af62-08a0-49df-aa2c-da68d10243f7}</destination>
-        </relationship>
-        <relationship name="panner">
-            <destination>{82a00867-3d9a-4576-8f83-33cc672a593e}</destination>
         </relationship>
         <relationship name="output">
             <destination>{5aed6c6a-ff15-49f7-b005-1ca707470417}</destination>
@@ -1438,12 +1418,6 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{fc76f010-adf8-4ffc-829b-5799786bf836}"/>
-    <object class="MixerBusEffectChain" id="{caf9af62-08a0-49df-aa2c-da68d10243f7}">
-        <relationship name="effects">
-            <destination>{5712b95d-6189-4104-a61e-8f0b85f3848b}</destination>
-        </relationship>
-    </object>
-    <object class="MixerBusPanner" id="{82a00867-3d9a-4576-8f83-33cc672a593e}"/>
     <object class="ParameterCondition" id="{e83884d5-0b08-4338-be53-3fd5053fcc7a}">
         <property name="minimum">
             <value>1.9800000190734863</value>
@@ -1591,7 +1565,6 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
     </object>
     <object class="MixerBusFader" id="{02db0ff8-a706-4a03-bc31-66c2f223d2e0}"/>
-    <object class="MixerBusFader" id="{5712b95d-6189-4104-a61e-8f0b85f3848b}"/>
     <object class="AutomationPoint" id="{6712fd9f-8cf9-460e-9562-44c52500dc8b}">
         <property name="position">
             <value>0</value>
