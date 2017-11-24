@@ -40,7 +40,21 @@ void AWaterField::Tick(float DeltaTime)
 
 		//FHitResult* HitResult = nullptr;
 
-		Cast<ACowCharacter>(actor)->LaunchCharacter(tan  * WaveMagnitude * DeltaTime, false, false);
+		FVector origin = actor->GetActorLocation();
+		FVector dir = (tan  * WaveMagnitude * DeltaTime);
+
+		FHitResult hit = FHitResult(origin, origin + dir);
+
+		if (hit.GetActor()) {
+			actor->SetActorLocation(origin + hit.ImpactNormal * WaveMagnitude * DeltaTime);
+		}
+		else {
+			actor->SetActorLocation(origin + dir);
+
+		}
+		//Cast<ACowCharacter>(actor)->LaunchCharacter(tan  * WaveMagnitude * DeltaTime, false, false);
+
+
 
 		//actor->SetActorLocation((actor->GetActorLocation() + (tan  * WaveMagnitude * DeltaTime)), true, HitResult);
 
