@@ -140,6 +140,9 @@
         <property name="length">
             <value>32.582520833333334</value>
         </property>
+        <property name="startOffset">
+            <value>47.5</value>
+        </property>
         <property name="voiceStealing">
             <value>3</value>
         </property>
@@ -297,7 +300,7 @@
             <value>startOffset</value>
         </property>
         <property name="amount">
-            <value>60.5</value>
+            <value>100</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{e936f3b9-28c6-4736-8d90-1234c5fce2d9}">
@@ -312,7 +315,7 @@
             <value>startOffset</value>
         </property>
         <property name="amount">
-            <value>22.5</value>
+            <value>56.5</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{d99b5a40-cf5b-4718-b39e-f374afd892ca}">
@@ -332,7 +335,7 @@
             <value>startOffset</value>
         </property>
         <property name="amount">
-            <value>35</value>
+            <value>57</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{514fcf0f-b44e-4323-84d9-87b3a8c3211f}">

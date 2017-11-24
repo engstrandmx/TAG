@@ -343,6 +343,9 @@ Parameter - Land
         <property name="length">
             <value>1.3999999999999484</value>
         </property>
+        <relationship name="modulators">
+            <destination>{acc97143-b1ab-4ff2-8d41-5789fa360c40}</destination>
+        </relationship>
         <relationship name="fadeOutCurve">
             <destination>{222b0974-0344-4d86-939e-995a962316e9}</destination>
         </relationship>
@@ -790,6 +793,20 @@ Parameter - Land
             <destination>{d2b7b254-f9b2-4833-81f4-41507683b77f}</destination>
         </relationship>
     </object>
+    <object class="ADSRModulator" id="{acc97143-b1ab-4ff2-8d41-5789fa360c40}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>0</value>
+        </property>
+        <property name="releaseTime">
+            <value>3000</value>
+        </property>
+    </object>
     <object class="FadeCurve" id="{222b0974-0344-4d86-939e-995a962316e9}">
         <relationship name="startPoint">
             <destination>{7ee198ea-9493-41e0-9e07-8c9388088a97}</destination>
@@ -1015,7 +1032,7 @@ Parameter - Land
             <value>0</value>
         </property>
         <property name="value">
-            <value>3.81469727e-06</value>
+            <value>-5</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{91dc0660-c83c-4741-9c82-92bfbe431311}">
@@ -1031,7 +1048,7 @@ Parameter - Land
             <value>0.0016556291390728477</value>
         </property>
         <property name="value">
-            <value>3.81469727e-06</value>
+            <value>-4</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{1972b7ac-05dd-4393-aa77-568a4751af45}">
@@ -1047,7 +1064,7 @@ Parameter - Land
             <value>0.00082781456953642384</value>
         </property>
         <property name="value">
-            <value>3.81469727e-06</value>
+            <value>-5.5</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{f6fef90a-b485-4fb9-b8a2-0fd3e315b83b}">
