@@ -107,6 +107,7 @@ private:
 	void ChangeState(PlayerType toState);
 	void ToggleState();
 
+	void FinishDismount(FVector Location);
 	bool EnemyIsOverlapping = false;
 
 	UPROPERTY(EditAnywhere, Category = Stats)
