@@ -190,14 +190,14 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentTroll(this);
 		break;
 	case EPlayerType::Gnome:
-		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + offset, GetActorRotation(), SpawnParameters);
-
-		Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
-		Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
-		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
-		Controller->Possess(Cast<APawn>(SpawnedPawn));
-
-		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));
+// 		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, GetActorLocation() + offset, GetActorRotation(), SpawnParameters);
+// 
+// 		Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+// 		Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
+// 		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
+// 		Controller->Possess(Cast<APawn>(SpawnedPawn));
+// 
+// 		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));
 
 		OnDismount();
 		break;
@@ -222,4 +222,20 @@ void ATrollCharacter::ToggleState() {
 	default:
 		break;
 	}
+}
+
+void ATrollCharacter::FinishDismount(FVector Location) {
+	FActorSpawnParameters SpawnParameters;
+	SpawnParameters.Instigator = this;
+	SpawnParameters.Owner = GetController();
+
+	SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, Location, GetActorRotation(), SpawnParameters);
+
+	Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+	Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
+	Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
+	Controller->Possess(Cast<APawn>(SpawnedPawn));
+
+	Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));
+
 }
