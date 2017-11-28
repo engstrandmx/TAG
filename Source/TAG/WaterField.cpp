@@ -138,6 +138,19 @@ void AWaterField::Tick(float DeltaTime)
 // 	}
 }
 
+void AWaterField::RemoveFromWaterActors(AActor* ActorToRemove) {
+	FString Name =  ActorToRemove->GetName();
+
+	uint8 Len = FloatingActors.Num();
+	for (uint8 i = 0; i < Len; i++) {
+		if (FloatingActors[i]->GetName() == ActorToRemove->GetName())
+		{
+			FloatingActors.RemoveAt(i);
+		}
+	}
+
+}
+
 void AWaterField::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
 {
 	//On actor enter check for floating tag, add to array and disable physics
