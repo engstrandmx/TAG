@@ -38,7 +38,7 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	UBoxComponent* WaterFieldBox;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	USplineComponent* SplineComponent;
 
 	UFUNCTION(BlueprintImplementableEvent)
@@ -48,6 +48,9 @@ public:
 	FVector CurrentVector;
 	UPROPERTY(EditAnywhere, Category = "Configuration")
 	FVector FloatSimulationMagnitude;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	float WaterWidth = 300.f;
 
 private:
 
@@ -61,4 +64,43 @@ private:
 	float WaveSimAlpha = 0;
 	UPROPERTY(EditAnywhere)
 	float WaveMagnitude = 1;
+
+
+	static FORCEINLINE bool Trace(
+		UWorld* World,
+		AActor* ActorToIgnore,
+		const FVector& Start,
+		const FVector& End,
+		FHitResult& HitOut,
+		ECollisionChannel CollisionChannel = ECC_Pawn,
+		bool ReturnPhysMat = false
+	) {
+		if (!World)
+		{
+			return false;
+		}
+
+		FCollisionQueryParams TraceParams(FName(TEXT("VictoreCore Trace")), true, ActorToIgnore);
+		TraceParams.bTraceComplex = true;
+		//TraceParams.bTraceAsyncScene = true;
+		TraceParams.bReturnPhysicalMaterial = ReturnPhysMat;
+
+		//Ignore Actors
+		TraceParams.AddIgnoredActor(ActorToIgnore);
+
+		//Re-initialize hit info
+		HitOut = FHitResult(ForceInit);
+
+		//Trace!
+		World->LineTraceSingleByChannel(
+			HitOut,		//result
+			Start,	//start
+			End, //end
+			CollisionChannel, //collision channel
+			TraceParams
+		);
+
+		//Hit any Actor?
+		return (HitOut.GetActor() != NULL);
+	}
 };

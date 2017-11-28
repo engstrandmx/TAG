@@ -135,9 +135,15 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{ae483b00-b050-479b-937c-ed2a0d04985b}">
+        <property name="volume">
+            <value>-6</value>
+        </property>
         <property name="name">
             <value>Birds_dawn</value>
         </property>
+        <relationship name="modulators">
+            <destination>{8c9dff2e-4ff9-4543-b4b1-b4a6f9ae27d1}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{6aeb05fc-8b1a-4ab9-ba7c-0ca6581ca5a2}</destination>
         </relationship>
@@ -176,6 +182,17 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{887e0dc3-ac09-4826-b0ad-9c7f75a7fce1}"/>
+    <object class="ADSRModulator" id="{8c9dff2e-4ff9-4543-b4b1-b4a6f9ae27d1}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="releaseTime">
+            <value>0</value>
+        </property>
+    </object>
     <object class="MixerBusEffectChain" id="{6aeb05fc-8b1a-4ab9-ba7c-0ca6581ca5a2}">
         <relationship name="effects">
             <destination>{ec142e21-eb99-403c-863b-2bf79e306d36}</destination>

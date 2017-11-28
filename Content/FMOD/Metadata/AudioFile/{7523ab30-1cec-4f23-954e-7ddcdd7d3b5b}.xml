@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{7523ab30-1cec-4f23-954e-7ddcdd7d3b5b}">
+        <property name="assetPath">
+            <value>Ambience/Trees/Ambiense_tree_leafs_loop_02.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>22</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{4cf0234a-aea2-4257-9619-110ab2dd4ecd}</destination>
+        </relationship>
+    </object>
+</objects>

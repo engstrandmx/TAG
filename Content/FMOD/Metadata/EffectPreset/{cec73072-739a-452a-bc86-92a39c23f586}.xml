@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EffectPreset" id="{cec73072-739a-452a-bc86-92a39c23f586}">
+        <property name="name">
+            <value>FMOD Spatializer cows</value>
+        </property>
+        <relationship name="folder">
+            <destination>{b5ee539f-fa06-0027-1dae-f9b0de2cb3f1}</destination>
+        </relationship>
+        <relationship name="effect">
+            <destination>{61c4b84f-3ae9-469f-826f-c0fe8102fb8b}</destination>
+        </relationship>
+    </object>
+    <object class="SpatialiserEffect" id="{61c4b84f-3ae9-469f-826f-c0fe8102fb8b}">
+        <property name="maximumDistance">
+            <value>6.80000019</value>
+        </property>
+        <property name="extentMode">
+            <value>1</value>
+        </property>
+        <property name="soundSize">
+            <value>0.549999952</value>
+        </property>
+        <property name="minimumExtent">
+            <value>54</value>
+        </property>
+    </object>
+</objects>

@@ -34,13 +34,57 @@ void AWaterField::Tick(float DeltaTime)
 	for (uint8 i = 0; i < Len; i++)
 	{
 		AActor* actor = FloatingActors[i];
-		
-		FVector tan = SplineComponent->FindTangentClosestToWorldLocation(actor->GetActorLocation(), ESplineCoordinateSpace::World);
-		tan.Normalize();
 
 		//FHitResult* HitResult = nullptr;
 
-		Cast<ACowCharacter>(actor)->LaunchCharacter(tan  * WaveMagnitude * DeltaTime, false, false);
+		FVector origin = actor->GetActorLocation();
+		FVector tan = SplineComponent->FindTangentClosestToWorldLocation(actor->GetActorLocation(), ESplineCoordinateSpace::World);
+		FVector toStream = FVector::ZeroVector;
+		
+		if (FVector::Distance(SplineComponent->FindLocationClosestToWorldLocation(origin, ESplineCoordinateSpace::World), origin) > WaterWidth) {
+			toStream = SplineComponent->FindLocationClosestToWorldLocation(origin, ESplineCoordinateSpace::World) - origin;
+			toStream.Normalize();
+			tan += toStream;
+		}
+
+		tan.Normalize();
+
+		FVector dir = (tan  * WaveMagnitude * DeltaTime);
+
+		FHitResult hit(ForceInit);
+
+		if (Trace(GetWorld(), actor, origin, origin + dir * 25, hit, ECC_WorldStatic)) {
+
+			FVector right = hit.ImpactNormal.RotateAngleAxis(90, FVector::UpVector);
+			FVector left = hit.ImpactNormal.RotateAngleAxis(-90, FVector::UpVector);
+			FVector closest = SplineComponent->FindLocationClosestToWorldLocation(origin, ESplineCoordinateSpace::World);
+			
+			FVector normal = left;
+
+			if (FVector::Distance(origin + right, closest) < FVector::Distance(origin + left, closest)) {
+				normal = right;
+			}
+
+			actor->SetActorLocation(FMath::Lerp(origin, origin + normal * WaveMagnitude * DeltaTime, 0.5f));
+		
+// 			DrawDebugLine(
+// 				GetWorld(),
+// 				actor->GetActorLocation(),
+// 				(actor->GetActorLocation() + (FVector)hit.ImpactNormal * 100 * 100),
+// 				FColor(255, 0, 0),
+// 				true, -1, 0,
+// 				12.333
+// 			);
+		}
+		else {
+			actor->SetActorLocation(FMath::Lerp(origin, origin + dir, 0.5f));
+
+		}
+
+		actor->SetActorRotation(actor->GetActorRotation() + FRotator(0, 5 * DeltaTime, 0));
+		//Cast<ACowCharacter>(actor)->LaunchCharacter(tan  * WaveMagnitude * DeltaTime, false, false);
+
+
 
 		//actor->SetActorLocation((actor->GetActorLocation() + (tan  * WaveMagnitude * DeltaTime)), true, HitResult);
 
@@ -50,14 +94,7 @@ void AWaterField::Tick(float DeltaTime)
 // 			FVector right = FVector::CrossProduct(HitResult->ImpactNormal, FVector::UpVector);
 // 			UE_LOG(LogTemp, Warning, TEXT("BLOCKED"));
 // 
-// 			DrawDebugLine(
-// 				GetWorld(),
-// 				actor->GetActorLocation(),
-// 				actor->GetActorLocation() + (right * WaveMagnitude * 500),
-// 				FColor(255, 255, 0),
-// 				true, -1, 0,
-// 				12.333
-// 			);
+
 // 
 // 			actor->SetActorLocation((actor->GetActorLocation() + (right * WaveMagnitude * DeltaTime)), true);
 // 		}

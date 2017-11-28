@@ -241,10 +241,10 @@ Parameter - Hit
     </object>
     <object class="EventSound" id="{6f7ba889-832f-4bcc-b2ca-cb8719be04d7}">
         <property name="start">
-            <value>3.7000000000000002</value>
+            <value>3.7050000000000001</value>
         </property>
         <property name="length">
-            <value>2.6684166666666664</value>
+            <value>2.6634166666666665</value>
         </property>
         <relationship name="modulators">
             <destination>{7bd5503f-393d-4363-b46a-7360ec1f9604}</destination>
@@ -277,10 +277,10 @@ Parameter - Hit
             <value>true</value>
         </property>
         <property name="start">
-            <value>0.79476192655609423</value>
+            <value>0.80000000000000004</value>
         </property>
         <property name="length">
-            <value>2.1118839067772388</value>
+            <value>2.1066458333333329</value>
         </property>
         <property name="voiceStealing">
             <value>3</value>
@@ -299,9 +299,6 @@ Parameter - Hit
         <property name="isAsync">
             <value>true</value>
         </property>
-        <property name="isCutoff">
-            <value>true</value>
-        </property>
         <property name="start">
             <value>3.7000000000000002</value>
         </property>
@@ -313,6 +310,9 @@ Parameter - Hit
         </property>
         <property name="maxVoices">
             <value>1</value>
+        </property>
+        <property name="looping">
+            <value>true</value>
         </property>
         <relationship name="sounds">
             <destination>{60dd505a-0b64-458a-8385-88bdf47d08bf}</destination>
@@ -437,7 +437,7 @@ Parameter - Hit
     </object>
     <object class="NamedMarker" id="{26cf646d-af09-46a6-89fe-fbde3716df86}">
         <property name="position">
-            <value>0.80000000000000004</value>
+            <value>0.78000000000000003</value>
         </property>
         <property name="name">
             <value>Idle</value>
@@ -451,7 +451,7 @@ Parameter - Hit
     </object>
     <object class="NamedMarker" id="{233d7a11-983c-4578-91a9-e446f34b191f}">
         <property name="position">
-            <value>3.6500000000000004</value>
+            <value>3.6800000000000002</value>
         </property>
         <property name="name">
             <value>Chase</value>
@@ -588,7 +588,7 @@ Parameter - Hit
             <value>-80</value>
         </property>
         <property name="attackTime">
-            <value>0</value>
+            <value>300</value>
         </property>
         <property name="releaseTime">
             <value>280</value>
@@ -637,6 +637,7 @@ Parameter - Hit
         </property>
         <relationship name="automationCurves">
             <destination>{a4ee4503-dc54-484d-a770-16a17629cd1a}</destination>
+            <destination>{a68f5e87-86cd-4964-b01c-ba870a8ae381}</destination>
         </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{02e1cc0f-7cf9-429f-a4fc-9ecc891aed14}">
@@ -732,6 +733,15 @@ Parameter - Hit
             <destination>{d3520c8e-77e1-46df-8874-b0f667fe9d16}</destination>
         </relationship>
     </object>
+    <object class="AutomationCurve" id="{a68f5e87-86cd-4964-b01c-ba870a8ae381}">
+        <relationship name="parameter">
+            <destination>{9ccc30ed-50a6-416a-acaa-d90473d075b9}</destination>
+        </relationship>
+        <relationship name="automationPoints">
+            <destination>{2fff5a00-82a8-469c-87a3-e23debcae40f}</destination>
+            <destination>{c8eedb28-4d94-43d6-a148-ab422c7dc049}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{217605ad-848a-4132-bba6-e2b2a37bc279}"/>
     <object class="Automator" id="{c87eec2a-c4c8-4f4d-80db-ab5548b00d55}">
         <property name="nameOfPropertyBeingAutomated">
@@ -779,6 +789,22 @@ Parameter - Hit
         </property>
         <property name="value">
             <value>-64.4231949</value>
+        </property>
+    </object>
+    <object class="AutomationPoint" id="{2fff5a00-82a8-469c-87a3-e23debcae40f}">
+        <property name="position">
+            <value>0.00082034454470877774</value>
+        </property>
+        <property name="value">
+            <value>-14.5</value>
+        </property>
+    </object>
+    <object class="AutomationPoint" id="{c8eedb28-4d94-43d6-a148-ab422c7dc049}">
+        <property name="position">
+            <value>1</value>
+        </property>
+        <property name="value">
+            <value>-80</value>
         </property>
     </object>
     <object class="AutomationCurve" id="{3e2bbeae-7343-4928-a553-c9a292472bde}">
