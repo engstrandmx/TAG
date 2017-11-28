@@ -265,7 +265,7 @@
         <relationship name="effects">
             <destination>{9c130193-1684-4c08-9139-bc3bb2a32064}</destination>
             <destination>{ef4e6b58-797c-43d2-9b11-27b28b5fa7ba}</destination>
-            <destination>{9040a68b-c648-4166-bb95-db4461117010}</destination>
+            <destination>{1e01f531-6a93-43fc-8700-7f7fe1d33ea1}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{216bef54-0d8d-472a-bb34-1201301d92c8}"/>
@@ -307,16 +307,13 @@
         </relationship>
     </object>
     <object class="MixerBusFader" id="{ef4e6b58-797c-43d2-9b11-27b28b5fa7ba}"/>
-    <object class="SpatialiserEffect" id="{9040a68b-c648-4166-bb95-db4461117010}">
-        <property name="extentMode">
-            <value>1</value>
+    <object class="ProxyEffect" id="{1e01f531-6a93-43fc-8700-7f7fe1d33ea1}">
+        <property name="inputFormat">
+            <value>0</value>
         </property>
-        <property name="soundSize">
-            <value>4</value>
-        </property>
-        <property name="minimumExtent">
-            <value>180</value>
-        </property>
+        <relationship name="preset">
+            <destination>{4f74f808-7e8e-4f0b-bd33-b0d1c95f746c}</destination>
+        </relationship>
     </object>
     <object class="AutomationCurve" id="{0cbf2a4a-c8a5-4ced-b6cc-86b710e6750e}">
         <relationship name="parameter">
