@@ -96,7 +96,8 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Stats)
 	FVector DismountOffset; //How offset away the dismounted gnome will appear
 
-
+	UFUNCTION(BlueprintCallable)
+	void FinishDismount(FVector Location);
 
 private:
 
@@ -107,7 +108,6 @@ private:
 	void ChangeState(PlayerType toState);
 	void ToggleState();
 
-	void FinishDismount(FVector Location);
 	bool EnemyIsOverlapping = false;
 
 	UPROPERTY(EditAnywhere, Category = Stats)
