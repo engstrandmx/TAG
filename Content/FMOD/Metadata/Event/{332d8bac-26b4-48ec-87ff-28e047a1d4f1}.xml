@@ -195,6 +195,9 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{6728ea83-493c-4557-8c4d-5558d9f74958}">
+        <property name="volume">
+            <value>-5.5</value>
+        </property>
         <relationship name="effectChain">
             <destination>{1294b9c8-b1dc-49a2-b614-1d6ffc6a7c2f}</destination>
         </relationship>
@@ -380,6 +383,9 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{d1ad5af2-899f-4e4d-af97-110d29bbbcec}">
+        <property name="volume">
+            <value>-0.5</value>
+        </property>
         <property name="name">
             <value>Dirt</value>
         </property>
@@ -395,7 +401,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="MultiSound" id="{2ffed80b-5147-444c-bcc2-f5a9134fd87c}">
         <property name="start">
-            <value>12.999999999999998</value>
+            <value>13.050000000000001</value>
         </property>
         <property name="length">
             <value>0.86524999999999996</value>
@@ -424,6 +430,9 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{81748c0f-db60-486e-acdc-9139507372a1}">
+        <property name="volume">
+            <value>4</value>
+        </property>
         <property name="name">
             <value>Dirt_impact</value>
         </property>
@@ -1110,6 +1119,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     <object class="MixerBusEffectChain" id="{d5f9ea4a-525c-4294-8305-5dd4b23d8fd8}">
         <relationship name="effects">
             <destination>{f58eb127-a160-4845-84f4-7a079467917e}</destination>
+            <destination>{31c0228e-a6d7-4878-bee3-05a641b50149}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{78692cff-7218-4805-a154-d76d52846905}"/>
@@ -1166,6 +1176,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     <object class="MixerBusEffectChain" id="{331f4acc-35d6-4b23-9626-aa73756bb1a7}">
         <relationship name="effects">
             <destination>{d1fb94fe-a6d7-457c-ac71-f3c9fdb31f00}</destination>
+            <destination>{d1175d8d-0e63-4b14-aee6-e4cbff98f6e3}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{97911b76-7f62-43b3-a143-1bc2654ab06f}"/>
@@ -1379,10 +1390,10 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="ParameterCondition" id="{fa3d0123-d570-4ba4-8200-1856ee3cd3e0}">
         <property name="minimum">
-            <value>3.9800000190734863</value>
+            <value>4.9800000190734863</value>
         </property>
         <property name="maximum">
-            <value>4.9499998092651367</value>
+            <value>5</value>
         </property>
         <relationship name="parameter">
             <destination>{9bd5ee9f-5a81-4771-865d-215a062f8cdd}</destination>
@@ -1405,7 +1416,20 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     <object class="MixerBusFader" id="{dba91cde-29da-462a-9357-d94a162d48b4}"/>
     <object class="MixerBusFader" id="{1c725ebe-82d0-4ad2-99a2-84e1ae05f095}"/>
     <object class="MixerBusFader" id="{f58eb127-a160-4845-84f4-7a079467917e}"/>
+    <object class="ThreeEQEffect" id="{31c0228e-a6d7-4878-bee3-05a641b50149}">
+        <property name="midGain">
+            <value>-3.5</value>
+        </property>
+        <property name="highGain">
+            <value>-4.5</value>
+        </property>
+    </object>
     <object class="MixerBusFader" id="{d1fb94fe-a6d7-457c-ac71-f3c9fdb31f00}"/>
+    <object class="ThreeEQEffect" id="{d1175d8d-0e63-4b14-aee6-e4cbff98f6e3}">
+        <property name="lowGain">
+            <value>-10.5</value>
+        </property>
+    </object>
     <object class="AutomationCurve" id="{2cd42c51-0fa2-4619-9293-0c1151b82fb8}">
         <relationship name="parameter">
             <destination>{cce0b5b0-a70d-4159-a85c-eb32bd3b0be6}</destination>
