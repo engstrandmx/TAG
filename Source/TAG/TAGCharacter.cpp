@@ -83,7 +83,7 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("TurnRate", this, &ATAGCharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("LookUp", this, &APawn::	AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ATAGCharacter::LookUpAtRate);
 
 	// handle touch devices
