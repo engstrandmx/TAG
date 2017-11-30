@@ -247,6 +247,7 @@ void ATrollCharacter::FinishDismount(FVector Location) {
 	FActorSpawnParameters SpawnParameters;
 	SpawnParameters.Instigator = this;
 	SpawnParameters.Owner = GetController();
+	SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
 	SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, Location, GetActorRotation(), SpawnParameters);
 
