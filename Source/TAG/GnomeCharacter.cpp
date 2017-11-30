@@ -33,7 +33,7 @@ void AGnomeCharacter::Tick(float DeltaSeconds)
 		GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
 		GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
 
-		CameraResetAlpha += DeltaSeconds * 1.25f;
+		CameraResetAlpha += DeltaSeconds * CameraTransitionSpeed;
 
 		if (CameraResetAlpha >= 1) {
 			bResetCamera = false;
@@ -117,6 +117,7 @@ void AGnomeCharacter::MountTroll()
 
 		//Set the next camera to current camera location and start the camera reset function
 		TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+		CameraTransitionSpeed = 1.25f;
 		TrollActor->ResetCamera();
 		Controller->Possess(Cast<APawn>(TrollParentActor));
 
@@ -124,6 +125,7 @@ void AGnomeCharacter::MountTroll()
 
 		//If player is close enough the gnome will mount
 		if (distance < MountDistance) {
+			CameraTransitionSpeed = 0.33f;
 			//This function destroys the gnome and tells the troll to perform "mount" actions
 			Cast<ATrollCharacter>(TrollParentActor)->MountGnome();
 		}

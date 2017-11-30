@@ -38,6 +38,8 @@ public:
 	TSubclassOf<APawn> GnomePawn; //Pawn to spawn when mounting
 
 	void MountGnome(); //Called by gnome when mounting
+	UFUNCTION(BlueprintCallable, Category = Mounting)
+	void FinishMountGnome();
 	void ResetCamera();
 
 	PlayerType CurrentState; //If actor is mounted/dismounted

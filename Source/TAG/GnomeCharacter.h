@@ -32,7 +32,7 @@ public:
 
 	FORCEINLINE float GetMaxHealth() { return MaxHealth; }
 	FORCEINLINE float GetHealth() { return Health; }
-
+	FORCEINLINE float GetMountDistance() { return MountDistance; }
 	void ResetPlayer();
 	
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
