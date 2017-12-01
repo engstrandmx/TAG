@@ -7,6 +7,7 @@
 #include "TAGPlayerController.h"
 #include "InteractSceneComponent.h"
 #include "TAGGameMode.h"
+#include "DestructibleSceneComponent.h"
 
 AGnomeCharacter::AGnomeCharacter() {
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &AGnomeCharacter::BeginOverlap);
@@ -142,13 +143,52 @@ void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AGnomeCharacter::Interact);
 
+	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &AGnomeCharacter::Attack);
+
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+}
 
+
+void AGnomeCharacter::Attack() {
+	//Rest of logic is handled in BP, FinishAttack is called through montage notify
+	OnAttack();
+}
+
+bool AGnomeCharacter::FinishAttack() {
+	TArray<AActor*> OutActors;
+
+	InteractShape->GetOverlappingActors(OutActors);
+
+	int8 size = OutActors.Num();
+
+	int8 actorsHit = 0;
+
+	for (int8 i = 0; i < size; i++)
+	{
+		if (OutActors[i]->GetComponentByClass(UInteractSceneComponent::StaticClass())) {
+			Cast<UInteractSceneComponent>(OutActors[i]->GetComponentByClass(UInteractSceneComponent::StaticClass()))->Attack(this, Damage);
+			actorsHit++;
+		}
+		if (OutActors[i]->GetComponentByClass(UDestructibleSceneComponent::StaticClass())) {
+			Cast<UDestructibleSceneComponent>(OutActors[i]->GetComponentByClass(UDestructibleSceneComponent::StaticClass()))->DestroyObject(Damage);
+			actorsHit++;
+		}
+	}
+
+	if (actorsHit != 0) {
+		return true;
+	}
+	return false;
 }
 
 void AGnomeCharacter::Interact()
 {
+	OnInteract();
+
+}
+
+void AGnomeCharacter::FinishInteract() {
 	TArray<AActor*> OutActors;
 
 	InteractShape->GetOverlappingActors(OutActors);
@@ -161,6 +201,7 @@ void AGnomeCharacter::Interact()
 			Cast<UInteractSceneComponent>(OutActors[i]->GetComponentByClass(UInteractSceneComponent::StaticClass()))->Interact(this);
 		}
 	}
+
 }
 
 void AGnomeCharacter::SimulateDeathFX_Implementation(FVector ForceVector)

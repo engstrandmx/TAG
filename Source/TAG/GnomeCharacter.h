@@ -25,7 +25,6 @@ public:
 	UFUNCTION()
 	void EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
-
 	virtual void BeginPlay() override;
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
@@ -40,12 +39,23 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnHit();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnInteract();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnAttack();
 	//DECLARE_EVENT(AGnomeCharacter, FChangedEvent)
 	//FChangedEvent& OnGoldPickup();
 
 	FORCEINLINE void SetTrollParent(AActor* Actor) { TrollParentActor = Actor; }
 	void ResetCamera();
 	void MountTroll();
+
+	UFUNCTION(BlueprintCallable, Category = Functions)
+	void FinishInteract();
+	UFUNCTION(BlueprintCallable, Category = Functions)
+	bool FinishAttack();
 
 private:
 
@@ -56,8 +66,10 @@ private:
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float LaunchForce = 1200.f;
 
-	void Interact();
+	void Attack();
 
+	void Interact();
+	
 	UFUNCTION(Reliable, NetMulticast )
 	void SimulateDeathFX(FVector ForceVector);
 	void SimulateDeathFX_Implementation(FVector ForceVector);
@@ -71,7 +83,7 @@ private:
 	USphereComponent* InteractShape;
 
 	UPROPERTY(EditAnywhere, Category = Stats)
-	float MountDistance;
+	float MountDistance = 130.f;
 
 	UPROPERTY(EditAnyWhere, Category = Stats)
 	float CarryMovementSpeed;
@@ -91,4 +103,6 @@ protected:
 	UPROPERTY(EditAnyWhere, Category = Stats)
 	float MaxHealth = 100.f;
 
+	UPROPERTY(EditAnyWhere, Category = Damage)
+	float Damage = 10.f;
 };

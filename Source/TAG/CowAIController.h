@@ -53,5 +53,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	AActor* GetSeeingPawn();
 	
+	FORCEINLINE UBlackboardComponent* GetBlackboardComponent() { return BlackboardComp; }
+
 	
 };
