@@ -12,14 +12,22 @@ ATrigger::ATrigger()
 	TriggerBox->OnComponentEndOverlap.AddDynamic(this, &ATrigger::EndOverlap);
 
 	PrimaryActorTick.bCanEverTick = false;
-
+	NeighborTriggerCount = 0;
+	bIsStandOnTrigger = true;
 }
+
+
 
 void ATrigger::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
 {
 	if (OtherActor->IsA(APawn::StaticClass())) {
 		ActorsEntered++;
 		TriggerEvent();
+
+		FTriggerSignal Signal;
+		Signal.bIsTriggered = true;
+
+		SendTriggerSignal(Signal);
 	}
 }
 
@@ -31,6 +39,12 @@ void ATrigger::EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 		if (ActorsEntered == 0) {
 			bTriggered = false;
 		}
+
+		FTriggerSignal Signal;
+		Signal.bIsTriggered = false;
+		SendTriggerSignal(Signal);
+
+		OnLeave();
 	}
 }
 
@@ -57,6 +71,27 @@ void ATrigger::BeginPlay()
 			}
 		}
 	}
+}
+
+void ATrigger::SendTriggerSignal(FTriggerSignal Signal) {
+	int8 size = ConnectedTriggers.Num();
+
+	//Send signal from trigger event to all connected triggers
+	for (int8 i = 0; i < size; i++)
+	{
+		ConnectedTriggers[i]->ReceiveTriggerSignal(Signal);
+	}
+}
+
+void ATrigger::ReceiveTriggerSignal(FTriggerSignal ReceivedSignal) {
+	if (ReceivedSignal.bIsTriggered) {
+		NeighborTriggerCount++;
+	}
+	else {
+		NeighborTriggerCount--;
+	}
+
+	OnReceiveSignal(ReceivedSignal);
 }
 
 void ATrigger::TriggerEvent() {
