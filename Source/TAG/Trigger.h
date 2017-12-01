@@ -7,12 +7,24 @@
 #include "TriggerActorComponent.h"
 #include "Trigger.generated.h"
 
+USTRUCT(BlueprintType)
+struct FTriggerSignal {
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trigger Struct")
+	bool bIsBeingStoodOn;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trigger Struct")
+	bool bIsTriggered;
+};
+
 UCLASS()
 class TAG_API ATrigger : public AActor
 {
 	GENERATED_BODY()
 
+
 public:	
+
 	ATrigger();
 	
 	UPROPERTY(EditAnywhere)
@@ -41,12 +53,20 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+	void SendTriggerSignal(FTriggerSignal Signal);
+	void ReceiveTriggerSignal(FTriggerSignal ReceivedSignal);
+public:
 	UFUNCTION()
 	void TriggerEvent();
 
-	UFUNCTION(BlueprintImplementableEvent)
+	UFUNCTION(BlueprintImplementableEvent, Category = "Trigger Events")
 	void OnTrigger();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Trigger Events")
+	void OnReceiveSignal(FTriggerSignal Signal);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Trigger Events")
+	void OnLeave();
 
 	UPROPERTY(BlueprintReadOnly, Category = "Trigger Info")
 	int ActorsEntered;
@@ -56,9 +76,12 @@ protected:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Type")
 	bool bTriggerOnce = true;
 
-	//Only fires when actor is standing on trigger, not triggered when actor leaves
+	//Fires once when actor is standing on trigger, not triggered when actor leaves
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Type")
 	bool bIsStandOnTrigger;
+
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Trigger Data")
+	int NeighborTriggerCount;
 
 	float TimeToTrigger;
 
