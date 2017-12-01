@@ -11,6 +11,8 @@ ATrollCharacter::ATrollCharacter() {
 	InteractShape = CreateDefaultSubobject<USphereComponent>(FName("Interact Shape"));
 	InteractShape->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform);
 
+	GnomePawn = AGnomeCharacter::StaticClass();
+
 	bReplicates = true;
 	AttackCount = 0;
 	bHoldingAttack = false;
@@ -27,7 +29,7 @@ void ATrollCharacter::Tick(float DeltaSeconds)
 		GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
 		GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
 
-		CameraResetAlpha += DeltaSeconds * 1.25f;
+		CameraResetAlpha += DeltaSeconds * CameraTransitionSpeed;
 
 		if (CameraResetAlpha >= 1) {
 			bResetCamera = false;
@@ -38,9 +40,14 @@ void ATrollCharacter::Tick(float DeltaSeconds)
 //Function called from gnome when mounting up
 void ATrollCharacter::MountGnome()
 {
-	bIsMounting = true;
+	OnMount();
 
-	if (SpawnedPawn){
+	bIsMounting = true;
+}
+
+void ATrollCharacter::FinishMountGnome() {
+
+	if (SpawnedPawn) {
 		SpawnedPawn->Destroy();
 
 		SpawnedPawn = nullptr;
@@ -48,6 +55,7 @@ void ATrollCharacter::MountGnome()
 	}
 
 	ChangeState(EPlayerType::Troll);
+
 }
 
 void ATrollCharacter::ResetCamera()
@@ -162,7 +170,18 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 
 	//Check if gnome is already spawned, if it is then a character switch will occur
 	if (SpawnedPawn && !bIsMounting) {
+
+		CameraTransitionSpeed = 1.25f;
+
 		AGnomeCharacter* GnomeCharacter = Cast<AGnomeCharacter>(SpawnedPawn);
+
+		float distance = FVector::Dist(SpawnedPawn->GetActorLocation(), GetActorLocation());
+
+		if (distance < GnomeCharacter->GetMountDistance()) {
+			MountGnome();
+
+			return;
+		}
 
 		Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
@@ -185,7 +204,7 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 	switch (toState)
 	{
 	case EPlayerType::Troll:
-		OnMount();
+		
 
 		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentTroll(this);
 		break;
@@ -228,11 +247,13 @@ void ATrollCharacter::FinishDismount(FVector Location) {
 	FActorSpawnParameters SpawnParameters;
 	SpawnParameters.Instigator = this;
 	SpawnParameters.Owner = GetController();
+	SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
 	SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, Location, GetActorRotation(), SpawnParameters);
 
 	Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 	Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
+	CameraTransitionSpeed = 0.33f;
 	Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
 	Controller->Possess(Cast<APawn>(SpawnedPawn));
 

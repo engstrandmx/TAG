@@ -32,6 +32,8 @@ public:
 
 protected:
 
+	float CameraTransitionSpeed = 1.25f;
+
 	void Tick(float DeltaTime);
 
 	/** Resets HMD orientation in VR. */
