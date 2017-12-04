@@ -11,6 +11,7 @@ UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class TAG_API UInteractSceneComponent : public USceneComponent
 {
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FInteractSignature, AActor*, TriggeringActor);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAttackSignature, AActor*, TriggeringActor, float, Damage);
 
 	GENERATED_BODY()
 
@@ -26,8 +27,14 @@ public:
 
 	UFUNCTION(Category = "Interact")
 	void Interact(AActor* TriggeringActor);
+
+	UFUNCTION(Category = "Interact")
+	void Attack(AActor* TriggeringActor, float Damage);
 	
 	UPROPERTY(BlueprintAssignable, Category = "Events")
 	FInteractSignature OnInteract;
-	
+
+	UPROPERTY(BlueprintAssignable, Category = "Events")
+	FAttackSignature OnAttack;
+
 };
