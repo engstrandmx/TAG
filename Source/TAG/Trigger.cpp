@@ -26,6 +26,7 @@ void ATrigger::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* Ot
 
 		FTriggerSignal Signal;
 		Signal.bIsTriggered = true;
+		Signal.bTriggerSequenceFinished = false;
 
 		SendTriggerSignal(Signal);
 
@@ -46,6 +47,7 @@ void ATrigger::EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 
 		FTriggerSignal Signal;
 		Signal.bIsTriggered = false;
+		Signal.bTriggerSequenceFinished = false;
 		SendTriggerSignal(Signal);
 
 		OnLeave();
@@ -119,6 +121,12 @@ void ATrigger::TriggerEvent() {
 				return;
 			}
 		}
+
+		FTriggerSignal Signal;
+		Signal.bTriggerSequenceFinished = true;
+
+		SendTriggerSignal(Signal);
+		ReceiveTriggerSignal(Signal);
 
 		//Goes through all connected triggers and checks for TriggerObjects, 
 		//if found it will execute all triggers if any are found in said actors

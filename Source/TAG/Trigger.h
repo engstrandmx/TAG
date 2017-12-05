@@ -12,9 +12,11 @@ struct FTriggerSignal {
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trigger Struct")
-	bool bIsBeingStoodOn;
+	bool bTriggerSequenceFinished;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trigger Struct")
 	bool bIsTriggered;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Trigger Struct")
+	bool Testing;
 };
 
 UCLASS()
