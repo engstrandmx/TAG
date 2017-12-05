@@ -74,7 +74,7 @@ Gör trummorna och tonen för &quot;win&quot; Gladare </value>
             <destination>{63ccf876-2a38-46c5-bd4a-ff4f3be445fb}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{bda9fff5-ea7a-42d5-a080-f191b6eee74b}</destination>
+            <destination>{796ae988-fb35-4e1f-a883-1c571a06cb39}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{e62e412e-7c54-4764-8dd0-46ee1db37c61}"/>
