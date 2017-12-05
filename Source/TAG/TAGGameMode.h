@@ -48,6 +48,9 @@ public:
 	FORCEINLINE void SetCurrentTroll(ATrollCharacter* Troll) { CurrentTroll = Troll; }
 	FORCEINLINE void SetCurrentPlayerType(PlayerType Type) { CurrentPlayerType = Type; }
 	FORCEINLINE void SetCurrentCheckpoints(TArray<APlayerStart*> InArray) { CurrentPlayerStarts = InArray; }
+	
+	UFUNCTION(BlueprintCallable, Category = Player)
+	FORCEINLINE	TEnumAsByte<EPlayerType::PlayerType> GetCurrentPlayerType(){ return CurrentPlayerType; }
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 		void OnPreGameStart();
