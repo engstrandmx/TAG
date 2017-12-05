@@ -28,4 +28,8 @@ void UInteractSceneComponent::Interact(AActor* TriggeringActor)
 	OnInteract.Broadcast(TriggeringActor);
 }
 
+void UInteractSceneComponent::Attack(AActor* TriggeringActor, float Damage)
+{
+	OnAttack.Broadcast(TriggeringActor, Damage);
+}
 
