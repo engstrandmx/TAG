@@ -17,7 +17,8 @@ class TAG_API UCustomSpringArmComponent : public USpringArmComponent
 	FVector BlendLocations(const FVector& DesiredArmLocation, const FVector& TraceHitLocation, bool bHitSomething, float DeltaTime) override;
 
 	FVector LastHitLocation;
+	FVector LastLocation;
 	float Alpha = 0;
 	float HitAlpha = 0;
-
+	bool bInit = false;
 };
