@@ -209,7 +209,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="EventMixerMaster" id="{5aed6c6a-ff15-49f7-b005-1ca707470417}">
         <property name="volume">
-            <value>-2</value>
+            <value>-6</value>
         </property>
         <relationship name="effectChain">
             <destination>{ea228adb-7552-406d-a0be-914e259af054}</destination>
@@ -390,7 +390,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="EventMixerGroup" id="{925c5d52-cf24-4cd2-b5cf-abdfd3df56dd}">
         <property name="volume">
-            <value>-11.5</value>
+            <value>-14.5</value>
         </property>
         <property name="name">
             <value>Dirt</value>

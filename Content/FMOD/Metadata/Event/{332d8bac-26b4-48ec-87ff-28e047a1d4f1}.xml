@@ -196,7 +196,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="EventMixerMaster" id="{6728ea83-493c-4557-8c4d-5558d9f74958}">
         <property name="volume">
-            <value>-5.5</value>
+            <value>-10</value>
         </property>
         <relationship name="effectChain">
             <destination>{1294b9c8-b1dc-49a2-b614-1d6ffc6a7c2f}</destination>

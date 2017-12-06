@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="MixerReturn" id="{2323e87c-ee0b-46d6-b6b2-64ce90351b4a}">
+        <property name="volume">
+            <value>-80</value>
+        </property>
         <property name="name">
             <value>Reverb_cow_mini_game</value>
         </property>
