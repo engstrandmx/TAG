@@ -11,7 +11,7 @@ FVector UCustomSpringArmComponent::BlendLocations(const FVector& DesiredArmLocat
 	if (bHitSomething) {
 		Alpha += DeltaTime;
 		HitAlpha += DeltaTime * 2;
-		LastHitLocation = FMath::InterpCircularInOut(LastHitLocation, TraceHitLocation, HitAlpha);
+		LastHitLocation = FMath::InterpExpoInOut(LastHitLocation, TraceHitLocation, HitAlpha);
 	}
 	else {
 		HitAlpha -= DeltaTime * 2;
