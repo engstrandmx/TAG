@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{32b35923-6e38-4031-8846-5bd84473632f}">
         <property name="assetPath">
-            <value>Bush_in_06.wav</value>
+            <value>SFX/Bush/Bush_in_06.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>
