@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{405233a3-1b45-4f54-bf93-95c032bac60b}">
         <property name="assetPath">
-            <value>Branches open.wav</value>
+            <value>SFX/Branch_open/Branches open.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>

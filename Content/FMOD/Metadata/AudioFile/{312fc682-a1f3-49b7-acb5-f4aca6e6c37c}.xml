@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{312fc682-a1f3-49b7-acb5-f4aca6e6c37c}">
+        <property name="assetPath">
+            <value>Gnom/headbut/Gnome_headbut_hit_01.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.375</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{4cf0234a-aea2-4257-9619-110ab2dd4ecd}</destination>
+        </relationship>
+    </object>
+</objects>
