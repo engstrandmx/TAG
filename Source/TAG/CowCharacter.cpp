@@ -31,17 +31,8 @@ void ACowCharacter::Tick(float DeltaTime)
 		if (!bVectorRotated) {
 			bVectorRotated = true;
 			LaunchVector.Normalize();
-// 			DrawDebugLine(
-// 				GetWorld(),
-// 				GetActorLocation(),
-// 				GetActorLocation() + LaunchVector * 500,
-// 				FColor(255, 255, 0),
-// 				true, -1, 0,
-// 				12.333
-// 			);
-
 			LaunchVector = FVector::CrossProduct(LaunchVector, FVector(0, 0, 1));
-
+		}
 // 			DrawDebugLine(
 // 				GetWorld(),
 // 				GetActorLocation(),
@@ -50,9 +41,7 @@ void ACowCharacter::Tick(float DeltaTime)
 // 				true, -1, 0,
 // 				12.333
 // 			);
-		}
-
-		UE_LOG(LogTemp, Warning, TEXT("Vector %s"), *LaunchVector.ToString());
+		
 
 		SetActorRotation(FMath::Lerp(GetActorRotation().Quaternion(), GetActorRotation().Quaternion() * FQuat(LaunchVector, -RotationSpeed), 0.2f * RotationHitForce));
 	}
