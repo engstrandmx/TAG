@@ -344,10 +344,10 @@ Parameter - Hit
     </object>
     <object class="TransitionRegion" id="{1b599385-e39b-42b1-a6e7-9a7e04cfb75c}">
         <property name="position">
-            <value>0.80000000000000004</value>
+            <value>0.78000000000000003</value>
         </property>
         <property name="length">
-            <value>5.5684166666666668</value>
+            <value>5.5884166666666673</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{d45ff2b7-5001-4563-b799-377b2a1469fb}</destination>
@@ -406,10 +406,10 @@ Parameter - Hit
     </object>
     <object class="TransitionRegion" id="{a7c01421-034e-44b2-9d43-cec7704d9a63}">
         <property name="position">
-            <value>0.80000000000000004</value>
+            <value>0.78000000000000003</value>
         </property>
         <property name="length">
-            <value>2.1066458333333333</value>
+            <value>2.1266458333333333</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{fe2fafeb-e935-4fe1-9eee-fc27c9b41ac5}</destination>
@@ -426,7 +426,7 @@ Parameter - Hit
     </object>
     <object class="NamedMarker" id="{26cf646d-af09-46a6-89fe-fbde3716df86}">
         <property name="position">
-            <value>0.78000000000000003</value>
+            <value>0.76000000000000001</value>
         </property>
         <property name="name">
             <value>Idle</value>
@@ -685,9 +685,6 @@ Parameter - Hit
     <object class="SpatialiserEffect" id="{02fc5eba-b987-4d37-afc7-c55b50257b12}">
         <property name="maximumDistance">
             <value>15</value>
-        </property>
-        <property name="extentMode">
-            <value>1</value>
         </property>
         <property name="soundSize">
             <value>2.29999995</value>

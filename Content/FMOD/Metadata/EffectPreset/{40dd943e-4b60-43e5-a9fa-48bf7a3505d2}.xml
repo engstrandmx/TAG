@@ -12,9 +12,6 @@
         </relationship>
     </object>
     <object class="SpatialiserEffect" id="{d3aa1f5a-9cd4-47ed-9803-809f7491373a}">
-        <property name="distanceRolloffType">
-            <value>1</value>
-        </property>
         <property name="maximumDistance">
             <value>15</value>
         </property>
