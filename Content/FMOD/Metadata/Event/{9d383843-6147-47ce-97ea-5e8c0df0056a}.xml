@@ -683,8 +683,8 @@ Parameter - Hit
     </object>
     <object class="MixerBusFader" id="{2a99cbc9-a9b9-4ada-9378-1e427bf65878}"/>
     <object class="SpatialiserEffect" id="{02fc5eba-b987-4d37-afc7-c55b50257b12}">
-        <property name="maximumDistance">
-            <value>15</value>
+        <property name="distanceRolloffType">
+            <value>1</value>
         </property>
         <property name="soundSize">
             <value>2.29999995</value>
@@ -754,7 +754,7 @@ Parameter - Hit
     </object>
     <object class="AutomationPoint" id="{e3e7fae1-762f-41fb-b03c-da928e722d0c}">
         <property name="position">
-            <value>15</value>
+            <value>20</value>
         </property>
         <property name="value">
             <value>-27</value>
@@ -770,7 +770,7 @@ Parameter - Hit
     </object>
     <object class="AutomationPoint" id="{c8f6527c-989d-4777-b157-4e2c7ec57239}">
         <property name="position">
-            <value>0.024834437086092714</value>
+            <value>0.033112582781456956</value>
         </property>
         <property name="value">
             <value>3.81469727e-06</value>
@@ -778,7 +778,7 @@ Parameter - Hit
     </object>
     <object class="AutomationPoint" id="{40704587-559b-488c-8ef2-f020735e742b}">
         <property name="position">
-            <value>15</value>
+            <value>20</value>
         </property>
         <property name="value">
             <value>-25</value>
