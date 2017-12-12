@@ -51,6 +51,10 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Trigger Parameters")
 	bool bTriggered;
 
+	//Whether the trigger should start disabled, if disabled it will need to be activated from another trigger
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Parameters")
+	bool bDisabled;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
