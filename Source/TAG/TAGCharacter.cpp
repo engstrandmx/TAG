@@ -54,6 +54,12 @@ ATAGCharacter::ATAGCharacter()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
 
+void ATAGCharacter::ResetCamera()
+{
+	bResetCamera = true;
+	CameraResetAlpha = 0;
+}
+
 //////////////////////////////////////////////////////////////////////////
 // Input
 
@@ -92,6 +98,26 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ATAGCharacter::OnResetVR);
+
+}
+
+void ATAGCharacter::LookAtActor(AActor* Actor, float Time, float Speed) {
+	ActorToLookAt = Actor;
+	CameraLookAtSpeed = Speed;
+
+	FTimerHandle LookAtTimeHandle;
+	FTimerDelegate TimerDel;
+
+	TimerDel.BindLambda([&]()
+	{
+		StopLookAt();
+	});
+
+	GetWorldTimerManager().SetTimer(LookAtTimeHandle, TimerDel, Time, false);
+}
+
+void ATAGCharacter::StopLookAt() {
+	ActorToLookAt = nullptr;
 }
 
 void ATAGCharacter::ZoomIn() {
