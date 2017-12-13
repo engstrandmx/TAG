@@ -106,7 +106,7 @@ void ATrigger::ReceiveTriggerSignal(FTriggerSignal ReceivedSignal) {
 
 void ATrigger::TriggerEvent() {
 
-	if (!bTriggered || !bTriggerOnce ) {
+	if ((!bTriggered || !bTriggerOnce) && !bTriggerFinished) {
 	
 		OnTrigger();
 		bTriggered = true;

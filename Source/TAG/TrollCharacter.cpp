@@ -22,7 +22,20 @@ void ATrollCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 
-	if (bResetCamera) {
+	CameraTick(DeltaSeconds);
+}
+
+void ATrollCharacter::CameraTick(float DeltaSeconds) {
+
+	if (ActorToLookAt != nullptr) {
+		FTransform T = GetFollowCamera()->GetComponentTransform();
+
+		FVector Loc = FMath::Lerp(T.GetLocation(), ActorToLookAt->GetActorLocation(), CameraLookAtSpeed * DeltaSeconds);
+		FRotator Rot = FMath::Lerp(T.Rotator(), ActorToLookAt->GetActorRotation(), CameraLookAtSpeed * DeltaSeconds);
+
+		GetFollowCamera()->SetWorldLocationAndRotation(Loc, Rot);
+	}
+	else if (bResetCamera) {
 		FVector FromVector = GetFollowCamera()->RelativeLocation;
 		FRotator FromRot = GetFollowCamera()->RelativeRotation;
 
@@ -56,12 +69,6 @@ void ATrollCharacter::FinishMountGnome() {
 
 	ChangeState(EPlayerType::Troll);
 
-}
-
-void ATrollCharacter::ResetCamera()
-{
-	bResetCamera = true;
-	CameraResetAlpha = 0;
 }
 
 float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
