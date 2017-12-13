@@ -79,7 +79,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
             <destination>{1ea18974-e6db-4323-925a-7cc5aca0dec9}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{20977ecb-eeaa-4a89-a3ca-75919a131d55}</destination>
+            <destination>{0958404c-6ddd-4a04-bdb0-632acb1670eb}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{bf7b4f27-9dde-4f36-b37b-fd6f015bf709}"/>
