@@ -101,12 +101,14 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 
 }
 
-void ATAGCharacter::LookAtActor(AActor* Actor, float Time, float Speed) {
+void ATAGCharacter::LookAtActor(AActor* Actor, float Time, float Speed, bool FuckYou) {
 	ActorToLookAt = Actor;
 	CameraLookAtSpeed = Speed;
 
 	FTimerHandle LookAtTimeHandle;
 	FTimerDelegate TimerDel;
+
+	UE_LOG(LogTemp, Warning, TEXT("Time is %f"), Time)
 
 	TimerDel.BindLambda([&]()
 	{
