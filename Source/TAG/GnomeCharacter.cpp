@@ -27,7 +27,21 @@ void AGnomeCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 
-	if (bResetCamera) {
+	CameraTick(DeltaSeconds);
+
+}
+
+void AGnomeCharacter::CameraTick(float DeltaSeconds) {
+	
+	if (ActorToLookAt != nullptr) {
+		FTransform T = GetFollowCamera()->GetComponentTransform();
+
+		FVector Loc = FMath::VInterpTo(T.GetLocation(), ActorToLookAt->GetActorLocation(), 0.5f * DeltaSeconds, CameraLookAtSpeed);
+		FRotator Rot = FMath::RInterpTo(T.Rotator(), ActorToLookAt->GetActorRotation(), 0.5f * DeltaSeconds, CameraLookAtSpeed);
+
+		GetFollowCamera()->SetWorldLocationAndRotation(Loc, Rot);
+	}
+	else if	(bResetCamera) {
 		FVector FromVector = GetFollowCamera()->RelativeLocation;
 		FRotator FromRot = GetFollowCamera()->RelativeRotation;
 
@@ -104,12 +118,6 @@ void AGnomeCharacter::ResetPlayer()
 		SetActorLocation(InitialLocation);	
 	}	
 } 
-
-void AGnomeCharacter::ResetCamera()
-{
-	bResetCamera = true;
-	CameraResetAlpha = 0;
-}
 
 void AGnomeCharacter::MountTroll()
 {

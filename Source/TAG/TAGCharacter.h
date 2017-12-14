@@ -31,9 +31,13 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UFUNCTION(BlueprintCallable, Category = Camera)
+	virtual	void ResetCamera();
+
 protected:
 
 	float CameraTransitionSpeed = 1.25f;
+	float CameraLookAtSpeed = 0.75f;
 
 	void Tick(float DeltaTime);
 
@@ -67,6 +71,10 @@ protected:
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	UFUNCTION(BlueprintCallable, Category = "Camera Functions")
+	void LookAtActor(AActor* Actor, float Speed, float Time, bool FuckYou);
+	UFUNCTION()
+	void StopLookAt();
 	void ZoomIn();
 	void ZoomOut();
 	void Zoom(float Value);
@@ -76,10 +84,16 @@ protected:
 	void ZoomOutHeld();
 	void ZoomOutReleased();
 
+	AActor* ActorToLookAt;
+	float ActorLookAtTime = 1.f;
+
 	bool bZoomIn;
 	bool bZoomOut;
 	float InitialHeightZ;
 	float ZoomInZ;
+
+	float CameraResetAlpha;
+	bool bResetCamera;
 
 	// End of APawn interface
 	virtual void Attack();

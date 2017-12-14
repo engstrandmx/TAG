@@ -55,6 +55,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Parameters")
 	bool bDisabled;
 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Status")
+	bool bTriggerFinished;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -74,19 +77,19 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category = "Trigger Events")
 	void OnLeave();
 
-	UPROPERTY(BlueprintReadOnly, Category = "Trigger Info")
+	UPROPERTY(BlueprintReadOnly, Category = "Trigger Status")
 	int ActorsEntered;
 
 protected:
 	//If trigger fires it will not toggle off unless it is a stand on trigger
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Type")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Parameters")
 	bool bTriggerOnce = true;
 
 	//Fires once when actor is standing on trigger, not triggered when actor leaves
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Type")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Parameters")
 	bool bIsStandOnTrigger;
 
-	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Trigger Data")
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Trigger Status")
 	int NeighborTriggerCount;
 
 	float TimeToTrigger;
