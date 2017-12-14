@@ -72,7 +72,7 @@ protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	UFUNCTION(BlueprintCallable, Category = "Camera Functions")
-	void LookAtActor(AActor* Actor, float Speed, float Time);
+	void LookAtActor(AActor* Actor, float Speed, float Time, bool FuckYou);
 	UFUNCTION()
 	void StopLookAt();
 	void ZoomIn();
