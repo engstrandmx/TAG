@@ -20,8 +20,12 @@ ATrigger::ATrigger()
 
 void ATrigger::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
 {
-	if (OtherActor->IsA(APawn::StaticClass()) && !bDisabled) {
-		ActorsEntered++;
+	ActorsEntered++;
+
+	if (OtherActor->IsA(APawn::StaticClass()) && !bDisabled && !ActorEntered) {
+
+		ActorEntered = true;
+
 		TriggerEvent();
 
 		FTriggerSignal Signal;
@@ -38,22 +42,31 @@ void ATrigger::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* Ot
 
 void ATrigger::EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	if (OtherActor->IsA(APawn::StaticClass()) && bIsStandOnTrigger && !bDisabled) {
-		ActorsEntered--;
+	ActorsEntered--;
 
-		if (ActorsEntered == 0) {
+	if (OtherActor->IsA(APawn::StaticClass()) && bIsStandOnTrigger && !bDisabled && ActorEntered) {
+		TArray<AActor*> overlappedActors;
+		
+		TriggerBox->GetOverlappingActors(overlappedActors, TSubclassOf<APawn>());
+		
+		UE_LOG(LogTemp, Warning, TEXT( "overlapped actors : %i"), overlappedActors.Num())
+
+		if (overlappedActors.Num() == 1) {
+			ActorEntered = false;
+		
+
 			bTriggered = false;
-		}
 
-		FTriggerSignal Signal;
-		Signal.bIsTriggered = false;
-		Signal.bTriggerSequenceFinished = false;
-		SendTriggerSignal(Signal);
+			FTriggerSignal Signal;
+			Signal.bIsTriggered = false;
+			Signal.bTriggerSequenceFinished = false;
+			SendTriggerSignal(Signal);
 
-		OnLeave();
+			OnLeave();
 
-		if (OtherActor->IsA(ACowCharacter::StaticClass())) {
-			Cast<ACowAIController>(Cast<ACowCharacter>(OtherActor)->GetController())->GetBlackboardComponent()->SetValueAsBool(FName("StandingOnTrigger"), false);
+			if (OtherActor->IsA(ACowCharacter::StaticClass())) {
+				Cast<ACowAIController>(Cast<ACowCharacter>(OtherActor)->GetController())->GetBlackboardComponent()->SetValueAsBool(FName("StandingOnTrigger"), false);
+			}
 		}
 	}
 }

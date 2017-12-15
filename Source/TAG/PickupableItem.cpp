@@ -10,8 +10,11 @@ APickupableItem::APickupableItem()
 	BoxCollisionComp = CreateDefaultSubobject<UBoxComponent>(FName("Pickup Area"));
 	SetRootComponent(BoxCollisionComp);
 
+	RotatingComponent = CreateDefaultSubobject<USceneComponent>(FName("Rotating Component"));
+	RotatingComponent->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+
 	StaticMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(FName("Static Mesh"));
-	StaticMeshComponent->AttachToComponent(BoxCollisionComp, FAttachmentTransformRules::KeepRelativeTransform);
+	StaticMeshComponent->AttachToComponent(RotatingComponent, FAttachmentTransformRules::KeepRelativeTransform);
 	StaticMeshComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
 	IdleParticleComponent = CreateDefaultSubobject<UParticleSystemComponent>(FName("Idle Particles"));
@@ -23,7 +26,6 @@ APickupableItem::APickupableItem()
 	bEnableIdleRotation = true;
 
 	BoxCollisionComp->OnComponentBeginOverlap.AddDynamic(this, &APickupableItem::BeginOverlap);
-
 
 }
 
@@ -51,7 +53,7 @@ void APickupableItem::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	if (bEnableIdleRotation) {
-		StaticMeshComponent->AddRelativeRotation(IdleRotation);
+		RotatingComponent->AddRelativeRotation(IdleRotation);
 	}
 
 }
