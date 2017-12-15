@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{c76fb682-1191-400a-8db4-b288427d8fc3}">
         <property name="assetPath">
-            <value>Gnom_jump_dirt_01.wav</value>
+            <value>Gnom/footsteps/Gnom_jump/Gnom_jump_dirt_01.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>

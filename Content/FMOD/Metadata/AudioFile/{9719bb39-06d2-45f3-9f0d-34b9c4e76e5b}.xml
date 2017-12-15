@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{9719bb39-06d2-45f3-9f0d-34b9c4e76e5b}">
         <property name="assetPath">
-            <value>Troll_land_dirt_04.wav</value>
+            <value>Troll/Footsteps/Dirt/Troll_land_dirt_04.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>
