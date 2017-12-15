@@ -14,13 +14,18 @@ class TAG_API APickupableItem : public AActor
 public:	
 	// Sets default values for this actor's properties
 	APickupableItem();
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Components)
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
 	UBoxComponent* BoxCollisionComp;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Components)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* StaticMeshComponent;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Components)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
+	USceneComponent* RotatingComponent;
+
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
 	UParticleSystemComponent* IdleParticleComponent;
 
 	UPROPERTY(EditAnywhere,	BlueprintReadWrite, Category = Effects)
