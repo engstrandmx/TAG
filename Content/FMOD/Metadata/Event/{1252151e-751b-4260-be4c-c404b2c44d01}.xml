@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{1252151e-751b-4260-be4c-c404b2c44d01}">
         <property name="name">
-            <value>Cows_get_hit</value>
+            <value>Cows_get_hit_low</value>
         </property>
         <property name="note">
             <value>parameter - Intensity
