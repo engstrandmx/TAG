@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{fca5433c-f772-45bd-8640-09290ffd4370}">
         <property name="assetPath">
-            <value>Cow_interact_harp_01.wav</value>
+            <value>Cows/Interact/Cow_interact_harp_01.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>
