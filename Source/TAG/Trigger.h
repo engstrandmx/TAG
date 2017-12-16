@@ -80,6 +80,10 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Trigger Status")
 	int ActorsEntered;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Trigger Status")
+	bool ActorEntered;
+
+
 protected:
 	//If trigger fires it will not toggle off unless it is a stand on trigger
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Trigger Parameters")
