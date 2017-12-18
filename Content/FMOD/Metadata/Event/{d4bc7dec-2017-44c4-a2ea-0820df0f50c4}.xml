@@ -121,6 +121,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{be3db2be-6695-4a93-ae7d-45ded4d242c0}">
+        <property name="volume">
+            <value>6</value>
+        </property>
         <property name="name">
             <value>Branches_loop</value>
         </property>
@@ -222,7 +225,7 @@
     <object class="MixerBusFader" id="{a79a8bce-c46c-473d-8f85-667052404feb}"/>
     <object class="SpatialiserEffect" id="{4a4821cc-7826-4560-b8d1-116571f2b483}">
         <property name="maximumDistance">
-            <value>3.60000014</value>
+            <value>12</value>
         </property>
     </object>
     <object class="MixerBusFader" id="{22894352-acb4-4650-ade9-d5f53e779159}"/>
