@@ -1,6 +1,7 @@
 
 
 #include "PickupableItem.h"
+#include "TAGGameMode.h"
 #include "TAGCharacter.h"
 
 
@@ -38,10 +39,12 @@ void APickupableItem::BeginPlay()
 
 void APickupableItem::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
 {
-
-	UE_LOG(LogTemp, Warning, TEXT("Meme"))
 	if (OtherActor->GetClass()->IsChildOf<ATAGCharacter>()) {
+		BoxCollisionComp->OnComponentBeginOverlap.RemoveAll(this);
+		
 		OnPickup();
+		
+		Cast<ATAGGameMode>(GetWorld()->GetAuthGameMode())->PickupCollectible();
 	}
 
 	
