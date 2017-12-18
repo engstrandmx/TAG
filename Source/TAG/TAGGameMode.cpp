@@ -5,18 +5,22 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "UObject/ConstructorHelpers.h"
 #include "CheckpointField.h"
+#include "PickupableItem.h"
 
 ATAGGameMode::ATAGGameMode()
 {
-	// HARDCODED REFERENCES
 }
 
 void ATAGGameMode::BeginPlay() {
-	Super::BeginPlay();
-
 	TagGameState = GetGameState<ATAGGameState>();
 
+	TArray<AActor*> FoundActors;
 
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), APickupableItem::StaticClass(), FoundActors);
+
+	CollectiblesInLevel = FoundActors.Num();
+	
+	Super::BeginPlay();
 }
 
 void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
@@ -148,6 +152,13 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 	OnFadeIn();
 
 	NewPlayer->Possess(SpawnedPawn);
+}
+
+void ATAGGameMode::PickupCollectible()
+{
+	CollectibleCount++;
+
+	OnCollectiblePickup();
 }
 
 AActor* ATAGGameMode::FindPlayerStart_Implementation(AController* Player, const FString& IncomingName)

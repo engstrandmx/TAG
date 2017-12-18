@@ -42,12 +42,21 @@ public:
 	UPROPERTY(EditAnywhere, Category = Spawn)
 	AActor* StartingSpawnPoint;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Collectibles)
+	int CollectibleCount;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Collectibles)
+	int CollectiblesInLevel;
+
 	void RestartPlayer(AController* NewPlayer);
 
 	FORCEINLINE void SetCurrentGnome(AGnomeCharacter* Gnome) { CurrentGnome = Gnome; }
 	FORCEINLINE void SetCurrentTroll(ATrollCharacter* Troll) { CurrentTroll = Troll; }
 	FORCEINLINE void SetCurrentPlayerType(PlayerType Type) { CurrentPlayerType = Type; }
 	FORCEINLINE void SetCurrentCheckpoints(TArray<APlayerStart*> InArray) { CurrentPlayerStarts = InArray; }
+	
+	UFUNCTION(BlueprintCallable, Category = Collectibles)
+	void PickupCollectible();
+
 
 	UFUNCTION(BlueprintCallable, Category = "Gameplay Actors")
 	FORCEINLINE ATrollCharacter* GetTrollCharacter() { return CurrentTroll; }
@@ -78,6 +87,9 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 		void OnFadeOut();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+		void OnCollectiblePickup();
 
 private:
 
