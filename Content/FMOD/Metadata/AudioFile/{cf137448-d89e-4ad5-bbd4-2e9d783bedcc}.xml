@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{cf137448-d89e-4ad5-bbd4-2e9d783bedcc}">
         <property name="assetPath">
-            <value>Branches_magic_loop_01.wav</value>
+            <value>SFX/Branches_magic_loop_01.wav</value>
         </property>
         <property name="isStreaming">
             <value>true</value>
