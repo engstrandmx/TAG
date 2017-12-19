@@ -372,6 +372,9 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{e09b0f41-98fd-4c38-baf4-37e3f5dc944a}">
+        <property name="volume">
+            <value>-8</value>
+        </property>
         <property name="name">
             <value>Mud</value>
         </property>
