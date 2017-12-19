@@ -81,19 +81,19 @@ float AGnomeCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 	}
 	else {
 		if (DamageCauser) {
-			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 100)) - DamageCauser->GetActorLocation();
-			ForceVector.Normalize();
+// 			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 100)) - DamageCauser->GetActorLocation();
+// 			ForceVector.Normalize();
 
 			OnHit();
-			LaunchCharacter(ForceVector * LaunchForce, true, false);
+			//LaunchCharacter(ForceVector * LaunchForce, true, false);
 		}
 		Health -= Damage;
 
 		if (Health <= 0) {
-			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 100)) - DamageCauser->GetActorLocation();
-			ForceVector.Normalize();
+// 			FVector ForceVector = (GetActorLocation() + FVector(0, 0, 100)) - DamageCauser->GetActorLocation();
+// 			ForceVector.Normalize();
 
-			SimulateDeathFX(ForceVector);
+			//SimulateDeathFX(ForceVector);
 			ResetPlayer();
 		}
 	}

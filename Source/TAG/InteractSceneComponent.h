@@ -11,7 +11,7 @@ UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class TAG_API UInteractSceneComponent : public USceneComponent
 {
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FInteractSignature, AActor*, TriggeringActor);
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAttackSignature, AActor*, TriggeringActor, float, Damage);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAttackSignature, AActor*, TriggeringActor, float, Damages);
 
 	GENERATED_BODY()
 
@@ -19,7 +19,6 @@ public:
 	// Sets default values for this component's properties
 	UInteractSceneComponent();
 
-	bool bFuckYou;
 
 protected:
 	// Called when the game starts
