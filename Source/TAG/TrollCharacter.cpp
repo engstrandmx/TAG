@@ -94,12 +94,25 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("HoldAttack", IE_Pressed, this, &ATrollCharacter::HoldAttack);
 	PlayerInputComponent->BindAction("HoldAttack", IE_Released, this, &ATrollCharacter::StopHoldAttack);
 
+	PlayerInputComponent->BindAction("Throw", IE_Pressed, this, &ATrollCharacter::HoldThrow);
+	PlayerInputComponent->BindAction("Throw", IE_Released, this, &ATrollCharacter::StopHoldThrow);
+
 
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
 
 	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &ATrollCharacter::ToggleState);
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+}
+
+void ATrollCharacter::HoldThrow() {
+	bDisplayThrowArc = true;
+}
+
+void ATrollCharacter::StopHoldThrow() {
+	bDisplayThrowArc = false;
+
+	OnThrow();
 }
 
 void ATrollCharacter::HoldAttack() {

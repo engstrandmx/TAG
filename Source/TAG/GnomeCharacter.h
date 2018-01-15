@@ -57,7 +57,16 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Functions)
 	bool FinishAttack();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Glide")
+	bool bCanGlide;
+	UPROPERTY(BlueprintReadOnly, Category = "Glide")
+	bool bGlide;
+
+
 private:
+
+	void JumpPressed();
+	void JumpReleased();
 
 	AActor* TrollParentActor;
 

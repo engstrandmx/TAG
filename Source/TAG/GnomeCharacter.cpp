@@ -153,10 +153,26 @@ void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &AGnomeCharacter::Attack);
 
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AGnomeCharacter::JumpPressed);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AGnomeCharacter::JumpReleased);
+
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
 
+
+void AGnomeCharacter::JumpPressed()
+{
+	if (bCanGlide) {
+		bGlide = true;
+	}
+
+}
+
+void AGnomeCharacter::JumpReleased()
+{
+	bGlide = false;
+}
 
 void AGnomeCharacter::Attack() {
 	//Rest of logic is handled in BP, FinishAttack is called through montage notify

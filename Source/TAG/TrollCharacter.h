@@ -55,9 +55,16 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnHideMesh(bool Hidden); //Called to hide/unhide gnome mesh, BP EVENT
 
+	UPROPERTY(EditAnywhere,BlueprintReadOnly, Category = "Throw")
+	bool bDisplayThrowArc;
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+	void OnThrow();
+
 protected:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void HoldThrow();
+	void StopHoldThrow();
 	void HoldAttack();
 	UFUNCTION(BlueprintCallable, Category = "Attack")
 	void StopHoldAttack();
