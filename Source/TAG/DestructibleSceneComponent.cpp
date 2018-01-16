@@ -15,17 +15,31 @@ UDestructibleSceneComponent::UDestructibleSceneComponent()
 	// ...
 }
 
-void UDestructibleSceneComponent::DestroyObject(float Damage)
+bool UDestructibleSceneComponent::DestroyObject(float Damage)
 {
 	CurrentHealth -= Damage;
 
-	if (ParticleEmitter) {
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ParticleEmitter, GetComponentTransform(), true);
-	}
-	
 	if (bDestroyMesh && CurrentHealth <= 0) {
-		GetAttachmentRootActor()->Destroy();
+		if (DeathParticleEmitter != nullptr) {
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DeathParticleEmitter, GetOwner()->GetTransform(), true);
+		}
+
+		GetOwner()->Destroy();
+		return true;
 	}
+
+	else {
+		if (HitParticleEmitter == nullptr) {
+			if (DeathParticleEmitter != nullptr) {
+				UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), DeathParticleEmitter, GetOwner()->GetTransform(), true);
+			}
+		}
+		else {
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), HitParticleEmitter, GetOwner()->GetTransform(), true);
+		}
+	}
+
+	return false;
 }
 
 // Called when the game starts

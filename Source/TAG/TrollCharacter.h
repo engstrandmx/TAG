@@ -109,6 +109,13 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	void FinishDismount(FVector Location);
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Stats)
+		float Damage = 10.f; //Damage dealt during attack
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Stats)
+		float DamageRadius = 100.f; //Radius of normal attack, used in conjuction with ApplyRadialDamage
+
+
 private:
 
 	int AttackCount; //How many attacks have occurred in montage
@@ -120,20 +127,12 @@ private:
 
 	bool EnemyIsOverlapping = false;
 
-	UPROPERTY(EditAnywhere, Category = Stats)
-	float Damage = 10.f; //Damage dealt during attack
-
-	UPROPERTY(EditAnywhere, Category = Stats)
-	float DamageRadius = 100.f; //Radius of normal attack, used in conjuction with ApplyRadialDamage
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float CurrentHealth = 100;
 
 	UPROPERTY(EditAnywhere, Category = Stats)
 	float MaxHealth = 100;
-
-	UPROPERTY(EditAnywhere, Category = Components)
-	UParticleSystem* DamageParticles;
 
 	bool bIsMounting;
 };

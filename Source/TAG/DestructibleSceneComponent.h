@@ -8,7 +8,7 @@
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class TAG_API UDestructibleSceneComponent : public USceneComponent
+class TAG_API UDestructibleSceneComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
@@ -21,12 +21,16 @@ public:
 	bool bDestroyMesh;
 
 	UPROPERTY(EditAnywhere)
-	UParticleSystem* ParticleEmitter;
+	UParticleSystem* DeathParticleEmitter;
+
+	UPROPERTY(EditAnywhere)
+	UParticleSystem* HitParticleEmitter;
 	// Sets default values for this component's properties
 	UDestructibleSceneComponent();
 
+	//Adds damage, if objects health drops below 0 it is destroyed. Returns true if destroyed, false if not
 	UFUNCTION(BlueprintCallable)
-	void DestroyObject(float Damage);
+	bool DestroyObject(float Damage);
 
 protected:
 	// Called when the game starts
