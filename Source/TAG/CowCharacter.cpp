@@ -33,15 +33,6 @@ void ACowCharacter::Tick(float DeltaTime)
 			LaunchVector.Normalize();
 			LaunchVector = FVector::CrossProduct(LaunchVector, FVector(0, 0, 1));
 		}
-// 			DrawDebugLine(
-// 				GetWorld(),
-// 				GetActorLocation(),
-// 				GetActorLocation() + LaunchVector * 500,
-// 				FColor(255, 0, 0),
-// 				true, -1, 0,
-// 				12.333
-// 			);
-		
 
 		SetActorRotation(FMath::Lerp(GetActorRotation().Quaternion(), GetActorRotation().Quaternion() * FQuat(LaunchVector, -RotationSpeed), 0.2f * RotationHitForce));
 	}

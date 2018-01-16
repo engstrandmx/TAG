@@ -48,13 +48,9 @@ void ATrigger::EndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 		TArray<AActor*> overlappedActors;
 		
 		TriggerBox->GetOverlappingActors(overlappedActors, TSubclassOf<APawn>());
-		
-		UE_LOG(LogTemp, Warning, TEXT( "overlapped actors : %i"), overlappedActors.Num())
 
 		if (overlappedActors.Num() == 1) {
 			ActorEntered = false;
-		
-
 			bTriggered = false;
 
 			FTriggerSignal Signal;
