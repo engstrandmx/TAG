@@ -1,13 +1,10 @@
 
 
-#include "CowAIController.h"
+#include "BoarAIController.h"
 #include "TrollCharacter.h"
-#include "BehaviorTree/BehaviorTree.h"
-#include "BehaviorTree/BehaviorTreeComponent.h"
-#include "BehaviorTree/BlackboardComponent.h"
 
-ACowAIController::ACowAIController()
-{
+ABoarAIController::ABoarAIController(){
+
 	//Components Init.
 	BehaviorTreeComp = CreateDefaultSubobject<UBehaviorTreeComponent>(FName("BehaviorComp"));
 
@@ -31,7 +28,7 @@ ACowAIController::ACowAIController()
 	AIPerceptionComponent->ConfigureSense(*Sight);
 }
 
-void ACowAIController::OnPerceptionUpdated(TArray<AActor*> UpdatedActors)
+void ABoarAIController::OnPerceptionUpdated(TArray<AActor*> UpdatedActors)
 {
 	for (AActor* Actor : UpdatedActors)
 	{
@@ -46,7 +43,7 @@ void ACowAIController::OnPerceptionUpdated(TArray<AActor*> UpdatedActors)
 }
 
 
-void ACowAIController::Possess(APawn* InPawn)
+void ABoarAIController::Possess(APawn* InPawn)
 {
 	Super::Possess(InPawn);
 
@@ -58,13 +55,15 @@ void ACowAIController::Possess(APawn* InPawn)
 	}
 
 	//Register the OnPerceptionUpdated function to fire whenever the AIPerception gets updated
-	AIPerceptionComponent->OnPerceptionUpdated.AddDynamic(this, &ACowAIController::OnPerceptionUpdated);
+	AIPerceptionComponent->OnPerceptionUpdated.AddDynamic(this, &ABoarAIController::OnPerceptionUpdated);
 }
 
-AActor* ACowAIController::GetSeeingPawn()
+AActor* ABoarAIController::GetSeeingPawn()
 {
 	//Return the seeing pawn
 	UObject* object = BlackboardComp->GetValueAsObject(BlackboardEnemyKey);
 
 	return object ? Cast<AActor>(object) : nullptr;
 }
+
+
