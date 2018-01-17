@@ -57,7 +57,7 @@ void ACowAIController::Possess(APawn* InPawn)
 		BehaviorTreeComp->StartTree(*BehaviorTree);
 	}
 
-	//Register the OnPerceptionUpdated function to fire whenever the AIPerception get's updated
+	//Register the OnPerceptionUpdated function to fire whenever the AIPerception gets updated
 	AIPerceptionComponent->OnPerceptionUpdated.AddDynamic(this, &ACowAIController::OnPerceptionUpdated);
 }
 
