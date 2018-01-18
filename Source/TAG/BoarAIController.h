@@ -28,7 +28,6 @@ private:
 	/** BehaviorTreeComponent - used to start a behavior tree */
 	UBehaviorTreeComponent* BehaviorTreeComp;
 
-
 	/** Blackboard Key Value Name */
 	const FName BlackboardEnemyKey = FName("Enemy");
 
@@ -42,20 +41,17 @@ private:
 protected:
 
 	UPROPERTY(EditAnywhere)
-		UBehaviorTree* BehaviorTree;
+	UBehaviorTree* BehaviorTree;
 
 	UPROPERTY(EditAnywhere)
-		UAIPerceptionComponent* AIPerceptionComponent;
+	UAIPerceptionComponent* AIPerceptionComponent;
 
 public:
 
 	virtual void Possess(APawn* InPawn) override;
 	UFUNCTION(BlueprintCallable)
-		AActor* GetSeeingPawn();
+	AActor* GetSeeingPawn();
 
 	FORCEINLINE UBlackboardComponent* GetBlackboardComponent() { return BlackboardComp; }
-
-
-	
 	
 };
