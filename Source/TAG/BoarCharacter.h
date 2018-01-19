@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine.h"
 #include "GameFramework/Character.h"
 #include "BoarCharacter.generated.h"
 
@@ -13,4 +13,15 @@ class TAG_API ABoarCharacter : public ACharacter
 
 	ABoarCharacter();
 	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	USphereComponent* SphereCollider;
+
+public:
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Status)
+	bool bStunned;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Status)
+	bool bCharging;
+
 };
