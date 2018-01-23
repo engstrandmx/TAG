@@ -22,6 +22,10 @@ class TAG_API ABoarCharacter : public ACharacter
 	USphereComponent* SphereCollider;
 
 public:
+	
+	//Health in each phase, index 0 = phase 1, 1 = 2, etc etc
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Status)
+	TArray<int> HealthInPhases;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Spawnables)
 	TSubclassOf<APigletCharacter> PigletMob;

@@ -43,7 +43,7 @@ protected:
 	UPROPERTY(EditAnywhere)
 	UBehaviorTree* BehaviorTree;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = AI, meta = (AllowPrivateAccess = "true"))
 	UAIPerceptionComponent* AIPerceptionComponent;
 
 public:
