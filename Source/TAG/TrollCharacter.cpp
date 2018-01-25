@@ -269,7 +269,9 @@ void ATrollCharacter::FinishDismount(FVector Location) {
 	SpawnParameters.Owner = GetController();
 	SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
-	SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, Location, GetActorRotation(), SpawnParameters);
+	if (Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetGnomeCharacter() == nullptr) {
+		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, Location, GetActorRotation(), SpawnParameters);
+	}
 
 	Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 	Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
