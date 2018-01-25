@@ -67,7 +67,7 @@
             <destination>{ab20d7c0-cdfe-471f-914c-80edf5954c2d}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{a6c8bf4d-cbc5-4c4a-83ae-0c76eadab233}</destination>
+            <destination>{f6cad3d7-b016-45e1-ad7a-a9ae74c3160e}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{d5c35174-7afd-4118-80ea-bfdeda55141d}"/>
@@ -184,9 +184,6 @@
     </object>
     <object class="MixerBusPanner" id="{ab20d7c0-cdfe-471f-914c-80edf5954c2d}"/>
     <object class="SingleSound" id="{9fe94644-4412-472c-9f59-6a65d44a4109}">
-        <property name="start">
-            <value>24</value>
-        </property>
         <property name="length">
             <value>4</value>
         </property>
@@ -210,7 +207,7 @@
     </object>
     <object class="EventSound" id="{52ad52ca-c9ba-40ba-b11f-041652a60ac3}">
         <property name="start">
-            <value>28</value>
+            <value>4</value>
         </property>
         <property name="length">
             <value>52</value>
@@ -238,7 +235,7 @@
     </object>
     <object class="EventSound" id="{7fb3e11c-1e80-449a-9486-5172f65cfae6}">
         <property name="start">
-            <value>86</value>
+            <value>61.999999999999993</value>
         </property>
         <property name="length">
             <value>52</value>
@@ -266,7 +263,7 @@
     </object>
     <object class="EventSound" id="{ed4682fa-f78a-4dac-b8bf-764beae95f5d}">
         <property name="start">
-            <value>164</value>
+            <value>140.00000000000003</value>
         </property>
         <property name="length">
             <value>52</value>
@@ -294,7 +291,7 @@
     </object>
     <object class="EventSound" id="{56927b12-3ff6-4e95-a3a3-cb5788e55670}">
         <property name="start">
-            <value>160</value>
+            <value>136.00000000000003</value>
         </property>
         <property name="length">
             <value>3.5</value>
@@ -322,7 +319,7 @@
     </object>
     <object class="EventSound" id="{f7e943c0-807b-4c04-8e3f-61bcdfe588d3}">
         <property name="start">
-            <value>256</value>
+            <value>232.00000000000003</value>
         </property>
         <property name="length">
             <value>6</value>
@@ -350,7 +347,7 @@
     </object>
     <object class="EventSound" id="{10ffd5f1-dea5-4254-b0a0-fcbc17b25918}">
         <property name="start">
-            <value>256</value>
+            <value>232.00000000000003</value>
         </property>
         <property name="length">
             <value>6</value>
@@ -387,7 +384,7 @@
     </object>
     <object class="NamedMarker" id="{a0f42ce2-8e13-4bd1-b2ee-410e60cece76}">
         <property name="position">
-            <value>28</value>
+            <value>4</value>
         </property>
         <property name="name">
             <value>lvl 1</value>
@@ -401,7 +398,7 @@
     </object>
     <object class="NamedMarker" id="{1abda54e-31d7-473c-b303-bd87120061de}">
         <property name="position">
-            <value>86</value>
+            <value>61.999999999999993</value>
         </property>
         <property name="name">
             <value>lvl 2</value>
@@ -415,7 +412,7 @@
     </object>
     <object class="NamedMarker" id="{84088be0-aa9b-4775-a627-db7084b1c44d}">
         <property name="position">
-            <value>256</value>
+            <value>232.00000000000003</value>
         </property>
         <property name="name">
             <value>On back</value>
@@ -440,7 +437,7 @@
     </object>
     <object class="LoopRegion" id="{ff1953a3-fa55-4964-afc4-d2bae3c80ce3}">
         <property name="position">
-            <value>28</value>
+            <value>4</value>
         </property>
         <property name="length">
             <value>52</value>
@@ -454,7 +451,7 @@
     </object>
     <object class="LoopRegion" id="{634e9f51-d9e1-46fc-84db-563003a67f6a}">
         <property name="position">
-            <value>86</value>
+            <value>61.999999999999993</value>
         </property>
         <property name="length">
             <value>52</value>
@@ -468,7 +465,7 @@
     </object>
     <object class="TransitionRegion" id="{5bd48e7f-e34c-46df-a361-5cc237df572b}">
         <property name="position">
-            <value>28</value>
+            <value>4</value>
         </property>
         <property name="length">
             <value>52</value>
@@ -491,7 +488,7 @@
     </object>
     <object class="TransitionRegion" id="{07e89e51-873f-4ee2-9221-348e6947a3e9}">
         <property name="position">
-            <value>256</value>
+            <value>232.00000000000003</value>
         </property>
         <property name="length">
             <value>6</value>
@@ -514,7 +511,7 @@
     </object>
     <object class="LoopRegion" id="{9f140e57-2248-4540-88b9-5197e30b74ef}">
         <property name="position">
-            <value>256</value>
+            <value>232.00000000000003</value>
         </property>
         <property name="length">
             <value>6</value>
@@ -528,7 +525,7 @@
     </object>
     <object class="TransitionRegion" id="{d43ef4b7-c63d-43f4-9770-e9ddd204b9d5}">
         <property name="position">
-            <value>86</value>
+            <value>61.999999999999993</value>
         </property>
         <property name="length">
             <value>52</value>
@@ -551,7 +548,7 @@
     </object>
     <object class="TransitionRegion" id="{bc5cb5a6-9957-4135-8670-621d962217fb}">
         <property name="position">
-            <value>256</value>
+            <value>232.00000000000003</value>
         </property>
         <property name="length">
             <value>6</value>
@@ -574,7 +571,7 @@
     </object>
     <object class="LoopRegion" id="{1262f0df-5faf-4c0a-a574-4fab6ae7a021}">
         <property name="position">
-            <value>164</value>
+            <value>140.00000000000003</value>
         </property>
         <property name="length">
             <value>52</value>
@@ -588,7 +585,7 @@
     </object>
     <object class="TransitionRegion" id="{6293a525-4fe0-44ba-9f15-4cb7632902bd}">
         <property name="position">
-            <value>164.02977443609021</value>
+            <value>140.02977443609021</value>
         </property>
         <property name="length">
             <value>51.970225563909793</value>
@@ -611,7 +608,7 @@
     </object>
     <object class="NamedMarker" id="{f50b7eee-324d-42a8-b097-723fd0a256cc}">
         <property name="position">
-            <value>160</value>
+            <value>136.00000000000003</value>
         </property>
         <property name="name">
             <value>lvl3</value>
@@ -625,7 +622,7 @@
     </object>
     <object class="TransitionRegion" id="{77c5df77-ad6f-4444-ba38-1bfca7e6423b}">
         <property name="position">
-            <value>256</value>
+            <value>232.00000000000003</value>
         </property>
         <property name="length">
             <value>6.0000000000000284</value>
