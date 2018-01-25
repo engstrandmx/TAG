@@ -133,7 +133,7 @@ void AGnomeCharacter::MountTroll()
 		float distance = FVector::Dist(TrollParentActor->GetActorLocation(), GetActorLocation());
 
 		//If player is close enough the gnome will mount
-		if (distance < MountDistance) {
+		if (distance < MountDistance || bOverrideDistCheckOnMount) {
 			CameraTransitionSpeed = 0.33f;
 			//This function destroys the gnome and tells the troll to perform "mount" actions
 			Cast<ATrollCharacter>(TrollParentActor)->MountGnome();
@@ -141,7 +141,14 @@ void AGnomeCharacter::MountTroll()
 
 		//Sets which actor is "active" to ensure correct respawns on death. In this case triggering the function will always set current player to troll, might change.
 		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(EPlayerType::Troll);
+		bOverrideDistCheckOnMount = false;
 	}
+}
+
+void AGnomeCharacter::InstantMount()
+{
+	bOverrideDistCheckOnMount = true;
+	MountTroll();
 }
 
 void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)

@@ -51,10 +51,12 @@ public:
 
 	FORCEINLINE void SetTrollParent(AActor* Actor) { TrollParentActor = Actor; }
 	void MountTroll();
+	UFUNCTION(BlueprintCallable, Category = Mounting)
+	void InstantMount();
 
-	UFUNCTION(BlueprintCallable, Category = Functions)
+	UFUNCTION(BlueprintCallable, Category = Attacks)
 	void FinishInteract();
-	UFUNCTION(BlueprintCallable, Category = Functions)
+	UFUNCTION(BlueprintCallable, Category = Attacks)
 	bool FinishAttack();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Glide")
@@ -64,6 +66,8 @@ public:
 
 
 private:
+	//Overrides the distance check during mounting, used for instant mounting from any distance
+	bool bOverrideDistCheckOnMount;
 
 	void JumpPressed();
 	void JumpReleased();
