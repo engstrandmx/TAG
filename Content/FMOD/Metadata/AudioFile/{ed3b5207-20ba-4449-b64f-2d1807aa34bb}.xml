@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{ed3b5207-20ba-4449-b64f-2d1807aa34bb}">
         <property name="assetPath">
-            <value>Gloson_attack_scream_01.wav</value>
+            <value>Gloson/Gloson_attack_scream_01.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>
