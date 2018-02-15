@@ -564,6 +564,9 @@
         <property name="nameOfPropertyBeingModulated">
             <value>snapshotIntensity</value>
         </property>
+        <property name="attackTime">
+            <value>0</value>
+        </property>
         <property name="peakValue">
             <value>100</value>
         </property>
