@@ -106,13 +106,18 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 }
 
 void ATrollCharacter::HoldThrow() {
-	bDisplayThrowArc = true;
+	if (bCanThrow) {
+		bDisplayThrowArc = true;
+	}
 }
 
 void ATrollCharacter::StopHoldThrow() {
-	bDisplayThrowArc = false;
+	if (bCanThrow) {
 
-	OnThrow();
+		bDisplayThrowArc = false;
+
+		OnThrow();
+	}
 }
 
 void ATrollCharacter::HoldAttack() {
