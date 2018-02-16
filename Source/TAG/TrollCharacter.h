@@ -55,6 +55,8 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnHideMesh(bool Hidden); //Called to hide/unhide gnome mesh, BP EVENT
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Throw")
+	bool bCanThrow;
 	UPROPERTY(EditAnywhere,BlueprintReadOnly, Category = "Throw")
 	bool bDisplayThrowArc;
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
