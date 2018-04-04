@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="MasterTagFolder" id="{f028d504-fdc0-4f24-9696-29c99f020ec1}">
         <property name="name">
             <value>Master</value>
@@ -7,6 +7,14 @@
         <relationship name="items">
             <destination>{5779e104-3ec9-4b51-a51b-dcb78a82a687}</destination>
             <destination>{c15eae2d-15e1-43d7-ae03-77a784aa0fae}</destination>
+            <destination>{2b0ea0fb-b4c4-40d6-83cc-5ea69d74ea8c}</destination>
+            <destination>{9e7018e9-409d-4a5e-97e5-1d36e75c6862}</destination>
+            <destination>{fa029300-9b05-4e07-a3c0-8e09a9b8890b}</destination>
+            <destination>{4064032a-47ba-45e5-994e-8f99a1dcf425}</destination>
+            <destination>{f481fc76-3e16-4143-8ef3-a3d39f981a41}</destination>
+            <destination>{b6da1399-e567-4bb8-92ef-0d4ba4aa25e8}</destination>
+            <destination>{2ba91e71-a390-4a8e-800d-67ba7c90ce54}</destination>
+            <destination>{6a6ea013-1aec-4303-88f2-5b6869638740}</destination>
         </relationship>
     </object>
     <object class="Tag" id="{5779e104-3ec9-4b51-a51b-dcb78a82a687}">
@@ -20,6 +28,70 @@
     <object class="Tag" id="{c15eae2d-15e1-43d7-ae03-77a784aa0fae}">
         <property name="name">
             <value>hit</value>
+        </property>
+        <relationship name="folder">
+            <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
+        </relationship>
+    </object>
+    <object class="Tag" id="{2b0ea0fb-b4c4-40d6-83cc-5ea69d74ea8c}">
+        <property name="name">
+            <value>Screams</value>
+        </property>
+        <relationship name="folder">
+            <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
+        </relationship>
+    </object>
+    <object class="Tag" id="{9e7018e9-409d-4a5e-97e5-1d36e75c6862}">
+        <property name="name">
+            <value>ska</value>
+        </property>
+        <relationship name="folder">
+            <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
+        </relationship>
+    </object>
+    <object class="Tag" id="{fa029300-9b05-4e07-a3c0-8e09a9b8890b}">
+        <property name="name">
+            <value>ha</value>
+        </property>
+        <relationship name="folder">
+            <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
+        </relationship>
+    </object>
+    <object class="Tag" id="{4064032a-47ba-45e5-994e-8f99a1dcf425}">
+        <property name="name">
+            <value>en</value>
+        </property>
+        <relationship name="folder">
+            <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
+        </relationship>
+    </object>
+    <object class="Tag" id="{f481fc76-3e16-4143-8ef3-a3d39f981a41}">
+        <property name="name">
+            <value>egen</value>
+        </property>
+        <relationship name="folder">
+            <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
+        </relationship>
+    </object>
+    <object class="Tag" id="{b6da1399-e567-4bb8-92ef-0d4ba4aa25e8}">
+        <property name="name">
+            <value>sfx</value>
+        </property>
+        <relationship name="folder">
+            <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
+        </relationship>
+    </object>
+    <object class="Tag" id="{2ba91e71-a390-4a8e-800d-67ba7c90ce54}">
+        <property name="name">
+            <value>som</value>
+        </property>
+        <relationship name="folder">
+            <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
+        </relationship>
+    </object>
+    <object class="Tag" id="{6a6ea013-1aec-4303-88f2-5b6869638740}">
+        <property name="name">
+            <value>triggas</value>
         </property>
         <relationship name="folder">
             <destination>{f028d504-fdc0-4f24-9696-29c99f020ec1}</destination>
