@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine.h"
 #include "EnvironmentQuery/EnvQueryContext.h"
 #include "EnvQueryContext_FindTrollQuerier.generated.h"
 
