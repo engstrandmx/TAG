@@ -26,7 +26,6 @@ void ATAGGameMode::BeginPlay() {
 void ATAGGameMode::PostLogin(APlayerController* NewPlayer) {
 	UE_LOG(LogTemp, Warning, TEXT("Post Login Performed"));
 
-
 	PlayerControllers.Add(Cast<ATAGPlayerController>(NewPlayer));
 
 	PlayerControllers.Last()->SetPlayerType(PlayerType::Troll);
@@ -126,6 +125,7 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 
 		UE_LOG(LogTemp, Warning, TEXT("Gnome spawned"));
 		break;
+
 	case PlayerType::Troll:
 		DefaultPawnClass = TrollCharacter;
 
@@ -141,6 +141,7 @@ void ATAGGameMode::RestartPlayer(AController* NewPlayer)
 
 		UE_LOG(LogTemp, Warning, TEXT("Troll spawned"));
 		break;
+
 	case PlayerType::Spectator:
 		//TODO: Make spectator implementation
 		SpawnTag = TrollSpawnTag;
@@ -189,7 +190,6 @@ AActor* ATAGGameMode::FindPlayerStart_Implementation(AController* Player, const 
 		if (LastStart != nullptr) {
 			return LastStart;
 		}
-
 	}
 
 	// Always pick StartSpot at start of match
