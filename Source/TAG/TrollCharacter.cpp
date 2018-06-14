@@ -294,7 +294,9 @@ void ATrollCharacter::FinishDismount(FVector Location) {
 	Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 	Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
 	CameraTransitionSpeed = 1.25; // 0.33
-	Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
+
+	Cast<AGnomeCharacter>(SpawnedPawn)->ToggleMountCamera();
+	//Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
 	Controller->Possess(Cast<APawn>(SpawnedPawn));
 
 	Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));
