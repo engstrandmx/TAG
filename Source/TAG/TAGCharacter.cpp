@@ -19,8 +19,8 @@ ATAGCharacter::ATAGCharacter()
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
 	// set our turn rates for input
-	BaseTurnRate = 45.f;
-	BaseLookUpRate = 45.f;
+	BaseTurnRate = 45.f; //45
+	BaseLookUpRate = 45.f; //45
 
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
@@ -29,7 +29,7 @@ ATAGCharacter::ATAGCharacter()
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
-	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate
+	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate	540
 	GetCharacterMovement()->JumpZVelocity = 600.f;
 	GetCharacterMovement()->AirControl = 0.2f;
 
@@ -40,7 +40,7 @@ ATAGCharacter::ATAGCharacter()
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
 
 	InitialHeightZ = CameraBoom->RelativeLocation.Z;
-	ZoomInZ = InitialHeightZ - 140;
+	ZoomInZ = InitialHeightZ - 140; //140
 
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
@@ -103,7 +103,7 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 
 void ATAGCharacter::LookAtActor(AActor* Actor, float Time, float Speed, bool FuckYou) {
 	ActorToLookAt = Actor;
-	CameraLookAtSpeed = Speed;
+	CameraLookAtSpeed = Speed * 10;
 
 	FTimerHandle LookAtTimeHandle;
 	FTimerDelegate TimerDel;
@@ -147,7 +147,7 @@ void ATAGCharacter::Zoom(float Value)
 	float val = CameraBoom->TargetArmLength;
 	val += Value * 2.5f;
 
-	val = FMath::Clamp(val, 100.f, 700.f);
+	val = FMath::Clamp(val, 200.f, 500.f); //100, 700
 	CameraBoom->TargetArmLength = val;
 }
 

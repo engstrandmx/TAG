@@ -33,20 +33,26 @@ void ATrollCharacter::CameraTick(float DeltaSeconds) {
 		FVector Loc = FMath::Lerp(T.GetLocation(), ActorToLookAt->GetActorLocation(), CameraLookAtSpeed * DeltaSeconds);
 		FRotator Rot = FMath::Lerp(T.Rotator(), ActorToLookAt->GetActorRotation(), CameraLookAtSpeed * DeltaSeconds);
 
-		GetFollowCamera()->SetWorldLocationAndRotation(Loc, Rot);
+		//GetFollowCamera()->SetWorldLocationAndRotation(Loc, Rot);
+		GetFollowCamera()->SetWorldLocationAndRotation(ActorToLookAt->GetActorLocation(), ActorToLookAt->GetActorRotation());
 	}
 	else if (bResetCamera) {
+		
 		FVector FromVector = GetFollowCamera()->RelativeLocation;
 		FRotator FromRot = GetFollowCamera()->RelativeRotation;
 
 		GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
 		GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
 
+		//GetFollowCamera()->RelativeLocation = FVector::ZeroVector;
+		//GetFollowCamera()->RelativeRotation = FRotator::ZeroRotator;
+
 		CameraResetAlpha += DeltaSeconds * CameraTransitionSpeed;
 
 		if (CameraResetAlpha >= 1) {
 			bResetCamera = false;
 		}
+		
 	}
 }
 
@@ -196,7 +202,7 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 	//Check if gnome is already spawned, if it is then a character switch will occur
 	if (SpawnedPawn && !bIsMounting) {
 
-		CameraTransitionSpeed = 1.25f;
+		CameraTransitionSpeed = 1.25f; //1.25
 
 		AGnomeCharacter* GnomeCharacter = Cast<AGnomeCharacter>(SpawnedPawn);
 
@@ -275,12 +281,12 @@ void ATrollCharacter::FinishDismount(FVector Location) {
 	SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
 	if (Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->GetGnomeCharacter() == nullptr) {
-		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, Location, GetActorRotation(), SpawnParameters);
+		SpawnedPawn = GetWorld()->SpawnActor<AGnomeCharacter>(GnomePawn, Location,  GetActorRotation() , SpawnParameters);
 	}
 
 	Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 	Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
-	CameraTransitionSpeed = 0.33f;
+	CameraTransitionSpeed = 1.25; // 0.33
 	Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
 	Controller->Possess(Cast<APawn>(SpawnedPawn));
 

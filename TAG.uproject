@@ -50,6 +50,11 @@
 		{
 			"Name": "AndroidPermission",
 			"Enabled": false
+		},
+		{
+			"Name": "ToolbagImporter",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/5510b9babf944b8e97cd533640f78a2f"
 		}
 	]
 }
