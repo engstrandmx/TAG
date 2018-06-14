@@ -36,8 +36,8 @@ public:
 
 protected:
 
-	float CameraTransitionSpeed = 1.25f;
-	float CameraLookAtSpeed = 0.75f;
+	float CameraTransitionSpeed = 1.25f; // 1.25
+	float CameraLookAtSpeed = 0.75f; // 0.75
 
 	void Tick(float DeltaTime);
 

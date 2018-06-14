@@ -20,7 +20,7 @@ AGnomeCharacter::AGnomeCharacter() {
 	PrimaryActorTick.bCanEverTick = true;
 	CarryMovementSpeed = 150;
 
-	CameraResetAlpha = 0;
+	//CameraResetAlpha = 0;
 }
 
 void AGnomeCharacter::Tick(float DeltaSeconds)
@@ -35,24 +35,35 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 	
 	if (ActorToLookAt != nullptr) {
 		FTransform T = GetFollowCamera()->GetComponentTransform();
-
+		
 		FVector Loc = FMath::VInterpTo(T.GetLocation(), ActorToLookAt->GetActorLocation(), 0.5f * DeltaSeconds, CameraLookAtSpeed);
 		FRotator Rot = FMath::RInterpTo(T.Rotator(), ActorToLookAt->GetActorRotation(), 0.5f * DeltaSeconds, CameraLookAtSpeed);
 
 		GetFollowCamera()->SetWorldLocationAndRotation(Loc, Rot);
+		//GetFollowCamera()->SetWorldLocationAndRotation(ActorToLookAt->GetActorLocation(), ActorToLookAt->GetActorRotation());
 	}
 	else if	(bResetCamera) {
+		
 		FVector FromVector = GetFollowCamera()->RelativeLocation;
 		FRotator FromRot = GetFollowCamera()->RelativeRotation;
 
 		GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
 		GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
+		
+		//GetFollowCamera()->RelativeRotation.Pitch = 0;
+		//GetFollowCamera()->RelativeRotation.Yaw = FromRot.Yaw;
+		//GetFollowCamera()->RelativeRotation.Roll = 0;
 
+		//GetFollowCamera()->RelativeLocation.X = 0;
+		//GetFollowCamera()->RelativeLocation.Y = 0;
+		//GetFollowCamera()->RelativeLocation.Z = 0;
+		
 		CameraResetAlpha += DeltaSeconds * CameraTransitionSpeed;
 
 		if (CameraResetAlpha >= 1) {
 			bResetCamera = false;
 		}
+		
 	}
 }
 
@@ -126,7 +137,7 @@ void AGnomeCharacter::MountTroll()
 
 		//Set the next camera to current camera location and start the camera reset function
 		TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
-		CameraTransitionSpeed = 1.25f;
+		CameraTransitionSpeed = 1.25f; //1.25
 		TrollActor->ResetCamera();
 		Controller->Possess(Cast<APawn>(TrollParentActor));
 
@@ -134,7 +145,7 @@ void AGnomeCharacter::MountTroll()
 
 		//If player is close enough the gnome will mount
 		if (distance < MountDistance || bOverrideDistCheckOnMount) {
-			CameraTransitionSpeed = 0.33f;
+			CameraTransitionSpeed = 0.33f; //0.33
 			//This function destroys the gnome and tells the troll to perform "mount" actions
 			Cast<ATrollCharacter>(TrollParentActor)->MountGnome();
 		}
