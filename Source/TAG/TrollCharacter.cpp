@@ -38,6 +38,9 @@ void ATrollCharacter::CameraTick(float DeltaSeconds) {
 	}
 	else if (bResetCamera) {
 		
+		StopHoldAttack();
+		StopAttack();
+
 		FVector FromVector = GetFollowCamera()->RelativeLocation;
 		FRotator FromRot = GetFollowCamera()->RelativeRotation;
 
@@ -59,6 +62,9 @@ void ATrollCharacter::CameraTick(float DeltaSeconds) {
 //Function called from gnome when mounting up
 void ATrollCharacter::MountGnome()
 {
+	StopHoldAttack();
+	StopAttack();
+
 	OnMount();
 
 	bIsMounting = true;
@@ -102,7 +108,6 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 	PlayerInputComponent->BindAction("Throw", IE_Pressed, this, &ATrollCharacter::HoldThrow);
 	PlayerInputComponent->BindAction("Throw", IE_Released, this, &ATrollCharacter::StopHoldThrow);
-
 
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
 
@@ -214,6 +219,8 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 			return;
 		}
 
+		StopHoldAttack();
+		StopAttack();
 		Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
 		Controller->Possess(Cast<APawn>(SpawnedPawn));
@@ -287,7 +294,9 @@ void ATrollCharacter::FinishDismount(FVector Location) {
 	Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 	Cast<AGnomeCharacter>(SpawnedPawn)->SetTrollParent(this);
 	CameraTransitionSpeed = 1.25; // 0.33
-	Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
+
+	Cast<AGnomeCharacter>(SpawnedPawn)->ToggleMountCamera();
+	//Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
 	Controller->Possess(Cast<APawn>(SpawnedPawn));
 
 	Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));
