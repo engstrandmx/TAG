@@ -67,8 +67,10 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 	}
 	else if (bToogleMountCamera) {
 
-		if (GEngine)
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("toggle"));
+		//if (GEngine)
+		//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("toggle"));
+
+		//GetFollowCamera()->control = false;
 
 		FVector FromVector = GetFollowCamera()->RelativeLocation;
 		FRotator FromRot = GetFollowCamera()->RelativeRotation;
@@ -80,6 +82,7 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 
 		if (CameraResetAlpha >= 1) {
 			bToogleMountCamera = false;
+			//GetFollowCamera()->bUsePawnControlRotation = true;
 		}
 	}
 }
