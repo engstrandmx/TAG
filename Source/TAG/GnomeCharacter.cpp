@@ -23,8 +23,8 @@ AGnomeCharacter::AGnomeCharacter() {
 	//CameraResetAlpha = 0;
 }
 
-void AGnomeCharacter::Tick(float DeltaSeconds)
-{
+void AGnomeCharacter::Tick(float DeltaSeconds) {
+
 	Super::Tick(DeltaSeconds);
 
 	CameraTick(DeltaSeconds);
@@ -64,6 +64,26 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 			bResetCamera = false;
 		}
 		
+	}
+	else if (bToogleMountCamera) {
+
+		//if (GEngine)
+		//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("toggle"));
+
+		//GetFollowCamera()->control = false;
+
+		FVector FromVector = GetFollowCamera()->RelativeLocation;
+		FRotator FromRot = GetFollowCamera()->RelativeRotation;
+
+		GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
+		GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
+
+		CameraResetAlpha += (DeltaSeconds * CameraTransitionSpeed) / 5;
+
+		if (CameraResetAlpha >= 1) {
+			bToogleMountCamera = false;
+			//GetFollowCamera()->bUsePawnControlRotation = true;
+		}
 	}
 }
 

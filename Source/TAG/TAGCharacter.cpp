@@ -45,7 +45,7 @@ ATAGCharacter::ATAGCharacter()
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, UCustomSpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
-	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+	FollowCamera->bUsePawnControlRotation = true; // Camera does not rotate relative to arm
 
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -57,6 +57,12 @@ ATAGCharacter::ATAGCharacter()
 void ATAGCharacter::ResetCamera()
 {
 	bResetCamera = true;
+	CameraResetAlpha = 0;
+}
+
+void ATAGCharacter::ToggleMountCamera()
+{
+	bToogleMountCamera = true;
 	CameraResetAlpha = 0;
 }
 
