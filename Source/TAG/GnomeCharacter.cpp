@@ -201,9 +201,11 @@ void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 void AGnomeCharacter::JumpPressed()
 {
+	/**/
 	if (bCanGlide) {
 		bGlide = true;
 	}
+	*/
 
 }
 
