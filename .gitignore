@@ -68,3 +68,5 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Config/DefaultEngine.ini
+Config/DefaultEngine.ini
