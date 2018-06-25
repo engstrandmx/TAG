@@ -5,7 +5,7 @@
             <value>Gnom_mellon</value>
         </property>
         <property name="outputFormat">
-            <value>1</value>
+            <value>0</value>
         </property>
         <relationship name="folder">
             <destination>{9e3b03f3-c2a5-4355-adb5-4b36ed8b79ff}</destination>
@@ -92,10 +92,6 @@
         <property name="length">
             <value>1.125</value>
         </property>
-        <relationship name="sounds">
-            <destination>{77295751-12ed-42ed-8ddd-9a63d8178d5e}</destination>
-            <destination>{c07c97c7-b9ed-4c7f-8e2c-edc30c9544fd}</destination>
-        </relationship>
     </object>
     <object class="EventMixerGroup" id="{42b0e2d8-cc71-40fb-8e9c-21ec7f2e3367}">
         <property name="name">
@@ -118,16 +114,6 @@
     </object>
     <object class="MixerBusPanner" id="{4a3fd975-3697-48cc-ba40-93da8c78b4bd}"/>
     <object class="MixerBusFader" id="{19d0af4a-e5e5-4378-b77e-cb9151548318}"/>
-    <object class="SingleSound" id="{77295751-12ed-42ed-8ddd-9a63d8178d5e}">
-        <relationship name="audioFile">
-            <destination>{723cc424-57a1-4c9c-9009-c2fcd3498758}</destination>
-        </relationship>
-    </object>
-    <object class="SingleSound" id="{c07c97c7-b9ed-4c7f-8e2c-edc30c9544fd}">
-        <relationship name="audioFile">
-            <destination>{6c53e05f-295b-45ea-ab33-1ffc59d94b08}</destination>
-        </relationship>
-    </object>
     <object class="MixerBusEffectChain" id="{1f439bde-34ca-4064-a0fa-7062bff2d1b6}">
         <relationship name="effects">
             <destination>{07bc4fc4-98e8-4bed-b737-e3250f4574cd}</destination>

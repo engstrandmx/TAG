@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{dc44521c-32b4-4b9f-b662-8e34e9cecad2}">
         <property name="assetPath">
-            <value>lindorm_scream_test_02.wav</value>
+            <value>Ta bort tror jag/lindorm_scream_test_02.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>

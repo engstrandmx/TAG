@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{1bcb273c-cd85-4616-8bf7-c12ab1fa1c14}">
         <property name="assetPath">
-            <value>Gloson_on_back_loop_nomaster.wav</value>
+            <value>Ta bort tror jag/Gloson_on_back_loop_nomaster.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>

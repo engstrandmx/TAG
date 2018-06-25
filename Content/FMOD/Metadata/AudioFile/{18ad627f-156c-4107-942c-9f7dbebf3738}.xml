@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{18ad627f-156c-4107-942c-9f7dbebf3738}">
         <property name="assetPath">
-            <value>Gloson_foghorn_01.wav</value>
+            <value>Ta bort tror jag/Gloson_foghorn_01.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>
