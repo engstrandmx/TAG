@@ -16,7 +16,8 @@ void ATAGGameMode::BeginPlay() {
 
 	TArray<AActor*> FoundActors;
 
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), APickupableItem::StaticClass(), FoundActors);
+	//UGameplayStatics::GetAllActorsOfClass(GetWorld(), APickupableItem::StaticClass(), FoundActors);
+	UGameplayStatics::GetAllActorsWithTag(GetWorld(), "Prisoner", FoundActors);
 
 	CollectiblesInLevel = FoundActors.Num();
 	
