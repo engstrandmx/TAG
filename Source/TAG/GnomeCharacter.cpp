@@ -44,6 +44,8 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 	}
 	else if	(bResetCamera) {
 		
+		//GetCameraBoom()->TargetArmLength = 
+
 		FVector FromVector = GetFollowCamera()->RelativeLocation;
 		FRotator FromRot = GetFollowCamera()->RelativeRotation;
 
