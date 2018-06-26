@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{838be866-93e5-4db5-a445-7ffc73b0176a}">
         <property name="assetPath">
-            <value>Impact_barrel_wood_04.wav</value>
+            <value>SFX/Objects/Impact_barrel_wood_04.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>

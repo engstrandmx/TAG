@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{b9a5d13b-335e-4943-9485-5620c6df71f8}">
         <property name="assetPath">
-            <value>Pillar_rumble_01.wav</value>
+            <value>SFX/Pillar_rumble_01.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>

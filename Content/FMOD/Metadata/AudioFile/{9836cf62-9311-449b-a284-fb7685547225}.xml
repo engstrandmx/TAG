@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{9836cf62-9311-449b-a284-fb7685547225}">
         <property name="assetPath">
-            <value>Gloson_lvl_1_loop_no_master_01.wav</value>
+            <value>Ta bort tror jag/Gloson_lvl_1_loop_no_master_01.wav</value>
         </property>
         <property name="isStreaming">
             <value>true</value>

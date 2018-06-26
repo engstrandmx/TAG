@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{f057fc09-e1f7-438c-98cc-5ed5be9dea3c}">
         <property name="assetPath">
-            <value>Lindorm_strings_lvl2_01 -  - Output - Stereo Out.wav</value>
+            <value>Ta bort tror jag/Lindorm_strings_lvl2_01 -  - Output - Stereo Out.wav</value>
         </property>
         <property name="isStreaming">
             <value>true</value>
