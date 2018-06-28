@@ -143,13 +143,17 @@ void AGnomeCharacter::ResetPlayer()
 {
 	OnDeath();
 
-	if (Controller->IsA(ATAGPlayerController::StaticClass())) {
-		ServerResetPlayer(Controller);
-	}
-	else {
-		Health = MaxHealth;
-		SetActorLocation(InitialLocation);	
-	}	
+	
+	//if (Controller->IsA(ATAGPlayerController::StaticClass())) {
+		//ServerResetPlayer(Controller);
+		//SetActorLocation(InitialLocation);
+	
+	//else {
+		//Health = MaxHealth;
+		//SetActorLocation(InitialLocation);	
+	//}
+	
+	
 } 
 
 void AGnomeCharacter::MountTroll()
@@ -163,6 +167,7 @@ void AGnomeCharacter::MountTroll()
 		TrollActor->ResetCamera();
 		Controller->Possess(Cast<APawn>(TrollParentActor));
 
+		/*
 		float distance = FVector::Dist(TrollParentActor->GetActorLocation(), GetActorLocation());
 
 		//If player is close enough the gnome will mount
@@ -171,11 +176,39 @@ void AGnomeCharacter::MountTroll()
 			//This function destroys the gnome and tells the troll to perform "mount" actions
 			Cast<ATrollCharacter>(TrollParentActor)->MountGnome();
 		}
+		*/
 
 		//Sets which actor is "active" to ensure correct respawns on death. In this case triggering the function will always set current player to troll, might change.
 		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(EPlayerType::Troll);
 		bOverrideDistCheckOnMount = false;
 	}
+}
+
+void AGnomeCharacter::ActualMount()
+{
+	if (TrollParentActor) {
+
+		float distance = FVector::Dist(TrollParentActor->GetActorLocation(), GetActorLocation());
+
+		if (distance < MountDistance || bOverrideDistCheckOnMount) {
+
+			ATrollCharacter* TrollActor = Cast<ATrollCharacter>(TrollParentActor);
+
+			//Set the next camera to current camera location and start the camera reset function
+			TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+			CameraTransitionSpeed = 1.25f; //1.25
+			TrollActor->ResetCamera();
+			Controller->Possess(Cast<APawn>(TrollParentActor));
+
+			CameraTransitionSpeed = 0.33f; //0.33
+										   //This function destroys the gnome and tells the troll to perform "mount" actions
+			Cast<ATrollCharacter>(TrollParentActor)->MountGnome();
+
+			Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(EPlayerType::Troll);
+			bOverrideDistCheckOnMount = false;
+		}
+	}
+
 }
 
 void AGnomeCharacter::InstantMount()
@@ -196,6 +229,7 @@ void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AGnomeCharacter::JumpPressed);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AGnomeCharacter::JumpReleased);
 
+	PlayerInputComponent->BindAction("Mount", IE_Pressed, this, &AGnomeCharacter::ActualMount);
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
