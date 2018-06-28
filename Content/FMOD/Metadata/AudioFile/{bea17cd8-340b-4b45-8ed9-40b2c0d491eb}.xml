@@ -4,9 +4,6 @@
         <property name="assetPath">
             <value>Hyss_music_puzzle_1_troll_test_01 -  - Output - Stereo Out.wav</value>
         </property>
-        <property name="isStreaming">
-            <value>true</value>
-        </property>
         <property name="frequencyInKHz">
             <value>48</value>
         </property>

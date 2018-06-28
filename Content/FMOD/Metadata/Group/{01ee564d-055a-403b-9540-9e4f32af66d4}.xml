@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{01ee564d-055a-403b-9540-9e4f32af66d4}">
+        <property name="name">
+            <value>cow_rescue</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{8e9ec340-51ff-4411-95f9-484d5f4c735f}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{c449c342-7e27-4ec0-bdd5-f36046f20e32}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{610d43c5-dd18-484e-9c71-5e317341233f}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{8e9ec340-51ff-4411-95f9-484d5f4c735f}">
+        <relationship name="effects">
+            <destination>{3b857be5-62bd-4d75-b395-924d79174223}</destination>
+            <destination>{2035f885-918f-4521-8f3c-5048a0faa732}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{c449c342-7e27-4ec0-bdd5-f36046f20e32}"/>
+    <object class="MixerBusFader" id="{3b857be5-62bd-4d75-b395-924d79174223}"/>
+    <object class="Sidechain" id="{2035f885-918f-4521-8f3c-5048a0faa732}">
+        <relationship name="targets">
+            <destination>{6dbbbadf-8d2a-4891-869a-c51b1b97d97c}</destination>
+            <destination>{9c733a6e-9b40-41ac-b883-4ed01056a553}</destination>
+        </relationship>
+    </object>
+</objects>
