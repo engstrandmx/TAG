@@ -126,6 +126,8 @@ private:
 
 	void ChangeState(PlayerType toState);
 	void ToggleState();
+	void Mount(PlayerType toState);
+	void MountState();
 
 	bool EnemyIsOverlapping = false;
 
