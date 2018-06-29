@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{d483c045-07d9-407c-af12-057fd41cfb93}">
+        <property name="name">
+            <value>Kulingverb</value>
+        </property>
+        <relationship name="folder">
+            <destination>{bd514e56-74ef-090b-1de8-385b6e662c9b}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{241afcfa-ab65-4d18-8d24-ec28f857f42c}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{241afcfa-ab65-4d18-8d24-ec28f857f42c}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
