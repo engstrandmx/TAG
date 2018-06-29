@@ -7,6 +7,7 @@
             <destination>{2a1d056a-f076-4506-982c-4c270f0b5b66}</destination>
             <destination>{9c1a17a3-4c01-4206-8a0c-853a63dc743e}</destination>
             <destination>{943145cc-a359-4d86-8398-b9eb534af413}</destination>
+            <destination>{b892b4d0-2c99-4a1b-9a44-d090d0eac93d}</destination>
         </relationship>
         <relationship name="mixer">
             <destination>{aefe54f5-752f-4de7-b8b6-c4b1f2c84e2d}</destination>
