@@ -36,9 +36,9 @@ void ATrollCharacter::CameraTick(float DeltaSeconds) {
 		//GetFollowCamera()->SetWorldLocationAndRotation(Loc, Rot);
 		GetFollowCamera()->SetWorldLocationAndRotation(ActorToLookAt->GetActorLocation(), ActorToLookAt->GetActorRotation());
 	}
-	else if (bResetCamera) {
+	else if (bResetCameraSlow) {
 		
-		StopHoldAttack();
+		//StopHoldAttack();
 		StopAttack();
 
 		FVector FromVector = GetFollowCamera()->RelativeLocation;
@@ -53,9 +53,56 @@ void ATrollCharacter::CameraTick(float DeltaSeconds) {
 		CameraResetAlpha += DeltaSeconds * CameraTransitionSpeed;
 
 		if (CameraResetAlpha >= 1) {
-			bResetCamera = false;
+			//if (GEngine)
+			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Troll Reset Slow"));
+			CameraResetAlpha = 0;
+			bResetCameraSlow = false;
 		}
 		
+	}
+	else if (bToogleMountCamera) {
+
+		//if (GEngine)
+		//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("toggle"));
+
+		//GetFollowCamera()->control = false;
+
+		FVector FromVector = GetFollowCamera()->RelativeLocation;
+		FRotator FromRot = GetFollowCamera()->RelativeRotation;
+
+		GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
+		GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
+
+		CameraResetAlpha += (DeltaSeconds * CameraTransitionSpeed) / 5;
+
+		if (CameraResetAlpha >= 1) {
+			//if (GEngine)
+			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Troll Toggle"));
+			CameraResetAlpha = 0;
+			bToogleMountCamera = false;
+			//GetFollowCamera()->bUsePawnControlRotation = true;
+		}
+	}
+	else if (bResetCamera)
+	{
+		FVector FromVector = GetFollowCamera()->RelativeLocation;
+		FRotator FromRot = GetFollowCamera()->RelativeRotation;
+
+		//GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
+		//GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
+
+		GetFollowCamera()->RelativeLocation = FVector::ZeroVector;
+		GetFollowCamera()->RelativeRotation = FRotator::ZeroRotator;
+
+		//CameraResetAlpha += DeltaSeconds * CameraTransitionSpeed;
+		CameraResetAlpha = 1;
+
+		if (CameraResetAlpha >= 1) {
+			//if (GEngine)
+			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Troll Reset"));
+			CameraResetAlpha = 0;
+			bResetCamera = false;
+		}
 	}
 }
 
@@ -226,7 +273,8 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 		StopHoldAttack();
 		StopAttack();
 		Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
-		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
+		//Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
+		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCameraSlow();
 		Controller->Possess(Cast<APawn>(SpawnedPawn));
 
 		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentGnome(Cast<AGnomeCharacter>(SpawnedPawn));

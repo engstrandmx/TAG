@@ -42,7 +42,7 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 		GetFollowCamera()->SetWorldLocationAndRotation(Loc, Rot);
 		//GetFollowCamera()->SetWorldLocationAndRotation(ActorToLookAt->GetActorLocation(), ActorToLookAt->GetActorRotation());
 	}
-	else if	(bResetCamera) {
+	else if	(bResetCameraSlow) {
 		
 		//GetCameraBoom()->TargetArmLength = 
 
@@ -63,7 +63,10 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 		CameraResetAlpha += DeltaSeconds * CameraTransitionSpeed;
 
 		if (CameraResetAlpha >= 1) {
-			bResetCamera = false;
+			//if (GEngine)
+			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Gnome Reset Slow"));
+			CameraResetAlpha = 0;
+			bResetCameraSlow = false;
 		}
 		
 	}
@@ -82,9 +85,33 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 
 		CameraResetAlpha += (DeltaSeconds * CameraTransitionSpeed) / 5;
 
-		if (CameraResetAlpha >= 1) {
+		if (CameraResetAlpha >= 0.2f) {
+			//if (GEngine)
+			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Gnome Toggle"));
+			CameraResetAlpha = 0;
 			bToogleMountCamera = false;
 			//GetFollowCamera()->bUsePawnControlRotation = true;
+		}
+	}
+	else if (bResetCamera)
+	{
+		FVector FromVector = GetFollowCamera()->RelativeLocation;
+		FRotator FromRot = GetFollowCamera()->RelativeRotation;
+
+		//GetFollowCamera()->RelativeLocation = FMath::Lerp(FromVector, FVector::ZeroVector, CameraResetAlpha);
+		//GetFollowCamera()->RelativeRotation = FMath::Lerp(FromRot, FRotator::ZeroRotator, CameraResetAlpha);
+
+		GetFollowCamera()->RelativeLocation = FVector::ZeroVector;
+		GetFollowCamera()->RelativeRotation = FRotator::ZeroRotator;
+
+		//CameraResetAlpha += DeltaSeconds * CameraTransitionSpeed;
+		CameraResetAlpha = 1;
+
+		if (CameraResetAlpha >= 1) {
+			//if (GEngine)
+			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Gnome Reset"));
+			CameraResetAlpha = 0;
+			bResetCamera = false;
 		}
 	}
 }
@@ -164,7 +191,8 @@ void AGnomeCharacter::MountTroll()
 		//Set the next camera to current camera location and start the camera reset function
 		TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 		CameraTransitionSpeed = 1.25f; //1.25
-		TrollActor->ResetCamera();
+		//TrollActor->ResetCamera();
+		TrollActor->ResetCameraSlow();
 		Controller->Possess(Cast<APawn>(TrollParentActor));
 
 		/*
@@ -197,7 +225,8 @@ void AGnomeCharacter::ActualMount()
 			//Set the next camera to current camera location and start the camera reset function
 			TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
 			CameraTransitionSpeed = 1.25f; //1.25
-			TrollActor->ResetCamera();
+			TrollActor->ResetCameraSlow();
+			//TrollActor->ToggleMountCamera();
 			Controller->Possess(Cast<APawn>(TrollParentActor));
 
 			CameraTransitionSpeed = 0.33f; //0.33
@@ -233,7 +262,6 @@ void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
-
 
 void AGnomeCharacter::JumpPressed()
 {

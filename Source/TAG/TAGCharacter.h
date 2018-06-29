@@ -33,6 +33,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Camera)
 	virtual	void ResetCamera();
+	virtual void ResetCameraSlow();
 	virtual void ToggleMountCamera();
 
 protected:
@@ -96,6 +97,7 @@ protected:
 	float CameraResetAlpha;
 	bool bResetCamera;
 	bool bToogleMountCamera;
+	bool bResetCameraSlow;
 
 	// End of APawn interface
 	virtual void Attack();
