@@ -60,6 +60,12 @@ void ATAGCharacter::ResetCamera()
 	CameraResetAlpha = 0;
 }
 
+void ATAGCharacter::ResetCameraSlow()
+{
+	bResetCameraSlow = true;
+	CameraResetAlpha = 0;
+}
+
 void ATAGCharacter::ToggleMountCamera()
 {
 	bToogleMountCamera = true;
@@ -109,7 +115,7 @@ void ATAGCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInput
 
 void ATAGCharacter::LookAtActor(AActor* Actor, float Time, float Speed, bool FuckYou) {
 	ActorToLookAt = Actor;
-	CameraLookAtSpeed = Speed * 10;
+	CameraLookAtSpeed = Speed;
 
 	FTimerHandle LookAtTimeHandle;
 	FTimerDelegate TimerDel;
