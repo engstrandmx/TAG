@@ -91,7 +91,7 @@ float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 
 	if (CurrentHealth <= 0) {
 		OnDeath();
-		ServerResetPlayer(Controller);
+		//ServerResetPlayer(Controller);
 	}
 
 	return CurrentHealth;
@@ -112,6 +112,8 @@ void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
 
 	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &ATrollCharacter::ToggleState);
+
+	PlayerInputComponent->BindAction("Mount", IE_Pressed, this, &ATrollCharacter::MountState);
 
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
@@ -213,11 +215,13 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 
 		float distance = FVector::Dist(SpawnedPawn->GetActorLocation(), GetActorLocation());
 
+		/*
 		if (distance < GnomeCharacter->GetMountDistance()) {
 			MountGnome();
 
 			return;
 		}
+		*/
 
 		StopHoldAttack();
 		StopAttack();
@@ -231,6 +235,7 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 		return;
 	}
 
+	/*
 	//Variables for spawning, need to be declared out side of switch
 	FActorSpawnParameters SpawnParameters;
 	SpawnParameters.Instigator = this;
@@ -260,10 +265,12 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 		break;
 	default: 
 		break;
+		
 	}
 
 	Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(toState);
 	bIsMounting = false;
+	*/
 }
 
 void ATrollCharacter::ToggleState() {
@@ -279,6 +286,67 @@ void ATrollCharacter::ToggleState() {
 	default:
 		break;
 	}
+}
+
+void ATrollCharacter::MountState()
+{
+	switch (CurrentState)
+	{
+	case EPlayerType::Troll:
+		Mount(EPlayerType::Gnome);
+		break;
+	case EPlayerType::Gnome:
+		Mount(EPlayerType::Troll);
+
+		break;
+	default:
+		break;
+	}
+}
+
+void ATrollCharacter::Mount(PlayerType toState)
+{
+	CurrentState = toState;
+
+	if (SpawnedPawn && !bIsMounting) {
+	
+		AGnomeCharacter* GnomeCharacter = Cast<AGnomeCharacter>(SpawnedPawn);
+
+		float distance = FVector::Dist(SpawnedPawn->GetActorLocation(), GetActorLocation());
+
+		if (distance < GnomeCharacter->GetMountDistance()) {
+			MountGnome();
+
+			return;
+		}
+		return;
+
+	}
+
+	//Variables for spawning, need to be declared out side of switch
+	FActorSpawnParameters SpawnParameters;
+	SpawnParameters.Instigator = this;
+	SpawnParameters.Owner = GetController();
+
+	FQuat rotation = GetActorRotation().Quaternion();
+	FVector offset = rotation * DismountOffset;
+
+
+	switch (toState)
+	{
+	case EPlayerType::Troll:
+
+		Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentTroll(this);
+		break;
+	case EPlayerType::Gnome:
+		OnDismount();
+		break;
+	default:
+		break;
+	}
+
+	Cast<ATAGGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->SetCurrentPlayerType(toState);
+	bIsMounting = false;
 }
 
 void ATrollCharacter::FinishDismount(FVector Location) {

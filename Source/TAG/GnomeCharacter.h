@@ -51,6 +51,7 @@ public:
 
 	FORCEINLINE void SetTrollParent(AActor* Actor) { TrollParentActor = Actor; }
 	void MountTroll();
+	void ActualMount();
 	UFUNCTION(BlueprintCallable, Category = Mounting)
 	void InstantMount();
 
