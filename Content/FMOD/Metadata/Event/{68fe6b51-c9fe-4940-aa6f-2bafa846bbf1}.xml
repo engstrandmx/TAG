@@ -164,7 +164,7 @@
     </object>
     <object class="EventMixerGroup" id="{13ed9d5c-0188-481d-bb6d-8e5ff2f8bf2b}">
         <property name="volume">
-            <value>-10.5</value>
+            <value>-10</value>
         </property>
         <property name="name">
             <value>Water_low_int_02</value>
@@ -249,7 +249,7 @@
     </object>
     <object class="EventMixerGroup" id="{7c6ae977-01f3-47ec-81e0-6e9775c835b0}">
         <property name="volume">
-            <value>-22</value>
+            <value>-80</value>
         </property>
         <property name="name">
             <value>Audio 2</value>

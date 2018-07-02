@@ -903,6 +903,9 @@ Parameter - Hit
         <property name="nameOfPropertyBeingAutomated">
             <value>lowGain</value>
         </property>
+        <relationship name="automationCurves">
+            <destination>{fbf33e57-7d3a-46c1-b396-3c9053f40ae1}</destination>
+        </relationship>
     </object>
     <object class="Automator" id="{a4106367-bf1e-4dcb-8b08-7a346c24666c}">
         <property name="nameOfPropertyBeingAutomated">
@@ -980,6 +983,14 @@ Parameter - Hit
         <relationship name="automationPoints">
             <destination>{85791275-b563-440d-a2f4-82b4f9edb5d3}</destination>
             <destination>{2bbb8c80-d4e9-4786-a6b5-3ed647090778}</destination>
+        </relationship>
+    </object>
+    <object class="AutomationCurve" id="{fbf33e57-7d3a-46c1-b396-3c9053f40ae1}">
+        <relationship name="parameter">
+            <destination>{0a86c8f6-4f29-487a-978d-df16b2e50262}</destination>
+        </relationship>
+        <relationship name="automationPoints">
+            <destination>{88d272bc-304f-43cd-bd47-cfdfb63bd465}</destination>
         </relationship>
     </object>
     <object class="AutomationCurve" id="{692eaa14-0e4c-4546-9fd2-eebcd2d73241}">
@@ -1061,12 +1072,20 @@ Parameter - Hit
             <value>-80</value>
         </property>
     </object>
+    <object class="AutomationPoint" id="{88d272bc-304f-43cd-bd47-cfdfb63bd465}">
+        <property name="position">
+            <value>0.016556291390728478</value>
+        </property>
+        <property name="value">
+            <value>-5</value>
+        </property>
+    </object>
     <object class="AutomationPoint" id="{911c055b-9358-4721-a1d0-dabd7d1c2fee}">
         <property name="position">
             <value>8.0132450331125842</value>
         </property>
         <property name="value">
-            <value>3.81469727e-06</value>
+            <value>-5</value>
         </property>
         <property name="curveShape">
             <value>-0.317903668</value>
