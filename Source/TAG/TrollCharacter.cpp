@@ -345,7 +345,6 @@ void ATrollCharacter::MountState()
 		break;
 	case EPlayerType::Gnome:
 		Mount(EPlayerType::Troll);
-
 		break;
 	default:
 		break;
