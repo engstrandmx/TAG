@@ -33,8 +33,8 @@ void ATrollCharacter::CameraTick(float DeltaSeconds) {
 		FVector Loc = FMath::Lerp(T.GetLocation(), ActorToLookAt->GetActorLocation(), CameraLookAtSpeed * DeltaSeconds);
 		FRotator Rot = FMath::Lerp(T.Rotator(), ActorToLookAt->GetActorRotation(), CameraLookAtSpeed * DeltaSeconds);
 
-		//GetFollowCamera()->SetWorldLocationAndRotation(Loc, Rot);
-		GetFollowCamera()->SetWorldLocationAndRotation(ActorToLookAt->GetActorLocation(), ActorToLookAt->GetActorRotation());
+		GetFollowCamera()->SetWorldLocationAndRotation(Loc, Rot);
+		//GetFollowCamera()->SetWorldLocationAndRotation(ActorToLookAt->GetActorLocation(), ActorToLookAt->GetActorRotation());
 	}
 	else if (bResetCameraSlow) {
 		
