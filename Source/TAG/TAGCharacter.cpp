@@ -56,7 +56,7 @@ ATAGCharacter::ATAGCharacter()
 
 void ATAGCharacter::ResetCamera()
 {
-	bResetCamera = true;
+	bResetCameraSlow = true;
 	CameraResetAlpha = 0;
 }
 
