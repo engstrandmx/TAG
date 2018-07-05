@@ -19,10 +19,10 @@
             <value>1</value>
         </property>
         <property name="soundSize">
-            <value>2</value>
+            <value>2.10000014</value>
         </property>
         <property name="minimumExtent">
-            <value>166</value>
+            <value>132</value>
         </property>
     </object>
 </objects>
