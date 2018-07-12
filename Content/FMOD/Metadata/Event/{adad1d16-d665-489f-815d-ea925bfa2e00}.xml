@@ -133,6 +133,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{e0f3b066-8a30-4b02-bb42-28cad3505959}">
+        <property name="volume">
+            <value>-10</value>
+        </property>
         <property name="name">
             <value>Fly</value>
         </property>
@@ -227,14 +230,17 @@
     <object class="MixerBusPanner" id="{044b7d01-45e4-459f-8bc6-dd2acc1b49d3}"/>
     <object class="MixerBusFader" id="{a6f4a9a6-d2f6-4818-9c5c-2f66eece1181}"/>
     <object class="SpatialiserEffect" id="{4610873b-e420-4526-b264-d235e00dc717}">
+        <property name="minimumDistance">
+            <value>4</value>
+        </property>
         <property name="maximumDistance">
-            <value>6.5999999</value>
+            <value>7</value>
         </property>
         <property name="extentMode">
             <value>1</value>
         </property>
         <property name="soundSize">
-            <value>7</value>
+            <value>7.5</value>
         </property>
         <property name="minimumExtent">
             <value>136</value>
@@ -323,7 +329,7 @@
             <value>0</value>
         </property>
         <property name="value">
-            <value>-13</value>
+            <value>-17</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{7ab53d5f-bc9c-48c0-afb2-d14210fdfac4}">
@@ -339,7 +345,7 @@
             <value>2.8055783429040195</value>
         </property>
         <property name="value">
-            <value>-13</value>
+            <value>-17</value>
         </property>
     </object>
     <object class="AutomationPoint" id="{24d870fd-0201-4b15-8382-5dbd148c3643}">
