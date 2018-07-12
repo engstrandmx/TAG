@@ -189,7 +189,17 @@ void AGnomeCharacter::MountTroll()
 		ATrollCharacter* TrollActor = Cast<ATrollCharacter>(TrollParentActor);
 
 		//Set the next camera to current camera location and start the camera reset function
-		TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+
+
+
+
+		//TrollActor->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+
+
+
+
+
+
 		CameraTransitionSpeed = 1.25f; //1.25
 		//TrollActor->ResetCamera();
 		TrollActor->ResetCameraSlow();
