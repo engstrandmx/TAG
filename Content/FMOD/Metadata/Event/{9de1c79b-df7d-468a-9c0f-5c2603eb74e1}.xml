@@ -327,6 +327,9 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <property name="name">
             <value>Rock</value>
         </property>
+        <relationship name="automators">
+            <destination>{ad037d6f-b14c-45e1-9163-9d4834a61d85}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{e1d3533b-7a2c-44f8-954a-b3ae84e8508f}</destination>
         </relationship>
@@ -1080,6 +1083,11 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
         <relationship name="audioFile">
             <destination>{0d7c24d8-5b87-4ffe-abfa-2dc3c227d996}</destination>
         </relationship>
+    </object>
+    <object class="Automator" id="{ad037d6f-b14c-45e1-9163-9d4834a61d85}">
+        <property name="nameOfPropertyBeingAutomated">
+            <value>volume</value>
+        </property>
     </object>
     <object class="MixerBusEffectChain" id="{e1d3533b-7a2c-44f8-954a-b3ae84e8508f}">
         <relationship name="effects">
