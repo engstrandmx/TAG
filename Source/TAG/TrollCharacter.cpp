@@ -272,7 +272,18 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 
 		StopHoldAttack();
 		StopAttack();
-		Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+
+
+
+
+
+		//Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
+
+
+
+
+
+
 		//Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
 		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCameraSlow();
 		Controller->Possess(Cast<APawn>(SpawnedPawn));
