@@ -7,6 +7,9 @@
         <property name="name">
             <value>Wind</value>
         </property>
+        <relationship name="masters">
+            <destination>{486b3828-1454-468b-950f-dfb3e9789c24}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{a490dcb6-40b3-427c-9e43-419350bd8489}</destination>
         </relationship>
