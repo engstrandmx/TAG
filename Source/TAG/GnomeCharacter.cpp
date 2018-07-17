@@ -263,7 +263,7 @@ void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AGnomeCharacter::Interact);
 
-	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &AGnomeCharacter::Attack);
+	PlayerInputComponent->BindAction("Headbutt", IE_Pressed, this, &AGnomeCharacter::Attack);
 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AGnomeCharacter::JumpPressed);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AGnomeCharacter::JumpReleased);
