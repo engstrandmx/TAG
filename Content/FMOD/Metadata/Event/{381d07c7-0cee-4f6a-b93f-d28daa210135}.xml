@@ -220,6 +220,9 @@
         <property name="length">
             <value>204.80000000000001</value>
         </property>
+        <relationship name="modulators">
+            <destination>{7c35240d-6b8e-4d08-adb2-6ce009dbd36b}</destination>
+        </relationship>
         <relationship name="event">
             <destination>{6c370a98-9f71-4d94-a04c-3eb264b63495}</destination>
         </relationship>
@@ -253,6 +256,9 @@
         <property name="length">
             <value>204.80000000000001</value>
         </property>
+        <relationship name="modulators">
+            <destination>{3934112c-301d-4fce-a44d-0555ce8579f2}</destination>
+        </relationship>
         <relationship name="event">
             <destination>{3735d02f-22d2-4be3-b5d7-911c857cd6d6}</destination>
         </relationship>
@@ -400,6 +406,20 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{fa0c8ccb-e64e-4061-be52-471462bbd9ba}"/>
+    <object class="ADSRModulator" id="{7c35240d-6b8e-4d08-adb2-6ce009dbd36b}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>0</value>
+        </property>
+        <property name="releaseTime">
+            <value>4200</value>
+        </property>
+    </object>
     <object class="Automator" id="{bad7a534-1bed-4614-b802-c428f3f6095d}">
         <property name="nameOfPropertyBeingAutomated">
             <value>volume</value>
@@ -415,6 +435,20 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{c5b4c658-d8f6-42eb-9c00-f7c85fe14aac}"/>
+    <object class="ADSRModulator" id="{3934112c-301d-4fce-a44d-0555ce8579f2}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>0</value>
+        </property>
+        <property name="releaseTime">
+            <value>4200</value>
+        </property>
+    </object>
     <object class="Automator" id="{082eccd3-45c1-40c4-b1bb-6e144dbaf557}">
         <property name="nameOfPropertyBeingAutomated">
             <value>volume</value>
