@@ -4,6 +4,9 @@
         <property name="name">
             <value>Owl</value>
         </property>
+        <relationship name="masters">
+            <destination>{486b3828-1454-468b-950f-dfb3e9789c24}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{ab6e46ad-765b-4bcd-8d16-005ad05ae4c2}</destination>
         </relationship>

@@ -7,6 +7,9 @@
         <property name="name">
             <value>Wood_creaking</value>
         </property>
+        <relationship name="masters">
+            <destination>{486b3828-1454-468b-950f-dfb3e9789c24}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{8c22efeb-24ef-4ebe-9476-40d6e3009e6b}</destination>
         </relationship>

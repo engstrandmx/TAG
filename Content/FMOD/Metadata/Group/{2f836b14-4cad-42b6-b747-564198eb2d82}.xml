@@ -7,6 +7,9 @@
         <property name="name">
             <value>Birds</value>
         </property>
+        <relationship name="masters">
+            <destination>{486b3828-1454-468b-950f-dfb3e9789c24}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{a1876465-ec6b-4c8b-b44b-04c3963d7546}</destination>
         </relationship>

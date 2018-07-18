@@ -7,6 +7,9 @@
         <property name="name">
             <value>Gnom</value>
         </property>
+        <relationship name="masters">
+            <destination>{9c32d46b-59f1-49ec-8716-83cd4eb0ba83}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{d2695bfe-c15b-434e-927d-42bc0e974947}</destination>
         </relationship>
