@@ -231,6 +231,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{4400e363-6033-4624-9ed0-2682fdcbdc25}">
+        <property name="volume">
+            <value>-80</value>
+        </property>
         <property name="name">
             <value>Branche 1</value>
         </property>
@@ -253,6 +256,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{220095c8-c8dc-414a-b9fc-fa32d6f27b3c}">
+        <property name="volume">
+            <value>-80</value>
+        </property>
         <property name="name">
             <value>Branche</value>
         </property>
