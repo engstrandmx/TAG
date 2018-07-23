@@ -7,6 +7,9 @@
         <property name="name">
             <value>Water</value>
         </property>
+        <relationship name="masters">
+            <destination>{486b3828-1454-468b-950f-dfb3e9789c24}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{28ea955f-6164-42ad-ae3f-6ec1108380e3}</destination>
         </relationship>

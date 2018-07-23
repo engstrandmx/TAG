@@ -4,6 +4,9 @@
         <property name="name">
             <value>Cows</value>
         </property>
+        <relationship name="masters">
+            <destination>{9c32d46b-59f1-49ec-8716-83cd4eb0ba83}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{2cd0a25e-ef55-4c7e-8244-c273d72fbef2}</destination>
         </relationship>

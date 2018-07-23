@@ -7,6 +7,9 @@
         <property name="name">
             <value>Troll</value>
         </property>
+        <relationship name="masters">
+            <destination>{9c32d46b-59f1-49ec-8716-83cd4eb0ba83}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{93dcc799-9892-41c3-81e7-10737c5c4be0}</destination>
         </relationship>
