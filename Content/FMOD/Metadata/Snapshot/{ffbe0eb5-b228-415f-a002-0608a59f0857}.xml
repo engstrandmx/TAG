@@ -46,7 +46,6 @@
             <destination>{fcec638b-4b9b-445e-bbaf-aff8e640240b}</destination>
             <destination>{8a6645db-3d62-487b-8b72-978f5dec057c}</destination>
             <destination>{f24a6693-77de-40ae-9316-e073be0af514}</destination>
-            <destination>{9ec595a6-e381-4ce3-af22-3f460a7a6f92}</destination>
             <destination>{95f810db-29d3-407e-bdff-3c20fe58ef09}</destination>
             <destination>{5310ee04-aef4-4ecc-9fdb-4ea33555e93e}</destination>
             <destination>{f12d817a-f6e6-48bd-b859-e4116ba79716}</destination>
@@ -88,7 +87,7 @@
             <value>level</value>
         </property>
         <property name="value">
-            <value>-48</value>
+            <value>-41</value>
         </property>
         <relationship name="automatableObject">
             <destination>{8a55a03f-0b35-4944-b4b7-b31b684c6640}</destination>
@@ -369,17 +368,6 @@
             <destination>{09bf4073-caf0-4c39-9715-6e7288b9464d}</destination>
         </relationship>
     </object>
-    <object class="SnapshotProperty" id="{9ec595a6-e381-4ce3-af22-3f460a7a6f92}">
-        <property name="propertyName">
-            <value>volume</value>
-        </property>
-        <property name="value">
-            <value>-19</value>
-        </property>
-        <relationship name="automatableObject">
-            <destination>{bda9fff5-ea7a-42d5-a080-f191b6eee74b}</destination>
-        </relationship>
-    </object>
     <object class="SnapshotProperty" id="{95f810db-29d3-407e-bdff-3c20fe58ef09}">
         <property name="propertyName">
             <value>volume</value>
@@ -565,7 +553,7 @@
             <value>snapshotIntensity</value>
         </property>
         <property name="attackTime">
-            <value>0</value>
+            <value>1400</value>
         </property>
         <property name="peakValue">
             <value>100</value>
@@ -574,7 +562,7 @@
             <value>100</value>
         </property>
         <property name="releaseTime">
-            <value>1800</value>
+            <value>2200</value>
         </property>
     </object>
 </objects>
