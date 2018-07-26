@@ -171,6 +171,9 @@
         <property name="initialValue">
             <value>-80</value>
         </property>
+        <property name="attackTime">
+            <value>380</value>
+        </property>
         <property name="releaseTime">
             <value>3200</value>
         </property>
