@@ -141,6 +141,7 @@
         <relationship name="effects">
             <destination>{ba3af831-8e47-4882-a9ec-127dfb4c94dc}</destination>
             <destination>{9bc7654e-2686-4575-ac89-d69666225b9c}</destination>
+            <destination>{962ff76d-9d72-4144-925e-b7cddc6b14d6}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{49e2aea4-2536-45b8-84bd-aff587b2184a}"/>
@@ -167,6 +168,14 @@
         </property>
         <property name="dryLevel">
             <value>0</value>
+        </property>
+    </object>
+    <object class="ThreeEQEffect" id="{962ff76d-9d72-4144-925e-b7cddc6b14d6}">
+        <property name="midGain">
+            <value>-6.5</value>
+        </property>
+        <property name="highGain">
+            <value>-8.5</value>
         </property>
     </object>
 </objects>
