@@ -5,7 +5,7 @@
             <value>CowKnight</value>
         </property>
         <relationship name="folder">
-            <destination>{d4fe6b63-53a3-4c41-8a72-727f06be7831}</destination>
+            <destination>{21e0001e-fd42-4fbf-91b9-e7507c043acc}</destination>
         </relationship>
     </object>
 </objects>
