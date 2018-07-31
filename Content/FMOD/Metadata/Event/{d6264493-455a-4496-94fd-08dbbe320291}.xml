@@ -230,7 +230,7 @@
             <value>800</value>
         </property>
         <property name="releaseTime">
-            <value>460</value>
+            <value>920</value>
         </property>
     </object>
     <object class="ADSRModulator" id="{858a5e43-5f2d-47d6-9435-c6264b793a3e}">
