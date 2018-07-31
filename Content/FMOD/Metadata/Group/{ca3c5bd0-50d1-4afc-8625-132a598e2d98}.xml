@@ -25,6 +25,7 @@
             <destination>{50a6d572-45ea-4703-9c94-169b3d4a44cb}</destination>
             <destination>{c9f00a21-1f31-4b58-bad5-f553c21ae0de}</destination>
             <destination>{84f37f8a-010a-4cf9-a8b5-e7a5c1bea23b}</destination>
+            <destination>{c7582683-1b3b-4f67-ba54-2f13ad4802f7}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{6f4a8b72-b59b-4c7c-a52f-961f321d2306}"/>
@@ -64,5 +65,13 @@
         <property name="cutoff">
             <value>22000</value>
         </property>
+    </object>
+    <object class="MixerSend" id="{c7582683-1b3b-4f67-ba54-2f13ad4802f7}">
+        <property name="inputFormat">
+            <value>2</value>
+        </property>
+        <relationship name="mixerReturn">
+            <destination>{12b70a9e-b41c-40d7-914a-4239752dfb74}</destination>
+        </relationship>
     </object>
 </objects>

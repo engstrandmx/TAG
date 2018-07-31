@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{e2f189ae-f62f-4312-83d9-79719f07a44d}">
+        <property name="name">
+            <value>CowPrisoner_idle</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{ce9e7c60-eec1-40b9-9832-0c8fa83bb470}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{41e24e66-f6b3-44f2-9152-c6b1f9dfe803}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{ca3c5bd0-50d1-4afc-8625-132a598e2d98}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{ce9e7c60-eec1-40b9-9832-0c8fa83bb470}">
+        <relationship name="effects">
+            <destination>{8f2343f9-8e69-4fa2-af4e-d65942bf17f1}</destination>
+            <destination>{59943d77-1e26-4d02-8dcb-66a9cb91e888}</destination>
+            <destination>{332d3850-ef20-4c3c-a144-b8e88c1494f9}</destination>
+            <destination>{1c4b91be-4629-4ae9-ae90-9636027b16c3}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{41e24e66-f6b3-44f2-9152-c6b1f9dfe803}"/>
+    <object class="ThreeEQEffect" id="{8f2343f9-8e69-4fa2-af4e-d65942bf17f1}"/>
+    <object class="MixerBusFader" id="{59943d77-1e26-4d02-8dcb-66a9cb91e888}"/>
+    <object class="MixerSend" id="{332d3850-ef20-4c3c-a144-b8e88c1494f9}">
+        <property name="bypass">
+            <value>true</value>
+        </property>
+        <property name="inputFormat">
+            <value>2</value>
+        </property>
+        <relationship name="mixerReturn">
+            <destination>{12b70a9e-b41c-40d7-914a-4239752dfb74}</destination>
+        </relationship>
+    </object>
+    <object class="LowpassEffect" id="{1c4b91be-4629-4ae9-ae90-9636027b16c3}">
+        <property name="cutoff">
+            <value>22000</value>
+        </property>
+    </object>
+</objects>
