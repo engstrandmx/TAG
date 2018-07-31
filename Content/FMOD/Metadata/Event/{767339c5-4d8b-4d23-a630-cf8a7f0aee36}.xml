@@ -5,7 +5,7 @@
             <value>Hover_button</value>
         </property>
         <property name="outputFormat">
-            <value>1</value>
+            <value>0</value>
         </property>
         <relationship name="folder">
             <destination>{3f68c4aa-5cf8-4f33-82e6-cd539db02c4e}</destination>
@@ -143,7 +143,6 @@
     <object class="MixerBusEffectChain" id="{2465ee56-e7c4-4a69-9d64-1d7cd229cd5d}">
         <relationship name="effects">
             <destination>{7ec2b827-76df-49b4-8fed-0737db5430b1}</destination>
-            <destination>{0184b5c2-b7fc-4cd4-969c-071ea44be85e}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{92f34c75-d78b-4313-90f3-c19d1ab860b0}"/>
@@ -155,10 +154,5 @@
     <object class="MixerBusPanner" id="{85c6f94a-cd1d-4af1-b270-4c8e10188fb5}"/>
     <object class="MixerBusFader" id="{ae9aa907-8ba7-4547-b0e0-d13a0d76a915}"/>
     <object class="MixerBusFader" id="{7ec2b827-76df-49b4-8fed-0737db5430b1}"/>
-    <object class="SFXReverbEffect" id="{0184b5c2-b7fc-4cd4-969c-071ea44be85e}">
-        <property name="decayTime">
-            <value>2200</value>
-        </property>
-    </object>
     <object class="MixerBusFader" id="{61e0ec75-99c1-45cd-be6a-c9242b9fc099}"/>
 </objects>
