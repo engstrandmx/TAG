@@ -62,6 +62,11 @@ Saved/*
 Content/FMOD/.user/*
 Content/FMOD/.unsaved/*
 Content/FMOD/.cache/*
+Content/FMOD/Build/*
+Content/FMOD/Desktop/*
+Content/FMOD/Desktop/Master Bank.bank
+Content/FMOD/Desktop/Master Bank.strings.bank
+
 
 # Intermediate files generated per PC
 Intermediate/*
