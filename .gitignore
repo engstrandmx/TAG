@@ -62,6 +62,8 @@ Saved/*
 Content/FMOD/.user/*
 Content/FMOD/.unsaved/*
 Content/FMOD/.cache/*
+Content/FMOD/Build/*
+
 
 # Intermediate files generated per PC
 Intermediate/*
