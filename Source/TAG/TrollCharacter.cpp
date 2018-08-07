@@ -349,17 +349,25 @@ void ATrollCharacter::ToggleState() {
 
 void ATrollCharacter::MountState()
 {
+	Mount(EPlayerType::Gnome);
+
+	/*
 	switch (CurrentState)
 	{
 	case EPlayerType::Troll:
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("troll -> gnome"));
 		Mount(EPlayerType::Gnome);
 		break;
 	case EPlayerType::Gnome:
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("gnome -> troll"));
 		Mount(EPlayerType::Troll);
 		break;
 	default:
 		break;
 	}
+	*/
 }
 
 void ATrollCharacter::Mount(PlayerType toState)
