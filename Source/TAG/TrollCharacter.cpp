@@ -147,18 +147,18 @@ float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Attack", IE_Pressed, this, &ATrollCharacter::Attack);
-	PlayerInputComponent->BindAction("Attack", IE_Released, this, &ATrollCharacter::StopAttack);
+	PlayerInputComponent->BindAction("Throw (Troll)", IE_Pressed, this, &ATrollCharacter::Attack);
+	PlayerInputComponent->BindAction("Throw (Troll)", IE_Released, this, &ATrollCharacter::StopAttack);
 
-	PlayerInputComponent->BindAction("HoldAttack", IE_Pressed, this, &ATrollCharacter::HoldAttack);
-	PlayerInputComponent->BindAction("HoldAttack", IE_Released, this, &ATrollCharacter::StopHoldAttack);
+	//PlayerInputComponent->BindAction("HoldAttack", IE_Pressed, this, &ATrollCharacter::HoldAttack);
+	//PlayerInputComponent->BindAction("HoldAttack", IE_Released, this, &ATrollCharacter::StopHoldAttack);
 
-	PlayerInputComponent->BindAction("Throw", IE_Pressed, this, &ATrollCharacter::HoldThrow);
-	PlayerInputComponent->BindAction("Throw", IE_Released, this, &ATrollCharacter::StopHoldThrow);
+	//PlayerInputComponent->BindAction("Throw", IE_Pressed, this, &ATrollCharacter::HoldThrow);
+	//PlayerInputComponent->BindAction("Throw", IE_Released, this, &ATrollCharacter::StopHoldThrow);
 
-	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
+	//PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ATrollCharacter::Interact);
 
-	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &ATrollCharacter::ToggleState);
+	PlayerInputComponent->BindAction("Switch Character", IE_Pressed, this, &ATrollCharacter::ToggleState);
 
 	PlayerInputComponent->BindAction("Mount", IE_Pressed, this, &ATrollCharacter::MountState);
 
