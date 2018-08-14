@@ -75,5 +75,15 @@
             <destination>{17b3622e-87d6-457b-8cf7-82710184dc7d}</destination>
         </relationship>
     </object>
-    <object class="DelayEffect" id="{2bb1ffa4-e4ad-4d40-889f-94c4313bb849}"/>
+    <object class="DelayEffect" id="{2bb1ffa4-e4ad-4d40-889f-94c4313bb849}">
+        <property name="delay">
+            <value>10</value>
+        </property>
+        <property name="feedback">
+            <value>0</value>
+        </property>
+        <property name="level">
+            <value>-80</value>
+        </property>
+    </object>
 </objects>
