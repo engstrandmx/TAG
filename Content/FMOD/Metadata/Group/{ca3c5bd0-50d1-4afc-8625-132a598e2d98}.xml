@@ -19,6 +19,7 @@
     </object>
     <object class="MixerBusEffectChain" id="{2cd0a25e-ef55-4c7e-8244-c273d72fbef2}">
         <relationship name="effects">
+            <destination>{6e5755eb-f754-4745-b60d-060732eab257}</destination>
             <destination>{e7262379-0b9d-4505-ba86-68234134d21f}</destination>
             <destination>{915b3031-bf75-400a-be05-1b6352161c07}</destination>
             <destination>{94a6653b-f578-452c-905a-e3ef03b44d0b}</destination>
@@ -26,9 +27,18 @@
             <destination>{c9f00a21-1f31-4b58-bad5-f553c21ae0de}</destination>
             <destination>{84f37f8a-010a-4cf9-a8b5-e7a5c1bea23b}</destination>
             <destination>{c7582683-1b3b-4f67-ba54-2f13ad4802f7}</destination>
+            <destination>{aa79c1f9-0fc2-471d-8428-3f1bdb51c3ee}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{6f4a8b72-b59b-4c7c-a52f-961f321d2306}"/>
+    <object class="MixerSend" id="{6e5755eb-f754-4745-b60d-060732eab257}">
+        <property name="inputFormat">
+            <value>2</value>
+        </property>
+        <relationship name="mixerReturn">
+            <destination>{17b3622e-87d6-457b-8cf7-82710184dc7d}</destination>
+        </relationship>
+    </object>
     <object class="MixerBusFader" id="{e7262379-0b9d-4505-ba86-68234134d21f}"/>
     <object class="Sidechain" id="{915b3031-bf75-400a-be05-1b6352161c07}"/>
     <object class="CompressorEffect" id="{94a6653b-f578-452c-905a-e3ef03b44d0b}">
@@ -74,4 +84,5 @@
             <destination>{12b70a9e-b41c-40d7-914a-4239752dfb74}</destination>
         </relationship>
     </object>
+    <object class="DelayEffect" id="{aa79c1f9-0fc2-471d-8428-3f1bdb51c3ee}"/>
 </objects>
