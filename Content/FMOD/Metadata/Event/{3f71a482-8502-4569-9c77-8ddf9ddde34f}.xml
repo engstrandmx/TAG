@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{3f71a482-8502-4569-9c77-8ddf9ddde34f}">
         <property name="name">
-            <value>New Event</value>
+            <value>Kuling_delay</value>
         </property>
         <property name="outputFormat">
             <value>2</value>
@@ -101,9 +101,10 @@
     <object class="MixerBusEffectChain" id="{a77083cb-5a21-4d3a-b6be-12ac3f14c74d}">
         <relationship name="effects">
             <destination>{e56dc48c-1351-4e32-b118-8a8492a6e467}</destination>
+            <destination>{ae4fabd5-78ca-4e28-b4f1-1926b2dd706a}</destination>
+            <destination>{3d8bbefe-3e30-4346-83b9-90deb2a40949}</destination>
             <destination>{5069c878-7021-4d99-9c97-a4f6aa7e45c9}</destination>
             <destination>{1a783189-20d2-46b1-af6c-d03d5331643f}</destination>
-            <destination>{3d8bbefe-3e30-4346-83b9-90deb2a40949}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{362c8ef1-0aaa-4651-a0e8-29dfe4eca554}"/>
@@ -122,14 +123,26 @@
             <value>1</value>
         </property>
     </object>
-    <object class="MixerBusFader" id="{5069c878-7021-4d99-9c97-a4f6aa7e45c9}"/>
-    <object class="SpatialiserEffect" id="{1a783189-20d2-46b1-af6c-d03d5331643f}"/>
+    <object class="ThreeEQEffect" id="{ae4fabd5-78ca-4e28-b4f1-1926b2dd706a}">
+        <property name="lowGain">
+            <value>-23.5</value>
+        </property>
+        <property name="midGain">
+            <value>-8</value>
+        </property>
+        <property name="highGain">
+            <value>-19</value>
+        </property>
+    </object>
     <object class="DelayEffect" id="{3d8bbefe-3e30-4346-83b9-90deb2a40949}">
         <property name="delay">
             <value>760</value>
         </property>
         <property name="feedback">
-            <value>21</value>
+            <value>29</value>
+        </property>
+        <property name="level">
+            <value>2</value>
         </property>
         <property name="dryLevel">
             <value>-80</value>
@@ -138,6 +151,12 @@
             <destination>{8813a61b-fc4f-4580-a73b-7a1c4dab9ca8}</destination>
             <destination>{fb1d6187-e2d5-43c6-b3c0-c550db526d3f}</destination>
         </relationship>
+    </object>
+    <object class="MixerBusFader" id="{5069c878-7021-4d99-9c97-a4f6aa7e45c9}"/>
+    <object class="SpatialiserEffect" id="{1a783189-20d2-46b1-af6c-d03d5331643f}">
+        <property name="distanceRolloffType">
+            <value>1</value>
+        </property>
     </object>
     <object class="MixerBusFader" id="{5f1c6ad1-696c-4cf7-8fea-63b225932d87}"/>
     <object class="RandomizerModulator" id="{8813a61b-fc4f-4580-a73b-7a1c4dab9ca8}">
