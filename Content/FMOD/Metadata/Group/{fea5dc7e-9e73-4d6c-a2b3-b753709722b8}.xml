@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{fea5dc7e-9e73-4d6c-a2b3-b753709722b8}">
+        <property name="name">
+            <value>Kuling delay</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{80dc8293-b25e-42d2-8a34-41fafa20341a}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{31eb0e86-a447-4a9a-8679-bfdc4c277bcc}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{a6c8bf4d-cbc5-4c4a-83ae-0c76eadab233}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{80dc8293-b25e-42d2-8a34-41fafa20341a}">
+        <relationship name="effects">
+            <destination>{6a4fb605-c08e-4d38-a408-1da5682d2216}</destination>
+            <destination>{35021f11-060e-4aa1-a40c-3ad330ffcdb9}</destination>
+            <destination>{4e1b36c5-0d5f-4466-b0b3-6b38e4fe7792}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{31eb0e86-a447-4a9a-8679-bfdc4c277bcc}"/>
+    <object class="ThreeEQEffect" id="{6a4fb605-c08e-4d38-a408-1da5682d2216}">
+        <property name="lowGain">
+            <value>-11</value>
+        </property>
+        <property name="midGain">
+            <value>-19</value>
+        </property>
+        <property name="highGain">
+            <value>-22</value>
+        </property>
+    </object>
+    <object class="DelayEffect" id="{35021f11-060e-4aa1-a40c-3ad330ffcdb9}">
+        <property name="delay">
+            <value>1700</value>
+        </property>
+        <property name="feedback">
+            <value>21.5</value>
+        </property>
+        <property name="level">
+            <value>7</value>
+        </property>
+        <property name="dryLevel">
+            <value>-80</value>
+        </property>
+    </object>
+    <object class="MixerBusFader" id="{4e1b36c5-0d5f-4466-b0b3-6b38e4fe7792}"/>
+</objects>

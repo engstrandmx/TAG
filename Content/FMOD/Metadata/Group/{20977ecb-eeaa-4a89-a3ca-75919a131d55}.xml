@@ -28,6 +28,8 @@
             <destination>{7150a67c-bcda-4a3c-89f5-a056c455886c}</destination>
             <destination>{77f5920e-b939-47ed-a953-b63f066d8255}</destination>
             <destination>{93857d6a-1a69-4db3-853f-5f001abd874b}</destination>
+            <destination>{a86861fb-34a9-4c03-acd1-de38aabe1854}</destination>
+            <destination>{2bb1ffa4-e4ad-4d40-889f-94c4313bb849}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{927d42ab-c5c0-4139-8e99-bb53079b3bd4}"/>
@@ -64,5 +66,24 @@
         <relationship name="mixerReturn">
             <destination>{12b70a9e-b41c-40d7-914a-4239752dfb74}</destination>
         </relationship>
+    </object>
+    <object class="MixerSend" id="{a86861fb-34a9-4c03-acd1-de38aabe1854}">
+        <property name="inputFormat">
+            <value>2</value>
+        </property>
+        <relationship name="mixerReturn">
+            <destination>{17b3622e-87d6-457b-8cf7-82710184dc7d}</destination>
+        </relationship>
+    </object>
+    <object class="DelayEffect" id="{2bb1ffa4-e4ad-4d40-889f-94c4313bb849}">
+        <property name="delay">
+            <value>10</value>
+        </property>
+        <property name="feedback">
+            <value>0</value>
+        </property>
+        <property name="level">
+            <value>-80</value>
+        </property>
     </object>
 </objects>

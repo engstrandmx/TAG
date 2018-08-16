@@ -259,11 +259,11 @@ void AGnomeCharacter::InstantMount()
 void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("SwitchState", IE_Pressed, this, &AGnomeCharacter::MountTroll);
+	PlayerInputComponent->BindAction("Switch Character", IE_Pressed, this, &AGnomeCharacter::MountTroll);
 
-	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AGnomeCharacter::Interact);
+	PlayerInputComponent->BindAction("Pet (Gnome)", IE_Pressed, this, &AGnomeCharacter::Interact);
 
-	PlayerInputComponent->BindAction("Headbutt", IE_Pressed, this, &AGnomeCharacter::Attack);
+	PlayerInputComponent->BindAction("Headbutt (Gnome)", IE_Pressed, this, &AGnomeCharacter::Attack);
 
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AGnomeCharacter::JumpPressed);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AGnomeCharacter::JumpReleased);
