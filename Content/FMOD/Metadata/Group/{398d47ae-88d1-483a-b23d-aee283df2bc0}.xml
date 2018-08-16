@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{398d47ae-88d1-483a-b23d-aee283df2bc0}">
+        <property name="name">
+            <value>Kuling</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{63d6aa88-fffa-490d-b8ba-9c3b98c1d4e1}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{2ea033c6-3641-408f-bc3c-9fce794c3500}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{3c906cc6-977c-40cc-831c-c7a2673a7352}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{63d6aa88-fffa-490d-b8ba-9c3b98c1d4e1}">
+        <relationship name="effects">
+            <destination>{243a2a0a-8968-464d-8c76-6ee0bb601786}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{2ea033c6-3641-408f-bc3c-9fce794c3500}"/>
+    <object class="MixerBusFader" id="{243a2a0a-8968-464d-8c76-6ee0bb601786}"/>
+</objects>
