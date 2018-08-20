@@ -26,9 +26,6 @@
     <object class="ThreeEQEffect" id="{8f2343f9-8e69-4fa2-af4e-d65942bf17f1}"/>
     <object class="MixerBusFader" id="{59943d77-1e26-4d02-8dcb-66a9cb91e888}"/>
     <object class="MixerSend" id="{332d3850-ef20-4c3c-a144-b8e88c1494f9}">
-        <property name="bypass">
-            <value>true</value>
-        </property>
         <property name="inputFormat">
             <value>2</value>
         </property>
