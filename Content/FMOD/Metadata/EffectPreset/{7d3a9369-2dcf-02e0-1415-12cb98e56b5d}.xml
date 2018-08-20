@@ -13,16 +13,16 @@
     </object>
     <object class="SpatialiserEffect" id="{425c5c90-22eb-4023-95c5-133c9479b252}">
         <property name="maximumDistance">
-            <value>30</value>
+            <value>40</value>
         </property>
         <property name="extentMode">
             <value>1</value>
         </property>
         <property name="soundSize">
-            <value>2.10000014</value>
+            <value>4.5</value>
         </property>
         <property name="minimumExtent">
-            <value>132</value>
+            <value>162</value>
         </property>
     </object>
 </objects>

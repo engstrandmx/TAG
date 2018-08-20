@@ -86,17 +86,11 @@
     </object>
     <object class="MixerBusPanner" id="{7443cf82-143f-4f7f-9cd4-b072b61c0266}"/>
     <object class="MultiSound" id="{7ae6abda-6d4e-4abc-9d55-3839fa6d7d82}">
-        <property name="isAsync">
-            <value>true</value>
-        </property>
         <property name="length">
             <value>88.714229166666669</value>
         </property>
         <property name="randomized">
             <value>false</value>
-        </property>
-        <property name="looping">
-            <value>true</value>
         </property>
         <relationship name="sounds">
             <destination>{b849c097-0667-4844-a8cb-b16373a47acd}</destination>
@@ -131,7 +125,7 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>88.714229166666669</value>
+            <value>10</value>
         </property>
         <relationship name="timeline">
             <destination>{c1023521-a9a6-4ff4-8647-fc7831f2b7e5}</destination>

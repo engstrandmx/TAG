@@ -147,8 +147,8 @@ float ATrollCharacter::TakeDamage(float Damage, struct FDamageEvent const& Damag
 void ATrollCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);
-	PlayerInputComponent->BindAction("Throw (Troll)", IE_Pressed, this, &ATrollCharacter::Attack);
-	PlayerInputComponent->BindAction("Throw (Troll)", IE_Released, this, &ATrollCharacter::StopAttack);
+	PlayerInputComponent->BindAction("Throw/Pet", IE_Pressed, this, &ATrollCharacter::Attack);
+	PlayerInputComponent->BindAction("Throw/Pet", IE_Released, this, &ATrollCharacter::StopAttack);
 
 	//PlayerInputComponent->BindAction("HoldAttack", IE_Pressed, this, &ATrollCharacter::HoldAttack);
 	//PlayerInputComponent->BindAction("HoldAttack", IE_Released, this, &ATrollCharacter::StopHoldAttack);
@@ -273,16 +273,7 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 		StopHoldAttack();
 		StopAttack();
 
-
-
-
-
 		//Cast<AGnomeCharacter>(SpawnedPawn)->GetFollowCamera()->SetWorldLocationAndRotation(GetFollowCamera()->GetComponentLocation(), GetFollowCamera()->GetComponentRotation());
-
-
-
-
-
 
 		//Cast<AGnomeCharacter>(SpawnedPawn)->ResetCamera();
 		Cast<AGnomeCharacter>(SpawnedPawn)->ResetCameraSlow();
@@ -333,17 +324,20 @@ void ATrollCharacter::ChangeState(PlayerType toState)
 }
 
 void ATrollCharacter::ToggleState() {
-	switch (CurrentState)
+	if (!bIsMounting)
 	{
-	case EPlayerType::Troll:
-		ChangeState(EPlayerType::Gnome);
-		break;
-	case EPlayerType::Gnome:
-		ChangeState(EPlayerType::Troll);
+		switch (CurrentState)
+		{
+		case EPlayerType::Troll:
+			ChangeState(EPlayerType::Gnome);
+			break;
+		case EPlayerType::Gnome:
+			ChangeState(EPlayerType::Troll);
 
-		break;
-	default:
-		break;
+			break;
+		default:
+			break;
+		}
 	}
 }
 

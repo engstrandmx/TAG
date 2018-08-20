@@ -261,7 +261,7 @@ void AGnomeCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("Switch Character", IE_Pressed, this, &AGnomeCharacter::MountTroll);
 
-	PlayerInputComponent->BindAction("Pet (Gnome)", IE_Pressed, this, &AGnomeCharacter::Interact);
+	PlayerInputComponent->BindAction("Throw/Pet", IE_Pressed, this, &AGnomeCharacter::Interact);
 
 	PlayerInputComponent->BindAction("Headbutt (Gnome)", IE_Pressed, this, &AGnomeCharacter::Attack);
 

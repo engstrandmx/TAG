@@ -106,6 +106,10 @@ protected:
 	virtual void ServerAttack();
 	virtual void ServerAttack_Implementation();
 	virtual bool ServerAttack_Validate();
+	
+	FVector RelativeCameraLocation;
+	FRotator RelativeCameraRotation;
+
 
 public:
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
