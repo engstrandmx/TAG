@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{8832fb69-f4c8-444a-97cd-117e6ca96480}">
+        <property name="volume">
+            <value>-80</value>
+        </property>
+        <property name="name">
+            <value>Dripping_water</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{ea6ddb08-6e4f-4965-ad8f-e51614cdc5de}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{7f5242a5-2a26-47f2-b605-8e8d3eafd356}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{3c906cc6-977c-40cc-831c-c7a2673a7352}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{ea6ddb08-6e4f-4965-ad8f-e51614cdc5de}">
+        <relationship name="effects">
+            <destination>{e72e173a-8753-4412-88d3-abe88a2655d7}</destination>
+            <destination>{b561ddb2-226a-4af7-997f-4dc97bb729e9}</destination>
+            <destination>{5aaad60e-09c1-49f6-baca-d989e1e61796}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{7f5242a5-2a26-47f2-b605-8e8d3eafd356}"/>
+    <object class="MixerBusFader" id="{e72e173a-8753-4412-88d3-abe88a2655d7}"/>
+    <object class="MixerSend" id="{b561ddb2-226a-4af7-997f-4dc97bb729e9}">
+        <property name="inputFormat">
+            <value>2</value>
+        </property>
+        <relationship name="mixerReturn">
+            <destination>{0a297de0-ee17-40d4-8a14-4d4a74c33aa6}</destination>
+        </relationship>
+    </object>
+    <object class="ThreeEQEffect" id="{5aaad60e-09c1-49f6-baca-d989e1e61796}"/>
+</objects>

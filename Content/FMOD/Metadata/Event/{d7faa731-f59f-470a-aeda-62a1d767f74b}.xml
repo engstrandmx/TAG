@@ -59,18 +59,11 @@
     <object class="EventAutomatableProperties" id="{9ec902df-84c4-4555-8148-ad17252b49d9}"/>
     <object class="MarkerTrack" id="{3316bc97-df4d-4667-bcfd-71321373a314}"/>
     <object class="GroupTrack" id="{0286c10b-7e4d-4073-8573-f31311b3a7d5}">
-        <relationship name="modules">
-            <destination>{4c81af06-02d5-45e8-9730-140fe38680e9}</destination>
-        </relationship>
         <relationship name="mixerGroup">
             <destination>{42b0e2d8-cc71-40fb-8e9c-21ec7f2e3367}</destination>
         </relationship>
     </object>
-    <object class="Timeline" id="{f4dad44f-8ec7-4a09-b727-67890ca3db4a}">
-        <relationship name="modules">
-            <destination>{4c81af06-02d5-45e8-9730-140fe38680e9}</destination>
-        </relationship>
-    </object>
+    <object class="Timeline" id="{f4dad44f-8ec7-4a09-b727-67890ca3db4a}"/>
     <object class="EventMixerMaster" id="{9be57444-bb54-45db-8095-9460566f4d04}">
         <relationship name="effectChain">
             <destination>{12ffc40b-ea42-41a4-84fc-b85ad1bfcbab}</destination>
@@ -88,11 +81,6 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{12f54ef6-791e-4faa-a97b-eaf28b180ed3}"/>
-    <object class="MultiSound" id="{4c81af06-02d5-45e8-9730-140fe38680e9}">
-        <property name="length">
-            <value>1.125</value>
-        </property>
-    </object>
     <object class="EventMixerGroup" id="{42b0e2d8-cc71-40fb-8e9c-21ec7f2e3367}">
         <property name="name">
             <value>Mellon</value>
