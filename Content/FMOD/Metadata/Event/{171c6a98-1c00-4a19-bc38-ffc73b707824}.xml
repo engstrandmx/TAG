@@ -491,7 +491,7 @@
             <value>232.00000000000003</value>
         </property>
         <property name="length">
-            <value>6</value>
+            <value>6.0000000000000284</value>
         </property>
         <property name="quantizationInterval">
             <value>3</value>
@@ -551,7 +551,7 @@
             <value>232.00000000000003</value>
         </property>
         <property name="length">
-            <value>6</value>
+            <value>6.0000000000000284</value>
         </property>
         <property name="quantizationInterval">
             <value>3</value>
