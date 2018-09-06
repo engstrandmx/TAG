@@ -7,9 +7,9 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
-"C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.cpp.obj"
-"C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.gen.1_of_2.cpp.obj"
-"C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.gen.2_of_2.cpp.obj"
+"C:\Workspace\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.cpp.obj"
+"C:\Workspace\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.gen.1_of_2.cpp.obj"
+"C:\Workspace\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.gen.2_of_2.cpp.obj"
 "C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\PCLaunch.rc.res"
 "C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
-/OUT:"C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-VictoryBPLibrary.lib"
+/OUT:"C:\Workspace\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-VictoryBPLibrary.lib"
