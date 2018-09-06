@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{3f5bc6d9-5270-4a24-b37d-d40dbefb03e5}">
         <property name="name">
-            <value>Cave_lvl5</value>
+            <value>Cave_lvl6</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -40,6 +40,9 @@
         <relationship name="parameters">
             <destination>{c9fb9214-4f88-44d7-a495-a87fe032a7cf}</destination>
             <destination>{13ca4f65-14cc-4762-a579-6b7d7d6dcc58}</destination>
+        </relationship>
+        <relationship name="banks">
+            <destination>{d399e7fe-929d-4336-950d-acefbcb7fb78}</destination>
         </relationship>
     </object>
     <object class="EventMixer" id="{64776b9a-ee60-46b3-9059-fadbabac76c4}">
