@@ -161,7 +161,7 @@
     </object>
     <object class="EventMixerGroup" id="{b33f6ea1-8807-4618-9fcf-4e689d8973a5}">
         <property name="volume">
-            <value>-7.5</value>
+            <value>-9</value>
         </property>
         <property name="name">
             <value>Water_low_int_02</value>
@@ -204,7 +204,7 @@
     </object>
     <object class="EventMixerGroup" id="{e8423606-8f66-4f87-982f-06ba7c7cf088}">
         <property name="volume">
-            <value>-16</value>
+            <value>6</value>
         </property>
         <property name="name">
             <value>Stream_gentle</value>
@@ -248,9 +248,6 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{9f238407-6f6f-41c6-a71d-b35934cf9b87}">
-        <property name="volume">
-            <value>-15.5</value>
-        </property>
         <property name="name">
             <value>Audio 2</value>
         </property>
@@ -382,11 +379,14 @@
     </object>
     <object class="MixerBusFader" id="{699339a5-4ef5-4481-96a0-35ecccbdcc79}"/>
     <object class="ThreeEQEffect" id="{764c91a7-0ef0-43f9-a182-502dcf87d55e}">
+        <property name="lowGain">
+            <value>-6</value>
+        </property>
         <property name="midGain">
-            <value>-9</value>
+            <value>-5.5</value>
         </property>
         <property name="highGain">
-            <value>-13.5</value>
+            <value>-2.5</value>
         </property>
     </object>
     <object class="Automator" id="{ccc0f715-637a-4d39-99ec-25420643e678}">
