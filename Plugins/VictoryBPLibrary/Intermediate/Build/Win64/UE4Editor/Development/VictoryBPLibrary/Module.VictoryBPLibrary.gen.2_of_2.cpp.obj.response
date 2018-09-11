@@ -23,11 +23,11 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source"
-/I C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary\Private
-/I C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source
-/I C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary\Public
-/I C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Inc\VictoryBPLibrary
-/I C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary
+/I C:\Workspace\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary\Private
+/I C:\Workspace\TAG\Plugins\VictoryBPLibrary\Source
+/I C:\Workspace\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary\Public
+/I C:\Workspace\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Inc\VictoryBPLibrary
+/I C:\Workspace\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Async"
@@ -387,9 +387,9 @@
 /FI"C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"C:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.gen.2_of_2.cpp"
-/FI"C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Definitions.VictoryBPLibrary.h"
-/Fo"C:\Users\Sunscale4\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.gen.2_of_2.cpp.obj"
+"C:\Workspace\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.gen.2_of_2.cpp"
+/FI"C:\Workspace\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Definitions.VictoryBPLibrary.h"
+/Fo"C:\Workspace\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4Editor\Development\VictoryBPLibrary\Module.VictoryBPLibrary.gen.2_of_2.cpp.obj"
 /TP
 /GR-
 /W4
