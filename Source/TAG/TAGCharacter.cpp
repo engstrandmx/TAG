@@ -160,7 +160,7 @@ void ATAGCharacter::Zoom(float Value)
 	val += Value * 2.5f;
 
 
-	val = FMath::Clamp(val, 200.f, 500.f); //100, 700
+	val = FMath::Clamp(val, 100.f, 500.f); //100, 700 followed by 200, 500
 	CameraBoom->TargetArmLength = val;
 }
 
