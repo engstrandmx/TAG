@@ -145,7 +145,7 @@
             <value>0</value>
         </property>
         <property name="releaseTime">
-            <value>2600</value>
+            <value>4600</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{074bf5f1-14e1-43eb-aa5f-1eca8fdda1ad}">
