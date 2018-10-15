@@ -22,11 +22,11 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source"
-/I C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary\Private
-/I C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source
-/I C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary\Public
-/I C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Inc\VictoryBPLibrary
-/I C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary
+/I C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary\Private
+/I C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source
+/I C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary\Public
+/I C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Inc\VictoryBPLibrary
+/I C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Source\VictoryBPLibrary
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Async"
@@ -253,11 +253,11 @@
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\ThirdParty\PhysX\APEX_1.4\shared\general\PairFilter\include"
 /I "C:\Program Files\Epic Games\UE_4.18\Engine\Source\ThirdParty\PhysX\APEX_1.4\shared\internal\include"
 /D_HAS_EXCEPTIONS=0
-/FI"C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\PCH.VictoryBPLibrary.h"
-/Yu"C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\PCH.VictoryBPLibrary.h"
-/Fp"C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\PCH.VictoryBPLibrary.h.pch"
-"C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\Module.VictoryBPLibrary.cpp"
-/Fo"C:\Users\Sunscale2\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\Module.VictoryBPLibrary.cpp.obj"
+/FI"C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\PCH.VictoryBPLibrary.h"
+/Yu"C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\PCH.VictoryBPLibrary.h"
+/Fp"C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\PCH.VictoryBPLibrary.h.pch"
+"C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\Module.VictoryBPLibrary.cpp"
+/Fo"C:\Users\Sunscale5\Documents\GitHub\TAG\Plugins\VictoryBPLibrary\Intermediate\Build\Win64\UE4\Development\VictoryBPLibrary\Module.VictoryBPLibrary.cpp.obj"
 /TP
 /GR-
 /W4

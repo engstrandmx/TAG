@@ -333,6 +333,9 @@ Parameter - Hit
         <property name="maxVoices">
             <value>1</value>
         </property>
+        <relationship name="modulators">
+            <destination>{591df6f0-feea-4013-ac71-0639919bf7e8}</destination>
+        </relationship>
         <relationship name="sounds">
             <destination>{54e92dd0-e0b4-4dd5-9f9b-71a4a4b94110}</destination>
             <destination>{9e7d6feb-6368-4196-867f-389411ccb2a7}</destination>
@@ -728,6 +731,20 @@ Parameter - Hit
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{91009c3d-1149-4a02-8320-0765909c3bae}"/>
+    <object class="ADSRModulator" id="{591df6f0-feea-4013-ac71-0639919bf7e8}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>0</value>
+        </property>
+        <property name="releaseTime">
+            <value>2000</value>
+        </property>
+    </object>
     <object class="SingleSound" id="{54e92dd0-e0b4-4dd5-9f9b-71a4a4b94110}">
         <relationship name="audioFile">
             <destination>{d93729e0-67f5-4323-be93-cb7b75bd4296}</destination>
