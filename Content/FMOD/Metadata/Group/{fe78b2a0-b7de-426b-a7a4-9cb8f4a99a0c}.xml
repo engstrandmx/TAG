@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{fe78b2a0-b7de-426b-a7a4-9cb8f4a99a0c}">
+        <property name="name">
+            <value>Crater_harmony</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{480df12c-a545-4eed-92e8-d3422d080d26}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{74b12eba-ba0b-4062-82db-35dd5cb3bf51}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{bda9fff5-ea7a-42d5-a080-f191b6eee74b}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{480df12c-a545-4eed-92e8-d3422d080d26}">
+        <relationship name="effects">
+            <destination>{98ce8a6a-6b07-4ca6-b492-a1287da84538}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{74b12eba-ba0b-4062-82db-35dd5cb3bf51}"/>
+    <object class="MixerBusFader" id="{98ce8a6a-6b07-4ca6-b492-a1287da84538}"/>
+</objects>

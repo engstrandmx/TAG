@@ -363,7 +363,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="EventMixerGroup" id="{e01893bd-f7a8-441c-b0f7-5d3a5dbff79a}">
         <property name="volume">
-            <value>-10.5</value>
+            <value>-6.5</value>
         </property>
         <property name="name">
             <value>Mud</value>
@@ -396,7 +396,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="EventMixerGroup" id="{925c5d52-cf24-4cd2-b5cf-abdfd3df56dd}">
         <property name="volume">
-            <value>-14.5</value>
+            <value>-5.5</value>
         </property>
         <property name="name">
             <value>Dirt</value>
@@ -433,7 +433,7 @@ Se till vid impolementation att ett fotsteg inte avbryter det andra fotsteget. V
     </object>
     <object class="EventMixerGroup" id="{5becbb07-1b31-479d-8462-015fda7c549d}">
         <property name="volume">
-            <value>-17</value>
+            <value>-17.5</value>
         </property>
         <property name="name">
             <value>Cow</value>
