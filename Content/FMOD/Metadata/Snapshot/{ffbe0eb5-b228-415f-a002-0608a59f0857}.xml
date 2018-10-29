@@ -461,7 +461,7 @@
             <value>midGain</value>
         </property>
         <property name="value">
-            <value>-16</value>
+            <value>-7.5</value>
         </property>
         <relationship name="automatableObject">
             <destination>{927d4059-f713-43b5-87f8-b1d1088ae221}</destination>
@@ -661,7 +661,7 @@
             <value>snapshotIntensity</value>
         </property>
         <property name="attackTime">
-            <value>1400</value>
+            <value>2400</value>
         </property>
         <property name="peakValue">
             <value>100</value>

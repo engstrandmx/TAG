@@ -443,7 +443,7 @@
             <value>0</value>
         </property>
         <property name="releaseTime">
-            <value>3200</value>
+            <value>7000</value>
         </property>
     </object>
     <object class="ADSRModulator" id="{99050154-09bd-47fc-a7c1-5b5d0b24f364}">
@@ -457,7 +457,7 @@
             <value>0</value>
         </property>
         <property name="releaseTime">
-            <value>4200</value>
+            <value>7800</value>
         </property>
     </object>
     <object class="ADSRModulator" id="{276e8504-6bb2-4e0a-a4bc-8becf0b06263}">
@@ -471,7 +471,7 @@
             <value>960</value>
         </property>
         <property name="releaseTime">
-            <value>2800</value>
+            <value>9200</value>
         </property>
     </object>
     <object class="Automator" id="{376fe739-2e06-45d4-8262-b102b9bd4abc}">

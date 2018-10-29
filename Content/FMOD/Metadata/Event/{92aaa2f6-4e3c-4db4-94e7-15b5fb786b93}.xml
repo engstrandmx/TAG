@@ -220,12 +220,18 @@
         </relationship>
     </object>
     <object class="SingleSound" id="{37b972df-9a94-4c88-8926-c58ca8ea11d7}">
+        <property name="isAsync">
+            <value>true</value>
+        </property>
         <property name="length">
             <value>36.5</value>
         </property>
         <property name="looping">
             <value>true</value>
         </property>
+        <relationship name="modulators">
+            <destination>{a6fb2844-e1d1-4fc7-98b1-7dd1439b1a7e}</destination>
+        </relationship>
         <relationship name="audioFile">
             <destination>{42289a1a-adf3-45d7-89a7-fb5d252327a6}</destination>
         </relationship>
@@ -284,6 +290,14 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{b553df57-3f4d-4065-8915-2d1c68d2342a}"/>
+    <object class="RandomizerModulator" id="{a6fb2844-e1d1-4fc7-98b1-7dd1439b1a7e}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>startOffset</value>
+        </property>
+        <property name="amount">
+            <value>82</value>
+        </property>
+    </object>
     <object class="ADSRModulator" id="{b07bb1c2-e099-44f1-afe5-7341f2e4e64d}">
         <property name="nameOfPropertyBeingModulated">
             <value>volume</value>
@@ -298,6 +312,7 @@
     <object class="MixerBusEffectChain" id="{db8475f4-4e2f-4d55-bbb3-e2b80a9ad2e3}">
         <relationship name="effects">
             <destination>{6cffa242-0b1a-40b1-b1c9-23bb167483d5}</destination>
+            <destination>{f44aec3b-4032-4f6a-8075-cd322a7b7cd5}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{12b01944-eced-47b1-9b8e-e715d8c2db91}"/>
@@ -326,6 +341,14 @@
     </object>
     <object class="MixerBusFader" id="{b271ff37-bd70-4c48-a5f7-bdfcdb51fd62}"/>
     <object class="MixerBusFader" id="{6cffa242-0b1a-40b1-b1c9-23bb167483d5}"/>
+    <object class="ThreeEQEffect" id="{f44aec3b-4032-4f6a-8075-cd322a7b7cd5}">
+        <property name="lowGain">
+            <value>-11</value>
+        </property>
+        <property name="midGain">
+            <value>-6</value>
+        </property>
+    </object>
     <object class="Automator" id="{f5f5c2d9-1d01-4897-816c-75cc057b2b96}">
         <property name="nameOfPropertyBeingAutomated">
             <value>midGain</value>
