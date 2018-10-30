@@ -19,7 +19,7 @@
             <value>0</value>
         </property>
         <property name="seekSpeed">
-            <value>0.95999997854232788</value>
+            <value>0.65999996662139893</value>
         </property>
         <relationship name="modulators">
             <destination>{628c16f3-e242-4c92-8333-ee2f030492d9}</destination>
