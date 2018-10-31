@@ -127,6 +127,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{a8afc224-1e95-4168-949b-dbb29de8deb2}">
+        <property name="volume">
+            <value>-2</value>
+        </property>
         <property name="name">
             <value>Dragspel</value>
         </property>
@@ -149,6 +152,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{ff914711-85bb-475c-883d-22b42dfd0f51}">
+        <property name="volume">
+            <value>-3</value>
+        </property>
         <property name="name">
             <value>Guitar</value>
         </property>
@@ -171,6 +177,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{dff03474-f8b3-42df-acf2-3661eef4fc2b}">
+        <property name="volume">
+            <value>-2.5</value>
+        </property>
         <property name="name">
             <value>mongol</value>
         </property>
@@ -193,6 +202,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{310dadcd-90a6-41fe-92ea-cdd398cbc0aa}">
+        <property name="volume">
+            <value>-3.5</value>
+        </property>
         <property name="name">
             <value>Ylva</value>
         </property>
