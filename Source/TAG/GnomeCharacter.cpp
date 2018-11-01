@@ -88,6 +88,8 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 		if (CameraResetAlpha >= 0.2f) {
 			//if (GEngine)
 			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Gnome Toggle"));
+			GetFollowCamera()->RelativeLocation = FVector::ZeroVector;
+			GetFollowCamera()->RelativeRotation = FRotator::ZeroRotator;
 			CameraResetAlpha = 0;
 			bToogleMountCamera = false;
 			//GetFollowCamera()->bUsePawnControlRotation = true;
