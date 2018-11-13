@@ -4,28 +4,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2018-11-12 15:11\n"
-"PO-Revision-Date: 2018-11-12 15:11\n"
+"POT-Creation-Date: 2018-11-13 15:32\n"
+"PO-Revision-Date: 2018-11-13 15:32\n"
 "Language-Team: \n"
 "Language: sv-SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#. Key:	009556AF48CE6937BF572F8EFB679827
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_27.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_27.NewTextRenderComponent.Text
-msgctxt ",009556AF48CE6937BF572F8EFB679827"
-msgid "Slate"
-msgstr ""
-
-#. Key:	00A0A79A4F31FC1919043D8AA52B0070
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_30.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_30.NewTextRenderComponent.Text
-msgctxt ",00A0A79A4F31FC1919043D8AA52B0070"
-msgid "Panel"
-msgstr ""
 
 #. Key:	00CD1F334AFEAFBF8623EFA082D36BFA
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_29.Text
@@ -62,13 +48,6 @@ msgctxt ",02AC8446459072EE1FAEA1875F691370"
 msgid "If you call, she will come to your aid."
 msgstr ""
 
-#. Key:	049D90EA45744774B3B183A2CC839524
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(0 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(0 - Value).DisplayNameMap
-msgctxt ",049D90EA45744774B3B183A2CC839524"
-msgid "Acer"
-msgstr ""
-
 #. Key:	04C97D41424A760270AF5AAD599C3E7E
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_27.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_27.Text
@@ -97,20 +76,6 @@ msgctxt ",05FF8C464D362B108E2475915BD0366B"
 msgid "Keyboard"
 msgstr ""
 
-#. Key:	060AD8364E7BBBB8D1E92DB0511E8FD6
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_14.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_14.NewTextRenderComponent.Text
-msgctxt ",060AD8364E7BBBB8D1E92DB0511E8FD6"
-msgid "Moss"
-msgstr ""
-
-#. Key:	0617410D48DDD822A4B659B6905706A3
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_19.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_19.NewTextRenderComponent.Text
-msgctxt ",0617410D48DDD822A4B659B6905706A3"
-msgid "Gold"
-msgstr ""
-
 #. Key:	072F404F4BE5E08D6DAE25BC6E2C319B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:WidgetTree.KeyNameText.Text
 #: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:WidgetTree.KeyNameText.Text
@@ -132,27 +97,6 @@ msgctxt ",0A091C7649EBA513E857ACA29F02ABE9"
 msgid "Ohh! Oh yeah, the beginning... \r\nLet’s do that!"
 msgstr ""
 
-#. Key:	0B22B1784FA47FE31204DF864367FBC0
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCK1.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCK1.Tooltip Text
-msgctxt ",0B22B1784FA47FE31204DF864367FBC0"
-msgid "You must be the heroes my \r\nqueen told me about."
-msgstr ""
-
-#. Key:	0BEA0C9A450DE35168171F9E124C889D
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ4.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ4.Tooltip Text
-msgctxt ",0BEA0C9A450DE35168171F9E124C889D"
-msgid "She might not be the brightest but \r\nshe is sturdy and fearless."
-msgstr ""
-
-#. Key:	0CC9863546E64AC6B74E30A32D607376
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_15.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_15.NewTextRenderComponent.Text
-msgctxt ",0CC9863546E64AC6B74E30A32D607376"
-msgid "Stone Brick, Cut"
-msgstr ""
-
 #. Key:	0DA5F2424E0D7D88C2FEE88829514A55
 #. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.Subs(1).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(7).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 #: /Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.Subs(1).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(7).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
@@ -165,13 +109,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(5).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 msgctxt ",0DE55C3446ECD74B6DC9228F65CCBD4E"
 msgid "You must be the heroes my \r\nqueen told me about."
-msgstr ""
-
-#. Key:	103C4C434BA33750A1B290BDC0FD59A1
-#. SourceLocation:	/Game/NewWaterMaterials/WaterfallTool/Maps/Demonstration.Demonstration:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
-#: /Game/NewWaterMaterials/WaterfallTool/Maps/Demonstration.Demonstration:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
-msgctxt ",103C4C434BA33750A1B290BDC0FD59A1"
-msgid "Simply drag out the 'BP_WaterfallTool' and place\r\nwithin the world.\r\n\r\nChange settings like Color, Flow Speed,\r\nObject Detection and more within the\r\nBlueprint Details Panel.\r\n\r\nAdditional Waterfall cascades can be added\r\nby adding to the 'Additional Waterfalls' array\r\nwithin the Blueprint Details Panel.\r\n\r\nAutomatic Ground Detection can be toggled\r\nwithin the Blueprint Details Panel\r\nlisted as 'Ground Check'."
 msgstr ""
 
 #. Key:	110A5E01450BFDD2073A4A8D3F4F26F3
@@ -188,27 +125,6 @@ msgctxt ",112FB0EA4F8025393E18219A6688790F"
 msgid "You must be the heroes my \r\nqueen told me about."
 msgstr ""
 
-#. Key:	143D8D6B4878ED4C7E2F398AFB50E9E5
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(1 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(1 - Value).DisplayNameMap
-msgctxt ",143D8D6B4878ED4C7E2F398AFB50E9E5"
-msgid "Apple"
-msgstr ""
-
-#. Key:	15CFED0A44083AD829B9AABFDF28A8B9
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(11 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(11 - Value).DisplayNameMap
-msgctxt ",15CFED0A44083AD829B9AABFDF28A8B9"
-msgid "Rowan"
-msgstr ""
-
-#. Key:	1685EE6F4E7E8AFF229191BF97456889
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_2.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_2.NewTextRenderComponent.Text
-msgctxt ",1685EE6F4E7E8AFF229191BF97456889"
-msgid "Stone Brick, Hewn"
-msgstr ""
-
 #. Key:	170155244BF35928DF06588BEC25E7A3
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_5.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_5.Text
@@ -223,25 +139,11 @@ msgctxt ",180CDE5841F1CBC076548DAFB6DE8080"
 msgid "Scroll Wheel"
 msgstr ""
 
-#. Key:	183E183C488D010C208D9B9214A831E1
-#. SourceLocation:	/Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ5.Tooltip Text
-#: /Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ5.Tooltip Text
-msgctxt ",183E183C488D010C208D9B9214A831E1"
-msgid "Good luck!"
-msgstr ""
-
 #. Key:	18C814B747DA0562ABF15FB4610B6CF8
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.Subs(1).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(3).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 #: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.Subs(1).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(3).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 msgctxt ",18C814B747DA0562ABF15FB4610B6CF8"
 msgid "klä"
-msgstr ""
-
-#. Key:	18DC5E9443A5BB3A2B90F7B162ACF84B
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_23.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_23.NewTextRenderComponent.Text
-msgctxt ",18DC5E9443A5BB3A2B90F7B162ACF84B"
-msgid "Brushed Nickel"
 msgstr ""
 
 #. Key:	19990E3E4B1FB00C780E378F2B0ED7DD
@@ -328,13 +230,6 @@ msgctxt ",24C0AB6849AB162F8DE689ACAF86042E"
 msgid "Master Volume"
 msgstr ""
 
-#. Key:	24C489A34592BED58A3A7CB71F18EEB5
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_16.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_16.NewTextRenderComponent.Text
-msgctxt ",24C489A34592BED58A3A7CB71F18EEB5"
-msgid "Grass"
-msgstr ""
-
 #. Key:	25B4A185457D0593C7F9DBB1A7B1F345
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
@@ -354,13 +249,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_51.Text
 msgctxt ",267678BE48D27B16DAE8D3962C746842"
 msgid "Credits"
-msgstr ""
-
-#. Key:	270C550D426F56A03068D38194E25528
-#. SourceLocation:	/Game/Levels/Trailer/Cinematic/CowKnight/MasterMaster.MasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_1.DisplayName
-#: /Game/Levels/Trailer/Cinematic/CowKnight/MasterMaster.MasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_1.DisplayName
-msgctxt ",270C550D426F56A03068D38194E25528"
-msgid "Shot01"
 msgstr ""
 
 #. Key:	276F742345CE6C7FD40D8DBFED7A3459
@@ -405,13 +293,6 @@ msgctxt ",2A386D4D4F3CE4A06216BC9FD2EBF314"
 msgid "So we kept going!"
 msgstr ""
 
-#. Key:	2A387EB24DB492E869D76E95976209DD
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(6 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(6 - Value).DisplayNameMap
-msgctxt ",2A387EB24DB492E869D76E95976209DD"
-msgid "Elm"
-msgstr ""
-
 #. Key:	2B4BECFB4754459F66C0BD9A8BA3E2BF
 #. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(1).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 #: /Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(1).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
@@ -447,13 +328,6 @@ msgctxt ",3013174649D61C4EB34D6BA9034C5C74"
 msgid "Defaults"
 msgstr ""
 
-#. Key:	31038F594E079513063E67BDD02CADD6
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ2.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ2.Tooltip Text
-msgctxt ",31038F594E079513063E67BDD02CADD6"
-msgid "Thankfully, they didn’t get my \r\nbravest cow knight."
-msgstr ""
-
 #. Key:	31FA8DEF4C96A295D34A32BAC536FA66
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(14).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 #: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(14).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
@@ -461,46 +335,11 @@ msgctxt ",31FA8DEF4C96A295D34A32BAC536FA66"
 msgid "And we said yes! We always help our friends."
 msgstr ""
 
-#. Key:	320CA0594475A0B006D590AB7F1DDD2D
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ5.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ5.Tooltip Text
-msgctxt ",320CA0594475A0B006D590AB7F1DDD2D"
-msgid "Good luck!"
-msgstr ""
-
 #. Key:	323BA831409FEAE3958DD0843B557E0F
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
 #: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
 msgctxt ",323BA831409FEAE3958DD0843B557E0F"
 msgid "[E] Pet"
-msgstr ""
-
-#. Key:	3245B0604990027CA6DF2CB6DEB87FE4
-#. SourceLocation:	/Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ1.Tooltip Text
-#: /Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ1.Tooltip Text
-msgctxt ",3245B0604990027CA6DF2CB6DEB87FE4"
-msgid "I can’t believe the fairies took all of my \r\ncow subjects, please help me save them!"
-msgstr ""
-
-#. Key:	324865BD47012A5D4C18B38B5DD32A8C
-#. SourceLocation:	/Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_8.DisplayName
-#: /Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_8.DisplayName
-msgctxt ",324865BD47012A5D4C18B38B5DD32A8C"
-msgid "shot0010_003"
-msgstr ""
-
-#. Key:	3262ABFE423BC5EBAD106AA09BEB06B1
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_5.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_5.NewTextRenderComponent.Text
-msgctxt ",3262ABFE423BC5EBAD106AA09BEB06B1"
-msgid "Clay Brick, Beveled"
-msgstr ""
-
-#. Key:	34C97FD947FCECADE1271686A1D7711D
-#. SourceLocation:	/Game/NewWaterMaterials/WaterfallTool/Maps/Demonstration.Demonstration:PersistentLevel.TextRenderActor5.NewTextRenderComponent.Text
-#: /Game/NewWaterMaterials/WaterfallTool/Maps/Demonstration.Demonstration:PersistentLevel.TextRenderActor5.NewTextRenderComponent.Text
-msgctxt ",34C97FD947FCECADE1271686A1D7711D"
-msgid "NOTE: Particle effects will only be\r\nvisible within play/simulate mode."
 msgstr ""
 
 #. Key:	34DE8417452FC1F2745F4FBCEDE70DBA
@@ -531,34 +370,6 @@ msgctxt ",3601EECD4E89E2DB87C206AC39C8530E"
 msgid "Effects Volume"
 msgstr ""
 
-#. Key:	369E63B34243EC0847B03F8B42ACA0AD
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCK3.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCK3.Tooltip Text
-msgctxt ",369E63B34243EC0847B03F8B42ACA0AD"
-msgid "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
-msgstr ""
-
-#. Key:	3892A9EC442E1A3AB882E5833F9CB70F
-#. SourceLocation:	/Game/Texture_Set_1_Hand_Painted_Rock/Scene/Texture_Set_1.Texture_Set_1:PersistentLevel.TextRenderActor6_11.NewTextRenderComponent.Text
-#: /Game/Texture_Set_1_Hand_Painted_Rock/Scene/Texture_Set_1.Texture_Set_1:PersistentLevel.TextRenderActor6_11.NewTextRenderComponent.Text
-msgctxt ",3892A9EC442E1A3AB882E5833F9CB70F"
-msgid "Texture Set Vol.01 "
-msgstr ""
-
-#. Key:	38D774124718D501074E67B63BDFA531
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_10.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_10.NewTextRenderComponent.Text
-msgctxt ",38D774124718D501074E67B63BDFA531"
-msgid "Concrete, Grime"
-msgstr ""
-
-#. Key:	38D8584F40423B7E408A29A248AAC4A5
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_25.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_25.NewTextRenderComponent.Text
-msgctxt ",38D8584F40423B7E408A29A248AAC4A5"
-msgid "Rust"
-msgstr ""
-
 #. Key:	38E9D8A74B0677841DD4188C87B536DE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_10.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_10.Text
@@ -571,20 +382,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_74.Text
 msgctxt ",38F22B8B42C609C4D4077F8882E79316"
 msgid "Audio"
-msgstr ""
-
-#. Key:	39544187479738D17D7BA8B5A5527C0D
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_32.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_32.NewTextRenderComponent.Text
-msgctxt ",39544187479738D17D7BA8B5A5527C0D"
-msgid "Lake Water"
-msgstr ""
-
-#. Key:	39A9DF0C417D6D6ADB8616B8BF5F6AAF
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_33.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_33.NewTextRenderComponent.Text
-msgctxt ",39A9DF0C417D6D6ADB8616B8BF5F6AAF"
-msgid "Ocean Water"
 msgstr ""
 
 #. Key:	39B122AC40E7E2ABB261CEA51175F302
@@ -629,32 +426,11 @@ msgctxt ",3C4A2F5A48707B30AB619585B46A935C"
 msgid "blä"
 msgstr ""
 
-#. Key:	3E399B7A46E0E2C1D88A30BF70EF47A1
-#. SourceLocation:	/Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ3.Tooltip Text
-#: /Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ3.Tooltip Text
-msgctxt ",3E399B7A46E0E2C1D88A30BF70EF47A1"
-msgid "If you call, she will come to your aid."
-msgstr ""
-
 #. Key:	3E51B47E4AB593933EE9EA8A4750763E
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
 #: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
 msgctxt ",3E51B47E4AB593933EE9EA8A4750763E"
 msgid "If you call, she will come to your aid."
-msgstr ""
-
-#. Key:	3FD9F5ED495B69292191DF990216AE9E
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_6.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_6.NewTextRenderComponent.Text
-msgctxt ",3FD9F5ED495B69292191DF990216AE9E"
-msgid "Ceramic Tile"
-msgstr ""
-
-#. Key:	40003A444A5F919E59AA34AC84F199FF
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_12.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_12.NewTextRenderComponent.Text
-msgctxt ",40003A444A5F919E59AA34AC84F199FF"
-msgid "Cobblestone, Smooth"
 msgstr ""
 
 #. Key:	404E43F8410999B77D9887BE255196BA
@@ -734,20 +510,6 @@ msgctxt ",4310E4FE4D8DB3D5F372AFA8A085BE63"
 msgid "You have reached the end of the demo.\r\nCongratulations\r\n\r\nThank you for playing:"
 msgstr ""
 
-#. Key:	44FF04AF47DB16E7B44F93AFE53D5FC8
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_9.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_9.NewTextRenderComponent.Text
-msgctxt ",44FF04AF47DB16E7B44F93AFE53D5FC8"
-msgid "Cobblestone, Pebble"
-msgstr ""
-
-#. Key:	450E6FD84BBB6C2052CAF2817E4EFB0C
-#. SourceLocation:	/Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ2.Tooltip Text
-#: /Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ2.Tooltip Text
-msgctxt ",450E6FD84BBB6C2052CAF2817E4EFB0C"
-msgid "Thankfully, they didn’t get my \r\nbravest cow knight."
-msgstr ""
-
 #. Key:	450FEB7D422CB058CD10768DB59DE185
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_43.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_43.Text
@@ -776,13 +538,6 @@ msgctxt ",485B12414068D8C9C8CF9BB9B0A2FAAF"
 msgid "I’m here to help."
 msgstr ""
 
-#. Key:	48AB42804D05C08147EEEB99A4A75D76
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(3 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(3 - Value).DisplayNameMap
-msgctxt ",48AB42804D05C08147EEEB99A4A75D76"
-msgid "Birch"
-msgstr ""
-
 #. Key:	495C3D7A4357174E7A3D41B211F25B23
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_9.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_9.Text
@@ -804,13 +559,6 @@ msgctxt ",4ACDAF164E03D3B7691807BDD24951DD"
 msgid "High"
 msgstr ""
 
-#. Key:	4C2ED2494B0A6D232C7754ADB1BBCF62
-#. SourceLocation:	/Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ4.Tooltip Text
-#: /Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ4.Tooltip Text
-msgctxt ",4C2ED2494B0A6D232C7754ADB1BBCF62"
-msgid "She might not be the brightest but \r\nshe is sturdy and fearless."
-msgstr ""
-
 #. Key:	4CB80C5A46C7D1BD37C3CB86AF778D7C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:WidgetTree.TextButton.Text
 #: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:WidgetTree.TextButton.Text
@@ -823,20 +571,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionX.Text
 msgctxt ",4D4D319E41C916C037878BA6D66FCAA0"
 msgid "Invert Camera X"
-msgstr ""
-
-#. Key:	4D833D134217C756FCB112ACBC7C84A4
-#. SourceLocation:	/Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_13.DisplayName
-#: /Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_13.DisplayName
-msgctxt ",4D833D134217C756FCB112ACBC7C84A4"
-msgid "shot0020_001"
-msgstr ""
-
-#. Key:	4DE59E0D4C2BCB04857BF98FE0CE019B
-#. SourceLocation:	/Game/Levels/Trailer/Cinematic/CowKnight/MasterMaster.MasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_2.DisplayName
-#: /Game/Levels/Trailer/Cinematic/CowKnight/MasterMaster.MasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_2.DisplayName
-msgctxt ",4DE59E0D4C2BCB04857BF98FE0CE019B"
-msgid "Shot01_troll"
 msgstr ""
 
 #. Key:	4E16FDB147FA92EC49C19EAD18FAE644
@@ -874,27 +608,6 @@ msgctxt ",500E6C7E43F6E946AF0F2285C1035142"
 msgid "1"
 msgstr ""
 
-#. Key:	501595BB4EC1E0C3DB4214B1D4686EF7
-#. SourceLocation:	/Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ5.Tooltip Text
-#: /Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ5.Tooltip Text
-msgctxt ",501595BB4EC1E0C3DB4214B1D4686EF7"
-msgid "Good luck!"
-msgstr ""
-
-#. Key:	51C96CAF4FDEBD65AAF311B9200CD95B
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaBP3_4803.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaBP3_4803.Tooltip Text
-msgctxt ",51C96CAF4FDEBD65AAF311B9200CD95B"
-msgid "[E] Dismount       [Q] Switch Character"
-msgstr ""
-
-#. Key:	52F255A847B539BB20B511A27C664525
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaBP_197.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaBP_197.Tooltip Text
-msgctxt ",52F255A847B539BB20B511A27C664525"
-msgid "[WASD] Move         [MOUSE] Camera"
-msgstr ""
-
 #. Key:	547717EA483D50DF96BBA5B1809F461E
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_18.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_18.Text
@@ -930,25 +643,11 @@ msgctxt ",5769CF1B4013AECEED67CEB941F61777"
 msgid "Controls"
 msgstr ""
 
-#. Key:	57DCAD71427BAE0D4D2709BA45E4CB57
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_17.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_17.NewTextRenderComponent.Text
-msgctxt ",57DCAD71427BAE0D4D2709BA45E4CB57"
-msgid "Steel"
-msgstr ""
-
 #. Key:	57E8E80D47C4F6A9DAA449A89A9BFFAA
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextNewGame.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextNewGame.Text
 msgctxt ",57E8E80D47C4F6A9DAA449A89A9BFFAA"
 msgid "New Game"
-msgstr ""
-
-#. Key:	57F6D8F748EDCE7A012959AEE7545351
-#. SourceLocation:	/Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCK1.Tooltip Text
-#: /Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCK1.Tooltip Text
-msgctxt ",57F6D8F748EDCE7A012959AEE7545351"
-msgid "You must be the heroes my \r\nqueen told me about."
 msgstr ""
 
 #. Key:	59BDD53940243F3221BCF3A7392EAE6D
@@ -963,13 +662,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",59D7FEDC492A6BA6A64B6486354BBBE1"
 msgid "Press Any Key"
-msgstr ""
-
-#. Key:	5A06B82F40050EAB735575A287A815F7
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCK2.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCK2.Tooltip Text
-msgctxt ",5A06B82F40050EAB735575A287A815F7"
-msgid "I’m here to help."
 msgstr ""
 
 #. Key:	5A48E9DC4DC9631587BE999E155D86F4
@@ -991,13 +683,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
 msgctxt ",5BCA53454364D6674284AEB22F79F1DE"
 msgid "Depth of Field"
-msgstr ""
-
-#. Key:	5BED0C7841B2DBE61F67F5B375505338
-#. SourceLocation:	/Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaBP_197.Tooltip Text
-#: /Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaBP_197.Tooltip Text
-msgctxt ",5BED0C7841B2DBE61F67F5B375505338"
-msgid "[WASD] Move         [MOUSE] Camera"
 msgstr ""
 
 #. Key:	5CD76A8641D15848CAA4E994238F1263
@@ -1042,13 +727,6 @@ msgctxt ",64D982204A1C4EFBF19798B53B95E478"
 msgid "Thankfully, they didn’t get my \r\nbravest cow knight."
 msgstr ""
 
-#. Key:	64F6AC7244EF82C2B8745DA448D274FF
-#. SourceLocation:	/Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_4.DisplayName
-#: /Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_4.DisplayName
-msgctxt ",64F6AC7244EF82C2B8745DA448D274FF"
-msgid "shot0050_001"
-msgstr ""
-
 #. Key:	6526F0EE47D2475FF84F3D83ECE18240
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_19.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_19.Text
@@ -1061,13 +739,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextFOV.Text
 msgctxt ",65B7CE394463CB9580C66F904F8E9888"
 msgid "90"
-msgstr ""
-
-#. Key:	66F3AEF64687C2B0F2E27D8BDBC3F037
-#. SourceLocation:	/Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCK2.Tooltip Text
-#: /Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCK2.Tooltip Text
-msgctxt ",66F3AEF64687C2B0F2E27D8BDBC3F037"
-msgid "I’m here to help."
 msgstr ""
 
 #. Key:	6714515140A70EBF0ABE4EA0D08DFD06
@@ -1089,13 +760,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_32.Text
 msgctxt ",6A7E01AC45565BA2B1496BB59CD5AB8A"
 msgid "Effects Quality"
-msgstr ""
-
-#. Key:	6C8005D34C59B52AF1D555A08F8BA1CB
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_28.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_28.NewTextRenderComponent.Text
-msgctxt ",6C8005D34C59B52AF1D555A08F8BA1CB"
-msgid "Hex Tiles"
 msgstr ""
 
 #. Key:	6CCDE54C4FC39F729AB0DDA414FF39DB
@@ -1147,41 +811,6 @@ msgctxt ",762356214F21D5CB8C75C489FB9CF2DF"
 msgid "Zoom"
 msgstr ""
 
-#. Key:	7670AD684ECF924911BA3A8FFBE01AF0
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(2 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(2 - Value).DisplayNameMap
-msgctxt ",7670AD684ECF924911BA3A8FFBE01AF0"
-msgid "Aspen"
-msgstr ""
-
-#. Key:	76B355EA4F2BCD4E19351898DDBA2158
-#. SourceLocation:	/Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_10.DisplayName
-#: /Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_10.DisplayName
-msgctxt ",76B355EA4F2BCD4E19351898DDBA2158"
-msgid "shot0110_005"
-msgstr ""
-
-#. Key:	777B52CA45FD5AC6F82E3E9D8139B93B
-#. SourceLocation:	/Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCK1.Tooltip Text
-#: /Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCK1.Tooltip Text
-msgctxt ",777B52CA45FD5AC6F82E3E9D8139B93B"
-msgid "You must be the heroes my \r\nqueen told me about."
-msgstr ""
-
-#. Key:	78A26EDA423EEE379DA261BFEE4FC402
-#. SourceLocation:	/Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCK2.Tooltip Text
-#: /Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCK2.Tooltip Text
-msgctxt ",78A26EDA423EEE379DA261BFEE4FC402"
-msgid "I’m here to help."
-msgstr ""
-
-#. Key:	7B53C2BC43A5480E61F00C9FDF468560
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_21.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_21.NewTextRenderComponent.Text
-msgctxt ",7B53C2BC43A5480E61F00C9FDF468560"
-msgid "Gravel"
-msgstr ""
-
 #. Key:	7BFCC957462771E1035606875E62E62B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
@@ -1201,20 +830,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_3.Text
 msgctxt ",7DC0ED2242E95E5DCFECE6BFBE0167E4"
 msgid "Exit To Menu"
-msgstr ""
-
-#. Key:	7EE4CF4043E4746DEF880A9FD6A30142
-#. SourceLocation:	/Game/Texture_Set_1_Hand_Painted_Rock/Scene/Texture_Set_1.Texture_Set_1:PersistentLevel.TextRenderActor9.NewTextRenderComponent.Text
-#: /Game/Texture_Set_1_Hand_Painted_Rock/Scene/Texture_Set_1.Texture_Set_1:PersistentLevel.TextRenderActor9.NewTextRenderComponent.Text
-msgctxt ",7EE4CF4043E4746DEF880A9FD6A30142"
-msgid "Hand Painted Rock"
-msgstr ""
-
-#. Key:	815BE47C4528BEBAFA312EAFB20F899F
-#. SourceLocation:	/Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_18.DisplayName
-#: /Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_18.DisplayName
-msgctxt ",815BE47C4528BEBAFA312EAFB20F899F"
-msgid "shot0040_002"
 msgstr ""
 
 #. Key:	825395CF4F88CD965888AC948372542C
@@ -1245,13 +860,6 @@ msgctxt ",8406CE01431BF139A1981E8F53236D17"
 msgid "I can’t believe the fairies took all of my \r\ncow subjects, please help me save them!"
 msgstr ""
 
-#. Key:	847FE08441C9F304D4263790DB4B280C
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor14.NewTextRenderComponent.Text
-#: /Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor14.NewTextRenderComponent.Text
-msgctxt ",847FE08441C9F304D4263790DB4B280C"
-msgid "___________________________________"
-msgstr ""
-
 #. Key:	84B9F1204E4FA1FBD149DEB338002C47
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(11).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 #: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(11).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
@@ -1264,13 +872,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
 msgctxt ",86A171F647ECBF6FF93A758B08834099"
 msgid "Effects Quality"
-msgstr ""
-
-#. Key:	86C50F8742DDD4EFBBBFEA9626003CF6
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaBP2_1280.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaBP2_1280.Tooltip Text
-msgctxt ",86C50F8742DDD4EFBBBFEA9626003CF6"
-msgid "[SPACEBAR] Jump"
 msgstr ""
 
 #. Key:	884C17E04E786DFE4B3E0AA6CA637373
@@ -1308,13 +909,6 @@ msgctxt ",8BD474764CF47CC28A39339CFEA26E26"
 msgid "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
 msgstr ""
 
-#. Key:	8D15664349939D986F9085841513F335
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
-#: /Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor_1.NewTextRenderComponent.Text
-msgctxt ",8D15664349939D986F9085841513F335"
-msgid "Particles"
-msgstr ""
-
 #. Key:	8FC8C4AE40D705876AEB3C8EE09BE43D
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 #: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
@@ -1327,13 +921,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.TutText(0).TutText.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(0).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 msgctxt ",92B218424DFB1446864AA6AC01A46C87"
 msgid "       Move               Camera"
-msgstr ""
-
-#. Key:	92BF808F419CFC86361DBEA5DF0B95F2
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_11.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_11.NewTextRenderComponent.Text
-msgctxt ",92BF808F419CFC86361DBEA5DF0B95F2"
-msgid "Concrete, Panels"
 msgstr ""
 
 #. Key:	92DB21CA4B16EEAB4D79EB8F661F5770
@@ -1378,13 +965,6 @@ msgctxt ",94F089504196270A31C7D0973D0110A5"
 msgid "Invert Camera X"
 msgstr ""
 
-#. Key:	95CAD4F6431E4F4BB27BD18C0D88A907
-#. SourceLocation:	/Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ4.Tooltip Text
-#: /Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ4.Tooltip Text
-msgctxt ",95CAD4F6431E4F4BB27BD18C0D88A907"
-msgid "She might not be the brightest but \r\nshe is sturdy and fearless."
-msgstr ""
-
 #. Key:	97D801FD4D73E59F6E1A8BBDB352F88E
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_4.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_4.Text
@@ -1406,32 +986,11 @@ msgctxt ",9856623B45E3359D936C52B0B132DA28"
 msgid "I thought it was a little scary."
 msgstr ""
 
-#. Key:	9A6580FB4D0720315F122187F15E53D2
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(12 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(12 - Value).DisplayNameMap
-msgctxt ",9A6580FB4D0720315F122187F15E53D2"
-msgid "Sea buckthorn"
-msgstr ""
-
-#. Key:	9B3B2B8849D4AE1E15A3988C6174FFCE
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_39.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_39.NewTextRenderComponent.Text
-msgctxt ",9B3B2B8849D4AE1E15A3988C6174FFCE"
-msgid "Checker/Dot"
-msgstr ""
-
 #. Key:	9BF8D0294EC3F693072202B1AA16D297
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
 msgctxt ",9BF8D0294EC3F693072202B1AA16D297"
 msgid "View Distance"
-msgstr ""
-
-#. Key:	9C4CC93D4126F8A983F5A1829E26FE8C
-#. SourceLocation:	/Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ3.Tooltip Text
-#: /Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ3.Tooltip Text
-msgctxt ",9C4CC93D4126F8A983F5A1829E26FE8C"
-msgid "If you call, she will come to your aid."
 msgstr ""
 
 #. Key:	9DA71D9B43A6BC9DAE92E483FFCD27AE
@@ -1455,13 +1014,6 @@ msgctxt ",A0E3EEF8464A0663DED1628BB9D17707"
 msgid "100%"
 msgstr ""
 
-#. Key:	A199645248DAD807137294ADAEE4C0EC
-#. SourceLocation:	/Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_11.DisplayName
-#: /Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_11.DisplayName
-msgctxt ",A199645248DAD807137294ADAEE4C0EC"
-msgid "shot0100_002"
-msgstr ""
-
 #. Key:	A1E3C7C94228BBABEDD75EADF77F0197
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:WhatAction [Script Bytecode]
 #: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:WhatAction [Script Bytecode]
@@ -1483,13 +1035,6 @@ msgctxt ",A3FDCCDD4B9D3830ADD57A833946E4A3"
 msgid "Sharpness"
 msgstr ""
 
-#. Key:	A51630AD4072309AF482CDADB8AF5C58
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_26.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_26.NewTextRenderComponent.Text
-msgctxt ",A51630AD4072309AF482CDADB8AF5C58"
-msgid "Sandstone"
-msgstr ""
-
 #. Key:	A58AB0A34ED2BEC082A3A69C296D51CE
 #. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(6).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 #: /Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(6).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
@@ -1497,39 +1042,11 @@ msgctxt ",A58AB0A34ED2BEC082A3A69C296D51CE"
 msgid "I’m here to help."
 msgstr ""
 
-#. Key:	A5B92A6F489E6BDD33F59DA42E55D476
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_3.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_3.NewTextRenderComponent.Text
-msgctxt ",A5B92A6F489E6BDD33F59DA42E55D476"
-msgid "Clay Brick, Old"
-msgstr ""
-
-#. Key:	A5E3E79F4DF518ECC58AB9ABA2300ED8
-#. SourceLocation:	/Game/NewWaterMaterials/WaterfallTool/Maps/Demonstration.Demonstration:PersistentLevel.TextRenderActor3.NewTextRenderComponent.Text
-#: /Game/NewWaterMaterials/WaterfallTool/Maps/Demonstration.Demonstration:PersistentLevel.TextRenderActor3.NewTextRenderComponent.Text
-msgctxt ",A5E3E79F4DF518ECC58AB9ABA2300ED8"
-msgid "Waterfall Tool"
-msgstr ""
-
 #. Key:	A680BE984C8C6BB2DB3D5783433B6B8F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_26.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_26.Text
 msgctxt ",A680BE984C8C6BB2DB3D5783433B6B8F"
 msgid "100%"
-msgstr ""
-
-#. Key:	A7416839438CB21B11641E943CB32AE0
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor12.NewTextRenderComponent.Text
-#: /Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor12.NewTextRenderComponent.Text
-msgctxt ",A7416839438CB21B11641E943CB32AE0"
-msgid "___________________________________"
-msgstr ""
-
-#. Key:	A8849A8A4337C7FA9FC0FBADA8FE1320
-#. SourceLocation:	/Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_15.DisplayName
-#: /Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_15.DisplayName
-msgctxt ",A8849A8A4337C7FA9FC0FBADA8FE1320"
-msgid "shot0030_003"
 msgstr ""
 
 #. Key:	A8A4E9E94E5C9AE0D66AA2945E30ABD2
@@ -1574,13 +1091,6 @@ msgctxt ",AE768AC141B170B0B23E08B573E71D6C"
 msgid "Controls"
 msgstr ""
 
-#. Key:	AFD2359A4A7528A7D781BDA283DE2D1B
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(5 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(5 - Value).DisplayNameMap
-msgctxt ",AFD2359A4A7528A7D781BDA283DE2D1B"
-msgid "Cherry"
-msgstr ""
-
 #. Key:	AFDF4CC74278904B5D48F78CEE270D29
 #. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.Subs(1).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(1).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 #: /Game/Blueprints/UI/Tooltip_BP.Default__Tooltip_BP_C.Subs(1).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(1).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
@@ -1607,13 +1117,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.Subs(0).Subs.Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8(12).Subtitles_4_36A69F904B5FD9B8CA62C68A646E4DB8
 msgctxt ",B1BFE88C4E3686C522FF13AC2C9A269A"
 msgid "And they magiced away almost \r\nall of the cows to teach them a lesson!"
-msgstr ""
-
-#. Key:	B220A83D4961F962DB387987D3D08DDA
-#. SourceLocation:	/Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCK3.Tooltip Text
-#: /Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCK3.Tooltip Text
-msgctxt ",B220A83D4961F962DB387987D3D08DDA"
-msgid "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
 msgstr ""
 
 #. Key:	B2ED1500421541F01B4269891B7545E4
@@ -1651,13 +1154,6 @@ msgctxt ",B8CAC492438BC9FE2961EDB9C70E2DA8"
 msgid "I thought, we don’t really have to \r\nget involved anymore. "
 msgstr ""
 
-#. Key:	B95D49144BE800307FCCAE851571EC1B
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(10 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(10 - Value).DisplayNameMap
-msgctxt ",B95D49144BE800307FCCAE851571EC1B"
-msgid "Pussy Willow"
-msgstr ""
-
 #. Key:	BA72214A4DCC74852F23A88CC1DFE12B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
@@ -1686,25 +1182,11 @@ msgctxt ",BBD664364F020BE077C2E8B3BEA4E426"
 msgid "but we’re best friends and there were cows \r\nand we’re friends too and I jumped a lot"
 msgstr ""
 
-#. Key:	BC8152834213B5D1A460AE967CA1F09F
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_31.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_31.NewTextRenderComponent.Text
-msgctxt ",BC8152834213B5D1A460AE967CA1F09F"
-msgid "Pulse"
-msgstr ""
-
 #. Key:	BCB7914B4B01D7A2F5B3CEB5F8C81EF5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_35.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_35.Text
 msgctxt ",BCB7914B4B01D7A2F5B3CEB5F8C81EF5"
 msgid "Level 5"
-msgstr ""
-
-#. Key:	BDC54BFA49DF36D7DA960E9FE44884D4
-#. SourceLocation:	/Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ2.Tooltip Text
-#: /Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaCQ2.Tooltip Text
-msgctxt ",BDC54BFA49DF36D7DA960E9FE44884D4"
-msgid "Thankfully, they didn’t get my \r\nbravest cow knight."
 msgstr ""
 
 #. Key:	BE5A307D4F7FDCBFFB390BA7FFBDAF9B
@@ -1714,25 +1196,11 @@ msgctxt ",BE5A307D4F7FDCBFFB390BA7FFBDAF9B"
 msgid "Graphics"
 msgstr ""
 
-#. Key:	BE8A3A4D4B04255B889E1D80B34AF089
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ1.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ1.Tooltip Text
-msgctxt ",BE8A3A4D4B04255B889E1D80B34AF089"
-msgid "I can’t believe the fairies took all of my \r\ncow subjects, please help me save them!"
-msgstr ""
-
 #. Key:	BE9795FA4E0B3C454C24F783143F8ABA
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 #: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",BE9795FA4E0B3C454C24F783143F8ABA"
 msgid "Yes, and Ms. Cowknight is helping us too!"
-msgstr ""
-
-#. Key:	BEF4E8B743D60917FE0C7E96572FA69A
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_18.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_18.NewTextRenderComponent.Text
-msgctxt ",BEF4E8B743D60917FE0C7E96572FA69A"
-msgid "Concrete, Tiles"
 msgstr ""
 
 #. Key:	BFDCAC25497A84A16EA58D9364202C56
@@ -1749,13 +1217,6 @@ msgctxt ",C12D436544FD9F98EA585B9D039AC16F"
 msgid "Shadow Quality"
 msgstr ""
 
-#. Key:	C1C880684B746854E511DBBACDE948ED
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(4 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(4 - Value).DisplayNameMap
-msgctxt ",C1C880684B746854E511DBBACDE948ED"
-msgid "Bird Cherry"
-msgstr ""
-
 #. Key:	C22F0D124EC4F0C94A68C7ACC2EC2556
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.SkipText.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.SkipText.Text
@@ -1768,13 +1229,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
 msgctxt ",C349DBA64DDDC4840C8E59997D729B8D"
 msgid "Low"
-msgstr ""
-
-#. Key:	C3C3F38A43011D846431EEBA4B96F85F
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(7 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(7 - Value).DisplayNameMap
-msgctxt ",C3C3F38A43011D846431EEBA4B96F85F"
-msgid "Maple"
 msgstr ""
 
 #. Key:	C3F21FAD48B5F462F842DCA5B98C77CC
@@ -1798,13 +1252,6 @@ msgctxt ",C6893F314D7F0C9D510518B3C671BAA7"
 msgid "Invert Camera Y"
 msgstr ""
 
-#. Key:	C7BE34DF4B976E6D653AEC9D6B6D8E52
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_13.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_13.NewTextRenderComponent.Text
-msgctxt ",C7BE34DF4B976E6D653AEC9D6B6D8E52"
-msgid "Concrete, Poured"
-msgstr ""
-
 #. Key:	C948855E4269E339003D30978F549B0B
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:WidgetTree.SkipText.Text
 #: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:WidgetTree.SkipText.Text
@@ -1812,32 +1259,11 @@ msgctxt ",C948855E4269E339003D30978F549B0B"
 msgid "[ENTER/START] Skip"
 msgstr ""
 
-#. Key:	C9DCC7AA4BBE58C01ACB7585CA9BD9E8
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(9 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(9 - Value).DisplayNameMap
-msgctxt ",C9DCC7AA4BBE58C01ACB7585CA9BD9E8"
-msgid "Plum"
-msgstr ""
-
 #. Key:	CB0FF21E4BC4144C593FD4B724E77C8F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Text.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Text.Text
 msgctxt ",CB0FF21E4BC4144C593FD4B724E77C8F"
 msgid "Level Select"
-msgstr ""
-
-#. Key:	CBD93432421B0C6B48A8AE9587579BA4
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_37.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_37.NewTextRenderComponent.Text
-msgctxt ",CBD93432421B0C6B48A8AE9587579BA4"
-msgid "Walnut, Worn"
-msgstr ""
-
-#. Key:	CC906C4B462ED6FD9C66B2BF2CF2062D
-#. SourceLocation:	/Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_7.DisplayName
-#: /Game/Characters/EyeDependencies/Cinematics/TBTableMaster/TBTableMasterMaster.TBTableMasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_7.DisplayName
-msgctxt ",CC906C4B462ED6FD9C66B2BF2CF2062D"
-msgid "shot0080_003"
 msgstr ""
 
 #. Key:	CD6B5E9E48AF08E7DD8C2982E6A568BF
@@ -1889,13 +1315,6 @@ msgctxt ",D119E44F4877388E835ECA9BEA5E5106"
 msgid "Continue"
 msgstr ""
 
-#. Key:	D25DDDAD4128D503A14E29B01247FA48
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor11.NewTextRenderComponent.Text
-#: /Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor11.NewTextRenderComponent.Text
-msgctxt ",D25DDDAD4128D503A14E29B01247FA48"
-msgid "___________________________________"
-msgstr ""
-
 #. Key:	D331954148677D9F50871EBEE4D4710F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
@@ -1924,27 +1343,6 @@ msgctxt ",D64B910147DBD3262B57A59A5E060616"
 msgid "[WASD] Move         [MOUSE] Camera"
 msgstr ""
 
-#. Key:	D67372D04B388B707D841996FA22838F
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_35.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_35.NewTextRenderComponent.Text
-msgctxt ",D67372D04B388B707D841996FA22838F"
-msgid "Walnut"
-msgstr ""
-
-#. Key:	D6BAAD0B44C9491D2338979D0452EA91
-#. SourceLocation:	/Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCK3.Tooltip Text
-#: /Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCK3.Tooltip Text
-msgctxt ",D6BAAD0B44C9491D2338979D0452EA91"
-msgid "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
-msgstr ""
-
-#. Key:	D8E693054E8EC046F143C3985127A19A
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_29.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_29.NewTextRenderComponent.Text
-msgctxt ",D8E693054E8EC046F143C3985127A19A"
-msgid "Chrome"
-msgstr ""
-
 #. Key:	D98493E54444E4D01343E5AA5FA02C57
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
@@ -1957,13 +1355,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_20.Text
 msgctxt ",DAC6F3BE484C965498759AAC2FA0DA78"
 msgid "Medium"
-msgstr ""
-
-#. Key:	DB2D98644AE2106EC187AE916E124736
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_34.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_34.NewTextRenderComponent.Text
-msgctxt ",DB2D98644AE2106EC187AE916E124736"
-msgid "Basalt"
 msgstr ""
 
 #. Key:	DB5E59314426430A8A6E059710194464
@@ -2029,27 +1420,6 @@ msgctxt ",E22CAC41421FE07E541D73B42804FE1A"
 msgid "100%"
 msgstr ""
 
-#. Key:	E383DE774AD69F127D0E3F9D31A66ABB
-#. SourceLocation:	/Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ1.Tooltip Text
-#: /Game/Levels/Game/Backups2/Level1ForestBackup.Level1ForestBackup:PersistentLevel.TooltipAreaCQ1.Tooltip Text
-msgctxt ",E383DE774AD69F127D0E3F9D31A66ABB"
-msgid "I can’t believe the fairies took all of my \r\ncow subjects, please help me save them!"
-msgstr ""
-
-#. Key:	E415419F41702B9FDD3A3A9BD2530E02
-#. SourceLocation:	/Game/Levels/Trailer/Cinematic/CowKnight/MasterMaster.MasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_0.DisplayName
-#: /Game/Levels/Trailer/Cinematic/CowKnight/MasterMaster.MasterMaster:MovieScene_0.MovieSceneCinematicShotTrack_0.MovieSceneCinematicShotSection_0.DisplayName
-msgctxt ",E415419F41702B9FDD3A3A9BD2530E02"
-msgid "RecordedSequence_29"
-msgstr ""
-
-#. Key:	E440F3DE45BA4B2C5D8050A73EE833FB
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_45.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_45.NewTextRenderComponent.Text
-msgctxt ",E440F3DE45BA4B2C5D8050A73EE833FB"
-msgid "Oak"
-msgstr ""
-
 #. Key:	EA5BD81843A8B741B9E228AE61EB1396
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_39.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_39.Text
@@ -2057,25 +1427,11 @@ msgctxt ",EA5BD81843A8B741B9E228AE61EB1396"
 msgid "Extras"
 msgstr ""
 
-#. Key:	EAC21913492063A310821CA351CC1BDE
-#. SourceLocation:	/Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ3.Tooltip Text
-#: /Game/Levels/GraphicTests/OLDLevel1Designfix.OLDLevel1Designfix:PersistentLevel.TooltipAreaCQ3.Tooltip Text
-msgctxt ",EAC21913492063A310821CA351CC1BDE"
-msgid "If you call, she will come to your aid."
-msgstr ""
-
 #. Key:	EB610E544B887E9E375582BD1275A1C4
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.IntroSubtitles.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.IntroSubtitles.Text
 msgctxt ",EB610E544B887E9E375582BD1275A1C4"
 msgid "Waow"
-msgstr ""
-
-#. Key:	EBAB9A88498A02275014C2B958EFD0A0
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(8 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(8 - Value).DisplayNameMap
-msgctxt ",EBAB9A88498A02275014C2B958EFD0A0"
-msgid "Oak"
 msgstr ""
 
 #. Key:	EBD18165465C4BC550FE1983DFE2B006
@@ -2090,34 +1446,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
 msgctxt ",EBF284A04F1BB33583B93A8EF9ECC9BE"
 msgid "Defaults"
-msgstr ""
-
-#. Key:	EBF5D09C4756D0B7B5CB348568DEFA86
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_22.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_22.NewTextRenderComponent.Text
-msgctxt ",EBF5D09C4756D0B7B5CB348568DEFA86"
-msgid "Copper"
-msgstr ""
-
-#. Key:	ED694B9643FAC11CC6C7B6BE7B57EBF2
-#. SourceLocation:	/Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaBP_197.Tooltip Text
-#: /Game/Levels/Trailer/Level1Forest1Cinematic.Level1Forest1Cinematic:PersistentLevel.TooltipAreaBP_197.Tooltip Text
-msgctxt ",ED694B9643FAC11CC6C7B6BE7B57EBF2"
-msgid "[WASD] Move         [MOUSE] Camera"
-msgstr ""
-
-#. Key:	ED96E02C4D45FAEBE00F7588A689A926
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor13.NewTextRenderComponent.Text
-#: /Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor13.NewTextRenderComponent.Text
-msgctxt ",ED96E02C4D45FAEBE00F7588A689A926"
-msgid "___________________________________"
-msgstr ""
-
-#. Key:	EE646BB14DE4C7BB8D374F9CF223B43D
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_7.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_7.NewTextRenderComponent.Text
-msgctxt ",EE646BB14DE4C7BB8D374F9CF223B43D"
-msgid "Click The Simulate Toolbar Button"
 msgstr ""
 
 #. Key:	F09ED3994AA4FF14B9E3E895C93DC80B
@@ -2139,13 +1467,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_55.Text
 msgctxt ",F0FCF11D4DC21D808B1CB7ACD51700D8"
 msgid "Vignette"
-msgstr ""
-
-#. Key:	F1B4647C4F088A14EDBD99AE31D83F23
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_36.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_36.NewTextRenderComponent.Text
-msgctxt ",F1B4647C4F088A14EDBD99AE31D83F23"
-msgid "Pine"
 msgstr ""
 
 #. Key:	F2665A0C478A82C925D0D2876F79FC78
@@ -2183,25 +1504,11 @@ msgctxt ",F45A95624C2579EF0867E69BDE6CB3E9"
 msgid "Move"
 msgstr ""
 
-#. Key:	F4CE2CAE439B929F7A803B819685F312
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_4.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_4.NewTextRenderComponent.Text
-msgctxt ",F4CE2CAE439B929F7A803B819685F312"
-msgid "Clay Brick, New"
-msgstr ""
-
 #. Key:	F6831A2F4FE0887EEC173AAB15C1493E
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_41.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_41.Text
 msgctxt ",F6831A2F4FE0887EEC173AAB15C1493E"
 msgid "Controller"
-msgstr ""
-
-#. Key:	F80060F044605E4D0FC1D99B3043C1EE
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_38.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_38.NewTextRenderComponent.Text
-msgctxt ",F80060F044605E4D0FC1D99B3043C1EE"
-msgid "Walnut, Polished"
 msgstr ""
 
 #. Key:	F841FA6849497D06355E288B3CD98692
@@ -2246,20 +1553,6 @@ msgctxt ",FB4F5B82498EC030A4058391A8B5F954"
 msgid "Video"
 msgstr ""
 
-#. Key:	FBED55C44580E567FFC995B1B3F6F8AE
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(13 - Value).DisplayNameMap
-#: /Game/Particles_Wind_Control_System/Blueprints/Enumerations/P_Leaves_Enum.P_Leaves_Enum.DisplayNameMap(13 - Value).DisplayNameMap
-msgctxt ",FBED55C44580E567FFC995B1B3F6F8AE"
-msgid "Willow"
-msgstr ""
-
-#. Key:	FC576AD54EB2C44A8F725D924751F6E3
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_8.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_8.NewTextRenderComponent.Text
-msgctxt ",FC576AD54EB2C44A8F725D924751F6E3"
-msgid "Cobblestone, Rough"
-msgstr ""
-
 #. Key:	FCDB72E84947F63E067B37B69A292C4A
 #. SourceLocation:	/Game/Blueprints/UI/TrollHUD_BP.TrollHUD_BP_C:WidgetTree.TextBlock_14.Text
 #: /Game/Blueprints/UI/TrollHUD_BP.TrollHUD_BP_C:WidgetTree.TextBlock_14.Text
@@ -2272,27 +1565,6 @@ msgstr ""
 #: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:WidgetTree.TextButton.Text
 msgctxt ",FDBCFD9C40011EF269194AB278A691BD"
 msgid "Press Any Button"
-msgstr ""
-
-#. Key:	FE4D72B74727D68EE900269512ADBD13
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_20.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_20.NewTextRenderComponent.Text
-msgctxt ",FE4D72B74727D68EE900269512ADBD13"
-msgid "Burnished Steel"
-msgstr ""
-
-#. Key:	FEEBA05E427D3BC99C25A4AD6E9F934F
-#. SourceLocation:	/Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_24.NewTextRenderComponent.Text
-#: /Game/StarterContent/Maps/StarterMap.StarterMap:PersistentLevel.TextLabel_24.NewTextRenderComponent.Text
-msgctxt ",FEEBA05E427D3BC99C25A4AD6E9F934F"
-msgid "Polished Marble"
-msgstr ""
-
-#. Key:	FFA4F2134C29DE5556EB258D1BF7AE94
-#. SourceLocation:	/Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
-#: /Game/Particles_Wind_Control_System/Maps/Level_ParticlesOverview.Level_ParticlesOverview:PersistentLevel.TextRenderActor2.NewTextRenderComponent.Text
-msgctxt ",FFA4F2134C29DE5556EB258D1BF7AE94"
-msgid "<<<--- Particles Control and wind system. Direct/wind/speed. Use only one on level!!!"
 msgstr ""
 
 #. Key:	FFCE343C4BCE8FD4099937AA48D479CB
