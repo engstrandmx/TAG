@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{ce9e9865-bae6-4edf-a8f9-d3cbc9148d52}">
+        <property name="assetPath">
+            <value>Pig_throw_03.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>1.5</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{4cf0234a-aea2-4257-9619-110ab2dd4ecd}</destination>
+        </relationship>
+    </object>
+</objects>
