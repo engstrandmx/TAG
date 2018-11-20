@@ -5,7 +5,7 @@
             <value>Nested Event (5)</value>
         </property>
         <property name="outputFormat">
-            <value>1</value>
+            <value>0</value>
         </property>
         <relationship name="folder">
             <destination>{8b0cc06c-fac0-4f62-9774-b617c8e75e91}</destination>
@@ -53,17 +53,11 @@
     <object class="EventAutomatableProperties" id="{756c07b1-6d68-41ca-a073-02e8ea5b1c12}"/>
     <object class="MarkerTrack" id="{d3ceee84-d8a9-476e-baa6-c7788866f4b8}"/>
     <object class="GroupTrack" id="{8384a69b-cc19-4313-8b24-a6c5292fcd33}">
-        <relationship name="modules">
-            <destination>{31078b68-bc04-49b4-94e2-7a2d0d96235c}</destination>
-        </relationship>
         <relationship name="mixerGroup">
             <destination>{2639d2ee-392a-424b-8648-2752e8d68c00}</destination>
         </relationship>
     </object>
     <object class="Timeline" id="{7656138c-8823-42fa-ac24-267f7e65a647}">
-        <relationship name="modules">
-            <destination>{31078b68-bc04-49b4-94e2-7a2d0d96235c}</destination>
-        </relationship>
         <relationship name="markers">
             <destination>{4eb7646e-ce91-4869-a455-da9bfdc34dc2}</destination>
         </relationship>
@@ -85,17 +79,6 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{520adc4a-97ae-42d4-b3d1-428ca44a737d}"/>
-    <object class="SingleSound" id="{31078b68-bc04-49b4-94e2-7a2d0d96235c}">
-        <property name="length">
-            <value>116.5714375</value>
-        </property>
-        <property name="looping">
-            <value>true</value>
-        </property>
-        <relationship name="audioFile">
-            <destination>{60db2ca8-def8-4dd8-8851-177d00c11446}</destination>
-        </relationship>
-    </object>
     <object class="EventMixerGroup" id="{2639d2ee-392a-424b-8648-2752e8d68c00}">
         <property name="name">
             <value>Audio 1</value>
