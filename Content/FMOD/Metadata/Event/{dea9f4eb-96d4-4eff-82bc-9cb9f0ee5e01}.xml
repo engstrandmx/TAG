@@ -114,6 +114,9 @@
         <property name="length">
             <value>116.5714375</value>
         </property>
+        <relationship name="modulators">
+            <destination>{a3134e3c-c71a-44f8-b65d-57724caad4de}</destination>
+        </relationship>
         <relationship name="event">
             <destination>{d63d3e8f-4e7a-4f71-b13d-71bab024b60c}</destination>
         </relationship>
@@ -156,6 +159,20 @@
     </object>
     <object class="MixerBusPanner" id="{d39bf3ab-5afc-4bb2-88d5-3a6ceff78fd0}"/>
     <object class="MixerBusFader" id="{cfabf2b1-afe3-4474-8f69-b4a7c7187dfb}"/>
+    <object class="ADSRModulator" id="{a3134e3c-c71a-44f8-b65d-57724caad4de}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>460</value>
+        </property>
+        <property name="releaseTime">
+            <value>0</value>
+        </property>
+    </object>
     <object class="Automator" id="{d14f1e5b-3de4-4a40-880f-7ef4b3287744}">
         <property name="nameOfPropertyBeingAutomated">
             <value>volume</value>
