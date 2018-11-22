@@ -55,6 +55,8 @@ void ATrollCharacter::CameraTick(float DeltaSeconds) {
 		if (CameraResetAlpha >= 1) {
 			//if (GEngine)
 			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Troll Reset Slow"));
+			GetFollowCamera()->RelativeLocation = FVector::ZeroVector;
+			GetFollowCamera()->RelativeRotation = FRotator::ZeroRotator;
 			CameraResetAlpha = 0;
 			bResetCameraSlow = false;
 		}
@@ -78,6 +80,8 @@ void ATrollCharacter::CameraTick(float DeltaSeconds) {
 		if (CameraResetAlpha >= 1) {
 			//if (GEngine)
 			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Troll Toggle"));
+			GetFollowCamera()->RelativeLocation = FVector::ZeroVector;
+			GetFollowCamera()->RelativeRotation = FRotator::ZeroRotator;
 			CameraResetAlpha = 0;
 			bToogleMountCamera = false;
 			//GetFollowCamera()->bUsePawnControlRotation = true;

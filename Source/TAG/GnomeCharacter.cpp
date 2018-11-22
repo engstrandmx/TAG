@@ -65,6 +65,8 @@ void AGnomeCharacter::CameraTick(float DeltaSeconds) {
 		if (CameraResetAlpha >= 1) {
 			//if (GEngine)
 			//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Gnome Reset Slow"));
+			GetFollowCamera()->RelativeLocation = FVector::ZeroVector;
+			GetFollowCamera()->RelativeRotation = FRotator::ZeroRotator;
 			CameraResetAlpha = 0;
 			bResetCameraSlow = false;
 		}
