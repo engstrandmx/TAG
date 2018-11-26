@@ -454,6 +454,7 @@ Parameter - Land
     <object class="MixerBusEffectChain" id="{c66d67a8-97d1-48bd-8c09-a0504138b6ff}">
         <relationship name="effects">
             <destination>{b8ee2728-8a80-4d6f-a488-f7524fc40445}</destination>
+            <destination>{6065c8ba-e38a-48cd-9114-5aa59684c9f8}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{63f66539-8e18-433b-8f45-f794842cba02}"/>
@@ -550,6 +551,14 @@ Parameter - Land
         </relationship>
     </object>
     <object class="MixerBusFader" id="{b8ee2728-8a80-4d6f-a488-f7524fc40445}"/>
+    <object class="ThreeEQEffect" id="{6065c8ba-e38a-48cd-9114-5aa59684c9f8}">
+        <property name="lowGain">
+            <value>10</value>
+        </property>
+        <property name="midGain">
+            <value>2</value>
+        </property>
+    </object>
     <object class="AutomationPoint" id="{0cb3fd9a-448d-4bd8-97b4-8bd15e9bb36a}">
         <property name="position">
             <value>0.80443750000005065</value>
