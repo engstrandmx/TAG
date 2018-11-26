@@ -24,6 +24,7 @@
             <destination>{5afb0edb-7ef9-4c17-93d6-ba2925ec02f9}</destination>
             <destination>{622212ba-4054-41ac-9a58-a7fc44ac6f06}</destination>
             <destination>{bb8e3b97-548f-4a0b-8737-517059dd88b7}</destination>
+            <destination>{9b4eceb1-fc57-42e2-bc4d-23703dc75b5d}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{32ffd788-7448-40b2-a5a1-139770e72298}"/>
@@ -56,5 +57,13 @@
         <relationship name="mixerReturn">
             <destination>{8a109391-1595-46e8-a8a9-9d9c64f7cf5f}</destination>
         </relationship>
+    </object>
+    <object class="CompressorEffect" id="{9b4eceb1-fc57-42e2-bc4d-23703dc75b5d}">
+        <property name="threshold">
+            <value>-18.5</value>
+        </property>
+        <property name="sidechainEnabled">
+            <value>true</value>
+        </property>
     </object>
 </objects>
