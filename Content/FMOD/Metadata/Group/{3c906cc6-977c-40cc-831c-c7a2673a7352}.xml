@@ -60,7 +60,7 @@
     </object>
     <object class="CompressorEffect" id="{9b4eceb1-fc57-42e2-bc4d-23703dc75b5d}">
         <property name="threshold">
-            <value>-18.5</value>
+            <value>-10.5</value>
         </property>
         <property name="sidechainEnabled">
             <value>true</value>
