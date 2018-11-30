@@ -130,7 +130,7 @@
     <object class="MixerBusPanner" id="{35233e3a-65c9-4717-a4df-8a4a7dae45da}"/>
     <object class="EventSound" id="{8358f5dd-1e20-46bd-a587-5928cd0adbe4}">
         <property name="length">
-            <value>22</value>
+            <value>20.375011337868482</value>
         </property>
         <relationship name="modulators">
             <destination>{8c0646ce-4696-4af6-a18b-cadeff4a241a}</destination>
@@ -209,7 +209,7 @@
             <value>76</value>
         </property>
         <property name="start">
-            <value>5</value>
+            <value>3</value>
         </property>
         <property name="length">
             <value>17</value>
@@ -248,7 +248,7 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>22</value>
+            <value>20.375011337868482</value>
         </property>
         <relationship name="timeline">
             <destination>{0d9c1df4-1c32-47bc-8e79-286381ee5a12}</destination>
@@ -276,7 +276,7 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>22</value>
+            <value>20.375011337868482</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{a5a93c2a-eeae-4acb-b705-35d9d5716eb7}</destination>
@@ -326,8 +326,11 @@
         <property name="initialValue">
             <value>-80</value>
         </property>
-        <property name="releaseTime">
+        <property name="attackTime">
             <value>2600</value>
+        </property>
+        <property name="releaseTime">
+            <value>820</value>
         </property>
     </object>
     <object class="RandomizerModulator" id="{96bc0e20-2a39-4989-be73-0214770d389d}">
