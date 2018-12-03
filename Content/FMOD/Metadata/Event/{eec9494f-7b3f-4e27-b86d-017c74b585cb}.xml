@@ -5,7 +5,7 @@
             <value>Sign_out</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{6784800f-e9b3-4b21-bf49-4d98a69e5cf6}</destination>
@@ -53,7 +53,7 @@
             <destination>{cdef6111-e440-4c20-b94b-7f09fad5d2e6}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{a6c8bf4d-cbc5-4c4a-83ae-0c76eadab233}</destination>
+            <destination>{610d43c5-dd18-484e-9c71-5e317341233f}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{23e9ee2d-f817-430a-b667-c480ff7aa692}"/>
@@ -97,9 +97,6 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{74efb9f3-faa8-4ad5-9aa0-8c67be187e2f}">
-        <property name="volume">
-            <value>-11.5</value>
-        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
@@ -116,7 +113,6 @@
     <object class="MixerBusEffectChain" id="{14caaf86-b98b-430c-8414-2698bdfd6909}">
         <relationship name="effects">
             <destination>{e500cc73-d872-4b49-91eb-5da5b2c4c8c3}</destination>
-            <destination>{56d5fb09-22bf-4484-9028-110ec520bf3a}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{ee8d20b8-7a35-4bc7-a1b1-1e848aaf2bd0}"/>
@@ -128,6 +124,5 @@
     </object>
     <object class="MixerBusPanner" id="{ad5bbfb4-fdb4-457d-b9dc-1f525f5dbc61}"/>
     <object class="MixerBusFader" id="{e500cc73-d872-4b49-91eb-5da5b2c4c8c3}"/>
-    <object class="SpatialiserEffect" id="{56d5fb09-22bf-4484-9028-110ec520bf3a}"/>
     <object class="MixerBusFader" id="{48fa846b-cd8f-4779-a4fa-e70942476689}"/>
 </objects>
