@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2018-12-03 09:17\n"
-"PO-Revision-Date: 2018-12-03 09:17\n"
+"POT-Creation-Date: 2018-12-03 15:51\n"
+"PO-Revision-Date: 2018-12-03 15:51\n"
 "Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
@@ -118,6 +118,13 @@ msgctxt ",1D6637DA442CEDB4D779728E210D7DC9"
 msgid "But I said as long as we are together, \r\nwe don't have to be afraid."
 msgstr "But I said as long as we are together, \r\nwe don't have to be afraid."
 
+#. Key:	1F26EF1540F6123FC7D02880550B6B91
+#. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+#: /Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+msgctxt ",1F26EF1540F6123FC7D02880550B6B91"
+msgid "Camera"
+msgstr "Camera"
+
 #. Key:	1FD7F32E443305DB6701F880C394BD70
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
@@ -216,6 +223,20 @@ msgctxt ",2B9609C04296F4EF8065E0993CC7A96C"
 msgid "And now you"
 msgstr "And now you"
 
+#. Key:	2DB3560E4261DD2970E6858468086EEE
+#. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+#: /Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+msgctxt ",2DB3560E4261DD2970E6858468086EEE"
+msgid "Move"
+msgstr "Move"
+
+#. Key:	2ECD85654ADA7FEFC90EDC8DFF2243ED
+#. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+#: /Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+msgctxt ",2ECD85654ADA7FEFC90EDC8DFF2243ED"
+msgid "Camera"
+msgstr "Camera"
+
 #. Key:	2FBC142D434D8AC1232B26BB577C340E
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_0.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_0.Text
@@ -236,13 +257,6 @@ msgstr "Defaults"
 msgctxt ",322C976346A2FEE8C46BBA88F892AE8D"
 msgid "Recording"
 msgstr "Recording"
-
-#. Key:	323BA831409FEAE3958DD0843B557E0F
-#. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
-msgctxt ",323BA831409FEAE3958DD0843B557E0F"
-msgid "[E] Pet"
-msgstr "[E] Pet"
 
 #. Key:	34DE8417452FC1F2745F4FBCEDE70DBA
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_52.Text
@@ -362,6 +376,13 @@ msgstr "Gamma"
 msgctxt ",40F0226F4C09EBE17C3BC692F8A8299F"
 msgid "Very Well"
 msgstr "Very Well"
+
+#. Key:	410402B74FC28B0A389B3A92D67D5A69
+#. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
+msgctxt ",410402B74FC28B0A389B3A92D67D5A69"
+msgid "Read Sign"
+msgstr "Read Sign"
 
 #. Key:	41D5E78E41F9C173C1ED4382057DD121
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_48.Text
@@ -769,13 +790,6 @@ msgctxt ",8A2A012743853E6A3D312295247543CF"
 msgid "I hope that they have learned their lesson and that \r\ntheir queen is more careful in the future."
 msgstr "I hope that they have learned their lesson and that \r\ntheir queen is more careful in the future."
 
-#. Key:	8A829BE2477C447F4EB93699451AD559
-#. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
-msgctxt ",8A829BE2477C447F4EB93699451AD559"
-msgid "[Q] Mount"
-msgstr "[Q] Mount"
-
 #. Key:	8B05F44C4BA264CD4CA5B4AA257F5DF6
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 #: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
@@ -888,13 +902,6 @@ msgctxt ",A0185C214F9A5046CAE8E0800D675216"
 msgid "Additional Contributions"
 msgstr "Additional Contributions"
 
-#. Key:	A1E3C7C94228BBABEDD75EADF77F0197
-#. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:WhatAction [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:WhatAction [Script Bytecode]
-msgctxt ",A1E3C7C94228BBABEDD75EADF77F0197"
-msgid "[E] Pet"
-msgstr "[E] Pet"
-
 #. Key:	A34846EF44CB86CB2709D18DEB6E9BFC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 #: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
@@ -983,8 +990,8 @@ msgstr "Camera Sensitivity"
 #. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
 #: /Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
 msgctxt ",ADCB28CC4DB932CBF2ECE299415E79DC"
-msgid "       Move               Camera"
-msgstr "       Move               Camera"
+msgid "Move"
+msgstr "Move"
 
 #. Key:	AE768AC141B170B0B23E08B573E71D6C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_50.Text
@@ -1175,6 +1182,13 @@ msgctxt ",CB0FF21E4BC4144C593FD4B724E77C8F"
 msgid "Level Select"
 msgstr "Level Select"
 
+#. Key:	CC70608440C8029074B7C79B009BE470
+#. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+#: /Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+msgctxt ",CC70608440C8029074B7C79B009BE470"
+msgid "MOUSE"
+msgstr "MOUSE"
+
 #. Key:	CD6B5E9E48AF08E7DD8C2982E6A568BF
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_33.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_33.Text
@@ -1251,13 +1265,6 @@ msgstr "Swamp"
 msgctxt ",D64833CA4C128ACCD0819D81D54658B1"
 msgid "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
 msgstr "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
-
-#. Key:	D64B910147DBD3262B57A59A5E060616
-#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaBP_197.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaBP_197.Tooltip Text
-msgctxt ",D64B910147DBD3262B57A59A5E060616"
-msgid "[WASD] Move         [MOUSE] Camera"
-msgstr "[WASD] Move         [MOUSE] Camera"
 
 #. Key:	D887D47046F8021FE0005698D542FCE9
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
@@ -1364,13 +1371,6 @@ msgctxt ",E5E431E544EAC6E1A83534A56429AEE2"
 msgid "Ms. Cowknight - ..."
 msgstr "Ms. Cowknight - ..."
 
-#. Key:	EB610E544B887E9E375582BD1275A1C4
-#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.IntroSubtitles.Text
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.IntroSubtitles.Text
-msgctxt ",EB610E544B887E9E375582BD1275A1C4"
-msgid "Waow"
-msgstr "Waow"
-
 #. Key:	EBD18165465C4BC550FE1983DFE2B006
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 #: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
@@ -1384,6 +1384,13 @@ msgstr "so we stopped for some food."
 msgctxt ",EBF284A04F1BB33583B93A8EF9ECC9BE"
 msgid "Defaults"
 msgstr "Defaults"
+
+#. Key:	ED4FF0E64BD8997EBFA3D1AD9BAF6EEF
+#. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
+msgctxt ",ED4FF0E64BD8997EBFA3D1AD9BAF6EEF"
+msgid "Mount"
+msgstr "Mount"
 
 #. Key:	EE95EDAA445D722B493283BA32348532
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
@@ -1545,6 +1552,13 @@ msgstr "Press Any Button"
 msgctxt ",FF374A4646D8CA78CAFFBF9E59AD257D"
 msgid "Treasures"
 msgstr "Treasures"
+
+#. Key:	FF9B8BB3465A6EC11E207693C12C3BF6
+#. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
+msgctxt ",FF9B8BB3465A6EC11E207693C12C3BF6"
+msgid "Call Ms. Cowknight"
+msgstr "Call Ms. Cowknight"
 
 #. Key:	FFCE343C4BCE8FD4099937AA48D479CB
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_9.Text
