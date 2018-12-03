@@ -1,0 +1,1555 @@
+﻿# Game Russian translation.
+# Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Game\n"
+"POT-Creation-Date: 2018-12-03 09:17\n"
+"PO-Revision-Date: 2018-12-03 09:17\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Key:	00CD1F334AFEAFBF8623EFA082D36BFA
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_29.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_29.Text
+msgctxt ",00CD1F334AFEAFBF8623EFA082D36BFA"
+msgid "Lake"
+msgstr "Озеро"
+
+#. Key:	00E4832840A1E6940772C995A98F9CEB
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_49.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_49.Text
+msgctxt ",00E4832840A1E6940772C995A98F9CEB"
+msgid "Audio"
+msgstr "Аудио"
+
+#. Key:	025856B240C4DE7AA9341BAD8A013042
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_42.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_42.Text
+msgctxt ",025856B240C4DE7AA9341BAD8A013042"
+msgid "Brightness"
+msgstr "Яркость"
+
+#. Key:	052E0935498A8C4D969D33AA0E01B94B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_10.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_10.Text
+msgctxt ",052E0935498A8C4D969D33AA0E01B94B"
+msgid "WASD"
+msgstr ""
+
+#. Key:	05FF8C464D362B108E2475915BD0366B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_19.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_19.Text
+msgctxt ",05FF8C464D362B108E2475915BD0366B"
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#. Key:	0632D13047904BFD6B9861AA39675819
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_53.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_53.Text
+msgctxt ",0632D13047904BFD6B9861AA39675819"
+msgid "Language"
+msgstr "Язык"
+
+#. Key:	08B90C7A4E285E7572200589D16F41CE
+#. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
+msgctxt ",08B90C7A4E285E7572200589D16F41CE"
+msgid "Press Any Key"
+msgstr "Нажми любую кнопку"
+
+#. Key:	112FB0EA4F8025393E18219A6688790F
+#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip Text
+msgctxt ",112FB0EA4F8025393E18219A6688790F"
+msgid "You must be the heroes my \r\nqueen told me about."
+msgstr "Вы должно быть герои о которых рассказывала королева."
+
+#. Key:	170155244BF35928DF06588BEC25E7A3
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_5.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_5.Text
+msgctxt ",170155244BF35928DF06588BEC25E7A3"
+msgid "Low"
+msgstr "Низкая"
+
+#. Key:	180CDE5841F1CBC076548DAFB6DE8080
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_16.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_16.Text
+msgctxt ",180CDE5841F1CBC076548DAFB6DE8080"
+msgid "Scroll Wheel"
+msgstr "Скролл"
+
+#. Key:	19990E3E4B1FB00C780E378F2B0ED7DD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_14.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_14.Text
+msgctxt ",19990E3E4B1FB00C780E378F2B0ED7DD"
+msgid "Mouse"
+msgstr "Мышь"
+
+#. Key:	1ACD6E8D432FC84E60DAFA96BAF7C75C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",1ACD6E8D432FC84E60DAFA96BAF7C75C"
+msgid "I’ll start..."
+msgstr "Я начну..."
+
+#. Key:	1D5071854579AF67FDDF38A8FA37CDA1
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra4.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra4.Text
+msgctxt ",1D5071854579AF67FDDF38A8FA37CDA1"
+msgid "Gills"
+msgstr "Жабры"
+
+#. Key:	1D59ECC442D8C34773116AAF7B4B9AE7
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_47.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_47.Text
+msgctxt ",1D59ECC442D8C34773116AAF7B4B9AE7"
+msgid "Defaults"
+msgstr "Стандартные"
+
+#. Key:	1D6637DA442CEDB4D779728E210D7DC9
+#. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+msgctxt ",1D6637DA442CEDB4D779728E210D7DC9"
+msgid "But I said as long as we are together, \r\nwe don't have to be afraid."
+msgstr "Но, как я сказал, пока мы вместе нам нечего бояться."
+
+#. Key:	1FD7F32E443305DB6701F880C394BD70
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
+msgctxt ",1FD7F32E443305DB6701F880C394BD70"
+msgid "Anti Aliasing"
+msgstr "Сглаживание"
+
+#. Key:	20503EBA483DA6C2A24DBE8949587867
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_2.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_2.Text
+msgctxt ",20503EBA483DA6C2A24DBE8949587867"
+msgid "Back"
+msgstr "Назад"
+
+#. Key:	21B2EBAA4DE084D8DCBDCE9788910077
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
+msgctxt ",21B2EBAA4DE084D8DCBDCE9788910077"
+msgid "Vignette"
+msgstr "Виньетка"
+
+#. Key:	22DD332A496D7F0220D01F83B02F1CE1
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_17.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_17.Text
+msgctxt ",22DD332A496D7F0220D01F83B02F1CE1"
+msgid "Colours"
+msgstr "Цвета"
+
+#. Key:	24279A724C8C0ED67AD731ABFF1C68B2
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
+msgctxt ",24279A724C8C0ED67AD731ABFF1C68B2"
+msgid "Colours"
+msgstr "Цвета"
+
+#. Key:	24C0AB6849AB162F8DE689ACAF86042E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_75.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_75.Text
+msgctxt ",24C0AB6849AB162F8DE689ACAF86042E"
+msgid "Master Volume"
+msgstr "Основная громкость"
+
+#. Key:	25B4A185457D0593C7F9DBB1A7B1F345
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
+msgctxt ",25B4A185457D0593C7F9DBB1A7B1F345"
+msgid "Ambience Volume"
+msgstr "Громкость окружения"
+
+#. Key:	261FFB8547DF4AA788C6E1BF9194D04E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Sensitivity.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Sensitivity.Text
+msgctxt ",261FFB8547DF4AA788C6E1BF9194D04E"
+msgid "Camera Sensitivity"
+msgstr "Чувствительность камеры"
+
+#. Key:	27D23FFA419857347A62E5AD1933AB08
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",27D23FFA419857347A62E5AD1933AB08"
+msgid "I said no, no fighting! "
+msgstr "Я сказал нет, никаких драк!"
+
+#. Key:	2851CFD34DE843E2F51C6D802C6CF0A8
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
+msgctxt ",2851CFD34DE843E2F51C6D802C6CF0A8"
+msgid "Brightness"
+msgstr "Яркость"
+
+#. Key:	291B4BF4444EC9F6F96BC6A435F0D77C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",291B4BF4444EC9F6F96BC6A435F0D77C"
+msgid "Ohh! Oh yeah, the beginning... \r\nLet’s do that!"
+msgstr "Ооо! Да, начало… Давай, сделаем это!"
+
+#. Key:	29F6F6B14457CCA3F4AF7AB71D0C1233
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
+msgctxt ",29F6F6B14457CCA3F4AF7AB71D0C1233"
+msgid "Foliage Amount"
+msgstr "Количество листвы"
+
+#. Key:	2A386D4D4F3CE4A06216BC9FD2EBF314
+#. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+msgctxt ",2A386D4D4F3CE4A06216BC9FD2EBF314"
+msgid "So we kept going!"
+msgstr "Поэтому мы продолжаем путешествие!"
+
+#. Key:	2B9609C04296F4EF8065E0993CC7A96C
+#. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip Text
+msgctxt ",2B9609C04296F4EF8065E0993CC7A96C"
+msgid "And now you"
+msgstr "Теперь вы"
+
+#. Key:	2FBC142D434D8AC1232B26BB577C340E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_0.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_0.Text
+msgctxt ",2FBC142D434D8AC1232B26BB577C340E"
+msgid "Resume"
+msgstr "Продолжить"
+
+#. Key:	3013174649D61C4EB34D6BA9034C5C74
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_46.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_46.Text
+msgctxt ",3013174649D61C4EB34D6BA9034C5C74"
+msgid "Defaults"
+msgstr "Стандартные"
+
+#. Key:	322C976346A2FEE8C46BBA88F892AE8D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_21.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_21.Text
+msgctxt ",322C976346A2FEE8C46BBA88F892AE8D"
+msgid "Recording"
+msgstr "Запись"
+
+#. Key:	323BA831409FEAE3958DD0843B557E0F
+#. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
+msgctxt ",323BA831409FEAE3958DD0843B557E0F"
+msgid "[E] Pet"
+msgstr ""
+
+#. Key:	34DE8417452FC1F2745F4FBCEDE70DBA
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_52.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_52.Text
+msgctxt ",34DE8417452FC1F2745F4FBCEDE70DBA"
+msgid "Back"
+msgstr "Назад"
+
+#. Key:	35B08D51401FFEC73C27B2A33A4D8DB5
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",35B08D51401FFEC73C27B2A33A4D8DB5"
+msgid "We didn’t go through all that \r\nwork just to have them fight. "
+msgstr "Мы проделали всю это работу не для того, чтоб они дрались."
+
+#. Key:	3601EECD4E89E2DB87C206AC39C8530E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_77.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_77.Text
+msgctxt ",3601EECD4E89E2DB87C206AC39C8530E"
+msgid "Effects Volume"
+msgstr "Громкость эффектов"
+
+#. Key:	38E9D8A74B0677841DD4188C87B536DE
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_10.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_10.Text
+msgctxt ",38E9D8A74B0677841DD4188C87B536DE"
+msgid "Barn"
+msgstr "Амбар"
+
+#. Key:	38F22B8B42C609C4D4077F8882E79316
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_74.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_74.Text
+msgctxt ",38F22B8B42C609C4D4077F8882E79316"
+msgid "Audio"
+msgstr "Аудио"
+
+#. Key:	39B122AC40E7E2ABB261CEA51175F302
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_49.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_49.Text
+msgctxt ",39B122AC40E7E2ABB261CEA51175F302"
+msgid "Audio"
+msgstr "Аудио"
+
+#. Key:	39D6D5574979FB28CCB919BEAF062E7D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionY.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionY.Text
+msgctxt ",39D6D5574979FB28CCB919BEAF062E7D"
+msgid "Invert Camera Y"
+msgstr "Инверсия камеры Y"
+
+#. Key:	3A2E369240A6AA01D383449EB147565E
+#. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
+msgctxt ",3A2E369240A6AA01D383449EB147565E"
+msgid "After all that running \r\naround we got hungry"
+msgstr "Мы проголодались после всей этой беготни"
+
+#. Key:	3ADBCF494024058FAF4BDA80EFC0B4AD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_52.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_52.Text
+msgctxt ",3ADBCF494024058FAF4BDA80EFC0B4AD"
+msgid "Back"
+msgstr "Назад"
+
+#. Key:	3D04F3D74D0D1543ACA15E88FBBB19E8
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra1.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra1.Text
+msgctxt ",3D04F3D74D0D1543ACA15E88FBBB19E8"
+msgid "American Cow"
+msgstr "Американская корова"
+
+#. Key:	3E51B47E4AB593933EE9EA8A4750763E
+#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
+msgctxt ",3E51B47E4AB593933EE9EA8A4750763E"
+msgid "If you call, she will come to your aid."
+msgstr "Если вы позовете, она придет к вам на помощь."
+
+#. Key:	3FC86B2F479845FD19E451B39BA5585A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.SkipText.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.SkipText.Text
+msgctxt ",3FC86B2F479845FD19E451B39BA5585A"
+msgid "[ENTER/START] Skip"
+msgstr "[Ввод/Старт] Пропустить"
+
+#. Key:	408F5CFA43A8127DA324119B53F81953
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_75.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_75.Text
+msgctxt ",408F5CFA43A8127DA324119B53F81953"
+msgid "Master Volume"
+msgstr "Основная громкость"
+
+#. Key:	4091A6D049575A86F68BF1B7BC262174
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",4091A6D049575A86F68BF1B7BC262174"
+msgid "but we’re best friends and there were cows \r\nand we’re friends too and I jumped a lot"
+msgstr "но мы лучшие друзья и там были коровы с которыми мы тоже дружили, но я много прыгал(а)"
+
+#. Key:	40D32E33446920F293B13DAD8188814B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_22.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_22.Text
+msgctxt ",40D32E33446920F293B13DAD8188814B"
+msgid "Ultra"
+msgstr "Ультра"
+
+#. Key:	40D9A5264D469907DA595BB49D791CD8
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
+msgctxt ",40D9A5264D469907DA595BB49D791CD8"
+msgid "Gamma"
+msgstr "Гамма"
+
+#. Key:	40F0226F4C09EBE17C3BC692F8A8299F
+#. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip Text
+msgctxt ",40F0226F4C09EBE17C3BC692F8A8299F"
+msgid "Very Well"
+msgstr "Очень хорошо"
+
+#. Key:	41D5E78E41F9C173C1ED4382057DD121
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_48.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_48.Text
+msgctxt ",41D5E78E41F9C173C1ED4382057DD121"
+msgid "Video"
+msgstr "Видео"
+
+#. Key:	425451834E32AA548DC179B58BFD22DC
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",425451834E32AA548DC179B58BFD22DC"
+msgid "We got the cows home and saved the day!"
+msgstr "Мы вернули коров и исправили ситуацию!"
+
+#. Key:	426CD12544D71E69ABA990874916489D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_24.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_24.Text
+msgctxt ",426CD12544D71E69ABA990874916489D"
+msgid "Default Controls"
+msgstr "Стандартное управление"
+
+#. Key:	450FEB7D422CB058CD10768DB59DE185
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_43.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_43.Text
+msgctxt ",450FEB7D422CB058CD10768DB59DE185"
+msgid "Warmth"
+msgstr "Теплота"
+
+#. Key:	46416F454F0665FA7163EBAC666E62C5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_63.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_63.Text
+msgctxt ",46416F454F0665FA7163EBAC666E62C5"
+msgid "VSync"
+msgstr "VSync"
+
+#. Key:	46E383A748E0AC7AAA7FD6908F3955A2
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_6.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_6.Text
+msgctxt ",46E383A748E0AC7AAA7FD6908F3955A2"
+msgid "Display"
+msgstr "Экран"
+
+#. Key:	47E21A3448FB76270DAD7183950A8251
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_8.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_8.Text
+msgctxt ",47E21A3448FB76270DAD7183950A8251"
+msgid "Resolution"
+msgstr "Разрешение"
+
+#. Key:	485B12414068D8C9C8CF9BB9B0A2FAAF
+#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip Text
+msgctxt ",485B12414068D8C9C8CF9BB9B0A2FAAF"
+msgid "I’m here to help."
+msgstr "Я здесь, чтоб помочь."
+
+#. Key:	495C3D7A4357174E7A3D41B211F25B23
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_9.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_9.Text
+msgctxt ",495C3D7A4357174E7A3D41B211F25B23"
+msgid "Forest"
+msgstr "Лес"
+
+#. Key:	4ACDAF164E03D3B7691807BDD24951DD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_21.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_21.Text
+msgctxt ",4ACDAF164E03D3B7691807BDD24951DD"
+msgid "High"
+msgstr "Высокая"
+
+#. Key:	4C6D6BA34B8AF77AF6C6E794AE827BBF
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_9.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_9.Text
+msgctxt ",4C6D6BA34B8AF77AF6C6E794AE827BBF"
+msgid "Programming"
+msgstr "Разработчики"
+
+#. Key:	4CB80C5A46C7D1BD37C3CB86AF778D7C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:WidgetTree.TextButton.Text
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:WidgetTree.TextButton.Text
+msgctxt ",4CB80C5A46C7D1BD37C3CB86AF778D7C"
+msgid "Press Any Button"
+msgstr "Нажми любую кнопку"
+
+#. Key:	4D4D319E41C916C037878BA6D66FCAA0
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionX.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionX.Text
+msgctxt ",4D4D319E41C916C037878BA6D66FCAA0"
+msgid "Invert Camera X"
+msgstr "Инверсия камеры Х"
+
+#. Key:	4E256AD34AE3E420AF7202B143308B8F
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",4E256AD34AE3E420AF7202B143308B8F"
+msgid "You have to take it slow, \r\nand from the beginning."
+msgstr "Расскажи медленно и с самого начала"
+
+#. Key:	4F260E444A4F3C3301109E9749E65E49
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_16.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_16.Text
+msgctxt ",4F260E444A4F3C3301109E9749E65E49"
+msgid "Scroll Wheel"
+msgstr "Скролл"
+
+#. Key:	4FA9ABC44F441D442107919D1CFCE211
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
+msgctxt ",4FA9ABC44F441D442107919D1CFCE211"
+msgid "High"
+msgstr "Высокая"
+
+#. Key:	5003F6D545A5F5B62A629FAFE03AA055
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",5003F6D545A5F5B62A629FAFE03AA055"
+msgid "I’m Vilde and this is Grusa \r\nand she’s a troll and I’m a gnome"
+msgstr "Я - Вилде, а это Грюса она тролль, а я - гном"
+
+#. Key:	50F33D774EB76DE1AA469B9FBCCC5A62
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_1.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_1.Text
+msgctxt ",50F33D774EB76DE1AA469B9FBCCC5A62"
+msgid "Language"
+msgstr "Язык"
+
+#. Key:	547717EA483D50DF96BBA5B1809F461E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_18.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_18.Text
+msgctxt ",547717EA483D50DF96BBA5B1809F461E"
+msgid "Gamma"
+msgstr "Гамма"
+
+#. Key:	54D12DCD4D3BC95058A38DADD8DB8066
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",54D12DCD4D3BC95058A38DADD8DB8066"
+msgid "Vilde and I are friends with the \r\ncows that live in our forest."
+msgstr "Вилде и я дружим с коровами, которые живут в нашем лесу."
+
+#. Key:	5769CF1B4013AECEED67CEB941F61777
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_50.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_50.Text
+msgctxt ",5769CF1B4013AECEED67CEB941F61777"
+msgid "Controls"
+msgstr "Управление"
+
+#. Key:	57E8E80D47C4F6A9DAA449A89A9BFFAA
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextNewGame.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextNewGame.Text
+msgctxt ",57E8E80D47C4F6A9DAA449A89A9BFFAA"
+msgid "New Game"
+msgstr "Новая игра"
+
+#. Key:	59D7FEDC492A6BA6A64B6486354BBBE1
+#. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
+msgctxt ",59D7FEDC492A6BA6A64B6486354BBBE1"
+msgid "Press Any Key"
+msgstr "Нажми любую кнопку"
+
+#. Key:	5A48E9DC4DC9631587BE999E155D86F4
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_13.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_13.Text
+msgctxt ",5A48E9DC4DC9631587BE999E155D86F4"
+msgid "Camera"
+msgstr "Камера"
+
+#. Key:	5B1BC6EA4F911763B443F0B4B12D6DA3
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_36.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_36.Text
+msgctxt ",5B1BC6EA4F911763B443F0B4B12D6DA3"
+msgid "Anti Aliasing"
+msgstr "Сглаживание"
+
+#. Key:	5BCA53454364D6674284AEB22F79F1DE
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
+msgctxt ",5BCA53454364D6674284AEB22F79F1DE"
+msgid "Depth of Field"
+msgstr "Глубина резкости"
+
+#. Key:	5CD76A8641D15848CAA4E994238F1263
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_76.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_76.Text
+msgctxt ",5CD76A8641D15848CAA4E994238F1263"
+msgid "Music Volume"
+msgstr "Громкость музыки"
+
+#. Key:	608C3E2640BD6462752DAC9A32503728
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
+msgctxt ",608C3E2640BD6462752DAC9A32503728"
+msgid "Graphics"
+msgstr "Графика"
+
+#. Key:	6236BA8A42AEC03432F7E4AEF178C1A9
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_12.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_12.Text
+msgctxt ",6236BA8A42AEC03432F7E4AEF178C1A9"
+msgid "Field of View"
+msgstr ""
+
+#. Key:	64D982204A1C4EFBF19798B53B95E478
+#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip Text
+msgctxt ",64D982204A1C4EFBF19798B53B95E478"
+msgid "Thankfully, they didn’t get my \r\nbravest cow knight."
+msgstr "Слава Богу, они не забрали моего самого храброго рыцаря."
+
+#. Key:	6526F0EE47D2475FF84F3D83ECE18240
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_19.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_19.Text
+msgctxt ",6526F0EE47D2475FF84F3D83ECE18240"
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#. Key:	6600F2414DC5C4402C4D10B7A7E7D89C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra9.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra9.Text
+msgctxt ",6600F2414DC5C4402C4D10B7A7E7D89C"
+msgid "Now you see me..."
+msgstr "Теперь ты видишь меня.."
+
+#. Key:	677E871F421CF6198B7D7D91E45D6165
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_2.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_2.Text
+msgctxt ",677E871F421CF6198B7D7D91E45D6165"
+msgid "Options"
+msgstr "Настройки"
+
+#. Key:	68A233AD452089CE6D7A8E9B0F6D3185
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_7.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_7.Text
+msgctxt ",68A233AD452089CE6D7A8E9B0F6D3185"
+msgid "Sound & Music"
+msgstr "Звук и Музыка"
+
+#. Key:	6A7E01AC45565BA2B1496BB59CD5AB8A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_32.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_32.Text
+msgctxt ",6A7E01AC45565BA2B1496BB59CD5AB8A"
+msgid "Effects Quality"
+msgstr "Качество эффектов"
+
+#. Key:	6B29A37347788D5683CF3A861445E4D7
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",6B29A37347788D5683CF3A861445E4D7"
+msgid "and she accidentally \r\nsat down on a fairy."
+msgstr "и случайно села на фею."
+
+#. Key:	6CCDE54C4FC39F729AB0DDA414FF39DB
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_76.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_76.Text
+msgctxt ",6CCDE54C4FC39F729AB0DDA414FF39DB"
+msgid "Music Volume"
+msgstr "Громкость музыки"
+
+#. Key:	6D0064BF44152AC0F654208E7719F443
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_51.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_51.Text
+msgctxt ",6D0064BF44152AC0F654208E7719F443"
+msgid "Credits"
+msgstr "Авторы"
+
+#. Key:	7075CB824906041AA4C51A92500E11F6
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.Text.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.Text.Text
+msgctxt ",7075CB824906041AA4C51A92500E11F6"
+msgid "Project Lead"
+msgstr "Руководитель проекта "
+
+#. Key:	70B1CE804B85CB966AF931907F3A0A2A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
+msgctxt ",70B1CE804B85CB966AF931907F3A0A2A"
+msgid "Defaults"
+msgstr "Стандартные"
+
+#. Key:	715B41114529D0B740BDE39BE3D6777C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_40.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_40.Text
+msgctxt ",715B41114529D0B740BDE39BE3D6777C"
+msgid "Crater"
+msgstr "Кратер"
+
+#. Key:	73DFAF8448F170C1A551D0AADD7617C3
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_17.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_17.Text
+msgctxt ",73DFAF8448F170C1A551D0AADD7617C3"
+msgid "Design"
+msgstr "Дизайн"
+
+#. Key:	762356214F21D5CB8C75C489FB9CF2DF
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_15.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_15.Text
+msgctxt ",762356214F21D5CB8C75C489FB9CF2DF"
+msgid "Zoom"
+msgstr "Увеличение"
+
+#. Key:	78D139294C0F389EDBA5AB9A215837B1
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_33.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_33.Text
+msgctxt ",78D139294C0F389EDBA5AB9A215837B1"
+msgid "Cow Queen - Kevin Engstrand"
+msgstr "Королева Коров - Kevin Engstrand"
+
+#. Key:	79EDA0C642731406A5350683C7E9F824
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",79EDA0C642731406A5350683C7E9F824"
+msgid "and the cows flew but the- the fairies \r\nand the fairyrings and the mushrooms-"
+msgstr "И коровы улетели, но феи и магические кольца и грибы.."
+
+#. Key:	7BFCC957462771E1035606875E62E62B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
+msgctxt ",7BFCC957462771E1035606875E62E62B"
+msgid "Mouse"
+msgstr "Мышь"
+
+#. Key:	7C3B63F548416D09A85C75A55AF1809E
+#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip Text
+msgctxt ",7C3B63F548416D09A85C75A55AF1809E"
+msgid "Good luck!"
+msgstr "Удачи!"
+
+#. Key:	7D659CE449A7E0C3AEC75E85AAED1927
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_4.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_4.Text
+msgctxt ",7D659CE449A7E0C3AEC75E85AAED1927"
+msgid "Art"
+msgstr "Художники"
+
+#. Key:	7DC0ED2242E95E5DCFECE6BFBE0167E4
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_3.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_3.Text
+msgctxt ",7DC0ED2242E95E5DCFECE6BFBE0167E4"
+msgid "Exit To Menu"
+msgstr "Выйти в меню"
+
+#. Key:	7F8ECBDC4FB599F4357D9B9FC450EEA7
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra13.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra13.Text
+msgctxt ",7F8ECBDC4FB599F4357D9B9FC450EEA7"
+msgid "This one's fishy..."
+msgstr "Это подозрительно"
+
+#. Key:	825395CF4F88CD965888AC948372542C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_45.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_45.Text
+msgctxt ",825395CF4F88CD965888AC948372542C"
+msgid "Exit"
+msgstr "Выход"
+
+#. Key:	82B6DC5B49F0501298CD1DB42931A4EA
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",82B6DC5B49F0501298CD1DB42931A4EA"
+msgid "They wanted to get revenge on the fairies."
+msgstr "Они хотели отомстить феям."
+
+#. Key:	8406CE01431BF139A1981E8F53236D17
+#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip Text
+msgctxt ",8406CE01431BF139A1981E8F53236D17"
+msgid "I can’t believe the fairies took all of my \r\ncow subjects, please help me save them!"
+msgstr "Я не могу поверить, что феи забрали всех моих коров, пожалуйста помогите мне спасти их!"
+
+#. Key:	84D0C3AC4E9B0CB5EAB0CD982C1F3BAE
+#. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
+msgctxt ",84D0C3AC4E9B0CB5EAB0CD982C1F3BAE"
+msgid "Press Any Button"
+msgstr "Нажми любую кнопку"
+
+#. Key:	86A171F647ECBF6FF93A758B08834099
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
+msgctxt ",86A171F647ECBF6FF93A758B08834099"
+msgid "Effects Quality"
+msgstr "Качество эффектов"
+
+#. Key:	884C17E04E786DFE4B3E0AA6CA637373
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_1.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_1.Text
+msgctxt ",884C17E04E786DFE4B3E0AA6CA637373"
+msgid "Reset Puzzle"
+msgstr "Начать головоломку заново"
+
+#. Key:	88D060DF40247B9CA4DCEF82D355D54D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra11.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra11.Text
+msgctxt ",88D060DF40247B9CA4DCEF82D355D54D"
+msgid "Moo?"
+msgstr "Мууу"
+
+#. Key:	8A2A012743853E6A3D312295247543CF
+#. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip Text
+msgctxt ",8A2A012743853E6A3D312295247543CF"
+msgid "I hope that they have learned their lesson and that \r\ntheir queen is more careful in the future."
+msgstr "Я надеюсь они сделали выводы и их королева будет аккуратнее в будущем."
+
+#. Key:	8A829BE2477C447F4EB93699451AD559
+#. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:SetCurrentAction [Script Bytecode]
+msgctxt ",8A829BE2477C447F4EB93699451AD559"
+msgid "[Q] Mount"
+msgstr ""
+
+#. Key:	8B05F44C4BA264CD4CA5B4AA257F5DF6
+#. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
+msgctxt ",8B05F44C4BA264CD4CA5B4AA257F5DF6"
+msgid "And while we ate, \r\nthe sun started to set."
+msgstr "И пока мы ели, солнце начало садиться."
+
+#. Key:	8FC8C4AE40D705876AEB3C8EE09BE43D
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",8FC8C4AE40D705876AEB3C8EE09BE43D"
+msgid "But then…"
+msgstr "Но затем..."
+
+#. Key:	92A30857491826680D9CDE8389AF67AB
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_63.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_63.Text
+msgctxt ",92A30857491826680D9CDE8389AF67AB"
+msgid "VSync"
+msgstr "VSync"
+
+#. Key:	92DB21CA4B16EEAB4D79EB8F661F5770
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
+msgctxt ",92DB21CA4B16EEAB4D79EB8F661F5770"
+msgid "Resolution"
+msgstr "Разрешение"
+
+#. Key:	937E4DB24C6FA59E076152A56B9B1644
+#. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:WidgetTree.SkipText.Text
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:WidgetTree.SkipText.Text
+msgctxt ",937E4DB24C6FA59E076152A56B9B1644"
+msgid "[ENTER/START] Skip"
+msgstr "[Ввод/Старт] Пропустить"
+
+#. Key:	93F89B79467A219A6995EBB1F0ADAEB7
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_77.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_77.Text
+msgctxt ",93F89B79467A219A6995EBB1F0ADAEB7"
+msgid "Effects Volume"
+msgstr "Громкость эффектов"
+
+#. Key:	9422217A4971E3E0A267FAB86AABA709
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra12.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra12.Text
+msgctxt ",9422217A4971E3E0A267FAB86AABA709"
+msgid "Frog Mode"
+msgstr "Режим лягушки "
+
+#. Key:	945D7FBF4A5D4021DE7251860BE94339
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
+msgctxt ",945D7FBF4A5D4021DE7251860BE94339"
+msgid "Medium"
+msgstr "Средняя"
+
+#. Key:	94C8B7D841E95164D4F59C8BDF718C54
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",94C8B7D841E95164D4F59C8BDF718C54"
+msgid "I decided to have a snack and \r\nlet them figure it out on their own."
+msgstr "Я решила перекусить и дать им разобраться самим."
+
+#. Key:	94F089504196270A31C7D0973D0110A5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.InversionX.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.InversionX.Text
+msgctxt ",94F089504196270A31C7D0973D0110A5"
+msgid "Invert Camera X"
+msgstr "Инверсия камеры Y"
+
+#. Key:	9603F94C47DD0956DCD0138B8B4D990D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_12.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_12.Text
+msgctxt ",9603F94C47DD0956DCD0138B8B4D990D"
+msgid "Programming"
+msgstr "Разработчики"
+
+#. Key:	97D801FD4D73E59F6E1A8BBDB352F88E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_4.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_4.Text
+msgctxt ",97D801FD4D73E59F6E1A8BBDB352F88E"
+msgid "Default Controls"
+msgstr "Стандартное управление"
+
+#. Key:	9856623B45E3359D936C52B0B132DA28
+#. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+msgctxt ",9856623B45E3359D936C52B0B132DA28"
+msgid "I thought it was a little scary."
+msgstr "Мне показалось это немного жутким."
+
+#. Key:	9BF8D0294EC3F693072202B1AA16D297
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
+msgctxt ",9BF8D0294EC3F693072202B1AA16D297"
+msgid "View Distance"
+msgstr "Дальность прорисовки "
+
+#. Key:	9FDE4D66411977A99A52228AD064971E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_32.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_32.Text
+msgctxt ",9FDE4D66411977A99A52228AD064971E"
+msgid "Grusa - Kevin Engstrand"
+msgstr "Грюса - Kevin Engstrand"
+
+#. Key:	A0185C214F9A5046CAE8E0800D675216
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_11.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_11.Text
+msgctxt ",A0185C214F9A5046CAE8E0800D675216"
+msgid "Additional Contributions"
+msgstr "Так же принимали участие"
+
+#. Key:	A1E3C7C94228BBABEDD75EADF77F0197
+#. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:WhatAction [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:WhatAction [Script Bytecode]
+msgctxt ",A1E3C7C94228BBABEDD75EADF77F0197"
+msgid "[E] Pet"
+msgstr ""
+
+#. Key:	A34846EF44CB86CB2709D18DEB6E9BFC
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",A34846EF44CB86CB2709D18DEB6E9BFC"
+msgid "I guess they didn’t want to \r\nfight that much after all…"
+msgstr "Мне кажется, они не хотели драться после всего этого..."
+
+#. Key:	A3FDCCDD4B9D3830ADD57A833946E4A3
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
+msgctxt ",A3FDCCDD4B9D3830ADD57A833946E4A3"
+msgid "Sharpness"
+msgstr "Резкость"
+
+#. Key:	A4BCDA1F4DB7902127E5A3B9E369DAD5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_38.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_38.Text
+msgctxt ",A4BCDA1F4DB7902127E5A3B9E369DAD5"
+msgid "Thank you for Playing!"
+msgstr "Спасибо, что играли в нашу игру!"
+
+#. Key:	A7A993E84F562625DC7E14B16A4F7A9B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_1.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_1.Text
+msgctxt ",A7A993E84F562625DC7E14B16A4F7A9B"
+msgid "A Game By"
+msgstr "Создатели"
+
+#. Key:	A8A4E9E94E5C9AE0D66AA2945E30ABD2
+#. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
+msgctxt ",A8A4E9E94E5C9AE0D66AA2945E30ABD2"
+msgid "But that’s no problem for us, \r\nwe love being up late!"
+msgstr "Но это не проблема для нас, мы любим не спать допоздна!"
+
+#. Key:	A93F2051447DB3C191ACFD84D1D4CA4C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",A93F2051447DB3C191ACFD84D1D4CA4C"
+msgid "The queen was very sad about that so \r\nshe came and asked us for help."
+msgstr "Королева была очень расстроена, поэтому она пришла к нам, чтоб попросить о помощи"
+
+#. Key:	AA2F42FF4D22533A1D5301A20E37720A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra5.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra5.Text
+msgctxt ",AA2F42FF4D22533A1D5301A20E37720A"
+msgid "Catapult Stump"
+msgstr "Катапультироваться "
+
+#. Key:	AB72F1284D50491AEF6EF2BE5C06DC4B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra2.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra2.Text
+msgctxt ",AB72F1284D50491AEF6EF2BE5C06DC4B"
+msgid "Hover Jump"
+msgstr "Парящий прыжок"
+
+#. Key:	AB80CDBC416F5F519E83BF8DBB15FA92
+#. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip Text
+msgctxt ",AB80CDBC416F5F519E83BF8DBB15FA92"
+msgid "We harbour no ill will toward you or the cows \r\nanymore and I will let them all return home."
+msgstr "Мы больше не будем задерживать коров и вас, Я позволю им вернуться домой."
+
+#. Key:	ACBE71A14A73679C89832A94360EF6B2
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_6.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_6.Text
+msgctxt ",ACBE71A14A73679C89832A94360EF6B2"
+msgid "WASD"
+msgstr ""
+
+#. Key:	AD35AC9243BEDEA3EF1AA2AB45DD3BD8
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
+msgctxt ",AD35AC9243BEDEA3EF1AA2AB45DD3BD8"
+msgid "Texture Quality"
+msgstr "Качество текстур"
+
+#. Key:	ADA085F74B57CE874E02ECBB39E47421
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Sensitivity.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Sensitivity.Text
+msgctxt ",ADA085F74B57CE874E02ECBB39E47421"
+msgid "Camera Sensitivity"
+msgstr "Чувствительность камеры"
+
+#. Key:	ADCB28CC4DB932CBF2ECE299415E79DC
+#. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+#: /Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+msgctxt ",ADCB28CC4DB932CBF2ECE299415E79DC"
+msgid "       Move               Camera"
+msgstr ""
+
+#. Key:	AE768AC141B170B0B23E08B573E71D6C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_50.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_50.Text
+msgctxt ",AE768AC141B170B0B23E08B573E71D6C"
+msgid "Controls"
+msgstr "Управление"
+
+#. Key:	B02D994E445C87015062A69E255261FD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_78.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_78.Text
+msgctxt ",B02D994E445C87015062A69E255261FD"
+msgid "Ambience Volume"
+msgstr "Громкость окружения"
+
+#. Key:	B2ED1500421541F01B4269891B7545E4
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_31.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_31.Text
+msgctxt ",B2ED1500421541F01B4269891B7545E4"
+msgid "Texture Quality"
+msgstr "Качество текстур"
+
+#. Key:	B36DD6F3472BADE1AB3AB9AD2FBA7E85
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_35.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_35.Text
+msgctxt ",B36DD6F3472BADE1AB3AB9AD2FBA7E85"
+msgid "Fairy Queen - ..."
+msgstr "Королева Фей - ..."
+
+#. Key:	B473AA3E4619C378F0671687FE029133
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_84.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_84.Text
+msgctxt ",B473AA3E4619C378F0671687FE029133"
+msgid "Back"
+msgstr "Назад"
+
+#. Key:	B489A0E644C2FE933DD459AE4A96F1B0
+#. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip Text
+msgctxt ",B489A0E644C2FE933DD459AE4A96F1B0"
+msgid "I will transport you back to the forest as well."
+msgstr "Я перенесу вас назад в лес."
+
+#. Key:	B8B9487D44A70802847BEEAB4E6688C3
+#. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+msgctxt ",B8B9487D44A70802847BEEAB4E6688C3"
+msgid "Inside the mountain it was dark \r\nand there was a lot of places to fall down."
+msgstr "Внутри горы было темно и много мест, куда можно было упасть."
+
+#. Key:	B8CAC492438BC9FE2961EDB9C70E2DA8
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",B8CAC492438BC9FE2961EDB9C70E2DA8"
+msgid "I thought, we don’t really have \r\nto get involved anymore. "
+msgstr "Я думала, что мы не будем больше принимать в этом участие."
+
+#. Key:	BA2804FD48E18BC209AFCA94A0906C98
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",BA2804FD48E18BC209AFCA94A0906C98"
+msgid "Anyway, we did it!"
+msgstr "Тем не менее, мы сделали это!"
+
+#. Key:	BA3EC83844FFDB1CFA31019EA54013AD
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",BA3EC83844FFDB1CFA31019EA54013AD"
+msgid "but the cows didn’t think so."
+msgstr "но коровы так не считали."
+
+#. Key:	BA72214A4DCC74852F23A88CC1DFE12B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
+msgctxt ",BA72214A4DCC74852F23A88CC1DFE12B"
+msgid "Fullscreen"
+msgstr "На весь экран"
+
+#. Key:	BA7A51F949B51B77AA920E8C4A3615A5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_4.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_4.Text
+msgctxt ",BA7A51F949B51B77AA920E8C4A3615A5"
+msgid "Display"
+msgstr "Экран"
+
+#. Key:	BC327DA8462E7C4EF1FA268C3C2DD451
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra7.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra7.Text
+msgctxt ",BC327DA8462E7C4EF1FA268C3C2DD451"
+msgid "Stop Hitting Yourself"
+msgstr "Перестань бить себя"
+
+#. Key:	BCB7914B4B01D7A2F5B3CEB5F8C81EF5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_35.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_35.Text
+msgctxt ",BCB7914B4B01D7A2F5B3CEB5F8C81EF5"
+msgid "Cave"
+msgstr "Пещера"
+
+#. Key:	BE5A307D4F7FDCBFFB390BA7FFBDAF9B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_23.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_23.Text
+msgctxt ",BE5A307D4F7FDCBFFB390BA7FFBDAF9B"
+msgid "Graphics"
+msgstr "Графика"
+
+#. Key:	BE9795FA4E0B3C454C24F783143F8ABA
+#. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
+msgctxt ",BE9795FA4E0B3C454C24F783143F8ABA"
+msgid "Yes, and Ms. Cowknight is helping us too!"
+msgstr "Да, и Мисс Каунайт помогает нам!"
+
+#. Key:	BEBF5D634B4216A566A1B69203737F8A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra10.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra10.Text
+msgctxt ",BEBF5D634B4216A566A1B69203737F8A"
+msgid "Why did you eat those\r\nshrooms, Grusa?"
+msgstr "Зачем ты съела эти грибы, Грюса?"
+
+#. Key:	BF6F54B04325D0135D99BFA55BD0950C
+#. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
+msgctxt ",BF6F54B04325D0135D99BFA55BD0950C"
+msgid "I see that you have made it through \r\nour challenges and freed the cows. "
+msgstr "Я вижу, что вы справились со всеми заданиями и освободили коров."
+
+#. Key:	C0F586944CA48CD0D55E53AEF3D2BFA5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",C0F586944CA48CD0D55E53AEF3D2BFA5"
+msgid "One day, the queen \r\nof the cows wasn’t looking"
+msgstr "Однажды, королева коров не обратила внимание "
+
+#. Key:	C12D436544FD9F98EA585B9D039AC16F
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_34.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_34.Text
+msgctxt ",C12D436544FD9F98EA585B9D039AC16F"
+msgid "Shadow Quality"
+msgstr "Качество теней"
+
+#. Key:	C22F0D124EC4F0C94A68C7ACC2EC2556
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.SkipText.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.SkipText.Text
+msgctxt ",C22F0D124EC4F0C94A68C7ACC2EC2556"
+msgid "[ENTER/START] Skip"
+msgstr "[Ввод/Старт] Пропустить"
+
+#. Key:	C349DBA64DDDC4840C8E59997D729B8D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
+msgctxt ",C349DBA64DDDC4840C8E59997D729B8D"
+msgid "Low"
+msgstr "Низкая"
+
+#. Key:	C3F21FAD48B5F462F842DCA5B98C77CC
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",C3F21FAD48B5F462F842DCA5B98C77CC"
+msgid "and quickly they all went back home!"
+msgstr "и быстро разбежались по домам!"
+
+#. Key:	C63373564E80D1315237CCB29D476557
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
+msgctxt ",C63373564E80D1315237CCB29D476557"
+msgid "Warmth"
+msgstr "Теплота"
+
+#. Key:	C6893F314D7F0C9D510518B3C671BAA7
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.InversionY.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.InversionY.Text
+msgctxt ",C6893F314D7F0C9D510518B3C671BAA7"
+msgid "Invert Camera Y"
+msgstr "Инверсия камеры Y"
+
+#. Key:	C948855E4269E339003D30978F549B0B
+#. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:WidgetTree.SkipText.Text
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:WidgetTree.SkipText.Text
+msgctxt ",C948855E4269E339003D30978F549B0B"
+msgid "[ENTER/START] Skip"
+msgstr "[Ввод/Старт] Пропустить"
+
+#. Key:	CB0FF21E4BC4144C593FD4B724E77C8F
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Text.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Text.Text
+msgctxt ",CB0FF21E4BC4144C593FD4B724E77C8F"
+msgid "Level Select"
+msgstr "Выбрать уровень"
+
+#. Key:	CD6B5E9E48AF08E7DD8C2982E6A568BF
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_33.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_33.Text
+msgctxt ",CD6B5E9E48AF08E7DD8C2982E6A568BF"
+msgid "View Distance"
+msgstr "Дальность прорисовки "
+
+#. Key:	CF10E9D742D730FAC9E3FBB4CF5D328C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_37.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_37.Text
+msgctxt ",CF10E9D742D730FAC9E3FBB4CF5D328C"
+msgid "Resolution Scale"
+msgstr "Разрешение "
+
+#. Key:	CFE6B4B94AF376C636C80BA453057152
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_15.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_15.Text
+msgctxt ",CFE6B4B94AF376C636C80BA453057152"
+msgid "Zoom"
+msgstr "Увеличение"
+
+#. Key:	D0241FA64DFDFD04366120AD8346947E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_74.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_74.Text
+msgctxt ",D0241FA64DFDFD04366120AD8346947E"
+msgid "Audio"
+msgstr "Аудио"
+
+#. Key:	D0A852BC409CEB4EE807758548B0C505
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:WidgetTree.SkipText.Text
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:WidgetTree.SkipText.Text
+msgctxt ",D0A852BC409CEB4EE807758548B0C505"
+msgid "[ENTER/START] Skip"
+msgstr "[Ввод/Старт] Пропустить"
+
+#. Key:	D0DD890649242697054E60B5B2ACC5B2
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra8.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra8.Text
+msgctxt ",D0DD890649242697054E60B5B2ACC5B2"
+msgid "Oink?"
+msgstr "Хрю"
+
+#. Key:	D119E44F4877388E835ECA9BEA5E5106
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_0.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_0.Text
+msgctxt ",D119E44F4877388E835ECA9BEA5E5106"
+msgid "Continue"
+msgstr "Продолжить"
+
+#. Key:	D331954148677D9F50871EBEE4D4710F
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
+msgctxt ",D331954148677D9F50871EBEE4D4710F"
+msgid "Shadow Quality"
+msgstr "Качество теней"
+
+#. Key:	D3BAE84E49DCCA5C8AE74ABC92EBED5B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_30.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_30.Text
+msgctxt ",D3BAE84E49DCCA5C8AE74ABC92EBED5B"
+msgid "Cast"
+msgstr "В ролях"
+
+#. Key:	D40FE52544ADF358813FACBA9C16FB5E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_25.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_25.Text
+msgctxt ",D40FE52544ADF358813FACBA9C16FB5E"
+msgid "Swamp"
+msgstr "Болото"
+
+#. Key:	D64833CA4C128ACCD0819D81D54658B1
+#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip Text
+msgctxt ",D64833CA4C128ACCD0819D81D54658B1"
+msgid "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
+msgstr "Давай, можешь запрыгнуть мне на спину, чтоб перепрыгнуть через эту стену, я не возражаю. "
+
+#. Key:	D64B910147DBD3262B57A59A5E060616
+#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaBP_197.Tooltip Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaBP_197.Tooltip Text
+msgctxt ",D64B910147DBD3262B57A59A5E060616"
+msgid "[WASD] Move         [MOUSE] Camera"
+msgstr ""
+
+#. Key:	D887D47046F8021FE0005698D542FCE9
+#. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
+msgctxt ",D887D47046F8021FE0005698D542FCE9"
+msgid "Already in use"
+msgstr "Уже используется"
+
+#. Key:	D9193FA645FFB26AA0C0799FD4949E3B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",D9193FA645FFB26AA0C0799FD4949E3B"
+msgid "And the fairies got mad about it!"
+msgstr "И феи очень разозлились!"
+
+#. Key:	D98493E54444E4D01343E5AA5FA02C57
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
+msgctxt ",D98493E54444E4D01343E5AA5FA02C57"
+msgid "Field of View"
+msgstr ""
+
+#. Key:	DAC6F3BE484C965498759AAC2FA0DA78
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_20.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_20.Text
+msgctxt ",DAC6F3BE484C965498759AAC2FA0DA78"
+msgid "Medium"
+msgstr "Средняя"
+
+#. Key:	DB182CC84FD93F6DCE03DCBD04D283A1
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",DB182CC84FD93F6DCE03DCBD04D283A1"
+msgid "The queen rallied all of her returned cows."
+msgstr "Королева собрала всех вернувшихся коров."
+
+#. Key:	DB5E59314426430A8A6E059710194464
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_37.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_37.Text
+msgctxt ",DB5E59314426430A8A6E059710194464"
+msgid "Resolution Scale"
+msgstr "Разрешение "
+
+#. Key:	DC3F1DF34B4028677F2B65BEB0CF9201
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",DC3F1DF34B4028677F2B65BEB0CF9201"
+msgid "Grusa farted so bad, the cows \r\nand the fairies couldn’t stand it"
+msgstr "Грюса пукнула, так сильно, что феи и коровы не могли этого терпеть"
+
+#. Key:	DD40FBFF48483CBEC61557AAA2D3B603
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_13.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_13.Text
+msgctxt ",DD40FBFF48483CBEC61557AAA2D3B603"
+msgid "Camera"
+msgstr "Камера"
+
+#. Key:	DFCCE0E248CBE31D7E9E12B39AA56742
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_14.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_14.Text
+msgctxt ",DFCCE0E248CBE31D7E9E12B39AA56742"
+msgid "Animation"
+msgstr "Анимации"
+
+#. Key:	E1C9ABC74D8BA60FF4DE8D8DE0734AE6
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_41.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_41.Text
+msgctxt ",E1C9ABC74D8BA60FF4DE8D8DE0734AE6"
+msgid "Controller"
+msgstr "Контроллер"
+
+#. Key:	E2A278514306603115EACEAB295C4B98
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",E2A278514306603115EACEAB295C4B98"
+msgid "And we said yes! We always help our friends."
+msgstr "И мы согласились! Мы всегда помогаем нашим друзьям."
+
+#. Key:	E4A78FAC4E20D1DFB42615A18B950940
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_31.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_31.Text
+msgctxt ",E4A78FAC4E20D1DFB42615A18B950940"
+msgid "Vilde - Kevin Engstrand"
+msgstr "Вилде - Kevin Engstrand"
+
+#. Key:	E578AF8E49840B499941DEBB0521812C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_23.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_23.Text
+msgctxt ",E578AF8E49840B499941DEBB0521812C"
+msgid "Localization"
+msgstr "Локализация"
+
+#. Key:	E581590640BE412D0B9DCF9FA9D55084
+#. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
+msgctxt ",E581590640BE412D0B9DCF9FA9D55084"
+msgid "Already in use"
+msgstr "Уже используется"
+
+#. Key:	E5E431E544EAC6E1A83534A56429AEE2
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_34.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_34.Text
+msgctxt ",E5E431E544EAC6E1A83534A56429AEE2"
+msgid "Ms. Cowknight - ..."
+msgstr "Мисс Каунайт - ..."
+
+#. Key:	EB610E544B887E9E375582BD1275A1C4
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.IntroSubtitles.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.IntroSubtitles.Text
+msgctxt ",EB610E544B887E9E375582BD1275A1C4"
+msgid "Waow"
+msgstr ""
+
+#. Key:	EBD18165465C4BC550FE1983DFE2B006
+#. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
+msgctxt ",EBD18165465C4BC550FE1983DFE2B006"
+msgid "so we stopped for some food."
+msgstr "поэтому мы остановились перекусить."
+
+#. Key:	EBF284A04F1BB33583B93A8EF9ECC9BE
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
+msgctxt ",EBF284A04F1BB33583B93A8EF9ECC9BE"
+msgid "Defaults"
+msgstr "Стандартные"
+
+#. Key:	EE95EDAA445D722B493283BA32348532
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",EE95EDAA445D722B493283BA32348532"
+msgid "Calm down…"
+msgstr "Успокойся.."
+
+#. Key:	F0EBCE9E476423B07432529D3E9EA524
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
+msgctxt ",F0EBCE9E476423B07432529D3E9EA524"
+msgid "Ultra"
+msgstr "Ультра"
+
+#. Key:	F0FCF11D4DC21D808B1CB7ACD51700D8
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_55.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_55.Text
+msgctxt ",F0FCF11D4DC21D808B1CB7ACD51700D8"
+msgid "Vignette"
+msgstr "Виньетка"
+
+#. Key:	F23F2FA9452DE244AD63BB8749AFF5D4
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_19.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_19.Text
+msgctxt ",F23F2FA9452DE244AD63BB8749AFF5D4"
+msgid "Vocals (Swedish Herding Call)"
+msgstr "Вокал"
+
+#. Key:	F2665A0C478A82C925D0D2876F79FC78
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_38.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_38.Text
+msgctxt ",F2665A0C478A82C925D0D2876F79FC78"
+msgid "Options"
+msgstr "Настройки"
+
+#. Key:	F29C55744306C5736FFAC28F082BFB0F
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_11.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_11.Text
+msgctxt ",F29C55744306C5736FFAC28F082BFB0F"
+msgid "Depth of Field"
+msgstr "Глубина резкости"
+
+#. Key:	F2E57F794D081CE4ABEB8CAE3530B5DB
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra6.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra6.Text
+msgctxt ",F2E57F794D081CE4ABEB8CAE3530B5DB"
+msgid "The Speed of Gnome"
+msgstr "Скорость гнома"
+
+#. Key:	F3656B1F4E32EA8D9B0CF29D902CED0F
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",F3656B1F4E32EA8D9B0CF29D902CED0F"
+msgid "They were really mad about \r\nwhat the fairies had done!"
+msgstr ""
+
+#. Key:	F3EAA03B411173A7369575B30A304F66
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",F3EAA03B411173A7369575B30A304F66"
+msgid "But then! Then there was a big stink!"
+msgstr "Но затем! Затем очень завоняло!"
+
+#. Key:	F45A95624C2579EF0867E69BDE6CB3E9
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_3.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_3.Text
+msgctxt ",F45A95624C2579EF0867E69BDE6CB3E9"
+msgid "Move"
+msgstr "Движение"
+
+#. Key:	F485ED98407D4BDAF6847EBD9806ADBF
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra3.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra3.Text
+msgctxt ",F485ED98407D4BDAF6847EBD9806ADBF"
+msgid "One Punch Troll"
+msgstr "Сокрушающий удар"
+
+#. Key:	F5079E3743CB992C960E4DBAF2F597E7
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",F5079E3743CB992C960E4DBAF2F597E7"
+msgid "Hi! Hello - oh, oh, story time!"
+msgstr "Привет! Здравствуй - о, о, время историй!"
+
+#. Key:	F56685494683A0DF921FDCBE5CB880D4
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
+msgctxt ",F56685494683A0DF921FDCBE5CB880D4"
+msgid "And they magiced away almost \r\nall of the cows to teach them a lesson!"
+msgstr "И они заколдовали практически всех коров, чтоб преподать им урок!"
+
+#. Key:	F5A5CC5F41972EE4A594D5BB8D5639C3
+#. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_36.Text
+#: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_36.Text
+msgctxt ",F5A5CC5F41972EE4A594D5BB8D5639C3"
+msgid "Special Thanks"
+msgstr "Особая Благодарность"
+
+#. Key:	F6831A2F4FE0887EEC173AAB15C1493E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_41.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_41.Text
+msgctxt ",F6831A2F4FE0887EEC173AAB15C1493E"
+msgid "Controller"
+msgstr "Контроллер"
+
+#. Key:	F841FA6849497D06355E288B3CD98692
+#. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
+msgctxt ",F841FA6849497D06355E288B3CD98692"
+msgid "So we all came back to the forest and \r\nwe thought everything was fine"
+msgstr "Поэтому мы все вернулись в лес и думали, что все хорошо"
+
+#. Key:	F8FD46104848A05BB65FA58428C81C2B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_7.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_7.Text
+msgctxt ",F8FD46104848A05BB65FA58428C81C2B"
+msgid "Fullscreen"
+msgstr "На весь экран"
+
+#. Key:	FA0A803B4BBC515E0688478860F97E12
+#. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip Text
+msgctxt ",FA0A803B4BBC515E0688478860F97E12"
+msgid "She might not be the brightest but \r\nshe is sturdy and fearless."
+msgstr "Возможно она не самая яркая, но зато она сильная и бесстрашная"
+
+#. Key:	FA57D0534269BC832573C9A16F716385
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Foli.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Foli.Text
+msgctxt ",FA57D0534269BC832573C9A16F716385"
+msgid "Foliage Amount"
+msgstr "Количество листвы"
+
+#. Key:	FA59822F4BB3C3787EBDAE9CF2BA7BA2
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_44.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_44.Text
+msgctxt ",FA59822F4BB3C3787EBDAE9CF2BA7BA2"
+msgid "Sharpness"
+msgstr "Резкость"
+
+#. Key:	FB4F5B82498EC030A4058391A8B5F954
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_48.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_48.Text
+msgctxt ",FB4F5B82498EC030A4058391A8B5F954"
+msgid "Video"
+msgstr "Видео"
+
+#. Key:	FDBCFD9C40011EF269194AB278A691BD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:WidgetTree.TextButton.Text
+#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:WidgetTree.TextButton.Text
+msgctxt ",FDBCFD9C40011EF269194AB278A691BD"
+msgid "Press Any Button"
+msgstr "Нажми любую кнопку"
+
+#. Key:	FF374A4646D8CA78CAFFBF9E59AD257D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_39.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_39.Text
+msgctxt ",FF374A4646D8CA78CAFFBF9E59AD257D"
+msgid "Treasures"
+msgstr "Сокровища"
+
+#. Key:	FFCE343C4BCE8FD4099937AA48D479CB
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_9.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_9.Text
+msgctxt ",FFCE343C4BCE8FD4099937AA48D479CB"
+msgid "Move"
+msgstr "Движение"
+
