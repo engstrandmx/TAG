@@ -4,6 +4,9 @@
         <property name="name">
             <value>Kuling delay</value>
         </property>
+        <relationship name="masters">
+            <destination>{486b3828-1454-468b-950f-dfb3e9789c24}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{80dc8293-b25e-42d2-8a34-41fafa20341a}</destination>
         </relationship>

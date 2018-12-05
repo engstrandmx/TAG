@@ -756,6 +756,9 @@
         <property name="attackTime">
             <value>0</value>
         </property>
+        <property name="releaseTime">
+            <value>120</value>
+        </property>
     </object>
     <object class="ADSRModulator" id="{8d038748-7e9c-4824-acde-56780269f9d0}">
         <property name="nameOfPropertyBeingModulated">
@@ -790,7 +793,7 @@
             <value>0</value>
         </property>
         <property name="releaseTime">
-            <value>520</value>
+            <value>220</value>
         </property>
     </object>
     <object class="ADSRModulator" id="{aee92766-a634-4d33-b7c0-92d2c967dcf8}">
