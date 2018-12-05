@@ -1,18 +1,17 @@
+﻿# Game Spanish translation.
 # Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2018-12-03 15:51\n"
-"PO-Revision-Date: 2018-12-03 17:29+0100\n"
+"POT-Creation-Date: 2018-12-05 16:05\n"
+"PO-Revision-Date: 2018-12-05 16:05\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: \n"
-"X-Generator: Poedit 2.2\n"
 
 #. Key:	00CD1F334AFEAFBF8623EFA082D36BFA
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_29.Text
@@ -35,12 +34,12 @@ msgctxt ",025856B240C4DE7AA9341BAD8A013042"
 msgid "Brightness"
 msgstr "Brillo"
 
-#. Key:	052E0935498A8C4D969D33AA0E01B94B
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_10.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_10.Text
-msgctxt ",052E0935498A8C4D969D33AA0E01B94B"
-msgid "WASD"
-msgstr "WASD"
+#. Key:	05E6F9DB4F17080A793F0A8B1E1310A3
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
+msgctxt ",05E6F9DB4F17080A793F0A8B1E1310A3"
+msgid "Resolution"
+msgstr "Resolución"
 
 #. Key:	05FF8C464D362B108E2475915BD0366B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_19.Text
@@ -58,23 +57,73 @@ msgstr "Idioma"
 
 #. Key:	08B90C7A4E285E7572200589D16F41CE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
 msgctxt ",08B90C7A4E285E7572200589D16F41CE"
 msgid "Press Any Key"
 msgstr "Pulsa Cualquier Tecla"
 
+#. Key:	09E497BB401783B3288577BDC3FD1409
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
+msgctxt ",09E497BB401783B3288577BDC3FD1409"
+msgid "Brightness"
+msgstr "Brillo"
+
+#. Key:	0AA7ADE64E7C9E759AAE6299E562A57A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_63.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_63.Text
+msgctxt ",0AA7ADE64E7C9E759AAE6299E562A57A"
+msgid "VSync"
+msgstr "VSync"
+
+#. Key:	0E21F0CD4307B240C25DA28C1D130215
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_75.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_75.Text
+msgctxt ",0E21F0CD4307B240C25DA28C1D130215"
+msgid "Master Volume"
+msgstr "Volumen Maestro"
+
 #. Key:	112FB0EA4F8025393E18219A6688790F
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip Text
 msgctxt ",112FB0EA4F8025393E18219A6688790F"
-msgid ""
-"You must be the heroes my \r\n"
-"queen told me about."
-msgstr ""
-"Tenéis que ser los héroes \n"
-"que mi reina me dijo."
+msgid "You must be the heroes my \r\nqueen told me about."
+msgstr "Tenéis que ser los héroes \nque mi reina me dijo."
+
+#. Key:	117CAFA44BFC377BC633AFBB4D54EAD1
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextAAOptions(1).TextAAOptions
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextAAOptions(1).TextAAOptions
+msgctxt ",117CAFA44BFC377BC633AFBB4D54EAD1"
+msgid "FXAA"
+msgstr "FXAA"
+
+#. Key:	1231AC1741A64DEF2F981892098C9098
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
+msgctxt ",1231AC1741A64DEF2F981892098C9098"
+msgid "Foliage Amount"
+msgstr "Cantidad de Follaje"
+
+#. Key:	13AB0979462052FACDBCFD8EA6426FBA
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_74.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_74.Text
+msgctxt ",13AB0979462052FACDBCFD8EA6426FBA"
+msgid "Audio"
+msgstr "Audio"
+
+#. Key:	13BA7332460D1687B678EB9E4BE2F247
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextAAOptions(0).TextAAOptions
+#: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextAAOptions(0).TextAAOptions
+msgctxt ",13BA7332460D1687B678EB9E4BE2F247"
+msgid "None"
+msgstr "Ninguna"
+
+#. Key:	15E335564BD7D41E1F542E9CB68E386A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextAAOptions(2).TextAAOptions
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextAAOptions(2).TextAAOptions
+msgctxt ",15E335564BD7D41E1F542E9CB68E386A"
+msgid "TAA"
+msgstr "TAA"
 
 #. Key:	170155244BF35928DF06588BEC25E7A3
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_5.Text
@@ -99,11 +148,17 @@ msgstr "Ratón"
 
 #. Key:	1ACD6E8D432FC84E60DAFA96BAF7C75C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",1ACD6E8D432FC84E60DAFA96BAF7C75C"
 msgid "I’ll start..."
 msgstr "Empezaré yo..."
+
+#. Key:	1B03575A40037CD5FF09F0ADD6A20737
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(2).TextOptions
+#: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(2).TextOptions
+msgctxt ",1B03575A40037CD5FF09F0ADD6A20737"
+msgid "High"
+msgstr "Alto"
 
 #. Key:	1D5071854579AF67FDDF38A8FA37CDA1
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra4.Text
@@ -121,15 +176,17 @@ msgstr "Valor por Defecto"
 
 #. Key:	1D6637DA442CEDB4D779728E210D7DC9
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",1D6637DA442CEDB4D779728E210D7DC9"
-msgid ""
-"But I said as long as we are together, \r\n"
-"we don't have to be afraid."
-msgstr ""
-"Pero yo dije que mientras sigamos \n"
-"juntos, no hay nada que temer."
+msgid "But I said as long as we are together, \r\nwe don't have to be afraid."
+msgstr "Pero yo dije que mientras sigamos \njuntos, no hay nada que temer."
+
+#. Key:	1E7FA6874E9C5818352074827DF70977
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_70.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_70.Text
+msgctxt ",1E7FA6874E9C5818352074827DF70977"
+msgid "Pause"
+msgstr "Pausa"
 
 #. Key:	1F26EF1540F6123FC7D02880550B6B91
 #. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
@@ -138,12 +195,12 @@ msgctxt ",1F26EF1540F6123FC7D02880550B6B91"
 msgid "Camera"
 msgstr "Cámara"
 
-#. Key:	1FD7F32E443305DB6701F880C394BD70
+#. Key:	200189BC4280C2467ACA8AB17E7EB38F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
-msgctxt ",1FD7F32E443305DB6701F880C394BD70"
+msgctxt ",200189BC4280C2467ACA8AB17E7EB38F"
 msgid "Anti Aliasing"
-msgstr "Suavizado de Bordes"
+msgstr "Anti Aliasing"
 
 #. Key:	20503EBA483DA6C2A24DBE8949587867
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_2.Text
@@ -152,24 +209,17 @@ msgctxt ",20503EBA483DA6C2A24DBE8949587867"
 msgid "Back"
 msgstr "Volver"
 
-#. Key:	21B2EBAA4DE084D8DCBDCE9788910077
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
-msgctxt ",21B2EBAA4DE084D8DCBDCE9788910077"
-msgid "Vignette"
-msgstr "Viñeta"
+#. Key:	213D6556479BCFC95EFC99BEC99CFC6C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_41.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_41.Text
+msgctxt ",213D6556479BCFC95EFC99BEC99CFC6C"
+msgid "Controller"
+msgstr "Mando"
 
 #. Key:	22DD332A496D7F0220D01F83B02F1CE1
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_17.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_17.Text
 msgctxt ",22DD332A496D7F0220D01F83B02F1CE1"
-msgid "Colours"
-msgstr "Color"
-
-#. Key:	24279A724C8C0ED67AD731ABFF1C68B2
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
-msgctxt ",24279A724C8C0ED67AD731ABFF1C68B2"
 msgid "Colours"
 msgstr "Color"
 
@@ -180,69 +230,54 @@ msgctxt ",24C0AB6849AB162F8DE689ACAF86042E"
 msgid "Master Volume"
 msgstr "Volumen Maestro"
 
-#. Key:	25B4A185457D0593C7F9DBB1A7B1F345
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
-msgctxt ",25B4A185457D0593C7F9DBB1A7B1F345"
-msgid "Ambience Volume"
-msgstr "Volumen de Ambiente"
-
-#. Key:	261FFB8547DF4AA788C6E1BF9194D04E
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Sensitivity.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Sensitivity.Text
-msgctxt ",261FFB8547DF4AA788C6E1BF9194D04E"
-msgid "Camera Sensitivity"
-msgstr "Sensibilidad de Cámara"
+#. Key:	25B073EB4EDE87E1900E4486F9A89FCE
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextAAOptions(0).TextAAOptions
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextAAOptions(0).TextAAOptions
+msgctxt ",25B073EB4EDE87E1900E4486F9A89FCE"
+msgid "None"
+msgstr "Ninguna"
 
 #. Key:	27D23FFA419857347A62E5AD1933AB08
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",27D23FFA419857347A62E5AD1933AB08"
 msgid "I said no, no fighting! "
 msgstr "Yo dije “¡No, nada de peleas!”"
 
-#. Key:	2851CFD34DE843E2F51C6D802C6CF0A8
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
-msgctxt ",2851CFD34DE843E2F51C6D802C6CF0A8"
-msgid "Brightness"
-msgstr "Brillo"
+#. Key:	27E46180442580BAD8BF01917EE7C359
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Sensitivity.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Sensitivity.Text
+msgctxt ",27E46180442580BAD8BF01917EE7C359"
+msgid "Camera Sensitivity"
+msgstr "Sensibilidad de Cámara"
 
 #. Key:	291B4BF4444EC9F6F96BC6A435F0D77C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",291B4BF4444EC9F6F96BC6A435F0D77C"
-msgid ""
-"Ohh! Oh yeah, the beginning... \r\n"
-"Let’s do that!"
-msgstr ""
-"Ohh! Oh sí, el principio… \n"
-"¡Hagamos eso!"
-
-#. Key:	29F6F6B14457CCA3F4AF7AB71D0C1233
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
-msgctxt ",29F6F6B14457CCA3F4AF7AB71D0C1233"
-msgid "Foliage Amount"
-msgstr "Cantidad de Follaje"
+msgid "Ohh! Oh yeah, the beginning... \r\nLet’s do that!"
+msgstr "Ohh! Oh sí, el principio… \n¡Hagamos eso!"
 
 #. Key:	2A386D4D4F3CE4A06216BC9FD2EBF314
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",2A386D4D4F3CE4A06216BC9FD2EBF314"
 msgid "So we kept going!"
 msgstr "¡Así que seguimos adelante!"
 
 #. Key:	2B9609C04296F4EF8065E0993CC7A96C
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip Text
 msgctxt ",2B9609C04296F4EF8065E0993CC7A96C"
 msgid "And now you"
 msgstr "Y ahora vosotros"
+
+#. Key:	2C0E410047B23F3279CAD7AAAF385B90
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_16.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_16.Text
+msgctxt ",2C0E410047B23F3279CAD7AAAF385B90"
+msgid "Scroll Wheel"
+msgstr "Rueda de Desplazamiento"
 
 #. Key:	2DB3560E4261DD2970E6858468086EEE
 #. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
@@ -272,6 +307,13 @@ msgctxt ",3013174649D61C4EB34D6BA9034C5C74"
 msgid "Defaults"
 msgstr "Valor por Defecto"
 
+#. Key:	314B7B8E477FC90446B675BE0B842B83
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
+msgctxt ",314B7B8E477FC90446B675BE0B842B83"
+msgid "Medium"
+msgstr "Medio"
+
 #. Key:	322C976346A2FEE8C46BBA88F892AE8D
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_21.Text
 #: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_21.Text
@@ -288,22 +330,10 @@ msgstr "Volver"
 
 #. Key:	35B08D51401FFEC73C27B2A33A4D8DB5
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",35B08D51401FFEC73C27B2A33A4D8DB5"
-msgid ""
-"We didn’t go through all that \r\n"
-"work just to have them fight. "
-msgstr ""
-"No habíamos pasado por todo \n"
-"eso sólo para que se pelearan."
-
-#. Key:	3601EECD4E89E2DB87C206AC39C8530E
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_77.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_77.Text
-msgctxt ",3601EECD4E89E2DB87C206AC39C8530E"
-msgid "Effects Volume"
-msgstr "Volumen de Efectos"
+msgid "We didn’t go through all that \r\nwork just to have them fight. "
+msgstr "No habíamos pasado por todo \neso sólo para que se pelearan."
 
 #. Key:	38E9D8A74B0677841DD4188C87B536DE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_10.Text
@@ -312,13 +342,6 @@ msgctxt ",38E9D8A74B0677841DD4188C87B536DE"
 msgid "Barn"
 msgstr "Granero"
 
-#. Key:	38F22B8B42C609C4D4077F8882E79316
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_74.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_74.Text
-msgctxt ",38F22B8B42C609C4D4077F8882E79316"
-msgid "Audio"
-msgstr "Audio"
-
 #. Key:	39B122AC40E7E2ABB261CEA51175F302
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_49.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_49.Text
@@ -326,24 +349,19 @@ msgctxt ",39B122AC40E7E2ABB261CEA51175F302"
 msgid "Audio"
 msgstr "Audio"
 
-#. Key:	39D6D5574979FB28CCB919BEAF062E7D
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionY.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionY.Text
-msgctxt ",39D6D5574979FB28CCB919BEAF062E7D"
-msgid "Invert Camera Y"
-msgstr "Invertir cámara Y"
+#. Key:	3A2A6493451C0D10F6BE31A9F10ABDF6
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
+msgctxt ",3A2A6493451C0D10F6BE31A9F10ABDF6"
+msgid "Colours"
+msgstr "Color"
 
 #. Key:	3A2E369240A6AA01D383449EB147565E
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",3A2E369240A6AA01D383449EB147565E"
-msgid ""
-"After all that running \r\n"
-"around we got hungry"
-msgstr ""
-"Después de correr tanto \n"
-"nos entró hambre"
+msgid "After all that running \r\naround we got hungry"
+msgstr "Después de correr tanto \nnos entró hambre"
 
 #. Key:	3ADBCF494024058FAF4BDA80EFC0B4AD
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_52.Text
@@ -361,11 +379,17 @@ msgstr "Vaca Americana"
 
 #. Key:	3E51B47E4AB593933EE9EA8A4750763E
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
 msgctxt ",3E51B47E4AB593933EE9EA8A4750763E"
 msgid "If you call, she will come to your aid."
 msgstr "Si llamáis, ella vendrá en vuestra ayuda."
+
+#. Key:	3F634BFE49A364FCB44EE6AD09B4A28B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextAAOptions(1).TextAAOptions
+#: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextAAOptions(1).TextAAOptions
+msgctxt ",3F634BFE49A364FCB44EE6AD09B4A28B"
+msgid "FXAA"
+msgstr "FXAA"
 
 #. Key:	3FC86B2F479845FD19E451B39BA5585A
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.SkipText.Text
@@ -374,24 +398,12 @@ msgctxt ",3FC86B2F479845FD19E451B39BA5585A"
 msgid "[ENTER/START] Skip"
 msgstr "[ENTER/START] Saltar"
 
-#. Key:	408F5CFA43A8127DA324119B53F81953
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_75.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_75.Text
-msgctxt ",408F5CFA43A8127DA324119B53F81953"
-msgid "Master Volume"
-msgstr "Volumen Maestro"
-
 #. Key:	4091A6D049575A86F68BF1B7BC262174
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",4091A6D049575A86F68BF1B7BC262174"
-msgid ""
-"but we’re best friends and there were cows \r\n"
-"and we’re friends too and I jumped a lot"
-msgstr ""
-"pero somos mejores amigos y había vacas \n"
-"y éramos amigos también y yo salté un montón"
+msgid "but we’re best friends and there were cows \r\nand we’re friends too and I jumped a lot"
+msgstr "pero somos mejores amigos y había vacas \ny éramos amigos también y yo salté un montón"
 
 #. Key:	40D32E33446920F293B13DAD8188814B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_22.Text
@@ -400,25 +412,16 @@ msgctxt ",40D32E33446920F293B13DAD8188814B"
 msgid "Ultra"
 msgstr "Ultra"
 
-#. Key:	40D9A5264D469907DA595BB49D791CD8
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
-msgctxt ",40D9A5264D469907DA595BB49D791CD8"
-msgid "Gamma"
-msgstr "Gamma"
-
 #. Key:	40F0226F4C09EBE17C3BC692F8A8299F
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip Text
 msgctxt ",40F0226F4C09EBE17C3BC692F8A8299F"
 msgid "Very Well"
 msgstr "Muy bien"
 
 #. Key:	410402B74FC28B0A389B3A92D67D5A69
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
 msgctxt ",410402B74FC28B0A389B3A92D67D5A69"
 msgid "Read Sign"
 msgstr "Leer Letrero"
@@ -430,10 +433,16 @@ msgctxt ",41D5E78E41F9C173C1ED4382057DD121"
 msgid "Video"
 msgstr "Vídeo"
 
+#. Key:	41F1A7A54A4A09505516DEB1DC0A30FC
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_9.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_9.Text
+msgctxt ",41F1A7A54A4A09505516DEB1DC0A30FC"
+msgid "Move"
+msgstr "Mover"
+
 #. Key:	425451834E32AA548DC179B58BFD22DC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",425451834E32AA548DC179B58BFD22DC"
 msgid "We got the cows home and saved the day!"
 msgstr "¡Devolvimos las vacas a su hogar y salvamos el día!"
@@ -445,26 +454,26 @@ msgctxt ",426CD12544D71E69ABA990874916489D"
 msgid "Default Controls"
 msgstr "Controles por Defecto"
 
+#. Key:	4336DA3441A90EEA9B815D8BCEF5F9A7
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
+msgctxt ",4336DA3441A90EEA9B815D8BCEF5F9A7"
+msgid "Ambience Volume"
+msgstr "Volumen de Ambiente"
+
+#. Key:	4399C9C14DFBDE72663D8DB3684C0DFC
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
+msgctxt ",4399C9C14DFBDE72663D8DB3684C0DFC"
+msgid "Gamma"
+msgstr "Gamma"
+
 #. Key:	450FEB7D422CB058CD10768DB59DE185
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_43.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_43.Text
 msgctxt ",450FEB7D422CB058CD10768DB59DE185"
 msgid "Warmth"
 msgstr "Calidez"
-
-#. Key:	46416F454F0665FA7163EBAC666E62C5
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_63.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_63.Text
-msgctxt ",46416F454F0665FA7163EBAC666E62C5"
-msgid "VSync"
-msgstr "VSync"
-
-#. Key:	46E383A748E0AC7AAA7FD6908F3955A2
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_6.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_6.Text
-msgctxt ",46E383A748E0AC7AAA7FD6908F3955A2"
-msgid "Display"
-msgstr "Pantalla"
 
 #. Key:	47E21A3448FB76270DAD7183950A8251
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_8.Text
@@ -475,8 +484,7 @@ msgstr "Resolución"
 
 #. Key:	485B12414068D8C9C8CF9BB9B0A2FAAF
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip Text
 msgctxt ",485B12414068D8C9C8CF9BB9B0A2FAAF"
 msgid "I’m here to help."
 msgstr "Estoy aquí para ayudar."
@@ -509,50 +517,19 @@ msgctxt ",4CB80C5A46C7D1BD37C3CB86AF778D7C"
 msgid "Press Any Button"
 msgstr "Pulsa Cualquier Botón"
 
-#. Key:	4D4D319E41C916C037878BA6D66FCAA0
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionX.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionX.Text
-msgctxt ",4D4D319E41C916C037878BA6D66FCAA0"
-msgid "Invert Camera X"
-msgstr "Invertir cámara X"
-
 #. Key:	4E256AD34AE3E420AF7202B143308B8F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",4E256AD34AE3E420AF7202B143308B8F"
-msgid ""
-"You have to take it slow, \r\n"
-"and from the beginning."
-msgstr ""
-"Tienes que tomártelo con \n"
-"calma, y desde el principio."
-
-#. Key:	4F260E444A4F3C3301109E9749E65E49
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_16.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_16.Text
-msgctxt ",4F260E444A4F3C3301109E9749E65E49"
-msgid "Scroll Wheel"
-msgstr "Rueda de Desplazamiento"
-
-#. Key:	4FA9ABC44F441D442107919D1CFCE211
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
-msgctxt ",4FA9ABC44F441D442107919D1CFCE211"
-msgid "High"
-msgstr "Alto"
+msgid "You have to take it slow, \r\nand from the beginning."
+msgstr "Tienes que tomártelo con \ncalma, y desde el principio."
 
 #. Key:	5003F6D545A5F5B62A629FAFE03AA055
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",5003F6D545A5F5B62A629FAFE03AA055"
-msgid ""
-"I’m Vilde and this is Grusa \r\n"
-"and she’s a troll and I’m a gnome"
-msgstr ""
-"Soy Vilde y esta es Grusa y ella \n"
-"es una troll y yo soy un gnomo"
+msgid "I’m Vilde and this is Grusa \r\nand she’s a troll and I’m a gnome"
+msgstr "Soy Vilde y esta es Grusa y ella \nes una troll y yo soy un gnomo"
 
 #. Key:	50F33D774EB76DE1AA469B9FBCCC5A62
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_1.Text
@@ -570,15 +547,10 @@ msgstr "Gamma"
 
 #. Key:	54D12DCD4D3BC95058A38DADD8DB8066
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",54D12DCD4D3BC95058A38DADD8DB8066"
-msgid ""
-"Vilde and I are friends with the \r\n"
-"cows that live in our forest."
-msgstr ""
-"Vilde y yo somos amigos de las \n"
-"vacas que viven en nuestro bosque."
+msgid "Vilde and I are friends with the \r\ncows that live in our forest."
+msgstr "Vilde y yo somos amigos de las \nvacas que viven en nuestro bosque."
 
 #. Key:	5769CF1B4013AECEED67CEB941F61777
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_50.Text
@@ -596,18 +568,24 @@ msgstr "Nueva Partida"
 
 #. Key:	59D7FEDC492A6BA6A64B6486354BBBE1
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",59D7FEDC492A6BA6A64B6486354BBBE1"
 msgid "Press Any Key"
 msgstr "Pulsa Cualquier Tecla"
 
-#. Key:	5A48E9DC4DC9631587BE999E155D86F4
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_13.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_13.Text
-msgctxt ",5A48E9DC4DC9631587BE999E155D86F4"
-msgid "Camera"
-msgstr "Cámara"
+#. Key:	5A1F0FA94BAB1B4449D1A99F3146A910
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_6.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_6.Text
+msgctxt ",5A1F0FA94BAB1B4449D1A99F3146A910"
+msgid "Display"
+msgstr "Pantalla"
+
+#. Key:	5AF863CE45264D21E0EF3C918957CC06
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
+msgctxt ",5AF863CE45264D21E0EF3C918957CC06"
+msgid "Mouse"
+msgstr "Ratón"
 
 #. Key:	5B1BC6EA4F911763B443F0B4B12D6DA3
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_36.Text
@@ -615,27 +593,6 @@ msgstr "Cámara"
 msgctxt ",5B1BC6EA4F911763B443F0B4B12D6DA3"
 msgid "Anti Aliasing"
 msgstr "Anti Aliasing"
-
-#. Key:	5BCA53454364D6674284AEB22F79F1DE
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
-msgctxt ",5BCA53454364D6674284AEB22F79F1DE"
-msgid "Depth of Field"
-msgstr "Profundidad de Campo"
-
-#. Key:	5CD76A8641D15848CAA4E994238F1263
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_76.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_76.Text
-msgctxt ",5CD76A8641D15848CAA4E994238F1263"
-msgid "Music Volume"
-msgstr "Volumen de Música"
-
-#. Key:	608C3E2640BD6462752DAC9A32503728
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
-msgctxt ",608C3E2640BD6462752DAC9A32503728"
-msgid "Graphics"
-msgstr "Gráficos"
 
 #. Key:	6236BA8A42AEC03432F7E4AEF178C1A9
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_12.Text
@@ -646,22 +603,10 @@ msgstr "Campo de Visión"
 
 #. Key:	64D982204A1C4EFBF19798B53B95E478
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip Text
 msgctxt ",64D982204A1C4EFBF19798B53B95E478"
-msgid ""
-"Thankfully, they didn’t get my \r\n"
-"bravest cow knight."
-msgstr ""
-"Afortunadamente, no se llevaron a \n"
-"mi vacaballera más valiente."
-
-#. Key:	6526F0EE47D2475FF84F3D83ECE18240
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_19.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_19.Text
-msgctxt ",6526F0EE47D2475FF84F3D83ECE18240"
-msgid "Keyboard"
-msgstr "Teclado"
+msgid "Thankfully, they didn’t get my \r\nbravest cow knight."
+msgstr "Afortunadamente, no se llevaron a \nmi vacaballera más valiente."
 
 #. Key:	6600F2414DC5C4402C4D10B7A7E7D89C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra9.Text
@@ -670,12 +615,33 @@ msgctxt ",6600F2414DC5C4402C4D10B7A7E7D89C"
 msgid "Now you see me..."
 msgstr "Ahora me ves..."
 
+#. Key:	665F010E4DFBFC7D5FF0A4845F15507D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_57.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_57.Text
+msgctxt ",665F010E4DFBFC7D5FF0A4845F15507D"
+msgid "Jump"
+msgstr "Saltar"
+
+#. Key:	66A18D164D39382557FEA6AA237B4A03
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
+msgctxt ",66A18D164D39382557FEA6AA237B4A03"
+msgid "Shadow Quality"
+msgstr "Calidad de Sombras"
+
 #. Key:	677E871F421CF6198B7D7D91E45D6165
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_2.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_2.Text
 msgctxt ",677E871F421CF6198B7D7D91E45D6165"
 msgid "Options"
 msgstr "Opciones"
+
+#. Key:	679079714AC2AE90DD5FA4823A6CF4FD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_68.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_68.Text
+msgctxt ",679079714AC2AE90DD5FA4823A6CF4FD"
+msgid "Headbutt (Gnome)"
+msgstr "Cabezazo (Gnomo)"
 
 #. Key:	68A233AD452089CE6D7A8E9B0F6D3185
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_7.Text
@@ -693,15 +659,10 @@ msgstr "Calidad de Efectos"
 
 #. Key:	6B29A37347788D5683CF3A861445E4D7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",6B29A37347788D5683CF3A861445E4D7"
-msgid ""
-"and she accidentally \r\n"
-"sat down on a fairy."
-msgstr ""
-"y se sentó sin querer \n"
-"encima de un hada."
+msgid "and she accidentally \r\nsat down on a fairy."
+msgstr "y se sentó sin querer \nencima de un hada."
 
 #. Key:	6CCDE54C4FC39F729AB0DDA414FF39DB
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_76.Text
@@ -717,19 +678,26 @@ msgctxt ",6D0064BF44152AC0F654208E7719F443"
 msgid "Credits"
 msgstr "Créditos"
 
+#. Key:	6DB1430741ABB1EBD06F1FBC793FFDE4
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
+msgctxt ",6DB1430741ABB1EBD06F1FBC793FFDE4"
+msgid "Defaults"
+msgstr "Valor por Defecto"
+
+#. Key:	6FE00AC743CD2D11C967CE8684A87B29
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_57.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_57.Text
+msgctxt ",6FE00AC743CD2D11C967CE8684A87B29"
+msgid "Jump"
+msgstr "Saltar"
+
 #. Key:	7075CB824906041AA4C51A92500E11F6
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.Text.Text
 #: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.Text.Text
 msgctxt ",7075CB824906041AA4C51A92500E11F6"
 msgid "Project Lead"
 msgstr "Líder del Proyecto"
-
-#. Key:	70B1CE804B85CB966AF931907F3A0A2A
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
-msgctxt ",70B1CE804B85CB966AF931907F3A0A2A"
-msgid "Defaults"
-msgstr "Valor por Defecto"
 
 #. Key:	715B41114529D0B740BDE39BE3D6777C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_40.Text
@@ -745,12 +713,12 @@ msgctxt ",73DFAF8448F170C1A551D0AADD7617C3"
 msgid "Design"
 msgstr "Diseño"
 
-#. Key:	762356214F21D5CB8C75C489FB9CF2DF
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_15.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_15.Text
-msgctxt ",762356214F21D5CB8C75C489FB9CF2DF"
-msgid "Zoom"
-msgstr "Zoom"
+#. Key:	76E977384C62D2D1DF5A7E8BC60FF607
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionX.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionX.Text
+msgctxt ",76E977384C62D2D1DF5A7E8BC60FF607"
+msgid "Invert Camera X"
+msgstr "Invertir cámara X"
 
 #. Key:	78D139294C0F389EDBA5AB9A215837B1
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_33.Text
@@ -759,29 +727,37 @@ msgctxt ",78D139294C0F389EDBA5AB9A215837B1"
 msgid "Cow Queen - Kevin Engstrand"
 msgstr "Reina Vaca - Kevin Engstrand"
 
+#. Key:	7993DA364AC1F47A7E8FE3A5A9510903
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionY.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.InversionY.Text
+msgctxt ",7993DA364AC1F47A7E8FE3A5A9510903"
+msgid "Invert Camera Y"
+msgstr "Invertir cámara Y"
+
 #. Key:	79EDA0C642731406A5350683C7E9F824
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",79EDA0C642731406A5350683C7E9F824"
-msgid ""
-"and the cows flew but the- the fairies \r\n"
-"and the fairyrings and the mushrooms-"
-msgstr ""
-"y las vacas volaron pero las- las \n"
-"hadas y los aros feéricos y las setas-"
+msgid "and the cows flew but the- the fairies \r\nand the fairyrings and the mushrooms-"
+msgstr "y las vacas volaron pero las- las \nhadas y los aros feéricos y las setas-"
 
-#. Key:	7BFCC957462771E1035606875E62E62B
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
-msgctxt ",7BFCC957462771E1035606875E62E62B"
-msgid "Mouse"
-msgstr "Ratón"
+#. Key:	7B06643E497790166DA920BFF18BD42F
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
+msgctxt ",7B06643E497790166DA920BFF18BD42F"
+msgid "Depth of Field"
+msgstr "Profundidad de Campo"
+
+#. Key:	7B60317A4EE23CFD1B742286C5250086
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_68.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_68.Text
+msgctxt ",7B60317A4EE23CFD1B742286C5250086"
+msgid "Headbutt (Gnome)"
+msgstr "Cabezazo (Gnomo)"
 
 #. Key:	7C3B63F548416D09A85C75A55AF1809E
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip Text
 msgctxt ",7C3B63F548416D09A85C75A55AF1809E"
 msgid "Good luck!"
 msgstr "¡Buena suerte!"
@@ -807,6 +783,13 @@ msgctxt ",7F8ECBDC4FB599F4357D9B9FC450EEA7"
 msgid "This one's fishy..."
 msgstr "Este es sospezchoso..."
 
+#. Key:	7F99C95C467EA71BC8DEC4BB00749DB5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
+msgctxt ",7F99C95C467EA71BC8DEC4BB00749DB5"
+msgid "Fullscreen"
+msgstr "Pantalla Completa"
+
 #. Key:	825395CF4F88CD965888AC948372542C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_45.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_45.Text
@@ -816,38 +799,52 @@ msgstr "Salir"
 
 #. Key:	82B6DC5B49F0501298CD1DB42931A4EA
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",82B6DC5B49F0501298CD1DB42931A4EA"
 msgid "They wanted to get revenge on the fairies."
 msgstr "Querían vengarse de las hadas."
 
+#. Key:	82E3BB1640148521F9ED74BDC91F4E0E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
+msgctxt ",82E3BB1640148521F9ED74BDC91F4E0E"
+msgid "Defaults"
+msgstr "Valor por Defecto"
+
+#. Key:	83404C2B48DC9EB209DC9EA41C767A1F
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_76.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_76.Text
+msgctxt ",83404C2B48DC9EB209DC9EA41C767A1F"
+msgid "Music Volume"
+msgstr "Volumen de Música"
+
 #. Key:	8406CE01431BF139A1981E8F53236D17
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip Text
 msgctxt ",8406CE01431BF139A1981E8F53236D17"
-msgid ""
-"I can’t believe the fairies took all of my \r\n"
-"cow subjects, please help me save them!"
-msgstr ""
-"No puedo creer que las hadas se llevaran a todas \n"
-"mis súbditas, ¡por favor, ayudadme a salvarlas!"
+msgid "I can’t believe the fairies took all of my \r\ncow subjects, please help me save them!"
+msgstr "No puedo creer que las hadas se llevaran a todas \nmis súbditas, ¡por favor, ayudadme a salvarlas!"
 
 #. Key:	84D0C3AC4E9B0CB5EAB0CD982C1F3BAE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",84D0C3AC4E9B0CB5EAB0CD982C1F3BAE"
 msgid "Press Any Button"
 msgstr "Pulsa Cualquier Botón"
 
-#. Key:	86A171F647ECBF6FF93A758B08834099
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
-msgctxt ",86A171F647ECBF6FF93A758B08834099"
-msgid "Effects Quality"
-msgstr "Calidad de Efectos"
+#. Key:	85E8D375495E13B9A0827487222EB34D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_61.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_61.Text
+msgctxt ",85E8D375495E13B9A0827487222EB34D"
+msgid "Switch Character"
+msgstr "Cambiar Personaje"
+
+#. Key:	868B09394F4A615690D9CB8181B5C4C5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextAAOptions(2).TextAAOptions
+#: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextAAOptions(2).TextAAOptions
+msgctxt ",868B09394F4A615690D9CB8181B5C4C5"
+msgid "TAA"
+msgstr "TAA"
 
 #. Key:	884C17E04E786DFE4B3E0AA6CA637373
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_1.Text
@@ -865,35 +862,38 @@ msgstr "¿Mú?"
 
 #. Key:	8A2A012743853E6A3D312295247543CF
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip Text
 msgctxt ",8A2A012743853E6A3D312295247543CF"
-msgid ""
-"I hope that they have learned their lesson and that \r\n"
-"their queen is more careful in the future."
-msgstr ""
-"Espero que hayan aprendido su lección y \n"
-"que su reina sea más cuidadosa en el futuro."
+msgid "I hope that they have learned their lesson and that \r\ntheir queen is more careful in the future."
+msgstr "Espero que hayan aprendido su lección y \nque su reina sea más cuidadosa en el futuro."
+
+#. Key:	8AC1281643453F2E66AEC382CE9BA8B0
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_64.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_64.Text
+msgctxt ",8AC1281643453F2E66AEC382CE9BA8B0"
+msgid "Interact"
+msgstr "Interactuar"
 
 #. Key:	8B05F44C4BA264CD4CA5B4AA257F5DF6
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",8B05F44C4BA264CD4CA5B4AA257F5DF6"
-msgid ""
-"And while we ate, \r\n"
-"the sun started to set."
-msgstr ""
-"Y mientras comíamos, \n"
-"el sol comenzó a ponerse."
+msgid "And while we ate, \r\nthe sun started to set."
+msgstr "Y mientras comíamos, \nel sol comenzó a ponerse."
 
 #. Key:	8FC8C4AE40D705876AEB3C8EE09BE43D
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",8FC8C4AE40D705876AEB3C8EE09BE43D"
 msgid "But then…"
 msgstr "Pero entonces..."
+
+#. Key:	90C7450249F0B39B403A969CCE4957EF
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_64.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_64.Text
+msgctxt ",90C7450249F0B39B403A969CCE4957EF"
+msgid "Interact"
+msgstr "Interactuar"
 
 #. Key:	92A30857491826680D9CDE8389AF67AB
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_63.Text
@@ -902,19 +902,19 @@ msgctxt ",92A30857491826680D9CDE8389AF67AB"
 msgid "VSync"
 msgstr "VSync"
 
-#. Key:	92DB21CA4B16EEAB4D79EB8F661F5770
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
-msgctxt ",92DB21CA4B16EEAB4D79EB8F661F5770"
-msgid "Resolution"
-msgstr "Resolución"
-
 #. Key:	937E4DB24C6FA59E076152A56B9B1644
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:WidgetTree.SkipText.Text
 #: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:WidgetTree.SkipText.Text
 msgctxt ",937E4DB24C6FA59E076152A56B9B1644"
 msgid "[ENTER/START] Skip"
 msgstr "[ENTER/START] Saltar"
+
+#. Key:	93AE1BB744DE74E121DE47917B76C401
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
+msgctxt ",93AE1BB744DE74E121DE47917B76C401"
+msgid "Field of View"
+msgstr "Campo de Visión"
 
 #. Key:	93F89B79467A219A6995EBB1F0ADAEB7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_77.Text
@@ -930,24 +930,12 @@ msgctxt ",9422217A4971E3E0A267FAB86AABA709"
 msgid "Frog Mode"
 msgstr "Modo rana"
 
-#. Key:	945D7FBF4A5D4021DE7251860BE94339
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
-msgctxt ",945D7FBF4A5D4021DE7251860BE94339"
-msgid "Medium"
-msgstr "Medio"
-
 #. Key:	94C8B7D841E95164D4F59C8BDF718C54
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",94C8B7D841E95164D4F59C8BDF718C54"
-msgid ""
-"I decided to have a snack and \r\n"
-"let them figure it out on their own."
-msgstr ""
-"Decidí tomarme un tentempié y \n"
-"dejar que se las arreglaran por sí mismas."
+msgid "I decided to have a snack and \r\nlet them figure it out on their own."
+msgstr "Decidí tomarme un tentempié y \ndejar que se las arreglaran por sí mismas."
 
 #. Key:	94F089504196270A31C7D0973D0110A5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.InversionX.Text
@@ -963,27 +951,40 @@ msgctxt ",9603F94C47DD0956DCD0138B8B4D990D"
 msgid "Programming"
 msgstr "Programación"
 
-#. Key:	97D801FD4D73E59F6E1A8BBDB352F88E
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_4.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_4.Text
-msgctxt ",97D801FD4D73E59F6E1A8BBDB352F88E"
-msgid "Default Controls"
-msgstr "Controles por Defecto"
+#. Key:	96487BC04A1EB1775C4F929AC32014C5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
+msgctxt ",96487BC04A1EB1775C4F929AC32014C5"
+msgid "Sharpness"
+msgstr "Nitidez"
+
+#. Key:	96B7FDB943893090CA6C2C996B224731
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(3).TextOptions
+#: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(3).TextOptions
+msgctxt ",96B7FDB943893090CA6C2C996B224731"
+msgid "Ultra"
+msgstr "Ultra"
 
 #. Key:	9856623B45E3359D936C52B0B132DA28
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",9856623B45E3359D936C52B0B132DA28"
 msgid "I thought it was a little scary."
 msgstr "Me dio un poco de miedo."
 
-#. Key:	9BF8D0294EC3F693072202B1AA16D297
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
-msgctxt ",9BF8D0294EC3F693072202B1AA16D297"
-msgid "View Distance"
-msgstr "Distancia de Visión"
+#. Key:	9A314C594EB4ABD16B4BB3BF56DC476A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_70.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_70.Text
+msgctxt ",9A314C594EB4ABD16B4BB3BF56DC476A"
+msgid "Pause"
+msgstr "Pausa"
+
+#. Key:	9E50D32849F95B19E45966B4F29DDBF8
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
+msgctxt ",9E50D32849F95B19E45966B4F29DDBF8"
+msgid "Ultra"
+msgstr "Ultra"
 
 #. Key:	9FDE4D66411977A99A52228AD064971E
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_32.Text
@@ -1001,22 +1002,10 @@ msgstr "Contribuciones Adicionales"
 
 #. Key:	A34846EF44CB86CB2709D18DEB6E9BFC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",A34846EF44CB86CB2709D18DEB6E9BFC"
-msgid ""
-"I guess they didn’t want to \r\n"
-"fight that much after all…"
-msgstr ""
-"Supongo que no querían pelear \n"
-"tanto, después de todo..."
-
-#. Key:	A3FDCCDD4B9D3830ADD57A833946E4A3
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
-msgctxt ",A3FDCCDD4B9D3830ADD57A833946E4A3"
-msgid "Sharpness"
-msgstr "Nitidez"
+msgid "I guess they didn’t want to \r\nfight that much after all…"
+msgstr "Supongo que no querían pelear \ntanto, después de todo..."
 
 #. Key:	A4BCDA1F4DB7902127E5A3B9E369DAD5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_38.Text
@@ -1024,6 +1013,13 @@ msgstr "Nitidez"
 msgctxt ",A4BCDA1F4DB7902127E5A3B9E369DAD5"
 msgid "Thank you for Playing!"
 msgstr "¡Gracias por jugar!"
+
+#. Key:	A795420444BF120D03F5A4B9189489A3
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(2).TextOptions
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(2).TextOptions
+msgctxt ",A795420444BF120D03F5A4B9189489A3"
+msgid "High"
+msgstr "Alto"
 
 #. Key:	A7A993E84F562625DC7E14B16A4F7A9B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_1.Text
@@ -1034,27 +1030,17 @@ msgstr "Un Juego De"
 
 #. Key:	A8A4E9E94E5C9AE0D66AA2945E30ABD2
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",A8A4E9E94E5C9AE0D66AA2945E30ABD2"
-msgid ""
-"But that’s no problem for us, \r\n"
-"we love being up late!"
-msgstr ""
-"Pero eso no es ningún problema \n"
-"para nosotros, ¡nos encanta trasnochar!"
+msgid "But that’s no problem for us, \r\nwe love being up late!"
+msgstr "Pero eso no es ningún problema \npara nosotros, ¡nos encanta trasnochar!"
 
 #. Key:	A93F2051447DB3C191ACFD84D1D4CA4C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",A93F2051447DB3C191ACFD84D1D4CA4C"
-msgid ""
-"The queen was very sad about that so \r\n"
-"she came and asked us for help."
-msgstr ""
-"La reina estaba muy triste por todo \n"
-"eso, así que vino y nos pidió ayuda."
+msgid "The queen was very sad about that so \r\nshe came and asked us for help."
+msgstr "La reina estaba muy triste por todo \neso, así que vino y nos pidió ayuda."
 
 #. Key:	AA2F42FF4D22533A1D5301A20E37720A
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra5.Text
@@ -1072,15 +1058,10 @@ msgstr "Salto flotante"
 
 #. Key:	AB80CDBC416F5F519E83BF8DBB15FA92
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip Text
 msgctxt ",AB80CDBC416F5F519E83BF8DBB15FA92"
-msgid ""
-"We harbour no ill will toward you or the cows \r\n"
-"anymore and I will let them all return home."
-msgstr ""
-"Ya no os guardamos rencor a vosotros o \n"
-"a las vacas y les dejaremos volver a casa."
+msgid "We harbour no ill will toward you or the cows \r\nanymore and I will let them all return home."
+msgstr "Ya no os guardamos rencor a vosotros o \na las vacas y les dejaremos volver a casa."
 
 #. Key:	ACBE71A14A73679C89832A94360EF6B2
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_6.Text
@@ -1089,12 +1070,12 @@ msgctxt ",ACBE71A14A73679C89832A94360EF6B2"
 msgid "WASD"
 msgstr "WASD"
 
-#. Key:	AD35AC9243BEDEA3EF1AA2AB45DD3BD8
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
-msgctxt ",AD35AC9243BEDEA3EF1AA2AB45DD3BD8"
-msgid "Texture Quality"
-msgstr "Calidad de Texturas"
+#. Key:	ADA0753B4B371748DD32C3B8844B3F43
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
+msgctxt ",ADA0753B4B371748DD32C3B8844B3F43"
+msgid "Effects Quality"
+msgstr "Calidad de Efectos"
 
 #. Key:	ADA085F74B57CE874E02ECBB39E47421
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Sensitivity.Text
@@ -1117,6 +1098,13 @@ msgctxt ",AE768AC141B170B0B23E08B573E71D6C"
 msgid "Controls"
 msgstr "Controles"
 
+#. Key:	AFE839A44DB4EF44D0D7A19471A60D34
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
+msgctxt ",AFE839A44DB4EF44D0D7A19471A60D34"
+msgid "Low"
+msgstr "Bajo"
+
 #. Key:	B02D994E445C87015062A69E255261FD
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_78.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_78.Text
@@ -1135,8 +1123,8 @@ msgstr "Calidad de Texturas"
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_35.Text
 #: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_35.Text
 msgctxt ",B36DD6F3472BADE1AB3AB9AD2FBA7E85"
-msgid "Fairy Queen - ..."
-msgstr "Reina Hada - ..."
+msgid "Fairy Queen - Laila Bulduk"
+msgstr "Reina Hada - Laila Bulduk"
 
 #. Key:	B473AA3E4619C378F0671687FE029133
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_84.Text
@@ -1147,58 +1135,45 @@ msgstr "Volver"
 
 #. Key:	B489A0E644C2FE933DD459AE4A96F1B0
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip Text
 msgctxt ",B489A0E644C2FE933DD459AE4A96F1B0"
 msgid "I will transport you back to the forest as well."
 msgstr "Os transportaré de vuelta al bosque también."
 
+#. Key:	B66CC0D540D6F07C17BA059E9A24D2A6
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_59.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_59.Text
+msgctxt ",B66CC0D540D6F07C17BA059E9A24D2A6"
+msgid "Mount"
+msgstr "Montar"
+
 #. Key:	B8B9487D44A70802847BEEAB4E6688C3
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",B8B9487D44A70802847BEEAB4E6688C3"
-msgid ""
-"Inside the mountain it was dark \r\n"
-"and there was a lot of places to fall down."
-msgstr ""
-"Dentro de la montaña estaba oscuro y \n"
-"había muchos sitios por donde caerse."
+msgid "Inside the mountain it was dark \r\nand there was a lot of places to fall down."
+msgstr "Dentro de la montaña estaba oscuro y \nhabía muchos sitios por donde caerse."
 
 #. Key:	B8CAC492438BC9FE2961EDB9C70E2DA8
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",B8CAC492438BC9FE2961EDB9C70E2DA8"
-msgid ""
-"I thought, we don’t really have \r\n"
-"to get involved anymore. "
-msgstr ""
-"Pensé que no teníamos que \n"
-"involucrarnos más."
+msgid "I thought, we don’t really have \r\nto get involved anymore. "
+msgstr "Pensé que no teníamos que \ninvolucrarnos más."
 
 #. Key:	BA2804FD48E18BC209AFCA94A0906C98
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",BA2804FD48E18BC209AFCA94A0906C98"
 msgid "Anyway, we did it!"
 msgstr "De todas formas, ¡lo logramos!"
 
 #. Key:	BA3EC83844FFDB1CFA31019EA54013AD
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",BA3EC83844FFDB1CFA31019EA54013AD"
 msgid "but the cows didn’t think so."
 msgstr "pero las vacas no pensaban lo mismo."
-
-#. Key:	BA72214A4DCC74852F23A88CC1DFE12B
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
-msgctxt ",BA72214A4DCC74852F23A88CC1DFE12B"
-msgid "Fullscreen"
-msgstr "Pantalla Completa"
 
 #. Key:	BA7A51F949B51B77AA920E8C4A3615A5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_4.Text
@@ -1213,6 +1188,13 @@ msgstr "Pantalla"
 msgctxt ",BC327DA8462E7C4EF1FA268C3C2DD451"
 msgid "Stop Hitting Yourself"
 msgstr "Deja de pegarte a ti mismo"
+
+#. Key:	BC88FC7F49372968E68A5A809A131D9D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_13.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_13.Text
+msgctxt ",BC88FC7F49372968E68A5A809A131D9D"
+msgid "Camera"
+msgstr "Cámara"
 
 #. Key:	BCB7914B4B01D7A2F5B3CEB5F8C81EF5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_35.Text
@@ -1230,8 +1212,7 @@ msgstr "Gráficos"
 
 #. Key:	BE9795FA4E0B3C454C24F783143F8ABA
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",BE9795FA4E0B3C454C24F783143F8ABA"
 msgid "Yes, and Ms. Cowknight is helping us too!"
 msgstr "Sí, ¡y Dña. Vacaballera nos está ayudando también!"
@@ -1240,36 +1221,36 @@ msgstr "Sí, ¡y Dña. Vacaballera nos está ayudando también!"
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra10.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra10.Text
 msgctxt ",BEBF5D634B4216A566A1B69203737F8A"
-msgid ""
-"Why did you eat those\r\n"
-"shrooms, Grusa?"
-msgstr ""
-"¿Por qué te comiste \n"
-"esas setas, Grusa?"
+msgid "Why did you eat those\r\nshrooms, Grusa?"
+msgstr "¿Por qué te comiste \nesas setas, Grusa?"
+
+#. Key:	BF3E9BBC408B3E06434D26A070BCE373
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
+msgctxt ",BF3E9BBC408B3E06434D26A070BCE373"
+msgid "Warmth"
+msgstr "Calidez"
 
 #. Key:	BF6F54B04325D0135D99BFA55BD0950C
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
 msgctxt ",BF6F54B04325D0135D99BFA55BD0950C"
-msgid ""
-"I see that you have made it through \r\n"
-"our challenges and freed the cows. "
-msgstr ""
-"Veo que habéis superado \n"
-"nuestros retos y liberado a las vacas."
+msgid "I see that you have made it through \r\nour challenges and freed the cows. "
+msgstr "Veo que habéis superado \nnuestros retos y liberado a las vacas."
+
+#. Key:	BFD4D3444DAED614921E91A8A9E1623D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
+msgctxt ",BFD4D3444DAED614921E91A8A9E1623D"
+msgid "High"
+msgstr "Alto"
 
 #. Key:	C0F586944CA48CD0D55E53AEF3D2BFA5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",C0F586944CA48CD0D55E53AEF3D2BFA5"
-msgid ""
-"One day, the queen \r\n"
-"of the cows wasn’t looking"
-msgstr ""
-"Un día, la reina de las \n"
-"vacas no estaba mirando"
+msgid "One day, the queen \r\nof the cows wasn’t looking"
+msgstr "Un día, la reina de las \nvacas no estaba mirando"
 
 #. Key:	C12D436544FD9F98EA585B9D039AC16F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_34.Text
@@ -1285,27 +1266,12 @@ msgctxt ",C22F0D124EC4F0C94A68C7ACC2EC2556"
 msgid "[ENTER/START] Skip"
 msgstr "[ENTER/START] Saltar"
 
-#. Key:	C349DBA64DDDC4840C8E59997D729B8D
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
-msgctxt ",C349DBA64DDDC4840C8E59997D729B8D"
-msgid "Low"
-msgstr "Bajo"
-
 #. Key:	C3F21FAD48B5F462F842DCA5B98C77CC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",C3F21FAD48B5F462F842DCA5B98C77CC"
 msgid "and quickly they all went back home!"
 msgstr "¡y rápidamente se volvieron a casa!"
-
-#. Key:	C63373564E80D1315237CCB29D476557
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
-msgctxt ",C63373564E80D1315237CCB29D476557"
-msgid "Warmth"
-msgstr "Calidez"
 
 #. Key:	C6893F314D7F0C9D510518B3C671BAA7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.InversionY.Text
@@ -1321,6 +1287,20 @@ msgctxt ",C948855E4269E339003D30978F549B0B"
 msgid "[ENTER/START] Skip"
 msgstr "[ENTER/START] Saltar"
 
+#. Key:	CA5878B14265C144660016BF071D4DC0
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_19.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_19.Text
+msgctxt ",CA5878B14265C144660016BF071D4DC0"
+msgid "Keyboard"
+msgstr "Teclado"
+
+#. Key:	CA69BD4C400ABC2949A8119D670C9D16
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
+msgctxt ",CA69BD4C400ABC2949A8119D670C9D16"
+msgid "View Distance"
+msgstr "Distancia de Visión"
+
 #. Key:	CB0FF21E4BC4144C593FD4B724E77C8F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Text.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Text.Text
@@ -1335,12 +1315,26 @@ msgctxt ",CC70608440C8029074B7C79B009BE470"
 msgid "MOUSE"
 msgstr "Ratón"
 
+#. Key:	CCB2FF7547A74810417F8A850971D1DD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_15.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_15.Text
+msgctxt ",CCB2FF7547A74810417F8A850971D1DD"
+msgid "Zoom"
+msgstr "Zoom"
+
 #. Key:	CD6B5E9E48AF08E7DD8C2982E6A568BF
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_33.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_33.Text
 msgctxt ",CD6B5E9E48AF08E7DD8C2982E6A568BF"
 msgid "View Distance"
 msgstr "Distancia de Visión"
+
+#. Key:	CE5E2D444808F4E19DD29B9EC0D50791
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
+msgctxt ",CE5E2D444808F4E19DD29B9EC0D50791"
+msgid "Graphics"
+msgstr "Gráficos"
 
 #. Key:	CF10E9D742D730FAC9E3FBB4CF5D328C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_37.Text
@@ -1384,12 +1378,19 @@ msgctxt ",D119E44F4877388E835ECA9BEA5E5106"
 msgid "Continue"
 msgstr "Continuar"
 
-#. Key:	D331954148677D9F50871EBEE4D4710F
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
-msgctxt ",D331954148677D9F50871EBEE4D4710F"
-msgid "Shadow Quality"
-msgstr "Calidad de Sombras"
+#. Key:	D31D43314D9793CC9E8B39878BAED4CD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_66.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_66.Text
+msgctxt ",D31D43314D9793CC9E8B39878BAED4CD"
+msgid "Throw/Pet"
+msgstr "Lanzar/Acariciar"
+
+#. Key:	D3AD1E67437C3E815FC5C1AF3154DDD1
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_66.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_66.Text
+msgctxt ",D3AD1E67437C3E815FC5C1AF3154DDD1"
+msgid "Throw/Pet"
+msgstr "Lanzar/Acariciar"
 
 #. Key:	D3BAE84E49DCCA5C8AE74ABC92EBED5B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_30.Text
@@ -1405,40 +1406,40 @@ msgctxt ",D40FE52544ADF358813FACBA9C16FB5E"
 msgid "Swamp"
 msgstr "Pantano"
 
+#. Key:	D5452BB642CD39756EDC24ACCF704F6D
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_59.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_59.Text
+msgctxt ",D5452BB642CD39756EDC24ACCF704F6D"
+msgid "Mount"
+msgstr "Montar"
+
 #. Key:	D64833CA4C128ACCD0819D81D54658B1
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip Text
 msgctxt ",D64833CA4C128ACCD0819D81D54658B1"
-msgid ""
-"Come on, you can jump on my back to\r\n"
-" get over this wall, I don’t mind at all."
-msgstr ""
-"Vamos, podéis saltar en mi lomo para superar \n"
-"este muro, no me importa en absoluto."
+msgid "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
+msgstr "Vamos, podéis saltar en mi lomo para superar \neste muro, no me importa en absoluto."
 
 #. Key:	D887D47046F8021FE0005698D542FCE9
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",D887D47046F8021FE0005698D542FCE9"
 msgid "Already in use"
 msgstr "Ya está en uso"
 
 #. Key:	D9193FA645FFB26AA0C0799FD4949E3B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",D9193FA645FFB26AA0C0799FD4949E3B"
 msgid "And the fairies got mad about it!"
 msgstr "¡Y las hadas se enfadaron!"
 
-#. Key:	D98493E54444E4D01343E5AA5FA02C57
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
-msgctxt ",D98493E54444E4D01343E5AA5FA02C57"
-msgid "Field of View"
-msgstr "Campo de Visión"
+#. Key:	DA10D3CF43437A25F7420D8AAA42EA15
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(0).TextOptions
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(0).TextOptions
+msgctxt ",DA10D3CF43437A25F7420D8AAA42EA15"
+msgid "Low"
+msgstr "Bajo"
 
 #. Key:	DAC6F3BE484C965498759AAC2FA0DA78
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_20.Text
@@ -1449,30 +1450,31 @@ msgstr "Medio"
 
 #. Key:	DB182CC84FD93F6DCE03DCBD04D283A1
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",DB182CC84FD93F6DCE03DCBD04D283A1"
 msgid "The queen rallied all of her returned cows."
 msgstr "La reina congregó a todas las vacas regresadas."
 
-#. Key:	DB5E59314426430A8A6E059710194464
+#. Key:	DB19212E446FCD07713E85A3C6C24AEB
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_37.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_37.Text
-msgctxt ",DB5E59314426430A8A6E059710194464"
+msgctxt ",DB19212E446FCD07713E85A3C6C24AEB"
 msgid "Resolution Scale"
 msgstr "Escala de Resolución"
 
+#. Key:	DC377E66437B14EDAA43CB934A6C06C5
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_10.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_10.Text
+msgctxt ",DC377E66437B14EDAA43CB934A6C06C5"
+msgid "WASD"
+msgstr "WASD"
+
 #. Key:	DC3F1DF34B4028677F2B65BEB0CF9201
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",DC3F1DF34B4028677F2B65BEB0CF9201"
-msgid ""
-"Grusa farted so bad, the cows \r\n"
-"and the fairies couldn’t stand it"
-msgstr ""
-"Grusa se tiró un pedo tan terrible, que las \n"
-"vacas y las hadas no lo pudieron soportar"
+msgid "Grusa farted so bad, the cows \r\nand the fairies couldn’t stand it"
+msgstr "Grusa se tiró un pedo tan terrible, que las \nvacas y las hadas no lo pudieron soportar"
 
 #. Key:	DD40FBFF48483CBEC61557AAA2D3B603
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_13.Text
@@ -1481,6 +1483,20 @@ msgctxt ",DD40FBFF48483CBEC61557AAA2D3B603"
 msgid "Camera"
 msgstr "Cámara"
 
+#. Key:	DE94C08E45EF2B2F3D54A68DE2252513
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_24.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_24.Text
+msgctxt ",DE94C08E45EF2B2F3D54A68DE2252513"
+msgid "Default Controls"
+msgstr "Controles por Defecto"
+
+#. Key:	DFC5D4AE4E8AF7D790857DBF70322F35
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_61.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_61.Text
+msgctxt ",DFC5D4AE4E8AF7D790857DBF70322F35"
+msgid "Switch Character"
+msgstr "Cambiar Personaje"
+
 #. Key:	DFCCE0E248CBE31D7E9E12B39AA56742
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_14.Text
 #: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_14.Text
@@ -1488,17 +1504,16 @@ msgctxt ",DFCCE0E248CBE31D7E9E12B39AA56742"
 msgid "Animation"
 msgstr "Animación"
 
-#. Key:	E1C9ABC74D8BA60FF4DE8D8DE0734AE6
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_41.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_41.Text
-msgctxt ",E1C9ABC74D8BA60FF4DE8D8DE0734AE6"
-msgid "Controller"
-msgstr "Mando"
+#. Key:	E1760A82495F6836553DBF984D24DC5E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(0).TextOptions
+#: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(0).TextOptions
+msgctxt ",E1760A82495F6836553DBF984D24DC5E"
+msgid "Low"
+msgstr "Bajo"
 
 #. Key:	E2A278514306603115EACEAB295C4B98
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",E2A278514306603115EACEAB295C4B98"
 msgid "And we said yes! We always help our friends."
 msgstr "¡Y dijimos que sí! Siempre ayudamos a nuestros amigos."
@@ -1519,8 +1534,7 @@ msgstr "Localización"
 
 #. Key:	E581590640BE412D0B9DCF9FA9D55084
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
 msgctxt ",E581590640BE412D0B9DCF9FA9D55084"
 msgid "Already in use"
 msgstr "Ya está en uso"
@@ -1529,46 +1543,36 @@ msgstr "Ya está en uso"
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_34.Text
 #: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_34.Text
 msgctxt ",E5E431E544EAC6E1A83534A56429AEE2"
-msgid "Ms. Cowknight - ..."
-msgstr "Dña. Vacaballera - …"
+msgid "Ms. Cowknight - Kevin Engstrand"
+msgstr "Dña. Vacaballera - Kevin Engstrand"
+
+#. Key:	E95EDE6245F7C119763F269168146210
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_77.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_77.Text
+msgctxt ",E95EDE6245F7C119763F269168146210"
+msgid "Effects Volume"
+msgstr "Volumen de Efectos"
 
 #. Key:	EBD18165465C4BC550FE1983DFE2B006
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",EBD18165465C4BC550FE1983DFE2B006"
 msgid "so we stopped for some food."
 msgstr "así que paramos para comer algo."
 
-#. Key:	EBF284A04F1BB33583B93A8EF9ECC9BE
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
-msgctxt ",EBF284A04F1BB33583B93A8EF9ECC9BE"
-msgid "Defaults"
-msgstr "Valor por Defecto"
-
 #. Key:	ED4FF0E64BD8997EBFA3D1AD9BAF6EEF
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
 msgctxt ",ED4FF0E64BD8997EBFA3D1AD9BAF6EEF"
 msgid "Mount"
 msgstr "Montar"
 
 #. Key:	EE95EDAA445D722B493283BA32348532
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",EE95EDAA445D722B493283BA32348532"
 msgid "Calm down…"
 msgstr "Cálmate..."
-
-#. Key:	F0EBCE9E476423B07432529D3E9EA524
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
-msgctxt ",F0EBCE9E476423B07432529D3E9EA524"
-msgid "Ultra"
-msgstr "Ultra"
 
 #. Key:	F0FCF11D4DC21D808B1CB7ACD51700D8
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_55.Text
@@ -1605,25 +1609,33 @@ msgctxt ",F2E57F794D081CE4ABEB8CAE3530B5DB"
 msgid "The Speed of Gnome"
 msgstr "La velocidad del gnomo"
 
+#. Key:	F325C78E4AE2393890EAA2BAD39DD058
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(3).TextOptions
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(3).TextOptions
+msgctxt ",F325C78E4AE2393890EAA2BAD39DD058"
+msgid "Ultra"
+msgstr "Ultra"
+
 #. Key:	F3656B1F4E32EA8D9B0CF29D902CED0F
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",F3656B1F4E32EA8D9B0CF29D902CED0F"
-msgid ""
-"They were really mad about \r\n"
-"what the fairies had done!"
-msgstr ""
-"¡Estaban muy enfadadas por \n"
-"lo que las hadas habían hecho!"
+msgid "They were really mad about \r\nwhat the fairies had done!"
+msgstr "¡Estaban muy enfadadas por \nlo que las hadas habían hecho!"
 
 #. Key:	F3EAA03B411173A7369575B30A304F66
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",F3EAA03B411173A7369575B30A304F66"
 msgid "But then! Then there was a big stink!"
 msgstr "¡Pero entonces!¡De repente llegó un tufo enorme!"
+
+#. Key:	F4002ED246920208B796DC9E2D891651
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
+msgctxt ",F4002ED246920208B796DC9E2D891651"
+msgid "Texture Quality"
+msgstr "Calidad de Texturas"
 
 #. Key:	F45A95624C2579EF0867E69BDE6CB3E9
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_3.Text
@@ -1641,23 +1653,17 @@ msgstr "One punch troll"
 
 #. Key:	F5079E3743CB992C960E4DBAF2F597E7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",F5079E3743CB992C960E4DBAF2F597E7"
 msgid "Hi! Hello - oh, oh, story time!"
 msgstr "¡Hey! Hola - ¡oh, oh, hora de cuentos!"
 
 #. Key:	F56685494683A0DF921FDCBE5CB880D4
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",F56685494683A0DF921FDCBE5CB880D4"
-msgid ""
-"And they magiced away almost \r\n"
-"all of the cows to teach them a lesson!"
-msgstr ""
-"¡E hicieron desaparecer a casi todas \n"
-"las vacas para enseñarles una lección!"
+msgid "And they magiced away almost \r\nall of the cows to teach them a lesson!"
+msgstr "¡E hicieron desaparecer a casi todas \nlas vacas para enseñarles una lección!"
 
 #. Key:	F5A5CC5F41972EE4A594D5BB8D5639C3
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_36.Text
@@ -1675,15 +1681,10 @@ msgstr "Mando"
 
 #. Key:	F841FA6849497D06355E288B3CD98692
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",F841FA6849497D06355E288B3CD98692"
-msgid ""
-"So we all came back to the forest and \r\n"
-"we thought everything was fine"
-msgstr ""
-"Entonces volvimos todos al bosque \n"
-"y pensamos que todo estaba bien"
+msgid "So we all came back to the forest and \r\nwe thought everything was fine"
+msgstr "Entonces volvimos todos al bosque \ny pensamos que todo estaba bien"
 
 #. Key:	F8FD46104848A05BB65FA58428C81C2B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_7.Text
@@ -1692,17 +1693,19 @@ msgctxt ",F8FD46104848A05BB65FA58428C81C2B"
 msgid "Fullscreen"
 msgstr "Pantalla Completa"
 
+#. Key:	F9B56CC54393831B4CF1C8A59023FB9B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
+msgctxt ",F9B56CC54393831B4CF1C8A59023FB9B"
+msgid "Vignette"
+msgstr "Viñeta"
+
 #. Key:	FA0A803B4BBC515E0688478860F97E12
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip Text
 msgctxt ",FA0A803B4BBC515E0688478860F97E12"
-msgid ""
-"She might not be the brightest but \r\n"
-"she is sturdy and fearless."
-msgstr ""
-"Puede que no sea la más lista, \n"
-"pero es fuerte y valiente."
+msgid "She might not be the brightest but \r\nshe is sturdy and fearless."
+msgstr "Puede que no sea la más lista, \npero es fuerte y valiente."
 
 #. Key:	FA57D0534269BC832573C9A16F716385
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Foli.Text
@@ -1718,6 +1721,13 @@ msgctxt ",FA59822F4BB3C3787EBDAE9CF2BA7BA2"
 msgid "Sharpness"
 msgstr "Nitidez"
 
+#. Key:	FB23533D4604DB45DEFF7BA35B20390E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(1).TextOptions
+#: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(1).TextOptions
+msgctxt ",FB23533D4604DB45DEFF7BA35B20390E"
+msgid "Medium"
+msgstr "Medio"
+
 #. Key:	FB4F5B82498EC030A4058391A8B5F954
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_48.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_48.Text
@@ -1732,6 +1742,13 @@ msgctxt ",FDBCFD9C40011EF269194AB278A691BD"
 msgid "Press Any Button"
 msgstr "Pulsa Cualquier Botón"
 
+#. Key:	FEA4306442D2BC806C54D9852E469230
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(1).TextOptions
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(1).TextOptions
+msgctxt ",FEA4306442D2BC806C54D9852E469230"
+msgid "Medium"
+msgstr "Medio"
+
 #. Key:	FF374A4646D8CA78CAFFBF9E59AD257D
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_39.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_39.Text
@@ -1741,15 +1758,8 @@ msgstr "Tesoros"
 
 #. Key:	FF9B8BB3465A6EC11E207693C12C3BF6
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
 msgctxt ",FF9B8BB3465A6EC11E207693C12C3BF6"
 msgid "Call Ms. Cowknight"
 msgstr "Llamar a Dña. Vacaballera"
 
-#. Key:	FFCE343C4BCE8FD4099937AA48D479CB
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_9.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_9.Text
-msgctxt ",FFCE343C4BCE8FD4099937AA48D479CB"
-msgid "Move"
-msgstr "Mover"
