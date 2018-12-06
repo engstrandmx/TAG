@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="MixerGroup" id="{fe78b2a0-b7de-426b-a7a4-9cb8f4a99a0c}">
+        <property name="volume">
+            <value>-8</value>
+        </property>
         <property name="name">
             <value>Crater_harmony</value>
         </property>

@@ -134,6 +134,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{a28b79fc-0f03-4352-9fe2-00e06922f418}">
+        <property name="volume">
+            <value>-2</value>
+        </property>
         <property name="name">
             <value>Pad</value>
         </property>
@@ -159,6 +162,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{6034693b-20cd-4882-a423-8eabaaf69cf8}">
+        <property name="volume">
+            <value>-2</value>
+        </property>
         <property name="name">
             <value>Pad_bas</value>
         </property>
@@ -224,6 +230,7 @@
         <relationship name="effects">
             <destination>{5aa5a482-e986-4183-b0ef-212186b00630}</destination>
             <destination>{0b6bfd9a-b661-45da-8c45-15136fa6de22}</destination>
+            <destination>{761d5f63-66f9-4171-905e-9cf336bd6942}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{aea2941c-28a0-4e3c-a775-c034ecc38a39}"/>
@@ -289,6 +296,14 @@
         </property>
         <property name="minimumExtent">
             <value>360</value>
+        </property>
+    </object>
+    <object class="ThreeEQEffect" id="{761d5f63-66f9-4171-905e-9cf336bd6942}">
+        <property name="lowGain">
+            <value>-2</value>
+        </property>
+        <property name="midGain">
+            <value>-2</value>
         </property>
     </object>
     <object class="MixerBusFader" id="{bdbd7169-206d-4fa5-b499-9cee19a8c1c3}"/>
