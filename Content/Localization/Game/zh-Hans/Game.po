@@ -1,18 +1,17 @@
+﻿# Game Chinese (Simplified) translation.
 # Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2018-12-05 16:05\n"
-"PO-Revision-Date: 2018-12-05 19:32+0100\n"
+"POT-Creation-Date: 2018-12-06 13:08\n"
+"PO-Revision-Date: 2018-12-06 13:08\n"
 "Language-Team: \n"
-"Language: zh_CN\n"
+"Language: zh-Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Last-Translator: \n"
-"X-Generator: Poedit 2.2\n"
 
 #. Key:	00CD1F334AFEAFBF8623EFA082D36BFA
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_29.Text
@@ -58,8 +57,7 @@ msgstr "语言"
 
 #. Key:	08B90C7A4E285E7572200589D16F41CE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
 msgctxt ",08B90C7A4E285E7572200589D16F41CE"
 msgid "Press Any Key"
 msgstr "按任意键"
@@ -87,12 +85,9 @@ msgstr "主音量"
 
 #. Key:	112FB0EA4F8025393E18219A6688790F
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip Text
 msgctxt ",112FB0EA4F8025393E18219A6688790F"
-msgid ""
-"You must be the heroes my \r\n"
-"queen told me about."
+msgid "You must be the heroes my \r\nqueen told me about."
 msgstr "你一定就是女王提到的那位英雄吧。"
 
 #. Key:	117CAFA44BFC377BC633AFBB4D54EAD1
@@ -153,8 +148,7 @@ msgstr "鼠标"
 
 #. Key:	1ACD6E8D432FC84E60DAFA96BAF7C75C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",1ACD6E8D432FC84E60DAFA96BAF7C75C"
 msgid "I’ll start..."
 msgstr "故事是这样开始的……"
@@ -182,15 +176,10 @@ msgstr "默认"
 
 #. Key:	1D6637DA442CEDB4D779728E210D7DC9
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",1D6637DA442CEDB4D779728E210D7DC9"
-msgid ""
-"But I said as long as we are together, \r\n"
-"we don't have to be afraid."
-msgstr ""
-"不过我说过的，只要我们在一起，\n"
-"就没有什么好害怕的。"
+msgid "But I said as long as we are together, \r\nwe don't have to be afraid."
+msgstr "不过我说过的，只要我们在一起，\n就没有什么好害怕的。"
 
 #. Key:	1E7FA6874E9C5818352074827DF70977
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_70.Text
@@ -250,8 +239,7 @@ msgstr "毫无"
 
 #. Key:	27D23FFA419857347A62E5AD1933AB08
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",27D23FFA419857347A62E5AD1933AB08"
 msgid "I said no, no fighting! "
 msgstr "我说，不行，不能打仗。"
@@ -265,28 +253,21 @@ msgstr "摄像头灵敏度"
 
 #. Key:	291B4BF4444EC9F6F96BC6A435F0D77C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",291B4BF4444EC9F6F96BC6A435F0D77C"
-msgid ""
-"Ohh! Oh yeah, the beginning... \r\n"
-"Let’s do that!"
-msgstr ""
-"哦哦，对的，\n"
-"那我就从最最开头说起！"
+msgid "Ohh! Oh yeah, the beginning... \r\nLet’s do that!"
+msgstr "哦哦，对的，\n那我就从最最开头说起！"
 
 #. Key:	2A386D4D4F3CE4A06216BC9FD2EBF314
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",2A386D4D4F3CE4A06216BC9FD2EBF314"
 msgid "So we kept going!"
 msgstr "让我们继续吧！"
 
 #. Key:	2B9609C04296F4EF8065E0993CC7A96C
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip Text
 msgctxt ",2B9609C04296F4EF8065E0993CC7A96C"
 msgid "And now you"
 msgstr "那么，说到你自己"
@@ -349,15 +330,10 @@ msgstr "返回"
 
 #. Key:	35B08D51401FFEC73C27B2A33A4D8DB5
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",35B08D51401FFEC73C27B2A33A4D8DB5"
-msgid ""
-"We didn’t go through all that \r\n"
-"work just to have them fight. "
-msgstr ""
-"我们辛苦了这么久，\n"
-"不是为了让他们就这样打起来。"
+msgid "We didn’t go through all that \r\nwork just to have them fight. "
+msgstr "我们辛苦了这么久，\n不是为了让他们就这样打起来。"
 
 #. Key:	38E9D8A74B0677841DD4188C87B536DE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_10.Text
@@ -382,15 +358,10 @@ msgstr "色彩"
 
 #. Key:	3A2E369240A6AA01D383449EB147565E
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",3A2E369240A6AA01D383449EB147565E"
-msgid ""
-"After all that running \r\n"
-"around we got hungry"
-msgstr ""
-"经过这一番奔波，\n"
-"我们感到了饥饿。"
+msgid "After all that running \r\naround we got hungry"
+msgstr "经过这一番奔波，\n我们感到了饥饿。"
 
 #. Key:	3ADBCF494024058FAF4BDA80EFC0B4AD
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_52.Text
@@ -408,8 +379,7 @@ msgstr "美国牛"
 
 #. Key:	3E51B47E4AB593933EE9EA8A4750763E
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
 msgctxt ",3E51B47E4AB593933EE9EA8A4750763E"
 msgid "If you call, she will come to your aid."
 msgstr "如果您发出召唤，她会立即出现来帮助您。"
@@ -430,15 +400,10 @@ msgstr "[回车/开始键]以跳过"
 
 #. Key:	4091A6D049575A86F68BF1B7BC262174
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",4091A6D049575A86F68BF1B7BC262174"
-msgid ""
-"but we’re best friends and there were cows \r\n"
-"and we’re friends too and I jumped a lot"
-msgstr ""
-"但我们是对好朋友，啊！这里有牛，\n"
-"我刚才提到我们是好朋友对吧，我跳过了一些内容。"
+msgid "but we’re best friends and there were cows \r\nand we’re friends too and I jumped a lot"
+msgstr "但我们是对好朋友，啊！这里有牛，\n我刚才提到我们是好朋友对吧，我跳过了一些内容。"
 
 #. Key:	40D32E33446920F293B13DAD8188814B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_22.Text
@@ -449,16 +414,14 @@ msgstr "超清画质"
 
 #. Key:	40F0226F4C09EBE17C3BC692F8A8299F
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip Text
 msgctxt ",40F0226F4C09EBE17C3BC692F8A8299F"
 msgid "Very Well"
 msgstr "好 极 了"
 
 #. Key:	410402B74FC28B0A389B3A92D67D5A69
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
 msgctxt ",410402B74FC28B0A389B3A92D67D5A69"
 msgid "Read Sign"
 msgstr "阅读告示牌"
@@ -479,8 +442,7 @@ msgstr "移动"
 
 #. Key:	425451834E32AA548DC179B58BFD22DC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",425451834E32AA548DC179B58BFD22DC"
 msgid "We got the cows home and saved the day!"
 msgstr "我们将牛群带回了家，并且拯救了这美好的一天！"
@@ -522,8 +484,7 @@ msgstr "分辨率"
 
 #. Key:	485B12414068D8C9C8CF9BB9B0A2FAAF
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip Text
 msgctxt ",485B12414068D8C9C8CF9BB9B0A2FAAF"
 msgid "I’m here to help."
 msgstr "我是来帮忙的。"
@@ -558,25 +519,17 @@ msgstr "按任意按钮"
 
 #. Key:	4E256AD34AE3E420AF7202B143308B8F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",4E256AD34AE3E420AF7202B143308B8F"
-msgid ""
-"You have to take it slow, \r\n"
-"and from the beginning."
+msgid "You have to take it slow, \r\nand from the beginning."
 msgstr "慢慢说，从头讲你的故事。"
 
 #. Key:	5003F6D545A5F5B62A629FAFE03AA055
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",5003F6D545A5F5B62A629FAFE03AA055"
-msgid ""
-"I’m Vilde and this is Grusa \r\n"
-"and she’s a troll and I’m a gnome"
-msgstr ""
-"我是个地精，名叫维尔德。而她呢，\n"
-"是个巨魔，叫格鲁萨。"
+msgid "I’m Vilde and this is Grusa \r\nand she’s a troll and I’m a gnome"
+msgstr "我是个地精，名叫维尔德。而她呢，\n是个巨魔，叫格鲁萨。"
 
 #. Key:	50F33D774EB76DE1AA469B9FBCCC5A62
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_1.Text
@@ -592,14 +545,18 @@ msgctxt ",547717EA483D50DF96BBA5B1809F461E"
 msgid "Gamma"
 msgstr "伽马值"
 
+#. Key:	548E4F6745962B21B39B1794F676E56F
+#. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+#: /Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+msgctxt ",548E4F6745962B21B39B1794F676E56F"
+msgid "WASD"
+msgstr "WASD"
+
 #. Key:	54D12DCD4D3BC95058A38DADD8DB8066
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",54D12DCD4D3BC95058A38DADD8DB8066"
-msgid ""
-"Vilde and I are friends with the \r\n"
-"cows that live in our forest."
+msgid "Vilde and I are friends with the \r\ncows that live in our forest."
 msgstr "威尔德和我和森林里的那群牛是朋友。"
 
 #. Key:	5769CF1B4013AECEED67CEB941F61777
@@ -618,8 +575,7 @@ msgstr "新的游戏"
 
 #. Key:	59D7FEDC492A6BA6A64B6486354BBBE1
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",59D7FEDC492A6BA6A64B6486354BBBE1"
 msgid "Press Any Key"
 msgstr "按任意键"
@@ -654,15 +610,10 @@ msgstr "视野"
 
 #. Key:	64D982204A1C4EFBF19798B53B95E478
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip Text
 msgctxt ",64D982204A1C4EFBF19798B53B95E478"
-msgid ""
-"Thankfully, they didn’t get my \r\n"
-"bravest cow knight."
-msgstr ""
-"太感谢了，\n"
-"好在他们没能发现我最勇敢的牛骑士。"
+msgid "Thankfully, they didn’t get my \r\nbravest cow knight."
+msgstr "太感谢了，\n好在他们没能发现我最勇敢的牛骑士。"
 
 #. Key:	6600F2414DC5C4402C4D10B7A7E7D89C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra9.Text
@@ -715,12 +666,9 @@ msgstr "特效质量"
 
 #. Key:	6B29A37347788D5683CF3A861445E4D7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",6B29A37347788D5683CF3A861445E4D7"
-msgid ""
-"and she accidentally \r\n"
-"sat down on a fairy."
+msgid "and she accidentally \r\nsat down on a fairy."
 msgstr "不小心坐到了一只精灵的身上！"
 
 #. Key:	6CCDE54C4FC39F729AB0DDA414FF39DB
@@ -795,15 +743,10 @@ msgstr "翻转摄像头Y轴"
 
 #. Key:	79EDA0C642731406A5350683C7E9F824
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",79EDA0C642731406A5350683C7E9F824"
-msgid ""
-"and the cows flew but the- the fairies \r\n"
-"and the fairyrings and the mushrooms-"
-msgstr ""
-"牛飞起来了，但是，啊，精灵，精灵环，\n"
-"对了我还没提到蘑菇的事情。"
+msgid "and the cows flew but the- the fairies \r\nand the fairyrings and the mushrooms-"
+msgstr "牛飞起来了，但是，啊，精灵，精灵环，\n对了我还没提到蘑菇的事情。"
 
 #. Key:	7B06643E497790166DA920BFF18BD42F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
@@ -821,8 +764,7 @@ msgstr "头槌"
 
 #. Key:	7C3B63F548416D09A85C75A55AF1809E
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip Text
 msgctxt ",7C3B63F548416D09A85C75A55AF1809E"
 msgid "Good luck!"
 msgstr "祝你好运！"
@@ -864,8 +806,7 @@ msgstr "退出"
 
 #. Key:	82B6DC5B49F0501298CD1DB42931A4EA
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",82B6DC5B49F0501298CD1DB42931A4EA"
 msgid "They wanted to get revenge on the fairies."
 msgstr "他们想对精灵发起复仇。"
@@ -886,20 +827,14 @@ msgstr "音乐音量"
 
 #. Key:	8406CE01431BF139A1981E8F53236D17
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip Text
 msgctxt ",8406CE01431BF139A1981E8F53236D17"
-msgid ""
-"I can’t believe the fairies took all of my \r\n"
-"cow subjects, please help me save them!"
-msgstr ""
-"我真不敢相信，精灵居然赶走了所有的牛。\n"
-"请帮助我救救它们！"
+msgid "I can’t believe the fairies took all of my \r\ncow subjects, please help me save them!"
+msgstr "我真不敢相信，精灵居然赶走了所有的牛。\n请帮助我救救它们！"
 
 #. Key:	84D0C3AC4E9B0CB5EAB0CD982C1F3BAE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",84D0C3AC4E9B0CB5EAB0CD982C1F3BAE"
 msgid "Press Any Button"
 msgstr "按任意按钮"
@@ -934,15 +869,10 @@ msgstr "哞哞？"
 
 #. Key:	8A2A012743853E6A3D312295247543CF
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip Text
 msgctxt ",8A2A012743853E6A3D312295247543CF"
-msgid ""
-"I hope that they have learned their lesson and that \r\n"
-"their queen is more careful in the future."
-msgstr ""
-"希望他们这回得到了教训，\n"
-"希望他们的女王以后能小心一点。"
+msgid "I hope that they have learned their lesson and that \r\ntheir queen is more careful in the future."
+msgstr "希望他们这回得到了教训，\n希望他们的女王以后能小心一点。"
 
 #. Key:	8AC1281643453F2E66AEC382CE9BA8B0
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_64.Text
@@ -953,20 +883,14 @@ msgstr "交互"
 
 #. Key:	8B05F44C4BA264CD4CA5B4AA257F5DF6
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",8B05F44C4BA264CD4CA5B4AA257F5DF6"
-msgid ""
-"And while we ate, \r\n"
-"the sun started to set."
-msgstr ""
-"我们吃饭的时候，\n"
-"日头已经开始下落了。"
+msgid "And while we ate, \r\nthe sun started to set."
+msgstr "我们吃饭的时候，\n日头已经开始下落了。"
 
 #. Key:	8FC8C4AE40D705876AEB3C8EE09BE43D
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",8FC8C4AE40D705876AEB3C8EE09BE43D"
 msgid "But then…"
 msgstr "但是……"
@@ -1015,15 +939,10 @@ msgstr "青蛙模式"
 
 #. Key:	94C8B7D841E95164D4F59C8BDF718C54
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",94C8B7D841E95164D4F59C8BDF718C54"
-msgid ""
-"I decided to have a snack and \r\n"
-"let them figure it out on their own."
-msgstr ""
-"我决定先吃点东西，\n"
-"然后看他们最后会讨论出个什么结果。"
+msgid "I decided to have a snack and \r\nlet them figure it out on their own."
+msgstr "我决定先吃点东西，\n然后看他们最后会讨论出个什么结果。"
 
 #. Key:	94F089504196270A31C7D0973D0110A5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.InversionX.Text
@@ -1055,8 +974,7 @@ msgstr "超清画质"
 
 #. Key:	9856623B45E3359D936C52B0B132DA28
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",9856623B45E3359D936C52B0B132DA28"
 msgid "I thought it was a little scary."
 msgstr "我觉得有点吓人。"
@@ -1091,12 +1009,9 @@ msgstr "其他贡献者"
 
 #. Key:	A34846EF44CB86CB2709D18DEB6E9BFC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",A34846EF44CB86CB2709D18DEB6E9BFC"
-msgid ""
-"I guess they didn’t want to \r\n"
-"fight that much after all…"
+msgid "I guess they didn’t want to \r\nfight that much after all…"
 msgstr "我猜，他们这下子就再也不会想打仗了吧……"
 
 #. Key:	A4BCDA1F4DB7902127E5A3B9E369DAD5
@@ -1122,27 +1037,17 @@ msgstr "游戏开发"
 
 #. Key:	A8A4E9E94E5C9AE0D66AA2945E30ABD2
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",A8A4E9E94E5C9AE0D66AA2945E30ABD2"
-msgid ""
-"But that’s no problem for us, \r\n"
-"we love being up late!"
-msgstr ""
-"对我们来说这倒不是什么问题，\n"
-"我们经常很晚才回去！"
+msgid "But that’s no problem for us, \r\nwe love being up late!"
+msgstr "对我们来说这倒不是什么问题，\n我们经常很晚才回去！"
 
 #. Key:	A93F2051447DB3C191ACFD84D1D4CA4C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",A93F2051447DB3C191ACFD84D1D4CA4C"
-msgid ""
-"The queen was very sad about that so \r\n"
-"she came and asked us for help."
-msgstr ""
-"女王为此非常难过，\n"
-"跑来找我们帮忙。"
+msgid "The queen was very sad about that so \r\nshe came and asked us for help."
+msgstr "女王为此非常难过，\n跑来找我们帮忙。"
 
 #. Key:	AA2F42FF4D22533A1D5301A20E37720A
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra5.Text
@@ -1160,15 +1065,10 @@ msgstr "悬空跳"
 
 #. Key:	AB80CDBC416F5F519E83BF8DBB15FA92
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip Text
 msgctxt ",AB80CDBC416F5F519E83BF8DBB15FA92"
-msgid ""
-"We harbour no ill will toward you or the cows \r\n"
-"anymore and I will let them all return home."
-msgstr ""
-"我们不会在怨恨你和这些牛了，\n"
-"我会让他们都回家里去。"
+msgid "We harbour no ill will toward you or the cows \r\nanymore and I will let them all return home."
+msgstr "我们不会在怨恨你和这些牛了，\n我会让他们都回家里去。"
 
 #. Key:	ACBE71A14A73679C89832A94360EF6B2
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_6.Text
@@ -1242,8 +1142,7 @@ msgstr "返回"
 
 #. Key:	B489A0E644C2FE933DD459AE4A96F1B0
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip Text
 msgctxt ",B489A0E644C2FE933DD459AE4A96F1B0"
 msgid "I will transport you back to the forest as well."
 msgstr "我会把你也传送回森林里。"
@@ -1257,38 +1156,28 @@ msgstr "搭乘"
 
 #. Key:	B8B9487D44A70802847BEEAB4E6688C3
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",B8B9487D44A70802847BEEAB4E6688C3"
-msgid ""
-"Inside the mountain it was dark \r\n"
-"and there was a lot of places to fall down."
-msgstr ""
-"黑黢黢的深山老林之中，\n"
-"有很多地方都很容易失足跌倒。"
+msgid "Inside the mountain it was dark \r\nand there was a lot of places to fall down."
+msgstr "黑黢黢的深山老林之中，\n有很多地方都很容易失足跌倒。"
 
 #. Key:	B8CAC492438BC9FE2961EDB9C70E2DA8
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",B8CAC492438BC9FE2961EDB9C70E2DA8"
-msgid ""
-"I thought, we don’t really have \r\n"
-"to get involved anymore. "
+msgid "I thought, we don’t really have \r\nto get involved anymore. "
 msgstr "我觉得我们再也不想被卷进这件麻烦事了。"
 
 #. Key:	BA2804FD48E18BC209AFCA94A0906C98
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",BA2804FD48E18BC209AFCA94A0906C98"
 msgid "Anyway, we did it!"
 msgstr "总之，我们做到了！"
 
 #. Key:	BA3EC83844FFDB1CFA31019EA54013AD
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",BA3EC83844FFDB1CFA31019EA54013AD"
 msgid "but the cows didn’t think so."
 msgstr "但是牛群那边觉得还是有问题。"
@@ -1330,8 +1219,7 @@ msgstr "图形"
 
 #. Key:	BE9795FA4E0B3C454C24F783143F8ABA
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",BE9795FA4E0B3C454C24F783143F8ABA"
 msgid "Yes, and Ms. Cowknight is helping us too!"
 msgstr "是的，而且牛骑士小姐也在帮助我们！"
@@ -1340,12 +1228,8 @@ msgstr "是的，而且牛骑士小姐也在帮助我们！"
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra10.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra10.Text
 msgctxt ",BEBF5D634B4216A566A1B69203737F8A"
-msgid ""
-"Why did you eat those\r\n"
-"shrooms, Grusa?"
-msgstr ""
-"为什么要吃这些蘑菇，\n"
-"格鲁萨？"
+msgid "Why did you eat those\r\nshrooms, Grusa?"
+msgstr "为什么要吃这些蘑菇，\n格鲁萨？"
 
 #. Key:	BF3E9BBC408B3E06434D26A070BCE373
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
@@ -1356,15 +1240,10 @@ msgstr "暖度"
 
 #. Key:	BF6F54B04325D0135D99BFA55BD0950C
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
 msgctxt ",BF6F54B04325D0135D99BFA55BD0950C"
-msgid ""
-"I see that you have made it through \r\n"
-"our challenges and freed the cows. "
-msgstr ""
-"我看到你通过了我设下的所有挑战，\n"
-"解救了牛群。"
+msgid "I see that you have made it through \r\nour challenges and freed the cows. "
+msgstr "我看到你通过了我设下的所有挑战，\n解救了牛群。"
 
 #. Key:	BFD4D3444DAED614921E91A8A9E1623D
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
@@ -1375,15 +1254,10 @@ msgstr "高画质"
 
 #. Key:	C0F586944CA48CD0D55E53AEF3D2BFA5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",C0F586944CA48CD0D55E53AEF3D2BFA5"
-msgid ""
-"One day, the queen \r\n"
-"of the cows wasn’t looking"
-msgstr ""
-"有一天，\n"
-"牛群的女王没有太注意，"
+msgid "One day, the queen \r\nof the cows wasn’t looking"
+msgstr "有一天，\n牛群的女王没有太注意，"
 
 #. Key:	C12D436544FD9F98EA585B9D039AC16F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_34.Text
@@ -1401,8 +1275,7 @@ msgstr "[回车/开始键]以跳过"
 
 #. Key:	C3F21FAD48B5F462F842DCA5B98C77CC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",C3F21FAD48B5F462F842DCA5B98C77CC"
 msgid "and quickly they all went back home!"
 msgstr "很快就纷纷逃回了家中！"
@@ -1549,28 +1422,21 @@ msgstr "搭乘"
 
 #. Key:	D64833CA4C128ACCD0819D81D54658B1
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip Text
 msgctxt ",D64833CA4C128ACCD0819D81D54658B1"
-msgid ""
-"Come on, you can jump on my back to\r\n"
-" get over this wall, I don’t mind at all."
-msgstr ""
-"来吧，你可以跳到我背上来翻过那面墙，\n"
-"我不介意的。"
+msgid "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
+msgstr "来吧，你可以跳到我背上来翻过那面墙，\n我不介意的。"
 
 #. Key:	D887D47046F8021FE0005698D542FCE9
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",D887D47046F8021FE0005698D542FCE9"
 msgid "Already in use"
 msgstr "已使用"
 
 #. Key:	D9193FA645FFB26AA0C0799FD4949E3B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",D9193FA645FFB26AA0C0799FD4949E3B"
 msgid "And the fairies got mad about it!"
 msgstr "因为这事，精灵们陷入了狂怒！"
@@ -1591,8 +1457,7 @@ msgstr "中画质"
 
 #. Key:	DB182CC84FD93F6DCE03DCBD04D283A1
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",DB182CC84FD93F6DCE03DCBD04D283A1"
 msgid "The queen rallied all of her returned cows."
 msgstr "女王召集了所有回来的牛。"
@@ -1613,15 +1478,10 @@ msgstr "WASD"
 
 #. Key:	DC3F1DF34B4028677F2B65BEB0CF9201
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",DC3F1DF34B4028677F2B65BEB0CF9201"
-msgid ""
-"Grusa farted so bad, the cows \r\n"
-"and the fairies couldn’t stand it"
-msgstr ""
-"格鲁萨的臭屁真是非同凡响，\n"
-"牛和精灵都完全忍受不了，"
+msgid "Grusa farted so bad, the cows \r\nand the fairies couldn’t stand it"
+msgstr "格鲁萨的臭屁真是非同凡响，\n牛和精灵都完全忍受不了，"
 
 #. Key:	DD40FBFF48483CBEC61557AAA2D3B603
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_13.Text
@@ -1660,13 +1520,10 @@ msgstr "低画质"
 
 #. Key:	E2A278514306603115EACEAB295C4B98
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",E2A278514306603115EACEAB295C4B98"
 msgid "And we said yes! We always help our friends."
-msgstr ""
-"我们答应了！\n"
-"我们从不拒绝向我们的朋友伸出援手。"
+msgstr "我们答应了！\n我们从不拒绝向我们的朋友伸出援手。"
 
 #. Key:	E4A78FAC4E20D1DFB42615A18B950940
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_31.Text
@@ -1684,8 +1541,7 @@ msgstr "本地化"
 
 #. Key:	E581590640BE412D0B9DCF9FA9D55084
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
 msgctxt ",E581590640BE412D0B9DCF9FA9D55084"
 msgid "Already in use"
 msgstr "已使用"
@@ -1706,24 +1562,21 @@ msgstr "音效音量"
 
 #. Key:	EBD18165465C4BC550FE1983DFE2B006
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",EBD18165465C4BC550FE1983DFE2B006"
 msgid "so we stopped for some food."
 msgstr "于是我们停下来寻找食物。"
 
 #. Key:	ED4FF0E64BD8997EBFA3D1AD9BAF6EEF
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
 msgctxt ",ED4FF0E64BD8997EBFA3D1AD9BAF6EEF"
 msgid "Mount"
 msgstr "搭乘"
 
 #. Key:	EE95EDAA445D722B493283BA32348532
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",EE95EDAA445D722B493283BA32348532"
 msgid "Calm down…"
 msgstr "冷静点……"
@@ -1772,18 +1625,14 @@ msgstr "超清画质"
 
 #. Key:	F3656B1F4E32EA8D9B0CF29D902CED0F
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",F3656B1F4E32EA8D9B0CF29D902CED0F"
-msgid ""
-"They were really mad about \r\n"
-"what the fairies had done!"
+msgid "They were really mad about \r\nwhat the fairies had done!"
 msgstr "他们对精灵做的事情感到十分恼火。"
 
 #. Key:	F3EAA03B411173A7369575B30A304F66
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",F3EAA03B411173A7369575B30A304F66"
 msgid "But then! Then there was a big stink!"
 msgstr "但是，就在那时，一股臭味弥漫开来！"
@@ -1811,23 +1660,17 @@ msgstr "一拳巨魔"
 
 #. Key:	F5079E3743CB992C960E4DBAF2F597E7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",F5079E3743CB992C960E4DBAF2F597E7"
 msgid "Hi! Hello - oh, oh, story time!"
 msgstr "嘿，大伙儿好！哦哦，又到将故事的时间啦！"
 
 #. Key:	F56685494683A0DF921FDCBE5CB880D4
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",F56685494683A0DF921FDCBE5CB880D4"
-msgid ""
-"And they magiced away almost \r\n"
-"all of the cows to teach them a lesson!"
-msgstr ""
-"他们用魔法驱逐了所有的牛，\n"
-"打算给它们好好上一课！"
+msgid "And they magiced away almost \r\nall of the cows to teach them a lesson!"
+msgstr "他们用魔法驱逐了所有的牛，\n打算给它们好好上一课！"
 
 #. Key:	F5A5CC5F41972EE4A594D5BB8D5639C3
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_36.Text
@@ -1845,15 +1688,10 @@ msgstr "控制器"
 
 #. Key:	F841FA6849497D06355E288B3CD98692
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",F841FA6849497D06355E288B3CD98692"
-msgid ""
-"So we all came back to the forest and \r\n"
-"we thought everything was fine"
-msgstr ""
-"就这样，我们都回到了森林之中，\n"
-"觉得一切都没有什么问题了。"
+msgid "So we all came back to the forest and \r\nwe thought everything was fine"
+msgstr "就这样，我们都回到了森林之中，\n觉得一切都没有什么问题了。"
 
 #. Key:	F8FD46104848A05BB65FA58428C81C2B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_7.Text
@@ -1871,15 +1709,10 @@ msgstr "晕影"
 
 #. Key:	FA0A803B4BBC515E0688478860F97E12
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip Text
 msgctxt ",FA0A803B4BBC515E0688478860F97E12"
-msgid ""
-"She might not be the brightest but \r\n"
-"she is sturdy and fearless."
-msgstr ""
-"她的脑袋可能不算非常灵光，\n"
-"但她坚韧不拔，无所畏惧。"
+msgid "She might not be the brightest but \r\nshe is sturdy and fearless."
+msgstr "她的脑袋可能不算非常灵光，\n但她坚韧不拔，无所畏惧。"
 
 #. Key:	FA57D0534269BC832573C9A16F716385
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Foli.Text
@@ -1932,8 +1765,8 @@ msgstr "藏宝库"
 
 #. Key:	FF9B8BB3465A6EC11E207693C12C3BF6
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
 msgctxt ",FF9B8BB3465A6EC11E207693C12C3BF6"
 msgid "Call Ms. Cowknight"
 msgstr "召唤牛骑士小姐"
+

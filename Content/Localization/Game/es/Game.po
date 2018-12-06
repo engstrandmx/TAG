@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2018-12-05 16:05\n"
-"PO-Revision-Date: 2018-12-05 16:05\n"
+"POT-Creation-Date: 2018-12-06 13:08\n"
+"PO-Revision-Date: 2018-12-06 13:08\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -544,6 +544,13 @@ msgstr "Idioma"
 msgctxt ",547717EA483D50DF96BBA5B1809F461E"
 msgid "Gamma"
 msgstr "Gamma"
+
+#. Key:	548E4F6745962B21B39B1794F676E56F
+#. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+#: /Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
+msgctxt ",548E4F6745962B21B39B1794F676E56F"
+msgid "WASD"
+msgstr "WASD"
 
 #. Key:	54D12DCD4D3BC95058A38DADD8DB8066
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
