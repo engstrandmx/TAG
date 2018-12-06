@@ -105,7 +105,7 @@
             <value>7000</value>
         </property>
         <property name="minimumScatterDistance">
-            <value>0</value>
+            <value>2.20000005</value>
         </property>
         <property name="maximumScatterDistance">
             <value>7</value>

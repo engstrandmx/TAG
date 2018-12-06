@@ -4,6 +4,9 @@
         <property name="name">
             <value>Vox_comp</value>
         </property>
+        <relationship name="masters">
+            <destination>{9c32d46b-59f1-49ec-8716-83cd4eb0ba83}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{3c7dff69-362a-4cd0-be46-5b56e5895d10}</destination>
         </relationship>

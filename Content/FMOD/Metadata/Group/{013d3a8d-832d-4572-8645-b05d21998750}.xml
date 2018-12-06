@@ -4,6 +4,9 @@
         <property name="name">
             <value>GnomTrolDieFALL</value>
         </property>
+        <relationship name="masters">
+            <destination>{9c32d46b-59f1-49ec-8716-83cd4eb0ba83}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{905cbe8d-7a53-4274-8b29-d45d8da429f0}</destination>
         </relationship>
