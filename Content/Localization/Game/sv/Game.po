@@ -1,18 +1,17 @@
+﻿# Game Swedish translation.
 # Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2018-12-06 13:08\n"
-"PO-Revision-Date: 2018-12-06 16:49+0100\n"
+"POT-Creation-Date: 2018-12-19 15:13\n"
+"PO-Revision-Date: 2018-12-19 15:13\n"
 "Language-Team: \n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: \n"
-"X-Generator: Poedit 2.2\n"
 
 #. Key:	00CD1F334AFEAFBF8623EFA082D36BFA
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_29.Text
@@ -58,8 +57,7 @@ msgstr "Språk"
 
 #. Key:	08B90C7A4E285E7572200589D16F41CE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
 msgctxt ",08B90C7A4E285E7572200589D16F41CE"
 msgid "Press Any Key"
 msgstr "Tryck på valfri tangent"
@@ -87,15 +85,10 @@ msgstr "Huvudvolym"
 
 #. Key:	112FB0EA4F8025393E18219A6688790F
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip Text
 msgctxt ",112FB0EA4F8025393E18219A6688790F"
-msgid ""
-"You must be the heroes my \r\n"
-"queen told me about."
-msgstr ""
-"Ni måste vara hjältarna min \n"
-"drottning berättade om. "
+msgid "You must be the heroes my \r\nqueen told me about."
+msgstr "Ni måste vara hjältarna min \ndrottning berättade om. "
 
 #. Key:	117CAFA44BFC377BC633AFBB4D54EAD1
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextAAOptions(1).TextAAOptions
@@ -155,8 +148,7 @@ msgstr "Mus"
 
 #. Key:	1ACD6E8D432FC84E60DAFA96BAF7C75C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",1ACD6E8D432FC84E60DAFA96BAF7C75C"
 msgid "I’ll start..."
 msgstr "Jag kan börja…"
@@ -184,15 +176,10 @@ msgstr "Standardinställningar"
 
 #. Key:	1D6637DA442CEDB4D779728E210D7DC9
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",1D6637DA442CEDB4D779728E210D7DC9"
-msgid ""
-"But I said as long as we are together, \r\n"
-"we don't have to be afraid."
-msgstr ""
-"Vi behöver inte vara rädda sa jag, \n"
-"för vi är ju tillsammans."
+msgid "But I said as long as we are together, \r\nwe don't have to be afraid."
+msgstr "Vi behöver inte vara rädda sa jag, \nför vi är ju tillsammans."
 
 #. Key:	1E7FA6874E9C5818352074827DF70977
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_70.Text
@@ -234,7 +221,7 @@ msgstr "Handkontroll"
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_17.Text
 msgctxt ",22DD332A496D7F0220D01F83B02F1CE1"
 msgid "Colours"
-msgstr "Färginställningar"
+msgstr "Färg"
 
 #. Key:	24C0AB6849AB162F8DE689ACAF86042E
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_75.Text
@@ -252,8 +239,7 @@ msgstr "Ingen"
 
 #. Key:	27D23FFA419857347A62E5AD1933AB08
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",27D23FFA419857347A62E5AD1933AB08"
 msgid "I said no, no fighting! "
 msgstr "Nej! Sa jag, inget mer bråk!"
@@ -267,28 +253,21 @@ msgstr "Kamerakänslighet"
 
 #. Key:	291B4BF4444EC9F6F96BC6A435F0D77C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",291B4BF4444EC9F6F96BC6A435F0D77C"
-msgid ""
-"Ohh! Oh yeah, the beginning... \r\n"
-"Let’s do that!"
-msgstr ""
-"Ohh! Jajuste, från början…\n"
-"Det kan vi göra!"
+msgid "Ohh! Oh yeah, the beginning... \r\nLet’s do that!"
+msgstr "Ohh! Jajuste, från början…\nDet kan vi göra!"
 
 #. Key:	2A386D4D4F3CE4A06216BC9FD2EBF314
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",2A386D4D4F3CE4A06216BC9FD2EBF314"
 msgid "So we kept going!"
 msgstr "Så vi fortsatte! "
 
 #. Key:	2B9609C04296F4EF8065E0993CC7A96C
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP6.Tooltip Text
 msgctxt ",2B9609C04296F4EF8065E0993CC7A96C"
 msgid "And now you"
 msgstr "Och nu till er,"
@@ -351,15 +330,10 @@ msgstr "Tillbaka"
 
 #. Key:	35B08D51401FFEC73C27B2A33A4D8DB5
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",35B08D51401FFEC73C27B2A33A4D8DB5"
-msgid ""
-"We didn’t go through all that \r\n"
-"work just to have them fight. "
-msgstr ""
-"Vi jobbade inte så hårt bara \n"
-"för att de skulle kunna slåss."
+msgid "We didn’t go through all that \r\nwork just to have them fight. "
+msgstr "Vi jobbade inte så hårt bara \nför att de skulle kunna slåss."
 
 #. Key:	38E9D8A74B0677841DD4188C87B536DE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_10.Text
@@ -380,19 +354,14 @@ msgstr "Ljud"
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
 msgctxt ",3A2A6493451C0D10F6BE31A9F10ABDF6"
 msgid "Colours"
-msgstr "Färginställningar"
+msgstr "Färg"
 
 #. Key:	3A2E369240A6AA01D383449EB147565E
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",3A2E369240A6AA01D383449EB147565E"
-msgid ""
-"After all that running \r\n"
-"around we got hungry"
-msgstr ""
-"Vi blev hungriga efter att ha\n"
-"sprungit runt så mycket"
+msgid "After all that running \r\naround we got hungry"
+msgstr "Vi blev hungriga efter att ha\nsprungit runt så mycket"
 
 #. Key:	3ADBCF494024058FAF4BDA80EFC0B4AD
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_52.Text
@@ -410,8 +379,7 @@ msgstr "Amerikansk ko"
 
 #. Key:	3E51B47E4AB593933EE9EA8A4750763E
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ3.Tooltip Text
 msgctxt ",3E51B47E4AB593933EE9EA8A4750763E"
 msgid "If you call, she will come to your aid."
 msgstr "Om ni kallar på henne så kommer hon att hjälpa er."
@@ -432,15 +400,10 @@ msgstr "[Enter/Start] Skippa"
 
 #. Key:	4091A6D049575A86F68BF1B7BC262174
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",4091A6D049575A86F68BF1B7BC262174"
-msgid ""
-"but we’re best friends and there were cows \r\n"
-"and we’re friends too and I jumped a lot"
-msgstr ""
-"men vi är bästa kompisar och det var kor\n"
-"och vi är kompisar med dem också och jag hoppade massor"
+msgid "but we’re best friends and there were cows \r\nand we’re friends too and I jumped a lot"
+msgstr "men vi är bästa kompisar och det var kor\noch vi är kompisar med dem också och jag hoppade massor"
 
 #. Key:	40D32E33446920F293B13DAD8188814B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_22.Text
@@ -451,16 +414,14 @@ msgstr "Extrem"
 
 #. Key:	40F0226F4C09EBE17C3BC692F8A8299F
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP2.Tooltip Text
 msgctxt ",40F0226F4C09EBE17C3BC692F8A8299F"
 msgid "Very Well"
 msgstr "Nåväl,"
 
 #. Key:	410402B74FC28B0A389B3A92D67D5A69
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
 msgctxt ",410402B74FC28B0A389B3A92D67D5A69"
 msgid "Read Sign"
 msgstr "Läs skylt"
@@ -481,8 +442,7 @@ msgstr "Förflyttning"
 
 #. Key:	425451834E32AA548DC179B58BFD22DC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",425451834E32AA548DC179B58BFD22DC"
 msgid "We got the cows home and saved the day!"
 msgstr "Vi hämtade hem alla korna och räddade dagen!"
@@ -524,8 +484,7 @@ msgstr "Upplösning"
 
 #. Key:	485B12414068D8C9C8CF9BB9B0A2FAAF
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK2.Tooltip Text
 msgctxt ",485B12414068D8C9C8CF9BB9B0A2FAAF"
 msgid "I’m here to help."
 msgstr "Jag är här för att hjälpa till."
@@ -560,27 +519,17 @@ msgstr "Tryck på valfri knapp"
 
 #. Key:	4E256AD34AE3E420AF7202B143308B8F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",4E256AD34AE3E420AF7202B143308B8F"
-msgid ""
-"You have to take it slow, \r\n"
-"and from the beginning."
-msgstr ""
-"Du måste sakta ner,\n"
-"och ta det från början."
+msgid "You have to take it slow, \r\nand from the beginning."
+msgstr "Du måste sakta ner,\noch ta det från början."
 
 #. Key:	5003F6D545A5F5B62A629FAFE03AA055
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",5003F6D545A5F5B62A629FAFE03AA055"
-msgid ""
-"I’m Vilde and this is Grusa \r\n"
-"and she’s a troll and I’m a gnome"
-msgstr ""
-"Jag heter Vilde och min kompis heter Grusa \n"
-"och hon är ett troll och jag är en vätte"
+msgid "I’m Vilde and this is Grusa \r\nand she’s a troll and I’m a gnome"
+msgstr "Jag heter Vilde och min kompis heter Grusa \noch hon är ett troll och jag är en vätte"
 
 #. Key:	50F33D774EB76DE1AA469B9FBCCC5A62
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_1.Text
@@ -605,15 +554,10 @@ msgstr "WASD"
 
 #. Key:	54D12DCD4D3BC95058A38DADD8DB8066
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",54D12DCD4D3BC95058A38DADD8DB8066"
-msgid ""
-"Vilde and I are friends with the \r\n"
-"cows that live in our forest."
-msgstr ""
-"Vilde och jag är kompisar med\n"
-"korna som bor i vår skog."
+msgid "Vilde and I are friends with the \r\ncows that live in our forest."
+msgstr "Vilde och jag är kompisar med\nkorna som bor i vår skog."
 
 #. Key:	5769CF1B4013AECEED67CEB941F61777
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_50.Text
@@ -631,8 +575,7 @@ msgstr "Nytt spel"
 
 #. Key:	59D7FEDC492A6BA6A64B6486354BBBE1
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",59D7FEDC492A6BA6A64B6486354BBBE1"
 msgid "Press Any Key"
 msgstr "Tryck på valfri tangent"
@@ -642,7 +585,7 @@ msgstr "Tryck på valfri tangent"
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_6.Text
 msgctxt ",5A1F0FA94BAB1B4449D1A99F3146A910"
 msgid "Display"
-msgstr "Skärminställningar"
+msgstr "Skärm"
 
 #. Key:	5AF863CE45264D21E0EF3C918957CC06
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
@@ -667,15 +610,10 @@ msgstr "Synfält"
 
 #. Key:	64D982204A1C4EFBF19798B53B95E478
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip Text
 msgctxt ",64D982204A1C4EFBF19798B53B95E478"
-msgid ""
-"Thankfully, they didn’t get my \r\n"
-"bravest cow knight."
-msgstr ""
-"Tack och lov fick de inte tag \n"
-"i min tappraste koriddare."
+msgid "Thankfully, they didn’t get my \r\nbravest cow knight."
+msgstr "Tack och lov fick de inte tag \ni min tappraste koriddare."
 
 #. Key:	6600F2414DC5C4402C4D10B7A7E7D89C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra9.Text
@@ -728,15 +666,10 @@ msgstr "Effektkvalitet"
 
 #. Key:	6B29A37347788D5683CF3A861445E4D7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",6B29A37347788D5683CF3A861445E4D7"
-msgid ""
-"and she accidentally \r\n"
-"sat down on a fairy."
-msgstr ""
-"och hon råkade\n"
-"sätta sig på en älva."
+msgid "and she accidentally \r\nsat down on a fairy."
+msgstr "och hon råkade\nsätta sig på en älva."
 
 #. Key:	6CCDE54C4FC39F729AB0DDA414FF39DB
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_76.Text
@@ -810,15 +743,10 @@ msgstr "Invertera kamera Y"
 
 #. Key:	79EDA0C642731406A5350683C7E9F824
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",79EDA0C642731406A5350683C7E9F824"
-msgid ""
-"and the cows flew but the- the fairies \r\n"
-"and the fairyrings and the mushrooms-"
-msgstr ""
-"och korna flög men - men älvorna\n"
-"och älvringarna med svamparna-"
+msgid "and the cows flew but the- the fairies \r\nand the fairyrings and the mushrooms-"
+msgstr "och korna flög men - men älvorna\noch älvringarna med svamparna-"
 
 #. Key:	7B06643E497790166DA920BFF18BD42F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
@@ -836,8 +764,7 @@ msgstr "Skalla (Vätte)"
 
 #. Key:	7C3B63F548416D09A85C75A55AF1809E
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip Text
 msgctxt ",7C3B63F548416D09A85C75A55AF1809E"
 msgid "Good luck!"
 msgstr "Lycka till!"
@@ -879,8 +806,7 @@ msgstr "Avsluta"
 
 #. Key:	82B6DC5B49F0501298CD1DB42931A4EA
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",82B6DC5B49F0501298CD1DB42931A4EA"
 msgid "They wanted to get revenge on the fairies."
 msgstr "Korna ville hämnas på älvorna."
@@ -901,20 +827,14 @@ msgstr "Musikvolym"
 
 #. Key:	8406CE01431BF139A1981E8F53236D17
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ1.Tooltip Text
 msgctxt ",8406CE01431BF139A1981E8F53236D17"
-msgid ""
-"I can’t believe the fairies took all of my \r\n"
-"cow subjects, please help me save them!"
-msgstr ""
-"Det är inte sant, älvorna trollade bort alla mina undersåtar! \n"
-"Snälla hjälp mig att rädda dem!"
+msgid "I can’t believe the fairies took all of my \r\ncow subjects, please help me save them!"
+msgstr "Det är inte sant, älvorna trollade bort alla mina undersåtar! \nSnälla hjälp mig att rädda dem!"
 
 #. Key:	84D0C3AC4E9B0CB5EAB0CD982C1F3BAE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",84D0C3AC4E9B0CB5EAB0CD982C1F3BAE"
 msgid "Press Any Button"
 msgstr "Tryck på valfri knapp"
@@ -949,15 +869,10 @@ msgstr "Mu?"
 
 #. Key:	8A2A012743853E6A3D312295247543CF
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP3.Tooltip Text
 msgctxt ",8A2A012743853E6A3D312295247543CF"
-msgid ""
-"I hope that they have learned their lesson and that \r\n"
-"their queen is more careful in the future."
-msgstr ""
-"jag hoppas att de har lärt sig en läxa och att \n"
-"deras drottning är mer försiktig i framtiden."
+msgid "I hope that they have learned their lesson and that \r\ntheir queen is more careful in the future."
+msgstr "jag hoppas att de har lärt sig en läxa och att \nderas drottning är mer försiktig i framtiden."
 
 #. Key:	8AC1281643453F2E66AEC382CE9BA8B0
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_64.Text
@@ -968,20 +883,14 @@ msgstr "Interagera"
 
 #. Key:	8B05F44C4BA264CD4CA5B4AA257F5DF6
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",8B05F44C4BA264CD4CA5B4AA257F5DF6"
-msgid ""
-"And while we ate, \r\n"
-"the sun started to set."
-msgstr ""
-"Medan vi åt så \n"
-"började solen gå ner."
+msgid "And while we ate, \r\nthe sun started to set."
+msgstr "Medan vi åt så \nbörjade solen gå ner."
 
 #. Key:	8FC8C4AE40D705876AEB3C8EE09BE43D
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",8FC8C4AE40D705876AEB3C8EE09BE43D"
 msgid "But then…"
 msgstr "Men då…"
@@ -1030,15 +939,10 @@ msgstr "Grodhopp"
 
 #. Key:	94C8B7D841E95164D4F59C8BDF718C54
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",94C8B7D841E95164D4F59C8BDF718C54"
-msgid ""
-"I decided to have a snack and \r\n"
-"let them figure it out on their own."
-msgstr ""
-"Jag tog ett mellanmål och\n"
-"lät de lösa saken själva."
+msgid "I decided to have a snack and \r\nlet them figure it out on their own."
+msgstr "Jag tog ett mellanmål och\nlät de lösa saken själva."
 
 #. Key:	94F089504196270A31C7D0973D0110A5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.InversionX.Text
@@ -1070,8 +974,7 @@ msgstr "Extrem"
 
 #. Key:	9856623B45E3359D936C52B0B132DA28
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",9856623B45E3359D936C52B0B132DA28"
 msgid "I thought it was a little scary."
 msgstr "Jag tyckte det var lite läskigt faktiskt."
@@ -1106,15 +1009,10 @@ msgstr "Övriga medverkande"
 
 #. Key:	A34846EF44CB86CB2709D18DEB6E9BFC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",A34846EF44CB86CB2709D18DEB6E9BFC"
-msgid ""
-"I guess they didn’t want to \r\n"
-"fight that much after all…"
-msgstr ""
-"Antar att de inte ville slåss \n"
-"när allt kom omkring..."
+msgid "I guess they didn’t want to \r\nfight that much after all…"
+msgstr "Antar att de inte ville slåss \nnär allt kom omkring..."
 
 #. Key:	A4BCDA1F4DB7902127E5A3B9E369DAD5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_38.Text
@@ -1139,27 +1037,17 @@ msgstr "Ett spel av"
 
 #. Key:	A8A4E9E94E5C9AE0D66AA2945E30ABD2
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",A8A4E9E94E5C9AE0D66AA2945E30ABD2"
-msgid ""
-"But that’s no problem for us, \r\n"
-"we love being up late!"
-msgstr ""
-"Men det är inga problem för oss \n"
-"för vi älskar att vara uppe sent!"
+msgid "But that’s no problem for us, \r\nwe love being up late!"
+msgstr "Men det är inga problem för oss \nför vi älskar att vara uppe sent!"
 
 #. Key:	A93F2051447DB3C191ACFD84D1D4CA4C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",A93F2051447DB3C191ACFD84D1D4CA4C"
-msgid ""
-"The queen was very sad about that so \r\n"
-"she came and asked us for help."
-msgstr ""
-"Kodrottningen blev väldigt ledsen över detta \n"
-"så hon kom och bad oss om hjälp."
+msgid "The queen was very sad about that so \r\nshe came and asked us for help."
+msgstr "Kodrottningen blev väldigt ledsen över detta \nså hon kom och bad oss om hjälp."
 
 #. Key:	AA2F42FF4D22533A1D5301A20E37720A
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra5.Text
@@ -1177,15 +1065,10 @@ msgstr "Lätt på foten"
 
 #. Key:	AB80CDBC416F5F519E83BF8DBB15FA92
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP4.Tooltip Text
 msgctxt ",AB80CDBC416F5F519E83BF8DBB15FA92"
-msgid ""
-"We harbour no ill will toward you or the cows \r\n"
-"anymore and I will let them all return home."
-msgstr ""
-"Ni har förtjänat vår förlåtelse, alla \n"
-"kor ska få återvända till sina hem."
+msgid "We harbour no ill will toward you or the cows \r\nanymore and I will let them all return home."
+msgstr "Ni har förtjänat vår förlåtelse, alla \nkor ska få återvända till sina hem."
 
 #. Key:	ACBE71A14A73679C89832A94360EF6B2
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_6.Text
@@ -1259,8 +1142,7 @@ msgstr "Tillbaka"
 
 #. Key:	B489A0E644C2FE933DD459AE4A96F1B0
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP7.Tooltip Text
 msgctxt ",B489A0E644C2FE933DD459AE4A96F1B0"
 msgid "I will transport you back to the forest as well."
 msgstr "ni ska också få återvända till skogen."
@@ -1274,42 +1156,28 @@ msgstr "Hoppa upp/av"
 
 #. Key:	B8B9487D44A70802847BEEAB4E6688C3
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",B8B9487D44A70802847BEEAB4E6688C3"
-msgid ""
-"Inside the mountain it was dark \r\n"
-"and there was a lot of places to fall down."
-msgstr ""
-"Väl inne i berget var det jättemörkt och det \n"
-"fanns massa ställen där man kunde ramla ner."
+msgid "Inside the mountain it was dark \r\nand there was a lot of places to fall down."
+msgstr "Väl inne i berget var det jättemörkt och det \nfanns massa ställen där man kunde ramla ner."
 
 #. Key:	B8CAC492438BC9FE2961EDB9C70E2DA8
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",B8CAC492438BC9FE2961EDB9C70E2DA8"
-msgid ""
-"I thought, we don’t really have \r\n"
-"to get involved anymore. "
-msgstr ""
-"Jag tänkte att det inte var \n"
-"vårt problem längre."
+msgid "I thought, we don’t really have \r\nto get involved anymore. "
+msgstr "Jag tänkte att det inte var \nvårt problem längre."
 
 #. Key:	BA2804FD48E18BC209AFCA94A0906C98
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",BA2804FD48E18BC209AFCA94A0906C98"
 msgid "Anyway, we did it!"
-msgstr ""
-"Det gör inget, \n"
-"vi löste det trots allt!"
+msgstr "Det gör inget, \nvi löste det trots allt!"
 
 #. Key:	BA3EC83844FFDB1CFA31019EA54013AD
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",BA3EC83844FFDB1CFA31019EA54013AD"
 msgid "but the cows didn’t think so."
 msgstr "men det tyckte inte korna."
@@ -1319,7 +1187,7 @@ msgstr "men det tyckte inte korna."
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_4.Text
 msgctxt ",BA7A51F949B51B77AA920E8C4A3615A5"
 msgid "Display"
-msgstr "Skärminställningar"
+msgstr "Skärm"
 
 #. Key:	BC327DA8462E7C4EF1FA268C3C2DD451
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra7.Text
@@ -1351,8 +1219,7 @@ msgstr "Grafik"
 
 #. Key:	BE9795FA4E0B3C454C24F783143F8ABA
 #. SourceLocation:	/Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceCaveLoad.SequenceCaveLoad_C:ExecuteUbergraph_SequenceCaveLoad [Script Bytecode]
 msgctxt ",BE9795FA4E0B3C454C24F783143F8ABA"
 msgid "Yes, and Ms. Cowknight is helping us too!"
 msgstr "Ja, och Koriddaren hjälper oss också!"
@@ -1361,12 +1228,8 @@ msgstr "Ja, och Koriddaren hjälper oss också!"
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra10.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra10.Text
 msgctxt ",BEBF5D634B4216A566A1B69203737F8A"
-msgid ""
-"Why did you eat those\r\n"
-"shrooms, Grusa?"
-msgstr ""
-"Varför åt du de där \n"
-"svamparna, Grusa?"
+msgid "Why did you eat those\r\nshrooms, Grusa?"
+msgstr "Varför åt du de där \nsvamparna, Grusa?"
 
 #. Key:	BF3E9BBC408B3E06434D26A070BCE373
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
@@ -1377,15 +1240,10 @@ msgstr "Värme"
 
 #. Key:	BF6F54B04325D0135D99BFA55BD0950C
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
-#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip
-#: Text
+#: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
 msgctxt ",BF6F54B04325D0135D99BFA55BD0950C"
-msgid ""
-"I see that you have made it through \r\n"
-"our challenges and freed the cows. "
-msgstr ""
-"Jag ser att ni har klarat av alla våra \n"
-"utmaningar och räddat korna."
+msgid "I see that you have made it through \r\nour challenges and freed the cows. "
+msgstr "Jag ser att ni har klarat av alla våra \nutmaningar och räddat korna."
 
 #. Key:	BFD4D3444DAED614921E91A8A9E1623D
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
@@ -1396,15 +1254,10 @@ msgstr "Hög"
 
 #. Key:	C0F586944CA48CD0D55E53AEF3D2BFA5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",C0F586944CA48CD0D55E53AEF3D2BFA5"
-msgid ""
-"One day, the queen \r\n"
-"of the cows wasn’t looking"
-msgstr ""
-"En dag såg sig inte kodrottningen\n"
-"för när hon satte sig ner"
+msgid "One day, the queen \r\nof the cows wasn’t looking"
+msgstr "En dag såg sig inte kodrottningen\nför när hon satte sig ner"
 
 #. Key:	C12D436544FD9F98EA585B9D039AC16F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_34.Text
@@ -1422,8 +1275,7 @@ msgstr "[Enter/Start] Skippa"
 
 #. Key:	C3F21FAD48B5F462F842DCA5B98C77CC
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",C3F21FAD48B5F462F842DCA5B98C77CC"
 msgid "and quickly they all went back home!"
 msgstr "De stack hem direkt!"
@@ -1570,28 +1422,21 @@ msgstr "Hoppa upp/av"
 
 #. Key:	D64833CA4C128ACCD0819D81D54658B1
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK3.Tooltip Text
 msgctxt ",D64833CA4C128ACCD0819D81D54658B1"
-msgid ""
-"Come on, you can jump on my back to\r\n"
-" get over this wall, I don’t mind at all."
-msgstr ""
-"Kom igen, ni kan hoppa upp på min rygg för\n"
-"att komma över väggen, det är helt okej."
+msgid "Come on, you can jump on my back to\r\n get over this wall, I don’t mind at all."
+msgstr "Kom igen, ni kan hoppa upp på min rygg för\natt komma över väggen, det är helt okej."
 
 #. Key:	D887D47046F8021FE0005698D542FCE9
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElement.KeyElement_C:ExecuteUbergraph_KeyElement [Script Bytecode]
 msgctxt ",D887D47046F8021FE0005698D542FCE9"
 msgid "Already in use"
 msgstr "Används redan"
 
 #. Key:	D9193FA645FFB26AA0C0799FD4949E3B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",D9193FA645FFB26AA0C0799FD4949E3B"
 msgid "And the fairies got mad about it!"
 msgstr "Och älvorna blev jättearga!"
@@ -1612,8 +1457,7 @@ msgstr "Mellan"
 
 #. Key:	DB182CC84FD93F6DCE03DCBD04D283A1
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",DB182CC84FD93F6DCE03DCBD04D283A1"
 msgid "The queen rallied all of her returned cows."
 msgstr "Kodrottningen samlade ihop alla sina kor."
@@ -1634,15 +1478,10 @@ msgstr "WASD"
 
 #. Key:	DC3F1DF34B4028677F2B65BEB0CF9201
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",DC3F1DF34B4028677F2B65BEB0CF9201"
-msgid ""
-"Grusa farted so bad, the cows \r\n"
-"and the fairies couldn’t stand it"
-msgstr ""
-"Grusa la en brakare som var så hemsk \n"
-"att korna och älvorna inte stod ut."
+msgid "Grusa farted so bad, the cows \r\nand the fairies couldn’t stand it"
+msgstr "Grusa la en brakare som var så hemsk \natt korna och älvorna inte stod ut."
 
 #. Key:	DD40FBFF48483CBEC61557AAA2D3B603
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_13.Text
@@ -1681,8 +1520,7 @@ msgstr "Lägsta"
 
 #. Key:	E2A278514306603115EACEAB295C4B98
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",E2A278514306603115EACEAB295C4B98"
 msgid "And we said yes! We always help our friends."
 msgstr "Och vi sa ja! Vi hjälper alltid våra vänner."
@@ -1703,8 +1541,7 @@ msgstr "Lokalisering"
 
 #. Key:	E581590640BE412D0B9DCF9FA9D55084
 #. SourceLocation:	/Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/KeyElementInGame.KeyElementInGame_C:ExecuteUbergraph_KeyElementInGame [Script Bytecode]
 msgctxt ",E581590640BE412D0B9DCF9FA9D55084"
 msgid "Already in use"
 msgstr "Används redan"
@@ -1725,24 +1562,21 @@ msgstr "Effektvolym"
 
 #. Key:	EBD18165465C4BC550FE1983DFE2B006
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
 msgctxt ",EBD18165465C4BC550FE1983DFE2B006"
 msgid "so we stopped for some food."
 msgstr "så vi tog en paus för att äta."
 
 #. Key:	ED4FF0E64BD8997EBFA3D1AD9BAF6EEF
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
 msgctxt ",ED4FF0E64BD8997EBFA3D1AD9BAF6EEF"
 msgid "Mount"
 msgstr "Hoppa upp/av"
 
 #. Key:	EE95EDAA445D722B493283BA32348532
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",EE95EDAA445D722B493283BA32348532"
 msgid "Calm down…"
 msgstr "Lugn… "
@@ -1791,18 +1625,14 @@ msgstr "Extrem"
 
 #. Key:	F3656B1F4E32EA8D9B0CF29D902CED0F
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",F3656B1F4E32EA8D9B0CF29D902CED0F"
-msgid ""
-"They were really mad about \r\n"
-"what the fairies had done!"
+msgid "They were really mad about \r\nwhat the fairies had done!"
 msgstr "De var jättearga på älvorna!"
 
 #. Key:	F3EAA03B411173A7369575B30A304F66
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",F3EAA03B411173A7369575B30A304F66"
 msgid "But then! Then there was a big stink!"
 msgstr "Men då! Då började det plötsligt att stinka!"
@@ -1830,23 +1660,17 @@ msgstr "One punch troll"
 
 #. Key:	F5079E3743CB992C960E4DBAF2F597E7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",F5079E3743CB992C960E4DBAF2F597E7"
 msgid "Hi! Hello - oh, oh, story time!"
 msgstr "Hej! Hallå - åh, åh, nu ska ni få höra! "
 
 #. Key:	F56685494683A0DF921FDCBE5CB880D4
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
-#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 msgctxt ",F56685494683A0DF921FDCBE5CB880D4"
-msgid ""
-"And they magiced away almost \r\n"
-"all of the cows to teach them a lesson!"
-msgstr ""
-"De trollade iväg nästan alla kor\n"
-"för att lära dem en läxa!"
+msgid "And they magiced away almost \r\nall of the cows to teach them a lesson!"
+msgstr "De trollade iväg nästan alla kor\nför att lära dem en läxa!"
 
 #. Key:	F5A5CC5F41972EE4A594D5BB8D5639C3
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_36.Text
@@ -1864,15 +1688,10 @@ msgstr "Handkontroll"
 
 #. Key:	F841FA6849497D06355E288B3CD98692
 #. SourceLocation:	/Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
-#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/SequenceEnding.SequenceEnding_C:ExecuteUbergraph_SequenceEnding [Script Bytecode]
 msgctxt ",F841FA6849497D06355E288B3CD98692"
-msgid ""
-"So we all came back to the forest and \r\n"
-"we thought everything was fine"
-msgstr ""
-"Vi kom vi tillbaka till skogen och\n"
-" trodde att allt skulle var bra"
+msgid "So we all came back to the forest and \r\nwe thought everything was fine"
+msgstr "Vi kom vi tillbaka till skogen och\n trodde att allt skulle var bra"
 
 #. Key:	F8FD46104848A05BB65FA58428C81C2B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_7.Text
@@ -1890,15 +1709,10 @@ msgstr "Vinjett"
 
 #. Key:	FA0A803B4BBC515E0688478860F97E12
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip Text
-#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip
-#: Text
+#: /Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip Text
 msgctxt ",FA0A803B4BBC515E0688478860F97E12"
-msgid ""
-"She might not be the brightest but \r\n"
-"she is sturdy and fearless."
-msgstr ""
-"Hon är kanske inte den smartaste av alla mina kor \n"
-"men hon är tålig och modig."
+msgid "She might not be the brightest but \r\nshe is sturdy and fearless."
+msgstr "Hon är kanske inte den smartaste av alla mina kor \nmen hon är tålig och modig."
 
 #. Key:	FA57D0534269BC832573C9A16F716385
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Foli.Text
@@ -1951,8 +1765,8 @@ msgstr "Skatter"
 
 #. Key:	FF9B8BB3465A6EC11E207693C12C3BF6
 #. SourceLocation:	/Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
-#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP
-#: [Script Bytecode]
+#: /Game/Blueprints/UI/GnomeActionHUD_BP.GnomeActionHUD_BP_C:ExecuteUbergraph_GnomeActionHUD_BP [Script Bytecode]
 msgctxt ",FF9B8BB3465A6EC11E207693C12C3BF6"
 msgid "Call Ms. Cowknight"
 msgstr "Kalla på Fröken koriddare"
+
