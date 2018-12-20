@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
     <object class="MixerGroup" id="{21746033-112c-4ae2-b21a-97880fd8721d}">
+        <property name="volume">
+            <value>-1.60000002</value>
+        </property>
         <property name="name">
             <value>Music intro trailer</value>
         </property>
+        <relationship name="masters">
+            <destination>{9c32d46b-59f1-49ec-8716-83cd4eb0ba83}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{e153c1f5-be9d-44b6-866a-247c6559de4f}</destination>
         </relationship>
@@ -11,7 +17,7 @@
             <destination>{daaee99f-4f0e-48fd-9cf2-f912fb48d03f}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{bda9fff5-ea7a-42d5-a080-f191b6eee74b}</destination>
+            <destination>{a6c8bf4d-cbc5-4c4a-83ae-0c76eadab233}</destination>
         </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{e153c1f5-be9d-44b6-866a-247c6559de4f}">
