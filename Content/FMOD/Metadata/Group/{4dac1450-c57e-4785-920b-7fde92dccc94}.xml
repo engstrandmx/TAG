@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{4dac1450-c57e-4785-920b-7fde92dccc94}">
+        <property name="name">
+            <value>RockRumble</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{2a0c982d-442c-485d-a3de-895b55722dbb}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{2efdfe16-4618-462f-8ed4-6456dbaef964}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{a6c8bf4d-cbc5-4c4a-83ae-0c76eadab233}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{2a0c982d-442c-485d-a3de-895b55722dbb}">
+        <relationship name="effects">
+            <destination>{0b2ef771-2f68-42ee-9b7a-fcbb7c3ac7d1}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{2efdfe16-4618-462f-8ed4-6456dbaef964}"/>
+    <object class="MixerBusFader" id="{0b2ef771-2f68-42ee-9b7a-fcbb7c3ac7d1}"/>
+</objects>
