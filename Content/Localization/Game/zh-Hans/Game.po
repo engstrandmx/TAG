@@ -4,14 +4,21 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2018-12-19 15:13\n"
-"PO-Revision-Date: 2018-12-19 15:13\n"
+"POT-Creation-Date: 2019-01-07 13:25\n"
+"PO-Revision-Date: 2019-01-07 13:25\n"
 "Language-Team: \n"
 "Language: zh-Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Key:	002C3B764DAA4F46CE430BB747E4A801
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
+msgctxt ",002C3B764DAA4F46CE430BB747E4A801"
+msgid "Low"
+msgstr "低画质"
 
 #. Key:	00CD1F334AFEAFBF8623EFA082D36BFA
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_29.Text
@@ -34,13 +41,6 @@ msgctxt ",025856B240C4DE7AA9341BAD8A013042"
 msgid "Brightness"
 msgstr "明度"
 
-#. Key:	05E6F9DB4F17080A793F0A8B1E1310A3
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
-msgctxt ",05E6F9DB4F17080A793F0A8B1E1310A3"
-msgid "Resolution"
-msgstr "分辨率"
-
 #. Key:	05FF8C464D362B108E2475915BD0366B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_19.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_19.Text
@@ -62,17 +62,17 @@ msgctxt ",08B90C7A4E285E7572200589D16F41CE"
 msgid "Press Any Key"
 msgstr "按任意键"
 
-#. Key:	09E497BB401783B3288577BDC3FD1409
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
-msgctxt ",09E497BB401783B3288577BDC3FD1409"
-msgid "Brightness"
-msgstr "明度"
+#. Key:	09B8EEC54FEB4BD505AB8A90F08CD112
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
+msgctxt ",09B8EEC54FEB4BD505AB8A90F08CD112"
+msgid "Anti Aliasing"
+msgstr "反锯齿"
 
-#. Key:	0AA7ADE64E7C9E759AAE6299E562A57A
+#. Key:	0D69A5504C895867646AB092EAD10E04
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_63.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_63.Text
-msgctxt ",0AA7ADE64E7C9E759AAE6299E562A57A"
+msgctxt ",0D69A5504C895867646AB092EAD10E04"
 msgid "VSync"
 msgstr "垂直同步"
 
@@ -82,6 +82,13 @@ msgstr "垂直同步"
 msgctxt ",0E21F0CD4307B240C25DA28C1D130215"
 msgid "Master Volume"
 msgstr "主音量"
+
+#. Key:	106F21F64F3A082B1E211189D8CB955E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
+msgctxt ",106F21F64F3A082B1E211189D8CB955E"
+msgid "Texture Quality"
+msgstr "纹理质量"
 
 #. Key:	112FB0EA4F8025393E18219A6688790F
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCK1.Tooltip Text
@@ -96,13 +103,6 @@ msgstr "你一定就是女王提到的那位英雄吧。"
 msgctxt ",117CAFA44BFC377BC633AFBB4D54EAD1"
 msgid "FXAA"
 msgstr "FXAA"
-
-#. Key:	1231AC1741A64DEF2F981892098C9098
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
-msgctxt ",1231AC1741A64DEF2F981892098C9098"
-msgid "Foliage Amount"
-msgstr "树叶数量"
 
 #. Key:	13AB0979462052FACDBCFD8EA6426FBA
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_74.Text
@@ -138,6 +138,13 @@ msgstr "低画质"
 msgctxt ",180CDE5841F1CBC076548DAFB6DE8080"
 msgid "Scroll Wheel"
 msgstr "滚轮"
+
+#. Key:	19460E094DF65238D19699B1B7F0194A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
+msgctxt ",19460E094DF65238D19699B1B7F0194A"
+msgid "Sharpness"
+msgstr "锐度"
 
 #. Key:	19990E3E4B1FB00C780E378F2B0ED7DD
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_14.Text
@@ -195,13 +202,6 @@ msgctxt ",1F26EF1540F6123FC7D02880550B6B91"
 msgid "Camera"
 msgstr "摄像头"
 
-#. Key:	200189BC4280C2467ACA8AB17E7EB38F
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
-msgctxt ",200189BC4280C2467ACA8AB17E7EB38F"
-msgid "Anti Aliasing"
-msgstr "反锯齿"
-
 #. Key:	20503EBA483DA6C2A24DBE8949587867
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_2.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_2.Text
@@ -220,6 +220,13 @@ msgstr "控制器"
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_17.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_17.Text
 msgctxt ",22DD332A496D7F0220D01F83B02F1CE1"
+msgid "Colours"
+msgstr "色彩"
+
+#. Key:	246E1CD3429D88E342BD158CFFE45DA2
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
+msgctxt ",246E1CD3429D88E342BD158CFFE45DA2"
 msgid "Colours"
 msgstr "色彩"
 
@@ -250,6 +257,13 @@ msgstr "我说，不行，不能打仗。"
 msgctxt ",27E46180442580BAD8BF01917EE7C359"
 msgid "Camera Sensitivity"
 msgstr "摄像头灵敏度"
+
+#. Key:	28ED9CB54771E3C7BB0C66B29C671894
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_8.Text
+msgctxt ",28ED9CB54771E3C7BB0C66B29C671894"
+msgid "Resolution"
+msgstr "分辨率"
 
 #. Key:	291B4BF4444EC9F6F96BC6A435F0D77C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
@@ -286,6 +300,13 @@ msgctxt ",2DB3560E4261DD2970E6858468086EEE"
 msgid "Move"
 msgstr "移动"
 
+#. Key:	2E4AD6544D9D84CDF52377A4EB29D73A
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
+msgctxt ",2E4AD6544D9D84CDF52377A4EB29D73A"
+msgid "Vignette"
+msgstr "晕影"
+
 #. Key:	2ECD85654ADA7FEFC90EDC8DFF2243ED
 #. SourceLocation:	/Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
 #: /Game/Blueprints/UI/Tooltip_BP.Tooltip_BP_C:ShowTooltip [Script Bytecode]
@@ -306,13 +327,6 @@ msgstr "回到游戏"
 msgctxt ",3013174649D61C4EB34D6BA9034C5C74"
 msgid "Defaults"
 msgstr "默认"
-
-#. Key:	314B7B8E477FC90446B675BE0B842B83
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
-msgctxt ",314B7B8E477FC90446B675BE0B842B83"
-msgid "Medium"
-msgstr "中画质"
 
 #. Key:	322C976346A2FEE8C46BBA88F892AE8D
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_21.Text
@@ -349,12 +363,12 @@ msgctxt ",39B122AC40E7E2ABB261CEA51175F302"
 msgid "Audio"
 msgstr "音频"
 
-#. Key:	3A2A6493451C0D10F6BE31A9F10ABDF6
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_17.Text
-msgctxt ",3A2A6493451C0D10F6BE31A9F10ABDF6"
-msgid "Colours"
-msgstr "色彩"
+#. Key:	39D1CA414B223F8486504490867B2440
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
+msgctxt ",39D1CA414B223F8486504490867B2440"
+msgid "Field of View"
+msgstr "视野"
 
 #. Key:	3A2E369240A6AA01D383449EB147565E
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
@@ -454,19 +468,19 @@ msgctxt ",426CD12544D71E69ABA990874916489D"
 msgid "Default Controls"
 msgstr "默认控制"
 
+#. Key:	429E1EC645F17E8133855380EEFBC617
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.Foli.Text
+msgctxt ",429E1EC645F17E8133855380EEFBC617"
+msgid "Foliage Amount"
+msgstr "树叶数量"
+
 #. Key:	4336DA3441A90EEA9B815D8BCEF5F9A7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_78.Text
 msgctxt ",4336DA3441A90EEA9B815D8BCEF5F9A7"
 msgid "Ambience Volume"
 msgstr "环境音音量"
-
-#. Key:	4399C9C14DFBDE72663D8DB3684C0DFC
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
-msgctxt ",4399C9C14DFBDE72663D8DB3684C0DFC"
-msgid "Gamma"
-msgstr "伽马值"
 
 #. Key:	450FEB7D422CB058CD10768DB59DE185
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_43.Text
@@ -552,6 +566,13 @@ msgctxt ",548E4F6745962B21B39B1794F676E56F"
 msgid "WASD"
 msgstr "WASD"
 
+#. Key:	54A115404FB6208315F4AD95456E8BB3
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
+msgctxt ",54A115404FB6208315F4AD95456E8BB3"
+msgid "Warmth"
+msgstr "暖度"
+
 #. Key:	54D12DCD4D3BC95058A38DADD8DB8066
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
@@ -580,13 +601,6 @@ msgctxt ",59D7FEDC492A6BA6A64B6486354BBBE1"
 msgid "Press Any Key"
 msgstr "按任意键"
 
-#. Key:	5A1F0FA94BAB1B4449D1A99F3146A910
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_6.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_6.Text
-msgctxt ",5A1F0FA94BAB1B4449D1A99F3146A910"
-msgid "Display"
-msgstr "显示"
-
 #. Key:	5AF863CE45264D21E0EF3C918957CC06
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_14.Text
@@ -601,12 +615,26 @@ msgctxt ",5B1BC6EA4F911763B443F0B4B12D6DA3"
 msgid "Anti Aliasing"
 msgstr "反锯齿"
 
+#. Key:	608ACC67499C6B6A5D6AADAFC3E999C8
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
+msgctxt ",608ACC67499C6B6A5D6AADAFC3E999C8"
+msgid "Depth of Field"
+msgstr "景深"
+
 #. Key:	6236BA8A42AEC03432F7E4AEF178C1A9
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_12.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_12.Text
 msgctxt ",6236BA8A42AEC03432F7E4AEF178C1A9"
 msgid "Field of View"
 msgstr "视野"
+
+#. Key:	62CE69804B49D17562928FAD0A2FE469
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
+msgctxt ",62CE69804B49D17562928FAD0A2FE469"
+msgid "High"
+msgstr "高画质"
 
 #. Key:	64D982204A1C4EFBF19798B53B95E478
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ2.Tooltip Text
@@ -628,13 +656,6 @@ msgstr "现在你看到我了……"
 msgctxt ",665F010E4DFBFC7D5FF0A4845F15507D"
 msgid "Jump"
 msgstr "跳跃"
-
-#. Key:	66A18D164D39382557FEA6AA237B4A03
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
-msgctxt ",66A18D164D39382557FEA6AA237B4A03"
-msgid "Shadow Quality"
-msgstr "阴影质量"
 
 #. Key:	677E871F421CF6198B7D7D91E45D6165
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_2.Text
@@ -685,19 +706,19 @@ msgctxt ",6D0064BF44152AC0F654208E7719F443"
 msgid "Credits"
 msgstr "制作组"
 
-#. Key:	6DB1430741ABB1EBD06F1FBC793FFDE4
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
-msgctxt ",6DB1430741ABB1EBD06F1FBC793FFDE4"
-msgid "Defaults"
-msgstr "默认"
-
 #. Key:	6FE00AC743CD2D11C967CE8684A87B29
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_57.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_57.Text
 msgctxt ",6FE00AC743CD2D11C967CE8684A87B29"
 msgid "Jump"
 msgstr "跳跃"
+
+#. Key:	6FF2A1034BFC63054BD354A77EAE84BD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_47.Text
+msgctxt ",6FF2A1034BFC63054BD354A77EAE84BD"
+msgid "Defaults"
+msgstr "默认"
 
 #. Key:	7075CB824906041AA4C51A92500E11F6
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.Text.Text
@@ -748,12 +769,12 @@ msgctxt ",79EDA0C642731406A5350683C7E9F824"
 msgid "and the cows flew but the- the fairies \r\nand the fairyrings and the mushrooms-"
 msgstr "牛飞起来了，但是，啊，精灵，精灵环，\n对了我还没提到蘑菇的事情。"
 
-#. Key:	7B06643E497790166DA920BFF18BD42F
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_11.Text
-msgctxt ",7B06643E497790166DA920BFF18BD42F"
-msgid "Depth of Field"
-msgstr "景深"
+#. Key:	7AB7D9964BD4B2CC98FC049586AF8449
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_42.Text
+msgctxt ",7AB7D9964BD4B2CC98FC049586AF8449"
+msgid "Brightness"
+msgstr "明度"
 
 #. Key:	7B60317A4EE23CFD1B742286C5250086
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_68.Text
@@ -761,6 +782,13 @@ msgstr "景深"
 msgctxt ",7B60317A4EE23CFD1B742286C5250086"
 msgid "Headbutt (Gnome)"
 msgstr "头槌"
+
+#. Key:	7B7DA5E94D15E12082F5E1B62D2DA4F0
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
+msgctxt ",7B7DA5E94D15E12082F5E1B62D2DA4F0"
+msgid "Fullscreen"
+msgstr "全屏"
 
 #. Key:	7C3B63F548416D09A85C75A55AF1809E
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ5.Tooltip Text
@@ -783,6 +811,13 @@ msgctxt ",7DC0ED2242E95E5DCFECE6BFBE0167E4"
 msgid "Exit To Menu"
 msgstr "退出到桌面"
 
+#. Key:	7F0D9F314227E6D63C312D8A3965231E
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
+msgctxt ",7F0D9F314227E6D63C312D8A3965231E"
+msgid "Effects Quality"
+msgstr "特效质量"
+
 #. Key:	7F8ECBDC4FB599F4357D9B9FC450EEA7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra13.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextExtra13.Text
@@ -790,12 +825,12 @@ msgctxt ",7F8ECBDC4FB599F4357D9B9FC450EEA7"
 msgid "This one's fishy..."
 msgstr "有点可疑……"
 
-#. Key:	7F99C95C467EA71BC8DEC4BB00749DB5
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_7.Text
-msgctxt ",7F99C95C467EA71BC8DEC4BB00749DB5"
-msgid "Fullscreen"
-msgstr "全屏"
+#. Key:	7FF45B604A7898EBBB76ED81436DCA1C
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_4.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_4.Text
+msgctxt ",7FF45B604A7898EBBB76ED81436DCA1C"
+msgid "Display"
+msgstr "显示"
 
 #. Key:	825395CF4F88CD965888AC948372542C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_45.Text
@@ -810,13 +845,6 @@ msgstr "退出"
 msgctxt ",82B6DC5B49F0501298CD1DB42931A4EA"
 msgid "They wanted to get revenge on the fairies."
 msgstr "他们想对精灵发起复仇。"
-
-#. Key:	82E3BB1640148521F9ED74BDC91F4E0E
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
-msgctxt ",82E3BB1640148521F9ED74BDC91F4E0E"
-msgid "Defaults"
-msgstr "默认"
 
 #. Key:	83404C2B48DC9EB209DC9EA41C767A1F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_76.Text
@@ -852,6 +880,13 @@ msgstr "切换角色"
 msgctxt ",868B09394F4A615690D9CB8181B5C4C5"
 msgid "TAA"
 msgstr "TAA"
+
+#. Key:	876D4D504474FAE526319FAB5D844801
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
+msgctxt ",876D4D504474FAE526319FAB5D844801"
+msgid "View Distance"
+msgstr "可视距离"
 
 #. Key:	884C17E04E786DFE4B3E0AA6CA637373
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_1.Text
@@ -916,13 +951,6 @@ msgctxt ",937E4DB24C6FA59E076152A56B9B1644"
 msgid "[ENTER/START] Skip"
 msgstr "[回车/开始键]以跳过"
 
-#. Key:	93AE1BB744DE74E121DE47917B76C401
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_12.Text
-msgctxt ",93AE1BB744DE74E121DE47917B76C401"
-msgid "Field of View"
-msgstr "视野"
-
 #. Key:	93F89B79467A219A6995EBB1F0ADAEB7
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_77.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_77.Text
@@ -958,13 +986,6 @@ msgctxt ",9603F94C47DD0956DCD0138B8B4D990D"
 msgid "Programming"
 msgstr "程序"
 
-#. Key:	96487BC04A1EB1775C4F929AC32014C5
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_44.Text
-msgctxt ",96487BC04A1EB1775C4F929AC32014C5"
-msgid "Sharpness"
-msgstr "锐度"
-
 #. Key:	96B7FDB943893090CA6C2C996B224731
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(3).TextOptions
 #: /Game/Blueprints/UI/Menu/MainMenuBP.Default__MainMenuBP_C.TextOptions(3).TextOptions
@@ -986,12 +1007,12 @@ msgctxt ",9A314C594EB4ABD16B4BB3BF56DC476A"
 msgid "Pause"
 msgstr "暂停"
 
-#. Key:	9E50D32849F95B19E45966B4F29DDBF8
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
-msgctxt ",9E50D32849F95B19E45966B4F29DDBF8"
-msgid "Ultra"
-msgstr "超清画质"
+#. Key:	9E8EA8124C218339B9D682A901C70F64
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_46.Text
+msgctxt ",9E8EA8124C218339B9D682A901C70F64"
+msgid "Defaults"
+msgstr "默认"
 
 #. Key:	9FDE4D66411977A99A52228AD064971E
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_32.Text
@@ -1077,13 +1098,6 @@ msgctxt ",ACBE71A14A73679C89832A94360EF6B2"
 msgid "WASD"
 msgstr "WASD"
 
-#. Key:	ADA0753B4B371748DD32C3B8844B3F43
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_32.Text
-msgctxt ",ADA0753B4B371748DD32C3B8844B3F43"
-msgid "Effects Quality"
-msgstr "特效质量"
-
 #. Key:	ADA085F74B57CE874E02ECBB39E47421
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Sensitivity.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Sensitivity.Text
@@ -1105,19 +1119,19 @@ msgctxt ",AE768AC141B170B0B23E08B573E71D6C"
 msgid "Controls"
 msgstr "控制"
 
-#. Key:	AFE839A44DB4EF44D0D7A19471A60D34
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_5.Text
-msgctxt ",AFE839A44DB4EF44D0D7A19471A60D34"
-msgid "Low"
-msgstr "低画质"
-
 #. Key:	B02D994E445C87015062A69E255261FD
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_78.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_78.Text
 msgctxt ",B02D994E445C87015062A69E255261FD"
 msgid "Ambience Volume"
 msgstr "环境音音量"
+
+#. Key:	B089DB414EEE3AE23F19178105D9DCA0
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
+msgctxt ",B089DB414EEE3AE23F19178105D9DCA0"
+msgid "Graphics"
+msgstr "图形"
 
 #. Key:	B2ED1500421541F01B4269891B7545E4
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_31.Text
@@ -1210,6 +1224,13 @@ msgctxt ",BCB7914B4B01D7A2F5B3CEB5F8C81EF5"
 msgid "Cave"
 msgstr "洞窟"
 
+#. Key:	BD493084437EE9A20B3BD1A7803CBBBD
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_20.Text
+msgctxt ",BD493084437EE9A20B3BD1A7803CBBBD"
+msgid "Medium"
+msgstr "中画质"
+
 #. Key:	BE5A307D4F7FDCBFFB390BA7FFBDAF9B
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_23.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_23.Text
@@ -1231,26 +1252,12 @@ msgctxt ",BEBF5D634B4216A566A1B69203737F8A"
 msgid "Why did you eat those\r\nshrooms, Grusa?"
 msgstr "为什么要吃这些蘑菇，\n格鲁萨？"
 
-#. Key:	BF3E9BBC408B3E06434D26A070BCE373
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_43.Text
-msgctxt ",BF3E9BBC408B3E06434D26A070BCE373"
-msgid "Warmth"
-msgstr "暖度"
-
 #. Key:	BF6F54B04325D0135D99BFA55BD0950C
 #. SourceLocation:	/Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
 #: /Game/Levels/Game/Level6Crater.Level6Crater:PersistentLevel.TooltipAreaBP_722.Tooltip Text
 msgctxt ",BF6F54B04325D0135D99BFA55BD0950C"
 msgid "I see that you have made it through \r\nour challenges and freed the cows. "
 msgstr "我看到你通过了我设下的所有挑战，\n解救了牛群。"
-
-#. Key:	BFD4D3444DAED614921E91A8A9E1623D
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_21.Text
-msgctxt ",BFD4D3444DAED614921E91A8A9E1623D"
-msgid "High"
-msgstr "高画质"
 
 #. Key:	C0F586944CA48CD0D55E53AEF3D2BFA5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
@@ -1301,13 +1308,6 @@ msgctxt ",CA5878B14265C144660016BF071D4DC0"
 msgid "Keyboard"
 msgstr "键盘"
 
-#. Key:	CA69BD4C400ABC2949A8119D670C9D16
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_33.Text
-msgctxt ",CA69BD4C400ABC2949A8119D670C9D16"
-msgid "View Distance"
-msgstr "可视距离"
-
 #. Key:	CB0FF21E4BC4144C593FD4B724E77C8F
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Text.Text
 #: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.Text.Text
@@ -1335,13 +1335,6 @@ msgstr "缩放"
 msgctxt ",CD6B5E9E48AF08E7DD8C2982E6A568BF"
 msgid "View Distance"
 msgstr "可视距离"
-
-#. Key:	CE5E2D444808F4E19DD29B9EC0D50791
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_23.Text
-msgctxt ",CE5E2D444808F4E19DD29B9EC0D50791"
-msgid "Graphics"
-msgstr "图形"
 
 #. Key:	CF10E9D742D730FAC9E3FBB4CF5D328C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_37.Text
@@ -1462,12 +1455,12 @@ msgctxt ",DB182CC84FD93F6DCE03DCBD04D283A1"
 msgid "The queen rallied all of her returned cows."
 msgstr "女王召集了所有回来的牛。"
 
-#. Key:	DB19212E446FCD07713E85A3C6C24AEB
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_37.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_37.Text
-msgctxt ",DB19212E446FCD07713E85A3C6C24AEB"
-msgid "Resolution Scale"
-msgstr "分辨率大小"
+#. Key:	DBEF0BDC498A96982FA1D1B010FE3992
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_18.Text
+msgctxt ",DBEF0BDC498A96982FA1D1B010FE3992"
+msgid "Gamma"
+msgstr "伽马值"
 
 #. Key:	DC377E66437B14EDAA43CB934A6C06C5
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_10.Text
@@ -1553,12 +1546,26 @@ msgctxt ",E5E431E544EAC6E1A83534A56429AEE2"
 msgid "Ms. Cowknight - Kevin Engstrand"
 msgstr "牛骑士小姐 - Kevin Engstrand"
 
+#. Key:	E8E14BDA41DEC28E2A73049A0AD844A7
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_34.Text
+msgctxt ",E8E14BDA41DEC28E2A73049A0AD844A7"
+msgid "Shadow Quality"
+msgstr "阴影质量"
+
 #. Key:	E95EDE6245F7C119763F269168146210
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_77.Text
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_77.Text
 msgctxt ",E95EDE6245F7C119763F269168146210"
 msgid "Effects Volume"
 msgstr "音效音量"
+
+#. Key:	EAFB0CFA4CD38535239F119573DB3E07
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_37.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_37.Text
+msgctxt ",EAFB0CFA4CD38535239F119573DB3E07"
+msgid "Resolution Scale"
+msgstr "分辨率大小"
 
 #. Key:	EBD18165465C4BC550FE1983DFE2B006
 #. SourceLocation:	/Game/Blueprints/UI/SequenceFireLoad.SequenceFireLoad_C:ExecuteUbergraph_SequenceFireLoad [Script Bytecode]
@@ -1616,6 +1623,13 @@ msgctxt ",F2E57F794D081CE4ABEB8CAE3530B5DB"
 msgid "The Speed of Gnome"
 msgstr "地精速度"
 
+#. Key:	F2F1A0F34F6959F0B03A50B92830673B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
+#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_22.Text
+msgctxt ",F2F1A0F34F6959F0B03A50B92830673B"
+msgid "Ultra"
+msgstr "超清画质"
+
 #. Key:	F325C78E4AE2393890EAA2BAD39DD058
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(3).TextOptions
 #: /Game/Blueprints/UI/Menu/IngameMenuUBP.Default__IngameMenuUBP_C.TextOptions(3).TextOptions
@@ -1636,13 +1650,6 @@ msgstr "他们对精灵做的事情感到十分恼火。"
 msgctxt ",F3EAA03B411173A7369575B30A304F66"
 msgid "But then! Then there was a big stink!"
 msgstr "但是，就在那时，一股臭味弥漫开来！"
-
-#. Key:	F4002ED246920208B796DC9E2D891651
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_31.Text
-msgctxt ",F4002ED246920208B796DC9E2D891651"
-msgid "Texture Quality"
-msgstr "纹理质量"
 
 #. Key:	F45A95624C2579EF0867E69BDE6CB3E9
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_3.Text
@@ -1699,13 +1706,6 @@ msgstr "就这样，我们都回到了森林之中，\n觉得一切都没有什�
 msgctxt ",F8FD46104848A05BB65FA58428C81C2B"
 msgid "Fullscreen"
 msgstr "全屏"
-
-#. Key:	F9B56CC54393831B4CF1C8A59023FB9B
-#. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
-#: /Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_55.Text
-msgctxt ",F9B56CC54393831B4CF1C8A59023FB9B"
-msgid "Vignette"
-msgstr "晕影"
 
 #. Key:	FA0A803B4BBC515E0688478860F97E12
 #. SourceLocation:	/Game/Levels/Game/Level1Forest.Level1Forest:PersistentLevel.TooltipAreaCQ4.Tooltip Text
