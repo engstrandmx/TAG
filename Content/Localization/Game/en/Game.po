@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Game\n"
-"POT-Creation-Date: 2019-01-07 13:25\n"
-"PO-Revision-Date: 2019-01-07 13:25\n"
+"POT-Creation-Date: 2019-02-19 11:49\n"
+"PO-Revision-Date: 2019-02-19 11:49\n"
 "Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
@@ -61,6 +61,13 @@ msgstr "Language"
 msgctxt ",08B90C7A4E285E7572200589D16F41CE"
 msgid "Press Any Key"
 msgstr "Press Any Key"
+
+#. Key:	092424E24D556BD1CC573D897B44CBA6
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_58.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_58.Text
+msgctxt ",092424E24D556BD1CC573D897B44CBA6"
+msgid "Campfire Scene"
+msgstr "Campfire Scene"
 
 #. Key:	09B8EEC54FEB4BD505AB8A90F08CD112
 #. SourceLocation:	/Game/Blueprints/UI/Menu/IngameMenuUBP.IngameMenuUBP_C:WidgetTree.TextBlock_36.Text
@@ -348,6 +355,13 @@ msgstr "Back"
 msgctxt ",35B08D51401FFEC73C27B2A33A4D8DB5"
 msgid "We didn’t go through all that \r\nwork just to have them fight. "
 msgstr "We didn’t go through all that \r\nwork just to have them fight. "
+
+#. Key:	3791BD1B42514AD27CF0ABA23C87F6C8
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_56.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_56.Text
+msgctxt ",3791BD1B42514AD27CF0ABA23C87F6C8"
+msgid "Ending Scene"
+msgstr "Ending Scene"
 
 #. Key:	38E9D8A74B0677841DD4188C87B536DE
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_10.Text
@@ -1525,6 +1539,13 @@ msgctxt ",E4A78FAC4E20D1DFB42615A18B950940"
 msgid "Vilde - Kevin Engstrand"
 msgstr "Vilde - Kevin Engstrand"
 
+#. Key:	E5494C604CDA29347A17A0B1AF93F73B
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_54.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_54.Text
+msgctxt ",E5494C604CDA29347A17A0B1AF93F73B"
+msgid "Cave Scene"
+msgstr "Cave Scene"
+
 #. Key:	E578AF8E49840B499941DEBB0521812C
 #. SourceLocation:	/Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_23.Text
 #: /Game/Blueprints/UI/Menu/Credits.Credits_C:WidgetTree.TextBlock_23.Text
@@ -1580,6 +1601,13 @@ msgstr "so we stopped for some food."
 msgctxt ",ED4FF0E64BD8997EBFA3D1AD9BAF6EEF"
 msgid "Mount"
 msgstr "Mount"
+
+#. Key:	EE21162F46C0CCEA004A80B8C0041CC6
+#. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_65.Text
+#: /Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:WidgetTree.TextBlock_65.Text
+msgctxt ",EE21162F46C0CCEA004A80B8C0041CC6"
+msgid "Delete Saves"
+msgstr "Delete Saves"
 
 #. Key:	EE95EDAA445D722B493283BA32348532
 #. SourceLocation:	/Game/Blueprints/UI/Menu/MainMenuBP.MainMenuBP_C:ExecuteUbergraph_MainMenuBP [Script Bytecode]
